@@ -1,0 +1,10 @@
+baseurl = "http://www.effinger.ch"
+languageCode = "de"
+title = "Effinger — Kaffeebar & Coworking Space"
+
+[params]
+  author = "Coworking Community Bern"
+  analyticsId = "UA-56906982-1"
+
+[taxonomies]
+  tag = "tags"

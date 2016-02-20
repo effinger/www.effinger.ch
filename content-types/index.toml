@@ -1,0 +1,5 @@
+name = "Home"
+
+[[fields]]
+name = "intro"
+type = "text"

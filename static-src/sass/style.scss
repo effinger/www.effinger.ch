@@ -1,0 +1,26 @@
+// Fonts.
+@import "et-line";
+@import "font-awesome";
+@import "yeni-zaman";
+
+// Font defaults.
+$font-family-sans: YeniZaman, arial, sans-serif;
+$font-family-sans-alt: YeniZaman, arial, sans-serif;
+$font-family-serif: "Times New Roman", Times, serif;
+
+// Styles from the Rhythm template.
+@import "rhythm/style";
+@import "rhythm/style-responsive";
+@import "rhythm/vertical-rhythm";
+
+//
+// Custom styles.
+//
+
+.font-alt {
+  font-weight: 300; 
+}
+
+.logo img {
+  height: 36px; 
+}

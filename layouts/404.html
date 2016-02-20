@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    {{ partial "meta.html" . }}
+
+    <title>{{ .Title }}</title>
+
+    {{ partial "head_includes.html" . }}
+    {{ partial "analytics_js.html" . }}
+  </head>
+  <body class="error-page">
+    <div id="wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <h1 class="code fadeInDown animated">
+              <span>4</span>
+              <span class="fa fa-question-circle"></span>
+              <span>4</span>
+            </h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <p class="message fadeInLeft animated">
+              Oops, diese Seite existiert nicht.
+              <br>
+              Ein Klick auf den Knopf unten bringt Sie wieder auf Kurs.
+            </p>
+            <a class="btn btn-bordered btn-white btn-lg fadeInRight animated" href="/">Zur Homepage</a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <a href="/">
+              <img class="logo fadeInUp animated" alt="Logo" width="180" src="/images/logo.png" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    {{ partial "body_includes" . }}
+  </body>
+</html>
