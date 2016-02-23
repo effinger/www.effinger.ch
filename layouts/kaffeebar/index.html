@@ -1,10 +1,66 @@
-<html>
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    {{ partial "meta.html" . }}
 
-  <body>
-  
-<h1>{{ .Title }}</h1>
+    <title>{{ .Title }}</title>
 
-    {{ .Content }}
+    {{ partial "head_includes.html" . }}
+    {{ partial "analytics_js.html" . }}
+  </head>
+  <body class="appear-animate">
+
+    <!-- Page Loader -->        
+    <div class="page-loader">
+      <div class="loader">Loading...</div>
+    </div>
+    <!-- End Page Loader -->
+
+    <!-- Page Wrap -->
+    <div class="page" id="top">
+
+      <!-- Home Section -->
+      <section class="home-section bg-dark-alfa-70 parallax-2 fixed-height-small" data-background="kaffeebar_header.jpg" id="home">
+        <div class="js-height-parent container">
+
+          <!-- Hero Content -->
+          <div class="home-content">
+            <div class="home-text">
+              <h1 class="font-alt mb-50 mb-xs-30">
+                Kaffeebar
+              </h1>
+
+              <div class="local-scroll">
+                <a href="#about" class="btn btn-mod btn-border-w btn-medium btn-round hidden-xs">See More</a>
+                <span class="hidden-xs">&nbsp;</span>
+                <a href="http://vimeo.com/50201327" class="btn btn-mod btn-border-w btn-medium btn-round lightbox mfp-iframe">Play Reel</a>
+              </div>
+
+            </div>
+          </div>
+          <!-- End Hero Content -->
+
+        </div>
+      </section>
+      <!-- End Home Section -->
+
+
+      {{ partial "navigation.html" . }}
+
+
+      <!--  Section -->
+      
+
+
+      <!-- Divider -->
+      <hr class="mt-0 mb-0"/>
+      <!-- End Divider -->
+
+      {{ partial "footer.html" . }}
+
+    </div>
+    <!-- End Page Wrap -->
+
+    {{ partial "body_includes.html" . }}
   </body>
-</html>
-
+</html>     
