@@ -3,6 +3,13 @@
 @import "font-awesome";
 @import "yeni-zaman";
 
+//
+// Variables.
+//
+
+// Colors...
+$primary-color: #fae300; // Effinger Gelb
+
 // Font defaults.
 $font-family-sans: YeniZaman, arial, sans-serif;
 $font-family-sans-alt: YeniZaman, arial, sans-serif;
@@ -13,9 +20,17 @@ $font-family-serif: "Times New Roman", Times, serif;
 @import "rhythm/style-responsive";
 @import "rhythm/vertical-rhythm";
 
+
 //
 // Custom styles.
 //
+@import "custom/home";
+@import "custom/kaffeebar";
+@import "custom/coworking";
+@import "custom/community";
+@import "custom/blog";
+@import "custom/events";
+@import "custom/kontakt";
 
 .font-alt {
   font-weight: 300; 
@@ -23,14 +38,4 @@ $font-family-serif: "Times New Roman", Times, serif;
 
 .logo img {
   height: 36px; 
-}
-
-
-// Font Logo Tagline
-.font-tagline {
-  font-weight: 400;
-  text-transform: none;
-  color: black;
-  font-size: 14px;
-  letter-spacing: 0;
 }
