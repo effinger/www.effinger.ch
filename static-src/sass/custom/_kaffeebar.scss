@@ -1,0 +1,20 @@
+// Offers - Grid
+.offers {
+  .box1 {
+    border:1px solid grey;
+    width: 100%;
+    float:left;
+    margin:0 -1px -1px 0;
+    padding: 20px;
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: 400;
+    span {
+      border-left: 1px solid grey;
+      margin-left: 10px;
+      padding-left: 10px;
+      float: right;
+      text-transform: none;
+    }
+  }
+}
