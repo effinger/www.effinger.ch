@@ -145,11 +145,9 @@
         if ($(window).width() <= 1024) {
             $(".main-nav").addClass("mobile-on");
         }
-        else 
-            if ($(window).width() > 1024) {
-                $(".main-nav").removeClass("mobile-on");
-                desktop_nav.show();
-            }
+        else if ($(window).width() > 1024) {
+            $(".main-nav").removeClass("mobile-on");
+        }
     }
     
     function init_classic_menu(){
@@ -176,24 +174,24 @@
         });
         
         // Mobile menu toggle
-        
         mobile_nav.click(function(){
         
             if (desktop_nav.hasClass("js-opened")) {
-                desktop_nav.slideUp("slow", "easeOutExpo").removeClass("js-opened");
+                desktop_nav.slideUp(400, "easeOutExpo", function() {
+                  desktop_nav.removeClass("js-opened");
+                  desktop_nav.css('display', '');
+                });
                 $(this).removeClass("active");
             }
             else {
-                desktop_nav.slideDown("slow", "easeOutQuart").addClass("js-opened");
+                desktop_nav.slideDown(400, "easeOutQuart").addClass("js-opened");
                 $(this).addClass("active");
                 
                 // Fix for responsive menu
-                if ($(".main-nav").hasClass("not-top")){
+                if ($(".main-nav").hasClass("not-top")) {
                     $(window).scrollTo(".main-nav", "slow"); 
                 }
-                
             }
-            
         });
         
         desktop_nav.find("a:not(.mn-has-sub)").click(function(){
