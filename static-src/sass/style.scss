@@ -36,6 +36,29 @@ $font-family-serif: "Times New Roman", Times, serif;
   font-weight: 300; 
 }
 
+
+// Navigation
 .logo img {
   height: 36px; 
+}
+
+// Directly set navigation and header height here instead of in js (slow).
+.desktop-nav > ul > li > a,
+.mobile-nav {
+  height: 75px;
+  line-height: 75px;
+}
+
+.mobile-nav {
+  width: 75px; 
+}
+
+.home-section > .container {
+  height: 600px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .desktop-nav {
+    display: none;
+  }
 }
