@@ -1,6 +1,6 @@
 +++
 layout = "index"
-title = "Kaffeebar2"
+title = "Kaffeebar"
 +++
 
 ## asödlfajs

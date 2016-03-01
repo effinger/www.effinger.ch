@@ -42,6 +42,10 @@ $font-family-serif: "Times New Roman", Times, serif;
   height: 36px; 
 }
 
+.inner-nav ul {
+  font-weight: 300;
+}
+
 // Directly set navigation and header height here instead of in js (slow).
 .desktop-nav > ul > li > a,
 .mobile-nav {
