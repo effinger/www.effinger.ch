@@ -205,7 +205,7 @@
         var mnHasSub = $(".mn-has-sub");
         var mnThisLi;
         
-        $(".mobile-on .mn-has-sub").find(".fa:first").removeClass("fa-angle-right").addClass("fa-angle-down");
+        $(".mobile-on .mn-has-sub").find(".fa-angle-right:first").removeClass("fa-angle-right").addClass("fa-angle-down");
         
         mnHasSub.click(function(){
         
@@ -214,11 +214,11 @@
                 if (mnThisLi.hasClass("js-opened")) {
                     mnThisLi.find(".mn-sub:first").slideUp(function(){
                         mnThisLi.removeClass("js-opened");
-                        mnThisLi.find(".mn-has-sub").find(".fa:first").removeClass("fa-angle-up").addClass("fa-angle-down");
+                        mnThisLi.find(".mn-has-sub").find(".fa-angle-up:first").removeClass("fa-angle-up").addClass("fa-angle-down");
                     });
                 }
                 else {
-                    $(this).find(".fa:first").removeClass("fa-angle-down").addClass("fa-angle-up");
+                    $(this).find(".fa-angle-down:first").removeClass("fa-angle-down").addClass("fa-angle-up");
                     mnThisLi.addClass("js-opened");
                     mnThisLi.find(".mn-sub:first").slideDown();
                 }

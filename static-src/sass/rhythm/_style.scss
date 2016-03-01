@@ -1747,7 +1747,10 @@ a.logo:hover{
 
 /* Menu sub */
 
-.mobile-on .mn-has-sub > .fa{
+.mobile-on .mn-has-sub {
+  > .fa-angle-right,
+  > .fa-angle-down, 
+  > .fa-angle-up {
 	display: block;
 	width: 18px;
 	height: 18px;
@@ -1763,6 +1766,7 @@ a.logo:hover{
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
 	border-radius: 50%;
+  }
 }
 .mobile-on .js-opened > .mn-has-sub > .fa{
     border-color: rgba(255,255,255, .4);
