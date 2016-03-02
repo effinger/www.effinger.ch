@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="de">
+  {{ partial "head.html" . }}
+  <body class="">
+
+    <!-- Page Wrap -->
+    <div class="page" id="top">
+      
+      <nav class="main-nav stick-fixed">
+      {{ partial "navigation.html" . }}
+      </nav>
+
+      <!-- Header -->
+      <section class="small-section bg-gray-lighter first-section-mt">
+        <div class="relative container align-left">
+
+          <div class="row">
+
+            <div class="col-md-8">
+              <h1 class="hs-line-11 font-alt mb-20 mb-xs-0">Blog</h1>
+              <div class="hs-line-4 font-alt black">
+                We share our best ideas in our blog
+              </div>
+            </div>
+
+            <div class="col-md-4 mt-30">
+              <div class="mod-breadcrumbs font-alt align-right">
+                <a href="#">Home</a>&nbsp;/&nbsp;<a href="#">Blog</a>&nbsp;/&nbsp;<span>Classic</span>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </section>
+      <!-- End Header -->
+
+      <!-- Section -->
+      <section class="page-section">
+        <div class="container relative">
+          <p>Imagine blog content here!</p>
+        </div>
+      </section>  
+      
+      {{ partial "footer.html" . }}
+
+    </div>
+    <!-- End Page Wrap -->
+
+    {{ partial "body_includes.html" . }}
+
+  </body>
+</html>     
