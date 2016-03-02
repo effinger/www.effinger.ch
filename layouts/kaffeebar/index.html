@@ -1,20 +1,17 @@
 <!DOCTYPE html>
 <html lang="de">
-  <head>
-    {{ partial "meta.html" . }}
-
-    <title>{{ .Title }}</title>
-
-    {{ partial "head_includes.html" . }}
-    {{ partial "analytics_js.html" . }}
-  </head>
+  {{ partial "head.html" . }}
   <body class="">
 
     <!-- Page Wrap -->
     <div class="page" id="top">
+      
+      <nav class="main-nav dark transparent stick-fixed">
+      {{ partial "navigation.html" . }}
+      </nav>
 
-      <!-- Home Section -->
-      <section class="home-section bg-dark-alfa-70 parallax-2 fixed-height-small" data-background="kaffeebar_header.jpg" id="home">
+      <!-- Header -->
+      <section class="home-section bg-dark-alfa-70 parallax-2 fixed-height-small" data-background="kaffeebar_header.jpg">
         <div class="js-height-parent container">
 
           <!-- Hero Content -->
@@ -36,13 +33,9 @@
 
         </div>
       </section>
-      <!-- End Home Section -->
+      <!-- End Header -->
 
-
-      {{ partial "navigation.html" . }}
-
-
-      <!--  Section -->
+      <!-- Section -->
       <section class="page-section">
         <div class="container relative">
 
@@ -267,11 +260,6 @@
       </section>
       <!-- End Section -->
     
-     
-      <!-- Divider -->
-      <hr class="mt-0 mb-0"/>
-      <!-- End Divider -->
-
       {{ partial "footer.html" . }}
 
     </div>

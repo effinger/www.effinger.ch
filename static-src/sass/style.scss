@@ -46,6 +46,7 @@ $font-family-serif: "Times New Roman", Times, serif;
   font-weight: 300;
 }
 
+
 // Directly set navigation and header height here instead of in js (slow).
 .desktop-nav > ul > li > a,
 .mobile-nav {
@@ -57,12 +58,24 @@ $font-family-serif: "Times New Roman", Times, serif;
   width: 75px; 
 }
 
-.home-section > .container {
-  height: 600px;
+.first-section-mt {
+  margin-top: 75px; 
+}
+
+.main-nav.small-height {
+  .logo, 
+  .mobile-nav {
+    height: 55px !important; 
+  }
 }
 
 @media only screen and (max-width: 1024px) {
   .desktop-nav {
     display: none;
   }
+}
+
+// Set home section height in CSS to prevent flickering.
+.home-section > .container {
+  height: 600px;
 }
