@@ -1,3 +1,3 @@
 +++
-title = "Effinger"
+title = "Effinger — Kaffeebar & Coworking Space"
 +++

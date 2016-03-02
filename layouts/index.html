@@ -17,6 +17,10 @@ See: https://github.com/spf13/hugo/issues/330
 
     <!-- Page Wrap -->
     <div class="page" id="top">
+      
+      <nav class="main-nav dark transparent stick-fixed">
+      {{ partial "navigation.html" . }}
+      </nav>
 
       <!-- Home Section -->
       <section class="home-section bg-dark-alfa-70 parallax-2 fixed-height-small" data-background="images/full-width-images/section-bg-15.jpg" id="home">
@@ -45,7 +49,6 @@ See: https://github.com/spf13/hugo/issues/330
       <!-- End Home Section -->
 
 
-      {{ partial "navigation.html" . }}
 
 
       <!-- About Section -->
@@ -440,11 +443,6 @@ See: https://github.com/spf13/hugo/issues/330
         </div>
       </section>
       <!-- End Process Section -->
-
-
-      <!-- Divider -->
-      <hr class="mt-0 mb-0"/>
-      <!-- End Divider -->
 
       {{ partial "footer.html" . }}
 

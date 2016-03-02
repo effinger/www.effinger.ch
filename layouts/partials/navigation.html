@@ -1,65 +1,44 @@
-<nav class="main-nav dark transparent stick-fixed">
-  <div class="full-wrapper relative clearfix">
-    <!-- Logo -->
-    <div class="nav-logo-wrap local-scroll">
-      <a href="/" class="logo">
-        <img src="/images/logo.png" alt="Logo" /> 
-      </a>
-    </div>
-    <div class="mobile-nav">
-      <i class="fa fa-bars"></i>
-    </div>
+<div class="full-wrapper relative clearfix">
+  <!-- Logo -->
+  <div class="nav-logo-wrap local-scroll">
+    <a href="/" class="logo">
+      <img src="/images/logo.png" alt="Effinger — Kaffeebar & Coworking Space" /> 
+    </a>
+  </div>
+  <div class="mobile-nav">
+    <i class="fa fa-bars"></i>
+  </div>
 
-    <!-- Main Menu -->
-    <div class="inner-nav desktop-nav">
-      <ul class="clearlist">
-        <li>
-          <a href="/kaffeebar/"><i class="fa fa-coffee"></i> Kaffeebar</a>
-        </li>
-
-        <li>
-          <a href="/coworking/"><i class="fa fa-building"></i> Coworking</a> 
-        </li>
-        
+  <!-- Main Menu -->
+  <div class="inner-nav desktop-nav">
+    <ul class="clearlist">
+      {{ $currentNode := . }}
+      {{ range .Site.Menus.main }}
+        {{ if .HasChildren }}
         <!-- Item With Sub -->
         <li>
-          <a href="/community/" class="mn-has-sub"><i class="fa fa-users"></i> Community <i class="fa fa-angle-down"></i></a>
+          <a href="{{ .URL }}" class="mn-has-sub{{if $currentNode.HasMenuCurrent "main" . }} active{{end}}">{{ .Pre }} {{ .Name }} <i class="fa fa-angle-down"></i></a>
 
           <!-- Sub -->
           <ul class="mn-sub to-left">
-
+            {{ range .Children }}
             <li>
-              <a href="/community/ueber/">Über uns</a>
+              <a{{if $currentNode.IsMenuCurrent "main" . }} class="active"{{end}} href="{{.URL}}"> {{ .Name }} </a> 
             </li>
-            <li>
-              <a href="/community/geschichte/">Geschichte</a>
-            </li>
-            <li>
-              <a href="/community/grundsaetze/">Grundsätze</a>
-            </li>
-
+            {{ end }}
           </ul>
           <!-- End Sub -->
 
         </li>
         <!-- End Item With Sub -->
-
-        <!-- Divider -->
-        <li><a>&nbsp;</a></li>
-        <!-- End Divider -->
-
+        {{ else }}
         <li>
-          <a href="/blog/">Blog</a> 
+          <a{{if $currentNode.IsMenuCurrent "main" . }} class="active"{{end}} href="{{ .URL }}">{{ .Pre }} {{ .Name }}</a>
         </li>
-        <li>
-          <a href="/events/">Events</a>
-        </li>
-        <li>
-          <a href="/kontakt/">Kontakt</a>
-        </li>
-      </ul>
-    </div>
-    <!-- End Main Menu -->
-    
+        {{ end }}
+      {{ end }}
+    </ul>
   </div>
-</nav>
+  <!-- End Main Menu -->
+
+</div>
