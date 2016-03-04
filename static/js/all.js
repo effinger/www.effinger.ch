@@ -35,7 +35,7 @@
     init_team();
     initPageSliders();
     //initWorkFilter();
-    //init_map();
+    init_map();
     init_wow();
     //init_masonry();
   });
@@ -788,7 +788,14 @@ function init_map(){
         marker: {
           address: gmMarkerAddress,
           options: {
-            icon: "images/map-marker.png"
+            icon: "/images/map-marker_effinger.svg"
+            /*
+            icon: new google.maps.MarkerImage('/images/map-marker_effinger.svg',   //icon url
+                  new google.maps.Size(60, 60),    //sets the icon size
+                  new google.maps.Point(0, 0),    //sets the origin point of the icon
+                  new google.maps.Point(30, 53))    //sets the anchor point for the icon
+            */
+            
           }
         },
         map: {
@@ -802,7 +809,7 @@ function init_map(){
               position: google.maps.ControlPosition.LEFT_TOP
             },
             mapTypeControl: false,
-            scaleControl: false,
+            scaleControl: true,
             scrollwheel: false,
             streetViewControl: false,
             draggable: true,
