@@ -46,6 +46,12 @@ $font-family-serif: "Times New Roman", Times, serif;
   font-weight: 300;
 }
 
+@media only screen and (max-width: 768px) {
+  .full-wrapper {
+    margin: 0 15px;
+  }
+}
+
 
 // Directly set navigation and header height here instead of in js (slow).
 .desktop-nav > ul > li > a,
