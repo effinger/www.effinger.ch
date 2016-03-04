@@ -19,6 +19,16 @@
 * Bilder Salome/Domenica und Angestellte
 
 
+#### Hinweise von Domenica
+
+* Öffnungszeiten kompakter: Mo-Fr und Sa.
+* Reservationen: "Reservation unter: Tel. 031..." --> Gleich bei den Öffnungszeiten
+* Map unten bei den Kontaktangaben
+* Menu wird sehr lang werden. Evtl. ausklappbar, evtl. auf eigener Seite.
+* Kein Formular nötig
+
+
+
 ### Coworking (Hauptnavigation)
 
 * Was es ist? Infrastruktur (evtl. mit Fotos)
