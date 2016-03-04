@@ -17,7 +17,7 @@
         {{ if .HasChildren }}
         <!-- Item With Sub -->
         <li>
-          <a href="{{ .URL }}" class="mn-has-sub{{if $currentNode.HasMenuCurrent "main" . }} active{{end}}">{{ .Pre }} {{ .Name }} <i class="fa fa-angle-down"></i></a>
+          <a class="mn-has-sub{{if $currentNode.HasMenuCurrent "main" . }} active{{end}}">{{ .Pre }} {{ .Name }} <i class="fa fa-angle-down"></i></a>
 
           <!-- Sub -->
           <ul class="mn-sub to-left">

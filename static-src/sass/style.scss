@@ -52,6 +52,10 @@ $font-family-serif: "Times New Roman", Times, serif;
   }
 }
 
+.mn-has-sub {
+  cursor: pointer;
+}
+
 
 // Directly set navigation and header height here instead of in js (slow).
 .desktop-nav > ul > li > a,
