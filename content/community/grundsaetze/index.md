@@ -1,5 +1,5 @@
 +++
-layout = "index"
+layout = "grundsaetze/single"
 title = "Grundsätze"
 
 [menu.main]

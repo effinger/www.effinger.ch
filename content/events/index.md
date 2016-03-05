@@ -1,7 +1,6 @@
 +++
-layout = "index"
 title = "Events"
 
 [menu.main]
-  weight = 5
+  weight = 4
 +++

@@ -1,5 +1,5 @@
 +++
-layout = "index"
+layout = "geschichte/single"
 title = "Geschichte"
 
 [menu.main]

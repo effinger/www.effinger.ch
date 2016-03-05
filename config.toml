@@ -2,9 +2,22 @@ baseurl = "http://www.effinger.ch"
 languageCode = "de"
 title = "Effinger — Kaffeebar & Coworking Space"
 
+paginatePath = "seite"
+
 [params]
   author = "Coworking Community Bern"
   analyticsId = "UA-56906982-1"
 
 [taxonomies]
   tag = "tags"
+  
+[[menu.main]]
+  name = "Community"
+  pre = "<i class='fa fa-users'></i>"
+  weight = 3
+  url = "/community/ueber/"
+  
+[[menu.main]]
+  name = "Blog"
+  weight = 5
+  url = "/blog/"

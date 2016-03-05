@@ -1,5 +1,5 @@
 +++
-layout = "index"
+layout = "ueber/single"
 title = "Über uns"
 
 [menu.main]
