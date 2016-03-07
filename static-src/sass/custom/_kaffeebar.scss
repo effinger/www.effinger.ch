@@ -1,20 +1,47 @@
-// Offers - Grid
+// Boxed Grid for Offers
+//*, *:before, *:after {box-sizing:  border-box !important;}
 .offers {
-  .box1 {
-    border:1px solid grey;
-    width: 100%;
-    float:left;
-    margin:0 -1px -1px 0;
-    padding: 20px;
-    text-align: left;
-    text-transform: uppercase;
-    font-weight: 400;
-    span {
-      border-left: 1px solid grey;
-      margin-left: 10px;
-      padding-left: 10px;
-      float: right;
-      text-transform: none;
+  .row {
+    column-count: 2;
+    column-gap: 60px;
+    column-fill: auto;
+    .box-item {
+      display: inline-block;
+      column-break-inside: avoid;
+      padding: 15px;
+      padding-bottom: 5px;
+      width: 100%;
+      
+      
+      
+      table {
+        width: 100%;
+        tr>td {
+          vertical-align: top;
+          padding-bottom: 20px;
+          font-size: 16px;
+          &:first-child{
+            width:75%;
+          }
+          &:last-child{
+            width:25%; 
+            text-align: right;
+          }
+          
+          span {
+            font-weight: 300;
+            display: block;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .offers {
+    .row {
+      column-count:1;
     }
   }
 }
