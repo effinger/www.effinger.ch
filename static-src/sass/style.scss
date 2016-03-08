@@ -33,13 +33,13 @@ $font-family-serif: "Times New Roman", Times, serif;
 @import "custom/kontakt";
 
 .font-alt {
-  font-weight: 300; 
+  font-weight: 300;
 }
 
 
 // Navigation
 .logo img {
-  height: 36px; 
+  height: 36px;
 }
 
 .inner-nav ul {
@@ -65,17 +65,17 @@ $font-family-serif: "Times New Roman", Times, serif;
 }
 
 .mobile-nav {
-  width: 75px; 
+  width: 75px;
 }
 
 .first-section-mt {
-  margin-top: 75px; 
+  margin-top: 75px;
 }
 
 .main-nav.small-height {
-  .logo, 
+  .logo,
   .mobile-nav {
-    height: 55px !important; 
+    height: 55px !important;
   }
 }
 
@@ -84,6 +84,7 @@ $font-family-serif: "Times New Roman", Times, serif;
     display: none;
   }
 }
+
 
 // Set home section height in CSS to prevent flickering.
 .home-section > .container {

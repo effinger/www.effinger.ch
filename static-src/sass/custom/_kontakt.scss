@@ -1,0 +1,18 @@
+.address {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  .contact-item {
+    .ci-title,
+    .ci-text {
+      color: white;
+    }
+    .ci-icon {
+      color:#111;
+      &:before {
+        background-color: white;
+      }
+    }
+  }
+}
