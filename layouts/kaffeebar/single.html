@@ -23,7 +23,7 @@
               </h1>
 
             <div class="local-scroll">
-              <a href="#offers" class="btn btn-mod btn-border-w btn-medium btn-round hidden-xs">Angebote</a>
+              <a href="#angebote" class="btn btn-mod btn-border-w btn-medium btn-round hidden-xs">Angebote</a>
               <span class="hidden-xs">&nbsp;</span>
               <a href="#contact" class="btn btn-mod btn-border-w btn-medium btn-round hidden-xs">Reservation</a>
             </div>
@@ -306,7 +306,7 @@
 
               <!-- Work Image -->
               <div class="work-full-media mt-0">
-                <img src="kaffeebar_01.jpg2" alt="" />
+                <img src="kaffeebar_01.jpg" alt="" />
               </div>
               <!-- End Work Image -->
 
@@ -336,188 +336,42 @@
     <!-- End Fullwidth Slider -->
 
     <!-- Section -->
-    <section id="offers" class="page-section">
+    <section id="angebote" class="page-section">
       <div class="container relative">
 
-        <h2 class="section-title font-alt mb-70 mb-sm-40">Angebote</h2>
+        <h2 class="section-title font-alt mb-70 mb-sm-40">{{ .Params.offers_title }}</h2>
 
         <!-- Accordion -->
         <dl class="toggle">
-          <dt><a href="">Essen</a></dt>
+          
+          {{ range .Params.offers }}
+          <dt><a href="">{{ .title }}</a></dt>
           <dd>
             <div class="offers">
               <div class="row">
+                {{ range .section }}
                 <div class="box-item">
-                  <h3 class="font-alt">Ein Stück vom Glück</h3>
+                  <h3 class="font-alt">{{ .title }}{{ if .icon }}<span class="pull-right">{{ .icon | safeHTML }}</span>{{ end }}</h3>
+                  {{ range .element }}
                   <table>
                     <tr>
-                      <td>Fleischquiche mit Salat
-                        <span>- Saucisson Vaudois, Sauerkraut, Apfel </span>
-                        <span>- Rindfleisch, Pastinake, Schnittlauch</span></td>
-                      <td>19.50</td>
+                      <th>{{ .text }}</th>
+                      <th>{{ .price }}</th>
                     </tr>
-                    <tr>
-                      <td>Vegiquiche mit Salat
-                        <span>- Spinat, Feta, rote Zwiebeln </span>
-                        <span>- Ofengemüse, Süsskartoffel, Rosmarin</span> </td>
-                      <td>18.00</td>
-                    </tr>
+                      {{ range .subelement }}
+                      <tr>
+                        <td>{{ .text }}</td>
+                        <td>{{ .price }}</td>
+                      </tr>
+                      {{ end }}
                   </table>
+                  {{ end }}
                 </div>
-                <div class="box-item">
-                  <h3 class="font-alt">Grünzeug</h3>
-                  <table>
-                    <tr>
-                      <td>Gemischter grüner Blattsalat
-                        <span>- mit Kernen, Cranberries, Brot</span></td>
-                      <td>10.50</td>
-                    </tr>
-                    <tr>
-                      <td>Zusätze:
-                        <span>- Ziegenkäse, Honig, Nüsse </span>
-                        <span>- Rohschinken, Parmesan</span>
-                      </td>
-                      <td>
-                        <br>+4.00
-                        <br>+6.00</td>
-                    </tr>
-                  </table>
-
-                </div>
+                {{end }}
               </div>
             </div>
           </dd>
-          <dt> <a href="">Trinken</a></dt>
-          <dd>
-            <div class="offers">
-              <div class="row">
-                <div class="box-item">
-                  <table>
-                    <tr>
-                      <td>
-                        <h3 class="font-alt">Kaffee</h3>
-                      </td>
-                      <td><h3 class="font-alt"><i class="fa fa-coffee"></i></h3></td>
-                    </tr>
-                    <tr>
-                      <td>Espresso/Ristretto</td>
-                      <td>4.00</td>
-                    </tr>
-                    <tr>
-                      <td>Doppio</td>
-                      <td>5.00</td>
-                    </tr>
-                    <tr>
-                      <td>Kaffee</td>
-                      <td>4.20</td>
-                    </tr>
-                    <tr>
-                      <td>Schale</td>
-                      <td>4.80/5.80</td>
-                    </tr>
-                    <tr>
-                      <td>Cappuccino</td>
-                      <td>4.80/5.80</td>
-                    </tr>
-                    <tr>
-                      <td>Latte Macchiato</td>
-                      <td>5.20</td>
-                    </tr>
-                    <tr>
-                      <td>Trinkschokolade<span>Nature, chai</span></td>
-                      <td>5.00</td>
-                    </tr>
-                  </table>
-                </div>
-
-                <div class="box-item">
-                  <table>
-                    <tr>
-                      <td>
-                        <h3 class="font-alt">Kalt</h3>
-                      </td>
-                      <td><h3 class="font-alt"><i class="fa fa-glass"></i></h3></td>
-                    </tr>
-                    <tr>
-                      <td>Goba Mineral still/laut</td>
-                      <td>2.50/3.50</td>
-                    </tr>
-                    <tr>
-                      <td>Cola / Zero</td>
-                      <td>4.50</td>
-                    </tr>
-                    <tr>
-                      <td>Goba Mineral still/laut</td>
-                      <td>2.50/3.50</td>
-                    </tr>
-                    <tr>
-                      <td>Cola / Zero</td>
-                      <td>4.50</td>
-                    </tr>
-                    <tr>
-                      <td>Goba Mineral still/laut</td>
-                      <td>2.50/3.50</td>
-                    </tr>
-                    <tr>
-                      <td>Cola / Zero</td>
-                      <td>4.50</td>
-                    </tr>
-                    <tr>
-                      <td>Goba Mineral still/laut</td>
-                      <td>2.50/3.50</td>
-                    </tr>
-                    <tr>
-                      <td>Cola / Zero</td>
-                      <td>4.50</td>
-                    </tr>
-                    <tr>
-                      <td>Goba Mineral still/laut</td>
-                      <td>2.50/3.50</td>
-                    </tr>
-                    <tr>
-                      <td>Cola / Zero</td>
-                      <td>4.50</td>
-                    </tr>
-                    <tr>
-                      <td>Goba Mineral still/laut</td>
-                      <td>2.50/3.50</td>
-                    </tr>
-                    <tr>
-                      <td>Cola / Zero</td>
-                      <td>4.50</td>
-                    </tr>
-                    <tr>
-                      <td>Goba Mineral still/laut</td>
-                      <td>2.50/3.50</td>
-                    </tr>
-                    <tr>
-                      <td>Cola / Zero</td>
-                      <td>4.50</td>
-                    </tr>
-                  </table>
-                </div>
-                <div class="box-item">
-                  <table>
-                    <tr>
-                      <td>
-                        <h3 class="font-alt">Tee</h3>
-                      </td>
-                      <td><h3 class="font-alt"><i class="fa fa-coffee"></i></h3></td>
-                    </tr>
-                    <tr>
-                      <td>Assam Finest Tippey <span>(Indien)</span></td>
-                      <td>4.80</td>
-                    </tr>
-                    <tr>
-                      <td>Special Earl Grey <span>(Indien, Java)</span></td>
-                      <td>4.80</td>
-                    </tr>
-                  </table>
-
-                </div>
-              </div>
-            </div>
-          </dd>
+          {{ end }}
         </dl>
         <!-- End Accordion -->
 

@@ -5,32 +5,39 @@
     column-count: 2;
     column-gap: 60px;
     column-fill: auto;
+    
     .box-item {
       display: inline-block;
-      column-break-inside: avoid;
+      break-inside: avoid;
       padding: 15px;
       padding-bottom: 5px;
       width: 100%;
       
-      
-      
       table {
         width: 100%;
-        tr>td {
-          vertical-align: top;
-          padding-bottom: 20px;
-          font-size: 16px;
-          &:first-child{
-            width:75%;
-          }
-          &:last-child{
-            width:25%; 
-            text-align: right;
+        margin-bottom: 20px;
+        
+        tr {
+          > td,
+          > th {
+            vertical-align: top;
+            font-size: 16px;
+
+            &:first-child {
+              padding-right: 30px; 
+            }
+
+            &:last-child {
+              text-align: right;
+            }
           }
           
-          span {
+          > th {
+            font-weight: 400;
+          }
+          
+          > td {
             font-weight: 300;
-            display: block;
             font-size: 14px;
           }
         }
@@ -38,6 +45,7 @@
     }
   }
 }
+
 @media only screen and (max-width: 768px) {
   .offers {
     .row {
