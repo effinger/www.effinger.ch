@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="de">
+{{ partial "head.html" . }}
+
+<body class="">
+
+  <!-- Page Wrap -->
+  <div class="page" id="top">
+
+    <nav class="main-nav transparent stick-fixed">
+      {{ partial "navigation.html" . }}
+    </nav>
+
+    <!-- Header -->
+    <section class="small-section bg-gray-lighter first-section-mt">
+      <div class="relative container align-left">
+
+        <div class="row">
+
+          <div class="col-md-8">
+            <h1 class="hs-line-11 font-alt mb-20 mb-xs-0">Events</h1>
+            <div class="hs-line-4 font-alt black">
+              Lass es dir nicht entgehen.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- End Header -->
+
+    <!-- Section Event list -->
+    <section class="page-section">
+      <div class="container relative">
+        <h2 class="section-title font-alt mb-70 mb-sm-40">Eventliste</h2>
+
+        <div class="eventlist">
+          <div class="event-item clearfix">
+            <div class="cat kaffeebar"></div>
+            <div class="date bg-gray">
+              <div class="day">19</div>
+              <div class="month font-alt">Mär</div>
+            </div>
+            <div class="text">
+              <h4 class="uppercase">Eröffnungsfeier Effinger</h4>
+              <p><i class="fa fa-clock-o"></i> 8:00 bis 00:30 Uhr / <i class="fa fa-map-marker"></i> Effigner</p>
+            </div>
+          </div>
+          <div class="event-item clearfix">
+            <div class="cat coworking"></div>
+            <div class="date bg-gray">
+              <div class="day">23</div>
+              <div class="month font-alt">Mär</div>
+            </div>
+            <div class="text">
+              <h4 class="uppercase">Arbeitseinsatz / Umzug</h4>
+              <p><i class="fa fa-clock-o"></i> 8:00 bis 17:00 Uhr / <i class="fa fa-map-marker"></i> Effigner</p>
+            </div>
+          </div>
+          <div class="event-item clearfix">
+            <div class="cat community"></div>
+            <div class="date bg-gray">
+              <div class="day">1</div>
+              <div class="month font-alt">Sep</div>
+            </div>
+            <div class="text">
+              <h4 class="uppercase">Herbsteinläutparty</h4>
+              <p><i class="fa fa-clock-o"></i> 8:00 bis 17:00 Uhr / <i class="fa fa-map-marker"></i> Effigner</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Section Event list -->
+
+
+
+    {{ partial "footer.html" . }}
+  </div>
+  <!-- End Page Wrap -->
+
+  {{ partial "body_includes.html" . }}
+
+</body>
+
+</html>

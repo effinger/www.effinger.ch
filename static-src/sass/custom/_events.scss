@@ -1,0 +1,48 @@
+.eventlist {
+  .event-item {
+    position: relative;
+    border: 1px solid grey;
+    margin-bottom: 20px;
+
+    .date {
+      padding: 20px 30px;
+      text-align: center;
+      float: left;
+      width: 110px;
+      .day {
+        font-size: 50px;
+        line-height: 45px;
+      }
+      .month {
+
+
+      }
+    }
+    .text {
+      padding: 20px 20px 20px 130px;
+      h4 {
+        margin: 0;
+      }
+      p {
+        margin: 0;
+      }
+    }
+    .cat {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 10px;
+      height: 100%;
+
+      &.community {
+        background-color: pink;
+      }
+      &.kaffeebar {
+        background-color: plum;
+      }
+      &.coworking {
+        background-color: powderblue;
+      }
+    }
+  }
+}
