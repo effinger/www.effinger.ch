@@ -1,47 +1,145 @@
-.eventlist {
-  .event-item {
-    position: relative;
-    border: 1px solid grey;
-    margin-bottom: 20px;
-
+.event {
+  .eventlist {
+    .event-item {
+      overflow: hidden;
+      position: relative;
+      border: 1px solid grey;
+      margin-bottom: 20px;
+      .date {
+        transition: transform 0.5s;
+        padding: 20px 30px;
+        text-align: center;
+        float: left;
+        width: 110px;
+        .day {
+          font-size: 50px;
+          line-height: 45px;
+        }
+        .month {}
+      }
+      .text {
+        transition: transform 0.5s;
+        padding: 20px 20px 20px 130px;
+        h4 {
+          margin: 0;
+        }
+        p {
+          margin: 0;
+        }
+      }
+      .cat {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20px;
+        height: 100%;
+        transition: transform 0.5s;
+        transform: translateX(-15px);
+        z-index: 5;
+        .community,
+        .kaffeebar,
+        .coworking {
+          height: 100%;
+          width: 100%;
+        }
+        .community {
+          background-color: pink;
+        }
+        .kaffeebar {
+          background-color: plum;
+        }
+        .coworking {
+          background-color: powderblue;
+        }
+        .half {
+          height: 50%;
+          &.last-child {
+            top: 50%;
+          }
+        }
+        .third {
+          height: 33%;
+          &:first-child {
+            height: 34%;
+          }
+          &.second-child {
+            top: 33%;
+          }
+          &.last-child {
+            top: 66%;
+          }
+        }
+      }
+      &:hover {
+        .cat {
+          transform: translateX(0);
+        }
+        .date,
+        .text {
+          transform: translateX(15px);
+        }
+      }
+    }
+    a {
+      text-decoration: none;
+    }
+  }
+  .eventsingle {
     .date {
+      max-width: 250px;
+      border: 1px solid grey;
       padding: 20px 30px;
+      margin-left: auto;
+      margin-right: auto;
       text-align: center;
-      float: left;
-      width: 110px;
+      .weekday {
+        font-weight: 300;
+      }
       .day {
-        font-size: 50px;
-        line-height: 45px;
-      }
-      .month {
-
-
+        font-size: 70px;
+        line-height: 62px;
       }
     }
-    .text {
-      padding: 20px 20px 20px 130px;
-      h4 {
-        margin: 0;
-      }
+    .event-detail {
       p {
-        margin: 0;
+        padding-left: 30px;
+        position: relative;
+        line-height: 1;
+        margin: 10px 0;
+
+        i {
+          position: absolute;
+          left:5px;
+        }
       }
     }
-    .cat {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 10px;
-      height: 100%;
-
-      &.community {
-        background-color: pink;
-      }
-      &.kaffeebar {
-        background-color: plum;
-      }
-      &.coworking {
-        background-color: powderblue;
+    .list-unstyled {
+      .attendee {
+        margin-bottom: 15px;
+        font-weight: 300;
+        position: relative;
+        width: 100%;
+        margin-top: 10px;
+        padding: 10px;
+        background: #f4f4f4;
+        // Not sure if Triangle is necessary?
+        &:after {
+          content: '';
+          position: absolute;
+          width: 0;
+          height: 0;
+          border-left: 8px solid transparent;
+          border-right: 8px solid transparent;
+          border-bottom: 10px solid #f8f8f8;
+          display: block;
+          z-index: 1;
+          top: -10px;
+          left: 20px;
+        }
+        .bubble {
+          color: grey;
+          padding-left: 10px;
+        }
       }
     }
   }
