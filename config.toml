@@ -10,12 +10,18 @@ paginatePath = "seite"
 
 [taxonomies]
   tag = "tags"
+  category = "categories"
   
 [[menu.main]]
   name = "Community"
   pre = "<i class='fa fa-users'></i>"
   weight = 3
   url = "/community/ueber/"
+  
+[[menu.main]]
+  name = "Events"
+  weight = 4
+  url = "/events/"
   
 [[menu.main]]
   name = "Blog"

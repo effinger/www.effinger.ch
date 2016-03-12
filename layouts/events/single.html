@@ -29,64 +29,120 @@
     </section>
     <!-- End Header -->
 
-    <!-- Section Event list -->
+    {{ $start_year := .Params.startdate.Year }}
+    {{ $start_month := index $.Site.Data.de.months (sub .Params.startdate.Month 1) }}
+    {{ $start_shortmonth := slicestr $start_month 0 3 }}
+    {{ $start_day := .Params.startdate.Day }}
+    {{ $start_weekday := index $.Site.Data.de.weekdays .Params.startdate.Weekday }}
+    {{ $start_time := printf "%02d:%02d" .Params.startdate.Hour .Params.startdate.Minute }}
+    {{ $end_time := printf "%02d:%02d" .Params.enddate.Hour .Params.enddate.Minute }}
+    
+    <!-- Section Event Single View -->
     <section class="page-section event">
-      <div class="container relative">
-        <h2 class="section-title font-alt mb-70 mb-sm-40">Eventliste</h2>
-
-        <div class="eventlist">
-          <a href="singleview">
-          <div class="event-item clearfix hover">
-            <div class="cat">
-              <div class="third community"></div>
-              <div class="third kaffeebar"></div>
-              <div class="third coworking"></div>
-            </div>
-            <div class="date bg-gray">
-              <div class="day">19</div>
-              <div class="month font-alt">Mär</div>
-            </div>
-            <div class="text">
-              <h4 class="uppercase">Eröffnungsfeier Effinger</h4>
-              <p><i class="fa fa-clock-o"></i> 8:00 bis 00:30 Uhr • <i class="fa fa-map-marker"></i> Effigner •
-              <i class="fa fa-tags"></i> Kaffeebar, Coworking, Community</p>
-            </div>
-          </div>
-          <a href="singleview">
-          <div class="event-item clearfix">
-            <div class="cat">
-              <div class="coworking"></div>
-            </div>
-            <div class="date bg-gray">
-              <div class="day">23</div>
-              <div class="month font-alt">Mär</div>
-            </div>
-            <div class="text">
-              <h4 class="uppercase">Arbeitseinsatz / Umzug</h4>
-              <p><i class="fa fa-clock-o"></i> 8:00 bis 00:30 Uhr • <i class="fa fa-map-marker"></i> Effigner •
-              <i class="fa fa-tag"></i> Coworking</p>
+      <div class="container relative eventsingle">
+        <h2 class="font-alt align-center mb-80">{{ .Title }}</h2>
+        <div class="row">
+          <div class="col-md-3">
+            <div class="row mb-md-30">
+              <div class="col-md-12 col-sm-4 mb-20 mb-md-0">
+                <div class="date">
+                  <div class="weekday uppercase">{{ $start_weekday }}</div>
+                  <div class="day">{{ $start_day }}</div>
+                  <div class="monthyear uppercase">{{ $start_shortmonth }} {{ $start_year }}</div>
+                </div>
+              </div>
+              <div class="col-md-12 col-sm-8 mt-xs-20">
+                <div class="event-detail text">
+                  <p><small><i class="fa fa-calendar-o"></i> {{ $start_weekday }}, {{ $start_day }}. {{ $start_month }} {{ $start_year }}</small></p>
+                  <p><small><i class="fa fa-clock-o"></i> {{ $start_time }} bis {{ $end_time }} Uhr</small></p>
+                  <p><small><i class="fa fa-map-marker"></i> <a href="{{ .Params.address_link }}" target="_blank" title="Open in Google Maps">{{ .Params.location }}</a></small></p>
+                  <p><small><i class="fa fa-tags"></i> 
+                    {{ delimit .Params.categories ", " }}
+                    </small></p>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="event-item clearfix">
-            <div class="cat">
-              <div class="half kaffeebar"></div>
-              <div class="half coworking"></div>
-            </div>
-            <div class="date bg-gray">
-              <div class="day">1</div>
-              <div class="month font-alt">Sep</div>
-            </div>
-            <div class="text">
-              <h4 class="uppercase">Herbsteinläutparty</h4>
-              <p><i class="fa fa-clock-o"></i> 8:00 bis 00:30 Uhr • <i class="fa fa-map-marker"></i> Effigner •
-              <i class="fa fa-tag"></i> Community</p>
+          <div class="col-md-9">
+            <div class="section-text">
+              {{ .Content }}
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- End Section Event list -->
+    <!-- End Section Event Single View -->
+    <!-- Google Map -->
+    <div class="google-map">
+      <div data-address="{{ .Params.address }}" id="map-canvas"></div>
+    </div>
+    <!-- End Google Map -->
 
+    <!-- Section Event Registration -->
+    <section class="page-section event">
+      <div class="container eventsingle">
+        <div class="row">
+          <div class="col-md-6">
+            <p class="uppercase">Anmeldung</p>
+            <!-- Form -->
+            <form method="post" action="#" id="form" role="form" class="form">
+              <div class="row">
+                <div class="col-sm-6 mb-20 mb-md-10">
+                  <!-- Name -->
+                  <input type="text" name="name" id="name" class="input-md form-control" placeholder="Name" maxlength="100">
+                </div>
+
+                <div class="col-sm-6 mb-20 mb-md-10">
+                  <!-- Email -->
+                  <input type="email" name="email" id="email" class="input-md form-control" placeholder="Email" maxlength="100">
+                </div>
+
+              </div>
+
+              <div class="mb-20 mb-md-10">
+                <textarea name="text" id="text" class="input-md form-control" rows="5" placeholder="Bemerkung" maxlength="400"></textarea>
+              </div>
+
+              <div class="mb-20 mb-md-10">
+                <input type="submit" class="btn btn-mod btn-gray btn-round" value="Anmelden">
+              </div>
+
+            </form>
+            <!-- End Form -->
+          </div>
+          <div class="col-md-6 mt-md-60">
+            <p class="uppercase">11 Teilnehmende</p>
+            <ul class="list-unstyled">
+              <li class="attendee"><span>Marco Jakob</span></li>
+              <li class="attendee"><span>Reto Waser</span>
+                <div class="bubble small"><i class="fa fa-lg fa-comments-o"></i> ev. mit Fahrzeug</div>
+              </li>
+              <li class="attendee"><span>Timon Andeer</span></li>
+              <li class="attendee"><span>Timon Marmet</span></li>
+              <li class="attendee"><span>Christoph Höschele</span>
+                <div class="bubble small"><i class="fa fa-lg fa-comments-o"></i> Gerne übernehme ich dabei ein Part und bis 11 Uhr am Start ;)</div>
+              </li>
+              <li class="attendee"><span>Urs</span>
+                <div class="bubble small"><i class="fa fa-lg fa-comments-o"></i> Nur am Morgen.</div>
+              </li>
+              <li class="attendee"><span>Claudia, Oliver und Fabian Schären</span></li>
+              <li class="attendee"><span>Matthias Tobler</span>
+                <div class="bubble small"><i class="fa fa-lg fa-comments-o"></i> Sicher am Morgen. Am späteren Nachmittag dann mit Yoan zusammen. </div>
+              </li>
+              <li class="attendee"><span>Reto Stalder</span>
+                <div class="bubble small"><i class="fa fa-lg fa-comments-o"></i> Könnte am Nachmittag ca 3 Stunden</div>
+              </li>
+              <li class="attendee"><span>Jonathan Hess</span></li>
+              <li class="attendee"><span>Werner Schuller</span>
+                <div class="bubble small"><i class="fa fa-lg fa-comments-o"></i> Am Morgen</div>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Section Event Registration -->
 
 
     {{ partial "footer.html" . }}
