@@ -17,22 +17,12 @@ Nun mal der Reihe nach...
 
 ## Crowdfunding
 
-Am 1. Januar sind wir mit einer [Crowdfunding-Kampagne](https://wemakeit.com/projects/effinger) ins Jahr gestartet. Ich war sehr nervös. Unser Projekt cool zu finden ist das eine, aber ein Login auf [wemakit](https://wemakeit.com/) zu erstellen und uns Geld zu überweisen, ist eine andere Geschichte. Dass dann so ein Feuerwerk losging und wir Unterstützung von allen Seiten bekommen haben, hat uns überrascht und mega ermutigt. Wir sind soooo dankbar! Merci viu mau!
-
-So eine Kampagne durchzuführen bedeutet auch einen sehr grossen Aufwand. Man schätzt ca. eine Vollzeitstelle während einem ganzen Monat (Videos drehen, Grafiken gestalten, Texte schreiben, kommunizieren auf allen Kanälen, Fragen beantworten, koordinieren, Website betreuen, Freunden erzählen, Goodies aushecken, produzieren und verschicken, usw.). Was mich echt begeistert, ist, dass sich so viele Personen reingehängt und mit Leidenschaft angepackt haben. Ohne eine solch geniale Community wäre so etwas nicht machbar. Danke, danke, danke!
-
-Wir haben versucht, die Erfolge gebührend zu feiern: Mit regelmässigen Freudentänzchen, mit Bier- und Weinmuster der Kaffeebar :-) und mit Feuerwerk. Naja, das mit dem Feuerwerk üben wir noch... guckst du:
-
-<p>
-  <div class="embed-responsive embed-responsive-16by9">
-    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/YBqASoEDTDc?rel=0&start=21" frameborder="0" allowfullscreen></iframe>
-  </div>
-</p>
+Am 1. Januar sind wir mit einer Crowdfunding-Kampagne ins Jahr gestartet. Und es war [ein voller Erfolg](/blog/crowdfunding-erfolgreich/).
 
 
 ## Finanzierung gesichert
 
-Im [letzten Blogeintrag](/blog/warten-auf-den-parkplatz/#stand-finanzierung) hat Domenica über unsere Suche nach Darlehen geschrieben. Die CHF 240'000 für die Kaffeebar und die CHF 140'000 für den Coworking Space sind gesichert! Wir sind sehr froh, dass wir dieses Kapitel abschliessen können und uns wieder voll anderen Sachen widmen können.
+In [einem früheren Blogeintrag](/blog/warten-auf-den-parkplatz/#stand-finanzierung) hat Domenica über unsere Suche nach Darlehen geschrieben. Die CHF 240'000 für die Kaffeebar und die CHF 140'000 für den Coworking Space sind gesichert! Wir sind sehr froh, dass wir dieses Kapitel abschliessen können und uns wieder voll anderen Sachen widmen können.
 
 
 ## Baustelle
