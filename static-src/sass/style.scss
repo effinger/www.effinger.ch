@@ -36,6 +36,11 @@ $font-family-serif: "Times New Roman", Times, serif;
   font-weight: 300;
 }
 
+b,
+strong {
+  font-weight: 400;
+}
+
 
 // Navigation
 .logo img {
@@ -89,4 +94,24 @@ $font-family-serif: "Times New Roman", Times, serif;
 // Set home section height in CSS to prevent flickering.
 .home-section > .container {
   height: 600px;
+}
+
+
+// Blog.
+.blog-item-data {
+  font-weight: 300; 
+}
+
+  
+.blog-item-more {
+  max-width: calc(50% - 5px);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  
+  &.right .fa {
+    float: right;
+    line-height: 18px;
+    margin-left: 5px;
+  }
 }

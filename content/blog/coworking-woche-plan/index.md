@@ -8,7 +8,7 @@ comments = true
 tags = [ "Coworking" ]
 +++
 
-![Coworking Woche](/assets/blog/15-02-17-coworking-woche-plan/coworking-woche-slim.png)
+![Coworking Woche](coworking-woche-slim.png)
 
 <div class="lead">
 In einer Privatwohnung in Wabern eröffnen wir für eine Woche einen Pop-up Coworking Space. Ob Coworker oder nicht-so-Coworker &mdash; alle sind herzlich willkommen. Entweder durch den Tag oder am Abend.

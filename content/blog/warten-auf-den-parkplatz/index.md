@@ -8,7 +8,7 @@ comments = true
 tags = [ "Location", "Finanzen" ]
 +++
 
-![ZeitRaum ist voll](/assets/blog/15-12-23-warten-auf-den-parkplatz/space-full.jpg)
+![ZeitRaum ist voll](space-full.jpg)
 
 <div class="lead">
 Es wir langsam eng im ZeitRaum, unserem kleinen Coworking Space. Deshalb ist es bald Zeit, dass wir an die Effingerstrasse ziehen und uns dort auf 10 mal so viel Quadratmeter ausbreiten. 
@@ -56,7 +56,7 @@ Das Geld und die Frage, ob wir genügend zusammenbringen, bleibt entscheidend f�
 
 Vom 1. bis am 31. Januar 2016 führen wir eine Crowdfunding Kampagne durch. Crowdfunding ist die Idee, dass viele Personen mit kleineren Beiträgen ein Projekt unterstützen und im Gegenzug dafür kleinere oder grössere "Belohnungen" erhalten. Unsere Kampagne wird auf einer Plattform aufgeschaltet sein, auf der man direkt Geld für den Effinger geben kann. Die Kampagne läuft 30 Tage. Wenn innerhalb dieser Zeit der gewünschte Betrag nicht zusammen kommt, kommt es nicht zu einer Auszahlung an uns. Wir sind deshalb auf eure Hilfe angewiesen!
 
-![ZeitRaum ist voll](/assets/blog/15-12-23-warten-auf-den-parkplatz/videoschnitt.jpg)
+![ZeitRaum ist voll](videoschnitt.jpg)
 
 <p class="image-caption">Hier entsteht das Crowdfunding Video</p>
 

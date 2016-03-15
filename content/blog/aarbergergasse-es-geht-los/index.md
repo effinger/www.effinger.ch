@@ -8,13 +8,13 @@ comments = true
 tags = [ "Coworking" ]
 +++
 
-![Kiste](/assets/blog/15-05-13-aarbergergasse-es-geht-los/kiste.jpg)
+![Kiste](kiste.jpg)
 
 Ich sitze gerade in unserem Raum an der Aarbergergasse, während ich diese Zeilen schreibe. Wegen der leeren Wände hallt der Tastenaufschlag zwar noch etwas, aber seit der Schlüsselübergabe am 1. Mai nimmt die Einrichtung langsam Form an. Ein erstes prägendes (und praktisches) Element sind die super Holzkisten. Dann kamen Stühle dazu, Internet, Bildschirme, Tische und eine Kaffeemaschine. Man kann also bereits arbeiten. 
 
 Am letzten Sonntag haben wir bereits mit ein paar Personen aus der [Slack-Community](/blog/slack/) die Terrasse eingeweiht. Die Feststellung: Mit zehn Personen inklusive Grill kann man hier bestens feiern!
 
-![Grillen](/assets/blog/15-05-13-aarbergergasse-es-geht-los/grillen1.jpg)
+![Grillen](grillen1.jpg)
 
 
 ## Wohnzimmer-Athmosphäre
@@ -56,8 +56,8 @@ Damit das Feierabendbier auch gekühlt werden kann, brauchen wir natürlich eine
 
 Zum Schluss noch ein paar Impressionen der Abendstimmung und vom Grillen über den Dächern von Bern. Schaut doch in den nächsten Tagen mal unter [Events](/events/), wann jemand da ist und kommt vorbei - Aufbau-Feeling garantiert!
 
-![Abendstimmung](/assets/blog/15-05-13-aarbergergasse-es-geht-los/abendstimmung.jpg)
+![Abendstimmung](abendstimmung.jpg)
 
-![Grillen](/assets/blog/15-05-13-aarbergergasse-es-geht-los/grillen2.jpg)
+![Grillen](grillen2.jpg)
 
-![Grillen](/assets/blog/15-05-13-aarbergergasse-es-geht-los/grillen3.jpg)
+![Grillen](grillen3.jpg)

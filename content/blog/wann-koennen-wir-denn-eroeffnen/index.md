@@ -8,7 +8,7 @@ comments = true
 tags = [ "Location", "Einrichtung" ]
 +++
 
-![Table](/assets/blog/15-09-22-wann-koennen-wir-denn-eroeffnen/table.jpg)
+![Table](table.jpg)
 
 <div class="lead">
   «Wenn isch jetzt ändlich Eröffnig vom Effinger?» Diese Frage verfolgt uns auf Schritt und Tritt. Ein grosses Dankeschön an dieser Stelle an alle, die mit uns mitfiebern. Leider können wir noch immer nicht sagen, wann wir genau eröffnen. Dies hängt von vielen Faktoren ab, die wir nicht selber in der Hand haben. 
@@ -28,7 +28,7 @@ Mich beschäftigt zurzeit vor allem der ganze Bereich des Innendesigns. Natürli
 
 Zudem bin ich an der ganzen Planung der Bar: Kommt die Abwaschmaschine neben die Kaffeemaschine und daneben grad der Abfall oder ist es besser den Abfall neben die Bierzapfanlage zu nehmen und neben der Kaffeemaschine genügen Ablagefläche zu planen? Ich habe einen Plan der Bar im Verhältnis 1:10 gezeichnet, die einzelnen Geräte und Maschinen ebenfalls und jetzt kann ich die frisch fröhlich auf dem Plan herumschieben, um die optimale Aufteilung zu finden.
 
-![Planung Bar](/assets/blog/15-09-22-wann-koennen-wir-denn-eroeffnen/planung-bar.jpg)
+![Planung Bar](planung-bar.jpg)
 
 Wenn diese mal steht, geht es darum, den richtigen Anbieter für die Geräte zu finden. Gar nicht so einfach bei so vielen Anbietern und einer doch recht grossen Preisspanne.
 

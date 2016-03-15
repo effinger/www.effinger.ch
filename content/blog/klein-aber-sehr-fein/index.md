@@ -8,7 +8,7 @@ comments = "popupcoworking"
 tags = [ "Community" ]
 +++
 
-![Klein aber sehr fein](/assets/blog/15-01-30-klein-aber-sehr-fein/klein-aber-sehr-fein.jpg)
+![Klein aber sehr fein](klein-aber-sehr-fein.jpg)
 
 <p class="lead">Knapp zwei Monate nach unserem ersten «How-the-heck»-Abend luden wir zur zweiten Ausgabe ein. Nachdem im November 2014 über dreissig Personen kamen, hatten sich dieses Mal nur zwei angemeldet. Wir waren etwas enttäuscht und erstaunt, aber auch gespannt, wie der Abend im kleinen Kreise werden würde. Als dann noch zwei Gäste spontan vorbei schauten, waren wir mit dem  Organisationsteam insgesamt acht Personen.</p>
 
@@ -26,10 +26,10 @@ Nachdem wir unserer kreative Energie schon etwas verschossen hatte, machten wir 
 
 Es hat sich an diesem Abend gezeigt, dass man auch im kleinen aber sehr feinen Rahmen Ideen entwickeln, Diskussionen anreissen und Neues lernen kann.
 
-![Bild 1](/assets/blog/15-01-30-klein-aber-sehr-fein/image-1.jpg)
+![Bild 1](image-1.jpg)
 
-![Bild 2](/assets/blog/15-01-30-klein-aber-sehr-fein/image-2.jpg)
+![Bild 2](image-2.jpg)
 
-![Bild 3](/assets/blog/15-01-30-klein-aber-sehr-fein/image-3.jpg)
+![Bild 3](image-3.jpg)
 
-![Bild 4](/assets/blog/15-01-30-klein-aber-sehr-fein/image-4.jpg)
+![Bild 4](image-4.jpg)

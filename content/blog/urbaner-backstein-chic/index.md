@@ -8,7 +8,7 @@ comments = "popupcoworking"
 tags = [ "Einrichtung" ]
 +++
 
-![Wall of Bricks](/assets/blog/15-01-12-urbaner-backstein-chic/wall-of-bricks.jpg)
+![Wall of Bricks](wall-of-bricks.jpg)
 
 <p class="lead">Seit wir uns für die Location an der schönen Effingerstrasse beworben haben, schwirren meine Gedanken rund um die Frage: Wie soll die Inneneinrichtung dieser Räume aussehen?</p>
 
@@ -20,8 +20,8 @@ Was ist für dich ein absolutes Muss in einem Café/Bar oder einem Coworking Spa
 
 A propos: Über das Design der Räume werden wir auch am nächsten [«How-the-heck» Abend](/events/AvjyGh7Lo0/), Donnerstag 29. Januar, diskutieren. Es gibt auf dem Gebiet des Bürodesigns und der innovativen Lern- und Arbeitsumgebung ganz tolle Ideen und Konzepte. Wenn du dich dafür interessierst, dann solltest du den nächsten «How-the-heck» Abend auf keinen Fall verpassen.
 
-![Coffee Shop](/assets/blog/15-01-12-urbaner-backstein-chic/coffee-shop.jpg)
+![Coffee Shop](coffee-shop.jpg)
 
-![Conference Table](/assets/blog/15-01-12-urbaner-backstein-chic/conference-table.jpg)
+![Conference Table](conference-table.jpg)
 
-![Jelgava](/assets/blog/15-01-12-urbaner-backstein-chic/jelgava.jpg)
+![Jelgava](jelgava.jpg)

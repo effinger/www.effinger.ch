@@ -8,7 +8,7 @@ comments = true
 tags = [ "Coworking" ]
 +++
 
-![BrainGym](/assets/blog/15-04-10-zu-gast-im-braingym/braingym.jpg)
+![BrainGym](braingym.jpg)
 
 <div class="lead">
   3 Wochen vor Einzug in unsere Base waren wir heute zu Gast im BrainGym der Swisscom. Wir entwickelten die Einrichtungsideen für die Aarbergergasse weiter, tauchten ein in die arbeitsame Atmosphäre und tranken Kaffee.  
@@ -22,10 +22,10 @@ Nach der Sitzungssession gönnten wir uns eine kurze Kaffeepause bevor wir uns i
 
 Abgeschlossen haben wir den Tag mit spannenden Gedanken über Werte, die unsere Community prägen sollen. Dies sowieso ein Thema, das mich unglaublich beflügelt, fasziniert und begeistert.  Alles in allem hat also der Tag in mir einmal mehr viel viel Vorfreude auf alles ausgelöst, was in naher und klein wenig fernerer Zukunft noch kommen wird. Danke Stefan & BrainGym, you have been good to us!!!
 
-![BrainGym](/assets/blog/15-04-10-zu-gast-im-braingym/braingym2.jpg)
+![BrainGym](braingym2.jpg)
 
-![BrainGym](/assets/blog/15-04-10-zu-gast-im-braingym/braingym3.jpg)
+![BrainGym](braingym3.jpg)
 
-![BrainGym](/assets/blog/15-04-10-zu-gast-im-braingym/braingym4.jpg)
+![BrainGym](braingym4.jpg)
 
-![BrainGym](/assets/blog/15-04-10-zu-gast-im-braingym/braingym5.jpg)
+![BrainGym](braingym5.jpg)

@@ -4,11 +4,11 @@ date = "2014-12-12"
 description = "Alte Hasen sind wir noch nicht grad, aber immerhin haben wir nun schon ein paar mal pop-up gecoworked."
 image = "wartsaal.jpg"
 author = "Domenica Winkler"
-comments = true
+comments = "popupcoworking"
 tags = [ "Coworking" ]
 +++
 
-![Pop-up Coworking im Wartsaal](/assets/blog/14-12-12-lets-blog/wartsaal.jpg)
+![Pop-up Coworking im Wartsaal](wartsaal.jpg)
 
 Alte Hasen sind wir noch nicht grad, aber immerhin haben wir nun schon ein paar mal pop-up gecoworked (hm, das ist immer schwierig mit diesen englischen Begriffen). Vier mal haben wir uns jetzt getroffen und zusammen gearbeitet. Während dieser Zeit entstanden Blogeinträge, neue Webseiten wurden kreiert, Ideen geschmiedet, neue Pläne entworfen und viel diskutiert, geträumt und geplant. 
 

@@ -12,7 +12,7 @@ tags = [ "Community" ]
 
 > Diskussion über das WHY
 
-![Notepad](/assets/blog/14-12-22-warum/notepad.jpg)
+![Notepad](notepad.jpg)
 
 Seit wir angefangen haben an der Idee eines Coworking Spaces mit Café/Bar zu arbeiten, haben wir gemerkt, dass es nicht reicht, den Leuten zu erklären, was wir machen oder wie wirs machen, sondern vor allem WARUM. Diese Frage ist gar nicht so einfach zu beantworten. Darum assen wir genügend Zmorgen und widmeten uns dieser schwierigen Aufgabe. Warum wollen wir einen Coworking Space mit Café/Bar machen? Öhm. Ja, weil… Höchste Zeit, dass wir unsere einzelnen Gedankenschnipsel mal zusammen nehmen.
 

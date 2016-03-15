@@ -8,7 +8,7 @@ comments = true
 tags = [ "Coworking" ]
 +++
 
-![Zeit](/assets/blog/15-01-22-relativitaet-der-zeit/time.jpg)
+![Zeit](time.jpg)
 
 <p class="lead">In anderen Jahren konnte es nach Weihnachten für mich gar nicht schnell genug Frühling werden. Jeder Schneefall im Januar bis März wurde von mir mit einem "Muss das jetzt echt noch sein?" quittiert und jeder Sonnentag mit einem Lächeln begrüsst. Dieses Jahr ist es anders.</p>
 

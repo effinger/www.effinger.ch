@@ -12,11 +12,11 @@ tags = [ "Inspiration", "Grundsätze" ]
   <strong>Achtung:</strong> Es folgen unfertige und vielleicht verrückte(!) Gedanken über eine neue Art gemeinsam zu arbeiten. Du bist herzlich eingeladen, in die Diskussion einzusteigen!
 </div>
 
-![Gemeinsamständigkeit](/assets/blog/15-02-14-gemeinsamstaendigkeit/gemeinsamstaendigkeit-slim.jpg)
+![Gemeinsamständigkeit](gemeinsamstaendigkeit-slim.jpg)
 
 <blockquote>
   <p>Wir wollen Arbeitnehmern, die an Strukturen verzweifeln, und Freiberuflern, die sich im täglichen, einsamen Arbeitskampf aufreiben, den Enthusiasmus zurückgeben, mit dem sie in ihren Beruf gestartet sind. Wir wollen jungen Menschen zeigen, dass sie ihre Ambitionen im Berufsleben nicht aufgeben, sondern ausleben können.</p>
-  <footer><cite>Dark Horse in [Thank God It's Monday](http://ullstein.de/thankgoditsmonday/)</cite></footer>
+  <footer><cite>Dark Horse in <a href="http://ullstein.de/thankgoditsmonday/">Thank God It's Monday</a></cite></footer>
 </blockquote>
 
 
@@ -81,7 +81,5 @@ Coworking als Mieten von (trendigem) Arbeitsplatz reicht nicht. Gemeinsamständi
 ***
 
 <div class="alert alert-warning">
-  <p>Am **Dienstag, 24. Februar 2015** fand ein **Literaturclub** zum Thema Selbstmanagement (und anderen revolutionären Prinzipien) statt.</p>
-  </p>
-  <p>Eine Zusammenfassung und weiterführung der Diskussionen findest du im Artikel [Eine absurde Idee: Gemeinsamständigkeit](/blog/absurde-idee-gemeinsamstaendigkeit/).</p>
+  <p>Eine Zusammenfassung und weiterführung der Diskussionen findest du im Artikel <a href="/blog/absurde-idee-gemeinsamstaendigkeit/">Eine absurde Idee: Gemeinsamständigkeit</a>.</p>
 </div>

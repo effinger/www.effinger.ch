@@ -7,6 +7,7 @@ paginatePath = "seite"
 [params]
   author = "Coworking Community Bern"
   analyticsId = "UA-56906982-1"
+  disqusShortname = "effinger"
 
 [taxonomies]
   tag = "tags"

@@ -10,7 +10,7 @@ tags = [ "Community", "Grundsätze" ]
 
 *-- Update 4. September 2015: Organisation Version 2.0 --*
 
-![Organisation](/assets/blog/15-07-02-organisation/organisation.jpg)
+![Organisation](organisation.jpg)
 
 
 

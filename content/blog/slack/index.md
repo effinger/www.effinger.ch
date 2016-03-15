@@ -4,11 +4,11 @@ date = "2015-01-02"
 description = "Ja, wir wünschen uns einen Coworking Space mit Café/Bar. Aber es geht um weit mehr als um ein Gebäude mit Arbeitstischen und Kaffeetassen. Es geht um Menschen und Beziehungen. Slack bietet uns dazu ganz neue Möglichkeiten für den Austausch."
 image = "slack-community.jpg"
 author = "Marco Jakob"
-comments = true
+comments = "popupcoworking"
 tags = [ "Community" ]
 +++
 
-![Slack Community](/assets/blog/15-01-02-slack/slack-community.jpg)
+![Slack Community](slack-community.jpg)
 
 Ja, wir wünschen uns einen Coworking Space mit Café/Bar. Aber es geht um weit mehr als um ein Gebäude mit Arbeitstischen und Kaffeetassen.
 
@@ -30,7 +30,7 @@ Wir haben einige Wochen lang Slack getestet und dabei zu viert bereits über 1'0
 
 Hier ein Einblick, wie Slack bei uns aussieht:
 
-![slack 4 president](/assets/blog/15-01-02-slack/slack-4-president.png)
+![slack 4 president](slack-4-president.png)
 
 Auf der linken Seite sieht man die *Channels* (Diskussionskanäle). Wenn in einem Channel neue Nachrichten vorhanden sind, wird der Channel hervorgehoben. Sobald mich jemand mit Namen anspricht oder mir eine Direktnachricht schickt, erscheint eine rote Nummer und ich erhalte nach einer Weile ein Mail, wenn ich nicht reagiere. So verpasse ich keine Nachrichten, die direkt an mich gerichtet sind.
 

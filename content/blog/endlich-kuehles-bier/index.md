@@ -8,7 +8,7 @@ comments = true
 tags = [ "Coworking" ]
 +++
 
-![Bier](/assets/blog/15-06-14-endlich-kuehles-bier/bier.jpg)
+![Bier](bier.jpg)
 
 Ich hatte die Hoffnung schon fast aufgegeben und dann meldete sich plötzlich der Rolf:
 
@@ -25,15 +25,15 @@ Mein nächster Held ist definitiv Timon! Er hat einen drei Meter langen Tisch ge
 
 So sieht eine der beiden Tischplatten aus:
 
-![Tischplatte](/assets/blog/15-06-14-endlich-kuehles-bier/tischplatte.jpg)
+![Tischplatte](tischplatte.jpg)
 
 Die Montage in unserem *Coworking ZeitRaum* an der Aarbergergasse:
 
-![Montage](/assets/blog/15-06-14-endlich-kuehles-bier/tisch-montage.jpg)
+![Montage](tisch-montage.jpg)
 
 Und hier das fertige Meisterwerk:
 
-![Tisch](/assets/blog/15-06-14-endlich-kuehles-bier/tisch.jpg)
+![Tisch](tisch.jpg)
 
 Die Lücke in der Mitte ist dazu gedacht, dass die Coworker das Laptopkabel praktisch versorgen können. 
 

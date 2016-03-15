@@ -8,7 +8,7 @@ comments = true
 tags = [ "Community" ]
 +++
 
-![Dänemark](/assets/blog/15-06-13-daheim-tut-sich-was/daenemark.jpg)
+![Dänemark](daenemark.jpg)
 
 <div class="lead">
   Seit einer Woche geniesse ich Ferien. Nicht lassen kann ich es, mehrmals täglich die Slack-App anzutippen um zu sehen was "back home" geschieht! Und da läuft nämlich ganz schön was...

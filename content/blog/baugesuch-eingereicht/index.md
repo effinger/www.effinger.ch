@@ -8,7 +8,7 @@ comments = true
 tags = [ "Location" ]
 +++
 
-![Baugesuch](/assets/blog/15-08-03-baugesuch-eingereicht/baugesuch.jpg)
+![Baugesuch](baugesuch.jpg)
 
 <div class="lead">
   Nach etlichen oder besser unzählbar vielen Telefonaten mit den Behörden, nach Abklärungen mit dem Architekt, den Eigentümern und sonstigen Beteiligten, haben wir heute endlich unser Baugesuch für die Effingerstrasse 10 eingereicht.

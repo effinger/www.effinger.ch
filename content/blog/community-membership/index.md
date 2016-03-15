@@ -8,7 +8,7 @@ comments = true
 tags = [ "Community" ]
 +++
 
-![Community](/assets/blog/16-03-08-community-membership/community.jpg)
+![Community](community.jpg)
 
 <div class="lead">
 Was bedeutet eigentlich die Community Membership? Ehrlich gesagt war uns das auch nicht immer so klar. In diesem Artikel erfährst du, wie wir bereits vor Eröffnung des Effingers so einige Änderungen in unserer Membership-Struktur gemacht haben.

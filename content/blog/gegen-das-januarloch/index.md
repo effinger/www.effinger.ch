@@ -8,7 +8,7 @@ comments = true
 tags = [ "Inspiration" ]
 +++
 
-![Zange](/assets/blog/15-01-04-gegen-das-januarloch/hole-punch.jpg)
+![Zange](hole-punch.jpg)
 
 <p class="lead">Der Januar hat uns in der Zange.</p>
 

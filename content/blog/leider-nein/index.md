@@ -8,7 +8,7 @@ comments = true
 tags = [ "Location" ]
 +++
 
-![Karte](/assets/blog/15-02-19-leider-nein/themap.jpg)
+![Karte](themap.jpg)
 
 <div class="lead">
 «Guten Tag Frau Hostettler, leider...» Ich musste das Mail, das mir Salome weiterleitete, gar nicht weiterlesen, um zu wissen, was das bedeutet: eine Absage für «unsere» Effingerstrasse. Wir hatten grosse Hoffnungen in unser Bewerbungsschreiben gesetzt und uns gute Chancen ausgerechnet.

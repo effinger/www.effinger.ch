@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="de">
+  {{ partial "head.html" . }}
+  <body class="">
+
+    <!-- Page Wrap -->
+    <div class="page" id="top">
+
+      <nav class="main-nav stick-fixed">
+        {{ partial "navigation.html" . }}
+      </nav>
+
+      <!-- Section -->
+      <section class="page-section">
+        <div class="container relative">
+
+          <div class="row">
+
+            <!-- Content -->
+            <div class="col-sm-10 col-sm-offset-1">
+
+              <!-- Post -->
+              <div class="blog-item mb-80 mb-xs-40">
+
+                <!-- Text -->
+                <div class="blog-item-body">
+
+                  <h1 class="mt-0 font-alt">{{ .Title }}</h1>
+                  
+                  <!-- Author, Tags, Comments -->
+                  <div class="blog-item-data local-scroll">
+                    <a><i class="fa fa-clock-o"></i> {{ .Date.Format "02.01.2006" }}</a>
+                    <span class="separator">&nbsp;</span>
+                    <a href="#"><i class="fa fa-user"></i> {{ .Params.author }}</a>
+                    <span class="separator">&nbsp;</span>
+                    <i class="fa fa-folder-open"></i>
+                    {{ range $index, $element := .Params.tags }}
+                      {{ if $index }}, {{ end }}<a href="#">{{ . }}</a>
+                    {{ end }}
+                    {{ if .Params.comments }}
+                    <span class="separator">&nbsp;</span>
+                    <i class="fa fa-comments"></i> <a href="#comments" data-disqus-identifier="{{ .RelPermalink }}">Kommentare</a>
+                    {{ end }}
+                  </div>
+
+
+                  {{ .Content }}
+
+
+                </div>
+                <!-- End Text -->
+
+              </div>
+              <!-- End Post -->
+
+              <!-- Comments -->
+              {{ if .Params.comments }}
+              <div class="mb-80 mb-xs-40">
+
+                <h4 id="comments" class="blog-page-title font-alt">Kommentare</h4>
+                {{ partial "disqus_comments.html" . }}
+              </div>
+              {{ end }}
+              <!-- End Comments -->
+
+              <!-- Prev/Next Post -->
+              <div class="clearfix mt-40">
+                {{ if .Prev }}
+                <a href="{{ .Prev.RelPermalink }}" class="blog-item-more left"><i class="fa fa-angle-left"></i>&nbsp;{{ .Prev.Title }}</a>
+                {{ end }}
+                {{ if .Next }}
+                <a href="{{ .Next.RelPermalink }}" class="blog-item-more right"><i class="fa fa-angle-right"></i>{{ .Next.Title }}</a>
+                {{ end }}
+              </div>
+              <!-- End Prev/Next Post -->
+
+            </div>
+            <!-- End Content -->
+
+          </div>
+
+        </div>
+      </section>
+      <!-- End Section -->
+
+      {{ partial "footer.html" . }}
+
+    </div>
+    <!-- End Page Wrap -->
+
+    {{ partial "body_includes.html" . }}
+
+  </body>
+</html>     

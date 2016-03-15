@@ -8,7 +8,7 @@ comments = true
 tags = [ "Location" ]
 +++
 
-![Effinger](/assets/blog/15-08-27-was-lange-waehrt-heisst-endlich-effinger/effinger.jpg)
+![Effinger](effinger.jpg)
 <p class="image-caption">Matthias, David, Jonas, Domenica und Marco im Schaufenster an der Effingerstrasse.<br>Bild: <a href="http://www.manu.ch" target="_blank">Manu Friedrich</a> - vielen Dank!</p>
 
 

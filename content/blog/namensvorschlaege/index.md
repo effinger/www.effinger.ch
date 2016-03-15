@@ -8,7 +8,7 @@ comments = "popupcoworking"
 tags = [ "Location" ]
 +++
 
-![Lampe](/assets/blog/15-07-13-namensvorschlaege/lampe.jpg)
+![Lampe](lampe.jpg)
 
 <div class="lead">
   Was ist einer der ersten Schritte, nachdem man die Zusage für eine Location bekommen hat? Man braucht endlich den definitiven Namen für das Baby. Langsam aber sicher kann man nicht mehr vom «Projekt», «Café» oder sonstigem reden.
@@ -52,7 +52,7 @@ Wenn du gerne mit anderen zusammen Namenskreationen entwickeln möchtest, dann k
 
 Hier kannst die ganze Sammlung heruntergeladen werden:
 
-<a href="/assets/blog/15-07-13-namensvorschlaege/namensvorschlaege.pdf" class="btn btn-warning"><i class="fa fa-download"></i> Sammlung der Namensvorschläge (PDF)</a> 
+<a href="namensvorschlaege.pdf" class="btn btn-warning"><i class="fa fa-download"></i> Sammlung der Namensvorschläge (PDF)</a> 
 
 In den nächsten Tagen werden die Namensvorschläge von Domenica und anderen Helfern durchgekämmt und reduziert auf ein überschaubares Mass.
 

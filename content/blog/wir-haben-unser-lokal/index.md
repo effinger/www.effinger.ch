@@ -8,7 +8,7 @@ comments = true
 tags = [ "Location" ]
 +++
 
-![Effingerstrasse 10](/assets/blog/15-07-13-wir-haben-unser-lokal/effingerstrasse-10.jpg)
+![Effingerstrasse 10](effingerstrasse-10.jpg)
 
 <div class="lead">Wir haben eine Location für Coworking und Café/Bar! Unsere neue Heimat wird die Effingerstrasse 10 in Bern.</div>
 

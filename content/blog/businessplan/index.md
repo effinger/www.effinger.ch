@@ -152,7 +152,7 @@ Wir planen bei der Eröffnung mit einem Kern von zwölf Voll- oder Teilzeit Cowo
 
 Die folgende Grafik zeigt die durchschnittlich geplante Auslastung des Effingers pro Monat:
 
-![Geplante Auslastung](/assets/blog/15-11-12-businessplan/geplante-auslastung.png)
+![Geplante Auslastung](geplante-auslastung.png)
 
 
 ## Planerfolgsrechnung
@@ -166,7 +166,7 @@ Da wir als gemeinnütziger Verein fungieren und mit dem Effinger nicht aufs gros
 Klingt fast zu gut um wahr zu sein? Stimmt! Auch wir sind alle sehr gespannt, wie wir in 3-5 Jahren auf diese Zahlen zurückblicken werden. 
 
 
-![Planerfolgsrechnung](/assets/blog/15-11-12-businessplan/planerfolgsrechnung.png)
+![Planerfolgsrechnung](planerfolgsrechnung.png)
 
 
 ## Business Modell Canvas
@@ -174,7 +174,7 @@ Klingt fast zu gut um wahr zu sein? Stimmt! Auch wir sind alle sehr gespannt, wi
 Der Business Canvas enthält zurzeit die drei Kundensegmente Jungunternehmer, Kreative und Unternehmen. Diesen haben wir aufgestellt, um uns selbst, aber auch unser Umfeld besser zu verstehen und möglichst verständlich visualisieren zu können.  Ja ich weiss, daran könnten wir noch arbeiten. Hilfst du uns?  
 
 
-![Business Modle Canvas](/assets/blog/15-11-12-businessplan/canvas.jpg)
+![Business Modle Canvas](canvas.jpg)
 
 
 ## Chancen und Risiken

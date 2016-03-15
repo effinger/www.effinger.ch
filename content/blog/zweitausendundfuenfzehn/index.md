@@ -8,7 +8,7 @@ comments = true
 tags = [ "Coworking" ]
 +++
 
-![Running](/assets/blog/15-01-01-zweitausendundfuenfzehn/running.jpg)
+![Running](running.jpg)
 
 <p class="lead">Wir stehen am Start fürs 2015. Auch im neuen Jahr geben wir Vollgas mit Pop-up Coworking in Bern.</p>
 

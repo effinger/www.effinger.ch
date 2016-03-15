@@ -21,7 +21,7 @@ Eine Bildschirmpause kann gut im Atelier erfolgen.
 Es soll bewusst Raum entstehen für Kunst und Handwerk. Die Anwesenheit von Künstlern und Handwerkern ist sehr wohltuend und sehr wertvoll. Ihre Arbeit hat etwas Schöpferisches und holt die virtuelle und kopflastige Welt zurück in das Fassbare.
 Im hintersten Teil des Effingers haben sich schon drei Kreativlinge eingenistet, zumindest virtuell.
 
-![Atelier](/assets/blog/15-11-25-ruf-aus-dem-atelier/atelier.jpg)
+![Atelier](atelier.jpg)
 
 Eingezogen ist im Atelier zwar noch niemand, aber sobald wie möglich, wird das der Fall sein. Auf einigen Quadratmeter richten wir unsere Arbeitsplätze ein, die uns neben der Arbeit am Computer auch erlauben sollen, Ideen zu entwickeln, Gedrucktes auszubreiten, Moodboards aufzuhängen, Modelle zu bauen und Objekte zu gestalten.
 
@@ -30,7 +30,7 @@ Eingezogen ist im Atelier zwar noch niemand, aber sobald wie möglich, wird das 
 
 Die angrenzende Werkstatt bietet die Möglichkeit auch sofort Hand anzulegen.
 
-![Werkstatt](/assets/blog/15-11-25-ruf-aus-dem-atelier/werkstatt.jpg)
+![Werkstatt](werkstatt.jpg)
 
 
 

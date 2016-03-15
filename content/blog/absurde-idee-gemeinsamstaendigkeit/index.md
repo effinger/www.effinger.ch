@@ -8,7 +8,7 @@ comments = "popupcoworking"
 tags = [ "Inspiration", "Grundsätze" ]
 +++
 
-![Literaturabend](/assets/blog/15-03-07-absurde-idee-gemeinsamstaendigkeit/literaturabend.jpg)
+![Literaturabend](literaturabend.jpg)
 
 <div class="lead">
   Wir hielten uns ganz an das Zitat von Albert Einstein „Wenn eine Idee zuerst nicht absurd erscheint, dann taugt sie nichts.“ als wir uns zu einem Literatur- und Diskussionsabend trafen. Eine kleine, feine Runde von selbstständig Arbeitenden und Denkenden liess sich vom Buch “Thank God its Monday” von Dark Horse herausfordern.

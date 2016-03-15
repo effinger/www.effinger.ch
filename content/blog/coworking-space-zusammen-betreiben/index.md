@@ -8,7 +8,7 @@ comments = "popupcoworking"
 tags = [ "Inspiration", "Grundsätze" ]
 +++
 
-![Coworking](/assets/blog/15-02-15-coworking-space-zusammen-betreiben/coworking.jpg)
+![Coworking](coworking.jpg)
 
 Vor zwei Wochen haben wir einen genaueren Finanzplan für den Coworking Space aufgestellt. Wir gingen vom Offensichtlichen aus: Es gibt einen Space. Ein oder zwei Personen tragen die Verantwortung für den Betrieb und beziehen dafür einen Lohn. Die Coworker sind die Kunden, welche für ihren Arbeitsplatz eine Miete bezahlen.
 

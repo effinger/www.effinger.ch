@@ -8,7 +8,7 @@ comments = "popupcoworking"
 tags = [ "Location" ]
 +++
 
-![Aarbergergasse Panorama](/assets/blog/15-03-23-basis-an-der-aarbergergasse/aarbergergasse-panorama.jpg)
+![Aarbergergasse Panorama](aarbergergasse-panorama.jpg)
 
 <div class="lead">
   Ab Mai wird Pop-up Coworking jeden Tag stattfinden können! Ganz zentral in Bern beziehen wir unseren eigenen, kleinen Raum. Es wird unsere Basisstation - die Suche nach einer grösseren Location geht aber gleichzeitig weiter.  
@@ -16,7 +16,7 @@ tags = [ "Location" ]
 
 Seit circa einem halben Jahr veranstalten wir schon Pop-up Coworking Tage. Dabei haben wir verschiedene tolle Orte besucht, erste Erfahrungen mit Coworking gesammelt und wir wissen jetzt von allen hippen Orten in Bern den WLAN Code (nein, die werden nicht verraten!). Doch wir haben auch gemerkt, dass Herumziehen auf die Dauer nicht wirklich praktisch ist. Während der Coworking Woche ist dann die Idee entstanden, dass wir vorübergehend ein kleines Büro in der Stadt mieten könnten. Dies böte den Vorteil, dass wir eine «homebase» in der Stadt hätten, wo wir das Experimentieren mit verschiedenen Coworking Formen fortsetzen könnten. Gesagt, getan. 
 
-![Domenica Salome Unterschrift](/assets/blog/15-03-23-basis-an-der-aarbergergasse/domenica-salome-unterschrift.jpg)
+![Domenica Salome Unterschrift](domenica-salome-unterschrift.jpg)
 
 *Freudig unterzeichnen Domenica und Salome den Mietvertrag*
 
@@ -24,7 +24,7 @@ Nach kurzer Suche sind wir auf ein schmuckes Büro an der Aarbergergasse 41 gest
 
 Wir alle - aber Marco im Speziellen - freuen uns auf die Grillabende über den Dächern von Bern. Den ganzen Bereich von Café/Bar und Handwerker/Künstler werden wir auf den 25m<sup>2</sup> noch nicht umsetzen können. Nach wie vor gehört dies aber fest zu unserem Konzept, das wir spätestens bei der definitiven Location umsetzen wollen.
 
-![Aarbergergasse Terrasse](/assets/blog/15-03-23-basis-an-der-aarbergergasse/aarbergergasse-terrasse.jpg)
+![Aarbergergasse Terrasse](aarbergergasse-terrasse.jpg)
 
 Bevor wir das Bijoux beziehen, wollen wir uns Gedanken darüber machen, wie wir diesen Raum nutzen wollen, wie er eingerichtet werden soll und welche Leute wir damit ansprechen möchten. Wenn du dich an dieser Diskussion beteiligen möchtest, dann triff dich mit uns diesen [Donnerstag, 26. März](/events/bvpPqhZxJB/) oder am [Donnerstag, 23. April](/events/oJMUrkhEty/) auf ein Bier. Oder komm am [10. April zum Pop-up Coworking](/events/ZTJtFaYDTI/).
 

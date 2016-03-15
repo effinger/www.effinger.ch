@@ -8,7 +8,7 @@ comments = "popupcoworking"
 tags = [ "Coworking" ]
 +++
 
-![Mittagessen](/assets/blog/15-01-16-super-combo/mittagessen.jpg)
+![Mittagessen](mittagessen.jpg)
 
 <p class="lead">Wieder haben wir einen tollen Coworking Freitag erlebt. Dieser Tag war ein kleiner Vorgeschmack auf das, was wir in Zukunft im Coworking Space mit Café/Bar erreichen möchten: Die gute Kombination zwischen konzentriertem Arbeiten und gemütlichem, gemeinsamen Mittagessen.</p>
 
@@ -20,8 +20,8 @@ Mir gefiel an diesem Tag besonders, dass wir den ganzen Tag zusammen waren, übe
 
 Ich bin echt begeistert vom Coworking und die Vorfreude auf den eigenen Coworking Space mit Café/Bar wächst von Tag zu Tag.
 
-![Mittagessen 2](/assets/blog/15-01-16-super-combo/mittagessen-2.jpg)
+![Mittagessen 2](mittagessen-2.jpg)
 
-![Kuchen](/assets/blog/15-01-16-super-combo/kuchen.jpg)
+![Kuchen](kuchen.jpg)
 
-![Diskussionen](/assets/blog/15-01-16-super-combo/diskussionen.jpg)
+![Diskussionen](diskussionen.jpg)

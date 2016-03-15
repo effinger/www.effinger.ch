@@ -8,7 +8,7 @@ comments = true
 tags = [ "Community", "Grundsätze" ]
 +++
 
-![Notebook](/assets/blog/15-07-01-grundsaetze/notebook.jpg)
+![Notebook](notebook.jpg)
 
 <div class="lead">
   Auf diesen Moment habe ich mich gefreut: Die erste Version der Grundsätze ist da. Es ist ein gemeinsam erarbeitetes Dokument der Vision und Werte, nach denen wir uns als Community ausrichten wollen.

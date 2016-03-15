@@ -14,7 +14,7 @@ tags = [ "Coworking" ]
 
 Eine erste Idee: tägliche, Community-übergreifende Kanban-Videokonferenzen. Kanban was? Kanban ist japanisch und heisst so viel wie «Karte», «Tafel». Es ist ein Tool zur Visualisierung des Arbeitsprozesses. Auf einer Tafel mit den Spalten «to do», «doing», «waiting», «need help» und «done» lassen sich die alltäglichen Aufgaben strukturieren und priorisieren.
 
-![Kanban](/assets/blog/15-02-27-kanban/kanban.jpg)
+![Kanban](kanban.jpg)
 
 Auf post-it Zettel werden alle Tasks aufgeschrieben und den verschiedenen Spalten zugeordnet:
 

@@ -8,7 +8,7 @@ comments = true
 tags = [ "Inspiration" ]
 +++
 
-![Coworking im Apfelgold](/assets/blog/15-01-07-man-lernt-nie-aus/coworking-1.jpg)
+![Coworking im Apfelgold](coworking-1.jpg)
 
 <p class="lead">Ich stand heute morgen ziemlich freudig auf: Coworking Tag im Apfelgold. Das kann ja nur gut werden. Das Schöne an Zusammenarbeit ist ja, dass man unter anderem auch Neues lernt.</p>
 
@@ -34,33 +34,20 @@ Und hier noch die harten Fakten: 6 Coworker, 8h gearbeitet, 8 Tassen Tee getrunk
 
 Der Tag hat sich für mich gelohnt, ich freu mich auf die nächsten Coworking Tage.
 
-<div id="carousel" class="carousel slide" data-ride="carousel">
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
-    <div class="item active">
-      <img src="/assets/blog/15-01-07-man-lernt-nie-aus/coworking-2.jpg">
-    </div>
-    <div class="item">
-      <img src="/assets/blog/15-01-07-man-lernt-nie-aus/coworking-3.jpg">
-    </div>
-    <div class="item">
-      <img src="/assets/blog/15-01-07-man-lernt-nie-aus/coworking-4.jpg">
-    </div>
-    <div class="item">
-      <img src="/assets/blog/15-01-07-man-lernt-nie-aus/coworking-5.jpg">
-    </div>
-    <div class="item">
-      <img src="/assets/blog/15-01-07-man-lernt-nie-aus/coworking-6.jpg">
-    </div>
+<div class="blog-posts-carousel-alt">
+  <div>
+    <img src="coworking-2.jpg">
   </div>
-
-  <!-- Controls -->
-  <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
-    <span class="fa fa-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
-    <span class="fa fa-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
+  <div>
+    <img src="coworking-3.jpg">
+  </div>
+  <div>
+    <img src="coworking-4.jpg">
+  </div>
+  <div>
+    <img src="coworking-5.jpg">
+  </div>
+  <div>
+    <img src="coworking-6.jpg">
+  </div>
 </div>

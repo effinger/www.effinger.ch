@@ -33,7 +33,7 @@ Wir merken einfach, wie das Interesse da ist, entweder durch persönliche Kontak
 
 ### Besuche auf der Internetseite
 
-![Besuche Internetseite](/assets/blog/15-09-24-community-hinter-dem-effinger/analytics.png)
+![Besuche Internetseite](analytics.png)
 
 Diese Grafik zeigt die Besucher auf [effinger.ch](http://www.effinger.ch) im letzten Monat. Die erste Spitze ist die Veröffentlichung des [Bund Artikels](http://www.derbund.ch/bern/stadt/der-filmemacher-arbeitet-neben-dem-tshirtdesigner/story/27208890), die zweite das Erscheinen in [Ron Orp](http://www.ronorp.net/bern/inspiration/archiv/newsletter/6e14e48cbf0137fd874efd0952cc544b#content273838). Beides haben wir nicht selber initiiert.
 
@@ -42,7 +42,7 @@ Diese Grafik zeigt die Besucher auf [effinger.ch](http://www.effinger.ch) im let
 
 Aktuell haben 222 Personen unseren [Newsletters](http://eepurl.com/bw3j3H) abonniert.
 
-![Besuche Internetseite](/assets/blog/15-09-24-community-hinter-dem-effinger/newsletter.png)
+![Besuche Internetseite](newsletter.png)
 
 Weitere Kanäle, über die man Neuigkeiten erfahren kann sind [Facebook](https://www.facebook.com/effingerbern) und [Twitter](https://twitter.com/effingerbern). Im Moment gibt es natürlich nicht täglich etwas zu berichten. Es wird aber immer mehr werden.
 

@@ -1,5 +1,4 @@
 +++
-layout = "list-item"
 title = "How-the-Heck Treffen"
 date = "2014-11-27"
 description = "Ziemlich gespannt und ein bisschen nervös warteten wir im Apfelgold auf die rund dreissig Nasen, die sich für den How-the-heck Abend angemeldet hatten."
@@ -18,96 +17,82 @@ Bei angeregten Gesprächen, visionärem Ideenaustausch und Networking klang der 
 
 ## Ein paar Impressionen
 
-<div id="carousel" class="carousel slide" data-ride="carousel">
-
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
-    <div class="item active">
-      <img src="/assets/blog/14-11-27-how-the-heck/how-the-heck-01.jpg">
-    </div>
-    <div class="item">
-      <img src="/assets/blog/14-11-27-how-the-heck/how-the-heck-02.jpg">
-    </div>
-    <div class="item">
-      <img src="/assets/blog/14-11-27-how-the-heck/how-the-heck-03.jpg">
-    </div>
-    <div class="item">
-      <img src="/assets/blog/14-11-27-how-the-heck/how-the-heck-04.jpg">
-    </div>
-    <div class="item">
-      <img src="/assets/blog/14-11-27-how-the-heck/how-the-heck-05.jpg">
-    </div>
-    <div class="item">
-      <img src="/assets/blog/14-11-27-how-the-heck/how-the-heck-06.jpg">
-    </div>
-    <div class="item">
-      <img src="/assets/blog/14-11-27-how-the-heck/how-the-heck-07.jpg">
-    </div>
-    <div class="item">
-      <img src="/assets/blog/14-11-27-how-the-heck/how-the-heck-08.jpg">
-    </div>
-    <div class="item">
-      <img src="/assets/blog/14-11-27-how-the-heck/how-the-heck-09.jpg">
-    </div>
-    <div class="item">
-      <img src="/assets/blog/14-11-27-how-the-heck/how-the-heck-10.jpg">
-    </div>
-    <div class="item">
-      <img src="/assets/blog/14-11-27-how-the-heck/how-the-heck-11.jpg">
-    </div>
-    <div class="item">
-      <img src="/assets/blog/14-11-27-how-the-heck/how-the-heck-12.jpg">
-    </div>
-    <div class="item">
-      <img src="/assets/blog/14-11-27-how-the-heck/how-the-heck-13.jpg">
-    </div>
-    <div class="item">
-      <img src="/assets/blog/14-11-27-how-the-heck/how-the-heck-14.jpg">
-    </div>
-    <div class="item">
-      <img src="/assets/blog/14-11-27-how-the-heck/how-the-heck-15.jpg">
-    </div>
-    <div class="item">
-      <img src="/assets/blog/14-11-27-how-the-heck/how-the-heck-16.jpg">
-    </div>
-    <div class="item">
-      <img src="/assets/blog/14-11-27-how-the-heck/how-the-heck-17.jpg">
-    </div>
-    <div class="item">
-      <img src="/assets/blog/14-11-27-how-the-heck/how-the-heck-18.jpg">
-    </div>
-    <div class="item">
-      <img src="/assets/blog/14-11-27-how-the-heck/how-the-heck-19.jpg">
-    </div>
-    <div class="item">
-      <img src="/assets/blog/14-11-27-how-the-heck/how-the-heck-20.jpg">
-    </div>
-    <div class="item">
-      <img src="/assets/blog/14-11-27-how-the-heck/how-the-heck-21.jpg">
-    </div>
-    <div class="item">
-      <img src="/assets/blog/14-11-27-how-the-heck/how-the-heck-22.jpg">
-    </div>
-    <div class="item">
-      <img src="/assets/blog/14-11-27-how-the-heck/how-the-heck-23.jpg">
-    </div>
-    <div class="item">
-      <img src="/assets/blog/14-11-27-how-the-heck/how-the-heck-24.jpg">
-    </div>
-    <div class="item">
-      <img src="/assets/blog/14-11-27-how-the-heck/how-the-heck-25.jpg">
-    </div>
+<div class="blog-posts-carousel-alt" style="width: 720px;">
+  <div>
+    <img src="how-the-heck-01.jpg">
   </div>
-
-  <!-- Controls -->
-  <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
-    <span class="fa fa-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
-    <span class="fa fa-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
+  <div>
+    <img src="how-the-heck-02.jpg">
+  </div>
+  <div>
+    <img src="how-the-heck-03.jpg">
+  </div>
+  <div>
+    <img src="how-the-heck-04.jpg">
+  </div>
+  <div>
+    <img src="how-the-heck-05.jpg">
+  </div>
+  <div>
+    <img src="how-the-heck-06.jpg">
+  </div>
+  <div>
+    <img src="how-the-heck-07.jpg">
+  </div>
+  <div>
+    <img src="how-the-heck-08.jpg">
+  </div>
+  <div>
+    <img src="how-the-heck-09.jpg">
+  </div>
+  <div>
+    <img src="how-the-heck-10.jpg">
+  </div>
+  <div>
+    <img src="how-the-heck-11.jpg">
+  </div>
+  <div>
+    <img src="how-the-heck-12.jpg">
+  </div>
+  <div>
+    <img src="how-the-heck-13.jpg">
+  </div>
+  <div>
+    <img src="how-the-heck-14.jpg">
+  </div>
+  <div>
+    <img src="how-the-heck-15.jpg">
+  </div>
+  <div>
+    <img src="how-the-heck-16.jpg">
+  </div>
+  <div>
+    <img src="how-the-heck-17.jpg">
+  </div>
+  <div>
+    <img src="how-the-heck-18.jpg">
+  </div>
+  <div>
+    <img src="how-the-heck-19.jpg">
+  </div>
+  <div>
+    <img src="how-the-heck-20.jpg">
+  </div>
+  <div>
+    <img src="how-the-heck-21.jpg">
+  </div>
+  <div>
+    <img src="how-the-heck-22.jpg">
+  </div>
+  <div>
+    <img src="how-the-heck-23.jpg">
+  </div>
+  <div>
+    <img src="how-the-heck-24.jpg">
+  </div>
+  <div>
+    <img src="how-the-heck-25.jpg">
+  </div>
 </div>
 
 

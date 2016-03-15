@@ -8,7 +8,7 @@ comments = true
 tags = [ "Unterhaltung" ]
 +++
 
-![Rooftop Day](/assets/blog/15-06-17-rooftop-day-2015/rooftop-day.jpg)
+![Rooftop Day](rooftop-day.jpg)
 
 <div class="lead">
   Schon zum zweiten mal wird der Rooftop Day (zu deutsch: Dachterrassen Tag) in Bern veranstaltet, aber zum ersten Mal ist der ZeitRaum mit dabei. Yeah!
