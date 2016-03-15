@@ -1,5 +1,6 @@
 +++
 title = "Eröffnungsfeier Effinger"
+slug = "BQRuUW48Yv"
 
 startdate = 2016-03-19T08:00:00Z
 enddate = 2016-03-20T00:30:00Z

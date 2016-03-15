@@ -5,7 +5,7 @@
       position: relative;
       border: 1px solid grey;
       margin-bottom: 20px;
-      .date {
+      .event-date {
         transition: transform 0.5s;
         padding: 20px 30px;
         text-align: center;
@@ -17,13 +17,19 @@
         }
         .month {}
       }
-      .text {
+      .event-text {
         transition: transform 0.5s;
-        padding: 20px 20px 20px 130px;
+        padding: 20px;
+        margin-left: 110px;
+        min-height: 113px;
         h4 {
           margin: 0;
         }
         p {
+          margin-bottom: 30px;
+          font-size: 14px;
+          letter-spacing: 1px;
+          color: #aaa;
           margin: 0;
         }
       }
