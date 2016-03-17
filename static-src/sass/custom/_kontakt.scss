@@ -1,18 +1,41 @@
-.address {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  .contact-item {
-    .ci-title,
-    .ci-text {
-      color: white;
-    }
-    .ci-icon {
-      color:#111;
-      &:before {
-        background-color: white;
+// Contact Section
+.contact-item {
+  border: 3px solid $primary-color;
+  padding: 20px;
+  text-align: center;
+
+  .wave-spacer {
+    height: 4px;
+    width: 100%;
+    background-image: url(/images/icons/wave.svg);
+    margin: 20px 0;
+    clear: both;
+  }
+  .item {
+    width: 100%;
+    text-align: left;
+    p {
+      margin: 5px 0;
+      font-weight: 300;
+
+      span {
+        font-weight: 400;
+        text-align: right;
+        float: right;
       }
+    }
+  }
+}
+
+.address {
+  max-width: 300px;
+  margin: 0 auto;
+  .contact-item {
+    color: white;
+
+    .item p {
+      text-align: center;
+      font-weight: 400;
     }
   }
 }

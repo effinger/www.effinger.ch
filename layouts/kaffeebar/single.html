@@ -58,68 +58,27 @@
           <!-- Col -->
 
           <div class="col-sm-4 mb-40">
-            <!-- hours of business -->
-            <div class="contact-item mt-20 mb-20">
-              <div class="ci-icon">
-                <i class="fa fa-clock-o"></i>
+            <div class="contact-item mt-20 mb-20 clearfix wow fadeInUp">
+              <h4 class="uppercase">Öffnungszeiten</h4>
+              <div class="wave-spacer"></div>
+              <div class="item">
+                <p>Mo-Fr <span>7-23</span></p>
+                <p>Sa <span>8-23</span></p>
+                <p>So <span>Ruhetag</span></p>
               </div>
-              <div class="ci-title font-alt">
-                Mo – Fr.
+              <div class="wave-spacer"></div>
+              <div class="item">
+                <p>Telefon<span>031 398 20 20</span></p>
               </div>
-              <div class="ci-text">
-                7:00 – 23:00 Uhr
+              <div class="wave-spacer"></div>
+              <div class="item">
+                <p>Email<span><a href="mailto:kaffeebar@effinger.ch">kaffeebar@effinger.ch</a></span></p>
               </div>
-              <div class="ci-title font-alt pt-10">
-                Sa.
-              </div>
-              <div class="ci-text">
-                8:00 – 23:00 Uhr
-              </div>
-            </div>
-            <!-- End hours of business -->
-
-            <!-- Phone -->
-            <div class="contact-item mt-20 mb-20">
-              <div class="ci-icon">
-                <i class="fa fa-phone"></i>
-              </div>
-              <div class="ci-title font-alt">
-                Telefon
-              </div>
-              <div class="ci-text">
-                031 398 20 20
+              <div class="wave-spacer"></div>
+              <div class="item">
+                <p>Adresse <span> <a href="/kontakt#contact">Effingerstrasse 10 <br>3011 Bern</a></span></p>
               </div>
             </div>
-            <!-- End Phone -->
-
-            <!-- Email -->
-            <div class="contact-item mt-20 mb-20">
-              <div class="ci-icon">
-                <i class="fa fa-envelope"></i>
-              </div>
-              <div class="ci-title font-alt">
-                Email
-              </div>
-              <div class="ci-text">
-                <a href="mailto:kaffeebar@effinger.ch">kaffeebar@effinger.ch</a>
-              </div>
-            </div>
-            <!-- End Email -->
-
-            <!-- Address -->
-            <div class="contact-item mt-20 mb-20">
-              <div class="ci-icon">
-                <i class="fa fa-map-marker"></i>
-              </div>
-              <div class="ci-title font-alt">
-                Adresse
-              </div>
-              <div class="ci-text">
-                <a href="/kontakt/">Effingerstrasse 10,
-                  <br>3011 Bern</a>
-              </div>
-            </div>
-            <!-- End Address -->
           </div>
 
           <!-- End Col -->
@@ -343,7 +302,7 @@
 
         <!-- Accordion -->
         <dl class="toggle">
-          
+
           {{ range .Params.offers }}
           <dt><a href="">{{ .title }}</a></dt>
           <dd>

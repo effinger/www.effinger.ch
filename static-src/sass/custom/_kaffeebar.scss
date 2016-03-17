@@ -5,18 +5,18 @@
     column-count: 2;
     column-gap: 60px;
     column-fill: auto;
-    
+
     .box-item {
       display: inline-block;
       break-inside: avoid;
       padding: 15px;
       padding-bottom: 5px;
       width: 100%;
-      
+
       table {
         width: 100%;
         margin-bottom: 20px;
-        
+
         tr {
           > td,
           > th {
@@ -24,18 +24,18 @@
             font-size: 16px;
 
             &:first-child {
-              padding-right: 30px; 
+              padding-right: 30px;
             }
 
             &:last-child {
               text-align: right;
             }
           }
-          
+
           > th {
             font-weight: 400;
           }
-          
+
           > td {
             font-weight: 300;
             font-size: 14px;
