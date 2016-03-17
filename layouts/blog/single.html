@@ -1,94 +1,110 @@
 <!DOCTYPE html>
 <html lang="de">
-  {{ partial "head.html" . }}
-  <body class="">
+{{ partial "head.html" . }}
 
-    <!-- Page Wrap -->
-    <div class="page" id="top">
+<body class="">
 
-      <nav class="main-nav stick-fixed">
-        {{ partial "navigation.html" . }}
-      </nav>
+  <!-- Page Wrap -->
+  <div class="page" id="top">
 
-      <!-- Section -->
-      <section class="page-section">
-        <div class="container relative">
+    <nav class="main-nav stick-fixed">
+      {{ partial "navigation.html" . }}
+    </nav>
 
-          <div class="row">
+    <!-- Header -->
+    <section class="small-section bg-gray-lighter first-section-mt">
+      <div class="relative container align-left">
 
-            <!-- Content -->
-            <div class="col-sm-10 col-sm-offset-1">
+        <div class="row">
 
-              <!-- Post -->
-              <div class="blog-item mb-80 mb-xs-40">
+          <div class="col-md-8">
+            <h1 class="hs-line-11 font-alt mb-20 mb-xs-0">Blog</h1>
+            <div class="hs-line-4 font-alt black">
+              Hintergründe aus der Community
+            </div>
+          </div>
+          <div class="col-md-4 mt-30">
+            <div class="mod-breadcrumbs font-alt align-right">
+              <a href="/blog"><i class="fa fa-angle-left"></i> Zur Übersicht</a>
+            </div>
+          </div>
+        </div>
 
-                <!-- Text -->
-                <div class="blog-item-body">
+      </div>
+    </section>
+    <!-- End Header -->
 
-                  <h1 class="mt-0 font-alt">{{ .Title }}</h1>
-                  
-                  <!-- Author, Tags, Comments -->
-                  <div class="blog-item-data local-scroll">
-                    <a><i class="fa fa-clock-o"></i> {{ .Date.Format "02.01.2006" }}</a>
-                    <span class="separator">&nbsp;</span>
-                    <a href="#"><i class="fa fa-user"></i> {{ .Params.author }}</a>
-                    <span class="separator">&nbsp;</span>
-                    <i class="fa fa-folder-open"></i>
-                    {{ range $index, $element := .Params.tags }}
-                      {{ if $index }}, {{ end }}<a href="#">{{ . }}</a>
-                    {{ end }}
-                    {{ if .Params.comments }}
-                    <span class="separator">&nbsp;</span>
-                    <i class="fa fa-comments"></i> <a href="#comments" data-disqus-identifier="{{ .RelPermalink }}">Kommentare</a>
-                    {{ end }}
-                  </div>
+    <!-- Section -->
+    <section class="page-section">
+      <div class="container relative">
 
+        <div class="row">
 
-                  {{ .Content }}
+          <!-- Content -->
+          <div class="col-sm-10 col-sm-offset-1">
 
+            <!-- Post -->
+            <div class="blog-item mb-80 mb-xs-40">
 
+              <!-- Text -->
+              <div class="blog-item-body">
+
+                <h1 class="mt-0 font-alt">{{ .Title }}</h1>
+
+                <!-- Author, Tags, Comments -->
+                <div class="blog-item-data local-scroll">
+                  <a><i class="fa fa-clock-o"></i> {{ .Date.Format "02.01.2006" }}</a>
+                  <span class="separator">&nbsp;</span>
+                  <a href="#"><i class="fa fa-user"></i> {{ .Params.author }}</a>
+                  <span class="separator">&nbsp;</span>
+                  <i class="fa fa-folder-open"></i> {{ range $index, $element := .Params.tags }} {{ if $index }}, {{ end }}<a href="#">{{ . }}</a> {{ end }} {{ if .Params.comments }}
+                  <span class="separator">&nbsp;</span>
+                  <i class="fa fa-comments"></i> <a href="#comments" data-disqus-identifier="{{ .RelPermalink }}">Kommentare</a> {{ end }}
                 </div>
-                <!-- End Text -->
+
+
+                {{ .Content }}
+
 
               </div>
-              <!-- End Post -->
-
-              <!-- Comments -->
-              {{ if .Params.comments }}
-              <div class="mb-80 mb-xs-40">
-
-                <h4 id="comments" class="blog-page-title font-alt">Kommentare</h4>
-                {{ partial "disqus_comments.html" . }}
-              </div>
-              {{ end }}
-              <!-- End Comments -->
-
-              <!-- Prev/Next Post -->
-              <div class="clearfix mt-40">
-                {{ if .Prev }}
-                <a href="{{ .Prev.RelPermalink }}" class="blog-item-more left"><i class="fa fa-angle-left"></i>&nbsp;{{ .Prev.Title }}</a>
-                {{ end }}
-                {{ if .Next }}
-                <a href="{{ .Next.RelPermalink }}" class="blog-item-more right"><i class="fa fa-angle-right"></i>{{ .Next.Title }}</a>
-                {{ end }}
-              </div>
-              <!-- End Prev/Next Post -->
+              <!-- End Text -->
 
             </div>
-            <!-- End Content -->
+            <!-- End Post -->
+
+            <!-- Comments -->
+            {{ if .Params.comments }}
+            <div class="mb-80 mb-xs-40">
+
+              <h4 id="comments" class="blog-page-title font-alt">Kommentare</h4> {{ partial "disqus_comments.html" . }}
+            </div>
+            {{ end }}
+            <!-- End Comments -->
+
+            <!-- Prev/Next Post -->
+            <div class="clearfix mt-40">
+              {{ if .Prev }}
+              <a href="{{ .Prev.RelPermalink }}" class="blog-item-more left"><i class="fa fa-angle-left"></i>&nbsp;{{ .Prev.Title }}</a> {{ end }} {{ if .Next }}
+              <a href="{{ .Next.RelPermalink }}" class="blog-item-more right"><i class="fa fa-angle-right"></i>{{ .Next.Title }}</a> {{ end }}
+            </div>
+            <!-- End Prev/Next Post -->
 
           </div>
+          <!-- End Content -->
 
         </div>
-      </section>
-      <!-- End Section -->
 
-      {{ partial "footer.html" . }}
+      </div>
+    </section>
+    <!-- End Section -->
 
-    </div>
-    <!-- End Page Wrap -->
+    {{ partial "footer.html" . }}
 
-    {{ partial "body_includes.html" . }}
+  </div>
+  <!-- End Page Wrap -->
 
-  </body>
-</html>     
+  {{ partial "body_includes.html" . }}
+
+</body>
+
+</html>

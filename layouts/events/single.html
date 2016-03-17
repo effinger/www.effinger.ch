@@ -23,6 +23,11 @@
               Lass es dir nicht entgehen.
             </div>
           </div>
+          <div class="col-md-4 mt-30">
+            <div class="mod-breadcrumbs font-alt align-right">
+              <a href="/events"><i class="fa fa-angle-left"></i> Zeige alle Events</a>
+            </div>
+          </div>
         </div>
 
       </div>
@@ -36,7 +41,7 @@
     {{ $start_weekday := index $.Site.Data.de.weekdays .Params.startdate.Weekday }}
     {{ $start_time := printf "%02d:%02d" .Params.startdate.Hour .Params.startdate.Minute }}
     {{ $end_time := printf "%02d:%02d" .Params.enddate.Hour .Params.enddate.Minute }}
-    
+
     <!-- Section Event Single View -->
     <section class="page-section event">
       <div class="container relative eventsingle">
@@ -56,7 +61,7 @@
                   <p><small><i class="fa fa-calendar-o"></i> {{ $start_weekday }}, {{ $start_day }}. {{ $start_month }} {{ $start_year }}</small></p>
                   <p><small><i class="fa fa-clock-o"></i> {{ $start_time }} bis {{ $end_time }} Uhr</small></p>
                   <p><small><i class="fa fa-map-marker"></i> <a href="{{ .Params.address_link }}" target="_blank" title="Open in Google Maps">{{ .Params.location }}</a></small></p>
-                  <p><small><i class="fa fa-tags"></i> 
+                  <p><small><i class="fa fa-tags"></i>
                     {{ delimit .Params.categories ", " }}
                     </small></p>
                 </div>
@@ -78,7 +83,7 @@
     </div>
     <!-- End Google Map -->
 
-    
+
     <!-- Section Event Registration -->
     <!--
     <section class="page-section event">
