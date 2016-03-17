@@ -58,14 +58,17 @@
             <div class="section-text align-center mb-70 mb-xs-40">
               Wer sich wie stark beteiligt, ändert sich laufend. Es gibt Newsletterabonnenten, Blogleserinnen, Online- und Offline-Kommentargeber, Coworker, Einrichtungsverantwortliche, Mitglieder im Slack-Chat, Gönner und einfach Freunde, die uns ermutigen. Genial!
               <br>
-              <br> Hier sind die Coworker, die mit unterschiedlichen Rollen den ZeitRaum und (bald) den Effinger betreiben.
+              <br> Hier sind die Coworker, die als "Effianer" verantwortlich sind für den Betrieb des Effingers betreiben.
             </div>
           </div>
         </div>
 
         <div class="row multi-columns-row">
+          
+          {{ $today := index $.Site.Data.de.weekdays .Now.Weekday }}
+          
           {{ $.Scratch.Set "delay" -1 }}
-          {{ range sort .Site.Data.effianer "weight" }}
+          {{ range sort $.Site.Data.effianer "weight" }}
           {{ $.Scratch.Set "delay" (mod (add ($.Scratch.Get "delay") 1) 4) }}
           <!-- Team Item -->
           <div class="col-sm-6 col-md-3 col-lg-3 mb-50 wow fadeInUp" data-wow-delay="0.{{ $.Scratch.Get "delay" }}s">
@@ -113,6 +116,12 @@
                   {{ end }}
                 </div>
               </div>
+              
+              {{ if in .host $today }}
+              <div class="team-item-label">
+                  <span class="label">Heute Gastgeber</span>
+              </div>
+              {{ end }}
             </div>
           </div>
           <!-- End Team Item -->
