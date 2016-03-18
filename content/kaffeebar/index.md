@@ -395,6 +395,86 @@ offers_title = "Menu"
         text="Moltó Negre Cava Brut DO"
         price="8.50"
 
+  [[offers.section]]
+    title = "Aperitiv & Drinks"
+    icon = "<i class='fa fa-glass'></i>"
+
+    [[offers.section.element]]
+      text="Hugo"
+      price="9.50"
+
+      [[offers.section.element.subelement]]    
+        text="Prosecco, Holunder, Mineral, Zitrone, Minze"
+
+    [[offers.section.element]]
+      text="Aperol Spritz"
+      price="9.50"
+
+      [[offers.section.element.subelement]]    
+        text="Aperol, Prosecco, Mineral, Orange"
+
+    [[offers.section.element]]
+      text="Gespritzer Weisser"
+      price="7.50"
+
+
+    [[offers.section.element]]
+      text="Lillet Vive"
+      price="9.50"
+
+      [[offers.section.element.subelement]]    
+        text="Lillet, Tonic, Gurke, Zitrone, Minze"
+
+    [[offers.section.element]]
+      text="Rosato Musa"
+      price="9.50"
+
+      [[offers.section.element.subelement]]    
+        text="Ramazotti Rosato, Vanillesirup, Apfelsaft, Mineral"
+
+    [[offers.section.element]]
+      text="Pimm’s No 1 Cup"
+      price="14.00"
+
+      [[offers.section.element.subelement]]    
+        text="Pimm’s No 1, Ginger Ale, Gurke, Zitrone, Orangen, Limette, Minzen"
+
+    [[offers.section.element]]
+      text="Amaretto sour"
+      price="14.00"
+
+      [[offers.section.element.subelement]]    
+        text="Amaretto, Zitronensaft, Orangensaft"
+
+    [[offers.section.element]]
+      text="Vermouth Bianco L’Osteria"
+      price="8.00"
+
+
+    [[offers.section.element]]
+      text="Ramazotti Rosato"
+      price="8.00"
+
+
+    [[offers.section.element]]
+      text="Likör"
+
+      [[offers.section.element.subelement]]    
+        text="Peppe’s Ingwerer"
+        price="11.00"
+
+    [[offers.section.element.subelement]]
+      text="Bündner Röteli"
+      price="9.00"
+
+    [[offers.section.element.subelement]]
+      text="Lillet blanc"
+      price="8.00"
+
+    [[offers.section.element.subelement]]
+      text="Amaretto di Mattia Walcher"
+      price="9.00"
+
 [menu.main]
   pre = "<i class='fa fa-coffee'></i>"
   weight = 1
