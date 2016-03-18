@@ -1,456 +1,272 @@
-{{/* 
-Hack: Hugo (v0.15) does not have way to use a content file for the homepage. As a workaround we go trough all pages (content files) here and pick the "index.md". Through "range" this becomes the new context (the dot).
-See: https://github.com/spf13/hugo/issues/330
-*/}}
-{{ range where .Data.Pages "RelPermalink" "/" }}
+{{/* Hack: Hugo (v0.15) does not have way to use a content file for the homepage. As a workaround we go trough all pages (content files) here and pick the "index.md". Through "range" this becomes the new context (the dot). See: https://github.com/spf13/hugo/issues/330
+*/}} {{ range where .Data.Pages "RelPermalink" "/" }}
 <!DOCTYPE html>
 <html lang="de">
-  <head>
-    {{ partial "meta.html" . }}
 
-    <title>{{ .Title }}</title>
+<head>
+  {{ partial "meta.html" . }}
 
-    {{ partial "head_includes.html" . }}
-    {{ partial "analytics_js.html" . }}
-  </head>
-  <body class="">
+  <title>{{ .Title }}</title>
 
-    <!-- Page Wrap -->
-    <div class="page" id="top">
-      
-      <nav class="main-nav dark transparent stick-fixed">
+  {{ partial "head_includes.html" . }} {{ partial "analytics_js.html" . }}
+</head>
+
+<body class="">
+
+  <!-- Page Wrap -->
+  <div class="page" id="top">
+
+    <nav class="main-nav dark transparent stick-fixed">
       {{ partial "navigation.html" . }}
-      </nav>
+    </nav>
 
-      <!-- Home Section -->
-      <section class="home-section bg-dark-alfa-70 parallax-2 fixed-height-small" data-background="images/full-width-images/section-bg-15.jpg" id="home">
-        <div class="js-height-parent container">
+    <!-- Home Section -->
+    <section class="home-section bg-dark-alfa-70 parallax-2 fixed-height-small" data-background="effinger_header.jpg" id="home">
+      <div class="js-height-parent container">
 
-          <!-- Hero Content -->
-          <div class="home-content">
-            <div class="home-text">
-              <img src="images/Logo-Effinger-normal.svg" alt="Logo Effinger" class="mb-10">
-              <h1 class="font-tagline font-alt mb-50 mb-xs-30">
-                Kaffeebar & Coworking Space 
+        <!-- Hero Content -->
+        <div class="home-content">
+          <div class="home-text">
+            <img src="images/Logo-Effinger-normal-weiss.svg" alt="Logo Effinger" class="mb-10 mt-50">
+            <h1 class="font-tagline font-alt mb-50 mb-xs-30">
+                Kaffeebar & Coworking Space
               </h1>
 
-              <div class="local-scroll">
-                <a href="#about" class="btn btn-mod btn-border-w btn-medium btn-round hidden-xs">See More</a>
-                <span class="hidden-xs">&nbsp;</span>
-                <a href="http://vimeo.com/50201327" class="btn btn-mod btn-border-w btn-medium btn-round lightbox mfp-iframe">Play Reel</a>
-              </div>
-
+            <div class="local-scroll hidden">
+              <a href="#kaffeebar" class="btn btn-mod btn-border-w btn-medium btn-round hidden-xs">Kaffebar</a>
+              <span class="hidden-xs">&nbsp;</span>
+              <a href="#kaffeebar" class="btn btn-mod btn-border-w btn-medium btn-round hidden-xs">Coworking</a>
+              <span class="hidden-xs">&nbsp;</span>
+              <a href="#kaffeebar" class="btn btn-mod btn-border-w btn-medium btn-round hidden-xs">Community</a>
             </div>
-          </div>
-          <!-- End Hero Content -->
 
+          </div>
         </div>
-      </section>
-      <!-- End Home Section -->
+        <!-- End Hero Content -->
+
+      </div>
+    </section>
+    <!-- End Home Section -->
 
 
 
 
-      <!-- About Section -->
-      <section class="page-section" id="about">
-        <div class="container relative">
+    <!-- Quote Section -->
+    <section class="page-section" id="about">
+      <div class="container relative">
 
-          <h2 class="section-title font-alt align-left mb-70 mb-sm-40">
-            About Studio
-
-            <a href="#" class="section-more right">More about us <i class="fa fa-angle-right"></i></a>
-
-          </h2>
-
-          <div class="section-text">
-            <div class="row">
-
-              <div class="col-md-4 mb-sm-50 mb-xs-30">
-
-                <!-- Bar Item -->
-                <div class="progress tpl-progress">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-                    Branding, % <span>90</span>
-                  </div>
-                </div>
-                <!-- End Bar Item -->
-
-                <!-- Bar Item -->
-                <div class="progress tpl-progress">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-                    Design, % <span>80</span>
-                  </div>
-                </div>
-                <!-- End Bar Item -->
-
-                <!-- Bar Item -->
-                <div class="progress tpl-progress">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-                    Development, % <span>85</span>
-                  </div>
-                </div>
-                <!-- End Bar Item -->
-
-              </div>
-
-              <div class="col-md-4 col-sm-6 mb-sm-50 mb-xs-30">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In maximus ligula semper metus pellentesque mattis. Maecenas  volutpat, diam enim sagittis quam, id porta quam. Sed id dolor consectetur fermentum nibh volutpat, accumsan purus. 
-              </div>
-
-              <div class="col-md-4 col-sm-6 mb-sm-50 mb-xs-30">
-                Etiam sit amet fringilla lacus. Pellentesque suscipit ante at ullamcorper pulvinar neque porttitor. Integer lectus. Praesent sed nisi eleifend, fermentum orci amet, iaculis libero. Donec vel ultricies purus. Nam dictum sem, eu aliquam.
-              </div>
-
-            </div>
-          </div>
-
+        <div class="section-text">
+          <h1 class="font-alt">Kaffeebar & Coworking Space</h1> Für Jungunternehmer, Kreative, Handwerkerinnen, Weltveränderer, Bernerinnen, Zugereiste, Kaffeeliebhaberinnen, Biertrinker, Kulturschaffende, junge Kunst und für dich.
         </div>
-      </section>
-      <!-- End About Section -->
 
-      <!-- Divider -->
-      <hr class="mt-0 mb-0 "/>
-      <!-- End Divider -->
 
-      <!-- Services Section -->
-      <section class="page-section" id="services">
-        <div class="container relative">
+      </div>
+    </section>
+    <!-- End Quote Section -->
 
-          <h2 class="section-title font-alt mb-70 mb-sm-40">
-            Services
-          </h2>
+    <!-- CTA Kaffeebar Section -->
+    <section class="page-section bg-gray">
+      <div class="container relative">
 
-          <!-- Nav tabs -->
-          <ul class="nav nav-tabs tpl-alt-tabs font-alt pt-30 pt-sm-0 pb-30 pb-sm-0">
-            <li class="active">
-              <a href="#service-branding" data-toggle="tab">
+        <div class="row">
 
-                <div class="alt-tabs-icon">
-                  <span class="icon-strategy"></span>
-                </div>
+          <div class="col-md-7 mb-sm-40">
 
-                Branding
-              </a>
-            </li>
-            <li>
-              <a href="#service-web-design" data-toggle="tab">
-
-                <div class="alt-tabs-icon">
-                  <span class="icon-desktop"></span>
-                </div>
-
-                Web Design
-              </a>
-            </li>
-            <li>
-              <a href="#service-graphic" data-toggle="tab">
-
-                <div class="alt-tabs-icon">
-                  <span class="icon-tools"></span>
-                </div>
-
-                Graphic Design
-              </a>
-            </li>
-            <li>
-              <a href="#service-development" data-toggle="tab">
-
-                <div class="alt-tabs-icon">
-                  <span class="icon-gears"></span>
-                </div>
-
-                Development
-              </a>
-            </li>
-            <li>
-              <a href="#service-photography" data-toggle="tab">
-
-                <div class="alt-tabs-icon">
-                  <span class="icon-camera"></span>
-                </div>
-
-                Photography
-              </a>
-            </li>
-          </ul>
-          <!-- End Nav tabs -->
-
-          <!-- Tab panes -->
-          <div class="tab-content tpl-tabs-cont">
-
-            <!-- Service Item -->
-            <div class="tab-pane fade in active" id="service-branding">
-
-              <div class="section-text">
-                <div class="row">
-                  <div class="col-md-4 mb-md-40 mb-xs-30">
-                    <blockquote class="mb-0">
-                      <p>
-                        A&nbsp;brand for a&nbsp;company is&nbsp;like a&nbsp;reputation 
-                        for a&nbsp;person. You earn reputation by&nbsp;trying to&nbsp;do&nbsp;hard 
-                        things well.
-                      </p>
-                      <footer>
-                        Jeff Bezos
-                      </footer>
-                    </blockquote>
-                  </div>
-                  <div class="col-md-4 col-sm-6 mb-sm-50 mb-xs-30">
-                    Maecenas  volutpat, diam enim sagittis quam, id porta quam. Sed id dolor consectetur fermentum 
-                    volutpat nibh, accumsan purus. Lorem ipsum dolor sit semper amet, consectetur adipiscing elit. 
-                    In maximus ligula metus pellentesque mattis.  
-                  </div>
-                  <div class="col-md-4 col-sm-6 mb-sm-50 mb-xs-30">
-                    Donec vel ultricies purus. Nam dictum sem, ipsum aliquam . Etiam sit amet fringilla lacus. 
-                    Pellentesque suscipit ante at ullamcorper pulvinar neque porttitor. Integer lectus. 
-                    Praesent sed nisi eleifend, fermentum orci amet, iaculis libero. 
-                  </div>
-                </div>
-              </div>
-
+            <!-- Gallery -->
+            <div class="work-full-media mt-0 white-shadow wow fadeInUp">
+              <ul class="clearlist work-full-slider owl-carousel">
+                <li>
+                  <img src="kaffeebar_01.jpg" alt="" />
+                </li>
+                <li>
+                  <img src="kaffeebar_02.jpg" alt="" />
+                </li>
+              </ul>
             </div>
-            <!-- End Service Item -->
-
-            <!-- Service Item -->
-            <div class="tab-pane fade" id="service-web-design">
-
-              <div class="section-text">
-                <div class="row">
-                  <div class="col-md-4 mb-md-40 mb-xs-30">
-                    <blockquote class="mb-0">
-                      <p>
-                        It&nbsp;doesn&rsquo;t matter how many times&nbsp;I have to&nbsp;click, as&nbsp;long 
-                        as&nbsp;each click is&nbsp;a&nbsp;mindless, unambiguous choice.
-                      </p>
-                      <footer>
-                        Steve Krug
-                      </footer>
-                    </blockquote>
-                  </div>
-                  <div class="col-md-4 col-sm-6 mb-sm-50 mb-xs-30">
-                    Cras mi tortor, laoreet id ornare et, accumsan non magna. Maecenas vulputate accumsan velit. 
-                    Curabitur a nulla ex. Nam a tincidunt ante. Vitae gravida turpis. Vestibulum varius
-                    nulla non nulla scelerisque tristique.
-                  </div>
-                  <div class="col-md-4 col-sm-6 mb-sm-50 mb-xs-30">
-                    Mauris id viverra augue, eu porttitor diam. Praesent faucibus est a interdum elementum. 
-                    Nam varius at ipsum id dignissim. Nam a tincidunt ante lorem. Pellentesque suscipit ante
-                    at ullamcorper pulvinar neque porttitor. 
-                  </div>
-                </div>
-              </div>
-
-            </div>
-            <!-- End Service Item -->
-
-            <!-- Service Item -->
-            <div class="tab-pane fade" id="service-graphic">
-
-              <div class="section-text">
-                <div class="row">
-                  <div class="col-md-4 mb-md-40 mb-xs-30">
-                    <blockquote class="mb-0">
-                      <p>
-                        Never fall in&nbsp;love with an&nbsp;idea. They&rsquo;re whores. If&nbsp;the one you&rsquo;re with isn&rsquo;t doing the job, there&rsquo;s always another.
-                      </p>
-                      <footer>
-                        Chip Kidd
-                      </footer>
-                    </blockquote>
-                  </div>
-                  <div class="col-md-4 col-sm-6 mb-sm-50 mb-xs-30">
-                    Lorem ipsum dolor sit semper amet, consectetur adipiscing elit. In maximus ligula metus pellentesque
-                    mattis. Donec vel ultricies purus. Nam dictum sem, ipsum aliquam . Praesent sed nisi eleifend, 
-                    fermentum orci amet, iaculis libero. 
-                  </div>
-                  <div class="col-md-4 col-sm-6 mb-sm-50 mb-xs-30">
-
-                    Pellentesque suscipit ante at ullamcorper pulvinar neque porttitor. Integer lectus. Etiam sit amet 
-                    fringilla lacus. Maecenas  volutpat, diam enim sagittis quam, id porta quam. Sed id&nbsp;dolor 
-                    consectetur fermentum volutpat nibh, accumsan purus. 
-                  </div>
-                </div>
-              </div>
-
-            </div>
-            <!-- End Service Item -->
-
-            <!-- Service Item -->
-            <div class="tab-pane fade" id="service-development">
-
-              <div class="section-text">
-                <div class="row">
-                  <div class="col-md-4 mb-md-40 mb-xs-30">
-                    <blockquote class="mb-0">
-                      <p>
-                        All that is&nbsp;valuable in&nbsp;human society depends upon the opportunity for development accorded the individual.
-                      </p>
-                      <footer>
-                        Albert Einstein
-                      </footer>
-                    </blockquote>
-                  </div>
-                  <div class="col-md-4 col-sm-6 mb-sm-50 mb-xs-30">
-                    Fusce hendrerit vitae nunc id gravida. Donec euismod quis ante at mattis. Mauris dictum ante sit 
-                    amet enim interdum semper. Vestibulum odio justo, faucibus et dictum eu, malesuada nec neque.
-                    Maecenas  volutpat, diam enim sagittis. 
-                  </div>
-                  <div class="col-md-4 col-sm-6 mb-sm-50 mb-xs-30">
-                    Pellentesque suscipit ante at ullamcorper pulvinar neque porttitor. Sed id dolor consectetur fermentum 
-                    volutpat nibh, accumsan purus. Lorem ipsum dolor sit semper amet, consectetur adipiscing elit. 
-                    Inmed maximus ligula metus pellentesque.
-                  </div>
-                </div>
-              </div>
-
-            </div>
-            <!-- End Service Item -->
-
-            <!-- Service Item -->
-            <div class="tab-pane fade" id="service-photography">
-
-              <div class="section-text">
-                <div class="row">
-                  <div class="col-md-4 mb-md-40 mb-xs-30">
-                    <blockquote class="mb-0">
-                      <p>
-                        Photography is&nbsp;the simplest thing in&nbsp;the world, but it&nbsp;is&nbsp;incredibly 
-                        complicated to&nbsp;make it&nbsp;really work.
-                      </p>
-                      <footer>
-                        Martin Parr
-                      </footer>
-                    </blockquote>
-                  </div>
-                  <div class="col-md-4 col-sm-6 mb-sm-50 mb-xs-30">
-                    Donec vel ultricies purus. Nam dictum sem, ipsum aliquam . Etiam sit amet fringilla lacus. 
-                    Pellentesque suscipit ante at ullamcorper pulvinar neque porttitor. Integer lectus. 
-                    Praesent sed nisi eleifend, fermentum orci amet, iaculis libero. 
-                  </div>
-                  <div class="col-md-4 col-sm-6 mb-sm-50 mb-xs-30">
-                    Maecenas  volutpat, diam enim sagittis quam, id porta quam. Sed id dolor consectetur fermentum 
-                    volutpat nibh, accumsan purus. Lorem ipsum dolor sit semper amet, consectetur adipiscing elit. 
-                    In maximus ligula metus pellentesque mattis. 
-                  </div>
-                </div>
-              </div>
-
-            </div>
-            <!-- End Service Item -->
+            <!-- End Gallery -->
 
           </div>
-          <!-- End Tab panes -->
 
-          <div class="align-center">
-            <a href="pages-services-1.html" class="section-more font-alt">View all services <i class="fa fa-angle-right"></i></a>
+          <div class="col-md-5 col-lg-4 col-lg-offset-1">
+
+            <!-- About Project -->
+            <div class="text">
+
+              <h3 class="font-alt mb-30 mb-xxs-10">Kaffeebar</h3>
+
+              <p>
+                Bei uns gibt es guten Kaffee für Tanten, Espresso für Eilige und Tee für Abwartende. Und auch Apéros für Prostende, Bier für Feierabende und Wein für alle.
+              </p>
+
+              <div class="mt-40">
+                <a href="/kaffeebar/" class="btn btn-mod btn-border btn-round btn-medium" target="_blank">Mehr</a>
+              </div>
+
+            </div>
+            <!-- End About Project -->
+
           </div>
-
         </div>
-      </section>
-      <!-- End Services Section -->
+      </div>
+    </section>
+    <!-- End CTA Kaffeebar Section -->
 
+    <!-- CTA Coworking Section -->
+    <section class="page-section">
+      <div class="container relative">
 
-      <!-- Call Action Section -->
-      <section class="page-section pt-0 pb-0 banner-section bg-dark" data-background="images/full-width-images/section-bg-2.jpg">
-        <div class="container relative">
+        <div class="row">
 
-          <div class="row">
+          <div class="col-md-5 col-lg-4 col-lg-offset-1">
 
-            <div class="col-sm-6">
+            <!-- About Project -->
+            <div class="text">
 
-              <div class="mt-140 mt-lg-80 mb-140 mb-lg-80">
-                <div class="banner-content">
-                  <h3 class="banner-heading font-alt">Looking for exclusive digital services?</h3>
-                  <div class="banner-decription">
-                    Proin fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor. 
-                    Integer non dapibus diam, ac eleifend lectus.
-                  </div>
-                  <div class="local-scroll">
-                    <a href="pages-contact-1.html" class="btn btn-mod btn-w btn-medium btn-round">Lets talk</a>
-                  </div>
-                </div>
+              <h3 class="font-alt mb-30 mb-xxs-10">Coworking Space</h3>
+
+              <p>
+                Der Coworking Space stellt Arbeitsplätze zur Verfügung, die flexibel auf Tagesbasis gemietet werden können.
+              </p>
+
+              <div class="mt-40">
+                <a href="/coworking/" class="btn btn-mod btn-border btn-round btn-medium" target="_blank">Mehr</a>
               </div>
 
             </div>
+            <!-- End About Project -->
 
-            <div class="col-sm-6 banner-image wow fadeInUp">
-              <img src="images/promo-1.png" alt="" />
+          </div>
+
+          <div class="col-md-7 mb-sm-40">
+
+            <!-- Gallery -->
+            <div class="work-full-media mt-0 white-shadow wow fadeInUp">
+              <ul class="clearlist work-full-slider owl-carousel">
+                <li>
+                  <img src="coworking_01.jpg" alt="" />
+                </li>
+                <li>
+                  <img src="coworking_02.jpg" alt="" />
+                </li>
+              </ul>
             </div>
+            <!-- End Gallery -->
 
           </div>
 
         </div>
-      </section>
-      <!-- End Call Action Section -->
+      </div>
+    </section>
+    <!-- End CTA Coworking Section -->
 
+    <!-- CTA Community Section -->
+    <section class="page-section bg-gray">
+      <div class="container relative">
 
-      <!-- Process Section -->
-      <section class="page-section">
-        <div class="container relative">
+        <div class="row">
 
-          <!-- Features Grid -->
-          <div class="row alt-features-grid">
+          <div class="col-md-7 mb-sm-40">
 
-            <!-- Text Item -->
-            <div class="col-sm-3">
-              <div class="alt-features-item align-center">
-                <div class="alt-features-descr align-left">
-                  <h4 class="mt-0 font-alt">Work process</h4>
-                  Lorem ipsum dolor sit amet, c-r adipiscing elit. 
-                  In maximus ligula semper metus pellentesque mattis. 
-                  Maecenas  volutpat, diam enim.
-                </div>
-              </div>
+            <!-- Gallery -->
+            <div class="work-full-media mt-0 white-shadow wow fadeInUp">
+              <ul class="clearlist work-full-slider owl-carousel">
+                <li>
+                  <img src="community_01.jpg" alt="" />
+                </li>
+              </ul>
             </div>
-            <!-- End Text Item -->
-
-            <!-- Features Item -->
-            <div class="col-sm-3">
-              <div class="alt-features-item align-center">
-                <div class="alt-features-icon">
-                  <span class="icon-chat"></span>
-                </div>
-                <h3 class="alt-features-title font-alt">1. Discuss</h3>
-              </div>
-            </div>
-            <!-- End Features Item -->
-
-            <!-- Features Item -->
-            <div class="col-sm-3">
-              <div class="alt-features-item align-center">
-                <div class="alt-features-icon">
-                  <span class="icon-browser"></span>
-                </div>
-                <h3 class="alt-features-title font-alt">2. Make</h3>
-              </div>
-            </div>
-            <!-- End Features Item -->
-
-            <!-- Features Item -->
-            <div class="col-sm-3">
-              <div class="alt-features-item align-center">
-                <div class="alt-features-icon">
-                  <span class="icon-heart"></span>
-                </div>
-                <h3 class="alt-features-title font-alt">3. Product</h3>
-              </div>
-            </div>
-            <!-- End Features Item -->
+            <!-- End Gallery -->
 
           </div>
-          <!-- End Features Grid -->
+
+          <div class="col-md-5 col-lg-4 col-lg-offset-1">
+
+            <!-- About Project -->
+            <div class="text">
+
+              <h3 class="font-alt mb-30 mb-xxs-10">Community</h3>
+
+              <p>
+                Wir sind eine innovative, kreative Community mit einer gemeinsamen Kaffeebar und Coworking Space in Bern. Wir sind eine Heimat für Jungunternehmer, Kreative und andere Weltveränderer, die einander helfen, ihre Ideen in Firmen, Innovationen und soziale Aktionen umzusetzen.              </p>
+
+              <div class="mt-40">
+                <a href="/community/ueber/" class="btn btn-mod btn-border btn-round btn-medium" target="_blank">Mehr</a>
+              </div>
+
+            </div>
+            <!-- End About Project -->
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End CTA Community Section -->
+
+    <!-- Process Section -->
+    <section class="page-section">
+      <div class="container relative">
+
+        <!-- Features Grid -->
+        <div class="row alt-features-grid">
+
+          <!-- Text Item -->
+          <div class="col-sm-3">
+            <div class="alt-features-item align-center">
+              <div class="alt-features-descr align-left">
+                <h4 class="mt-0 font-alt">Work process</h4> Lorem ipsum dolor sit amet, c-r adipiscing elit. In maximus ligula semper metus pellentesque mattis. Maecenas volutpat, diam enim.
+              </div>
+            </div>
+          </div>
+          <!-- End Text Item -->
+
+          <!-- Features Item -->
+          <div class="col-sm-3">
+            <div class="alt-features-item align-center">
+              <div class="alt-features-icon">
+                <span class="icon-chat"></span>
+              </div>
+              <h3 class="alt-features-title font-alt">1. Discuss</h3>
+            </div>
+          </div>
+          <!-- End Features Item -->
+
+          <!-- Features Item -->
+          <div class="col-sm-3">
+            <div class="alt-features-item align-center">
+              <div class="alt-features-icon">
+                <span class="icon-browser"></span>
+              </div>
+              <h3 class="alt-features-title font-alt">2. Make</h3>
+            </div>
+          </div>
+          <!-- End Features Item -->
+
+          <!-- Features Item -->
+          <div class="col-sm-3">
+            <div class="alt-features-item align-center">
+              <div class="alt-features-icon">
+                <span class="icon-heart"></span>
+              </div>
+              <h3 class="alt-features-title font-alt">3. Product</h3>
+            </div>
+          </div>
+          <!-- End Features Item -->
 
         </div>
-      </section>
-      <!-- End Process Section -->
+        <!-- End Features Grid -->
 
-      {{ partial "footer.html" . }}
+      </div>
+    </section>
+    <!-- End Process Section -->
 
-    </div>
-    <!-- End Page Wrap -->
+    {{ partial "footer.html" . }}
 
-    {{ partial "body_includes.html" . }}
-  </body>
+  </div>
+  <!-- End Page Wrap -->
+
+  {{ partial "body_includes.html" . }}
+</body>
+
 </html>
 
 {{ end }}
