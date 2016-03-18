@@ -1,10 +1,10 @@
 name = "Claudia Schären"
 image = "/images/effianer/claudia-schaeren.jpg"
-host = [ "Montag" ]
+description = "Gastgeberin am Montag"
 weight = 4
 email = "claudia@effinger.ch"
 phone = "+41 78 789 63 77"
-website = "http://www.a-und-o.ch"
+website = "http://www.a-und-o.ch/"
 twitter = ""
 facebook = ""
 instagram = ""

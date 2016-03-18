@@ -1,6 +1,6 @@
 name = "Urs Vögeli"
 image = "/images/effianer/urs-voegeli.jpg"
-host = [ "Montag" ]
+description = "Gastgeber am Montag"
 weight = 3
 email = "urs@effinger.ch"
 phone = ""

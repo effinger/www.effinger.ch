@@ -51,7 +51,7 @@
     <section class="page-section" id="team">
       <div class="container relative">
 
-        <h2 class="section-title font-alt mb-70 mb-sm-40">Unsere Community</h2>
+        <h2 class="section-title font-alt mb-70 mb-sm-40">Unser Effianer-Team</h2>
 
         <div class="row">
           <div class="col-md-8 col-md-offset-2">
@@ -68,7 +68,7 @@
           {{ $today := index $.Site.Data.de.weekdays .Now.Weekday }}
           
           {{ $.Scratch.Set "delay" -1 }}
-          {{ range sort $.Site.Data.effianer "weight" }}
+          {{ range $ref, $effianer := (sort $.Site.Data.effianer "weight") }}
           {{ $.Scratch.Set "delay" (mod (add ($.Scratch.Get "delay") 1) 4) }}
           <!-- Team Item -->
           <div class="col-sm-6 col-md-3 col-lg-3 mb-50 wow fadeInUp" data-wow-delay="0.{{ $.Scratch.Get "delay" }}s">
@@ -83,45 +83,35 @@
                   </p>
                   -->
                   <div class="team-social-links">
-                    {{ if .email }}
-                      <a href="mailto:{{ .email }}" target="_blank"><i class="fa fa-envelope"></i></a>
+                    {{ if $effianer.email }}
+                      <a href="mailto:{{ $effianer.email }}" target="_blank"><i class="fa fa-envelope"></i></a>
                     {{ end }}
-                    {{ if .phone }}
-                      <a href="tel:{{ .phone }}" target="_blank"><i class="fa fa-phone"></i></a>
+                    {{ if $effianer.phone }}
+                      <a href="tel:{{ $effianer.phone }}" target="_blank"><i class="fa fa-phone"></i></a>
                     {{ end }}
-                    {{ if .website }}
-                      <a href="{{ .website }}" target="_blank"><i class="fa fa-globe"></i></a>
+                    {{ if $effianer.website }}
+                      <a href="{{ $effianer.website }}" target="_blank"><i class="fa fa-globe"></i></a>
                     {{ end }}
-                    {{ if .twitter }}
-                      <a href="https://twitter.com/{{ .twitter }}" target="_blank"><i class="fa fa-twitter"></i></a>
+                    {{ if $effianer.twitter }}
+                      <a href="https://twitter.com/{{ $effianer.twitter }}" target="_blank"><i class="fa fa-twitter"></i></a>
                     {{ end }}
-                    {{ if .facebook }}
-                      <a href="https://www.facebook.com/{{ .facebook }}" target="_blank"><i class="fa fa-facebook"></i></a>
+                    {{ if $effianer.facebook }}
+                      <a href="https://www.facebook.com/{{ $effianer.facebook }}" target="_blank"><i class="fa fa-facebook"></i></a>
                     {{ end }}
-                    {{ if .instagram }}
-                      <a href="https://www.instagram.com/{{ .instagram }}" target="_blank"><i class="fa fa-instagram"></i></a>
+                    {{ if $effianer.instagram }}
+                      <a href="https://www.instagram.com/{{ $effianer.instagram }}" target="_blank"><i class="fa fa-instagram"></i></a>
                     {{ end }}
                   </div>
                 </div>
               </div>
               <div class="team-item-descr font-alt">
                 <div class="team-item-name">
-                  {{ .name }}
+                  {{ $effianer.name }}
                 </div>
                 <div class="team-item-role">
-                  {{ if .host }}
-                  Gastgeber am {{ delimit .host ", " " und " }}
-                  {{ else }}
-                  {{ .description }}
-                  {{ end }}
+                  {{ $effianer.description }}
                 </div>
               </div>
-              
-              {{ if in .host $today }}
-              <div class="team-item-label">
-                  <span class="label">Heute Gastgeber</span>
-              </div>
-              {{ end }}
             </div>
           </div>
           <!-- End Team Item -->

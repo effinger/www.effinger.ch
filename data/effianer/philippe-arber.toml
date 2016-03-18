@@ -1,6 +1,6 @@
 name = "Philippe Arber"
 image = "/images/effianer/philippe-arber.jpg"
-host = [ "Dienstag" ]
+description = "Gastgeber am Dienstag"
 weight = 5
 email = "philippe@effinger.ch"
 phone = "+41 76 330 44 58"

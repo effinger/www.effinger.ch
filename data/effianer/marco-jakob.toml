@@ -1,6 +1,6 @@
 name = "Marco Jakob"
 image = "/images/effianer/marco-jakob.jpg"
-host = [ "Freitag" ]
+description = "Gastgeber am Freitag"
 weight = 14
 email = "marco@effinger.ch"
 phone = "+41 31 398 20 22"

@@ -1,6 +1,6 @@
 name = "David Eggimann"
 image = "/images/effianer/david-eggimann.jpg"
-host = [ "Donnerstag" ]
+description = "Gastgeber am Donnerstag"
 weight = 10
 email = "david@effinger.ch"
 phone = "+41 31 398 20 22"

@@ -1,6 +1,6 @@
 name = "Nadia Meier"
 image = "/images/effianer/nadia-meier.jpg"
-host = [ "Mittwoch" ]
+description = "Gastgeberin am Mittwoch"
 weight = 7
 email = "nadia@effinger.ch"
 phone = "+41 76 345 28 73"
