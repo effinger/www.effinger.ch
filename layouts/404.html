@@ -1,44 +1,65 @@
 <!DOCTYPE html>
 <html lang="de">
-  <head>
-    {{ partial "meta.html" . }}
 
-    <title>{{ .Title }}</title>
+<head>
+  {{ partial "meta.html" . }}
 
-    {{ partial "head_includes.html" . }}
-    {{ partial "analytics_js.html" . }}
-  </head>
-  <body class="error-page">
-    <div id="wrapper">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <h1 class="code fadeInDown animated">
-              <span>4</span>
-              <span class="fa fa-question-circle"></span>
-              <span>4</span>
-            </h1>
-          </div>
+  <title>{{ .Title }}</title>
+
+  {{ partial "head_includes.html" . }} {{ partial "analytics_js.html" . }}
+</head>
+
+<body class="">
+
+  <!-- Page Wrap -->
+  <div class="page" id="top">
+
+    <nav class="main-nav dark transparent stick-fixed">
+      {{ partial "navigation.html" . }}
+    </nav>
+
+    <!-- Home Section -->
+    <section class="home-section bg-dark-alfa-50 parallax-2" data-background="error.jpg">
+        <div class="js-height-full">
+
+            <!-- Hero Content -->
+            <div class="home-content container">
+                <div class="home-text">
+                    <div class="hs-cont">
+
+                        <!-- Headings -->
+                        <div class="hs-wrap">
+
+                            <div class="hs-line-13 font-alt mb-10">
+                                404
+                            </div>
+
+                            <div class="hs-line-4 font-alt mb-40">
+                                Hicks, diese Seite existiert nicht.
+                            </div>
+
+                            <div class="local-scroll">
+                                <a href="/" class="btn btn-mod btn-w btn-round btn-small"><i class="fa fa-angle-left"></i> Zur Startseite</a>
+                            </div>
+
+                        </div>
+                        <!-- End Headings -->
+
+                    </div>
+                </div>
+            </div>
+            <!-- End Hero Content -->
+
         </div>
-        <div class="row">
-          <div class="col-sm-12">
-            <p class="message fadeInLeft animated">
-              Oops, diese Seite existiert nicht.
-              <br>
-              Ein Klick auf den Knopf unten bringt Sie wieder auf Kurs.
-            </p>
-            <a class="btn btn-bordered btn-white btn-lg fadeInRight animated" href="/">Zur Homepage</a>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-12">
-            <a href="/">
-              <img class="logo fadeInUp animated" alt="Logo" width="180" src="/images/logo.png" />
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-    {{ partial "body_includes" . }}
-  </body>
+    </section>
+    <!-- End Home Section -->
+
+    {{ partial "footer.html" . }}
+
+  </div>
+  <!-- End Page Wrap -->
+
+  {{ partial "body_includes.html" . }}
+</body>
+
 </html>
