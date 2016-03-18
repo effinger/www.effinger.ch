@@ -3,7 +3,7 @@
   border: 3px solid $primary-color;
   padding: 20px;
   text-align: center;
-
+  
   .wave-spacer {
     height: 4px;
     width: 100%;
@@ -24,6 +24,14 @@
         float: right;
       }
     }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .contact-item {
+      max-width: 370px;
+      margin-left: auto;
+      margin-right: auto;
   }
 }
 
