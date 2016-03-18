@@ -276,19 +276,13 @@
         
         <div class="section-text">
           <p>
-            Wir betreiben den <a href="/blog/coworking-space-zusammen-betreiben/">Coworking Space gemeinsam als Community</a>. 
-            
-            Wir bieten eine limitierte Anzahl an Voll- und Teilzeit-Arbeitsplätzen an.
-            
-            Wir bieten eine limitierte Anzahl an Voll- und Teilzeitabos
-            
-            
-            Damit wirst du Teil der Community und leistest einen finanziellen Beitrag, bist aber auch bereit einen Teil deiner wertvollen Zeit der Community zur Verfügung zu stellen. So wollen wir unsere Community und unsere Gemeinnützigkeit stärken und können zudem unsere Kosten im Zaum halten.
-          
+            Wir <a href="/blog/coworking-space-zusammen-betreiben/">betreiben den Coworking Space gemeinsam als Community</a>. Im Moment sind wir 14 JungunternehmerInnen, die entweder einen Voll- oder Teilzeit-Arbeitsplatz im Effinger haben.
           </p>
           <p>
-            Du kannst gerne 
-            Für spontane und unverbindliche Coworker bieten wir Tagespässe und 10er-Abos an. Wer regelmässig bei uns arbeiten oder sogar einen fixen Arbeitsplatz einrichten möchte, kann ein Teilzeit- oder Vollzeit-Abo lösen.
+            Als "Effianer" sorgen für eine florierende Community. Wir investieren 9,424777 Prozent unserer Zeit in die Community, ineinander und in den Betrieb des Effingers.
+          </p>
+          <p>
+            Wenn du zu uns "Effianern" dazustossen möchtest, dann wirst du am besten Community Member und arbeitest mal eine Weile zum Beispiel mit 10er-Abo bei uns. So lernen wir einander kennen und sehen, ob das passen könnte.
           </p>
         </div>
         
@@ -296,168 +290,69 @@
     </section>
     <!-- End Section -->
 
-    <!-- Features Section -->
-    <section class="page-section">
-      <div class="container relative">
-
-        <!-- Features Grid -->
-        <div class="row multi-columns-row alt-features-grid">
-
-          <!-- Features Item -->
-          <div class="col-sm-6 col-md-4 col-lg-4">
-            <div class="alt-features-item align-center">
-              <div class="alt-features-icon">
-                <span class="icon-presentation"></span>
-              </div>
-              <h3 class="alt-features-title font-alt">Firmen-Arbeitplätze</h3>
-              <div class="alt-features-descr align-left">
-                Wir bieten Firmen die Möglichkeiten, flexible Arbeitsplätze in einer kreativen und innovativen Umgebung zu mieten. Diese Arbeitsplätze sind übertragbar, können also von unterschiedlichen Mitarbeitern verwendet werden. Ein Firmen-Arbeitsplatz kostet CHF
-                700.- pro Monat.
-              </div>
-            </div>
-          </div>
-          <!-- End Features Item -->
-
-          <!-- Features Item -->
-          <div class="col-sm-6 col-md-4 col-lg-4">
-            <div class="alt-features-item align-center">
-              <div class="alt-features-icon">
-                <span class="icon-target"></span>
-              </div>
-              <h3 class="alt-features-title font-alt">Workshop-Räume</h3>
-              <div class="alt-features-descr align-left">
-                Workshop-Räume werden extern vermietet. Der Preis liegt bei ca. CHF 45.- für eine Stunde bis ca. CHF 150.- für einen halben Tag. Zusätzlich bestehen Catering-Möglichkeiten von der Kaffeebar (Früchtekorb, Gipfeli, Getränke, etc.).
-              </div>
-            </div>
-          </div>
-          <!-- End Features Item -->
-
-          <!-- Features Item -->
-          <div class="col-sm-6 col-md-4 col-lg-4">
-            <div class="alt-features-item align-center">
-              <div class="alt-features-icon">
-                <span class="icon-circle-compass"></span>
-              </div>
-              <h3 class="alt-features-title font-alt">Atelier</h3>
-              <div class="alt-features-descr align-left">
-                Neben den klassischen Bürotisch-Arbeitsplätzen bieten wir in einem Atelier Raum für Kreative und Handwerker. Die Preise sind gleich wie beim Coworking. Falls du dich für das Atelier interessierst, melde dich am besten bei graziella@effinger.ch.
-              </div>
-            </div>
-          </div>
-          <!-- End Features Item -->
-
-        </div>
-        <!-- End Features Grid -->
-
-      </div>
-    </section>
-    <!-- End Features Section -->
-
     <!-- Daily Contact Section -->
-    <section class="page-section bg-gray" id="contact">
-      <div class="container relative">
-        <h3 class="section-title font-alt mb-40">Heute für dich da</h3>
+    <section class="page-section" id="contact">
+      <div class="relative container">
+        <h1 class="hs-line-11 font-alt">Kontakt</h1>
 
-        <div class="row multi-columns-row">
+        {{ $today := index $.Site.Data.de.weekdays .Now.Weekday }}
+        {{ $is_weekend := or (eq $today "Samstag") (eq $today "Sonntag") }}
+        {{ $hosts := index $.Site.Data.hosts $today }}
 
-          <!-- Team Item -->
-          <div class="col-sm-6 col-md-4 mb-sm-30 wow fadeInUp">
-            <div class="team-item">
-
-              <div class="team-item-image">
-
-                <img src="/images/effianer/marco.jpg" alt="" />
-
-                <div class="team-item-detail">
-
-                  <h4 class="font-alt normal">Hello & Welcome!</h4>
-
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit lacus, a&nbsp;iaculis diam.
-                  </p>
-
-                  <div class="team-social-links">
-                    <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
-                    <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
-                    <a href="#" target="_blank"><i class="fa fa-pinterest"></i></a>
-                  </div>
-
-                </div>
-              </div>
-
-              <div class="team-item-descr font-alt">
-
-                <div class="team-item-name">
-                  Marco Jakob
-                </div>
-
-                <div class="team-item-role">
-                  Bigboss
-                </div>
-
-              </div>
-
-            </div>
-          </div>
-          <!-- End Team Item -->
-          <!-- Team Item -->
-          <div class="col-sm-6 col-md-4 mb-sm-30 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="team-item">
-
-              <div class="team-item-image">
-
-                <img src="/images/effianer/matthias.jpg" alt="" />
-
-                <div class="team-item-detail">
-
-                  <h4 class="font-alt normal">Hello & Welcome!</h4>
-
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit lacus, a&nbsp;iaculis diam.
-                  </p>
-
-                  <div class="team-social-links">
-                    <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
-                    <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
-                    <a href="#" target="_blank"><i class="fa fa-pinterest"></i></a>
-                  </div>
-
-                </div>
-              </div>
-
-              <div class="team-item-descr font-alt">
-
-                <div class="team-item-name">
-                  Matthias Tobler
-                </div>
-
-                <div class="team-item-role">
-                  Bigboss
-                </div>
-
-              </div>
-
-            </div>
-          </div>
-          <!-- End Team Item -->
-          <div class="col-sm-12 col-md-4 mb-sm-30 wow fadeInUp" data-wow-delay="0.2s">
+        {{ if $is_weekend }}
+        <div class="row">
+          <div class="col-md-4 col-sm-6 mb-50">
+        {{ else }}
+        <p class="font-alt mb-80 mb-sm-40">Heute deine Gastgeber</p>
+        <div class="row">
+          <div class="col-md-4 col-md-push-8 col-sm-6 mb-md-50">
+        {{ end }}
             <div class="contact-item clearfix">
-              <div class="item">
-                <p>Telefon<span>031 398 20 21</span></p>
-              </div>
+              <h4 class="uppercase">Kontakt Coworking</h4>
               <div class="wave-spacer"></div>
               <div class="item">
-                <p>Email<span><a href="mailto:coworking@effinger.ch">coworking@effinger.ch</a></span></p>
+                <p>Telefon<span>031 398 20 21</span></p>
+                {{ if $is_weekend }}
+                  <p>E-Mail<span><a href="mailto:urs@effinger.ch">urs@effinger.ch</a></span></p>
+                {{ else }}
+                  {{ range where $hosts "contact" "!=" nil }}
+                  {{ $contact := index $.Site.Data.effianer .ref }}
+                  <p>E-Mail<span><a href="mailto:{{ $contact.email }}">{{ $contact.email }}</a></span></p>
+                  {{ end }}
+                {{ end }}
               </div>
             </div>
           </div>
+          <div class="col-md-8 col-md-pull-4 col-sm-12">
+            <div class="row">
+              {{ range $hosts }}
+              {{ $host := index $.Site.Data.effianer .ref }}
+              <div class="col-sm-6 mb-50">
+                <div class="team-item">
+                  <div class="team-item-image">
+                    <img src="{{ $host.image }}" alt="{{ $host.name }}" />
+                    <div class="team-item-detail">
+                      <p class="font-alt normal">Gastgeber</p>
+                    </div>
+                  </div>
+                  <div class="team-item-descr font-alt">
+                    <div class="team-item-name">
+                      {{ $host.name }}
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {{ end }}
+            </div>
+          </div>
+        </div>
+
+        <div class=" team-item">
+          <a href="/community/ueber/#team" class="btn btn-mod btn-border btn-medium btn-round">&rarr; Alle Gastgeberteams anzeigen</a>
         </div>
       </div>
     </section>
     <!-- End Daily Contact Section -->
-
-
-
 
     {{ partial "footer.html" . }}
 
