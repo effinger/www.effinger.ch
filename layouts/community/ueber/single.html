@@ -12,15 +12,14 @@
     </nav>
 
     <!-- Header -->
-    <section class="home-section bg-dark-alfa-70 parallax-2 fixed-height-small" data-background="community.jpg">
+    <section class="home-section bg-dark-alfa-70 parallax-2 fixed-height-small" data-background="community_header.jpg">
       <div class="js-height-parent container">
 
         <!-- Hero Content -->
         <div class="home-content">
           <div class="home-text">
             <h1 class="font-alt mb-50 mb-xs-30">Community</h1>
-            <h2 class="hs-line-8 no-transp font-alt mb-50 mb-xs-30">Wir sind eine innovative, kreative Community mit einem gemeinsamen Coworking Space und Kaffeebar in Bern.</h2>
-            <div class="local-scroll">
+            <div class="local-scroll hidden">
               <a href="#team" class="btn btn-mod btn-border-w btn-medium btn-round hidden-xs">Über uns</a>
               <span class="hidden-xs">&nbsp;</span>
               <a href="#values" class="btn btn-mod btn-border-w btn-medium btn-round hidden-xs">Grundsätze</a>
@@ -64,9 +63,9 @@
         </div>
 
         <div class="row multi-columns-row">
-          
+
           {{ $today := index $.Site.Data.de.weekdays .Now.Weekday }}
-          
+
           {{ $.Scratch.Set "delay" -1 }}
           {{ range $ref, $effianer := (sort $.Site.Data.effianer "weight") }}
           {{ $.Scratch.Set "delay" (mod (add ($.Scratch.Get "delay") 1) 4) }}
