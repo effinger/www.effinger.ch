@@ -10,8 +10,12 @@
       display: inline-block;
       break-inside: avoid;
       padding: 15px;
-      padding-bottom: 5px;
+      padding-bottom: 25px;
       width: 100%;
+
+      .icon-dark {
+        height: 30px;
+      }
 
       table {
         width: 100%;

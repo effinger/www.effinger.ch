@@ -11,17 +11,25 @@ offers_title = "Menu"
 
     [[offers.section.element]]
       text = "Fleischquiche mit Salat"
-      price = "19.50"
 
       [[offers.section.element.subelement]]
-        text = "Saucisson Vaudois, Sauerkraut, Apfel, Rindfleisch, Pastinake, Schnittlauch"
+        text = "Saucisson Vaudois, Sauerkraut, Apfel"
+        price="19.50"
+
+      [[offers.section.element.subelement]]
+        text = "Rindfleisch, Pastinake, Schnittlauch"
+        price="19.50"
 
     [[offers.section.element]]
       text = "Vegiquiche mit Salat"
-      price = "18.00"
 
       [[offers.section.element.subelement]]
-        text = "Spinat, Feta, rote Zwiebeln, Ofengemüse, Süsskartoffel, Rosmarin"
+        text = "Spinat, Feta, rote Zwiebeln"
+        price="18.00"
+
+      [[offers.section.element.subelement]]
+        text = "Ofengemüse, Süsskartoffel, Rosmarin"
+        price="18.00"        
 
   [[offers.section]]
     title = "Grünzeug"
@@ -43,13 +51,82 @@ offers_title = "Menu"
         text = "Rohschinken, Parmesan"
         price = "+6.00"
 
+  [[offers.section]]
+    title = "Apero"
+
+    [[offers.section.element]]
+        text = "Parmesan"
+        price = "5.00"
+
+    [[offers.section.element]]
+      text="Fetawürfel"
+      price="5.50"
+
+    [[offers.section.element]]
+      text="Rohschinken «Flurina»"
+      price="6.00"
+
+    [[offers.section.element]]
+      text="Chorizo-Perlen"
+      price="5.50"
+
+    [[offers.section.element]]
+      text="Oliven"
+      price="5.00"
+
+    [[offers.section.element]]
+      text="Apéroteller"
+      price="22.00"
+
+      [[offers.section.element.subelement]]
+        text="Eine Komposition aus mediterranen Köstlichkeiten"    
+
+  [[offers.section]]
+    title = "Süsses und Gebäck"
+
+    [[offers.section.element]]
+      text="Gipfeli"
+      price="2.00"
+
+      [[offers.section.element.subelement]]
+        text="Französisches Croissant, Laugen, Vollkorn"
+
+    [[offers.section.element]]
+      text="Früchtebrötli"
+      price="2.50"
+
+    [[offers.section.element]]
+      text="Brioche"
+      price="2.50"
+
+    [[offers.section.element]]
+      text="Florentinerkuchen"
+      price="5.80"
+
+    [[offers.section.element]]
+      text="Schokoladekuchen"
+      price="5.00"
+
+    [[offers.section.element]]
+      text="Amaretti"
+      price="3.80"
+
+      [[offers.section.element.subelement]]
+        text="Glutenfrei"
+
+    [[offers.section.element]]
+      text="Zmorge"
+      price="8.50"
+
+      [[offers.section.element.subelement]]
+        text="Brot, 1 Gipfeli, Kon , Honig, Butter"
 
 [[offers]]
   title = "Trinken"
 
   [[offers.section]]
     title = "Kaffee"
-    icon = "<i class='fa fa-coffee'></i>"
+    icon = "<img src='/images/icons/kaffeebar-dark/coffee.svg' class='icon-dark'>"
 
     [[offers.section.element]]
       text = "Espresso/Ristretto"
@@ -88,7 +165,7 @@ offers_title = "Menu"
 
   [[offers.section]]
     title = "Tee"
-    icon = "<i class='fa fa-coffee'></i>"
+    icon = "<img src='/images/icons/kaffeebar-dark/tea.svg' class='icon-dark'>"
 
     [[offers.section.element]]
       text = "Assam Finest Tippey"
@@ -153,7 +230,7 @@ offers_title = "Menu"
 
   [[offers.section]]
     title = "Kalt"
-    icon = "<i class='fa fa-glass'></i>"
+    icon = "<img src='/images/icons/kaffeebar-dark/softdrink.svg' class='icon-dark'>"
 
     [[offers.section.element]]
       text = "Goba Mineral"
@@ -250,7 +327,7 @@ offers_title = "Menu"
 
   [[offers.section]]
     title = "Bier (Offen)"
-    icon = "<i class='fa fa-beer'></i>"
+    icon = "<img src='/images/icons/kaffeebar-dark/beer.svg' class='icon-dark'>"
 
     [[offers.section.element]]
       text = "Felsenau Bärner Müntschi"
@@ -266,7 +343,7 @@ offers_title = "Menu"
 
   [[offers.section]]
     title = "Bier (Flaschenbiere)"
-    icon = "<i class='fa fa-beer'></i>"
+    icon = "<img src='/images/icons/kaffeebar-dark/bottle.svg' class='icon-dark'>"
 
     [[offers.section.element]]
       text="Anchor Steam"
@@ -326,7 +403,7 @@ offers_title = "Menu"
 
   [[offers.section]]
     title = "Rotweine"
-    icon = "<i class='fa fa-glass'></i>"
+    icon = "<img src='/images/icons/kaffeebar-dark/vine-red.svg' class='icon-dark'>"
 
     [[offers.section.element]]
       text="The Invisible Man, Rioja DOC (ES)"
@@ -365,7 +442,7 @@ offers_title = "Menu"
 
   [[offers.section]]
     title = "Weissweine"
-    icon = "<i class='fa fa-glass'></i>"
+    icon = "<img src='/images/icons/kaffeebar-dark/vine-white.svg' class='icon-dark'>"
 
     [[offers.section.element]]
       text="La Marimorena, Rias Baixas DO (ES)"
@@ -397,7 +474,7 @@ offers_title = "Menu"
 
   [[offers.section]]
     title = "Aperitiv & Drinks"
-    icon = "<i class='fa fa-glass'></i>"
+    icon = "<img src='/images/icons/kaffeebar-dark/drinks.svg' class='icon-dark'>"
 
     [[offers.section.element]]
       text="Hugo"
@@ -471,9 +548,66 @@ offers_title = "Menu"
       text="Lillet blanc"
       price="8.00"
 
-    [[offers.section.element.subelement]]
-      text="Amaretto di Mattia Walcher"
-      price="9.00"
+
+      [[offers.section.element.subelement]]
+        text="Amaretto di Mattia Walcher"
+        price="9.00"
+
+  [[offers.section]]
+    title = "Hochprozentiges"
+    icon = "<img src='/images/icons/kaffeebar-dark/cocktails.svg' class='icon-dark'>"
+
+    [[offers.section.element]]
+      text="Grappa"
+
+      [[offers.section.element.subelement]]
+        text="Grappa di Brunello"
+        price="8.00"
+
+      [[offers.section.element.subelement]]
+        text="Grappa di Barolo"
+        price="10.00"
+
+    [[offers.section.element]]
+      text="Whisky"
+
+      [[offers.section.element.subelement]]
+        text="Lagavulin Single Islay Malt"
+        price="13.00"
+
+      [[offers.section.element.subelement]]
+        text="Säntis Malt Dreifaltigkeit"
+        price="14.00"
+
+      [[offers.section.element.subelement]]
+        text="* mit Softgetränk:"
+        price="+ 3.00"
+
+    [[offers.section.element]]
+      text="Gin"
+
+      [[offers.section.element.subelement]]
+        text="Gin 27, Appenzeller Dry Gin"
+        price="13.00"
+
+      [[offers.section.element.subelement]]
+        text="Gin 1948, Kindschi"
+        price="10.00"
+
+      [[offers.section.element.subelement]]
+        text="* mit Tonic:"
+        price="+ 4.00"
+
+    [[offers.section.element]]
+      text="Vodka"
+
+      [[offers.section.element.subelement]]
+        text="Xellent Swiss Vodka"
+        price="9.00"
+
+      [[offers.section.element.subelement]]
+        text="* mit Softgetränk:"
+        price="+ 3.00"
 
 [menu.main]
   pre = "<i class='fa fa-coffee'></i>"
