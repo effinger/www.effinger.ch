@@ -296,6 +296,7 @@
         <h1 class="hs-line-11 font-alt">Kontakt</h1>
 
         {{ $today := index $.Site.Data.de.weekdays .Now.Weekday }}
+        {{ $today := "Montag" }}
         {{ $is_weekend := or (eq $today "Samstag") (eq $today "Sonntag") }}
         {{ $hosts := index $.Site.Data.hosts $today }}
 
