@@ -311,15 +311,8 @@
               <h4 class="uppercase">Kontakt Coworking</h4>
               <div class="wave-spacer"></div>
               <div class="item">
-                <p>Telefon<span>031 398 20 21</span></p>
-                {{ if $is_weekend }}
-                  <p>E-Mail<span><a href="mailto:urs@effinger.ch">urs@effinger.ch</a></span></p>
-                {{ else }}
-                  {{ range where $hosts "contact" "!=" nil }}
-                  {{ $contact := index $.Site.Data.effianer .ref }}
-                  <p>E-Mail<span><a href="mailto:{{ $contact.email }}">{{ $contact.email }}</a></span></p>
-                  {{ end }}
-                {{ end }}
+                <p>Telefon<span><a href="tel:+41313982021">031 398 20 21</a></span></p>
+                <p>E-Mail<span><a href="mailto:urs@effinger.ch">urs@effinger.ch</a></span></p>
               </div>
             </div>
           </div>

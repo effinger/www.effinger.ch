@@ -39,7 +39,7 @@
                 <h4 class="uppercase">Kontakt Kaffeebar</h4>
                 <div class="wave-spacer"></div>
                 <div class="item">
-                  <p>Telefon<span>031 398 20 20</span></p>
+                  <p>Telefon<span><a href="tel:+41313982020">031 398 20 20</a></span></p>
                   <p>E-Mail<span><a href="mailto:kaffeebar@effinger.ch">kaffeebar@effinger.ch</a></span></p>
                 </div>
                 <div class="item mt-20">
@@ -109,16 +109,9 @@
                 <h4 class="uppercase">Kontakt Coworking</h4>
                 <div class="wave-spacer"></div>
                 <div class="item">
-                  <p>Telefon<span>031 398 20 21</span></p>
-                  {{ if $is_weekend }}
-                    <p>E-Mail<span><a href="mailto:urs@effinger.ch">urs@effinger.ch</a></span></p>
-                  {{ else }}
-                    {{ range where $hosts "contact" "!=" nil }}
-                    {{ $contact := index $.Site.Data.effianer .ref }}
-                    <p>E-Mail<span><a href="mailto:{{ $contact.email }}">{{ $contact.email }}</a></span></p>
-                    {{ end }}
-                  {{ end }}
-                </div>
+                <p>Telefon<span><a href="tel:+41313982021">031 398 20 21</a></span></p>
+                <p>E-Mail<span><a href="mailto:urs@effinger.ch">urs@effinger.ch</a></span></p>
+              </div>
               </div>
             </div>
             <div class="col-md-8 col-md-pull-4 col-sm-12">
