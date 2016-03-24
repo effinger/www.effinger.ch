@@ -5,9 +5,11 @@ offers_title = "Menu"
 
 [[offers]]
   title = "Essen"
+  icon = "<img src='/images/icons/kaffeebar-dark/eat.svg'>"
 
   [[offers.section]]
     title = "Ein Stück vom Glück"
+    column = "left"
 
     [[offers.section.element]]
       text = "Fleischquiche mit Salat"
@@ -33,6 +35,7 @@ offers_title = "Menu"
 
   [[offers.section]]
     title = "Grünzeug"
+    column = "right"
 
     [[offers.section.element]]
         text = "Gemischter grüner Blattsalat"
@@ -53,6 +56,7 @@ offers_title = "Menu"
 
   [[offers.section]]
     title = "Apero"
+    column = "left"
 
     [[offers.section.element]]
         text = "Parmesan"
@@ -83,6 +87,7 @@ offers_title = "Menu"
 
   [[offers.section]]
     title = "Süsses und Gebäck"
+    column = "right"
 
     [[offers.section.element]]
       text="Gipfeli"
@@ -119,14 +124,56 @@ offers_title = "Menu"
       price="8.50"
 
       [[offers.section.element.subelement]]
-        text="Brot, 1 Gipfeli, Kon , Honig, Butter"
+        text="Brot, 1 Gipfeli, Konfi, Honig, Butter"
 
 [[offers]]
   title = "Heisse Getränke"
+  icon = "<img src='/images/icons/kaffeebar-dark/coffee.svg'>"
+  
+  [[offers.section]]
+    title = "Kaffee"
+    icon = "<img src='/images/icons/kaffeebar-dark/coffee.svg'>"
+    column = "left"
+
+    [[offers.section.element]]
+      text = "Espresso/Ristretto"
+      price = "4.00"
+
+    [[offers.section.element]]
+      text = "Doppio"
+      price = "5.00"
+
+    [[offers.section.element]]
+      text = "Kaffee"
+      price = "4.20"
+
+    [[offers.section.element]]
+      text = "Schale"
+      price = "4.80/5.80"
+
+    [[offers.section.element]]
+      text = "Cappucino"
+      price = "4.80/5.80"
+
+    [[offers.section.element]]
+      text = "Latte Macchiato"
+      price = "5.20"
+
+    [[offers.section.element]]
+      text = "Trinkschokolade"
+      price = "5.00"
+
+      [[offers.section.element.subelement]]
+        text = "Nature, Chai"
+
+    [[offers.section.element]]
+      text = "Ovomaltine"
+      price = "4.50"
   
   [[offers.section]]
     title = "Tee"
-    icon = "<img src='/images/icons/kaffeebar-dark/tea.svg' class='icon-dark'>"
+    icon = "<img src='/images/icons/kaffeebar-dark/tea.svg'>"
+    column = "right"
 
     [[offers.section.element]]
       text = "Assam Finest Tippey"
@@ -188,53 +235,13 @@ offers_title = "Menu"
       text = "Chai Latte"
       price = "5.20"
   
-  [[offers.section]]
-    title = "Kaffee"
-    icon = "<img src='/images/icons/kaffeebar-dark/coffee.svg' class='icon-dark'>"
-
-    [[offers.section.element]]
-      text = "Espresso/Ristretto"
-      price = "4.00"
-
-    [[offers.section.element]]
-      text = "Doppio"
-      price = "5.00"
-
-    [[offers.section.element]]
-      text = "Kaffee"
-      price = "4.20"
-
-    [[offers.section.element]]
-      text = "Schale"
-      price = "4.80/5.80"
-
-    [[offers.section.element]]
-      text = "Cappucino"
-      price = "4.80/5.80"
-
-    [[offers.section.element]]
-      text = "Latte Macchiato"
-      price = "5.20"
-
-    [[offers.section.element]]
-      text = "Trinkschokolade"
-      price = "5.00"
-
-      [[offers.section.element.subelement]]
-        text = "Nature, Chai"
-
-    [[offers.section.element]]
-      text = "Ovomaltine"
-      price = "4.50"
-
-
 
 [[offers]]
   title = "Kalte Getränke"
+  icon = "<img src='/images/icons/kaffeebar-dark/softdrink.svg'>"
 
   [[offers.section]]
-    title = "Kalt"
-    icon = "<img src='/images/icons/kaffeebar-dark/softdrink.svg' class='icon-dark'>"
+    column = "left"
 
     [[offers.section.element]]
       text = "Goba Mineral"
@@ -286,6 +293,9 @@ offers_title = "Menu"
       [[offers.section.element.subelement]]
         text = "- Kiwi, Lime, Mint (türkis)"
 
+  [[offers.section]]
+    column = "right"
+
     [[offers.section.element]]
       text = "Zobo Sorrel"
       price = "5.50"
@@ -332,10 +342,12 @@ offers_title = "Menu"
 
 [[offers]]
   title = "Bier"
+  icon = "<img src='/images/icons/kaffeebar-dark/beer.svg'>"
 
   [[offers.section]]
-    title = "Flaschenbiere"
-    icon = "<img src='/images/icons/kaffeebar-dark/bottle.svg' class='icon-dark'>"
+    title = "Flaschen"
+    icon = "<img src='/images/icons/kaffeebar-dark/bottle.svg'>"
+    column = "left"
 
     [[offers.section.element]]
       text="Anchor Steam"
@@ -395,7 +407,8 @@ offers_title = "Menu"
         
   [[offers.section]]
     title = "Offen"
-    icon = "<img src='/images/icons/kaffeebar-dark/beer.svg' class='icon-dark'>"
+    icon = "<img src='/images/icons/kaffeebar-dark/beer.svg'>"
+    column = "right"
 
     [[offers.section.element]]
       text = "Felsenau Bärner Müntschi"
@@ -412,10 +425,12 @@ offers_title = "Menu"
 
 [[offers]]
   title = "Wein"
+  icon = "<img src='/images/icons/kaffeebar-dark/vine-red.svg'>"
 
   [[offers.section]]
     title = "Rotweine"
-    icon = "<img src='/images/icons/kaffeebar-dark/vine-red.svg' class='icon-dark'>"
+    icon = "<img src='/images/icons/kaffeebar-dark/vine-red.svg'>"
+    column = "left"
 
     [[offers.section.element]]
       text="The Invisible Man, Rioja DOC (ES)"
@@ -454,7 +469,8 @@ offers_title = "Menu"
 
   [[offers.section]]
     title = "Weissweine"
-    icon = "<img src='/images/icons/kaffeebar-dark/vine-white.svg' class='icon-dark'>"
+    icon = "<img src='/images/icons/kaffeebar-dark/vine-white.svg'>"
+    column = "right"
 
     [[offers.section.element]]
       text="La Marimorena, Rias Baixas DO (ES)"
@@ -487,10 +503,12 @@ offers_title = "Menu"
         
 [[offers]]
   title = "Drinks und Hochprozentiges"
+  icon = "<img src='/images/icons/kaffeebar-dark/cocktails.svg'>"
 
   [[offers.section]]
     title = "Aperitiv & Drinks"
-    icon = "<img src='/images/icons/kaffeebar-dark/drinks.svg' class='icon-dark'>"
+    icon = "<img src='/images/icons/kaffeebar-dark/drinks.svg'>"
+    column = "left"
 
     [[offers.section.element]]
       text="Hugo"
@@ -570,8 +588,9 @@ offers_title = "Menu"
         price="9.00"
 
   [[offers.section]]
-    title = "Hochprozentiges"
-    icon = "<img src='/images/icons/kaffeebar-dark/cocktails.svg' class='icon-dark'>"
+    title = "Hoch&shy;pro&shy;zen&shy;ti&shy;ges"
+    icon = "<img src='/images/icons/kaffeebar-dark/cocktails.svg'>"
+    column = "right"
 
     [[offers.section.element]]
       text="Grappa"

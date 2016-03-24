@@ -1,0 +1,19 @@
+<div class="box-item">
+  {{ if .title }}
+  <h3 class="font-alt title">{{ if .icon }}{{ .icon | safeHTML }}{{ end }}<span>{{ .title | safeHTML }}</span></h3> 
+  {{ end }}
+  {{ range .element }}
+  <table>
+    <tr>
+      <th>{{ .text }}</th>
+      <th>{{ .price }}</th>
+    </tr>
+    {{ range .subelement }}
+    <tr>
+      <td>{{ .text }}</td>
+      <td>{{ .price }}</td>
+    </tr>
+    {{ end }}
+  </table>
+  {{ end }}
+</div>

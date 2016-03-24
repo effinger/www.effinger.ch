@@ -195,31 +195,39 @@
         <h2 class="section-title font-alt mb-70 mb-sm-40">{{ .Params.offers_title }}</h2>
 
         <!-- Accordion -->
-        <dl class="toggle">
+        <dl class="toggle offers">
 
           {{ range .Params.offers }}
-          <dt><a href="">{{ .title }}</a></dt>
+          <dt>
+            <a href="" class="offers-title">
+              {{ if .icon }}
+                {{ .icon | safeHTML }}
+              {{ end }}
+              <span>
+                {{ .title }}
+              </span>
+            </a>
+          </dt>
           <dd>
-            <div class="offers">
-              <div class="row">
-                {{ range .section }}
-                <div class="box-item">
-                  <h3 class="font-alt">{{ .title }}{{ if .icon }}<span class="pull-right">{{ .icon | safeHTML }}</span>{{ end }}</h3> {{ range .element }}
-                  <table>
-                    <tr>
-                      <th>{{ .text }}</th>
-                      <th>{{ .price }}</th>
-                    </tr>
-                    {{ range .subelement }}
-                    <tr>
-                      <td>{{ .text }}</td>
-                      <td>{{ .price }}</td>
-                    </tr>
-                    {{ end }}
-                  </table>
-                  {{ end }}
+            <div>
+              <!-- Two columns for medium and large screens with defined left/right ordering -->
+              <div class="row hidden-xs">
+                <div class="col-sm-6 left">
+                  {{ range where .section "column" "left" }}
+                    {{ partial "kaffeebar_menu_item.html" . }}
+                  {{end }}
                 </div>
-                {{end }}
+                <div class="col-sm-6 right">
+                  {{ range where .section "column" "right" }}
+                    {{ partial "kaffeebar_menu_item.html" . }}
+                  {{end }}
+                </div>
+              </div>
+              <!-- One column for small screens -->
+              <div class="visible-xs-block">
+              {{ range .section }}
+                {{ partial "kaffeebar_menu_item.html" . }}
+              {{end }}
               </div>
             </div>
           </dd>

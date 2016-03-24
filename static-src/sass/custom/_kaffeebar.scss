@@ -1,59 +1,74 @@
 // Boxed Grid for Offers
 //*, *:before, *:after {box-sizing:  border-box !important;}
 .offers {
-  .row {
-    column-count: 2;
-    column-gap: 60px;
-    column-fill: auto;
+    
+  .left {
+    padding-right: 30px;
+  }
 
-    .box-item {
+  .right {
+    padding-left: 30px;
+  }
+    
+  .offers-title {
+    padding-left: 15px;
+    
+    img {
+      height: 30px;
+    }
+    
+    span {
+      vertical-align: middle;
       display: inline-block;
-      break-inside: avoid;
-      padding: 15px;
-      padding-bottom: 25px;
-      width: 100%;
+      margin-top: 4px; 
+      margin-left: 5px;
+    }
+    
+  }
+  
+  .box-item {
+    padding-bottom: 25px;
+    max-width: 520px;
 
-      .icon-dark {
+    .title {
+      img {
         height: 30px;
+        float: right;
       }
+      
+      span {
+        padding-right: 5px;
+      } 
+    }
 
-      table {
-        width: 100%;
-        margin-bottom: 20px;
+    table {
+      width: 100%;
+      margin-bottom: 20px;
 
-        tr {
-          > td,
-          > th {
-            vertical-align: top;
-            font-size: 16px;
+      tr {
+        > td,
+        > th {
+          vertical-align: top;
+          font-size: 16px;
 
-            &:first-child {
-              padding-right: 30px;
-            }
-
-            &:last-child {
-              text-align: right;
-            }
+          &:first-child {
+            padding-right: 30px;
           }
 
-          > th {
-            font-weight: 400;
-          }
-
-          > td {
-            font-weight: 300;
-            font-size: 14px;
+          &:last-child {
+            text-align: right;
           }
         }
-      }
-    }
-  }
-}
 
-@media only screen and (max-width: 768px) {
-  .offers {
-    .row {
-      column-count:1;
+        > th {
+          font-weight: 400;
+        }
+
+        > td {
+          font-weight: 300;
+          font-size: 14px;
+        }
+      }
     }
   }
 }
