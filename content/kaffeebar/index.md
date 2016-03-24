@@ -122,47 +122,8 @@ offers_title = "Menu"
         text="Brot, 1 Gipfeli, Kon , Honig, Butter"
 
 [[offers]]
-  title = "Trinken"
-
-  [[offers.section]]
-    title = "Kaffee"
-    icon = "<img src='/images/icons/kaffeebar-dark/coffee.svg' class='icon-dark'>"
-
-    [[offers.section.element]]
-      text = "Espresso/Ristretto"
-      price = "4.00"
-
-    [[offers.section.element]]
-      text = "Doppio"
-      price = "5.00"
-
-    [[offers.section.element]]
-      text = "Kaffee"
-      price = "4.20"
-
-    [[offers.section.element]]
-      text = "Schale"
-      price = "4.80/5.80"
-
-    [[offers.section.element]]
-      text = "Cappucino"
-      price = "4.80/5.80"
-
-    [[offers.section.element]]
-      text = "Latte Macchiato"
-      price = "5.20"
-
-    [[offers.section.element]]
-      text = "Trinkschokolade"
-      price = "5.00"
-
-      [[offers.section.element.subelement]]
-        text = "Nature, Chai"
-
-    [[offers.section.element]]
-      text = "Ovomaltine"
-      price = "4.50"
-
+  title = "Heisse Getränke"
+  
   [[offers.section]]
     title = "Tee"
     icon = "<img src='/images/icons/kaffeebar-dark/tea.svg' class='icon-dark'>"
@@ -226,7 +187,50 @@ offers_title = "Menu"
     [[offers.section.element]]
       text = "Chai Latte"
       price = "5.20"
+  
+  [[offers.section]]
+    title = "Kaffee"
+    icon = "<img src='/images/icons/kaffeebar-dark/coffee.svg' class='icon-dark'>"
 
+    [[offers.section.element]]
+      text = "Espresso/Ristretto"
+      price = "4.00"
+
+    [[offers.section.element]]
+      text = "Doppio"
+      price = "5.00"
+
+    [[offers.section.element]]
+      text = "Kaffee"
+      price = "4.20"
+
+    [[offers.section.element]]
+      text = "Schale"
+      price = "4.80/5.80"
+
+    [[offers.section.element]]
+      text = "Cappucino"
+      price = "4.80/5.80"
+
+    [[offers.section.element]]
+      text = "Latte Macchiato"
+      price = "5.20"
+
+    [[offers.section.element]]
+      text = "Trinkschokolade"
+      price = "5.00"
+
+      [[offers.section.element.subelement]]
+        text = "Nature, Chai"
+
+    [[offers.section.element]]
+      text = "Ovomaltine"
+      price = "4.50"
+
+
+
+[[offers]]
+  title = "Kalte Getränke"
 
   [[offers.section]]
     title = "Kalt"
@@ -325,24 +329,12 @@ offers_title = "Menu"
       [[offers.section.element.subelement]]
         text = "Michel (Orangensaft, Pfirsich, Tomaten)"
 
-  [[offers.section]]
-    title = "Bier (Offen)"
-    icon = "<img src='/images/icons/kaffeebar-dark/beer.svg' class='icon-dark'>"
 
-    [[offers.section.element]]
-      text = "Felsenau Bärner Müntschi"
-      price = "4.80/6.80"
-
-    [[offers.section.element]]
-      text = "Egger Maximus"
-      price = "4.80/6.80"
-
-    [[offers.section.element]]
-      text = "Panaché"
-      price = "4.80/6.80"
+[[offers]]
+  title = "Bier"
 
   [[offers.section]]
-    title = "Bier (Flaschenbiere)"
+    title = "Flaschenbiere"
     icon = "<img src='/images/icons/kaffeebar-dark/bottle.svg' class='icon-dark'>"
 
     [[offers.section.element]]
@@ -399,7 +391,27 @@ offers_title = "Menu"
       price="5.50"
 
       [[offers.section.element.subelement]]
-        text="alkoholfreies, dunkelblondes Bier"          
+        text="alkoholfreies, dunkelblondes Bier"      
+        
+  [[offers.section]]
+    title = "Offen"
+    icon = "<img src='/images/icons/kaffeebar-dark/beer.svg' class='icon-dark'>"
+
+    [[offers.section.element]]
+      text = "Felsenau Bärner Müntschi"
+      price = "4.80/6.80"
+
+    [[offers.section.element]]
+      text = "Egger Maximus"
+      price = "4.80/6.80"
+
+    [[offers.section.element]]
+      text = "Panaché"
+      price = "4.80/6.80"
+
+
+[[offers]]
+  title = "Wein"
 
   [[offers.section]]
     title = "Rotweine"
@@ -471,6 +483,10 @@ offers_title = "Menu"
       [[offers.section.element.subelement]]
         text="Moltó Negre Cava Brut DO"
         price="8.50"
+        
+        
+[[offers]]
+  title = "Drinks und Hochprozentiges"
 
   [[offers.section]]
     title = "Aperitiv & Drinks"
