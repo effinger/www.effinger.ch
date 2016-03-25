@@ -11,17 +11,18 @@
   }
     
   .offers-title {
+    min-height: 60px;
     padding-left: 15px;
     
     img {
       height: 30px;
+      float: left;
     }
     
     span {
-      vertical-align: middle;
-      display: inline-block;
-      margin-top: 4px; 
-      margin-left: 5px;
+      display: block;
+      padding-left: 40px;
+      margin-top: 7px;
     }
     
   }
