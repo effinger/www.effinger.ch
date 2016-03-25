@@ -123,3 +123,31 @@ strong {
     margin-left: 5px;
   }
 }
+
+
+// Footer
+
+.newsletter-arrow {
+  max-width: 160px !important; 
+}
+
+@media only screen and (min-width: 768px) {
+  .newsletter-arrow-container {
+    height: 50px; 
+  }
+  
+  .newsletter-arrow {
+    position: absolute;
+    z-index: 100;
+    left: 500px;
+    right: 0px;
+    top: 150px;
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .newsletter-arrow {
+    top: 130px;
+  }
+}
