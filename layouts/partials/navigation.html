@@ -14,7 +14,6 @@
     <ul class="clearlist">
       {{ $currentNode := . }}
       {{ range .Site.Menus.main }}
-        {{/*
         {{ if .HasChildren }}
         <!-- Item With Sub -->
         <li>
@@ -34,11 +33,10 @@
         <!-- End Item With Sub -->
       
         {{ else }}
-        */}}
         <li>
           <a{{if $currentNode.IsMenuCurrent "main" . }} class="active"{{end}} href="{{ .URL }}">{{ .Pre }} {{ .Name }}</a>
         </li>
-        {{/* end */}}
+        {{ end }}
       {{ end }}
     </ul>
   </div>

@@ -1,7 +1,7 @@
 +++
 layout = "geschichte/single"
 title = "Geschichte"
-draft = true
+image = "geschichte_header.jpg"
 
 [menu.main]
   parent = "Community"
