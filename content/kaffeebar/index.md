@@ -1,5 +1,6 @@
 +++
 title = "Kaffeebar"
+image = "kaffeebar_header_02.jpg"
 
 offers_title = "Menu"
 
