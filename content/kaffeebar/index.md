@@ -16,22 +16,22 @@ offers_title = "Menu"
       text = "Fleischquiche mit Salat"
 
       [[offers.section.element.subelement]]
-        text = "Saucisson Vaudois, Sauerkraut, Apfel"
+        text = "Saucisson Vaudois, Sauerkraut, Birne"
         price="19.50"
 
       [[offers.section.element.subelement]]
-        text = "Rindfleisch, Pastinake, Schnittlauch"
+        text = "Rindfleisch, Broccoli, Mandel"
         price="19.50"
 
     [[offers.section.element]]
       text = "Vegiquiche mit Salat"
 
       [[offers.section.element.subelement]]
-        text = "Spinat, Feta, rote Zwiebeln"
+        text = "Spinat, Feta, Sonnenblumenkern"
         price="18.00"
 
       [[offers.section.element.subelement]]
-        text = "Ofengemüse, Süsskartoffel, Rosmarin"
+        text = "Ofengemüse, Süsskartoffel, Petersilie"
         price="18.00"        
 
   [[offers.section]]
@@ -118,7 +118,7 @@ offers_title = "Menu"
       price="3.80"
 
       [[offers.section.element.subelement]]
-        text="Glutenfrei"
+        text="glutenfrei"
 
     [[offers.section.element]]
       text="Zmorge"
@@ -164,12 +164,16 @@ offers_title = "Menu"
       text = "Trinkschokolade"
       price = "5.00"
 
-      [[offers.section.element.subelement]]
-        text = "Nature, Chai"
-
     [[offers.section.element]]
       text = "Ovomaltine"
       price = "4.50"
+      
+    [[offers.section.element]]
+      text = ""
+      price = ""
+      
+    [[offers.section.element.subelement]]
+      text = "alle Getränke auch mit Sojamilch erhältlich"
   
   [[offers.section]]
     title = "Tee"
@@ -209,14 +213,14 @@ offers_title = "Menu"
       price = "4.80"
 
       [[offers.section.element.subelement]]
-        text = "(Bio, Sardinien)"
+        text = "(Sardinien)"
 
     [[offers.section.element]]
       text = "Grüner Tee Lon Cui Lu"
       price = "4.80"
 
       [[offers.section.element.subelement]]
-        text = "(Bio, China)"
+        text = "(China)"
 
     [[offers.section.element]]
       text = "Bella Vita"
@@ -249,7 +253,7 @@ offers_title = "Menu"
       price = "2.50/3.50"
 
     [[offers.section.element]]
-      text = "Cola / Zero"
+      text = "Coca Cola / Zero"
       price = "4.50"
 
     [[offers.section.element]]
@@ -268,7 +272,7 @@ offers_title = "Menu"
       price = "5.00"
 
     [[offers.section.element]]
-      text = "Quittenschorle Bio"
+      text = "Quittenschorle"
       price = "5.00"
 
     [[offers.section.element]]
@@ -276,23 +280,23 @@ offers_title = "Menu"
       price = "5.00"
 
       [[offers.section.element.subelement]]
-        text = "Birnen-Trauben mit Melisse, Passionsblume, Hopfen"
+        text = "Birnen-Traube Limonade mit Melisse, Passionsblume, Hopfen"
 
     [[offers.section.element]]
       text = "Firefly"
       price = "5.50"
 
       [[offers.section.element.subelement]]
-        text = "- Lemon, Lime, Ginger (orange)"
+        text = "- Lemon, Lime, Ginger"
 
       [[offers.section.element.subelement]]
-        text = "- Peach, Greentea (Pink)"
+        text = "- Peach, Greentea"
 
       [[offers.section.element.subelement]]
-        text = "- Pommegranate, Elderflower (violett)"
+        text = "- Pommegranate, Elderflower"
 
       [[offers.section.element.subelement]]
-        text = "- Kiwi, Lime, Mint (türkis)"
+        text = "- Kiwi, Lime, Mint"
 
   [[offers.section]]
     column = "right"
@@ -323,7 +327,7 @@ offers_title = "Menu"
       price = "3.50/4.50"
 
       [[offers.section.element.subelement]]
-        text = "Besser als Ystee, Holunder, Blüemlii, Elfen, Rhabarber"
+        text = "Besser als Ystee, Holunder, Blüemli, Elfen, Rhabarber"
 
     [[offers.section.element]]
       text = "Gletscher Eistee"
@@ -338,7 +342,7 @@ offers_title = "Menu"
       price = "4.50"
 
       [[offers.section.element.subelement]]
-        text = "Michel (Orangensaft, Pfirsich, Tomaten)"
+        text = "Orangensaft, Pfirsich, Tomaten"
 
 
 [[offers]]
@@ -496,10 +500,10 @@ offers_title = "Menu"
 
     [[offers.section.element]]
       text="Schaumwein"
+      price="8.50"
 
       [[offers.section.element.subelement]]
         text="Moltó Negre Cava Brut DO"
-        price="8.50"
         
         
 [[offers]]
@@ -616,7 +620,7 @@ offers_title = "Menu"
         price="14.00"
 
       [[offers.section.element.subelement]]
-        text="* mit Softgetränk:"
+        text="* mit Softgetränk"
         price="+ 3.00"
 
     [[offers.section.element]]
@@ -631,7 +635,7 @@ offers_title = "Menu"
         price="10.00"
 
       [[offers.section.element.subelement]]
-        text="* mit Tonic:"
+        text="* mit Tonic"
         price="+ 4.00"
 
     [[offers.section.element]]
@@ -642,7 +646,7 @@ offers_title = "Menu"
         price="9.00"
 
       [[offers.section.element.subelement]]
-        text="* mit Softgetränk:"
+        text="* mit Softgetränk"
         price="+ 3.00"
 
 [menu.main]
