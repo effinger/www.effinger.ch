@@ -28,28 +28,28 @@ In einer Privatwohnung in Wabern eröffnen wir für eine Woche einen Pop-up Cowo
   <tbody>
     <tr>
     <th scope="row">Montag, <br><span style="white-space: nowrap;">23. Februar</span></th>
-      <td>Coworken, 8.00 bis 17.00 Uhr <br><a href="/events/x7c5Pl4p98/">&rarr; Anmeldung</a></td>
+      <td>Coworken, 8.00 bis 17.00 Uhr</td>
       <td></td>
     </tr>
     <tr>
     <th scope="row">Dienstag, <br><span style="white-space: nowrap;">24. Februar</span></th>
-      <td>Coworken, 8.00 bis 17.00 Uhr <br><a href="/events/zcLhj8PDGJ/">&rarr; Anmeldung</a></td>
-      <td>Literaturclub, 20.00 Uhr<br>(siehe <a href="#literaturclub">Details unten</a>)</td>
+      <td>Coworken, 8.00 bis 17.00 Uhr</td>
+      <td>Literaturclub, 20.00 Uhr<br>(siehe Details unten)</td>
     </tr>
     <tr>
     <th scope="row">Mittwoch, <br><span style="white-space: nowrap;">25. Februar</span></th>
-      <td>Coworken, 8.00 bis 17.00 Uhr <br><a href="/events/21lVdsTpmJ/">&rarr; Anmeldung</a></td>
+      <td>Coworken, 8.00 bis 17.00 Uhr</td>
       <td></td>
     </tr>
     <tr>
     <th scope="row">Donnerstag, <br><span style="white-space: nowrap;">26. Februar</span></th>
-      <td>Coworken, 8.00 bis 17.00 Uhr <br><a href="/events/8h88DhMmud/">&rarr; Anmeldung</a></td>
-      <td>How-the-Heck Abend, 19.00 Uhr <br>(siehe <a href="#how-the-heck-abend">Details unten</a>)</td>
+      <td>Coworken, 8.00 bis 17.00 Uhr</td>
+      <td>How-the-Heck Abend, 19.00 Uhr <br>(siehe Details unten)</td>
     </tr>
     <tr>
     <th scope="row">Freitag, <br><span style="white-space: nowrap;">27. Februar</span></th>
-      <td>Coworken, 8.00 bis 17.00 Uhr <br><a href="/events/D7Qq3y4umP/">&rarr; Anmeldung</a></td>
-      <td>Konzert «Dreaming By Numbers», <br>20.00 Uhr<br>(siehe <a href="#konzert-dreaming-by-numbers-">Details unten</a>)</td>
+      <td>Coworken, 8.00 bis 17.00 Uhr</td>
+      <td>Konzert «Dreaming By Numbers», <br>20.00 Uhr<br>(siehe Details unten)</td>
     </tr>
   </tbody>
 </table>
@@ -57,7 +57,7 @@ In einer Privatwohnung in Wabern eröffnen wir für eine Woche einen Pop-up Cowo
 
 ## Ort
 
-Die Coworking Woche findet an der [Aarbühlstrasse 17 in Wabern](https://www.google.ch/maps/place/Aarb%C3%BChlstrasse+17,+3084+Wabern/@46.9313021,7.4474307,17z/data=!3m1!4b1!4m2!3m1!1s0x478e3832f0288359:0x8166ddc3f71f02dd) statt.
+Die Coworking Woche findet an der Aarbühlstrasse in Wabern statt.
 
 
 ## Zusatzinfos Abendprogramm
@@ -69,7 +69,6 @@ Am Dienstagabend stellen wir im Literaturclub gängige Arbeits- und Organisation
 Wer sich vorab schon mal informieren will, kann diesen [Talk von Frederic Laloux](https://www.youtube.com/watch?v=gcS04BI2sbk) anschauen oder unseren Blogeintrag zu [Gemeinsamständigkeit](/blog/gemeinsamstaendigkeit/) lesen, welcher von Laloux inspiriert wurde.
 
 *Dienstag, 24. Februar um 20.00 Uhr*   
-*<a href="/events/1kTpgFSlH0/">Anmeldung</a> nicht zwingend, auch Spontane sind herzlich willkommen!*
 
 
 ### How-the-Heck Abend
@@ -81,7 +80,6 @@ Wollen wir als Community den [Space gemeinsam betreiben](/blog/coworking-space-z
 Dieser Abend ist offen für alle kreativen Denker, Interessierte, Selbständige und noch oder gar nicht Selbständige.
 
 *Donnerstag, 26. Februar um 19.00 Uhr*   
-*<a href="/events/Nsk6X3ZDz1/">Anmeldung</a> nicht zwingend, auch Spontane sind herzlich willkommen!*
 
 
 ### Konzert «Dreaming By Numbers»
@@ -93,8 +91,8 @@ Dich erwartet Musik, die den Ohren gut tut und Gemeinschaft, die deine Seele rei
 Wir freuen uns (auch) auf *Nicht-Coworker*, deine Freunde, Unbekannte zum-neu-kennenlernen &ndash; kurz, einfach Menschen die das Leben lieben! 
 
 *Freitag, 27. Februar um 20.00 Uhr*   
-*Eintritt frei, Kollekte*   
-*<a href="/events/O8AahUj8fz/">Anmeldung</a> nicht zwingend, auch Spontane sind herzlich willkommen!*
+*Eintritt frei, Kollekte*
+
 
 #### Ein Einblick in die musikalische Welt von «Dreaming By Numbers»
 
