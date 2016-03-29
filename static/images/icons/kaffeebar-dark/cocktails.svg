@@ -5,26 +5,17 @@
 	 width="20px" height="20px" viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve">
 <g>
 	<path fill="none" stroke="#777777" stroke-width="0.8" d="M3.846,17.127c0,0,0,2.117,2.241,2.117h3.136h3.138
-		c2.149,0,2.235-1.929,2.239-2.086"/>
+		c2.148,0,2.234-1.93,2.238-2.086"/>
 	
-		<line fill="none" stroke="#777777" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" x1="13.639" y1="8.152" x2="16.705" y2="2.376"/>
-	
-		<rect x="7.188" y="1.498" transform="matrix(0.7071 -0.7071 0.7071 0.7071 0.3038 7.313)" fill="#FFFFFF" width="3.584" height="3.584"/>
-	
-		<rect x="7.188" y="1.498" transform="matrix(0.7071 -0.7071 0.7071 0.7071 0.3038 7.313)" fill="none" stroke="#777777" stroke-width="0.8" stroke-linejoin="round" width="3.584" height="3.584"/>
-	
-		<rect x="4.473" y="5.105" transform="matrix(-0.2333 -0.9724 0.9724 -0.2333 1.0211 14.6215)" fill="#FFFFFF" width="3.604" height="3.606"/>
-	
-		<rect x="4.473" y="5.105" transform="matrix(-0.2333 -0.9724 0.9724 -0.2333 1.0211 14.6215)" fill="none" stroke="#777777" stroke-width="0.8" stroke-linejoin="round" width="3.604" height="3.606"/>
-	
-		<rect x="9.747" y="4.967" transform="matrix(-0.242 -0.9703 0.9703 -0.242 7.7765 19.6111)" fill="#FFFFFF" width="3.603" height="3.603"/>
-	
-		<rect x="9.747" y="4.967" transform="matrix(-0.242 -0.9703 0.9703 -0.242 7.7765 19.6111)" fill="none" stroke="#777777" stroke-width="0.8" stroke-linejoin="round" width="3.603" height="3.603"/>
-	
-		<rect x="7.154" y="5.852" transform="matrix(0.3337 -0.9427 0.9427 0.3337 -1.2469 13.5366)" fill="#FFFFFF" width="3.596" height="3.597"/>
-	
-		<rect x="7.154" y="5.852" transform="matrix(0.3337 -0.9427 0.9427 0.3337 -1.2469 13.5366)" fill="none" stroke="#777777" stroke-width="0.8" stroke-linejoin="round" width="3.596" height="3.597"/>
-	<rect x="3.295" y="7.941" fill="#FFFFFF" width="11.757" height="9.422"/>
+		<line fill="none" stroke="#777777" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" x1="13.831" y1="7.789" x2="16.705" y2="2.376"/>
+	<polyline fill="none" stroke="#777777" stroke-width="0.8" stroke-linejoin="round" points="8.772,5.616 6.446,3.29 8.98,0.755 
+		11.514,3.29 9.207,5.598 	"/>
+	<polyline fill="none" stroke="#777777" stroke-width="0.8" stroke-linejoin="round" points="4.668,7.938 4.101,5.576 7.607,4.735 	
+		"/>
+	<polyline fill="none" stroke="#777777" stroke-width="0.8" stroke-linejoin="round" points="9.365,5.456 12.861,4.583 
+		13.698,7.938 	"/>
+	<polyline fill="none" stroke="#777777" stroke-width="0.8" stroke-linejoin="round" points="6.942,7.941 7.857,5.355 11.248,6.556 
+		10.758,7.94 	"/>
 	
 		<rect x="3.295" y="7.941" fill="none" stroke="#777777" stroke-width="0.8" stroke-linejoin="round" width="11.757" height="9.422"/>
 </g>
