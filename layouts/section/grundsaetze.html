@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="de">
   {{ partial "head.html" . }}
-
   <body class="">
 
-    <!-- Page Wrap -->
+        <!-- Page Wrap -->
     <div class="page" id="top">
 
       <nav class="main-nav dark transparent stick-fixed">
@@ -78,38 +77,18 @@
 
           <div class="row section-text">
             <div class="col-md-offset-2 col-md-4">
+              {{ range first 5 .Data.Pages }}
               <div class="mb-10">
-                <a href="#" class="btn btn-mod btn-border btn-medium btn-round btn-wert">01 Ganzheit</a>
+                <a href="{{ .RelPermalink }}" class="btn btn-mod btn-border btn-medium btn-round btn-wert">{{ .Weight | printf "%02d" }} {{ .Title }}</a>
               </div>
-              <div class="mb-10">
-                <a href="#" class="btn btn-mod btn-border btn-medium btn-round btn-wert">02 Vielfalt</a>
-              </div>
-              <div class="mb-10">
-                <a href="#" class="btn btn-mod btn-border btn-medium btn-round btn-wert">03 Einheit</a>
-              </div>
-              <div class="mb-10">
-                <a href="#" class="btn btn-mod btn-border btn-medium btn-round btn-wert">04 Dankbarkeit</a>
-              </div>
-              <div class="mb-10">
-                <a href="#" class="btn btn-mod btn-border btn-medium btn-round btn-wert">05 Grosszügigkeit</a>
-              </div>
+              {{ end }}
             </div>
             <div class="col-md-4">
+              {{ range last 5 .Data.Pages }}
               <div class="mb-10">
-                <a href="#" class="btn btn-mod btn-border btn-medium btn-round btn-wert">06 Vertrauen</a>
+                <a href="{{ .RelPermalink }}" class="btn btn-mod btn-border btn-medium btn-round btn-wert">{{ .Weight | printf "%02d" }} {{ .Title }}</a>
               </div>
-              <div class="mb-10">
-                <a href="#" class="btn btn-mod btn-border btn-medium btn-round btn-wert">07 Transparenz</a>
-              </div>
-              <div class="mb-10">
-                <a href="#" class="btn btn-mod btn-border btn-medium btn-round btn-wert">08 Exzellenz</a>
-              </div>
-              <div class="mb-10">
-                <a href="#" class="btn btn-mod btn-border btn-medium btn-round btn-wert">09 Dienen</a>
-              </div>
-              <div class="mb-10">
-                <a href="#" class="btn btn-mod btn-border btn-medium btn-round btn-wert">10 Gerechtigkeit</a>
-              </div>
+              {{ end }}
             </div>
           </div>
           <div class="row section-text mt-70">
@@ -119,7 +98,7 @@
               Das Originaldokument mit den Grundsätzen kann auch als PDF heruntergeladen werden:
             </p>
             
-            <a href="#">
+            <a href="effinger-grundsaetze.pdf">
               <span class="icon-download"></span><br>
               Grundsätze als PDF (37 Seiten)
             </a>
@@ -137,7 +116,7 @@
               <h3 class="section-title font-alt">Hilf mit!</h3>
               <div class="section-text">
                 <p>
-                  Für die Umsetzung sind wir auf dich angewiesen. Achte beim Lesen darauf, ob dir etwas besonders auffält. Dann fordere uns heraus, dies zu leben. Du kannst dafür auch eine Rolle übernehmen. Mit einer Rolle gibt dir die Community ein Mandat, dich für etwas einzusetzen und dafür auch die nötigen Massnahmen zu ergreifen.
+                  Für die Umsetzung der Grundsätze sind wir auf dich angewiesen. Achte beim Lesen darauf, ob dir etwas besonders auffält. Dann fordere uns heraus, dies zu leben. Du kannst dafür auch eine Rolle übernehmen. Mit einer Rolle gibt dir die Community ein Mandat, dich für etwas einzusetzen und dafür auch die nötigen Massnahmen zu ergreifen.
                 </p>
               </div>
             </div>
@@ -153,7 +132,8 @@
     <!-- End Page Wrap -->
 
     {{ partial "body_includes.html" . }}
+    
+    {{ partial "disqus_count.html" . }}
 
   </body>
-
-</html>
+</html>     

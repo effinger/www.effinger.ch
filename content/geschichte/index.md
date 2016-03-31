@@ -1,5 +1,4 @@
 +++
-layout = "geschichte/single"
 title = "Geschichte"
 image = "geschichte_header.jpg"
 

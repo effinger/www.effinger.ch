@@ -1,5 +1,4 @@
 +++
-layout = "ueber/single"
 title = "Über uns"
 image = "community_header.jpg"
 
