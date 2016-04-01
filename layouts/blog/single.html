@@ -26,7 +26,7 @@
           </div>
           <div class="col-md-4 mt-30">
             <div class="mod-breadcrumbs font-alt align-right">
-              <a href="/blog"><i class="fa fa-angle-left"></i> Zur Übersicht</a>
+              <a href="/blog/"><i class="fa fa-angle-left"></i> Zur Übersicht</a>
             </div>
           </div>
         </div>
@@ -84,9 +84,9 @@
 
             <!-- Prev/Next Post -->
             <div class="clearfix mt-40">
-              {{ if .Prev }}
-              <a href="{{ .Prev.RelPermalink }}" class="blog-item-more left"><i class="fa fa-angle-left"></i>&nbsp;{{ .Prev.Title }}</a> {{ end }} {{ if .Next }}
-              <a href="{{ .Next.RelPermalink }}" class="blog-item-more right"><i class="fa fa-angle-right"></i>{{ .Next.Title }}</a> {{ end }}
+              {{ if .PrevInSection }}
+              <a href="{{ .PrevInSection.RelPermalink }}" class="blog-item-more left"><i class="fa fa-angle-left"></i>&nbsp;{{ .PrevInSection.Title }}</a> {{ end }} {{ if .NextInSection }}
+              <a href="{{ .NextInSection.RelPermalink }}" class="blog-item-more right"><i class="fa fa-angle-right"></i>{{ .NextInSection.Title }}</a> {{ end }}
             </div>
             <!-- End Prev/Next Post -->
 

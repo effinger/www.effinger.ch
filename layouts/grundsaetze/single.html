@@ -8,8 +8,78 @@
   <!-- Page Wrap -->
   <div class="page" id="top">
 
-    Stuff comes here...
-    
+    <nav class="main-nav dark transparent stick-fixed">
+      {{ partial "navigation.html" . }}
+    </nav>
+
+    <!-- Header -->
+    <section class="small-section bg-dark-lighter">
+      <div class="relative container align-left pt-80">
+
+        <div class="row">
+
+          <div class="col-md-8">
+            <h1 class="hs-line-11 font-alt mb-20 mb-xs-0">Grundsätze</h1>
+            <!--
+            <div class="hs-line-4 font-alt">
+            Grundsätze
+            </div>
+            -->
+          </div>
+
+          <div class="col-md-4 mt-30">
+            <div class="mod-breadcrumbs font-alt align-right">
+              <a href="/grundsaetze/"><i class="fa fa-angle-left"></i> Zur Übersicht</a>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- End Header -->
+
+    <!-- Section -->
+    <section class="page-section">
+      <div class="container relative">
+
+        <div class="row">
+
+          <!-- Content -->
+          <div class="col-sm-10 col-sm-offset-1">
+
+            <!-- Post -->
+            <div class="blog-item mb-80 mb-xs-40">
+
+              <!-- Text -->
+              <div class="blog-item-body">
+
+                <h1 class="mt-0 font-alt">{{ .Title }}</h1>
+                
+                {{ .Content }}
+
+              </div>
+              <!-- End Text -->
+
+            </div>
+            <!-- End Post -->
+
+            <!-- Prev/Next Post -->
+            <div class="clearfix mt-40">
+              {{ if .PrevInSection }}
+              <a href="{{ .PrevInSection.RelPermalink }}" class="blog-item-more left"><i class="fa fa-angle-left"></i>&nbsp;{{ .PrevInSection.Title }}</a> {{ end }} {{ if .NextInSection }}
+              <a href="{{ .NextInSection.RelPermalink }}" class="blog-item-more right"><i class="fa fa-angle-right"></i>{{ .NextInSection.Title }}</a> {{ end }}
+            </div>
+            <!-- End Prev/Next Post -->
+
+          </div>
+          <!-- End Content -->
+
+        </div>
+
+      </div>
+    </section>
+    <!-- End Section -->
 
     {{ partial "footer.html" . }}
 

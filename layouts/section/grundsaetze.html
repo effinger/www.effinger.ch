@@ -3,14 +3,14 @@
   {{ partial "head.html" . }}
   <body class="">
 
-        <!-- Page Wrap -->
-    <div class="page" id="top">
+    <!-- Page Wrap -->
+    <div class="page grundsaetze" id="top">
 
       <nav class="main-nav dark transparent stick-fixed">
         {{ partial "navigation.html" . }}
       </nav>
 
-      <!-- Section -->
+      <!-- Header -->
       <section class="small-section bg-dark-lighter">
         <div class="relative container align-left pt-80">
 
@@ -27,7 +27,7 @@
 
             <div class="col-md-4 mt-30">
               <div class="mod-breadcrumbs font-alt align-right">
-                Community&nbsp;/&nbsp;<span>Grundsätze</span>
+                <a href="/community/">Community</a>&nbsp;/&nbsp;<span>Grundsätze</span>
               </div>
 
             </div>
@@ -35,10 +35,51 @@
 
         </div>
       </section>
+      <!-- End Header -->
+      
+      <!-- Section -->
+      <section class="page-section">
+        <div class="container relative align-center">
+          <!--
+          <h2 class="section-title font-alt mb-70 mb-sm-40">
+            Werte
+          </h2>
+          -->
+
+          <div class="row section-text">
+            <div class="col-md-offset-2 col-md-4">
+              {{ range first 5 (sort .Data.Pages "Date" "asc") }}
+              <div class="mb-10">
+                <a href="{{ .RelPermalink }}" class="btn btn-mod btn-border btn-medium btn-round btn-wert">{{ .Title }}</a>
+              </div>
+              {{ end }}
+            </div>
+            <div class="col-md-4">
+              {{ range last 5 (sort .Data.Pages "Date" "asc") }}
+              <div class="mb-10">
+                <a href="{{ .RelPermalink }}" class="btn btn-mod btn-border btn-medium btn-round btn-wert">{{ .Title }}</a>
+              </div>
+              {{ end }}
+            </div>
+          </div>
+          <div class="row section-text mt-70">
+            <div class="col-sm-offset-3 col-sm-6">
+            
+            <p>
+              Das Originaldokument mit den Grundsätzen kann auch als PDF heruntergeladen werden:
+            </p>
+            
+            <a href="effinger-grundsaetze.pdf">
+              <span class="icon-download"></span><br>
+              Grundsätze als PDF (37 Seiten)
+            </a>
+          </div>
+        </div>
+      </section>
       <!-- End Section -->
 
       <!-- Section -->
-      <section class="page-section" id="about">
+      <section class="page-section bg-gray-lighter">
         <div class="container relative">
           <div class="section-text mb-sm-20">
             <div class="row">
@@ -66,55 +107,13 @@
       </section>
       <!-- End Section -->
         
-      <!-- Section Werte -->
-      <section id="werte" class="page-section bg-gray-lighter">
-        <div class="container relative align-center">
-          <!--
-          <h2 class="section-title font-alt mb-70 mb-sm-40">
-            Werte
-          </h2>
-          -->
-
-          <div class="row section-text">
-            <div class="col-md-offset-2 col-md-4">
-              {{ range first 5 .Data.Pages }}
-              <div class="mb-10">
-                <a href="{{ .RelPermalink }}" class="btn btn-mod btn-border btn-medium btn-round btn-wert">{{ .Weight | printf "%02d" }} {{ .Title }}</a>
-              </div>
-              {{ end }}
-            </div>
-            <div class="col-md-4">
-              {{ range last 5 .Data.Pages }}
-              <div class="mb-10">
-                <a href="{{ .RelPermalink }}" class="btn btn-mod btn-border btn-medium btn-round btn-wert">{{ .Weight | printf "%02d" }} {{ .Title }}</a>
-              </div>
-              {{ end }}
-            </div>
-          </div>
-          <div class="row section-text mt-70">
-            <div class="col-sm-offset-3 col-sm-6">
-            
-            <p>
-              Das Originaldokument mit den Grundsätzen kann auch als PDF heruntergeladen werden:
-            </p>
-            
-            <a href="effinger-grundsaetze.pdf">
-              <span class="icon-download"></span><br>
-              Grundsätze als PDF (37 Seiten)
-            </a>
-          </div>
-        </div>
-      </section>
-      <!-- End Section Werte -->
-        
-                      
       <!-- Section -->
       <section class="page-section bg-dark-lighter">
         <div class="container">
           <div class="row">
             <div class="col-md-8 col-md-offset-2">
               <h3 class="section-title font-alt">Hilf mit!</h3>
-              <div class="section-text">
+              <div>
                 <p>
                   Für die Umsetzung der Grundsätze sind wir auf dich angewiesen. Achte beim Lesen darauf, ob dir etwas besonders auffält. Dann fordere uns heraus, dies zu leben. Du kannst dafür auch eine Rolle übernehmen. Mit einer Rolle gibt dir die Community ein Mandat, dich für etwas einzusetzen und dafür auch die nötigen Massnahmen zu ergreifen.
                 </p>
