@@ -353,6 +353,7 @@ body{
   color: #111;
   font-size: 16px;
   font-family: $font-family-sans;
+  font-weight: 300;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
 }
@@ -641,18 +642,18 @@ a.btn-mod:focus{
 
 .btn-mod.btn-small{
   height: auto;
-  padding: 6px 17px;
+  padding: 7px 17px 5px 17px;
   font-size: 11px;
   letter-spacing: 1px;
 }
 .btn-mod.btn-medium{
   height: auto;
-  padding: 8px 37px;
+  padding: 9px 37px 7px 37px;
   font-size: 12px;
 }
 .btn-mod.btn-large{
   height: auto;
-  padding: 12px 45px;
+  padding: 13px 45px 11px 45px;
   font-size: 13px;
 }
 
@@ -2723,6 +2724,7 @@ Sections styles
   color: #777;
   line-height: 1.7;
 }
+.bg-dark
 .section-text blockquote{
   margin-top: -5px;
 }
