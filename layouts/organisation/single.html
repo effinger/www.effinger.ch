@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="de">
-{{ $.Scratch.Add "section_title" "Grundsätze" }}
 {{ partial "head.html" . }}
 
 <body>
 
   <!-- Page Wrap -->
-  <div class="page" id="top">
+  <div class="page organisation" id="top">
 
     <nav class="main-nav dark transparent stick-fixed">
       {{ partial "navigation.html" . }}
@@ -19,7 +18,7 @@
         <div class="row">
 
           <div class="col-md-8">
-            <h1 class="hs-line-11 font-alt mb-20 mb-xs-0">Grundsätze</h1>
+            <h1 class="hs-line-11 font-alt mb-20 mb-xs-0">Organisation</h1>
             <!--
             <div class="hs-line-4 font-alt">
             Grundsätze
@@ -29,15 +28,40 @@
 
           <div class="col-md-4 mt-30">
             <div class="mod-breadcrumbs font-alt align-right">
-              <a href="/grundsaetze/"><i class="fa fa-angle-left"></i> Zur Übersicht</a>
+              <a href="/community/">Community</a>&nbsp;/&nbsp;<span>Organisation</span>
             </div>
-
           </div>
         </div>
 
       </div>
     </section>
     <!-- End Header -->
+    
+    <!-- Section -->
+    <section class="page-section bg-gray-lighter">
+      <div class="container relative align-center">
+        <!--
+        <h2 class="section-title font-alt mb-70 mb-sm-40">
+          Werte
+        </h2>
+        -->
+
+      <div class="row section-text">
+        <div class="col-md-offset-2 col-md-8">
+          <p>
+            Auf dieser Seite erfährst du alle Details, wie unsere Community und der Betrieb des Coworking Spaces organisiert sind. Die Organisation basiert auf unserem Dokument der <a href="/grundsaetze/">Grundsätze</a>.
+          </p>
+          <p>
+            Das Originaldokument zur Organisation kann auch als PDF heruntergeladen werden:
+          </p>
+          <a  href="effinger-organisation.pdf">
+            <span class="icon-download"></span><br>
+            Organisation als PDF
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- End Section -->
 
     <!-- Section -->
     <section class="page-section">
@@ -51,22 +75,13 @@
             <!-- Text -->
             <div class="blog-item-body">
               <h1 class="mt-0 font-alt">{{ .Title }}</h1>
-
+              
               {{ .Content }}
             </div>
             <!-- End Text -->
 
-            <!-- Prev/Next Post -->
-            <div class="clearfix mt-40">
-              {{ if .PrevInSection }}
-              <a href="{{ .PrevInSection.RelPermalink }}" class="blog-item-more left"><i class="fa fa-angle-left"></i>&nbsp;{{ .PrevInSection.Title }}</a> {{ end }} {{ if .NextInSection }}
-              <a href="{{ .NextInSection.RelPermalink }}" class="blog-item-more right"><i class="fa fa-angle-right"></i>{{ .NextInSection.Title }}</a> {{ end }}
-            </div>
-            <!-- End Prev/Next Post -->
-
           </div>
           <!-- End Content -->
-
         </div>
 
       </div>

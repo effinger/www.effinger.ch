@@ -25,14 +25,15 @@ $font-family-serif: "Times New Roman", Times, serif;
 //
 // Custom styles.
 //
+@import "custom/blog";
+@import "custom/community";
+@import "custom/coworking";
+@import "custom/events";
+@import "custom/grundsaetze";
 @import "custom/home";
 @import "custom/kaffeebar";
-@import "custom/coworking";
-@import "custom/community";
-@import "custom/grundsaetze";
-@import "custom/blog";
-@import "custom/events";
 @import "custom/kontakt";
+@import "custom/organisation";
 
 .font-alt {
   font-weight: 300;
@@ -52,7 +53,13 @@ strong {
 }
 
 
-// Navigation
+// Tables.
+table th {
+  font-weight: 400; 
+}
+
+
+// Navigation.
 .logo img {
   height: 36px;
 }
@@ -108,7 +115,7 @@ strong {
 
 
 
-// Footer
+// Footer.
 .newsletter-arrow {
   max-width: 160px !important; 
 }
