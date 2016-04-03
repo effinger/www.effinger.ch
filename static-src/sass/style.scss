@@ -9,6 +9,7 @@
 
 // Colors...
 $primary-color: #fae300; // Effinger Gelb
+$color-blue: #43a5de;
 
 // Font defaults.
 $font-family-sans: YeniZaman, arial, sans-serif;
@@ -106,28 +107,8 @@ strong {
 }
 
 
-// Blog.
-.blog-item-data {
-  font-weight: 300; 
-}
-
-  
-.blog-item-more {
-  max-width: calc(50% - 5px);
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  
-  &.right .fa {
-    float: right;
-    line-height: 18px;
-    margin-left: 5px;
-  }
-}
-
 
 // Footer
-
 .newsletter-arrow {
   max-width: 160px !important; 
 }

@@ -39,9 +39,7 @@ Slack braucht übrigens keine Installation. Man kann es bequem über den Browser
 
 ## Worüber wird geredet
 
-Auf Slack reden wir einerseits über Dinge, die das Projekt *Pop-up Coworking und Café/Bar* betreffen. Es gibt nur wenige Themen, die wir in der privaten Gruppe innerhalb des *Gründungsteams* halten werden.
-
-Andererseits geht es generell um den Austausch über Inspirierendes zu Coworking, über Events, über Teilen von Wissen, Zeit und Ressourcen.
+Auf Slack reden wir einerseits über Dinge, die das Projekt *Coworking und Café/Bar* betreffen. Andererseits geht es generell um den Austausch über Inspirierendes zu Coworking, über Events, über Teilen von Wissen, Zeit und Ressourcen.
 
 Hier ist eine Liste der Channels und was darin diskutiert wird:
 
@@ -62,14 +60,12 @@ Neben den Channels kann man **eigene private Gruppen** erstellen mit ausgewählt
 
 ## Mitglied werden
 
-Damit echter Austausch stattfinden kann, wollen wir die Slack-Community überschaubar halten. Deshalb **beschränken wir die Teilnehmerzahl auf ca. 100 Personen**.
+Damit echter Austausch stattfinden kann, wollen wir die Slack-Community im Moment eher lokal und überschaubar halten. Deshalb kann es sein, dass wir die Teilnehmerzahl irgendwann beschränken.
 
-Wenn du zur Community beitragen möchtest und Mitglied werden willst, komm an einem [Event](/events/) persönlich auf uns zu. Dann können wir dich gleich anmelden und kurz einführen.
+Wenn du zur Community beitragen möchtest und Mitglied werden willst, komm persönlich auf uns zu. Dann können wir dich gleich anmelden und kurz einführen.
 
 
 ## Kosten
 
-Für die aktuelle Testphase möchten wir die Mitgliedschaft in unserer Slack-Community kostenlos halten. 
-
-Es wird sich noch zeigen, wie aufwändig es ist, die Community zu administrieren und moderieren. Falls auch der Nutzen für die Mitglieder dies rechtfertigt, werden wir zu einem späteren Zeitpunkt eine kostenpflichtige Mitgliedschaft einführen. Dies würde natürlich in der Slack-Community vorher diskutiert werden.
+In der Testphase haben wir die Mitgliedschaft in unserer Slack-Community kostenlos gehalten. Neu ist der Zugang zu Slack an eine [Community Membership](/community/) geknüpft. 
 
