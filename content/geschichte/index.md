@@ -62,7 +62,7 @@ Wir werden schnell fündig. Ab Mai 2015 betreiben wir an der Aarbergergasse auf 
 title = "Grundsätze"
 image = "06-grundsaetze.jpg"
 text = """
-Die wachsende Community entschliesst sich im Mai 2015 für eine [Organisation](/community/organisation/), welche auf Selbstführung, Ganzheit und evolutionärem Sinn beruht. Wir entwickeln ein Dokument mit [Grundsätzen](/community/grundsaetze/), nach denen wir uns als Community ausrichten möchten.
+Die wachsende Community entschliesst sich im Mai 2015 für eine [Organisation](/organisation/), welche auf Selbstführung, Ganzheit und evolutionärem Sinn beruht. Wir entwickeln ein Dokument mit [Grundsätzen](/grundsaetze/), nach denen wir uns als Community ausrichten möchten.
 """
 
 [[story_items]]
