@@ -1,6 +1,7 @@
 baseurl = "http://www.effinger.ch"
 languageCode = "de"
 title = "Effinger — Kaffeebar & Coworking Space Bern"
+pluralizeListTitles = false
 
 paginatePath = "seite"
 
@@ -17,7 +18,13 @@ paginatePath = "seite"
   name = "Community"
   pre = "<i class='fa fa-users'></i>"
   weight = 3
-  url = "/community/ueber/"
+  url = "/ueber/"
+  
+  [[menu.main]]
+    name = "Grundsätze"
+    weight = 3
+    parent = "Community"
+    url = "/grundsaetze/"
   
 [[menu.main]]
   name = "Events"

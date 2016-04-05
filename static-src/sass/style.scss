@@ -9,6 +9,7 @@
 
 // Colors...
 $primary-color: #fae300; // Effinger Gelb
+$color-blue: #43a5de;
 
 // Font defaults.
 $font-family-sans: YeniZaman, arial, sans-serif;
@@ -24,13 +25,15 @@ $font-family-serif: "Times New Roman", Times, serif;
 //
 // Custom styles.
 //
+@import "custom/blog";
+@import "custom/community";
+@import "custom/coworking";
+@import "custom/events";
+@import "custom/grundsaetze";
 @import "custom/home";
 @import "custom/kaffeebar";
-@import "custom/coworking";
-@import "custom/community";
-@import "custom/blog";
-@import "custom/events";
 @import "custom/kontakt";
+@import "custom/organisation";
 
 .font-alt {
   font-weight: 300;
@@ -50,7 +53,13 @@ strong {
 }
 
 
-// Navigation
+// Tables.
+table th {
+  font-weight: 400; 
+}
+
+
+// Navigation.
 .logo img {
   height: 36px;
 }
@@ -105,28 +114,8 @@ strong {
 }
 
 
-// Blog.
-.blog-item-data {
-  font-weight: 300; 
-}
 
-  
-.blog-item-more {
-  max-width: calc(50% - 5px);
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  
-  &.right .fa {
-    float: right;
-    line-height: 18px;
-    margin-left: 5px;
-  }
-}
-
-
-// Footer
-
+// Footer.
 .newsletter-arrow {
   max-width: 160px !important; 
 }

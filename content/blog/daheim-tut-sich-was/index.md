@@ -42,4 +42,10 @@ So, ich schliesse meine Berichterstattung hier mal ab... und warte schon gespann
 
 PS: Wer sich während dem Lesen gefragt hat, was zum Geier denn der *ZeitRaum* sei? Auch dies einer der via Slack soziokratisch gefällten Entscheide: Unser kleiner Coworking Space an der Aarbergergasse heisst nun *ZeitRaum*.
 
-Was der Name *ZeitRaum* für uns ausdrückt, findest du auf der neuen [Seite über den Space](/space/). Dort siehst du auch, wie und wo du vorbei kommen kannst.
+Der Name **ZeitRaum** drückt für uns Folgendes aus:
+
+* Es ist Raum für Entfaltung, Innovation, Arbeit und Leben.
+* Es ist ein Raum auf Zeit, denn diesen Winter werden wir in den grösseren Raum an der Effingerstrasse ziehen.
+* Es ist ein Raum für Zeit, man nimmt sich Zeit füreinander, investiert ineinander.
+* Der Name drückt aus, dass man für unterschiedliche Zeiträume hier arbeiten kann.
+* Die Community ist unabhängig von Raum und Zeit. Man kann sich dazu zählen, auch wenn man im Moment nicht an diesem Ort sein kann. Community geht über Zeit und Raum hinaus.

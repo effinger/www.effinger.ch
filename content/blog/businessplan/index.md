@@ -8,6 +8,8 @@ comments = true
 tags = [ "Coworking", "Finanzen" ]
 +++
 
+<div class="alert alert-info"><strong>Update am 05.04.2016:</strong> Blogartikel wurde angepasst an die aktuellen Preise für das Coworking. Der Businessplan enthält noch die ursprünglichen Zahlen.</div>
+
 «Wie viel kostet das?» Genau mit dieser Frage hat sich die Community schon vor einiger Zeit ausgiebig beschäftigt.
 
 Zum einen haben wir für den Effinger eine Produktepalette erstellt, welche möglichst auf die unterschiedlichen Bedürfnisse unserer Coworker zugeschnitten ist, zum andern haben wir uns natürlich auch um Investitionskosten und schlau klingende Sachen wie Cash-Flow, Business Model Canvas und Break-even gekümmert.
@@ -21,7 +23,7 @@ Und genau dies wollen wir hier transparent offen legen.
 
 Wir betonen immer wieder, dass unser zentrales Element die Menschen und unsere Beziehungen zueinander sind. Das ist das, was wir unsere *Effinger Community* nennen.
 
-Jede Person, welche sich mit uns und unseren Grundsätzen identifiziert oder uns einfach unterstützen möchte, darf Teil dieser Community sein. Dies ist möglich, auch wenn du keinen Arbeitsplatz bei uns hast. Dazu haben wir die *Community Membership* eingeführt.
+Jede Person, welche sich mit uns und unseren Grundsätzen identifiziert oder uns einfach unterstützen möchte, darf Teil dieser Community sein. Dies ist möglich, auch wenn du keinen Arbeitsplatz bei uns hast. Dazu haben wir die [Community Membership](/ueber/#community) eingeführt.
 
 
 <div class="row">
@@ -33,18 +35,18 @@ Jede Person, welche sich mit uns und unseren Grundsätzen identifiziert oder uns
         <div class="list-group-item">Du wirst eingeladen, als Member an Events zu kommen.</div>
         <div class="list-group-item">Im Effinger wird dir ein Member-Kaffee pro Monat offeriert.</div>
         <div class="list-group-item">Anders gesagt: Du bist Teil der "Effinger Community", bist jederzeit willkommen und erhältst ein Stück Heimat im Effinger.</div>
-        <div class="list-group-item list-group-item-warning"><strong style="color:#333">CHF 25.- pro Monat oder CHF 250.- pro Jahr</strong></div>
+        <div class="list-group-item list-group-item-warning"><strong style="color:#333">CHF 250 im ersten Jahr.<br>Ab dem zweiten Jahr zwischen CHF 0 und CHF 500 (kann selber gewählt werden).</strong></div>
       </div>
     </div>
   </div>
 </div>
 
-&rarr; Wenn du *Community Member* werden möchtest, schreibe ein Mail an [christoph@effinger.ch](mailto:christoph@effinger.ch).
+&rarr; Wenn du *Community Member* werden möchtest, komm einfach mal im Effinger vorbei und sprich uns darauf an.
 
 
 ### Coworking
 
-Für spontane und unverbindliche Coworker bieten wir *Tagespässe* und *10er-Abos* an. Wer regelmässig bei uns arbeiten oder sogar einen fixen Arbeitsplatz einrichten möchte, kann ein *Teilzeit- oder Vollzeit-Abo* lösen.
+Für spontane Coworker bieten wir *Tagespässe* und *10er-Abos* an. Wer regelmässig bei uns arbeiten oder sogar einen fixen Arbeitsplatz einrichten möchte, kann ein *Teilzeit- oder Vollzeit-Abo* lösen.
 
 <table class="table table-bordered table-hover">
   <thead>
@@ -52,8 +54,8 @@ Für spontane und unverbindliche Coworker bieten wir *Tagespässe* und *10er-Abo
       <th style="background-color: white; border-top: 1px solid white; border-left: 1px solid white; border-bottom: 1px solid #ddd"></th>
       <th><h4 style="margin: 0; font-size: 18px;">Tagespass</h4></th>
       <th><h4 style="margin: 0; font-size: 18px; white-space:nowrap;">10er-Abo</h4></th>
-      <th><h4 style="margin: 0; font-size: 18px;">Teilzeit\*</h4></th>
-      <th><h4 style="margin: 0; font-size: 18px;">Vollzeit\*</h4></th>
+      <th><h4 style="margin: 0; font-size: 18px;">Teilzeit*</h4></th>
+      <th><h4 style="margin: 0; font-size: 18px;">Vollzeit*</h4></th>
     </tr>
   </thead>
   <tbody>
@@ -66,15 +68,15 @@ Für spontane und unverbindliche Coworker bieten wir *Tagespässe* und *10er-Abo
     </tr>
     <tr>
       <th scope="row">Arbeitsplatz</th>
-      <td>Tisch</td>
-      <td>Tisch</td>
+      <td>Tisch oder Atelierplatz</td>
+      <td>Tisch oder Atelierplatz</td>
       <td>Tisch oder Atelierplatz</td>
       <td>Tisch oder Atelierplatz</td>
     </tr>
     <tr>
       <th scope="row">Zugang</th>
       <td nowrap>Mo-Sa<br>7.00-17.00 Uhr</td>
-      <td nowrap>Mo-Sa<br>7.00-17.00 Uhr</td>
+      <td nowrap>Mo-Sa<br>7.00-23.00 Uhr</td>
       <td nowrap>Mo-Sa<br>7.00-23.00 Uhr</td>
       <td nowrap>Mo-Sa<br>7.00-23.00 Uhr</td>
     </tr>
@@ -133,7 +135,7 @@ Wir bieten Firmen die Möglichkeiten, flexible Arbeitsplätze in einer kreativen
 
 ### Workshop-Räume
 
-Workshop-Räume werden extern vermietet. Der Preis liegt bei ca. CHF 45.- für eine Stunde bis ca. CHF 150.- für einen halben Tag. Zusätzlich bestehen Catering-Möglichkeiten von der Kaffeebar (Früchtekorb, Gipfeli, Getränke, etc.).
+Workshop-Räume werden extern vermietet. Der Preis liegt bei CHF 200 für einen Halbtag, CHF 300 für den ganzen Tag und CHF 350 für den Tag inkl. Abend. Zusätzlich bestehen Catering-Möglichkeiten von der Kaffeebar (Früchtekorb, Gipfeli, Getränke, etc.).
 
 
 ### Atelier
@@ -179,7 +181,7 @@ Der Business Canvas enthält zurzeit die drei Kundensegmente Jungunternehmer, Kr
 
 ## Chancen und Risiken
 
-Nebst dem Aufbau eines gut funktionierenden Ökosystems und dessen Community für Jungunternehmer liegen die Chancen vor allem im zukunftsorientierten Arbeitsethos und den definierten [Werten](/blog/grundsaetze/), welche aktiv gelebt werden sollen. Zudem ist der gefundene Standort an der Effingerstrasse 10 die perfekte Location für einen Coworking Space gepaart mit einer Kaffeebar.
+Nebst dem Aufbau eines gut funktionierenden Ökosystems und dessen Community für Jungunternehmer liegen die Chancen vor allem im zukunftsorientierten Arbeitsethos und den definierten [Werten](/grundsaetze/), welche aktiv gelebt werden sollen. Zudem ist der gefundene Standort an der Effingerstrasse 10 die perfekte Location für einen Coworking Space gepaart mit einer Kaffeebar.
 
 Das Risiko betreffend der Lokalität sind aktuell vor allem Einsprachen beim Baugesuch. 
 
@@ -196,7 +198,7 @@ Die Community setzt damit die Vision einer «Heimat für Jungunternehmer, Kreati
 
 Unter folgendem Link kannst du den gesamten Businessplan der Effinger Coworking Community herunterladen.
 
-<a href="https://github.com/makery/effinger.ch/releases/download/v2.0/businessplan-effinger-coworking-v2.2-2015-12-21.pdf" class="btn btn-warning"><i class="fa fa-download"></i>  Businessplan herunterladen</a>
+<a href="businessplan-effinger-coworking-v2.2-2015-12-21.pdf" class="btn btn-mod btn-medium btn-round"><i class="fa fa-download"></i>  Businessplan herunterladen</a>
 
 Wir veröffentlichen den Businessplan unter der [Creative Commons Namensnennung Lizenz](http://creativecommons.org/licenses/by/4.0/), was heisst, dass du ihn für dich verwenden darfst unter der einzigen Bedingung, dass du unseren Namen nennst. Falls dir dieser Businessplan für dein eigenes Projekt geholfen hat, freuen wir uns natürlich, von dir zu hören.
 

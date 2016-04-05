@@ -42,7 +42,7 @@ So haben wir uns definitiv für **EFFINGER** entschieden. Es erscheint uns wie e
 
 ### Kill Your Darling
 
-Von den rund 200 Namen konnte schliesslich nur einer gewählt werden. Für alle, welche mit Herzblut für einen anderen Namen geworben haben, gibt es nächsten Donnerstag am [Community-Treffen](/events/c9apM9weQg/) eine "Kill Your Darling" Zeremonie. Dabei darf man nochmals leidenschaftlich sagen, warum man einen anderen Namen so toll gefunden hätte, bevor die Idee schliesslich "begraben" wird.
+Von den rund 200 Namen konnte schliesslich nur einer gewählt werden. Für alle, welche mit Herzblut für einen anderen Namen geworben haben, gibt es nächsten Donnerstag am Community-Treffen eine "Kill Your Darling" Zeremonie. Dabei darf man nochmals leidenschaftlich sagen, warum man einen anderen Namen so toll gefunden hätte, bevor die Idee schliesslich "begraben" wird.
 
 
 ## Herzlichen Dank

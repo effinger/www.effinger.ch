@@ -26,7 +26,7 @@ Wir alle - aber Marco im Speziellen - freuen uns auf die Grillabende über den D
 
 ![Aarbergergasse Terrasse](aarbergergasse-terrasse.jpg)
 
-Bevor wir das Bijoux beziehen, wollen wir uns Gedanken darüber machen, wie wir diesen Raum nutzen wollen, wie er eingerichtet werden soll und welche Leute wir damit ansprechen möchten. Wenn du dich an dieser Diskussion beteiligen möchtest, dann triff dich mit uns diesen [Donnerstag, 26. März](/events/bvpPqhZxJB/) oder am [Donnerstag, 23. April](/events/oJMUrkhEty/) auf ein Bier. Oder komm am [10. April zum Pop-up Coworking](/events/ZTJtFaYDTI/).
+Bevor wir das Bijoux beziehen, wollen wir uns Gedanken darüber machen, wie wir diesen Raum nutzen wollen, wie er eingerichtet werden soll und welche Leute wir damit ansprechen möchten. Wenn du dich an dieser Diskussion beteiligen möchtest, dann triff dich mit uns diesen Donnerstag, 26. März oder am Donnerstag, 23. April auf ein Bier. Oder komm am 10. April zum Pop-up Coworking.
 
 ***
 

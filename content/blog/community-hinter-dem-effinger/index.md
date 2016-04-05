@@ -26,7 +26,7 @@ Das grosse und offensichtliche Projekt ist der Aufbau der physischen Heimat vom 
 
 ## Erweiterte Community
 
-Rund um den Aufbau vom Effinger und um das Leben und Arbeiten nach solchen [Grundsätzen](https://github.com/makery/effinger.ch/releases/download/v1.0/effinger-grundsaetze-v1.0.pdf) hat sich ein Netzwerk von Personen gebildet. Dieses Netzwerk nennen wir unsere **erweiterte Community**. Wie viele sich dazu zählen, wissen wir nicht.
+Rund um den Aufbau vom Effinger und um das Leben und Arbeiten nach solchen [Grundsätzen](/grundsaetze/) hat sich ein Netzwerk von Personen gebildet. Dieses Netzwerk nennen wir unsere **erweiterte Community**. Wie viele sich dazu zählen, wissen wir nicht.
 
 Wir merken einfach, wie das Interesse da ist, entweder durch persönliche Kontakte, Mailanfragen, Anfragen von Medien und ein paar Statistiken.
 
@@ -49,7 +49,7 @@ Weitere Kanäle, über die man Neuigkeiten erfahren kann sind [Facebook](https:/
 
 ## (Engere) Community
 
-Zur engeren Community zählen wir alle, welche mit einer Rolle Verantwortung übernehmen. Zurzeit sind dies **elf Personen**. Nächste Woche werden am [Community-Treffen](/events/ZFhjH0RPSr/) wieder ca. drei Personen dazu kommen. Alle aktuellen Rollenträger mit den entsprechenden Rollen sind auf der [über uns Seite](/ueber/) aufgeführt (für Details auf die Rollennamen klicken).
+Zur engeren Community zählen wir alle, welche mit einer Rolle Verantwortung übernehmen. Zurzeit sind dies **elf Personen**. Nächste Woche werden am Community-Treffen wieder ca. drei Personen dazu kommen. Alle aktuellen Rollenträger mit den entsprechenden Rollen sind auf der [über uns Seite](/ueber/) aufgeführt (Update: im Moment sind die Rollen nicht mehr drauf).
 
 
 ## Als Mieter und Gastgeber von Anfang an dabei sein

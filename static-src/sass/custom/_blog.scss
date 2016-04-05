@@ -1,0 +1,18 @@
+// Blog.
+.blog-item-data {
+  font-weight: 300; 
+}
+
+  
+.blog-item-more {
+  max-width: calc(50% - 5px);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  
+  &.right .fa {
+    float: right;
+    line-height: 18px;
+    margin-left: 5px;
+  }
+}

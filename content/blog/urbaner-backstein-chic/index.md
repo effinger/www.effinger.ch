@@ -18,7 +18,7 @@ Weitere «must’s» für mich: dreibeinige Tische (damit die nicht immer kippel
 
 Was ist für dich ein absolutes Muss in einem Café/Bar oder einem Coworking Space? Schreib es unten in die Kommentarfunktion.
 
-A propos: Über das Design der Räume werden wir auch am nächsten [«How-the-heck» Abend](/events/AvjyGh7Lo0/), Donnerstag 29. Januar, diskutieren. Es gibt auf dem Gebiet des Bürodesigns und der innovativen Lern- und Arbeitsumgebung ganz tolle Ideen und Konzepte. Wenn du dich dafür interessierst, dann solltest du den nächsten «How-the-heck» Abend auf keinen Fall verpassen.
+A propos: Über das Design der Räume werden wir auch am nächsten «How-the-heck» Abend, Donnerstag 29. Januar, diskutieren. Es gibt auf dem Gebiet des Bürodesigns und der innovativen Lern- und Arbeitsumgebung ganz tolle Ideen und Konzepte. Wenn du dich dafür interessierst, dann solltest du den nächsten «How-the-heck» Abend auf keinen Fall verpassen.
 
 ![Coffee Shop](coffee-shop.jpg)
 

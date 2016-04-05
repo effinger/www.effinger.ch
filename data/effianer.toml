@@ -1,0 +1,167 @@
+[[Person]]
+name = "Domenica Winkler"
+gender = "f"
+image = "/images/effianer/domenica-winkler.jpg"
+description = "Leiterin Kaffeebar"
+email = "domenica@effinger.ch"
+phone = ""
+website = ""
+twitter = ""
+facebook = ""
+instagram = "effingerbern"
+
+[[Person]]
+name = "Salome Hostettler"
+gender = "f"
+image = "/images/effianer/salome-hostettler.jpg"
+description = "Leiterin Kaffeebar"
+email = "salome@effinger.ch"
+phone = ""
+website = ""
+twitter = ""
+facebook = "salome.hostettler"
+instagram = ""
+
+[[Person]]
+host = [ "Montag" ]
+name = "Urs Vögeli"
+gender = "m"
+image = "/images/effianer/urs-voegeli.jpg"
+email = "urs@effinger.ch"
+phone = ""
+website = ""
+twitter = ""
+facebook = "urs.vogeli.3"
+instagram = ""
+
+[[Person]]
+host = [ "Montag" ]
+name = "Claudia Schären"
+gender = "f"
+image = "/images/effianer/claudia-schaeren.jpg"
+email = "claudia@effinger.ch"
+phone = "+41 78 789 63 77"
+website = "http://www.a-und-o.ch/"
+twitter = ""
+facebook = ""
+instagram = ""
+
+[[Person]]
+host = [ "Dienstag" ]
+name = "Philippe Arber"
+gender = "m"
+image = "/images/effianer/philippe-arber.jpg"
+email = "philippe@effinger.ch"
+phone = "+41 76 330 44 58"
+website = "http://larbre.cc/"
+twitter = ""
+facebook = ""
+instagram = ""
+
+[[Person]]
+host = [ "Dienstag" ]
+name = "Jonathan Hess"
+gender = "m"
+image = "/images/effianer/jonathan-hess.jpg"
+email = "jonathan@effinger.ch"
+phone = "+41 79 755 26 61"
+website = "http://www.movingwater.ch"
+twitter = ""
+facebook = ""
+instagram = ""
+
+[[Person]]
+host = [ "Mittwoch" ]
+name = "Nadia Meier"
+gender = "f"
+image = "/images/effianer/nadia-meier.jpg"
+email = "nadia@effinger.ch"
+phone = "+41 76 345 28 73"
+website = "http://www.nadiameier.ch/"
+twitter = "froumeier"
+facebook = "nadiameier"
+instagram = ""
+
+[[Person]]
+host = [ "Mittwoch" ]
+name = "Timon Andeer"
+gender = "m"
+image = "/images/effianer/timon-andeer.jpg"
+email = "timon.a@effinger.ch"
+phone = ""
+website = ""
+twitter = ""
+facebook = "monmonupcycling"
+instagram = ""
+
+[[Person]]
+host = [ "Mittwoch" ]
+name = "Timon Marmet"
+gender = "m"
+image = "/images/effianer/timon-marmet.jpg"
+email = "timon.m@effinger.ch"
+phone = ""
+website = ""
+twitter = ""
+facebook = "timon.marmet"
+instagram = ""
+
+[[Person]]
+host = [ "Donnerstag" ]
+name = "David Eggimann"
+gender = "m"
+image = "/images/effianer/david-eggimann.jpg"
+email = "david@effinger.ch"
+phone = "+41 31 398 20 22"
+website = "http://www.advitia.ch"
+twitter = ""
+facebook = "david.eggimann.1"
+instagram = ""
+
+[[Person]]
+host = [ "Donnerstag" ]
+name = "Jonas Humbel"
+gender = "m"
+image = "/images/effianer/jonas-humbel.jpg"
+email = "jonas@effinger.ch"
+phone = ""
+website = "http://www.advitia.ch"
+twitter = ""
+facebook = "jonu.humbel"
+instagram = ""
+
+[[Person]]
+host = [ "Freitag" ]
+name = "Graziella Bärtsch"
+gender = "f"
+image = "/images/effianer/graziella-baertsch.jpg"
+email = "graziella@effinger.ch"
+phone = ""
+website = ""
+twitter = ""
+facebook = ""
+instagram = ""
+
+[[Person]]
+host = [ "Freitag" ]
+name = "Matthias Tobler"
+gender = "m"
+image = "/images/effianer/matthias-tobler.jpg"
+email = "matthias@effinger.ch"
+phone = ""
+website = "http://www.iveinstitute.org/"
+twitter = ""
+facebook = ""
+instagram = ""
+
+[[Person]]
+host = [ "Freitag" ]
+name = "Marco Jakob"
+gender = "m"
+image = "/images/effianer/marco-jakob.jpg"
+email = "marco@effinger.ch"
+phone = "+41 31 398 20 22"
+website = "http://www.makery.ch"
+twitter = "marco_jakob"
+facebook = "marco.jakob.x"
+instagram = ""

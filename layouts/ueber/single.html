@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="de">
+{{ $.Scratch.Add "section_title" "Community" }}
+{{ partial "head.html" . }}
+
+<body class="">
+
+  <!-- Page Wrap -->
+  <div class="page" id="top">
+
+    <nav class="main-nav dark transparent stick-fixed">
+      {{ partial "navigation.html" . }}
+    </nav>
+
+    <!-- Header -->
+    <section class="home-section bg-dark-alfa-70 parallax-2 fixed-height-small" data-background="{{ .Params.image }}">
+      <div class="js-height-parent container">
+
+        <!-- Hero Content -->
+        <div class="home-content">
+          <div class="home-text">
+            <h1 class="font-alt mb-50 mb-xs-30">Über uns</h1>
+            
+            <div>
+              <a href="/geschichte/" class="btn btn-mod btn-border-w btn-medium btn-round mb-xs-10">Geschichte</a>
+              <span class="hidden-xs">&nbsp;</span>
+              <a href="/grundsaetze/" class="btn btn-mod btn-border-w btn-medium btn-round mb-xs-10">Grundsätze</a>
+              <span class="hidden-xs">&nbsp;</span>
+              <a href="/organisation/" class="btn btn-mod btn-border-w btn-medium btn-round mb-xs-10">Organisation</a>
+            </div>
+
+          </div>
+        </div>
+        <!-- End Hero Content -->
+
+      </div>
+    </section>
+    <!-- End Header -->
+
+    <!-- Section Vision -->
+    <section class="page-section bg-gray">
+      <div class="container relative">
+        <blockquote class="align-center mb-0 mt-0">
+          <p>Wir sind eine innovative, kreative Community mit einem gemeinsamen Coworking Space und Kaffeebar in Bern. Wir sind eine Heimat für Jungunternehmer, Kreative und andere Weltveränderer, die einander helfen, ihre Ideen in Firmen, Innovationen und soziale Aktionen umzusetzen.</p>
+          <footer>Vision</footer>
+        </blockquote>
+      </div>
+    </section>
+    <!-- End Section Vision -->
+
+    <!-- Effianer Section -->
+    <section class="page-section" id="community">
+      <div class="container relative">
+
+        <h2 class="section-title font-alt mb-70 mb-sm-40">Unserer Community</h2>
+
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <div class="section-text local-scroll">
+              <p>
+                Unsere Community besteht aktuell aus rund 40 Mitgliedern. Alle Community Member engagieren sich in unterschiedlichen und selbst gewählten Formen, dass das Zusammenspiel funktioniert.
+              </p>
+              <p>
+                Die Community ist als Verein organisiert und nicht gewinnorientiert. Salome und Domenica von der <a href="/kaffeebar/">Effinger Kaffeebar GmbH</a> leiten den öffentlichen Café- und Barbetrieb. Sie sind im Effinger Untermieterinnen des Vereins.
+              </p>
+              <p>
+                Bei uns gibt es keine Hierarchien. Wir tragen gemeinsam Verantwortung. Für den Effinger und für einander. Und wir sind überzeugt, dass es in der Arbeitswelt neue Organisationformen braucht. Deshalb haben wir in <a href="/grundsaetze/">zehn Grundsätzen</a> festgehalten, wie wir zusammen arbeiten und leben wollen.
+              </p>
+              <p>
+                Nicht nur die Community sondern auch den Coworking Space im Effinger managen wir gemeinsam. Im Moment sind wir {{ len $.Site.Data.effianer }} JungunternehmerInnen, die entweder einen Voll- oder Teilzeit-Arbeitsplatz im Effinger haben und verantwortlich sind für den Betrieb vor Ort. Wir nennen uns <a  href="#effianer">Effianer</a>.
+              </p>
+              
+              <h3>Community Member werden</h3>
+              <p>
+                Als Community Member erhältst du ein Stück Heimat im Effinger und wirst Teil der "Effinger Community". Du erhältst Zugang zur ganzen Community, einerseits auf unserer <a href="/blog/slack/">Online-Plattform</a>, aber natürlich auch vor Ort im Effinger. Du wirst als Member an Events eingeladen und darfst im Effinger 12 gratis Kaffees trinken.
+              </p>
+              <p>
+                Die Membership kostet 250 Franken für das erste Jahr. Ab dem zweiten Jahr bestimmt jede Person selber, wie viel sie mit Finanzen zum Gedeihen der Community beitragen möchte (zwischen 0 und 500 Franken). Der Betrag soll sich "richtig" anfühlen.
+              </p>
+              <p>
+                Die Community lebt durch das grosszügige Engagement der Mitglieder. Wer in welcher Form und wie viel beiträgt ist (zum Glück) nicht messbar. Deshalb wollen wir es den Community Membern selber überlassen, was sie beitragen möchten, sei es in Geldform oder durch persönliches Engagement.                
+              </p>
+              <p>
+                <strong>Interessiert an einer Membership?</strong> Komm einfach im Effinger vorbei und sprich uns darauf an.
+              </p>
+              
+              <h3>Weitere Infos über die Community</h3>
+              
+              <p>
+                Auf den folgenden Seiten findest du weitere Information über die Geschichte, die Grundsätze und die genaue Organisation unserer Community.
+              </p>
+              
+              <a href="/geschichte/" class="btn btn-mod btn-border btn-medium btn-round mb-xs-10">Geschichte</a>
+              <span class="hidden-xs">&nbsp;</span>
+              <a href="/grundsaetze/" class="btn btn-mod btn-border btn-medium btn-round mb-xs-10">Grundsätze</a>
+              <span class="hidden-xs">&nbsp;</span>
+              <a href="/organisation/" class="btn btn-mod btn-border btn-medium btn-round mb-xs-10">Organisation</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-section bg-gray" id="effianer">
+      <div class="container relative">
+        
+        <h2 class="section-title font-alt mb-70 mb-sm-40">Die Effianer</h2>
+        
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2 mb-70 mb-xs-40">
+            <div class="section-text">
+              <p>
+                Die Effianer sind die Coworker, die verantwortlich sind für den Betrieb des Effingers. Alle sind in einem Gastgeber-Team verantwortlich für einen bestimmten Wochentag. Ihre Arbeit ist ehrenamtlich. Dafür erhalten sie einen günstigeren Arbeitsplatz als mit einem 10er-Abo und dazu Vieles, das man nicht mit Geld kaufen könnte...
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="row multi-columns-row">
+          {{ $today := index $.Site.Data.de.weekdays $.Now.Weekday }}
+          {{ range $.Site.Data.effianer.Person }}
+          <!-- Effianer Item -->
+          <div class="col-sm-6 col-md-3 col-lg-3 mb-50">
+            <div class="team-item">
+              <div class="team-item-image">
+                <img src="{{ .image }}" alt="" />
+                <div class="team-item-detail">
+                  <!--
+                  <h4 class="font-alt normal"></h4>
+                  <p>
+                    {{ .description_text }}
+                  </p>
+                  -->
+                  <div class="team-social-links">
+                    {{ if .email }}
+                      <a href="mailto:{{ .email }}" target="_blank"><i class="fa fa-envelope"></i></a>
+                    {{ end }}
+                    {{ if .phone }}
+                      <a href="tel:{{ .phone }}" target="_blank"><i class="fa fa-phone"></i></a>
+                    {{ end }}
+                    {{ if .website }}
+                      <a href="{{ .website }}" target="_blank"><i class="fa fa-globe"></i></a>
+                    {{ end }}
+                    {{ if .twitter }}
+                      <a href="https://twitter.com/{{ .twitter }}" target="_blank"><i class="fa fa-twitter"></i></a>
+                    {{ end }}
+                    {{ if .facebook }}
+                      <a href="https://www.facebook.com/{{ .facebook }}" target="_blank"><i class="fa fa-facebook"></i></a>
+                    {{ end }}
+                    {{ if .instagram }}
+                      <a href="https://www.instagram.com/{{ .instagram }}" target="_blank"><i class="fa fa-instagram"></i></a>
+                    {{ end }}
+                  </div>
+                </div>
+              </div>
+              <div class="team-item-descr font-alt">
+                <div class="team-item-name">
+                  {{ .name }}
+                </div>
+                <div class="team-item-role">
+                  {{ .description }}
+                  {{ if .host }}
+                    {{ if eq .gender "m" }}Gastgeber{{ else }}Gastgeberin{{ end }}
+                     am 
+                    {{ $num_days := len .host }}
+                    {{ range $i, $day := .host }}{{ if gt $i 0 }}{{ if eq (add $i 1) $num_days }} und {{ else }}, {{ end }}{{ end }}
+                    {{ if eq $day $today }}<span class="active-day text-nowrap"><i class="fa fa-chevron-right"></i>{{ end }}{{ $day }}{{ if eq $day $today }}<i class="fa fa-chevron-left"></i></span>{{ end }}{{ end }}
+                  {{ end }}
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Effianer Item -->
+          {{ end }}
+        </div>
+      </div>
+    </section>
+    <!-- End Effianer Section -->
+    
+    {{ partial "footer.html" . }}
+
+  </div>
+  <!-- End Page Wrap -->
+
+  {{ partial "body_includes.html" . }}
+
+</body>
+
+</html>

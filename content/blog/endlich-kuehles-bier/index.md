@@ -42,7 +42,7 @@ Die Lücke in der Mitte ist dazu gedacht, dass die Coworker das Laptopkabel prak
 
 Designer-Tisch und kühles Bier sind nun schon zwei Gründe, warum du unbedingt mal vorbei schauen solltest. Wir sind jetzt offiziell geöffnet. Entweder kommst du zum Arbeiten oder auch einfach so vorbei auf einen Drink auf der Terrasse.
 
-Auf der [neuen Seite "Space"](/space/) findest du alle Informationen zu unserem *Coworking ZeitRaum* an der Aarbergergasse.
+Auf der neuen Seite "Space" findest du alle Informationen zu unserem *Coworking ZeitRaum* an der Aarbergergasse (Update: nicht mehr verfügbar).
 
 Schreib doch kurz ein Mail, bevor du vorbei kommst, damit wir uns auch sicher nicht verpassen.
 

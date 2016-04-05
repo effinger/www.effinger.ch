@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="de">
+{{ $.Scratch.Add "section_title" "Blog" }}
 {{ partial "head.html" . }}
 
-<body class="">
+<body>
 
   <!-- Page Wrap -->
   <div class="page" id="top">
@@ -12,20 +13,22 @@
     </nav>
 
     <!-- Header -->
-    <section class="small-section bg-gray-lighter first-section-mt">
-      <div class="relative container align-left">
+    <section class="small-section bg-gray-lighter">
+      <div class="relative container align-left pt-80">
 
         <div class="row">
 
           <div class="col-md-8">
             <h1 class="hs-line-11 font-alt mb-20 mb-xs-0">Blog</h1>
+            <!--
             <div class="hs-line-4 font-alt black">
               Geschichten aus der Community
             </div>
+            -->
           </div>
           <div class="col-md-4 mt-30">
             <div class="mod-breadcrumbs font-alt align-right">
-              <a href="/blog"><i class="fa fa-angle-left"></i> Zur Übersicht</a>
+              <a href="/blog/"><i class="fa fa-angle-left"></i> Zur Übersicht</a>
             </div>
           </div>
         </div>
@@ -71,6 +74,14 @@
 
             </div>
             <!-- End Post -->
+            
+            <!-- Prev/Next Post -->
+            <div class="clearfix mb-80 mb-xs-40">
+              {{ if .PrevInSection }}
+              <a href="{{ .PrevInSection.RelPermalink }}" class="blog-item-more left"><i class="fa fa-angle-left"></i>&nbsp;{{ .PrevInSection.Title }}</a> {{ end }} {{ if .NextInSection }}
+              <a href="{{ .NextInSection.RelPermalink }}" class="blog-item-more right"><i class="fa fa-angle-right"></i>{{ .NextInSection.Title }}</a> {{ end }}
+            </div>
+            <!-- End Prev/Next Post -->
 
             <!-- Comments -->
             {{ if .Params.comments }}
@@ -80,14 +91,6 @@
             </div>
             {{ end }}
             <!-- End Comments -->
-
-            <!-- Prev/Next Post -->
-            <div class="clearfix mt-40">
-              {{ if .Prev }}
-              <a href="{{ .Prev.RelPermalink }}" class="blog-item-more left"><i class="fa fa-angle-left"></i>&nbsp;{{ .Prev.Title }}</a> {{ end }} {{ if .Next }}
-              <a href="{{ .Next.RelPermalink }}" class="blog-item-more right"><i class="fa fa-angle-right"></i>{{ .Next.Title }}</a> {{ end }}
-            </div>
-            <!-- End Prev/Next Post -->
 
           </div>
           <!-- End Content -->
