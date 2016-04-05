@@ -11,8 +11,8 @@ paginatePath = "seite"
   disqusShortname = "effinger"
 
 [taxonomies]
-  tag = "tags"
-  category = "categories"
+  tag = "tags"             # Used for events 
+  category = "categories"  # Used for the blog
   
 [[menu.main]]
   name = "Community"
