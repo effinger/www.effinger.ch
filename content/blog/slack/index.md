@@ -67,5 +67,5 @@ Wenn du zur Community beitragen möchtest und Mitglied werden willst, komm pers�
 
 ## Kosten
 
-In der Testphase haben wir die Mitgliedschaft in unserer Slack-Community kostenlos gehalten. Neu ist der Zugang zu Slack an eine [Community Membership](/community/) geknüpft. 
+In der Testphase haben wir die Mitgliedschaft in unserer Slack-Community kostenlos gehalten. Neu ist der Zugang zu Slack an eine [Community Membership](/ueber/#community) geknüpft. 
 

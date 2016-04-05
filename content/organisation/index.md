@@ -73,7 +73,7 @@ Generell gibt es keine klare Abgrenzung, wer zur „erweiterten Community“ zä
 
 ### Community Member
 
-**Die Community (im engeren Sinn) umfasst alle Personen, welche sich persön-lich für die Community engagieren und einen finanziellen Beitrag leisten.**
+**Die Community (im engeren Sinn) umfasst alle Personen, welche sich persönlich für die Community engagieren und einen finanziellen Beitrag leisten.**
 
 Eine Community Membership kostet:
 

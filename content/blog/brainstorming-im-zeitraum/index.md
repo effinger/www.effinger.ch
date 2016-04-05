@@ -10,7 +10,7 @@ tags = [ "Community" ]
 
 ![Brainstorming](brainstorming.jpg)
 
-Um ein mehrjähriges Konzept für die Gestaltung einer Weihnachts- und Osterwerbung zu entwickeln, lud Matthias (http://www.mattiasleutwyler.ch) vergangene Woche alle Interessierten zu einem Brainstorming ein. Unsere Community folgte dem Aufruf und so fanden sich sieben Leute im ZeitRaum, um gemeinsam Ideen zu sammeln.
+Um ein mehrjähriges Konzept für die Gestaltung einer Weihnachts- und Osterwerbung zu entwickeln, lud [Matthias Leutwyler](http://www.mattiasleutwyler.ch) vergangene Woche alle Interessierten zu einem Brainstorming ein. Unsere Community folgte dem Aufruf und so fanden sich sieben Leute im ZeitRaum, um gemeinsam Ideen zu sammeln.
 
 ![Brainstorming 2](brainstorming-2.jpg)
 

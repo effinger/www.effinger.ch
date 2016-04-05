@@ -14,7 +14,7 @@ tags = [ "Community", "Grundsätze" ]
   Auf diesen Moment habe ich mich gefreut: Die erste Version der Grundsätze ist da. Es ist ein gemeinsam erarbeitetes Dokument der Vision und Werte, nach denen wir uns als Community ausrichten wollen.
 </div>
 
-<a href="https://github.com/makery/effinger.ch/releases/download/v1.0/effinger-grundsaetze-v1.0.pdf" class="btn btn-warning"><i class="fa fa-download"></i> Grundsätze v1.0.pdf</a>
+<a href="/grundsaetze/" class="btn btn-mod btn-medium btn-round">&rarr; Grundsätze herunterladen</a>
 
 Dieses Dokument beschreibt das Warum und Wie. Grossartig, wie viele Personen ihre Gedanken zu diesem "Werk" beigetragen haben. In den letzten Wochen wurde dies alles innerhalb der [Slack-Gruppe](/blog/slack/) auf Papier gebracht. So enthält es die persönliche Geschichte unserer Community, wie sie über das vergangene Jahr gemeinsam geformt wurde.
 
@@ -22,7 +22,7 @@ Die Grundsätze erzählen auch eine neue Geschichte von einem Traum, wie wir mit
 
 Es sind viele Buchstaben. Wohl viel zu viele. Kürzer fassen können wir uns später ;-). Das Dokument ist sicher noch nicht "fertig" und wird weiter reifen. 
 
-Jetzt geht es aber vor allem um die Umsetzung. Bitte hilf mit! Achte beim Lesen darauf, ob dir etwas besonders auffällt. Dann **fordere uns heraus, dies zu leben**. Du kannst dafür auch eine *Rolle* übernehmen. Mit einer Rolle gibt dir die Community ganz offiziell das Recht, dich für etwas einzusetzen und dafür auch die nötigen Massnahmen zu ergreifen (mehr zu Rollen im Artikel über [Organisation](/blog/organisation/)).
+Jetzt geht es aber vor allem um die Umsetzung. Bitte hilf mit! Achte beim Lesen darauf, ob dir etwas besonders auffällt. Dann **fordere uns heraus, dies zu leben**. Du kannst dafür auch eine *Rolle* übernehmen. Mit einer Rolle gibt dir die Community ganz offiziell das Recht, dich für etwas einzusetzen und dafür auch die nötigen Massnahmen zu ergreifen (mehr zu Rollen auf der Seite über [Organisation](/organisation/)).
 
 
 ## Vision
@@ -117,16 +117,12 @@ Die Frage stellt sich, wie das alles umgesetzt werden soll. Ein wesentlicher Tei
 
 In unserer Community gibt es keine Hierarchie. Das heisst, dass wir auch neue Wege gehen müssen, um Verantwortung zu verteilen und Entscheidungen zu treffen.
 
-Wie die Rollen und Entscheidungen, funktionieren findest du im [Blogartikel über unsere Organisation](/blog/organisation/).
-
 
 ## Download
 
-Hier kannst du das komplette Dokument der **Grundsätze** herunterladen:
+Auf der folgenden Seite kannst du das komplette Dokument der **Grundsätze** herunterladen:
 
-<a href="https://github.com/makery/effinger.ch/releases/download/v1.0/effinger-grundsaetze-v1.0.pdf" class="btn btn-warning"><i class="fa fa-download"></i> Grundsätze v1.0.pdf</a>
-
-
+<a href="/grundsaetze/" class="btn btn-mod btn-medium btn-round">&rarr; Grundsätze</a>
 
 
 

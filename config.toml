@@ -18,7 +18,7 @@ paginatePath = "seite"
   name = "Community"
   pre = "<i class='fa fa-users'></i>"
   weight = 3
-  url = "/community/"
+  url = "/ueber/"
   
   [[menu.main]]
     name = "Grundsätze"

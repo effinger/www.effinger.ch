@@ -37,9 +37,9 @@ Hier einige **Kriterien**, die der Name erfüllen sollte:
 
 ### Vorschläge als Kommentar oder beim Workshop
 
-Du darfst gerne deine Vorschläge unten in der Kommentarfunktion vermerken. Wir sammeln mal alle Vorschläge, reduzieren die dann auf eine kleinere Menge und daraus werden unsere ["RollenträgerInnen"](/ueber/) den definitiven Namen wählen.
+Du darfst gerne deine Vorschläge unten in der Kommentarfunktion vermerken. Wir sammeln mal alle Vorschläge, reduzieren die dann auf eine kleinere Menge und daraus werden unsere "RollenträgerInnen" den definitiven Namen wählen.
 
-Wenn du gerne mit anderen zusammen Namenskreationen entwickeln möchtest, dann komm am Donnerstag, 16. Juli, 19 Uhr in den ZeitRaum. Hier findest du den [Workshop-Event](/events/C8k3gihj6Q/) inklusive Anmeldung.
+Wenn du gerne mit anderen zusammen Namenskreationen entwickeln möchtest, dann komm am Donnerstag, 16. Juli 2015, 19 Uhr in den ZeitRaum.
 
 
 ***
@@ -52,8 +52,8 @@ Wenn du gerne mit anderen zusammen Namenskreationen entwickeln möchtest, dann k
 
 Hier kannst die ganze Sammlung heruntergeladen werden:
 
-<a href="namensvorschlaege.pdf" class="btn btn-warning"><i class="fa fa-download"></i> Sammlung der Namensvorschläge (PDF)</a> 
+<a href="namensvorschlaege.pdf" class="btn btn-mod btn-medium btn-round"><i class="fa fa-download"></i> Sammlung der Namensvorschläge (PDF)</a>
 
 In den nächsten Tagen werden die Namensvorschläge von Domenica und anderen Helfern durchgekämmt und reduziert auf ein überschaubares Mass.
 
-Bis Ende Monat entscheiden die ["RollenträgerInnen"](/ueber/) über den definitiven Namen.
+Bis Ende Monat entscheiden die "RollenträgerInnen" über den definitiven Namen.

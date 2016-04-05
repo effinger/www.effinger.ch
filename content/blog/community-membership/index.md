@@ -30,7 +30,7 @@ Inzwischen waren wir 12 Personen, die im Effinger arbeiten und ihn mitbetreiben 
 
 Wir organisierten in der Folge unseren Verein so, dass wir nur Personen reingelassen haben, die sich auch für ein Arbeiten vor Ort und für das Mittragen des Betriebs verpflichtet hatten. Wir wollten nicht, dass Leute über uns bestimmen, die nicht selber von den Entscheidungen betroffen sind.
 
-Damit haben wir uns aber etwas isoliert und drückten aus, dass zwar finanzielle und nicht-finanzielle Beiträge willkommen sind, aber dass sich Community Member trotzdem nicht so richtig dazu zählen dürfen. Entscheiden wollten wir dann doch selber. Das klingt nicht nach unserem [Grundsatz des "Vertrauens"](/blog/grundsaetze/).
+Damit haben wir uns aber etwas isoliert und drückten aus, dass zwar finanzielle und nicht-finanzielle Beiträge willkommen sind, aber dass sich Community Member trotzdem nicht so richtig dazu zählen dürfen. Entscheiden wollten wir dann doch selber. Das klingt nicht nach unserem [Grundsatz des "Vertrauens"](/grundsaetze/vertrauen/).
 
 
 ## Geld, oder doch nicht?
