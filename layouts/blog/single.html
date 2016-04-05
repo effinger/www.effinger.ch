@@ -74,6 +74,14 @@
 
             </div>
             <!-- End Post -->
+            
+            <!-- Prev/Next Post -->
+            <div class="clearfix mb-80 mb-xs-40">
+              {{ if .PrevInSection }}
+              <a href="{{ .PrevInSection.RelPermalink }}" class="blog-item-more left"><i class="fa fa-angle-left"></i>&nbsp;{{ .PrevInSection.Title }}</a> {{ end }} {{ if .NextInSection }}
+              <a href="{{ .NextInSection.RelPermalink }}" class="blog-item-more right"><i class="fa fa-angle-right"></i>{{ .NextInSection.Title }}</a> {{ end }}
+            </div>
+            <!-- End Prev/Next Post -->
 
             <!-- Comments -->
             {{ if .Params.comments }}
@@ -83,14 +91,6 @@
             </div>
             {{ end }}
             <!-- End Comments -->
-
-            <!-- Prev/Next Post -->
-            <div class="clearfix mt-40">
-              {{ if .PrevInSection }}
-              <a href="{{ .PrevInSection.RelPermalink }}" class="blog-item-more left"><i class="fa fa-angle-left"></i>&nbsp;{{ .PrevInSection.Title }}</a> {{ end }} {{ if .NextInSection }}
-              <a href="{{ .NextInSection.RelPermalink }}" class="blog-item-more right"><i class="fa fa-angle-right"></i>{{ .NextInSection.Title }}</a> {{ end }}
-            </div>
-            <!-- End Prev/Next Post -->
 
           </div>
           <!-- End Content -->
