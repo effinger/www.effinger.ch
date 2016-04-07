@@ -3,6 +3,24 @@
   cursor: pointer;
 }
 
+// Workshopraum table
+.workshopraum {
+  table {
+    width: 100%;
+
+    tr {
+      td {
+        padding-bottom: 10px;
+        vertical-align: top;
+        &:first-child {
+          font-weight: 400;
+          padding-right: 30px;
+        }
+      }
+    }
+  }
+}
+
 
 // Pricing Table
 .pricing-item {

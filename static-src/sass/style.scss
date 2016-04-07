@@ -20,7 +20,7 @@ $font-family-serif: "Times New Roman", Times, serif;
 @import "rhythm/style";
 @import "rhythm/style-responsive";
 @import "rhythm/vertical-rhythm";
-
+ 
 
 //
 // Custom styles.
@@ -48,14 +48,14 @@ strong {
   background-color: #fff;
 }
 
-.bg-primary { 
-  background-color: $primary-color; 
+.bg-primary {
+  background-color: $primary-color;
 }
 
 
 // Tables.
 table th {
-  font-weight: 400; 
+  font-weight: 400;
 }
 
 
@@ -117,14 +117,14 @@ table th {
 
 // Footer.
 .newsletter-arrow {
-  max-width: 160px !important; 
+  max-width: 160px !important;
 }
 
 @media only screen and (min-width: 768px) {
   .newsletter-arrow-container {
-    height: 50px; 
+    height: 50px;
   }
-  
+
   .newsletter-arrow {
     position: absolute;
     z-index: 100;

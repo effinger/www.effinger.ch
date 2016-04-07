@@ -93,15 +93,32 @@
     <!-- About Section Coworking -->
     <section class="page-section">
       <div class="container relative">
-        <h1 class="hs-line-11 font-alt">Coworking Space</h1>
-        <div class="section-text">
-          <p>
-            Coworking hat sich in den letzten Jahren im Bereich neuer Arbeitsformen etabliert. Selbstständig Erwerbende, Kreative aber auch kleine Startups arbeiten am selben Ort, um ihre Ideen zu verwirklichen. Sie arbeiten selbstständig, aber als Teil der Community von Coworkern.
-          </p>
-          <p>
-            Der Coworking Space stellt Arbeitsplätze zur Verfügung, die flexibel auf Tages-, Wochen- oder Monatsbasis gemietet werden können. Allen Mitgliedern wird die komplette Büroinfrastruktur zur Verfügung gestellt (z.B. schnelles Internet, Drucker, Kopierer, Sitzungsräume etc).
-          </p>
+        <div class="row">
+          <div class="col-md-8">
+            <h1 class="hs-line-11 font-alt">Coworking Space</h1>
+            <div class="section-text">
+              <p>
+                Coworking hat sich in den letzten Jahren im Bereich neuer Arbeitsformen etabliert. Selbstständig Erwerbende, Kreative aber auch kleine Startups arbeiten am selben Ort, um ihre Ideen zu verwirklichen. Sie arbeiten selbstständig, aber als Teil der Community von Coworkern.
+              </p>
+              <p>
+                Der Coworking Space stellt Arbeitsplätze zur Verfügung, die flexibel auf Tages-, Wochen- oder Monatsbasis gemietet werden können. Allen Mitgliedern wird die komplette Büroinfrastruktur zur Verfügung gestellt (z.B. schnelles Internet, Drucker, Kopierer, Sitzungsräume etc).
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 mt-md-50">
+            <div class="contact-item clearfix">
+              <h4 class="uppercase">Tagesgäste</h4>
+              <div class="wave-spacer"></div>
+              <div class="item local-scroll">
+                <p>
+                  Als Tagesgast darfst du gerne ohne Voranmeldung vorbei kommen. <br> Einen Tagespass oder eine 10er-Abo löst du direkt vor Ort an der Kaffeebar.
+                </p>
+                <a href="#pricing" class="btn btn-mod btn-gray btn-round mt-20">Preise</a>
+              </div>
+            </div>
+          </div>
         </div>
+
 
       </div>
     </section>
@@ -140,7 +157,6 @@
     <section class="page-section">
       <div class="container relative">
         <h1 class="hs-line-11 font-alt">Workshopraum</h1>
-        
         <div class="section-text">
           <p>
             Der abgetrennte Raum oberhalb des Kaffeebar-Bereichs eignet sich als Sitzungs- und Workshopraum für die Unternehmen im Coworking Space sowie externe Gäste. Hier soll out-of-the-box gedacht werden und dies spürt und sieht man schon beim Betreten des Raums.
@@ -149,6 +165,61 @@
             Der Raum bietet 360 Grad beschreibbare, magnetische Wände sowie einen grossen Screen. Hier sollen neue Ideen geboren, Bestehendes hinterfragt und ohne Grenzen "gebrainstormed" werden.
           </p>
         </div>
+        <!-- Accordion -->
+        <dl class="toggle workshopraum mt-50">
+            <dt>
+                <a href="">Details</a>
+            </dt>
+            <dd>
+              <div class="section-text">
+                <table>
+                  <tr>
+                    <td>Fläche</td>
+                    <td>17m2</td>
+                  </tr>
+                  <tr>
+                    <td>Personen</td>
+                    <td>4-8</td>
+                  </tr>
+                  <tr>
+                    <td>Elemente</td>
+                    <td>45m2 (magnetische) Whiteboard Fläche, 10 Sitzwürfel, Fenster mit Blick in die Kaffeebar, 55 Zoll Screen, Stühle und Tische auf Verlangen.</td>
+                  </tr>
+                  <tr>
+                    <td>Verfügbarkeit</td>
+                    <td>Montag bis Freitag</td>
+                  </tr>
+                </table>
+              </div>
+            </dd>
+            <dt>
+                <a href="">Preise</a>
+            </dt>
+            <dd>
+              <div class="section-text local-scroll">
+                <table>
+                  <tr>
+                    <td>Halber Tag</td>
+                    <td>CHF 200.-</td>
+                    <td>8.00-12.00 Uhr / 13.00-17.00 Uhr / 18.00-22.00</td>
+                  </tr>
+                  <tr>
+                    <td>Ganzer Tag</td>
+                    <td>CHF 300.-</td>
+                    <td>8.00-17.00 Uhr / 13.00-22.00 Uhr</td>
+                  </tr>
+                  <tr>
+                    <td>Tag & Abend</td>
+                    <td>CHF 350.-</td>
+                    <td>8.00-22.00 Uhr</td>
+                  </tr>
+                </table>
+                <p class="mt-20">Workshopraum ist auch für 2 Stunden à CHF 100.00 mietbar.<br>Ab 4 Stunden können Start-ups und NGOs einen Rabatt von CHF 50.- beantragen.</p>
+                <a href="#contact" class="btn btn-mod btn-gray btn-round mt-10">Anfrage & Reservation</a>
+              </div>
+            </dd>
+        </dl>
+        <!-- End Accordion -->
       </div>
     </section>
     <!-- End About Section Workshopraum -->
@@ -273,7 +344,7 @@
         <!-- End Pricing row -->
 
         <h3 class="font-alt">Voll- und Teilzeit-Arbeitsplätze</h3>
-        
+
         <div class="section-text">
           <p>
             Wir <a href="/blog/coworking-space-zusammen-betreiben/">betreiben den Coworking Space gemeinsam als Community</a>. Im Moment sind wir {{ len $.Site.Data.effianer }} JungunternehmerInnen, die entweder einen Voll- oder Teilzeit-Arbeitsplatz im Effinger haben.
@@ -285,7 +356,7 @@
             Wenn du zu uns "Effianern" dazustossen möchtest, dann wirst du am besten Community Member und arbeitest mal eine Weile zum Beispiel mit 10er-Abo bei uns. So lernen wir einander kennen und sehen, ob das passen könnte.
           </p>
         </div>
-        
+
       </div>
     </section>
     <!-- End Section -->
