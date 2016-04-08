@@ -353,6 +353,7 @@ body{
   color: #111;
   font-size: 16px;
   font-family: $font-family-sans;
+  font-feature-settings: 'tnum';
   font-weight: 300;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
