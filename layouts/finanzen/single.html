@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="de">
+{{ partial "head.html" . }}
+
+<body>
+
+  <!-- Page Wrap -->
+  <div class="page organisation" id="top">
+
+    <nav class="main-nav dark transparent stick-fixed">
+      {{ partial "navigation.html" . }}
+    </nav>
+
+    <!-- Header -->
+    <section class="small-section bg-dark-lighter">
+      <div class="relative container align-left pt-80">
+
+        <div class="row">
+
+          <div class="col-md-8">
+            <h1 class="hs-line-11 font-alt mb-20 mb-xs-0">Finanzen</h1>
+            <!--
+            <div class="hs-line-4 font-alt">
+            Grundsätze
+            </div>
+            -->
+          </div>
+
+          <div class="col-md-4 mt-30">
+            <div class="mod-breadcrumbs font-alt align-right">
+              <a href="/ueber/">Community</a>&nbsp;/&nbsp;<span>Finanzen</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- End Header -->
+
+    <!-- Section -->
+    <section class="page-section bg-gray-lighter">
+      <div class="container relative align-center">
+        <!--
+        <h2 class="section-title font-alt mb-70 mb-sm-40">
+          Werte
+        </h2>
+        -->
+
+      <div class="row section-text">
+        <div class="col-md-offset-2 col-md-8">
+          <p>
+            Wir versuchen, unsere Zahlen so weit wie möglich öffentlich zugänglich
+            zu machen. Damit sollen sich alle Betroffenen und Interessierten ein
+            Bild machen können, wie sich die Finanzen der Effinger Community
+            entwickeln.
+          </p>
+          <p>
+            Warum tun wir dies? Weil wir keinen Grund sehen, weshalb solche
+            Zahlen geheim bleiben sollten. Und wir glauben, dass Transparenz
+            ganz viele positive Effekte hat. Du kannst mehr über unsere Überzeugung
+            lesen im <a href="/grundsaetze/transparenz/">Grundsatz der
+            Transparenz</a>.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- End Section -->
+
+    <!-- Section -->
+    <section class="page-section">
+      <div class="container relative">
+
+        <div class="row">
+
+          <!-- Content -->
+          <div class="col-sm-10 col-sm-offset-1">
+
+            <!-- Text -->
+            <div class="blog-item-body">
+              <h1 class="mt-0 font-alt">Besucherzahlen 2016</h1>
+
+              <!-- Nav tabs -->
+              <ul class="nav nav-tabs tpl-tabs animate">
+                <li class="active">
+                  <a href="#besucher-03" data-toggle="tab" aria-expanded="true">März</a>
+                </li>
+                <li class="">
+                  <a href="#besucher-04" data-toggle="tab" aria-expanded="false">April</a>
+                </li>
+              </ul>
+
+              <!-- Tab panes -->
+              <div class="tab-content tpl-tabs-cont section-text">
+                <div class="tab-pane fade active in" id="besucher-03">
+                  {{ delimit .Site.Data.besucherzahlen.aaa.tagespaesse ", " }}
+                  
+                  <canvas id="myChart" width="400" height="400"></canvas>
+                </div>
+                <div class="tab-pane fade" id="besucher-04">
+                  Nam porta elementum tortor, eget tempor orci ullamcorper eget. Aliquam fermentum sem non vulputate dapibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla at porttitor massa.
+                  Aliquam tortor leo, pharetra non congue sit amet, bibendum sit amet enim. Nullam sit amet malesuada justo.
+                </div>
+              </div>
+
+
+            </div>
+            <!-- End Text -->
+
+          </div>
+          <!-- End Content -->
+        </div>
+
+      </div>
+    </section>
+    <!-- End Section -->
+
+    {{ partial "footer.html" . }}
+
+  </div>
+  <!-- End Page Wrap -->
+
+  {{ partial "body_includes.html" . }}
+  <script type="text/javascript" src="/js/Chart.min.js"></script>
+  <script type="text/javascript">
+  var ctx = document.getElementById("myChart").getContext("2d");
+  var data = {
+      labels: ["January", "February", "March", "April", "May", "June", "July"],
+      datasets: [
+          {
+              label: "My First dataset",
+              fillColor: "rgba(220,220,220,0.5)",
+              strokeColor: "rgba(220,220,220,0.8)",
+              highlightFill: "rgba(220,220,220,0.75)",
+              highlightStroke: "rgba(220,220,220,1)",
+              data: [65, 59, 80, 81, 56, 55, 40]
+          },
+          {
+              label: "My Second dataset",
+              fillColor: "rgba(151,187,205,0.5)",
+              strokeColor: "rgba(151,187,205,0.8)",
+              highlightFill: "rgba(151,187,205,0.75)",
+              highlightStroke: "rgba(151,187,205,1)",
+              data: [28, 48, 40, 19, 86, 27, 90]
+          }
+      ]
+  };
+  var myBarChart = new Chart(ctx).Bar(data, {});
+  </script>
+
+</body>
+</html>
