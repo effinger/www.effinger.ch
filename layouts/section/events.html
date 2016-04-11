@@ -32,9 +32,11 @@
     <!-- Section Event list -->
     <section class="page-section event">
       <div class="container relative">
+        <!--
         <h2 class="section-title font-alt mb-70 mb-sm-40">Eventliste</h2>
+        -->
         <div class="eventlist">
-          {{ range sort .Data.Pages "Params.startdate" "asc" }}
+          {{ range sort (where .Data.Pages "Params.enddate" ">=" .Now) "Params.startdate" "asc" }}
           
             {{ $start_month := index $.Site.Data.de.months (sub .Params.startdate.Month 1) }}
             {{ $start_shortmonth := slicestr $start_month 0 3 }}
