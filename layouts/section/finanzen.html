@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="de">
+{{ partial "head.html" . }}
+
+<body>
+
+  <!-- Page Wrap -->
+  <div class="page organisation" id="top">
+
+    <nav class="main-nav dark transparent stick-fixed">
+      {{ partial "navigation.html" . }}
+    </nav>
+
+    <!-- Header -->
+    <section class="small-section bg-dark-lighter">
+      <div class="relative container align-left pt-80">
+
+        <div class="row">
+
+          <div class="col-md-8">
+            <h1 class="hs-line-11 font-alt mb-20 mb-xs-0">Finanzen</h1>
+            <!--
+            <div class="hs-line-4 font-alt">
+            Grundsätze
+            </div>
+            -->
+          </div>
+
+          <div class="col-md-4 mt-30">
+            <div class="mod-breadcrumbs font-alt align-right">
+              <a href="/ueber/">Community</a>&nbsp;/&nbsp;<span>Finanzen</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- End Header -->
+
+    <!-- Section -->
+    <section class="page-section bg-gray-lighter">
+      <div class="container relative align-center">
+        <!--
+        <h2 class="section-title font-alt mb-70 mb-sm-40">
+          Werte
+        </h2>
+        -->
+
+      <div class="row section-text">
+        <div class="col-md-offset-2 col-md-8">
+          <p>
+            Wir versuchen, unsere Zahlen so weit wie möglich öffentlich zugänglich
+            zu machen. Damit sollen sich alle Betroffenen und Interessierten ein
+            Bild machen können, wie sich die Finanzen der Effinger Community
+            entwickeln.
+          </p>
+          <p>
+            Warum tun wir dies? Weil wir keinen Grund sehen, weshalb solche
+            Zahlen geheim bleiben sollten. Und wir glauben, dass Transparenz
+            ganz viele positive Effekte hat. Du kannst mehr über unsere Überzeugung
+            lesen im <a href="/grundsaetze/transparenz/">Grundsatz der
+            Transparenz</a>.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- End Section -->
+
+    <!-- Section -->
+    <section class="page-section">
+      <div class="container relative">
+        <!-- Text -->
+        <div class="blog-item-body">
+          <h1 class="mt-0 font-alt">Erfolgsrechnung</h1>
+
+          <div class="mb-40">
+            <div id="myLegend"></div>
+            <canvas id="myChart"></canvas>
+          </div>
+
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs tpl-tabs animate">
+            {{ range $i, $e := sort .Data.Pages "Date" "asc" }}
+            <li{{ if eq $i 0 }} class="active"{{ end }}>
+              <a href="#{{ $e.Date.Format "2006-01" }}" data-toggle="tab"
+                  aria-expanded="{{ if eq $i 0 }}true{{ else }}false{{ end }}">
+                {{ index $.Site.Data.de.months (sub $e.Date.Month 1) }}
+              </a>
+            </li>
+            {{ end }}
+          </ul>
+
+          <!-- Tab panes -->
+          <div class="tab-content tpl-tabs-cont section-text erfolg">
+            {{ range $i, $e := sort .Data.Pages "Date" "asc" }}
+            {{ $.Scratch.Set "total_ertrag" 0 }}
+            <div class="tab-pane fade{{ if eq $i 0 }} active in{{ end }}" id="{{ $e.Date.Format "2006-01" }}">
+              <div class="row">
+                <div class="col-sm-6 erfolg-item left-sm">
+                  <h3 class="font-alt title">Ertrag</h3>
+                  {{ range $e.Params.ertrag }}
+                  {{ $.Scratch.Add "total_ertrag" .betrag }}
+                  <table>
+                    <tbody>
+                      <tr>
+                        <th>{{ .name }}</th>
+                        <th>
+                          +{{ partial "format/thousands" .betrag }}
+                        </th>
+                      </tr>
+                      {{ with .info }}
+                      <tr>
+                        <td>{{ . }}</td>
+                        <td></td>
+                      </tr>
+                      {{ end }}
+                    </tbody>
+                  </table>
+                  {{ end }}
+                </div>
+                <div class="col-sm-6 erfolg-item right-sm">
+                  <h3 class="font-alt title">Aufwand</h3>
+                  {{ range $e.Params.aufwand }}
+                  <table>
+                    <tbody>
+                      <tr>
+                        <th>{{ .name }}</th>
+                        <th>
+                          -{{ partial "format/thousands" .betrag }}
+                        </th>
+                      </tr>
+                      {{ with .info }}
+                      <tr>
+                        <td>{{ . }}</td>
+                        <td></td>
+                      </tr>
+                      {{ end }}
+                    </tbody>
+                  </table>
+                  {{ end }}
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6">
+                  Total Ertrag: {{ partial "format/thousands" ($.Scratch.Get "total_ertrag") }}
+                </div>
+              </div>
+
+            </div>
+            {{ end }}
+
+        </div>
+        <!-- End Text -->
+      </div>
+    </section>
+    <!-- End Section -->
+
+    {{ partial "footer.html" . }}
+
+  </div>
+  <!-- End Page Wrap -->
+
+  {{ partial "body_includes.html" . }}
+  <script type="text/javascript" src="/js/Chart.min.js"></script>
+  <script type="text/javascript">
+  var ctx = document.getElementById("myChart").getContext("2d");
+  var data = {
+      labels: ["January", "February", "March", "April", "May", "June", "July"],
+      datasets: [
+          {
+              label: "My First dataset",
+              fillColor: "rgba(220,220,220,0.5)",
+              strokeColor: "rgba(220,220,220,0.8)",
+              highlightFill: "rgba(220,220,220,0.75)",
+              highlightStroke: "rgba(220,220,220,1)",
+              data: [65, 59, 80, 81, 56, 55, 40]
+          },
+          {
+              label: "My Second dataset",
+              fillColor: "rgba(151,187,205,0.5)",
+              strokeColor: "rgba(151,187,205,0.8)",
+              highlightFill: "rgba(151,187,205,0.75)",
+              highlightStroke: "rgba(151,187,205,1)",
+              data: [28, 48, 40, 19, 86, 27, 90]
+          }
+      ]
+  };
+  var myBarChart = new Chart(ctx).Bar(data, {
+    //Boolean - Whether the scale should start at zero, or an order of magnitude down from the lowest value
+    scaleBeginAtZero : true,
+
+    //Boolean - Whether grid lines are shown across the chart
+    scaleShowGridLines : true,
+
+    //String - Colour of the grid lines
+    scaleGridLineColor : "rgba(0,0,0,.05)",
+
+    //Number - Width of the grid lines
+    scaleGridLineWidth : 1,
+
+    //Boolean - Whether to show horizontal lines (except X axis)
+    scaleShowHorizontalLines: true,
+
+    //Boolean - Whether to show vertical lines (except Y axis)
+    scaleShowVerticalLines: true,
+
+    //Boolean - If there is a stroke on each bar
+    barShowStroke : true,
+
+    //Number - Pixel width of the bar stroke
+    barStrokeWidth : 2,
+
+    //Number - Spacing between each of the X value sets
+    barValueSpacing : 5,
+
+    //Number - Spacing between data sets within X values
+    barDatasetSpacing : 1,
+
+    //String - A legend template
+    legendTemplate : "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<datasets.length; i++){%><li><span style=\"background-color:<%=datasets[i].fillColor%>\"></span><%if(datasets[i].label){%><%=datasets[i].label%><%}%></li><%}%></ul>",
+
+    responsive: true
+
+});
+
+    document.getElementById('myLegend').innerHTML = myBarChart.generateLegend();
+  </script>
+
+</body>
+</html>

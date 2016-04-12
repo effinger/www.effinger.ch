@@ -11,26 +11,32 @@ paginatePath = "seite"
   disqusShortname = "effinger"
 
 [taxonomies]
-  tag = "tags"             # Used for events 
+  tag = "tags"             # Used for events
   category = "categories"  # Used for the blog
-  
+
 [[menu.main]]
   name = "Community"
   pre = "<i class='fa fa-users'></i>"
   weight = 3
   url = "/ueber/"
-  
+
   [[menu.main]]
     name = "Grundsätze"
     weight = 3
     parent = "Community"
     url = "/grundsaetze/"
-  
+
+  [[menu.main]]
+    name = "Finanzen"
+    weight = 5
+    parent = "Community"
+    url = "/finanzen/"
+
 [[menu.main]]
   name = "Events"
   weight = 4
   url = "/events/"
-  
+
 [[menu.main]]
   name = "Blog"
   weight = 5
