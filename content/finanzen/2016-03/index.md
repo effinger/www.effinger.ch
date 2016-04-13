@@ -5,13 +5,23 @@ description = ""
 
 [[ertrag]]
 name = "Coworker Vollzeit"
-betrag = 2000
+betrag = 1200
 info = "4 Personen à 350"
 
 [[ertrag]]
 name = "Coworker Teilzeit"
-betrag = 2000
-info = "6 Personen à 160"
+betrag = 1280
+info = "8 Personen à 160"
+
+[[ertrag]]
+name = "Extras"
+betrag = 450
+info = "Fixer Desk, Schliessfach, Lagerfläche"
+
+[[ertrag]]
+name = "Firmenarbeitsplätze"
+betrag = 600
+info = "1 Platz à 600 (inkl. Fix Desk und Schliessfach)"
 
 [[ertrag]]
 name = "Tagespässe"

@@ -1,1 +1,4 @@
+{{ if lt . 0 }}
+blabla
+{{ end }}
 {{ if ge . 1000 }}{{ print (div . 1000) "'" (printf "%03d" (mod . 1000) ) }}{{ else }}{{ . }}{{ end }}

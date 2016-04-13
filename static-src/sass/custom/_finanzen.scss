@@ -1,61 +1,104 @@
-.erfolg {
-  padding-left: 20px;
-  padding-right: 20px;
-
-  @media only screen and (min-width: 768px) {
-    .left-sm {
-      padding-right: 30px;
-      float: left !important;
+.finanzen {
+  .monats-box {
+    .inner {
+      border: 3px solid $primary-color;
+      padding: 20px;
+      text-align: center;
     }
 
-    .right-sm {
-      padding-left: 30px;
-      float: right !important;
+    .title {
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-top: 10px;
+    }
+
+    .wave-spacer {
+      height: 4px;
+      width: 100%;
+      background-image: url(/images/icons/wave.svg);
+      margin: 20px 0;
+      clear: both;
+    }
+
+    .content {
+      width: 100%;
+      text-align: left;
+
+      @media only screen and (max-width: 767px) {
+        max-width: 370px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      p {
+        margin: 5px 0;
+        font-weight: 300;
+
+        span {
+          font-weight: 400;
+          text-align: right;
+          float: right;
+        }
+      }
     }
   }
 
-  .erfolg-item {
-    padding-bottom: 25px;
-    max-width: 520px;
-
-    .title {
-      margin-top: 10px;
-      img {
-        height: 30px;
-        float: right;
+  .erfolg {
+    @media only screen and (min-width: 768px) {
+      .left-sm {
+        padding-right: 30px;
+        float: left !important;
       }
 
-      span {
-        padding-right: 5px;
+      .right-sm {
+        padding-left: 30px;
+        float: right !important;
       }
     }
 
-    table {
-      width: 100%;
-      margin-bottom: 10px;
+    .item {
+      padding-bottom: 25px;
+      max-width: 520px;
 
-      tr {
-        > td,
-        > th {
-          vertical-align: top;
-          font-size: 16px;
-
-          &:first-child {
-            padding-right: 30px;
-          }
-
-          &:last-child {
-            text-align: right;
-          }
+      .title {
+        margin-top: 10px;
+        img {
+          height: 30px;
+          float: right;
         }
 
-        > th {
-          font-weight: 400;
+        span {
+          padding-right: 5px;
         }
+      }
 
-        > td {
-          font-weight: 300;
-          font-size: 14px;
+      table {
+        width: 100%;
+        margin-bottom: 10px;
+
+        tr {
+          > td,
+          > th {
+            vertical-align: top;
+            font-size: 16px;
+
+            &:first-child {
+              padding-right: 30px;
+            }
+
+            &:last-child {
+              text-align: right;
+            }
+          }
+
+          > th {
+            font-weight: 400;
+          }
+
+          > td {
+            font-weight: 300;
+            font-size: 14px;
+          }
         }
       }
     }

@@ -1,0 +1,71 @@
+{{ $.Scratch.Set "total_ertrag" 0 }}
+{{ range .Params.ertrag }}
+  {{ $.Scratch.Add "total_ertrag" .betrag }}
+{{ end }}
+{{ $.Scratch.Set "total_aufwand" 0 }}
+{{ range .Params.aufwand }}
+  {{ $.Scratch.Add "total_aufwand" .betrag }}
+{{ end }}
+<div class="row">
+  <div class="col-sm-6 monats-box">
+    <div class="inner mt-20 mb-20 clearfix">
+      <h4 class="title">{{ .Title }}</h4>
+      <div class="wave-spacer"></div>
+      <div class="content">
+        <p>Ertrag<span>{{ partial "format/thousands" ($.Scratch.Get "total_ertrag") }}</span></p>
+        <p>Aufwand <span>-{{ partial "format/thousands" ($.Scratch.Get "total_aufwand") }}</span></p>
+        <p>SALDO <span>{{ partial "format/thousands" (sub ($.Scratch.Get "total_ertrag") ($.Scratch.Get "total_aufwand")) }}</span></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row erfolg">
+  <div class="col-sm-6 item left-sm">
+    <h3 class="font-alt title">Ertrag</h3>
+    {{ range .Params.ertrag }}
+    <table>
+      <tbody>
+        <tr>
+          <th>{{ .name }}</th>
+          <th>
+            +{{ partial "format/thousands" .betrag }}
+          </th>
+        </tr>
+        {{ with .info }}
+        <tr>
+          <td>{{ . }}</td>
+          <td></td>
+        </tr>
+        {{ end }}
+      </tbody>
+    </table>
+    {{ end }}
+  </div>
+  <div class="col-sm-6 item right-sm">
+    <h3 class="font-alt title">Aufwand</h3>
+    {{ range .Params.aufwand }}
+    <table>
+      <tbody>
+        <tr>
+          <th>{{ .name }}</th>
+          <th>
+            -{{ partial "format/thousands" .betrag }}
+          </th>
+        </tr>
+        {{ with .info }}
+        <tr>
+          <td>{{ . }}</td>
+          <td></td>
+        </tr>
+        {{ end }}
+      </tbody>
+    </table>
+    {{ end }}
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-6">
+    Total Ertrag: {{ partial "format/thousands" ($.Scratch.Get "total_ertrag") }}
+  </div>
+</div>

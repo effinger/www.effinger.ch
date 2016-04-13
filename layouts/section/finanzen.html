@@ -5,7 +5,7 @@
 <body>
 
   <!-- Page Wrap -->
-  <div class="page organisation" id="top">
+  <div class="page finanzen" id="top">
 
     <nav class="main-nav dark transparent stick-fixed">
       {{ partial "navigation.html" . }}
@@ -70,7 +70,7 @@
     <section class="page-section">
       <div class="container relative">
         <!-- Text -->
-        <div class="blog-item-body">
+        <div class="long-text-body">
           <h1 class="mt-0 font-alt">Erfolgsrechnung</h1>
 
           <div class="mb-40">
@@ -91,63 +91,13 @@
           </ul>
 
           <!-- Tab panes -->
-          <div class="tab-content tpl-tabs-cont section-text erfolg">
+          <div class="tab-content tpl-tabs-cont section-text">
             {{ range $i, $e := sort .Data.Pages "Date" "asc" }}
-            {{ $.Scratch.Set "total_ertrag" 0 }}
             <div class="tab-pane fade{{ if eq $i 0 }} active in{{ end }}" id="{{ $e.Date.Format "2006-01" }}">
-              <div class="row">
-                <div class="col-sm-6 erfolg-item left-sm">
-                  <h3 class="font-alt title">Ertrag</h3>
-                  {{ range $e.Params.ertrag }}
-                  {{ $.Scratch.Add "total_ertrag" .betrag }}
-                  <table>
-                    <tbody>
-                      <tr>
-                        <th>{{ .name }}</th>
-                        <th>
-                          +{{ partial "format/thousands" .betrag }}
-                        </th>
-                      </tr>
-                      {{ with .info }}
-                      <tr>
-                        <td>{{ . }}</td>
-                        <td></td>
-                      </tr>
-                      {{ end }}
-                    </tbody>
-                  </table>
-                  {{ end }}
-                </div>
-                <div class="col-sm-6 erfolg-item right-sm">
-                  <h3 class="font-alt title">Aufwand</h3>
-                  {{ range $e.Params.aufwand }}
-                  <table>
-                    <tbody>
-                      <tr>
-                        <th>{{ .name }}</th>
-                        <th>
-                          -{{ partial "format/thousands" .betrag }}
-                        </th>
-                      </tr>
-                      {{ with .info }}
-                      <tr>
-                        <td>{{ . }}</td>
-                        <td></td>
-                      </tr>
-                      {{ end }}
-                    </tbody>
-                  </table>
-                  {{ end }}
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-sm-6">
-                  Total Ertrag: {{ partial "format/thousands" ($.Scratch.Get "total_ertrag") }}
-                </div>
-              </div>
-
+              {{ partial "finanzen/monat.html" $e }}
             </div>
             {{ end }}
+          </div>
 
         </div>
         <!-- End Text -->

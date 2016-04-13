@@ -2,7 +2,7 @@
 title = "April"
 date = "2016-04-01"
 description = ""
-draft = true
+draft = false
 
 [[ertrag]]
 name = "Mietaufwand"
