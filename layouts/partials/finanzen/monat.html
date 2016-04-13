@@ -1,25 +1,26 @@
-{{ $.Scratch.Set "total_ertrag" 0 }}
-{{ range .Params.ertrag }}
-  {{ $.Scratch.Add "total_ertrag" .betrag }}
-{{ end }}
-{{ $.Scratch.Set "total_aufwand" 0 }}
-{{ range .Params.aufwand }}
-  {{ $.Scratch.Add "total_aufwand" .betrag }}
-{{ end }}
-<div class="row">
-  <div class="col-sm-6 monats-box">
-    <div class="inner mt-20 mb-20 clearfix">
-      <h4 class="title">{{ .Title }}</h4>
-      <div class="wave-spacer"></div>
-      <div class="content">
-        <p>Ertrag<span>{{ partial "format/thousands" ($.Scratch.Get "total_ertrag") }}</span></p>
-        <p>Aufwand <span>-{{ partial "format/thousands" ($.Scratch.Get "total_aufwand") }}</span></p>
-        <p>SALDO <span>{{ partial "format/thousands" (sub ($.Scratch.Get "total_ertrag") ($.Scratch.Get "total_aufwand")) }}</span></p>
-      </div>
-    </div>
+{{ $ertrag_monat := print "ertrag_" (.Date.Format "01") }}
+{{ $aufwand_monat := print "aufwand_" (.Date.Format "01") }}
+
+<div class="inner mt-20 mb-20 clearfix">
+  <h4 class="title">{{ index $.Site.Data.de.months (sub .Date.Month 1) }}</h4>
+  <div class="wave-spacer"></div>
+  <div class="item">
+    <p>Ertrag<span>{{ partial "format/thousands" (.Scratch.Get $ertrag_monat) }}</span></p>
+    <p>Aufwand<span>-{{ partial "format/thousands" (.Scratch.Get $aufwand_monat) }}</span></p>
+    <p>SALDO<span>{{ partial "format/thousands" (sub (.Scratch.Get $ertrag_monat) (.Scratch.Get $aufwand_monat)) }}</span></p>
+  </div>
+  <div class="item clearfix">
+    <p>Darlehen<span>{{ partial "format/thousands" .Params.darlehen }}</span></p>
+    <p><small>Kontostand Ende Monat</small><span>{{ partial "format/thousands" .Params.kontostand }}</span></p>
+  </div>
+  <div class="item">
+    <p class="align-center">
+      <a href="{{ .RelPermalink }}" class="btn btn-mod btn-gray btn-round"><i class="fa fa-angle-right"></i> Details</a>
+    </p>
   </div>
 </div>
 
+<!--
 <div class="row erfolg">
   <div class="col-sm-6 item left-sm">
     <h3 class="font-alt title">Ertrag</h3>
@@ -69,3 +70,4 @@
     Total Ertrag: {{ partial "format/thousands" ($.Scratch.Get "total_ertrag") }}
   </div>
 </div>
+-->

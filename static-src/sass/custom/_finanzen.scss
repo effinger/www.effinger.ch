@@ -1,9 +1,19 @@
 .finanzen {
   .monats-box {
+    small {
+      font-size: 14px; 
+    }
+    
     .inner {
       border: 3px solid $primary-color;
       padding: 20px;
       text-align: center;
+      
+      @media only screen and (max-width: 767px) {
+        max-width: 370px;
+        margin-left: auto;
+        margin-right: auto;
+      }
     }
 
     .title {
@@ -20,15 +30,12 @@
       clear: both;
     }
 
-    .content {
+    .item {
+      margin-top: 20px;
       width: 100%;
       text-align: left;
 
-      @media only screen and (max-width: 767px) {
-        max-width: 370px;
-        margin-left: auto;
-        margin-right: auto;
-      }
+
 
       p {
         margin: 5px 0;

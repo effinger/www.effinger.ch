@@ -3,6 +3,11 @@ title = "März"
 date = "2016-03-01"
 description = ""
 
+darlehen = 100000
+kontostand = 2000000
+info = "blabla"
+
+
 [[ertrag]]
 name = "Coworker Vollzeit"
 betrag = 1200
@@ -48,39 +53,44 @@ name = "Miete Coworking-Bereich"
 betrag = 3766
 
 [[aufwand]]
-name = "Unterhalt und Reparaturen"
-betrag = 150
-
-[[aufwand]]
-name = "Versicherung"
-betrag = 172
-
-[[aufwand]]
-name = "Büroaufwand und Kommunikation"
-betrag = 150
-
-[[aufwand]]
-name = "Marketingaufwand"
-betrag = 150
+name = "Reinigung"
+betrag = 500
 
 [[aufwand]]
 name = "Drucker"
 betrag = 318
 
 [[aufwand]]
+name = "Versicherung"
+betrag = 172
+
+[[aufwand]]
 name = "Internet, Telefonie"
 betrag = 100
 
 [[aufwand]]
-name = "Reinigung"
-betrag = 1000
+name = "Unterhalt und Reparaturen"
+betrag = 150
+info = "Schätzung"
+
+[[aufwand]]
+name = "Büroaufwand und Kommunikation"
+betrag = 150
+info = "Schätzung"
+
+[[aufwand]]
+name = "Marketingaufwand"
+betrag = 150
+info = "Schätzung"
 
 [[aufwand]]
 name = "Sonstiger Betriebsaufwand"
 betrag = 200
+info = "Schätzung"
 
 [[aufwand]]
 name = "Abschreibungen"
 betrag = 1300
+info = "Schätzung"
 
 +++

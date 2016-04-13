@@ -78,27 +78,26 @@
             <canvas id="myChart"></canvas>
           </div>
 
-          <!-- Nav tabs -->
-          <ul class="nav nav-tabs tpl-tabs animate">
-            {{ range $i, $e := sort .Data.Pages "Date" "asc" }}
-            <li{{ if eq $i 0 }} class="active"{{ end }}>
-              <a href="#{{ $e.Date.Format "2006-01" }}" data-toggle="tab"
-                  aria-expanded="{{ if eq $i 0 }}true{{ else }}false{{ end }}">
-                {{ index $.Site.Data.de.months (sub $e.Date.Month 1) }}
-              </a>
-            </li>
+          <div class="row">
+          {{ range sort .Data.Pages "Date" "asc" }}
+            {{ $ertrag_monat := print "ertrag_" (.Date.Format "01") }}
+            {{ $aufwand_monat := print "aufwand_" (.Date.Format "01") }}
+            {{ $.Scratch.Set $ertrag_monat 0 }}
+            {{ $.Scratch.Set $aufwand_monat 0 }}
+            {{ range $e := .Params.ertrag }}
+              {{ $.Scratch.Add $ertrag_monat $e.betrag }}
             {{ end }}
-          </ul>
-
-          <!-- Tab panes -->
-          <div class="tab-content tpl-tabs-cont section-text">
-            {{ range $i, $e := sort .Data.Pages "Date" "asc" }}
-            <div class="tab-pane fade{{ if eq $i 0 }} active in{{ end }}" id="{{ $e.Date.Format "2006-01" }}">
-              {{ partial "finanzen/monat.html" $e }}
+            {{ range .Params.aufwand }}
+              {{ $.Scratch.Add $aufwand_monat .betrag }}
+            {{ end }}
+            {{ .Scratch.Set $ertrag_monat ($.Scratch.Get $ertrag_monat) }}
+            {{ .Scratch.Set $aufwand_monat ($.Scratch.Get $aufwand_monat) }}
+            
+            <div class="col-md-4 col-sm-6 monats-box">
+            {{ partial "finanzen/monat.html" . }}
             </div>
-            {{ end }}
+          {{ end }}
           </div>
-
         </div>
         <!-- End Text -->
       </div>

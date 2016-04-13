@@ -4,6 +4,10 @@ date = "2016-04-01"
 description = ""
 draft = false
 
+darlehen = 100000
+kontostand = 20000
+info = "blabla"
+
 [[ertrag]]
 name = "Mietaufwand"
 betrag = 3766
