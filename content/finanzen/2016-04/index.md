@@ -5,8 +5,11 @@ description = ""
 draft = false
 
 darlehen = 100000
-kontostand = 20000
-info = "blabla"
+kontostand = 2000000
+total_ertrag = 4360
+total_aufwand = 6806
+info = """
+"""
 
 [[ertrag]]
 name = "Mietaufwand"

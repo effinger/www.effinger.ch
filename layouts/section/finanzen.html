@@ -71,7 +71,7 @@
       <div class="container relative">
         <!-- Text -->
         <div class="long-text-body">
-          <h1 class="mt-0 font-alt">Erfolgsrechnung</h1>
+          <h1 class="mt-0 font-alt">Finanzen 2016</h1>
 
           <div class="mb-40">
             <div id="myLegend"></div>
@@ -80,19 +80,9 @@
 
           <div class="row">
           {{ range sort .Data.Pages "Date" "asc" }}
-            {{ $ertrag_monat := print "ertrag_" (.Date.Format "01") }}
-            {{ $aufwand_monat := print "aufwand_" (.Date.Format "01") }}
-            {{ $.Scratch.Set $ertrag_monat 0 }}
-            {{ $.Scratch.Set $aufwand_monat 0 }}
-            {{ range $e := .Params.ertrag }}
-              {{ $.Scratch.Add $ertrag_monat $e.betrag }}
-            {{ end }}
-            {{ range .Params.aufwand }}
-              {{ $.Scratch.Add $aufwand_monat .betrag }}
-            {{ end }}
-            {{ .Scratch.Set $ertrag_monat ($.Scratch.Get $ertrag_monat) }}
-            {{ .Scratch.Set $aufwand_monat ($.Scratch.Get $aufwand_monat) }}
-            
+            {{ $.Scratch.add "month_names"  }}
+
+
             <div class="col-md-4 col-sm-6 monats-box">
             {{ partial "finanzen/monat.html" . }}
             </div>
@@ -110,6 +100,9 @@
   <!-- End Page Wrap -->
 
   {{ partial "body_includes.html" . }}
+
+  {{ range }}
+
   <script type="text/javascript" src="/js/Chart.min.js"></script>
   <script type="text/javascript">
   var ctx = document.getElementById("myChart").getContext("2d");

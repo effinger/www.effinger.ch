@@ -1,13 +1,10 @@
-{{ $ertrag_monat := print "ertrag_" (.Date.Format "01") }}
-{{ $aufwand_monat := print "aufwand_" (.Date.Format "01") }}
-
 <div class="inner mt-20 mb-20 clearfix">
   <h4 class="title">{{ index $.Site.Data.de.months (sub .Date.Month 1) }}</h4>
   <div class="wave-spacer"></div>
   <div class="item">
-    <p>Ertrag<span>{{ partial "format/thousands" (.Scratch.Get $ertrag_monat) }}</span></p>
-    <p>Aufwand<span>-{{ partial "format/thousands" (.Scratch.Get $aufwand_monat) }}</span></p>
-    <p>SALDO<span>{{ partial "format/thousands" (sub (.Scratch.Get $ertrag_monat) (.Scratch.Get $aufwand_monat)) }}</span></p>
+    <p>Ertrag<span>{{ partial "format/thousands" .Params.total_ertrag }}</span></p>
+    <p>Aufwand<span>-{{ partial "format/thousands" .Params.total_aufwand }}</span></p>
+    <p>SALDO<span>{{ partial "format/thousands" (sub .Params.total_ertrag .Params.total_aufwand) }}</span></p>
   </div>
   <div class="item clearfix">
     <p>Darlehen<span>{{ partial "format/thousands" .Params.darlehen }}</span></p>

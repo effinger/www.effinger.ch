@@ -5,8 +5,14 @@ description = ""
 
 darlehen = 100000
 kontostand = 2000000
-info = "blabla"
-
+total_ertrag = 4360
+total_aufwand = 6806
+info = """
+Da wir den Coworking-Bereich erst ab dem 21. März geöffnet haben, ist
+dieser erste Monat noch nicht so aussagekräftig. Der Kontostand ist so hoch,
+da die Kaution von 42'000 und etliche Baurechnungen noch nicht bezahlt wurden.
+Viele Rechnungen sind im April fällig.
+"""
 
 [[ertrag]]
 name = "Coworker Vollzeit"
