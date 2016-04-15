@@ -93,9 +93,9 @@
         <div class="relative container">
           <h1 class="hs-line-11 font-alt">Coworking Space</h1>
 
-          {{ $today := index $.Site.Data.de.weekdays .Now.Weekday }}
+          {{ $today := (partial "format/weekday_de.html" .Now.Weekday) | chomp }}
           {{ $is_weekend := or (eq $today "Samstag") (eq $today "Sonntag") }}
-          
+
           {{ if $is_weekend }}
           <div class="row">
             <div class="col-md-4 col-sm-6 mb-50">

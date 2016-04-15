@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="de">
+{{ $month_year := (print (partial "format/month_de.html" .Date.Month | chomp ) " " .Date.Year)}}
+{{ $.Scratch.Set "section_title" (print "Finanzen " $month_year) }}
 {{ partial "head.html" . }}
 
 <body>
 
   <!-- Page Wrap -->
-  <div class="page organisation" id="top">
+  <div class="page finanzen" id="top">
 
     <nav class="main-nav dark transparent stick-fixed">
       {{ partial "navigation.html" . }}
@@ -19,16 +21,14 @@
 
           <div class="col-md-8">
             <h1 class="hs-line-11 font-alt mb-20 mb-xs-0">Finanzen</h1>
-            <!--
             <div class="hs-line-4 font-alt">
-            Grundsätze
+            {{ .Title }}
             </div>
-            -->
           </div>
 
           <div class="col-md-4 mt-30">
             <div class="mod-breadcrumbs font-alt align-right">
-              <a href="/ueber/">Community</a>&nbsp;/&nbsp;<span>Finanzen</span>
+              <a href="/finanzen/"><i class="fa fa-angle-left"></i> Zur Übersicht</a>
             </div>
           </div>
         </div>
@@ -38,29 +38,75 @@
     <!-- End Header -->
 
     <!-- Section -->
-    <section class="page-section bg-gray-lighter">
-      <div class="container relative align-center">
-        <!--
-        <h2 class="section-title font-alt mb-70 mb-sm-40">
-          Werte
-        </h2>
-        -->
+    <section class="page-section">
+      <div class="container relative">
+        <div class="long-text-body">
+          <h1 class="mt-0 font-alt">{{ $month_year }}</h1>
 
-      <div class="row section-text">
-        <div class="col-md-offset-2 col-md-8">
-          <p>
-            Wir versuchen, unsere Zahlen so weit wie möglich öffentlich zugänglich
-            zu machen. Damit sollen sich alle Betroffenen und Interessierten ein
-            Bild machen können, wie sich die Finanzen der Effinger Community
-            entwickeln.
-          </p>
-          <p>
-            Warum tun wir dies? Weil wir keinen Grund sehen, weshalb solche
-            Zahlen geheim bleiben sollten. Und wir glauben, dass Transparenz
-            ganz viele positive Effekte hat. Du kannst mehr über unsere Überzeugung
-            lesen im <a href="/grundsaetze/transparenz/">Grundsatz der
-            Transparenz</a>.
-          </p>
+
+          <div class="row">
+            <div class="col-md-5 col-sm-6 monats-box mb-20">
+              <div class="inner">
+                <h4 class="title">Kennzahlen</h4>
+                <div class="wave-spacer"></div>
+                {{ partial "finanzen/kennzahlen.html" . }}
+              </div>
+            </div>
+            <div class="col-md-7 col-sm-6 monats-box mb-20">
+              <div class="inner">
+                <h4 class="title">Interpretation</h4>
+                <div class="wave-spacer"></div>
+                {{ .Params.info }}
+              </div>
+            </div>
+          </div>
+
+          <div class="wave-spacer"></div>
+
+          <div class="row erfolg">
+            <div class="col-sm-6 item left-sm">
+              <h3 class="font-alt title">Ertrag</h3>
+              {{ range .Params.ertrag }}
+              <table>
+                <tbody>
+                  <tr>
+                    <th>{{ .name }}</th>
+                    <th>
+                      +{{ partial "format/thousands" .betrag }}
+                    </th>
+                  </tr>
+                  {{ with .info }}
+                  <tr>
+                    <td>{{ . }}</td>
+                    <td></td>
+                  </tr>
+                  {{ end }}
+                </tbody>
+              </table>
+              {{ end }}
+            </div>
+            <div class="col-sm-6 item right-sm">
+              <h3 class="font-alt title">Aufwand</h3>
+              {{ range .Params.aufwand }}
+              <table>
+                <tbody>
+                  <tr>
+                    <th>{{ .name }}</th>
+                    <th>
+                      -{{ partial "format/thousands" .betrag }}
+                    </th>
+                  </tr>
+                  {{ with .info }}
+                  <tr>
+                    <td>{{ . }}</td>
+                    <td></td>
+                  </tr>
+                  {{ end }}
+                </tbody>
+              </table>
+              {{ end }}
+            </div>
+          </div>
         </div>
       </div>
     </section>

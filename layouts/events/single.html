@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="de">
+{{ $.Scratch.Set "section_title" "Events" }}
 {{ partial "head.html" . }}
 
 <body class="">
@@ -35,10 +36,10 @@
     <!-- End Header -->
 
     {{ $start_year := .Params.startdate.Year }}
-    {{ $start_month := index $.Site.Data.de.months (sub .Params.startdate.Month 1) }}
+    {{ $start_month := (partial "format/month_de.html" .Params.startdate.Month) }}
     {{ $start_shortmonth := slicestr $start_month 0 3 }}
     {{ $start_day := .Params.startdate.Day }}
-    {{ $start_weekday := index $.Site.Data.de.weekdays .Params.startdate.Weekday }}
+    {{ $start_weekday := (partial "format/weekday_de.html" .Params.startdate.Weekday) | chomp }}
     {{ $start_time := printf "%02d:%02d" .Params.startdate.Hour .Params.startdate.Minute }}
     {{ $end_time := printf "%02d:%02d" .Params.enddate.Hour .Params.enddate.Minute }}
 

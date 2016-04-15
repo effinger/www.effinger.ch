@@ -1,12 +1,10 @@
 +++
-title = "März"
+title = "Verein Coworking Community Bern"
 date = "2016-03-01"
 description = ""
 
 darlehen = 100000
 kontostand = 2000000
-total_ertrag = 4360
-total_aufwand = 6806
 info = """
 Da wir den Coworking-Bereich erst ab dem 21. März geöffnet haben, ist
 dieser erste Monat noch nicht so aussagekräftig. Der Kontostand ist so hoch,

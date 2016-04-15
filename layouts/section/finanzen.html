@@ -74,17 +74,32 @@
           <h1 class="mt-0 font-alt">Finanzen 2016</h1>
 
           <div class="mb-40">
-            <div id="myLegend"></div>
-            <canvas id="myChart"></canvas>
+            <div id="year-chart-legend" class="chart-legend"></div>
+            <canvas id="year-chart"></canvas>
           </div>
 
           <div class="row">
-          {{ range sort .Data.Pages "Date" "asc" }}
-            {{ $.Scratch.add "month_names"  }}
-
-
+          {{ range $i, $e := sort .Data.Pages "Date" "asc" }}
             <div class="col-md-4 col-sm-6 monats-box">
-            {{ partial "finanzen/monat.html" . }}
+              <div class="inner mt-20 mb-20 clearfix">
+                <h4 class="title">{{ partial "format/month_de.html" .Date.Month }}</h4>
+                <div class="wave-spacer"></div>
+                {{ partial "finanzen/kennzahlen.html" $e }}
+                <div class="item">
+                  <p class="align-center">
+                    <a href="{{ .RelPermalink }}" class="btn btn-mod btn-gray btn-round"><i class="fa fa-angle-right"></i> Details</a>
+                  </p>
+                </div>
+              </div>
+
+
+              {{/* Collecting the month names in German. */}}
+              {{ partial "format/month_de.html" .Date.Month | chomp | $.Scratch.SetInMap "monate" (print $i) }}
+
+              {{/* Putting the month and totals into the top level $ variable to make it available in the script below. */}}
+              {{ .Scratch.Get "total_aufwand" | $.Scratch.SetInMap "aufwaende" (print $i) }}
+              {{ .Scratch.Get "total_ertrag" | $.Scratch.SetInMap "ertraege" (print $i) }}
+
             </div>
           {{ end }}
           </div>
@@ -101,71 +116,39 @@
 
   {{ partial "body_includes.html" . }}
 
-  {{ range }}
-
   <script type="text/javascript" src="/js/Chart.min.js"></script>
   <script type="text/javascript">
-  var ctx = document.getElementById("myChart").getContext("2d");
+  var ctx = document.getElementById("year-chart").getContext("2d");
   var data = {
-      labels: ["January", "February", "March", "April", "May", "June", "July"],
+      labels: {{ .Scratch.GetSortedMapValues "monate" }},
       datasets: [
           {
-              label: "My First dataset",
-              fillColor: "rgba(220,220,220,0.5)",
-              strokeColor: "rgba(220,220,220,0.8)",
-              highlightFill: "rgba(220,220,220,0.75)",
-              highlightStroke: "rgba(220,220,220,1)",
-              data: [65, 59, 80, 81, 56, 55, 40]
-          },
-          {
-              label: "My Second dataset",
+              label: "Ertrag",
               fillColor: "rgba(151,187,205,0.5)",
               strokeColor: "rgba(151,187,205,0.8)",
               highlightFill: "rgba(151,187,205,0.75)",
               highlightStroke: "rgba(151,187,205,1)",
-              data: [28, 48, 40, 19, 86, 27, 90]
+              data: {{ .Scratch.GetSortedMapValues "ertraege" }}
+          },
+          {
+              label: "Aufwand",
+              fillColor: "rgba(220,220,220,0.5)",
+              strokeColor: "rgba(220,220,220,0.8)",
+              highlightFill: "rgba(220,220,220,0.75)",
+              highlightStroke: "rgba(220,220,220,1)",
+              data: {{ .Scratch.GetSortedMapValues "aufwaende" }}
           }
       ]
   };
   var myBarChart = new Chart(ctx).Bar(data, {
-    //Boolean - Whether the scale should start at zero, or an order of magnitude down from the lowest value
-    scaleBeginAtZero : true,
-
-    //Boolean - Whether grid lines are shown across the chart
-    scaleShowGridLines : true,
-
-    //String - Colour of the grid lines
-    scaleGridLineColor : "rgba(0,0,0,.05)",
-
-    //Number - Width of the grid lines
-    scaleGridLineWidth : 1,
-
-    //Boolean - Whether to show horizontal lines (except X axis)
-    scaleShowHorizontalLines: true,
-
-    //Boolean - Whether to show vertical lines (except Y axis)
-    scaleShowVerticalLines: true,
-
-    //Boolean - If there is a stroke on each bar
-    barShowStroke : true,
-
-    //Number - Pixel width of the bar stroke
-    barStrokeWidth : 2,
-
-    //Number - Spacing between each of the X value sets
-    barValueSpacing : 5,
-
-    //Number - Spacing between data sets within X values
-    barDatasetSpacing : 1,
-
     //String - A legend template
-    legendTemplate : "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<datasets.length; i++){%><li><span style=\"background-color:<%=datasets[i].fillColor%>\"></span><%if(datasets[i].label){%><%=datasets[i].label%><%}%></li><%}%></ul>",
-
+    legendTemplate : "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<datasets.length; i++){%><li><span style=\"background-color:<%=datasets[i].fillColor%>\"></span><%if(datasets[i].label){%><%=datasets[i].label%><%}%> in CHF</li><%}%></ul>",
+    scaleLabel: function(label){return label.value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, "'");},
+    multiTooltipTemplate: function(label){return label.datasetLabel + ": CHF " + label.value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, "'");},
     responsive: true
+  });
 
-});
-
-    document.getElementById('myLegend').innerHTML = myBarChart.generateLegend();
+    document.getElementById('year-chart-legend').innerHTML = myBarChart.generateLegend();
   </script>
 
 </body>

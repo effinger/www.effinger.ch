@@ -6,8 +6,6 @@ draft = false
 
 darlehen = 100000
 kontostand = 2000000
-total_ertrag = 4360
-total_aufwand = 6806
 info = """
 """
 
