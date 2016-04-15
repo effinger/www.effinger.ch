@@ -41,28 +41,42 @@
     <section class="page-section">
       <div class="container relative">
         <div class="long-text-body">
-          <h1 class="mt-0 font-alt">{{ $month_year }}</h1>
+          <h1 class="hs-line-11 font-alt mt-0 align-center">{{ $month_year }}</h1>
 
+          <!-- Prev/Next Post -->
+          <div class="clearfix mb-40 mb-xs-40">
+            {{ if .PrevInSection }}
+            <a href="{{ .PrevInSection.RelPermalink }}" class="blog-item-more left"><i class="fa fa-angle-left"></i>&nbsp;{{ partial "format/month_de.html" .PrevInSection.Date.Month }}</a> {{ end }} {{ if .NextInSection }}
+            <a href="{{ .NextInSection.RelPermalink }}" class="blog-item-more right"><i class="fa fa-angle-right"></i>{{ partial "format/month_de.html" .NextInSection.Date.Month }}</a> {{ end }}
+          </div>
+          <!-- End Prev/Next Post -->
 
           <div class="row">
-            <div class="col-md-5 col-sm-6 monats-box mb-20">
+            <div class="col-md-offset-2 col-md-4 col-sm-6 monats-box mb-20">
               <div class="inner">
                 <h4 class="title">Kennzahlen</h4>
                 <div class="wave-spacer"></div>
-                {{ partial "finanzen/kennzahlen.html" . }}
+                <div class="item">
+                  <p>
+                  {{ partial "finanzen/kennzahlen.html" . }}
+                  </p>
+                </div>
               </div>
             </div>
-            <div class="col-md-7 col-sm-6 monats-box mb-20">
+            <div class="col-md-4 col-sm-6 monats-box mb-20">
               <div class="inner">
-                <h4 class="title">Interpretation</h4>
+                <h4 class="title">Kommentar</h4>
                 <div class="wave-spacer"></div>
-                {{ .Params.info }}
+                {{ .Params.kommentar }}
               </div>
             </div>
           </div>
-
-          <div class="wave-spacer"></div>
-
+        </div>
+      </div>
+    </section>
+    
+    <section class="page-section bg-gray">
+      <div class="container relative">
           <div class="row erfolg">
             <div class="col-sm-6 item left-sm">
               <h3 class="font-alt title">Ertrag</h3>

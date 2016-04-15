@@ -5,7 +5,7 @@ description = ""
 
 darlehen = 100000
 kontostand = 2000000
-info = """
+kommentar = """
 Da wir den Coworking-Bereich erst ab dem 21. März geöffnet haben, ist
 dieser erste Monat noch nicht so aussagekräftig. Der Kontostand ist so hoch,
 da die Kaution von 42'000 und etliche Baurechnungen noch nicht bezahlt wurden.

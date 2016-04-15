@@ -1,12 +1,11 @@
 +++
-title = "April"
+title = "Verein Coworking Community Bern"
 date = "2016-04-01"
 description = ""
-draft = false
 
 darlehen = 100000
 kontostand = 2000000
-info = """
+kommentar = """
 """
 
 [[ertrag]]
