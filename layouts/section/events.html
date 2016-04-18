@@ -38,7 +38,7 @@
         <div class="eventlist">
           {{ range sort (where .Data.Pages "Params.enddate" ">=" .Now) "Params.startdate" "asc" }}
 
-            {{ $start_month := (partial "format/month_de.html" .Params.startdate.Month) }}
+            {{ $start_month := index $.Site.Data.de.months .Params.startdate.Month }}
             {{ $start_shortmonth := slicestr $start_month 0 3 }}
             {{ $start_day := .Params.startdate.Day }}
             {{ $start_time := printf "%02d:%02d" .Params.startdate.Hour .Params.startdate.Minute }}

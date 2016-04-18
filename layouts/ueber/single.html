@@ -117,7 +117,7 @@
         </div>
 
         <div class="row multi-columns-row">
-          {{ $today := (partial "format/weekday_de.html" .Now.Weekday) | chomp }}
+          {{ $today := index $.Site.Data.de.weekdays .Now.Weekday }}
           {{ range $.Site.Data.effianer.Person }}
           <!-- Effianer Item -->
           <div class="col-sm-6 col-md-3 col-lg-3 mb-50">

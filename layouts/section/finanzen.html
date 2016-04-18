@@ -19,11 +19,9 @@
 
           <div class="col-md-8">
             <h1 class="hs-line-11 font-alt mb-20 mb-xs-0">Finanzen</h1>
-            <!--
             <div class="hs-line-4 font-alt">
-            Grundsätze
+              Verein Coworking Community Bern
             </div>
-            -->
           </div>
 
           <div class="col-md-4 mt-30">
@@ -38,73 +36,170 @@
     <!-- End Header -->
 
     <!-- Section -->
-    <section class="page-section bg-gray-lighter">
-      <div class="container relative align-center">
-        <!--
-        <h2 class="section-title font-alt mb-70 mb-sm-40">
-          Werte
-        </h2>
-        -->
+    <section class="page-section">
+      <div class="container relative">
+        <!-- Text -->
+        <div class="long-text-body">
+          <h1 class="mt-0 font-alt">Jahresübersicht 2016</h1>
 
-      <div class="row section-text">
-        <div class="col-md-offset-2 col-md-8">
-          <p>
-            Wir versuchen, unsere Zahlen so weit wie möglich öffentlich zugänglich
-            zu machen. Damit sollen sich alle Betroffenen und Interessierten ein
-            Bild machen können, wie sich die Finanzen der Effinger Community
-            entwickeln.
-          </p>
-          <p>
-            Warum tun wir dies? Weil wir keinen Grund sehen, weshalb solche
-            Zahlen geheim bleiben sollten. Und wir glauben, dass Transparenz
-            ganz viele positive Effekte hat. Du kannst mehr über unsere Überzeugung
-            lesen im <a href="/grundsaetze/transparenz/">Grundsatz der
-            Transparenz</a>.
-          </p>
+          <div class="mt-40">
+            <div id="year-chart-legend" class="chart-legend"></div>
+            <canvas id="year-chart" height="600" width="2000"></canvas>
+          </div>
+
+
         </div>
+        <!-- End Text -->
       </div>
     </section>
     <!-- End Section -->
 
     <!-- Section -->
-    <section class="page-section">
+    <section class="page-section bg-gray-lighter">
       <div class="container relative">
         <!-- Text -->
         <div class="long-text-body">
-          <h1 class="mt-0 font-alt">Finanzen 2016</h1>
-
-          <div class="mb-40">
-            <div id="year-chart-legend" class="chart-legend"></div>
-            <canvas id="year-chart"></canvas>
-          </div>
+          <h1 class="mt-0 font-alt">Monatsübersicht 2016</h1>
 
           <div class="row">
           {{ range $i, $e := sort .Data.Pages "Date" "asc" }}
-            <div class="col-md-4 col-sm-6 monats-box">
+
+            {{/* Calculation of total Ertrag und Aufwand. */}}
+            {{ $.Scratch.Set "total_ertrag" 0 }}
+            {{ range $e.Params.ertrag }}
+              {{ $.Scratch.Add "total_ertrag" .betrag }}
+            {{ end }}
+
+            {{ $.Scratch.Set "total_aufwand" 0 }}
+            {{ range $e.Params.aufwand }}
+              {{ $.Scratch.Add "total_aufwand" .betrag }}
+            {{ end }}
+
+            {{/* Putting the totals into a map to make it available in the script below. */}}
+            {{ $.Scratch.Get "total_aufwand" | $.Scratch.SetInMap "aufwaende" (print $i) }}
+            {{ $.Scratch.Get "total_ertrag" | $.Scratch.SetInMap "ertraege" (print $i) }}
+
+            {{/* Collecting the month names in German. */}}
+            {{ index $.Site.Data.de.months .Date.Month | $.Scratch.SetInMap "monate" (print $i) }}
+
+            <a href="{{ .RelPermalink }}" class="col-md-4 col-sm-6 monats-box">
               <div class="inner mt-20 mb-20 clearfix">
-                <h4 class="title">{{ partial "format/month_de.html" .Date.Month }}</h4>
+                <h4 class="title">{{ index $.Site.Data.de.months .Date.Month }}</h4>
                 <div class="wave-spacer"></div>
-                {{ partial "finanzen/kennzahlen.html" $e }}
+                <div class="item">
+                  <p>Ertrag<span class="amount">{{ partial "format/thousands" ($.Scratch.Get "total_ertrag") }}</span></p>
+                  <p>Aufwand<span class="amount">-{{ partial "format/thousands" ($.Scratch.Get "total_aufwand") }}</span></p>
+                  <p>ERGEBNIS<span class="total amount">{{ partial "format/thousands" (sub ($.Scratch.Get "total_ertrag") ($.Scratch.Get "total_aufwand")) }}</span></p>
+                </div>
+                <div class="item clearfix">
+                  <p>Darlehen<span class="amount">{{ partial "format/thousands" .Params.darlehen }}</span></p>
+                  <p><small>Kontostand Ende Monat</small><span class="amount">{{ partial "format/thousands" .Params.kontostand }}</span></p>
+                </div>
                 <div class="item">
                   <p class="align-center">
-                    <a href="{{ .RelPermalink }}" class="btn btn-mod btn-gray btn-round"><i class="fa fa-angle-right"></i> Details</a>
+                    <span class="btn btn-mod btn-gray btn-round"><i class="fa fa-angle-right"></i> Details</span>
                   </p>
                 </div>
               </div>
 
-
-              {{/* Collecting the month names in German. */}}
-              {{ partial "format/month_de.html" .Date.Month | chomp | $.Scratch.SetInMap "monate" (print $i) }}
-
-              {{/* Putting the month and totals into the top level $ variable to make it available in the script below. */}}
-              {{ .Scratch.Get "total_aufwand" | $.Scratch.SetInMap "aufwaende" (print $i) }}
-              {{ .Scratch.Get "total_ertrag" | $.Scratch.SetInMap "ertraege" (print $i) }}
-
-            </div>
+            </a>
           {{ end }}
           </div>
         </div>
         <!-- End Text -->
+      </div>
+    </section>
+
+    <!-- Section -->
+    <section class="page-section">
+      <div class="container relative">
+        <div class="section-text">
+          <div class="row">
+            <div class="col-sm-6 mb-sm-50 mb-xs-30">
+              <h4 class="mt-0 font-alt">Warum veröffentlichen wir unsere Zahlen?</h4>
+              <p>
+                Wir versuchen, unsere Zahlen so weit wie möglich öffentlich zugänglich
+                zu machen. Damit sollen sich alle Betroffenen und Interessierten ein
+                Bild machen können, wie sich die Finanzen der Effinger Community
+                entwickeln.
+              </p>
+              <p>
+                Warum tun wir dies? Weil wir keinen Grund sehen, weshalb solche
+                Zahlen geheim bleiben sollten. Und wir glauben, dass Transparenz
+                ganz viele positive Effekte hat. Du kannst mehr über unsere Überzeugung
+                lesen im <a href="/grundsaetze/transparenz/">Grundsatz der
+                Transparenz</a>. Hier ein paar Gründe für Transparenz:
+              </p>
+            </div>
+
+            <div class="col-sm-6">
+
+              <!-- Accordion -->
+              <dl class="accordion">
+                <dt>
+                  <a href="" class="active">1. Ist befreiend</a>
+                </dt>
+                <dd style="display: block;">
+                  Etwas geheim zu halten ist anstrengend und oft unnötig.
+                  Transparenz ist befreiend.
+                </dd>
+                <dt>
+                  <a href="">2. Ermöglicht Entscheidungen</a>
+                </dt>
+                <dd style="display: none;">
+                  In hierarchischen Strukturen sind wichtige Informationen meist
+                  nur für die Spitze der Pyramide zugänglich. Damit gibt es eine
+                  Machtkonzentration. Damit alle Personen in unserer Community
+                  gemäss <a href="/organisation/">Selbstorganisation</a>
+                  Entscheidungen fällen können, müssen Informationen für alle
+                  zugänglich sein.
+                </dd>
+                <dt>
+                  <a href="">3. Ermutigt zum Mitmachen</a>
+                </dt>
+                <dd style="display: none;">
+                  Transparenz ermöglicht, dass auch Leute ausserhalb unserer
+                  Community mitbekommen, was läuft und vielleicht auch, was
+                  nicht so gut läuft. Jeder kann Lücken entdecken und erhält
+                  die Gelegenheit, etwas beizutragen.
+                </dd>
+                <dt>
+                  <a href="">4. Schafft Vertrauen</a>
+                </dt>
+                <dd style="display: none;">
+                  Kunden, Investoren und Community Member sehen, wofür ihre
+                  finanziellen Beiträge verwendet werden. Dies bringt Klarheit
+                  und ermöglicht Vertrauen.
+                </dd>
+                <dt>
+                  <a href="">5. Schützt</a>
+                </dt>
+                <dd style="display: none;">
+                  Es entsteht ein gewollter Druck, Dinge korrekt zu machen und
+                  alle Beteiligten gerecht zu behandeln.
+                </dd>
+                <dt>
+                  <a href="">6. Ermöglicht Lernen</a>
+                </dt>
+                <dd style="display: none;">
+                  Wir sehen Fehler als Chancen und erzählen einander davon.
+                  Dies ermöglicht Lernen. Und warum sollten wir dies alles für
+                  uns behalten und nicht auch anderen zur Verfügung stellen?
+                </dd>
+                <dt>
+                  <a href="">7. Ist aufwändig</a>
+                </dt>
+                <dd style="display: none;">
+                  Ja, es bedeutet einen gewissen Aufwand, die Zahlen in eine
+                  übersichtliche und aussagekräftige Form zu bringen. Aber es
+                  lohnt sich, oder nicht?
+                </dd>
+              </dl>
+              <!-- End Accordion -->
+
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <!-- End Section -->
@@ -120,27 +215,27 @@
   <script type="text/javascript">
   var ctx = document.getElementById("year-chart").getContext("2d");
   var data = {
-      labels: {{ .Scratch.GetSortedMapValues "monate" }},
-      datasets: [
-          {
-              label: "Ertrag",
-              fillColor: "rgba(151,187,205,0.5)",
-              strokeColor: "rgba(151,187,205,0.8)",
-              highlightFill: "rgba(151,187,205,0.75)",
-              highlightStroke: "rgba(151,187,205,1)",
-              data: {{ .Scratch.GetSortedMapValues "ertraege" }}
-          },
-          {
-              label: "Aufwand",
-              fillColor: "rgba(220,220,220,0.5)",
-              strokeColor: "rgba(220,220,220,0.8)",
-              highlightFill: "rgba(220,220,220,0.75)",
-              highlightStroke: "rgba(220,220,220,1)",
-              data: {{ .Scratch.GetSortedMapValues "aufwaende" }}
-          }
-      ]
+    labels: {{ .Scratch.GetSortedMapValues "monate" }},
+    datasets: [
+      {
+        label: "Ertrag",
+        fillColor: "rgba(151,187,205,0.5)",
+        strokeColor: "rgba(151,187,205,0.8)",
+        highlightFill: "rgba(151,187,205,0.75)",
+        highlightStroke: "rgba(151,187,205,1)",
+        data: {{ .Scratch.GetSortedMapValues "ertraege" }}
+      },
+      {
+        label: "Aufwand",
+        fillColor: "rgba(220,220,220,0.5)",
+        strokeColor: "rgba(220,220,220,0.8)",
+        highlightFill: "rgba(220,220,220,0.75)",
+        highlightStroke: "rgba(220,220,220,1)",
+        data: {{ .Scratch.GetSortedMapValues "aufwaende" }}
+      }
+    ]
   };
-  var myBarChart = new Chart(ctx).Bar(data, {
+  var myChart = new Chart(ctx).Bar(data, {
     //String - A legend template
     legendTemplate : "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<datasets.length; i++){%><li><span style=\"background-color:<%=datasets[i].fillColor%>\"></span><%if(datasets[i].label){%><%=datasets[i].label%><%}%> in CHF</li><%}%></ul>",
     scaleLabel: function(label){return label.value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, "'");},
@@ -148,7 +243,7 @@
     responsive: true
   });
 
-    document.getElementById('year-chart-legend').innerHTML = myBarChart.generateLegend();
+  document.getElementById('year-chart-legend').innerHTML = myChart.generateLegend();
   </script>
 
 </body>

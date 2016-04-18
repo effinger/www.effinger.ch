@@ -1,5 +1,11 @@
 .finanzen {
   .monats-box {
+    text-decoration: none;
+
+    &:hover, &:focus {
+      color: #111;
+    }
+
     small {
       font-size: 14px;
     }
@@ -7,6 +13,10 @@
     .inner {
       border: 3px solid $primary-color;
       padding: 20px;
+
+      &:hover, &:focus {
+        background-color: #ececec;
+      }
 
       @media only screen and (max-width: 767px) {
         max-width: 370px;
@@ -41,7 +51,7 @@
         margin: 5px 0;
         font-weight: 300;
 
-        span {
+        .amount {
           font-weight: 400;
           text-align: right;
           float: right;
@@ -53,6 +63,10 @@
         }
       }
     }
+  }
+
+  .prev-next {
+    margin-top: -43px;
   }
 
   .erfolg {
@@ -69,18 +83,15 @@
     }
 
     .item {
-      padding-bottom: 25px;
       max-width: 520px;
 
       .title {
         margin-top: 10px;
-        img {
-          height: 30px;
-          float: right;
-        }
+        margin-bottom: 20px;
+        font-weight: 400;
 
         span {
-          padding-right: 5px;
+          letter-spacing: normal;
         }
       }
 
