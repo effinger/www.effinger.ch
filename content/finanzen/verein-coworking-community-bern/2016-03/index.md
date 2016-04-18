@@ -3,8 +3,8 @@ title = "Verein Coworking Community Bern"
 date = "2016-03-01"
 description = ""
 
-darlehen = 100000
-kontostand = 2000000
+darlehen = 124000
+kontostand = 128000
 kommentar = """
 Da wir den Coworking-Bereich erst ab dem 21. März geöffnet haben, ist
 dieser erste Monat noch nicht so aussagekräftig. Der Kontostand ist so hoch,
@@ -44,7 +44,7 @@ info = "0 Abos à 270"
 
 [[ertrag]]
 name = "Raumvermietung"
-betrag = 0
+betrag = 300
 
 [[ertrag]]
 name = "Community Member"
@@ -62,7 +62,7 @@ betrag = 500
 
 [[aufwand]]
 name = "Drucker"
-betrag = 318
+betrag = 320
 
 [[aufwand]]
 name = "Versicherung"
@@ -75,26 +75,26 @@ betrag = 100
 [[aufwand]]
 name = "Unterhalt und Reparaturen"
 betrag = 150
-info = "Schätzung"
+info = "Schätzung*"
 
 [[aufwand]]
 name = "Büroaufwand und Kommunikation"
 betrag = 150
-info = "Schätzung"
+info = "Schätzung*"
 
 [[aufwand]]
 name = "Marketingaufwand"
 betrag = 150
-info = "Schätzung"
+info = "Schätzung*"
 
 [[aufwand]]
 name = "Sonstiger Betriebsaufwand"
 betrag = 200
-info = "Schätzung"
+info = "Schätzung*"
 
 [[aufwand]]
 name = "Abschreibungen"
 betrag = 1300
-info = "Schätzung"
+info = "Schätzung*"
 
 +++
