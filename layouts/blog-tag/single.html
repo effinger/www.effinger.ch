@@ -1,0 +1,80 @@
+{{ $.Scratch.Set "section_title" "Blog" }}
+
+<!DOCTYPE html>
+<html lang="de">
+  {{ partial "head.html" . }}
+  <body>
+
+    <!-- Page Wrap -->
+    <div class="page" id="top">
+
+      <nav class="main-nav stick-fixed">
+      {{ partial "navigation.html" . }}
+      </nav>
+
+      <!-- Header -->
+      <section class="small-section bg-gray-lighter">
+        <div class="relative container align-left pt-80">
+
+          <div class="row">
+
+            <div class="col-md-8">
+              <h1 class="hs-line-11 font-alt mb-0">Blog - {{ .Title }}</h1>
+              <!--
+              <div class="hs-line-4 font-alt black mt-20 mt-xs-0">
+                Artikel mit Tag: {{ .Title }}
+              </div>
+              -->
+            </div>
+
+            <div class="col-md-4 mt-30">
+              <div class="mod-breadcrumbs font-alt align-right">
+                <a href="/blog/"><i class="fa fa-angle-left"></i> Alle anzeigen</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+      <!-- End Header -->
+
+      <!-- Section -->
+      <section class="page-section">
+        <div class="container relative">
+
+          <div class="row">
+
+            <!-- Content -->
+            <div class="col-sm-8">
+              {{ range (index .Site.Taxonomies.tags .Title).Pages }}
+              {{ partial "blog/summary.html" . }}
+              {{ end }}
+            </div>
+            <!-- End Content -->
+
+            <!-- Sidebar -->
+            <div class="col-sm-4 col-md-3 col-md-offset-1 sidebar">
+              {{ partial "blog/search_widget.html" . }}
+
+              {{ partial "blog/tags_widget" . }}
+
+              {{ partial "blog/archive_widget.html" . }}
+            </div>
+            <!-- End Sidebar -->
+          </div>
+
+        </div>
+      </section>
+      <!-- End Section -->
+
+      {{ partial "footer.html" . }}
+
+    </div>
+    <!-- End Page Wrap -->
+
+    {{ partial "body_includes.html" . }}
+
+    {{ partial "disqus_count.html" . }}
+
+  </body>
+</html>

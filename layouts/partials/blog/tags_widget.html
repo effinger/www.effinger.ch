@@ -1,0 +1,19 @@
+<!-- Widget -->
+<div class="widget">
+  <h5 class="widget-title font-alt">Tags</h5>
+
+  <div class="widget-body">
+    <div class="tags">
+      {{ $title := .Title }}
+      {{ range $key, $taxonomy := .Site.Taxonomies.tags }}
+        {{ if eq $title $key }}
+          {{ partial "blog/tag_link_active.html" $key }}
+        {{ else }}
+          {{ partial "blog/tag_link.html" $key }}
+        {{ end }}
+      {{ end }}
+
+    </div>
+  </div>
+</div>
+<!-- End Widget -->

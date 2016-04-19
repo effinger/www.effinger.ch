@@ -2,6 +2,7 @@ baseurl = "http://www.effinger.ch"
 languageCode = "de"
 title = "Effinger — Kaffeebar & Coworking Space Bern"
 pluralizeListTitles = false
+preserveTaxonomyNames = true
 
 paginatePath = "seite"
 
@@ -11,8 +12,11 @@ paginatePath = "seite"
   disqusShortname = "effinger"
 
 [taxonomies]
-  tag = "tags"             # Used for events
-  category = "categories"  # Used for the blog
+  tag = "tags"             # Used for the blog
+  category = "categories"  # Used for events
+
+[permalinks]
+  blog-tag = "/blog/tag/:title/"
 
 [[menu.main]]
   name = "Community"

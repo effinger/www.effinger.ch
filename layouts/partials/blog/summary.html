@@ -1,0 +1,30 @@
+<!-- Post -->
+<div class="blog-item">
+
+  <!-- Post Title -->
+  <h2 class="blog-item-title font-alt"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+
+  <!-- Author, Tags, Comments -->
+  <div class="blog-item-data">
+    {{ partial "blog/meta.html" . }}
+  </div>
+
+  <!-- Image -->
+  <div class="blog-media">
+    <a href="{{ .RelPermalink }}"><img src="{{ .RelPermalink }}{{ .Params.image }}" alt="" /></a>
+  </div>
+
+  <!-- Text Intro -->
+  <div class="blog-item-body">
+    <p>
+      {{ .Description }}
+    </p>
+  </div>
+
+  <!-- Read More Link -->
+  <div class="blog-item-foot">
+    <a href="{{ .RelPermalink }}" class="btn btn-mod btn-round  btn-small">Weiterlesen <i class="fa fa-angle-right"></i></a>
+  </div>
+
+</div>
+<!-- End Post -->
