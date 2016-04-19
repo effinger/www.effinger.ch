@@ -26,11 +26,11 @@ paginatePath = "seite"
     parent = "Community"
     url = "/grundsaetze/"
 
-  [[menu.main]]
-    name = "Finanzen"
-    weight = 5
-    parent = "Community"
-    url = "/finanzen/"
+#  [[menu.main]]
+#    name = "Finanzen"
+#    weight = 5
+#    parent = "Community"
+#    url = "/finanzen/"
 
 [[menu.main]]
   name = "Events"
