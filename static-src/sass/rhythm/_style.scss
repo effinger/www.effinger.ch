@@ -2367,7 +2367,7 @@ Sections styles
 }
 .small-section{
   padding: 70px 0;
-  min-height: 300px;
+  //min-height: 300px;
 }
 .small-title{
   padding: 0;
@@ -4215,8 +4215,11 @@ Blog
 ============================== */
 
 .blog-item{
-  margin-bottom: 80px;
   position: relative;
+  margin-bottom: 80px;
+  &:last-child {
+    margin-bottom: 0px;
+  }
 }
 
 .blog-item-date{
@@ -4525,6 +4528,9 @@ a.prev-next-btn:hover{
 }
 .widget{
   margin-bottom: 60px;
+  &:last-child {
+    margin-bottom: 0px;
+  }
 }
 .widget .img-left{
   margin: 0 10px 10px 0;
@@ -4639,11 +4645,21 @@ a.prev-next-btn:hover{
   -o-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
   -ms-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
   transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+
+  &:hover {
+    text-decoration: none;
+    border-color: #333;
+    color: #111;
+  }
+
+  &.active {
+    color: #fff;
+    background: rgba(34,34,34, .9);
+    border-color: rgba(34,34,34, .9);
+  }
 }
 .tags a:hover{
-  text-decoration: none;
-  border-color: #333;
-  color: #111;
+
 }
 
 /* Comments */

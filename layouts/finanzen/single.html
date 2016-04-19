@@ -1,20 +1,19 @@
-<!DOCTYPE html>
-<html lang="de">
 {{ $.Scratch.Set "section_title" .Params.unternehmen }}
 
 {{/* Calculation of total Ertrag und Aufwand. */}}
 {{ $.Scratch.Set "total_ertrag" 0 }}
 {{ range .Params.ertrag }}
-  {{ $.Scratch.Add "total_ertrag" .betrag }}
+{{ $.Scratch.Add "total_ertrag" .betrag }}
 {{ end }}
 
 {{ $.Scratch.Set "total_aufwand" 0 }}
 {{ range .Params.aufwand }}
-  {{ $.Scratch.Add "total_aufwand" .betrag }}
+{{ $.Scratch.Add "total_aufwand" .betrag }}
 {{ end }}
 
+<!DOCTYPE html>
+<html lang="de">
 {{ partial "head.html" . }}
-
 <body>
 
   <!-- Page Wrap -->
@@ -31,8 +30,8 @@
         <div class="row">
 
           <div class="col-md-8">
-            <h1 class="hs-line-11 font-alt mb-20 mb-xs-0">Finanzen</h1>
-            <div class="hs-line-4 font-alt">
+            <h1 class="hs-line-11 font-alt mb-0">Finanzen</h1>
+            <div class="hs-line-4 font-alt mt-20 mt-xs-0">
             {{ .Params.unternehmen }}
             </div>
           </div>

@@ -59,6 +59,26 @@ table th {
   font-weight: 400;
 }
 
+table .clickable-row {
+  cursor: pointer;
+
+  a {
+    text-decoration: none;
+    color: #111;
+  }
+}
+
+.table-borderless tbody tr td,
+.table-borderless tbody tr th,
+.table-borderless thead tr th {
+  border: none;
+}
+
+
+// Font Awesome Inline instead of inline-block to avoid line-break.
+.fa-inline {
+  display: inline;
+}
 
 // Navigation.
 .logo img {

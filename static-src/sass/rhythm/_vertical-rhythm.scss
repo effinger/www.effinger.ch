@@ -1,4 +1,4 @@
-/* 
+/*
  * CSS Vertical Rhythm
  * Author - Roman Kirichik
  * www.kirichik.com
@@ -184,7 +184,8 @@
 .pb-140 {
     padding-bottom: 140px
 }
-@media only screen and (max-width: 1200px) {
+
+@media only screen and (min-width: 1200px) {
     .mt-lg-0 {
         margin-top: 0!important
     }
@@ -366,7 +367,8 @@
         padding-bottom: 140px
     }
 }
-@media only screen and (max-width: 1024px) {
+
+@media only screen and (max-width: 991px) {
     .mt-md-0 {
         margin-top: 0!important
     }
@@ -548,7 +550,8 @@
         padding-bottom: 140px
     }
 }
-@media only screen and (max-width: 768px) {
+
+@media only screen and (max-width: 767px) {
     .mt-sm-0 {
         margin-top: 0!important
     }
@@ -730,6 +733,7 @@
         padding-bottom: 140px
     }
 }
+
 @media only screen and (max-width: 767px) {
     .mt-xs-0 {
         margin-top: 0!important
@@ -909,188 +913,6 @@
         padding-bottom: 130px
     }
     .pb-xs-140 {
-        padding-bottom: 140px
-    }
-}
-@media only screen and (max-width: 480px) {
-    .mt-xxs-0 {
-        margin-top: 0!important
-    }
-    .mt-xxs-10 {
-        margin-top: 10px
-    }
-    .mt-xxs-20 {
-        margin-top: 20px
-    }
-    .mt-xxs-30 {
-        margin-top: 30px
-    }
-    .mt-xxs-40 {
-        margin-top: 40px
-    }
-    .mt-xxs-50 {
-        margin-top: 50px
-    }
-    .mt-xxs-60 {
-        margin-top: 60px
-    }
-    .mt-xxs-70 {
-        margin-top: 70px
-    }
-    .mt-xxs-80 {
-        margin-top: 80px
-    }
-    .mt-xxs-90 {
-        margin-top: 90px
-    }
-    .mt-xxs-100 {
-        margin-top: 100px
-    }
-    .mt-xxs-110 {
-        margin-top: 110px
-    }
-    .mt-xxs-120 {
-        margin-top: 120px
-    }
-    .mt-xxs-130 {
-        margin-top: 130px
-    }
-    .mt-xxs-140 {
-        margin-top: 140px
-    }
-    .mb-xxs-0 {
-        margin-bottom: 0!important
-    }
-    .mb-xxs-10 {
-        margin-bottom: 10px
-    }
-    .mb-xxs-20 {
-        margin-bottom: 20px
-    }
-    .mb-xxs-30 {
-        margin-bottom: 30px
-    }
-    .mb-xxs-40 {
-        margin-bottom: 40px
-    }
-    .mb-xxs-50 {
-        margin-bottom: 50px
-    }
-    .mb-xxs-60 {
-        margin-bottom: 60px
-    }
-    .mb-xxs-70 {
-        margin-bottom: 70px
-    }
-    .mb-xxs-80 {
-        margin-bottom: 80px
-    }
-    .mb-xxs-90 {
-        margin-bottom: 90px
-    }
-    .mb-xxs-100 {
-        margin-bottom: 100px
-    }
-    .mb-xxs-110 {
-        margin-bottom: 110px
-    }
-    .mb-xxs-120 {
-        margin-bottom: 120px
-    }
-    .mb-xxs-130 {
-        margin-bottom: 130px
-    }
-    .mb-xxs-140 {
-        margin-bottom: 140px
-    }
-    .pt-xxs-0 {
-        padding-top: 0!important
-    }
-    .pt-xxs-10 {
-        padding-top: 10px
-    }
-    .pt-xxs-20 {
-        padding-top: 20px
-    }
-    .pt-xxs-30 {
-        padding-top: 30px
-    }
-    .pt-xxs-40 {
-        padding-top: 40px
-    }
-    .pt-xxs-50 {
-        padding-top: 50px
-    }
-    .pt-xxs-60 {
-        padding-top: 60px
-    }
-    .pt-xxs-70 {
-        padding-top: 70px
-    }
-    .pt-xxs-80 {
-        padding-top: 80px
-    }
-    .pt-xxs-90 {
-        padding-top: 90px
-    }
-    .pt-xxs-100 {
-        padding-top: 100px
-    }
-    .pt-xxs-110 {
-        padding-top: 110px
-    }
-    .pt-xxs-120 {
-        padding-top: 120px
-    }
-    .pt-xxs-130 {
-        padding-top: 130px
-    }
-    .pt-xxs-140 {
-        padding-top: 140px
-    }
-    .pb-xxs-0 {
-        padding-bottom: 0!important
-    }
-    .pb-xxs-10 {
-        padding-bottom: 10px
-    }
-    .pb-xxs-20 {
-        padding-bottom: 20px
-    }
-    .pb-xxs-30 {
-        padding-bottom: 30px
-    }
-    .pb-xxs-40 {
-        padding-bottom: 40px
-    }
-    .pb-xxs-50 {
-        padding-bottom: 50px
-    }
-    .pb-xxs-60 {
-        padding-bottom: 60px
-    }
-    .pb-xxs-70 {
-        padding-bottom: 70px
-    }
-    .pb-xxs-80 {
-        padding-bottom: 80px
-    }
-    .pb-xxs-90 {
-        padding-bottom: 90px
-    }
-    .pb-xxs-100 {
-        padding-bottom: 100px
-    }
-    .pb-xxs-110 {
-        padding-bottom: 110px
-    }
-    .pb-xxs-120 {
-        padding-bottom: 120px
-    }
-    .pb-xxs-130 {
-        padding-bottom: 130px
-    }
-    .pb-xxs-140 {
         padding-bottom: 140px
     }
 }

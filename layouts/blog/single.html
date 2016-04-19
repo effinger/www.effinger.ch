@@ -1,8 +1,8 @@
+{{ $.Scratch.Set "section_title" "Blog" }}
+
 <!DOCTYPE html>
 <html lang="de">
-{{ $.Scratch.Set "section_title" "Blog" }}
 {{ partial "head.html" . }}
-
 <body>
 
   <!-- Page Wrap -->
@@ -19,9 +19,9 @@
         <div class="row">
 
           <div class="col-md-8">
-            <h1 class="hs-line-11 font-alt mb-20 mb-xs-0">Blog</h1>
+            <h1 class="hs-line-11 font-alt mb-0">Blog</h1>
             <!--
-            <div class="hs-line-4 font-alt black">
+            <div class="hs-line-4 font-alt black mt-20 mt-xs-0">
               Geschichten aus der Community
             </div>
             -->
@@ -56,19 +56,10 @@
 
                 <!-- Author, Tags, Comments -->
                 <div class="blog-item-data local-scroll">
-                  <a><i class="fa fa-clock-o"></i> {{ .Date.Format "02.01.2006" }}</a>
-                  <span class="separator">&nbsp;</span>
-                  <a href="#"><i class="fa fa-user"></i> {{ .Params.author }}</a>
-                  <span class="separator">&nbsp;</span>
-                  <i class="fa fa-folder-open"></i> {{ range $index, $element := .Params.tags }} {{ if $index }}, {{ end }}<a href="#">{{ . }}</a> {{ end }} {{ if .Params.comments }}
-                  <span class="separator">&nbsp;</span>
-                  <i class="fa fa-comments"></i> <a href="#comments" data-disqus-identifier="{{ .RelPermalink }}">Kommentare</a> {{ end }}
+                  {{ partial "blog/meta.html" . }}
                 </div>
 
-
                 {{ .Content }}
-
-
               </div>
               <!-- End Text -->
 

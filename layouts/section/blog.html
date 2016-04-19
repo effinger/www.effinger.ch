@@ -5,7 +5,7 @@
 
     <!-- Page Wrap -->
     <div class="page" id="top">
-      
+
       <nav class="main-nav stick-fixed">
       {{ partial "navigation.html" . }}
       </nav>
@@ -17,9 +17,9 @@
           <div class="row">
 
             <div class="col-md-8">
-              <h1 class="hs-line-11 font-alt mb-20 mb-xs-0">Blog</h1>
+              <h1 class="hs-line-11 font-alt mb-0">Blog</h1>
               <!--
-              <div class="hs-line-4 font-alt black">
+              <div class="hs-line-4 font-alt black mt-20 mt-xs-0">
                 Geschichten aus der Community
               </div>
               -->
@@ -38,126 +38,37 @@
 
             <!-- Content -->
             <div class="col-sm-8">
-              
-             {{ range (.Paginator 7).Pages }}
-              <!-- Post -->
-              <div class="blog-item">
-
-                <!-- Post Title -->
-                <h2 class="blog-item-title font-alt"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-
-                <!-- Author, Tags, Comments -->
-                <div class="blog-item-data">
-                  <a><i class="fa fa-clock-o"></i> {{ .Date.Format "02.01.2006" }}</a>
-                  <span class="separator">&nbsp;</span>
-                  <a href="#"><i class="fa fa-user"></i> {{ .Params.author }}</a>
-                  <span class="separator">&nbsp;</span>
-                  <i class="fa fa-folder-open"></i>
-                  {{ range $index, $element := .Params.tags }}
-                      {{ if $index }}, {{ end }}<a href="#">{{ . }}</a>
-                    {{ end }}
-                  <span class="separator">&nbsp;</span>
-                  <i class="fa fa-comments"></i> <a href="{{ .RelPermalink }}#comments" data-disqus-identifier="{{ .RelPermalink }}">Kommentare</a>
-                </div>
-
-                <!-- Image -->
-                <div class="blog-media">
-                  <a href="{{ .RelPermalink }}"><img src="{{ .RelPermalink }}{{ .Params.image }}" alt="" /></a>
-                </div>
-
-                <!-- Text Intro -->
-                <div class="blog-item-body">
-                  <p>
-                    {{ .Description }}
-                  </p>
-                </div>
-
-                <!-- Read More Link -->
-                <div class="blog-item-foot">
-                  <a href="{{ .RelPermalink }}" class="btn btn-mod btn-round  btn-small">Weiterlesen <i class="fa fa-angle-right"></i></a>
-                </div>
-
-              </div>
-              <!-- End Post -->
+              {{ range (.Paginator 7).Pages }}
+                {{ partial "blog/summary.html" . }}
               {{ end }}
-              
+
               {{ partial "pagination.html" . }}
-              
             </div>
             <!-- End Content -->
 
             <!-- Sidebar -->
             <div class="col-sm-4 col-md-3 col-md-offset-1 sidebar">
+              {{ partial "blog/search_widget.html" . }}
 
-              <!-- Search Widget -->
-              <div class="widget">
-                <form class="form-inline form" role="form" action="https://google.com/search">
-                  <div class="search-wrap">
-                    <input type="hidden" name="as_sitesearch" value="www.effinger.ch">
-                    <button class="search-button animate" type="submit" title="Start Search">
-                      <i class="fa fa-search"></i>
-                    </button>
-                    <input type="text" class="form-control search-field" placeholder="Suchen..." name="q" results="0">
-                  </div>
-                </form>
-              </div>
-              <!-- End Search Widget -->
+              {{ partial "blog/tags_widget.html" . }}
 
-              <!-- Widget 
-              <div class="widget">
-
-                <h5 class="widget-title font-alt">Tags</h5>
-
-                <div class="widget-body">
-                  <div class="tags">
-                    {{ range $key, $taxonomy := .Site.Taxonomies.tags }}
-                    <a href="{{ $key }}">{{ $key }}</a>
-                    {{ end }}
-                  </div>
-                </div>
-
-              </div>
-              <!-- End Widget -->
-
-              
-              <!-- Widget 
-              <div class="widget">
-
-                <h5 class="widget-title font-alt">Archiv</h5>
-
-                <div class="widget-body">
-                  <ul class="clearlist widget-menu">
-                    <li>
-                      <a href="#" title="">February 2014</a>
-                    </li>
-                    <li>
-                      <a href="#" title="">January 2014</a>
-                    </li>
-                    <li>
-                      <a href="#" title="">December 2013</a>
-                    </li>
-                  </ul>
-                </div>
-
-              </div>
-              <!-- End Widget -->
-
+              {{ partial "blog/archive_widget.html" . }}
             </div>
             <!-- End Sidebar -->
           </div>
 
         </div>
       </section>
-      <!-- End Section --> 
-      
+      <!-- End Section -->
+
       {{ partial "footer.html" . }}
 
     </div>
     <!-- End Page Wrap -->
 
     {{ partial "body_includes.html" . }}
-    
+
     {{ partial "disqus_count.html" . }}
 
   </body>
-</html>     
+</html>
