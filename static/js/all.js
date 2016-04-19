@@ -25,13 +25,13 @@
 
   $(document).ready(function(){
 
-    $(window).trigger("resize");            
+    $(window).trigger("resize");
     init_classic_menu();
     init_lightbox();
     init_parallax();
     init_shortcodes();
     init_tooltips();
-    //init_counters();
+    init_counters();
     init_team();
     initPageSliders();
     //initWorkFilter();
@@ -76,7 +76,7 @@
     safariTest = false;
   }
 
-  // Detect touch devices    
+  // Detect touch devices
   if (!("ontouchstart" in document.documentElement)) {
     document.documentElement.className += " no-touch";
   }
@@ -152,10 +152,10 @@
 
     // Transparent menu
     if ($(".main-nav").hasClass("transparent")){
-      $(".main-nav").addClass("js-transparent"); 
+      $(".main-nav").addClass("js-transparent");
     }
 
-    $(window).scroll(function(){        
+    $(window).scroll(function(){
       if ($(window).scrollTop() > 10) {
         $(".js-transparent").removeClass("transparent");
         $(".main-nav").addClass("small-height");
@@ -182,7 +182,7 @@
 
         // Fix for responsive menu
         if ($(".main-nav").hasClass("not-top")) {
-          $(window).scrollTo(".main-nav", "slow"); 
+          $(window).scrollTo(".main-nav", "slow");
         }
       }
     });
@@ -276,7 +276,7 @@
 
   function init_lightbox(){
 
-    // Works Item Lightbox				
+    // Works Item Lightbox
     $(".work-lightbox-link").magnificPopup({
       gallery: {
         enabled: true
@@ -284,7 +284,7 @@
       mainClass: "mfp-fade"
     });
 
-    // Works Item Lightbox	
+    // Works Item Lightbox
     $(".lightbox-gallery-1").magnificPopup({
       gallery: {
         enabled: true
@@ -314,7 +314,7 @@
 
   function init_parallax(){
 
-    // Parallax        
+    // Parallax
     if (($(window).width() >= 1024) && (mobileTest == false)) {
       $(".parallax-1").parallax("50%", 0.1);
       $(".parallax-2").parallax("50%", 0.2);
@@ -335,7 +335,7 @@
   /* ---------------------------------------------
      Shortcodes
      --------------------------------------------- */
-  // Tabs minimal	
+  // Tabs minimal
   function init_shortcodes(){
 
     var tpl_tab_height;
@@ -422,23 +422,24 @@
       count.countTo({
         from: 0,
         to: count.html(),
-        speed: 1300,
-        refreshInterval: 60,
+        speed: 523,
+        refreshInterval: 50,
+        formatter: function (value, options) {
+          //return value.toFixed(options.decimals);
+          return value.toFixed(options.decimals).replace(/\B(?=(\d{3})+(?!\d))/g, "'");
+        }
       });
-
     });
   }
 
 
-
-
   /* ---------------------------------------------
      Team
-     --------------------------------------------- */   
+     --------------------------------------------- */
 
   function init_team(){
 
-    // Hover        
+    // Hover
     $(".team-item").click(function(){
       if ($("html").hasClass("mobile")) {
         $(this).toggleClass("js-active");
@@ -540,7 +541,7 @@ function initPageSliders(){
       autoHeight: true,
       navigation: true,
       navigationText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"]
-    }); 
+    });
 
     // Work slider
     $(".work-full-slider").owlCarousel({
@@ -657,11 +658,11 @@ function initPageSliders(){
           sync2.trigger("owl.goTo", num);
         }
       }
-      else 
+      else
         if (num === sync2visible[sync2visible.length - 1]) {
           sync2.trigger("owl.goTo", sync2visible[1])
         }
-      else 
+      else
         if (num === sync2visible[0]) {
           sync2.trigger("owl.goTo", num - 1)
         }
@@ -674,7 +675,7 @@ function initPageSliders(){
       if (event.keyCode == 37) {
         owl.prev();
       }
-      else 
+      else
         if (event.keyCode == 39) {
           owl.next();
         }
@@ -795,7 +796,7 @@ function init_map(){
                   new google.maps.Point(0, 0),    //sets the origin point of the icon
                   new google.maps.Point(30, 53))    //sets the anchor point for the icon
             */
-            
+
           }
         },
         map: {
@@ -827,17 +828,17 @@ function init_map(){
  --------------------------------------------- */
 
 function init_wow(){
-  (function($){    
+  (function($){
 
     var wow = new WOW({
       boxClass: 'wow',
       animateClass: 'animated',
       offset: 90,
-      mobile: false, 
-      live: true 
+      mobile: false,
+      live: true
     });
 
-    wow.init(); 
+    wow.init();
 
   })(jQuery);
 }
@@ -848,7 +849,7 @@ function init_wow(){
  --------------------------------------------- */
 
 function init_masonry(){
-  (function($){    
+  (function($){
 
     $(".masonry").imagesLoaded(function(){
       $(".masonry").masonry();
@@ -856,4 +857,3 @@ function init_masonry(){
 
   })(jQuery);
 }
-

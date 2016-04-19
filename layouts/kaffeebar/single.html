@@ -56,7 +56,7 @@
                 Hast du ein Hüngerli? Wir haben die besten Quiches von Bern und frisches Grünzeug. Oder auch Amaretti und Süsses in Kuchenform.
               </p>
               <p>
-                Und perfekt zum Feierabendbier: Chorizo-Perlen, Oliven und Fetawürfeli. 
+                Und perfekt zum Feierabendbier: Chorizo-Perlen, Oliven und Fetawürfeli.
               </p>
               <p>
                 Und was bestellst du? Wir freuen uns auf deinen Besuch.
@@ -214,19 +214,19 @@
               <div class="row hidden-xs">
                 <div class="col-sm-6 left">
                   {{ range where .section "column" "left" }}
-                    {{ partial "kaffeebar_menu_item.html" . }}
+                    {{ partial "kaffeebar/menu_item.html" . }}
                   {{end }}
                 </div>
                 <div class="col-sm-6 right">
                   {{ range where .section "column" "right" }}
-                    {{ partial "kaffeebar_menu_item.html" . }}
+                    {{ partial "kaffeebar/menu_item.html" . }}
                   {{end }}
                 </div>
               </div>
               <!-- One column for small screens -->
               <div class="visible-xs-block">
               {{ range .section }}
-                {{ partial "kaffeebar_menu_item.html" . }}
+                {{ partial "kaffeebar/menu_item.html" . }}
               {{end }}
               </div>
             </div>

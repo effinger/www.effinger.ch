@@ -1,7 +1,7 @@
 // Boxed Grid for Offers
 //*, *:before, *:after {box-sizing:  border-box !important;}
 .offers {
-    
+
   .left {
     padding-right: 30px;
   }
@@ -9,24 +9,23 @@
   .right {
     padding-left: 30px;
   }
-    
+
   .offers-title {
     min-height: 60px;
     padding-left: 15px;
-    
+
     img {
       height: 30px;
       float: left;
     }
-    
+
     span {
       display: block;
       padding-left: 40px;
       margin-top: 7px;
     }
-    
   }
-  
+
   .box-item {
     padding-bottom: 25px;
     max-width: 520px;
@@ -36,10 +35,10 @@
         height: 30px;
         float: right;
       }
-      
+
       span {
         padding-right: 5px;
-      } 
+      }
     }
 
     table {

@@ -20,7 +20,7 @@
         <div class="home-content">
           <div class="home-text">
             <h1 class="font-alt mb-50 mb-xs-30">Über uns</h1>
-            
+
             <div>
               <a href="/geschichte/" class="btn btn-mod btn-border-w btn-medium btn-round mb-xs-10">Geschichte</a>
               <span class="hidden-xs">&nbsp;</span>
@@ -69,7 +69,7 @@
               <p>
                 Nicht nur die Community sondern auch den Coworking Space im Effinger managen wir gemeinsam. Im Moment sind wir {{ len $.Site.Data.effianer.Person }} JungunternehmerInnen, die entweder einen Voll- oder Teilzeit-Arbeitsplatz im Effinger haben und verantwortlich sind für den Betrieb vor Ort. Wir nennen uns <a  href="#effianer">Effianer</a>.
               </p>
-              
+
               <h3>Community Member werden</h3>
               <p>
                 Als Community Member erhältst du ein Stück Heimat im Effinger und wirst Teil der "Effinger Community". Du erhältst Zugang zur ganzen Community, einerseits auf unserer <a href="/blog/slack/">Online-Plattform</a>, aber natürlich auch vor Ort im Effinger. Du wirst als Member an Events eingeladen und darfst im Effinger 12 gratis Kaffees trinken.
@@ -78,18 +78,18 @@
                 Die Membership kostet 250 Franken für das erste Jahr. Ab dem zweiten Jahr bestimmt jede Person selber, wie viel sie mit Finanzen zum Gedeihen der Community beitragen möchte (zwischen 0 und 500 Franken). Der Betrag soll sich "richtig" anfühlen.
               </p>
               <p>
-                Die Community lebt durch das grosszügige Engagement der Mitglieder. Wer in welcher Form und wie viel beiträgt ist (zum Glück) nicht messbar. Deshalb wollen wir es den Community Membern selber überlassen, was sie beitragen möchten, sei es in Geldform oder durch persönliches Engagement.                
+                Die Community lebt durch das grosszügige Engagement der Mitglieder. Wer in welcher Form und wie viel beiträgt ist (zum Glück) nicht messbar. Deshalb wollen wir es den Community Membern selber überlassen, was sie beitragen möchten, sei es in Geldform oder durch persönliches Engagement.
               </p>
               <p>
                 <strong>Interessiert an einer Membership?</strong> Komm einfach im Effinger vorbei und sprich uns darauf an.
               </p>
-              
+
               <h3>Weitere Infos über die Community</h3>
-              
+
               <p>
                 Auf den folgenden Seiten findest du weitere Information über die Geschichte, die Grundsätze und die genaue Organisation unserer Community.
               </p>
-              
+
               <a href="/geschichte/" class="btn btn-mod btn-border btn-medium btn-round mb-xs-10">Geschichte</a>
               <span class="hidden-xs">&nbsp;</span>
               <a href="/grundsaetze/" class="btn btn-mod btn-border btn-medium btn-round mb-xs-10">Grundsätze</a>
@@ -103,9 +103,9 @@
 
     <section class="page-section bg-gray" id="effianer">
       <div class="container relative">
-        
+
         <h2 class="section-title font-alt mb-70 mb-sm-40">Die Effianer</h2>
-        
+
         <div class="row">
           <div class="col-md-8 col-md-offset-2 mb-70 mb-xs-40">
             <div class="section-text">
@@ -115,9 +115,9 @@
             </div>
           </div>
         </div>
-        
+
         <div class="row multi-columns-row">
-          {{ $today := index $.Site.Data.de.weekdays $.Now.Weekday }}
+          {{ $today := index $.Site.Data.de.weekdays .Now.Weekday }}
           {{ range $.Site.Data.effianer.Person }}
           <!-- Effianer Item -->
           <div class="col-sm-6 col-md-3 col-lg-3 mb-50">
@@ -161,7 +161,7 @@
                   {{ .description }}
                   {{ if .host }}
                     {{ if eq .gender "m" }}Gastgeber{{ else }}Gastgeberin{{ end }}
-                     am 
+                     am
                     {{ $num_days := len .host }}
                     {{ range $i, $day := .host }}{{ if gt $i 0 }}{{ if eq (add $i 1) $num_days }} und {{ else }}, {{ end }}{{ end }}
                     {{ if eq $day $today }}<span class="active-day text-nowrap"><i class="fa fa-chevron-right"></i>{{ end }}{{ $day }}{{ if eq $day $today }}<i class="fa fa-chevron-left"></i></span>{{ end }}{{ end }}
@@ -176,7 +176,7 @@
       </div>
     </section>
     <!-- End Effianer Section -->
-    
+
     {{ partial "footer.html" . }}
 
   </div>

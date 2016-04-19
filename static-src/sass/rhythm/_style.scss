@@ -3033,11 +3033,11 @@ Team
   font-size: 17px;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  
+
   .label {
     background-color: rgba($primary-color, .7);
     color: black;
-  } 
+  }
 }
 
 
@@ -4295,22 +4295,27 @@ Blog
   letter-spacing: 1px;
   color: #aaa;
 }
-.blog-item-body{
+.blog-item-body,
+.long-text-body {
   font-size: 16px;
   font-weight: 300;
   color: #5f5f5f;
   line-height: 1.8;
 }
-.blog-item-body h1,
-.blog-item-body h2,
-.blog-item-body h3,
-.blog-item-body h4,
-.blog-item-body h5,
-.blog-item-body h6{
-  margin: 1.3em 0 0.5em 0;
+.blog-item-body,
+.long-text-body {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 1.3em 0 0.5em 0;
+  }
 }
 
-.blog-item-more{
+.blog-item-more,
+.prev-next-btn{
   border: 1px solid #eaeaea;
   padding: 5px 10px;
   font-size: 12px;
@@ -4325,15 +4330,18 @@ Blog
   -ms-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
   transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
 }
-.blog-item-more:hover{
+.blog-item-more:hover,
+prev-next-btn:hover{
   text-decoration: none;
   border-color: #111;
 }
-a.blog-item-more{
+a.blog-item-more,
+a.prev-next-btn{
   color: #777;
   text-decoration: none;
 }
-a.blog-item-more:hover{
+a.blog-item-more:hover,
+a.prev-next-btn:hover{
   color: #111;
 }
 

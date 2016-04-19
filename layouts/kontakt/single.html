@@ -95,7 +95,7 @@
 
           {{ $today := index $.Site.Data.de.weekdays .Now.Weekday }}
           {{ $is_weekend := or (eq $today "Samstag") (eq $today "Sonntag") }}
-          
+
           {{ if $is_weekend }}
           <div class="row">
             <div class="col-md-4 col-sm-6 mb-50">
