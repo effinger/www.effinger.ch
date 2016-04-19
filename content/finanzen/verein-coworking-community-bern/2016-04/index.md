@@ -1,7 +1,7 @@
 +++
-title = "Verein Coworking Community Bern"
-date = "2016-03-01"
-description = ""
+title = "Finanzen April 2016"
+date = "2016-04-01"
+unternehmen = "Verein Coworking Community Bern"
 
 darlehen = 0
 kontostand = 0

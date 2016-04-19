@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="de">
-{{ $month_year := (print (index $.Site.Data.de.months .Date.Month ) " " .Date.Year)}}
-{{ $.Scratch.Set "section_title" (print "Finanzen " $month_year) }}
+{{ $.Scratch.Set "section_title" .Params.unternehmen }}
 
 {{/* Calculation of total Ertrag und Aufwand. */}}
 {{ $.Scratch.Set "total_ertrag" 0 }}
@@ -34,7 +33,7 @@
           <div class="col-md-8">
             <h1 class="hs-line-11 font-alt mb-20 mb-xs-0">Finanzen</h1>
             <div class="hs-line-4 font-alt">
-            {{ .Title }}
+            {{ .Params.unternehmen }}
             </div>
           </div>
 
@@ -63,7 +62,7 @@
         </div>
         <!-- End Prev/Next Post -->
 
-        <h1 class="hs-line-11 font-alt mt-0 align-center">{{ $month_year }}</h1>
+        <h1 class="hs-line-11 font-alt mt-0 align-center">{{ print (index $.Site.Data.de.months .Date.Month ) " " .Date.Year }}</h1>
 
         <div class="count-wrapper mb-20 mt-30">
           <div class="row">

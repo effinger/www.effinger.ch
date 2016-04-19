@@ -1,14 +1,14 @@
 +++
-title = "Verein Coworking Community Bern"
+title = "Finanzen März 2016"
 date = "2016-03-01"
-description = ""
+unternehmen = "Verein Coworking Community Bern"
 
 darlehen = 124000
 kontostand = 128000
 kommentar = """
 Da wir den Coworking-Bereich erst ab dem 21. März geöffnet haben, ist
 dieser erste Monat noch nicht so aussagekräftig. Der Kontostand ist so hoch,
-da die Kaution von 42'000 und etliche Baurechnungen noch nicht bezahlt wurden.
+da die Kaution von CHF 42'000 und etliche Baurechnungen noch nicht bezahlt wurden.
 Viele Rechnungen sind im April fällig.
 """
 
@@ -55,6 +55,7 @@ info = "2 neue Memberships"
 [[aufwand]]
 name = "Miete Coworking-Bereich"
 betrag = 3766
+info = "Der Mietanteil der Kaffeebar ist bereits abgezogen"
 
 [[aufwand]]
 name = "Reinigung"
