@@ -140,7 +140,7 @@ Primary use:    MultiPurpose Template
         padding: 120px 0;
 
     }
-    .page-section, .home-section, .small-section{
+    .page-section, .home-section, .small-section, .small-section-header {
         background-attachment: scroll;
     }
 
@@ -270,7 +270,8 @@ Primary use:    MultiPurpose Template
 	.page-section {
         padding: 80px 0;
     }
-    .small-section {
+    .small-section,
+    .small-section-header {
         padding: 50px 0;
     }
     .small-title{
@@ -663,7 +664,8 @@ Primary use:    MultiPurpose Template
 	.page-section {
         padding: 60px 0;
     }
-    .small-section {
+    .small-section,
+    .small-section-header {
         padding: 30px 0;
     }
 
@@ -846,6 +848,9 @@ Primary use:    MultiPurpose Template
    IOS Background Fix
    ============================== */
 
-.mobile .page-section, .mobile .home-section, .mobile .small-section{
+.mobile .page-section,
+.mobile .home-section,
+.mobile .small-section,
+.mobile .small-section-header {
     background-attachment: scroll;
 }

@@ -2345,7 +2345,8 @@ Sections styles
 */
 
 .page-section,
-.small-section{
+.small-section,
+.small-section-header {
   width: 100%;
   display: block;
   position: relative;
@@ -2367,7 +2368,10 @@ Sections styles
 }
 .small-section{
   padding: 70px 0;
-  //min-height: 300px;
+  min-height: 300px;
+}
+.small-section-header {
+  padding: 70px 0;
 }
 .small-title{
   padding: 0;
