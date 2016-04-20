@@ -1,5 +1,5 @@
   <a class="text-nowrap"><i class="fa fa-clock-o fa-inline"></i>&nbsp;{{ .Date.Format "02.01.2006" }}</a><span class="separator">&nbsp;</span>
-  <a class="text-nowrap" href="#"><i class="fa fa-user fa-inline"></i>&nbsp;{{ .Params.author }}</a><span class="separator">&nbsp;</span>
+  <a class="text-nowrap"><i class="fa fa-user fa-inline"></i>&nbsp;{{ .Params.author }}</a><span class="separator">&nbsp;</span>
   {{ with .Params.tags }}
     {{ $sort := sort . }}
     {{ $links := apply $sort "partial" "blog/tag_link.html" "." }}
