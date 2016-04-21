@@ -10,7 +10,7 @@ draft = true
 +++
 
 <div class="lead">
-  Seit der Eröffnung des Effingers ist nun ein Monat vergangen. Langsam kehrt etwas Ruhe ein und ich kann mir die Zeit nehmen, auf diese erste Etappe zurückzublicken.
+Seit der Eröffnung des Effingers ist nun ein Monat vergangen. Langsam kehrt etwas Ruhe ein und ich kann mir die Zeit nehmen, auf diese erste Etappe zurückzublicken.
 </div>
 
 
