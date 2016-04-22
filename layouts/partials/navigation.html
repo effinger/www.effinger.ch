@@ -3,10 +3,17 @@
   <div class="nav-logo-wrap local-scroll">
     <a href="/" class="logo">
       <img src="/images/logo.png" alt="Effinger — Kaffeebar &amp; Coworking Space" />
-      {{ if .Site.BuildDrafts }}
-      <span class="draft-title">Entwurf</span>
-      {{ end }}
     </a>
+    {{ if .Site.BuildDrafts }}
+    <a href="{{ .Site.BaseURL }}" class="draft-title">
+      <div class="inner">
+        <div>
+          Entwurf
+        </div>
+        <small>&rarr; zur Live-Seite</small>
+      </div>
+    </a>
+    {{ end }}
   </div>
   <div class="mobile-nav">
     <i class="fa fa-bars"></i>

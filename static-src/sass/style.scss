@@ -54,9 +54,33 @@ strong {
 }
 
 .draft-title {
-  color: red;
-  border: 2px solid red;
-  padding: 2px 4px;
+  display: table-cell;
+  vertical-align: middle;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  .inner {
+    font-family: $font-family-sans-alt;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400 !important;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: red;
+    border: 2px solid red;
+    padding: 2px 4px;
+    margin: 2px 4px 2px 10px;
+  }
+
+  small {
+    text-transform: none;
+    font-size: 14px;
+    font-weight: 300 !important;
+    letter-spacing: normal;
+  }
 }
 
 
