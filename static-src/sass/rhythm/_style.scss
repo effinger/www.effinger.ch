@@ -1450,7 +1450,8 @@ Classic menu bar
 .nav-logo-wrap .logo{
   display: table-cell;
   vertical-align: middle;
-  max-width: 118px;
+  //max-width: 118px;
+  max-width: 170px;
   height: 75px;
 
   -webkit-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);

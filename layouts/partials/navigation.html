@@ -2,7 +2,10 @@
   <!-- Logo -->
   <div class="nav-logo-wrap local-scroll">
     <a href="/" class="logo">
-      <img src="/images/logo.png" alt="Effinger — Kaffeebar & Coworking Space" /> 
+      <img src="/images/logo.png" alt="Effinger — Kaffeebar &amp; Coworking Space" />
+      {{ if .Site.BuildDrafts }}
+      <span class="draft-title">Entwurf</span>
+      {{ end }}
     </a>
   </div>
   <div class="mobile-nav">
@@ -23,7 +26,7 @@
           <ul class="mn-sub to-left">
             {{ range .Children }}
             <li>
-              <a{{if $currentNode.IsMenuCurrent "main" . }} class="active"{{end}} href="{{.URL}}"> {{ .Name }} </a> 
+              <a{{if $currentNode.IsMenuCurrent "main" . }} class="active"{{end}} href="{{.URL}}"> {{ .Name }} </a>
             </li>
             {{ end }}
           </ul>
@@ -31,7 +34,7 @@
 
         </li>
         <!-- End Item With Sub -->
-      
+
         {{ else }}
         <li>
           <a{{if $currentNode.IsMenuCurrent "main" . }} class="active"{{end}} href="{{ .URL }}">{{ .Pre }} {{ .Name }}</a>

@@ -53,6 +53,12 @@ strong {
   background-color: $primary-color;
 }
 
+.draft-title {
+  color: red;
+  border: 2px solid red;
+  padding: 2px 4px;
+}
+
 
 // Tables.
 table th {
