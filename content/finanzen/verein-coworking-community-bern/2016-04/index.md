@@ -3,13 +3,10 @@ title = "Finanzen April 2016"
 date = "2016-04-01"
 unternehmen = "Verein Coworking Community Bern"
 
-darlehen = 0
-kontostand = 0
+darlehen = 140000
+kontostand = 85987
 kommentar = """
-Da wir den Coworking-Bereich erst ab dem 21. März geöffnet haben, ist
-dieser erste Monat noch nicht so aussagekräftig. Der Kontostand ist so hoch,
-da die Kaution von 42'000 und etliche Baurechnungen noch nicht bezahlt wurden.
-Viele Rechnungen sind im April fällig.
+Der erste volle Kalendermonat seit Eröffnung. Im April wurden die Kaution von 42'000 und diverse Baurechnungen bezahlt. Diese Anfangsinvestitionen werden hier nicht aufgeführt.
 """
 
 [[ertrag]]
@@ -29,32 +26,34 @@ info = "Fixer Desk, Schliessfach, Lagerfläche"
 
 [[ertrag]]
 name = "Firmenarbeitsplätze"
-betrag = 600
-info = "1 Platz à 600 (inkl. Fix Desk und Schliessfach)"
+betrag = 1800
+info = "3 Plätze à 600 (inkl. Fix Desk und Schliessfach)"
 
 [[ertrag]]
 name = "Tagespässe"
-betrag = 0
-info = "11 Pässe à 30"
+betrag = 850
+info = "34 Pässe à 30 (je 5.- davon an Kaffeebar)"
 
 [[ertrag]]
 name = "10er-Abos"
-betrag = 0
-info = "0 Abos à 270"
+betrag = 1760
+info = "8 Abos à 270 (je 50.- davon an Kaffeebar)"
 
 [[ertrag]]
 name = "Raumvermietung"
-betrag = 0
+betrag = 1550
+info = "6 Vermietungen (diverse Beträge)"
 
 [[ertrag]]
 name = "Community Member"
-betrag = 0
-info = "2 neue Memberships"
+betrag = 250
+info = "1 neue Membership"
 
 
 [[aufwand]]
 name = "Miete Coworking-Bereich"
 betrag = 3766
+info = "Der Mietanteil der Kaffeebar ist bereits abgezogen"
 
 [[aufwand]]
 name = "Reinigung"
@@ -73,28 +72,23 @@ name = "Internet, Telefonie"
 betrag = 100
 
 [[aufwand]]
-name = "Unterhalt und Reparaturen"
+name = "Unterhalt und Reparaturen*"
 betrag = 150
-info = "Schätzung*"
 
 [[aufwand]]
-name = "Büroaufwand und Kommunikation"
+name = "Büroaufwand und Kommunikation*"
 betrag = 150
-info = "Schätzung*"
 
 [[aufwand]]
-name = "Marketingaufwand"
+name = "Marketingaufwand*"
 betrag = 150
-info = "Schätzung*"
 
 [[aufwand]]
-name = "Sonstiger Betriebsaufwand"
+name = "Sonstiger Betriebsaufwand*"
 betrag = 200
-info = "Schätzung*"
 
 [[aufwand]]
-name = "Abschreibungen"
+name = "Abschreibungen*"
 betrag = 1300
-info = "Schätzung*"
 
 +++

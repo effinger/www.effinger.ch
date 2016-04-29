@@ -3,8 +3,8 @@ title = "Finanzen März 2016"
 date = "2016-03-01"
 unternehmen = "Verein Coworking Community Bern"
 
-darlehen = 124000
-kontostand = 128000
+darlehen = 120000
+kontostand = 134651
 kommentar = """
 Da wir den Coworking-Bereich erst ab dem 21. März geöffnet haben, ist
 dieser erste Monat noch nicht so aussagekräftig. Der Kontostand ist so hoch,
@@ -34,8 +34,8 @@ info = "1 Platz à 600 (inkl. Fix Desk und Schliessfach)"
 
 [[ertrag]]
 name = "Tagespässe"
-betrag = 330
-info = "11 Pässe à 30"
+betrag = 275
+info = "11 Pässe à 30 (je 5 davon an Kaffeebar)"
 
 [[ertrag]]
 name = "10er-Abos"
