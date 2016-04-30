@@ -40,7 +40,7 @@ info = "11 Pässe à 30 (je 5 davon an Kaffeebar)"
 [[ertrag]]
 name = "10er-Abos"
 betrag = 0
-info = "0 Abos à 270"
+info = "0 Abos à 270 (je 50.- davon an Kaffeebar)"
 
 [[ertrag]]
 name = "Raumvermietung"
@@ -74,28 +74,23 @@ name = "Internet, Telefonie"
 betrag = 100
 
 [[aufwand]]
-name = "Unterhalt und Reparaturen"
+name = "Unterhalt und Reparaturen*"
 betrag = 150
-info = "Schätzung*"
 
 [[aufwand]]
-name = "Büroaufwand und Kommunikation"
+name = "Büroaufwand und Kommunikation*"
 betrag = 150
-info = "Schätzung*"
 
 [[aufwand]]
-name = "Marketingaufwand"
+name = "Marketingaufwand*"
 betrag = 150
-info = "Schätzung*"
 
 [[aufwand]]
-name = "Sonstiger Betriebsaufwand"
+name = "Sonstiger Betriebsaufwand*"
 betrag = 200
-info = "Schätzung*"
 
 [[aufwand]]
-name = "Abschreibungen"
+name = "Abschreibungen*"
 betrag = 1300
-info = "Schätzung*"
 
 +++

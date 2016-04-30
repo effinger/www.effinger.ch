@@ -6,7 +6,7 @@ unternehmen = "Verein Coworking Community Bern"
 darlehen = 140000
 kontostand = 85987
 kommentar = """
-Der erste volle Kalendermonat seit Eröffnung. Im April wurden die Kaution von 42'000 und diverse Baurechnungen bezahlt. Diese Anfangsinvestitionen werden hier nicht aufgeführt.
+Der erste volle Kalendermonat seit Eröffnung. Im April wurden die Kaution von 42'000 und diverse Baurechnungen bezahlt. Diese Anfangsinvestitionen werden hier nicht in den Aufwänden aufgeführt.
 """
 
 [[ertrag]]
@@ -31,8 +31,8 @@ info = "3 Plätze à 600 (inkl. Fix Desk und Schliessfach)"
 
 [[ertrag]]
 name = "Tagespässe"
-betrag = 850
-info = "34 Pässe à 30 (je 5.- davon an Kaffeebar)"
+betrag = 900
+info = "36 Pässe à 30 (je 5.- davon an Kaffeebar)"
 
 [[ertrag]]
 name = "10er-Abos"
@@ -43,6 +43,11 @@ info = "8 Abos à 270 (je 50.- davon an Kaffeebar)"
 name = "Raumvermietung"
 betrag = 1550
 info = "6 Vermietungen (diverse Beträge)"
+
+[[ertrag]]
+name = "Vermietung Lounge an Kaffeebar"
+betrag = 400
+info = "Jeden Tag ab 18 Uhr (Testbetrieb)"
 
 [[ertrag]]
 name = "Community Member"
