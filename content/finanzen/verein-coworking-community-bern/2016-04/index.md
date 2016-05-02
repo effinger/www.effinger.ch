@@ -82,7 +82,8 @@ betrag = 150
 
 [[aufwand]]
 name = "Büroaufwand und Kommunikation*"
-betrag = 150
+betrag = 250
+info = "inkl. Miete der Moving Walls"
 
 [[aufwand]]
 name = "Marketingaufwand*"
@@ -90,7 +91,7 @@ betrag = 150
 
 [[aufwand]]
 name = "Sonstiger Betriebsaufwand*"
-betrag = 200
+betrag = 250
 
 [[aufwand]]
 name = "Abschreibungen*"
