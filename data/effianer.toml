@@ -107,30 +107,6 @@ facebook = "timon.marmet"
 instagram = ""
 
 [[Person]]
-host = [ "Donnerstag" ]
-name = "David Eggimann"
-gender = "m"
-image = "/images/effianer/david-eggimann.jpg"
-email = "david@effinger.ch"
-phone = "+41 31 398 20 22"
-website = "http://www.advitia.ch"
-twitter = ""
-facebook = "david.eggimann.1"
-instagram = ""
-
-[[Person]]
-host = [ "Donnerstag" ]
-name = "Jonas Humbel"
-gender = "m"
-image = "/images/effianer/jonas-humbel.jpg"
-email = "jonas@effinger.ch"
-phone = ""
-website = "http://www.advitia.ch"
-twitter = ""
-facebook = "jonu.humbel"
-instagram = ""
-
-[[Person]]
 host = [ "Freitag" ]
 name = "Graziella Bärtsch"
 gender = "f"
