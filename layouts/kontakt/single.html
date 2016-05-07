@@ -97,11 +97,21 @@
           <h1 class="hs-line-11 font-alt">Coworking Space</h1>
 
           {{ $today := index $.Site.Data.de.weekdays .Now.Weekday }}
-          {{ $is_weekend := or (eq $today "Samstag") (eq $today "Sonntag") }}
+          
+          {{ $.Scratch.Set "num_effianer_today" 0 }}
+          {{ range $.Site.Data.effianer.Person }}
+            {{ if in .host $today }}
+              {{ $.Scratch.Add "num_effianer_today" 1 }}
+            {{ end }}
+          {{ end }}
 
-          {{ if $is_weekend }}
+          {{ if eq ($.Scratch.Get "num_effianer_today") 0 }}
           <div class="row">
             <div class="col-md-4 col-sm-6 mb-50">
+          {{ else if eq ($.Scratch.Get "num_effianer_today") 1 }}
+          <p class="font-alt mb-80 mb-sm-40">Heute dein Gastgeber</p>
+          <div class="row">
+            <div class="col-md-4 col-md-push-8 col-sm-6 mb-md-50">
           {{ else }}
           <p class="font-alt mb-80 mb-sm-40">Heute deine Gastgeber</p>
           <div class="row">
