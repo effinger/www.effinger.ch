@@ -97,7 +97,7 @@
           <h1 class="hs-line-11 font-alt">Coworking Space</h1>
 
           {{ $today := index $.Site.Data.de.weekdays .Now.Weekday }}
-          
+
           {{ $.Scratch.Set "num_effianer_today" 0 }}
           {{ range $.Site.Data.effianer.Person }}
             {{ if in .host $today }}
@@ -152,7 +152,7 @@
           </div>
 
           <div class=" team-item">
-            <a href="/ueber/#effianer" class="btn btn-mod btn-border btn-medium btn-round">&rarr; Alle Gastgeberteams anzeigen</a>
+            <a href="/ueber/#effianer" class="btn btn-mod btn-border btn-medium btn-round">&rarr; Alle Gastgeber anzeigen</a>
           </div>
         </div>
       </section>
