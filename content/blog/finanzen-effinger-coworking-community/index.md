@@ -5,6 +5,7 @@ description = "Mit Spannung haben wir die Finanzzahlen aus dem ersten Monat im C
 image = "finanzen-april-2016.png"
 author = "Marco Jakob"
 comments = true
+draft = true
 tags = [ "Finanzen", "Coworking", "Community" ]
 +++
 
@@ -14,7 +15,7 @@ tags = [ "Finanzen", "Coworking", "Community" ]
 Mit Spannung haben wir die Finanzzahlen aus dem ersten Monat im Coworking Space erwartet. Im Vorfeld hatten wir natürlich Pläne geschmiedet (den <a href="/blog/businessplan/">Businessplan findest du hier</a>). Ob sich die Realität an unsere Pläne hält? Dieser Frage gehen wir nach, obwohl es nach 6 Wochen Betrieb natürlich immer noch sehr früh ist.
 </div>
 
-Die Finanzzahlen sind wichtig, zuerst für die [Effianer](/ueber/#effianer), die für den Betrieb des Coworking Spaces verantwortlich sind und auch für die [Community Member](/ueber/#community), die Mitglied sind im *Verein Coworking Community Bern*. Aber auch Darlehensgeber, Unterstützer beim [Crowdfunding](https://wemakeit.com/projects/effinger), unsere Vermieter und Leute, die einfach unser Projekt mitverfolgen, könnten sich für diese Zahlen interessieren.
+Die Finanzzahlen sind wichtig, zuerst für die Effianer, die für den Betrieb des Coworking Spaces verantwortlich sind und auch für die Community Member, die Mitglied sind im *Verein Coworking Community Bern*. Aber auch Darlehensgeber, Unterstützer beim Crowdfunding, unsere Vermieter und Leute, die einfach unser Projekt mitverfolgen, könnten sich für diese Zahlen interessieren.
 
 Wenn wir schon von [Transparenz](/grundsaetze/transparenz/) reden, dann stellt sich die Frage:
 
@@ -46,9 +47,9 @@ Finanzzahlen aufbereiten und darstellen, dass sie aussagekräftig sind und von N
 * **Darlehen**. Die Darlehen setzen sich zusammen aus internen Darlehensgebern (Vereinsmitglieder) von rund CHF 65'000 und externen Darlehensgebern von rund CHF 75'000. Die externen Darlehen haben eine Mindestlaufzeit von drei bis fünf Jahre.
 
 
-### Erste Einschätzung
+### Erste Einschätzungen
 
-Die [Zahlen vom April](/finanzen/verein-coworking-community-bern/2016-04/) stimmen natürlich schon optimistisch. Aber ich halte mich zurück mit zu frühen Schlüssen. Die nächsten Monate werden zeigen, ob wir eine gute Auslastung der Coworking-Arbeitsplätze und viele externe Vermietungen des [Workshopraumes](/coworking/#workshopraum) erreichen können. Auch möchten wir das Angebot für [Community Member](/ueber/#community) erweitern, damit wir weitere Mitglieder gewinnen können.
+Die [Zahlen vom April](/finanzen/verein-coworking-community-bern/2016-04/) stimmen natürlich schon optimistisch.  Aber ich halte mich zurück mit zu frühen Schlüssen. Die nächsten Monate werden zeigen, ob wir eine gute Auslastung der Coworking-Arbeitsplätze und viele externe Vermietungen des [Workshopraumes](/coworking/#workshopraum) erreichen können. Auch möchten wir das Angebot für [Community Member](/ueber/#community) erweitern, damit wir weitere Mitglieder gewinnen können.
 
 Somit lasse ich die Zahlen im Moment für sich sprechen. Ich freue mich aber natürlich, über Reaktionen darauf - zum Beispiel als Kommentare unten am Blogeintrag.
 
