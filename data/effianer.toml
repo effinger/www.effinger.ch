@@ -47,7 +47,6 @@ facebook = ""
 instagram = ""
 
 [[Person]]
-host = [ "Dienstag" ]
 name = "Philippe Arber"
 gender = "m"
 image = "/images/effianer/philippe-arber.jpg"
@@ -59,7 +58,7 @@ facebook = ""
 instagram = ""
 
 [[Person]]
-host = [ "Dienstag" ]
+host = [ "Donnerstag" ]
 name = "Jonathan Hess"
 gender = "m"
 image = "/images/effianer/jonathan-hess.jpg"
@@ -131,7 +130,7 @@ facebook = ""
 instagram = ""
 
 [[Person]]
-host = [ "Freitag" ]
+host = [ "Dienstag" ]
 name = "Marco Jakob"
 gender = "m"
 image = "/images/effianer/marco-jakob.jpg"
