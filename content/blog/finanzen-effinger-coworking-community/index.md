@@ -5,7 +5,6 @@ description = "Mit Spannung haben wir die Finanzzahlen aus dem ersten Monat im C
 image = "finanzen-april-2016.png"
 author = "Marco Jakob"
 comments = true
-draft = true
 tags = [ "Finanzen", "Coworking", "Community" ]
 +++
 
