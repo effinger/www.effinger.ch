@@ -25,7 +25,9 @@ Das haben wir nun umgesetzt und auf der Website eine neue Rubrik [Finanzen](/fin
 
 ## Finanzen des Vereins Coworking Community Bern
 
-Unter folgenden Links findest du die aktuellen Finanzzahlen des "Vereins Coworking Community Bern". Es gibt eine Jahresübersicht und für jeden Monat eine Seite mit Detailinformationen.
+Als "Verein Coworking Community Bern" betreiben wir den Coworking-Bereich im Effinger und sind Mieter für das Gebäude. Die Effinger Kaffeebar GmbH ist Untermieterin vom Verein.
+
+Unter folgenden Links findest du unsere aktuellen Finanzzahlen. Es gibt eine Jahresübersicht und für jeden Monat eine Seite mit Detailinformationen.
 
 <a href="/finanzen/" class="btn btn-mod btn-medium btn-round mb-10">&rarr; Jahresübersicht 2016</a> <a href="/finanzen/verein-coworking-community-bern/2016-04/" class="btn btn-mod btn-medium btn-round mb-10">&rarr; Detailansicht April 2016</a>
 
@@ -48,7 +50,7 @@ Finanzzahlen aufbereiten und darstellen, dass sie aussagekräftig sind und von N
 
 ### Erste Einschätzungen
 
-Wenn die Aufwandsschätzungen auch nur annähernd stimmen, können wir bereits im ersten vollen Monat mit den Einnahmen unsere Ausgaben decken. Das ist natürlich genial und äussert aussergewöhnlich für ein Startup. Ein Grund für den guten Start liegt bestimmt darin, dass wir schon fast zwei Jahre vor der Eröffnung angefangen haben, Leute zu involvieren und eine Community aufzubauen. Als wir schliesslich ein Gebäude fanden und den Vormietvertrag unterschreiben konnten, hatten wir schon ungefähr zehn verbindliche Zusagen von Coworkern für einen Teil- oder Vollzeitarbeitsplatz.
+Wenn die Aufwandsschätzungen auch nur annähernd stimmen, können wir bereits im ersten vollen Monat mit den Einnahmen unsere Ausgaben decken. Das ist natürlich genial und äusserst aussergewöhnlich für ein Startup. Ein Grund für den guten Start liegt bestimmt darin, dass wir schon fast zwei Jahre vor der Eröffnung angefangen haben, Leute zu involvieren und eine Community aufzubauen. Als wir schliesslich ein Gebäude fanden und den Vormietvertrag unterschreiben konnten, hatten wir schon ungefähr zehn verbindliche Zusagen von Coworkern für einen Teil- oder Vollzeitarbeitsplatz.
 
 Ein Startmonat ist alleine noch nicht aussagekräftig. Erst die nächsten Monate werden zeigen, ob wir eine gute Auslastung der Coworking-Arbeitsplätze und viele externe Vermietungen des Workshopraumes halten können. Auch möchten wir das Angebot für Community Member erweitern, damit wir weiter als Netzwerk wachsen können. In der Aufbauphase waren wir etwas zurückhaltend mit der Aufnahme neuer Effianer, da wir in der hektischen Zeit als Gruppe etwas Stabilität brauchten. Nun werden wir den Kreis bald wieder öffnen und möchten aus den zahlreichen Coworkern, welche mit Zehnerabos bei uns arbeiten, weitere Effianer finden, die das Projekt "Effinger" mittragen.
 
