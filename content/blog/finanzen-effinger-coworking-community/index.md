@@ -5,7 +5,6 @@ description = "Mit Spannung haben wir die Finanzzahlen aus dem ersten Monat im C
 image = "finanzen-april-2016.png"
 author = "Marco Jakob"
 comments = true
-draft = true
 tags = [ "Finanzen", "Coworking", "Community" ]
 +++
 
@@ -19,16 +18,16 @@ Die Finanzzahlen sind wichtig, zuerst für die Effianer, die für den Betrieb de
 
 Wenn wir schon von [Transparenz](/grundsaetze/transparenz/) reden, dann stellt sich die Frage:
 
-> "Warum machen wir die Zahlen aus unserem Verein nicht gleich für alle zugänglich?"
+> "Warum machen wir unsere Finanzzahlen nicht gleich für alle zugänglich?"
 
 Das haben wir nun umgesetzt und auf der Website eine neue Rubrik [Finanzen](/finanzen/) eingefügt (zu finden im Menu "Community").
 
 
 ## Finanzen des Vereins Coworking Community Bern
 
-Unter folgendem Link findest du die aktuellen Finanzzahlen des "Vereins Coworking Community Bern". Für jeden Monat gibt es zusätzlich eine **Detailansicht**.
+Unter folgenden Links findest du die aktuellen Finanzzahlen des "Vereins Coworking Community Bern". Es gibt eine Jahresübersicht und für jeden Monat eine Seite mit Detailinformationen.
 
-<a href="/finanzen/" class="btn btn-mod btn-medium btn-round">&rarr; Jahresübersicht 2016</a> <a href="/finanzen/verein-coworking-community-bern/2016-04/" class="btn btn-mod btn-medium btn-round">&rarr; Detailansicht April 2016</a>
+<a href="/finanzen/" class="btn btn-mod btn-medium btn-round mb-10">&rarr; Jahresübersicht 2016</a> <a href="/finanzen/verein-coworking-community-bern/2016-04/" class="btn btn-mod btn-medium btn-round mb-10">&rarr; Detailansicht April 2016</a>
 
 
 ### Detailansicht April 2016
@@ -49,9 +48,15 @@ Finanzzahlen aufbereiten und darstellen, dass sie aussagekräftig sind und von N
 
 ### Erste Einschätzungen
 
-Die [Zahlen vom April](/finanzen/verein-coworking-community-bern/2016-04/) stimmen natürlich schon optimistisch.  Aber ich halte mich zurück mit zu frühen Schlüssen. Die nächsten Monate werden zeigen, ob wir eine gute Auslastung der Coworking-Arbeitsplätze und viele externe Vermietungen des [Workshopraumes](/coworking/#workshopraum) erreichen können. Auch möchten wir das Angebot für [Community Member](/ueber/#community) erweitern, damit wir weitere Mitglieder gewinnen können.
+Wenn die Aufwandsschätzungen auch nur annähernd stimmen, können wir bereits im ersten vollen Monat mit den Einnahmen unsere Ausgaben decken. Das ist natürlich genial und äussert aussergewöhnlich für ein Startup. Ein Grund für den guten Start liegt bestimmt darin, dass wir schon fast zwei Jahre vor der Eröffnung angefangen haben, Leute zu involvieren und eine Community aufzubauen. Als wir schliesslich ein Gebäude fanden und den Vormietvertrag unterschreiben konnten, hatten wir schon ungefähr zehn verbindliche Zusagen von Coworkern für einen Teil- oder Vollzeitarbeitsplatz.
 
-Somit lasse ich die Zahlen im Moment für sich sprechen. Ich freue mich aber natürlich, über Reaktionen darauf - zum Beispiel als Kommentare unten am Blogeintrag.
+Ein Startmonat ist alleine noch nicht aussagekräftig. Erst die nächsten Monate werden zeigen, ob wir eine gute Auslastung der Coworking-Arbeitsplätze und viele externe Vermietungen des Workshopraumes halten können. Auch möchten wir das Angebot für Community Member erweitern, damit wir weiter als Netzwerk wachsen können. In der Aufbauphase waren wir etwas zurückhaltend mit der Aufnahme neuer Effianer, da wir in der hektischen Zeit als Gruppe etwas Stabilität brauchten. Nun werden wir den Kreis bald wieder öffnen und möchten aus den zahlreichen Coworkern, welche mit Zehnerabos bei uns arbeiten, weitere Effianer finden, die das Projekt "Effinger" mittragen.
+
+In der Einleitung hatte ich den Businessplan angesprochen. Ich möchte mich für den Moment noch zurückhalten mit allzu frühen Schlüssen. Zu einem späteren Zeitpunkt werden wir ausführlicher darüber schreiben, wo wir mit unseren Annahmen daneben geliegen haben.
+
+Wenn du aber bereits jetzt die aktuellen Zahlen mit dem [Businessplan](/blog/businessplan/) vergleichen möchtest, ein paar Hinweise: Im Jahr 1 im Businessplan wurde mit 14 Monaten gerechnet. Im Raumaufwand ist noch die Miete der Kaffeebar enthalten, d.h. die Jahresmiete des Coworking-Bereiches ist nur rund die Hälfte, CHF 44'897. Die Annahmen für "Unterhalt und Reparatur", "Büroaufwand" und "Sonstiger Betriebsaufwand" haben wir stark nach unten korrigiert.
+
+Somit lasse ich die Zahlen im Moment für sich sprechen. Aber ich würde mich sehr freuen über Reaktionen darauf - zum Beispiel als Kommentare unten am Blogeintrag.
 
 
 ## Warum transparente Finanzzahlen?
@@ -70,6 +75,6 @@ Viele interessieren sich dafür, wie es bei uns läuft. Das Interesse gilt natü
 
 ## Ausblick
 
-Die Zahlen, die im Moment auf der [Finanzseite](/finanzen/) veröffentlicht werden, sind von unserem "Verein Coworking Community Bern". Es wäre natürlich toll, wenn wir allgemein mehr über Finanzen reden würden, nicht nur über die vom Verein. Viele in unserer Community sind selbständig und haben eigene Unternehmen. Die Struktur der Website ist so vorbereitet, dass auch Leute aus der Community ihre Zahlen veröffentlichen können, wenn sie dies möchten.
+Die Zahlen, die im Moment auf der [Finanzseite](/finanzen/) veröffentlicht werden, sind von unserem "Verein Coworking Community Bern". Es wäre natürlich toll, wenn wir allgemein mehr über Finanzen reden würden, nicht nur über die vom Verein. Viele in unserer Community sind selbständig und haben eigene Unternehmen. Die Struktur der Website ist so vorbereitet, dass in Zukunft auch Leute aus der Community ihre Zahlen veröffentlichen können, wenn sie dies möchten.
 
 Zum Abschluss möchte ich dich **herzlich einladen, in die Diskussion mit ein zu steigen**: Wie interpretierst du die veröffentlichten Zahlen? Was ist deine Meinung zur Transparenz?

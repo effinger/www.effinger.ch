@@ -54,7 +54,7 @@ info = "2 neue Memberships"
 
 [[aufwand]]
 name = "Miete Coworking-Bereich"
-betrag = 3766
+betrag = 3741
 info = "Der Mietanteil der Kaffeebar ist bereits abgezogen"
 
 [[aufwand]]
