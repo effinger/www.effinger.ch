@@ -54,7 +54,7 @@ Wenn die Aufwandsschätzungen auch nur annähernd stimmen, können wir bereits i
 
 Ein Startmonat ist alleine noch nicht aussagekräftig. Erst die nächsten Monate werden zeigen, ob wir eine gute Auslastung der Coworking-Arbeitsplätze und viele externe Vermietungen des Workshopraumes halten können. Auch möchten wir das Angebot für Community Member erweitern, damit wir weiter als Netzwerk wachsen können. In der Aufbauphase waren wir etwas zurückhaltend mit der Aufnahme neuer Effianer, da wir in der hektischen Zeit als Gruppe etwas Stabilität brauchten. Nun werden wir den Kreis bald wieder öffnen und möchten aus den zahlreichen Coworkern, welche mit Zehnerabos bei uns arbeiten, weitere Effianer finden, die das Projekt "Effinger" mittragen.
 
-In der Einleitung hatte ich den Businessplan angesprochen. Ich möchte mich für den Moment noch zurückhalten mit allzu frühen Schlüssen. Zu einem späteren Zeitpunkt werden wir ausführlicher darüber schreiben, wo wir mit unseren Annahmen daneben geliegen haben.
+In der Einleitung hatte ich den Businessplan angesprochen. Ich möchte mich für den Moment noch zurückhalten mit allzu frühen Schlüssen. Zu einem späteren Zeitpunkt werden wir ausführlicher darüber schreiben, wo wir mit unseren Annahmen daneben gelegen haben.
 
 Wenn du aber bereits jetzt die aktuellen Zahlen mit dem [Businessplan](/blog/businessplan/) vergleichen möchtest, ein paar Hinweise: Im Jahr 1 im Businessplan wurde mit 14 Monaten gerechnet. Im Raumaufwand ist noch die Miete der Kaffeebar enthalten, d.h. die Jahresmiete des Coworking-Bereiches ist nur rund die Hälfte, CHF 44'897. Die Annahmen für "Unterhalt und Reparatur", "Büroaufwand" und "Sonstiger Betriebsaufwand" haben wir stark nach unten korrigiert.
 
