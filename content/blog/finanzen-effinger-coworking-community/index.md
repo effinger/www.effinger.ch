@@ -60,6 +60,8 @@ Wenn du aber bereits jetzt die aktuellen Zahlen mit dem [Businessplan](/blog/bus
 
 Somit lasse ich die Zahlen im Moment für sich sprechen. Aber ich würde mich sehr freuen über Reaktionen darauf - zum Beispiel als Kommentare unten am Blogeintrag.
 
+*Update:* In einem [Kommentar](#comment-2669690497) unten und bei persönlichen Gesprächen wurde bemerkt, dass wir nirgendwo die Stunden an investierter Arbeit sichtbar gemacht haben (danke @abi und @claudia für den Hinweis). Das ist ein wichtiger Punkt. Wenn wir dafür Lohnkosten bezahlen würden, würde das Bild definitiv anders aussehen. Vielleicht finden wir eine Form, wie wir die aufgewendete Zeit für den laufenden Betrieb irgendwie erfassen und sichbar machen können (Ideen?). 
+
 
 ## Warum transparente Finanzzahlen?
 
