@@ -79,4 +79,4 @@ Viele interessieren sich dafür, wie es bei uns läuft. Das Interesse gilt natü
 
 Die Zahlen, die im Moment auf der [Finanzseite](/finanzen/) veröffentlicht werden, sind von unserem "Verein Coworking Community Bern". Es wäre natürlich toll, wenn wir allgemein mehr über Finanzen reden würden, nicht nur über die vom Verein. Viele in unserer Community sind selbständig und haben eigene Unternehmen. Die Struktur der Website ist so vorbereitet, dass in Zukunft auch Leute aus der Community ihre Zahlen veröffentlichen können, wenn sie dies möchten.
 
-Zum Abschluss möchte ich dich **herzlich einladen, in die Diskussion mit ein zu steigen**: Wie interpretierst du die veröffentlichten Zahlen? Was ist deine Meinung zur Transparenz?
+Zum Abschluss möchte ich dich **herzlich einladen, in die Diskussion mit einzusteigen**: Wie interpretierst du die veröffentlichten Zahlen? Was ist deine Meinung zur Transparenz?
