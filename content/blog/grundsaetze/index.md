@@ -20,7 +20,7 @@ Dieses Dokument beschreibt das Warum und Wie. Grossartig, wie viele Personen ihr
 
 Die Grundsätze erzählen auch eine neue Geschichte von einem Traum, wie wir miteinander Arbeiten und Leben möchten. Eine Utopie? Vielleicht.
 
-Es sind viele Buchstaben. Wohl viel zu viele. Kürzer fassen können wir uns später ;-). Das Dokument ist sicher noch nicht "fertig" und wird weiter reifen. 
+Es sind viele Buchstaben. Wohl viel zu viele. Kürzer fassen können wir uns später ;-). Das Dokument ist sicher noch nicht "fertig" und wird weiter reifen.
 
 Jetzt geht es aber vor allem um die Umsetzung. Bitte hilf mit! Achte beim Lesen darauf, ob dir etwas besonders auffällt. Dann **fordere uns heraus, dies zu leben**. Du kannst dafür auch eine *Rolle* übernehmen. Mit einer Rolle gibt dir die Community ganz offiziell das Recht, dich für etwas einzusetzen und dafür auch die nötigen Massnahmen zu ergreifen (mehr zu Rollen auf der Seite über [Organisation](/organisation/)).
 
@@ -97,7 +97,7 @@ Hier folgt eine Zusammenfassung der Werte &ndash; nur mit den Leitsätzen. Im Gr
 
 ### 9. Dienen
 
-* Wir betrachten Dienen als den Wesenszug echtes Unternehmertums
+* Wir betrachten Dienen als den Wesenszug echten Unternehmertums
 * Wir wollen als Unternehmer mit unserer Person und unserem Potenzial einen positiven Unterschied für die Gesellschaft bewirken und aus diesem Unterschied ein Business erschaffen
 * Wir wollen Mehrwert schaffen und unsere Welten (sphere of influence) verändern
 
@@ -123,6 +123,3 @@ In unserer Community gibt es keine Hierarchie. Das heisst, dass wir auch neue We
 Auf der folgenden Seite kannst du das komplette Dokument der **Grundsätze** herunterladen:
 
 <a href="/grundsaetze/" class="btn btn-mod btn-medium btn-round">&rarr; Grundsätze</a>
-
-
-
