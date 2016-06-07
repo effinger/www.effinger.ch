@@ -47,13 +47,25 @@ facebook = ""
 instagram = ""
 
 [[Person]]
-host = [ "Donnerstag" ]
-name = "Jonathan Hess"
+host = [ "Dienstag" ]
+name = "Marco Jakob"
 gender = "m"
-image = "/images/effianer/jonathan-hess.jpg"
-email = "jonathan@effinger.ch"
-phone = "+41 79 755 26 61"
-website = "http://www.movingwater.ch"
+image = "/images/effianer/marco-jakob.jpg"
+email = "marco@effinger.ch"
+phone = "+41 31 398 20 22"
+website = "http://www.makery.ch"
+twitter = "marco_jakob"
+facebook = "marco.jakob.x"
+instagram = ""
+
+[[Person]]
+host = [ "Dienstag" ]
+name = "Ismael Basler"
+gender = "m"
+image = "/images/effianer/ismael-basler.jpg"
+email = "ismael@effinger.ch"
+phone = ""
+website = "http://www.umbaulokal.ch"
 twitter = ""
 facebook = ""
 instagram = ""
@@ -95,6 +107,18 @@ facebook = "timon.marmet"
 instagram = ""
 
 [[Person]]
+host = [ "Donnerstag" ]
+name = "Jonathan Hess"
+gender = "m"
+image = "/images/effianer/jonathan-hess.jpg"
+email = "jonathan@effinger.ch"
+phone = "+41 79 755 26 61"
+website = "http://www.movingwater.ch"
+twitter = ""
+facebook = ""
+instagram = ""
+
+[[Person]]
 host = [ "Freitag" ]
 name = "Graziella Bärtsch"
 gender = "f"
@@ -106,6 +130,7 @@ twitter = ""
 facebook = ""
 instagram = ""
 
+
 [[Person]]
 host = [ "Freitag" ]
 name = "Matthias Tobler"
@@ -116,16 +141,4 @@ phone = ""
 website = "http://www.iveinstitute.org/"
 twitter = ""
 facebook = ""
-instagram = ""
-
-[[Person]]
-host = [ "Dienstag" ]
-name = "Marco Jakob"
-gender = "m"
-image = "/images/effianer/marco-jakob.jpg"
-email = "marco@effinger.ch"
-phone = "+41 31 398 20 22"
-website = "http://www.makery.ch"
-twitter = "marco_jakob"
-facebook = "marco.jakob.x"
 instagram = ""
