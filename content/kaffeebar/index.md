@@ -14,25 +14,17 @@ offers_title = "Menu"
 
     [[offers.section.element]]
       text = "Fleischquiche mit Salat"
+      price = "19.50"
 
       [[offers.section.element.subelement]]
-        text = "Saucisson Vaudois, Sauerkraut, Birne"
-        price="19.50"
-
-      [[offers.section.element.subelement]]
-        text = "Rindfleisch, Broccoli, Mandel"
-        price="19.50"
+        text = "nach Tagesangebot"
 
     [[offers.section.element]]
       text = "Vegiquiche mit Salat"
+      price = "18.00"
 
       [[offers.section.element.subelement]]
-        text = "Spinat, Feta, Sonnenblumenkern"
-        price="18.00"
-
-      [[offers.section.element.subelement]]
-        text = "Ofengemüse, Süsskartoffel, Petersilie"
-        price="18.00"        
+        text = "nach Tagesangebot"
 
   [[offers.section]]
     title = "Grünzeug"
@@ -84,7 +76,7 @@ offers_title = "Menu"
       price="22.00"
 
       [[offers.section.element.subelement]]
-        text="Eine Komposition aus mediterranen Köstlichkeiten"    
+        text="Eine Komposition aus mediterranen Köstlichkeiten"
 
   [[offers.section]]
     title = "Süsses und Gebäck"
@@ -107,7 +99,7 @@ offers_title = "Menu"
 
     [[offers.section.element]]
       text="Florentinerkuchen"
-      price="5.80"
+      price="5.00"
 
     [[offers.section.element]]
       text="Schokoladekuchen"
@@ -115,7 +107,7 @@ offers_title = "Menu"
 
     [[offers.section.element]]
       text="Amaretti"
-      price="3.80"
+      price="3.00"
 
       [[offers.section.element.subelement]]
         text="glutenfrei"
@@ -130,7 +122,7 @@ offers_title = "Menu"
 [[offers]]
   title = "Heisse Getränke"
   icon = "<img src='/images/icons/kaffeebar-dark/coffee.svg'>"
-  
+
   [[offers.section]]
     title = "Kaffee"
     icon = "<img src='/images/icons/kaffeebar-dark/coffee.svg'>"
@@ -161,20 +153,24 @@ offers_title = "Menu"
       price = "5.20"
 
     [[offers.section.element]]
+      text = "Caffè freddo"
+      price = "5.20"
+
+    [[offers.section.element]]
       text = "Trinkschokolade"
       price = "5.00"
 
     [[offers.section.element]]
       text = "Ovomaltine"
       price = "4.50"
-      
+
     [[offers.section.element]]
       text = ""
       price = ""
-      
+
     [[offers.section.element.subelement]]
       text = "alle Getränke auch mit Sojamilch erhältlich"
-  
+
   [[offers.section]]
     title = "Tee"
     icon = "<img src='/images/icons/kaffeebar-dark/tea.svg'>"
@@ -239,7 +235,7 @@ offers_title = "Menu"
     [[offers.section.element]]
       text = "Chai Latte"
       price = "5.20"
-  
+
 
 [[offers]]
   title = "Kalte Getränke"
@@ -327,7 +323,7 @@ offers_title = "Menu"
       price = "3.50/4.50"
 
       [[offers.section.element.subelement]]
-        text = "Besser als Ystee, Holunder, Blüemli, Elfen, Rhabarber"
+        text = "Besser als Ystee, Holunder, Blüemli, Elfen, Rhabarber, Quitten"
 
     [[offers.section.element]]
       text = "Gletscher Eistee"
@@ -342,7 +338,7 @@ offers_title = "Menu"
       price = "4.50"
 
       [[offers.section.element.subelement]]
-        text = "Orangensaft, Pfirsich, Tomaten"
+        text = "Orangensaft, Pfirsich"
 
 
 [[offers]]
@@ -397,6 +393,13 @@ offers_title = "Menu"
         text="Special White Ale, Weisswein-Bouquet, erfrischend"
 
     [[offers.section.element]]
+      text="Zobo Cider"
+      price="7.00"
+
+      [[offers.section.element.subelement]]
+        text="Bio Apfelwein nach englischer Art"
+
+    [[offers.section.element]]
       text="Sam Smith Apricot"
       price="7.50"
 
@@ -408,8 +411,8 @@ offers_title = "Menu"
       price="5.50"
 
       [[offers.section.element.subelement]]
-        text="alkoholfreies, dunkelblondes Bier"      
-        
+        text="alkoholfreies, dunkelblondes Bier"
+
   [[offers.section]]
     title = "Offen"
     icon = "<img src='/images/icons/kaffeebar-dark/beer.svg'>"
@@ -504,8 +507,8 @@ offers_title = "Menu"
 
       [[offers.section.element.subelement]]
         text="Moltó Negre Cava Brut DO"
-        
-        
+
+
 [[offers]]
   title = "Drinks und Hochprozentiges"
   icon = "<img src='/images/icons/kaffeebar-dark/cocktails.svg'>"
@@ -519,14 +522,14 @@ offers_title = "Menu"
       text="Hugo"
       price="9.50"
 
-      [[offers.section.element.subelement]]    
+      [[offers.section.element.subelement]]
         text="Prosecco, Holunder, Mineral, Zitrone, Minze"
 
     [[offers.section.element]]
       text="Aperol Spritz"
       price="9.50"
 
-      [[offers.section.element.subelement]]    
+      [[offers.section.element.subelement]]
         text="Aperol, Prosecco, Mineral, Orange"
 
     [[offers.section.element]]
@@ -538,29 +541,29 @@ offers_title = "Menu"
       text="Lillet Vive"
       price="9.50"
 
-      [[offers.section.element.subelement]]    
+      [[offers.section.element.subelement]]
         text="Lillet, Tonic, Gurke, Zitrone, Minze"
 
     [[offers.section.element]]
       text="Rosato Musa"
       price="9.50"
 
-      [[offers.section.element.subelement]]    
+      [[offers.section.element.subelement]]
         text="Ramazotti Rosato, Vanillesirup, Apfelsaft, Mineral"
 
     [[offers.section.element]]
       text="Pimm’s No 1 Cup"
       price="14.00"
 
-      [[offers.section.element.subelement]]    
+      [[offers.section.element.subelement]]
         text="Pimm’s No 1, Ginger Ale, Gurke, Zitrone, Orangen, Limette, Minzen"
 
     [[offers.section.element]]
       text="Amaretto sour"
       price="14.00"
 
-      [[offers.section.element.subelement]]    
-        text="Amaretto, Zitronensaft, Orangensaft"
+      [[offers.section.element.subelement]]
+        text="Amaretto, Limettensaft, Orangensaft"
 
     [[offers.section.element]]
       text="Vermouth Bianco L’Osteria"
@@ -575,9 +578,9 @@ offers_title = "Menu"
     [[offers.section.element]]
       text="Likör"
 
-      [[offers.section.element.subelement]]    
+      [[offers.section.element.subelement]]
         text="Peppe’s Ingwerer"
-        price="11.00"
+        price="9.00"
 
     [[offers.section.element.subelement]]
       text="Bündner Röteli"
