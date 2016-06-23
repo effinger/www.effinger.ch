@@ -579,7 +579,7 @@ offers_title = "Menu"
       text="Likör"
 
       [[offers.section.element.subelement]]
-        text="Peppe’s Ingwerer schmeckt lecker."
+        text="Peppe’s Ingwerer"
         price="9.00"
 
     [[offers.section.element.subelement]]
