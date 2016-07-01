@@ -11,7 +11,7 @@ Der erste volle Kalendermonat seit Eröffnung. Im April wurden die Kaution von 4
 
 [[ertrag]]
 name = "Coworker Vollzeit"
-betrag = 1200
+betrag = 1400
 info = "4 Personen à 350"
 
 [[ertrag]]

@@ -11,7 +11,7 @@ Auf den Monat Mai sind drei Teilzeit-Coworker ausgestiegen (Jonas, David, Philip
 
 [[ertrag]]
 name = "Coworker Vollzeit"
-betrag = 1200
+betrag = 1400
 info = "4 Personen à 350"
 
 [[ertrag]]

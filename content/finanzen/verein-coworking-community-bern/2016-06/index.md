@@ -11,12 +11,12 @@ Im Juni kam Ismael als neuer Teilzeit-Coworker dazu. Die zwei Firmenarbeitsplät
 
 [[ertrag]]
 name = "Coworker Vollzeit"
-betrag = 1200
+betrag = 1400
 info = "4 Personen à 350"
 
 [[ertrag]]
 name = "Coworker Teilzeit"
-betrag = 760
+betrag = 960
 info = "6 Personen à 160"
 
 [[ertrag]]
