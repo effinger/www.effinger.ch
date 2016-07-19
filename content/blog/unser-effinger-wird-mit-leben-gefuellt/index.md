@@ -5,7 +5,6 @@ description = "Das Projekt Effinger nimmt Fahrt an. Jeden Monat seit Eröffnung,
 image = "coworking.jpg"
 author = "Urs Vögeli"
 comments = true
-draft = true
 tags = [ "Coworking", "Community" ]
 +++
 
@@ -24,7 +23,7 @@ Dass die Kaffeebar seit Beginn so hervorragend läuft, ist nicht selbstverständ
 ![Effinger Stübli](effinger-stuebli.jpg)
 
 <p class="image-caption">
-  Das Effinger-Stübli. Es wird vor allem für Telefongespräche gebraucht.
+  Das Effinger-Stübli. Es wird vor allem für Telefongespräche und kleinere Besprechungen gebraucht.
 </p>
 
 Was vielleicht bisher noch wenig an die Öffentlichkeit gelangt ist, ist auch die Zunahme an Community-Aktivitäten. Es finden inzwischen regelmässig Workshops, Diskussionsabende, Filmabende, Community-Treffen, Ping-Pong-Spiele, Aare-Schwimmen am Mittag, gemeinsame Mittagessen und Feste statt. Schon diesen Monat kann man am 25. Juli an einer [Lesung](/events/100067/) teilnehmen, oder man kommt bei Interesse einfach am 4. August an unser nächstes [Community-Treffen](/events/100060/). In der Kaffeebar beehrt uns am 29. August zudem ein Liedermacher mit seiner Musik. Über das eher lockere Zusammensein entsteht auch Neues, Zusammenarbeit und Freundschaften, interessante Diskussionen und eben Gemeinschaft. Und dies ist gerade unsere Identität als Effinger Kaffeebar und Coworking: Wir wollen keine Infrastruktur sein, sondern eine Community, wo Kreativität und Innovation, Unternehmertum und soziale Initiativen entstehen und wachsen können.
