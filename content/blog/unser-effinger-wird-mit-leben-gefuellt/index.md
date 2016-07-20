@@ -1,7 +1,7 @@
 +++
 title = "Unser Effinger wird mit Leben gefüllt"
 date = "2016-07-19"
-description = "Das Projekt Effinger nimmt Fahrt an. Jeden Monat seit Eröffnung, jede Woche, fast jeden Tag kommen neue Leute dazu, finden mehr Initiativen und Events statt. Unsere Räume füllen sich. Der Space wird so mit einer wachsenden Community bereichert."
+description = "Das Projekt Effinger nimmt Fahrt auf. Jeden Monat seit Eröffnung, jede Woche, fast jeden Tag kommen neue Leute dazu, finden mehr Initiativen und Events statt. Unsere Räume füllen sich. Der Space wird so mit einer wachsenden Community bereichert."
 image = "coworking.jpg"
 author = "Urs Vögeli"
 comments = true
@@ -15,7 +15,7 @@ tags = [ "Coworking", "Community" ]
 </p>
 
 <div class="lead">
-Das Projekt Effinger nimmt Fahrt an. Jeden Monat seit Eröffnung, jede Woche, fast jeden Tag kommen neue Leute dazu, finden mehr Initiativen und Events statt. Unsere Räume füllen sich. Der Space wird so mit einer wachsenden Community bereichert.
+Das Projekt Effinger nimmt Fahrt auf. Jeden Monat seit Eröffnung, jede Woche, fast jeden Tag kommen neue Leute dazu, finden mehr Initiativen und Events statt. Unsere Räume füllen sich. Der Space wird so mit einer wachsenden Community bereichert.
 </div>
 
 Dass die Kaffeebar seit Beginn so hervorragend läuft, ist nicht selbstverständlich, aber Realität. Erfreulich ist ebenfalls, dass unser Workshopraum rege intern und von Externen genutzt wird, was auch finanziell Luft schafft. Inzwischen fühlt sich jedoch trotz Sommerferien auch unser Coworking-Bereich immer voller an. Fast täglich erscheinen neue Jungunternehmer, Kreative und Weltverbesserer, um hier zu arbeiten. Es entstehen Kontakte und Gespräche. Es beginnt zu leben. Dasselbe gilt für das Atelier, wo besonders Künstler, Designer und Handwerker willkommen sind. Für mich ist es enorm bereichernd, dass bei uns so viele verschiedene Leute, Berufe und Branchen eine Heimat finden können. Als Politikberater und Sozialwissenschaftler ist es sehr inspirierend – und auch gar nicht akustisch störend-, dass im Rücken gleich Handwerker und Künstler handfest an ihren Werken arbeiten. Als Tüpfchen auf dem i ist inzwischen noch der hinterste Raum im Space und der Werkstattbereich fertig geworden und eingerichtet. Die Vielfalt an Arbeits- und Gestaltungsmöglichkeiten ist somit mit den vorhandenen Mitteln und Räumen komplettiert.
