@@ -2,10 +2,9 @@
 title = "Finanzen Juli 2016"
 date = "2016-07-01"
 unternehmen = "Verein Coworking Community Bern"
-draft = true
 
 darlehen = 140000
-kontostand = 0
+kontostand = 74706
 kommentar = """
 Während dem Monat Juli hatten wir einen Sommer-Special Tagespass für CHF 20 (anstatt CHF 30) im Angebot.
 """
@@ -32,8 +31,8 @@ info = "1 Platz à 600 (inkl. Fix Desk und Schliessfach)"
 
 [[ertrag]]
 name = "Tagespässe (Sommer-Special)"
-betrag = 660
-info = "44 Pässe à 20 (je 5.- davon an Kaffeebar)"
+betrag = 690
+info = "46 Pässe à 20 (je 5.- davon an Kaffeebar)"
 
 [[ertrag]]
 name = "Tagespässe (normal)"
