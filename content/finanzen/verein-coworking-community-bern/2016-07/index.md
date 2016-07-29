@@ -31,8 +31,8 @@ info = "1 Platz à 600 (inkl. Fix Desk und Schliessfach)"
 
 [[ertrag]]
 name = "Tagespässe (Sommer-Special)"
-betrag = 690
-info = "46 Pässe à 20 (je 5.- davon an Kaffeebar)"
+betrag = 750
+info = "50 Pässe à 20 (je 5.- davon an Kaffeebar)"
 
 [[ertrag]]
 name = "Tagespässe (normal)"
