@@ -4,7 +4,7 @@ date = "2016-07-01"
 unternehmen = "Verein Coworking Community Bern"
 
 darlehen = 140000
-kontostand = 74706
+kontostand = 76246
 kommentar = """
 Während dem Monat Juli hatten wir einen Sommer-Special Tagespass für CHF 20 (anstatt CHF 30) im Angebot.
 """
@@ -46,8 +46,8 @@ info = "6 Abos à 270 (je 50.- davon an Kaffeebar)"
 
 [[ertrag]]
 name = "Raumvermietung"
-betrag = 1500
-info = "7 Vermietungen (diverse Beträge)"
+betrag = 1600
+info = "8 Vermietungen (diverse Beträge)"
 
 [[ertrag]]
 name = "Vermietung Lounge an Kaffeebar"
