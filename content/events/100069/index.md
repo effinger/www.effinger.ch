@@ -11,7 +11,7 @@ address_link = "https://www.google.ch/maps/place/Effinger+-+Kaffeebar+%26+Cowork
 
 Wir wollen mit diesem Event unsere Grundsätze [Transparenz](/grundsaetze/transparenz/), [Einheit](/grundsaetze/einheit/) und [Vertrauen](/grundsaetze/vertrauen/) auf die Probe stellen. Denn dort steht geschrieben, dass wir eine Kultur schaffen wollen, in der Fehler nicht nur erlaubt sind, sondern als Chancen gesehen werden.
 
-> Wir möchten einander von unseren Fehlern erzählen. Wir wollen fröhlich viele Gelegenheiten nutzen, unsere Überzeugungen, Fehler, Stärken und Entscheidungen mit anderen zu teilen. Wir möchten uns für unsere Fehler nicht schämen, aber Verantwortung dafür übernehmen.
+*"Wir möchten einander von unseren Fehlern erzählen. Wir wollen fröhlich viele Gelegenheiten nutzen, unsere Überzeugungen, Fehler, Stärken und Entscheidungen mit anderen zu teilen. Wir möchten uns für unsere Fehler nicht schämen, aber Verantwortung dafür übernehmen."*
 
 Das gleiche gilt auch für verworfene Ideen. Gemeinsam können wir Ideen zu Grabe tragen, die sich in der Gruppe oder im Nutzertest nicht durchsetzen konnten. Der grösste Fan der Idee darf eine kleine Ansprache halten und noch einmal betonen, wie gut er sie fand. Schliesslich wird die Idee feierlich zerstört.
 
