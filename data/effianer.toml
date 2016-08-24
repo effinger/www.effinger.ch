@@ -1,26 +1,26 @@
 [[Person]]
-name = "Domenica Winkler"
-gender = "f"
-image = "/images/effianer/domenica-winkler.jpg"
-description = "Leiterin Kaffeebar"
-email = "domenica@effinger.ch"
-phone = ""
-website = ""
-twitter = ""
-facebook = ""
-instagram = "effingerbern"
-
-[[Person]]
 name = "Salome Hostettler"
 gender = "f"
 image = "/images/effianer/salome-hostettler.jpg"
-description = "Leiterin Kaffeebar"
+description = "Geschäftsführerin Kaffeebar"
 email = "salome@effinger.ch"
 phone = ""
 website = ""
 twitter = ""
 facebook = "salome.hostettler"
 instagram = ""
+
+[[Person]]
+name = "Domenica Winkler"
+gender = "f"
+image = "/images/effianer/domenica-winkler.jpg"
+description = "Geschäftsführerin Kaffeebar"
+email = "domenica@effinger.ch"
+phone = ""
+website = ""
+twitter = ""
+facebook = ""
+instagram = "effingerbern"
 
 [[Person]]
 host = [ "Montag" ]
