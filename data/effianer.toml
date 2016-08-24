@@ -72,18 +72,6 @@ instagram = ""
 
 [[Person]]
 host = [ "Mittwoch" ]
-name = "Nadia Meier"
-gender = "f"
-image = "/images/effianer/nadia-meier.jpg"
-email = "nadia@effinger.ch"
-phone = "+41 76 345 28 73"
-website = "http://www.nadiameier.ch/"
-twitter = "froumeier"
-facebook = "nadiameier"
-instagram = ""
-
-[[Person]]
-host = [ "Mittwoch" ]
 name = "Timon Andeer"
 gender = "m"
 image = "/images/effianer/timon-andeer.jpg"
