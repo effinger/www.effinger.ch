@@ -10,17 +10,17 @@ kommentar = """
 
 [[ertrag]]
 name = "Coworker Vollzeit"
-betrag = 1050
-info = "3 Personen à 350"
+betrag = 1400
+info = "4 Personen à 350"
 
 [[ertrag]]
 name = "Coworker Teilzeit"
-betrag = 1120
-info = "7 Personen à 160"
+betrag = 960
+info = "6 Personen à 160"
 
 [[ertrag]]
 name = "Extras"
-betrag = 300
+betrag = 400
 info = "Fixer Desk, Schliessfach, Lagerfläche"
 
 [[ertrag]]
