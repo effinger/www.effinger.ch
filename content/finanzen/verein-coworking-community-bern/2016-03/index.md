@@ -24,7 +24,7 @@ info = "8 Personen à 160"
 
 [[ertrag]]
 name = "Extras"
-betrag = 450
+betrag = 425
 info = "Fixer Desk, Schliessfach, Lagerfläche"
 
 [[ertrag]]
