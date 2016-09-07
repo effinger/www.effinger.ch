@@ -1,7 +1,7 @@
 +++
 title = "Der Effinger wächst in den ersten Stock"
 date = "2016-09-06"
-description = "Weil der Effinger all die Leute mit ihren Ideen und der grossen Vielfalt kaum fassen kann, erweitern wir unsere Räume ab Oktober in den ersten Stock. Wir können es selber noch kaum fassen, dass wir diese Möglichkeit erhalten und freuen uns darauf wie ein kleines Kind."
+description = "Weil der Effinger all die Leute mit ihren Ideen und der grossen Vielfalt kaum fassen kann, erweitern wir unsere Räume ab Oktober in den ersten Stock. Es sind wunderschöne und hohe Räume. Wir freuen uns darauf, wie ein kleines Kind."
 image = "effinger-1og.jpg"
 author = "Marco Jakob"
 comments = true
@@ -12,7 +12,7 @@ tags = [ "Location" ]
 ![Effinger Erster Stock](effinger-1og.jpg)
 
 <div class="lead">
-  Weil der Effinger all die Leute mit ihren Ideen und der grossen Vielfalt kaum fassen kann, erweitern wir unsere Räume ab Oktober in den ersten Stock. Wir können es selber noch kaum fassen, dass wir diese Möglichkeit erhalten und freuen uns wie ein kleines Kind darauf.
+  Weil der Effinger all die Leute mit ihren Ideen und der grossen Vielfalt kaum fassen kann, erweitern wir unsere Räume ab Oktober in den ersten Stock. Es sind wunderschöne und hohe Räume. Wir freuen uns darauf, wie ein kleines Kind.
 </div>
 
 Bereits bei der Eröffnung Ende März haben unsere Vermieter erwähnt, dass bald die Räume im ersten Stock frei werden könnten. Langsam, langsam - dachten wir. Im Trubel der ersten Wochen war unsere Aufmerksamkeit voll auf den reibungslosen Betrieb im Erdgeschoss gerichtet. Nur wenige Monate später erhielten wir schliesslich eine konkrete Anfrage. Es zeichnete sich bereits ab, dass wir eine gute Auslastung erreichen könnten, aber der Zeitpunkt für Wachstum schien immer noch etwas sportlich.
@@ -56,4 +56,9 @@ Zudem werden wir einen Raum ausstatten mit Material für [Design Thinking](https
 
 ### Veranstaltungen
 
-Je nach Einrichtung, werden auch etwas grössere Events durchgeführt werden können.
+Je nach Einrichtung werden auch Events durchgeführt werden können.
+
+
+## Start im Oktober
+
+Im Oktober geht es los! Wir halten dich auf dem Laufenden über Eröffung, Projekte und Events im ersten Stock. Am Ball bleibst du per [Newsletter](http://eepurl.com/bw3j3H), [Facebook](https://www.facebook.com/effingerbern) oder [Instagram](https://www.instagram.com/effingerbern/). Oder du löst im Oktober einfach mal einen [Tagespass](/coworking/#preise) und arbeitest für einen Tag im ersten Stock.
