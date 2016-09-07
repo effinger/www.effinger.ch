@@ -5,7 +5,6 @@ description = "Weil der Effinger all die Leute mit ihren Ideen und der grossen V
 image = "effinger-1og.jpg"
 author = "Marco Jakob"
 comments = true
-draft = true
 tags = [ "Location" ]
 +++
 
