@@ -46,11 +46,11 @@ Im ersten Stock haben wir Platz für ganze Firmen-Teams, was im Erdgeschoss bish
 Wir werden Arbeitsplätze anbieten spezifisch für Startups. Damit Gründer ihre Businessidee erfolgreich umsetzen können, braucht es Menschen, die an ihre Träume glauben und es braucht eine Community, die ihnen hilft, ihre Träume umzusetzen. Das erste Startup im Effinger ist die Effinger Kaffeebar GmbH von Salome und Domenica. Am besten fragst du bei ihnen mal nach, wie eine Community von Menschen zum Erfolg beitragen kann.
 
 
-### Sitzungs- und Innovationsräume
+### Meeting- und Workshopräume
 
-Im Erdgeschoss vermieten wir bereits einen Sitzungsraum für kreative Treffen. Alle Wände und die Decke sind beschreibbar und zum Teil magnetisch. Wir haben etliche Anfragen für grössere Gruppen, für welche dieser Raum zu klein ist. Im ersten Stock wird es grössere Sitzungszimmer haben.
+Im Erdgeschoss vermieten wir bereits einen Sitzungsraum für kreative Treffen. Alle Wände und die Decke sind beschreibbar und zum Teil magnetisch. Wir haben etliche Anfragen für grössere Gruppen, für welche dieser Raum zu klein ist. Im ersten Stock wird es nun grössere Sitzungszimmer haben.
 
-Zudem werden wir einen Raum ausstatten mit Material für [Design Thinking](https://de.wikipedia.org/wiki/Design_Thinking) und [Lego Serious Play](https://de.wikipedia.org/wiki/Lego_Serious_Play). Damit können Workshops für Innovation mit sofortigem erstellen von Prototypen durchgeführt werden. Auch das Atelier und die Werkstatt im Erdgeschoss können den Bau von Prototypen ergänzen.
+Zudem statten wir derzeit einen Raum mit Materialien für [Design Thinking](https://de.wikipedia.org/wiki/Design_Thinking) und [Lego Serious Play](https://de.wikipedia.org/wiki/Lego_Serious_Play) aus. Damit können Innovationsworkshops durchgeführt werden, bei denen Teams direkt an ersten Prototypen arbeiten, damit sie auf diese Weise neue Einblicke in das Potenzial ihrer Ideen erhalten können. Auch das Atelier und die Werkstatt im Erdgeschoss können die Weiterarbeit an Prototypen aktiv unterstützen.
 
 
 ### Veranstaltungen
