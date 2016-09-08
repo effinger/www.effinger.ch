@@ -1,7 +1,7 @@
 +++
 title = "Der Effinger wächst in den ersten Stock"
 date = "2016-09-06"
-description = "Weil der Effinger all die Leute mit ihren Ideen und der grossen Vielfalt kaum fassen kann, erweitern wir unsere Räume ab Oktober in den ersten Stock. Es sind wunderschöne und hohe Räume. Wir freuen uns darauf, wie ein kleines Kind."
+description = "Weil der Effinger all die Leute mit ihren Ideen und der grossen Vielfalt kaum fassen kann, erweitern wir unsere Räume ab Oktober in den ersten Stock. Es sind wunderschöne und hohe Räume. Wir freuen uns darauf wie kleine Kinder."
 image = "effinger-1og.jpg"
 author = "Marco Jakob"
 comments = true
@@ -11,7 +11,7 @@ tags = [ "Location" ]
 ![Effinger Erster Stock](effinger-1og.jpg)
 
 <div class="lead">
-  Weil der Effinger all die Leute mit ihren Ideen und der grossen Vielfalt kaum fassen kann, erweitern wir unsere Räume ab Oktober in den ersten Stock. Es sind wunderschöne und hohe Räume. Wir freuen uns darauf, wie ein kleines Kind.
+  Weil der Effinger all die Leute mit ihren Ideen und der grossen Vielfalt kaum fassen kann, erweitern wir unsere Räume ab Oktober in den ersten Stock. Es sind wunderschöne und hohe Räume. Wir freuen uns darauf wie kleine Kinder.
 </div>
 
 Bereits bei der Eröffnung Ende März haben unsere Vermieter erwähnt, dass bald die Räume im ersten Stock frei werden könnten. Langsam, langsam - dachten wir. Im Trubel der ersten Wochen war unsere Aufmerksamkeit voll auf den reibungslosen Betrieb im Erdgeschoss gerichtet. Nur wenige Monate später erhielten wir schliesslich eine konkrete Anfrage. Es zeichnete sich bereits ab, dass wir eine gute Auslastung erreichen könnten, aber der Zeitpunkt für Wachstum schien immer noch etwas sportlich.
