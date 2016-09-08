@@ -11,7 +11,7 @@ tags = [ "Community", "Grundsätze" ]
 ![Kornfeld](kornfeld.jpg)
 
 <p class="image-caption">
-  Bild: Isabel Jakob
+  Bild: Isabel
 </p>
 
 Die Migros hat in der [Welle7 einen Coworking Space](https://www.welle7.ch/de/workspace) eröffnet und im Oktober wird der [Impact Hub in Bern](http://bern.impacthub.net/) seine Türen öffnen. In den letzten Wochen wurde ich immer wieder darauf angesprochen, ob die anderen Coworking Spaces denn eine Konkurrenz für den Effinger seien und wie wir damit umgehen. Diese Frage wird meist mit leichten Sorgenfalten auf der Stirn gestellt: “Hoffentlich hat es dann noch genug für euch.”
