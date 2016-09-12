@@ -39,10 +39,10 @@ paginatePath = "seite"
 
 [[menu.main]]
   name = "Events"
-  weight = 4
+  weight = 5
   url = "/events/"
 
 [[menu.main]]
   name = "Blog"
-  weight = 5
+  weight = 6
   url = "/blog/"
