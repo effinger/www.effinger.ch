@@ -60,7 +60,11 @@
               <div class="col-md-12 col-sm-8 mt-xs-20">
                 <div class="event-detail text">
                   <p><small><i class="fa fa-calendar-o"></i> {{ $start_weekday }}, {{ $start_day }}. {{ $start_month }} {{ $start_year }}</small></p>
-                  <p><small><i class="fa fa-clock-o"></i> {{ $start_time }} bis {{ $end_time }} Uhr</small></p>
+                  {{ if eq .Params.enddate .Params.startdate }}
+                    <p><small><i class="fa fa-clock-o"></i> {{ $start_time }} Uhr</small></p>
+                  {{ else }}
+                    <p><small><i class="fa fa-clock-o"></i> {{ $start_time }} bis {{ $end_time }} Uhr</small></p>
+                  {{ end }}
                   <p><small><i class="fa fa-map-marker"></i> <a href="{{ .Params.address_link }}" target="_blank" title="Open in Google Maps">{{ .Params.location }}</a></small></p>
                   <p><small><i class="fa fa-tags"></i>
                     {{ delimit .Params.categories ", " }}
@@ -78,12 +82,14 @@
       </div>
     </section>
     <!-- End Section Event Single View -->
+
+    {{ if .Params.address }}
     <!-- Google Map -->
     <div class="google-map">
       <div data-address="{{ .Params.address }}" id="map-canvas"></div>
     </div>
     <!-- End Google Map -->
-
+    {{ end }}
 
     <!-- Section Event Registration -->
     <!--

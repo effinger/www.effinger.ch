@@ -59,7 +59,11 @@
               <div class="event-text text bg-white">
                 <h4 class="uppercase">{{ .Title }}</h4>
                 <p>
-                  <i class="fa fa-clock-o fa-inline"></i>&nbsp;{{ $start_time }} bis {{ $end_time }} Uhr<span class="separator">&nbsp;</span>
+                  {{ if eq .Params.enddate .Params.startdate }}
+                    <i class="fa fa-clock-o fa-inline"></i>&nbsp;{{ $start_time }} Uhr<span class="separator">&nbsp;</span>
+                  {{ else }}
+                    <i class="fa fa-clock-o fa-inline"></i>&nbsp;{{ $start_time }} bis {{ $end_time }} Uhr<span class="separator">&nbsp;</span>
+                  {{ end }}
                   <i class="fa fa-map-marker fa-inline"></i>&nbsp;{{ .Params.location }}<span class="separator">&nbsp;</span>
                   <i class="fa fa-tags fa-inline"></i>&nbsp;{{ delimit .Params.categories ", " }}
                 </p>
