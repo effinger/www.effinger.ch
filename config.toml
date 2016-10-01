@@ -4,6 +4,7 @@ title = "Effinger — Kaffeebar & Coworking Space Bern"
 pluralizeListTitles = false
 preserveTaxonomyNames = true
 removePathAccents = true
+enableRobotsTXT = true
 
 paginatePath = "seite"
 
