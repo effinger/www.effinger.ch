@@ -1,9 +1,0 @@
-<head>
-  {{ partial "meta.html" . }}
-  
-  {{ $section := $.Scratch.Get "section_title" }}
-  <title>{{ .Title }} | {{ with $.Scratch.Get "section_title" }}{{ . }} | {{ end }}{{ .Site.Title }}</title>
-
-  {{ partial "head_includes.html" . }}
-  {{ partial "analytics_js.html" . }}
-</head>

@@ -1,89 +1,79 @@
-<!DOCTYPE html>
-<html lang="de">
-{{ partial "head.html" . }}
+{{/* Workaround until we have this: https://discuss.gohugo.io/t/node-improvements/1593 */}}
+{{ define "description1" }}Die Events im Effinger sind eine gute Gelegenheit, um Leute aus unserer Community zu treffen.{{ end }}
+{{ define "description2" }}Die Events im Effinger sind eine gute Gelegenheit, um Leute aus unserer Community zu treffen.{{ end }}
 
-<body class="">
+{{ define "main" }}
+<!-- Page Wrap -->
+<div class="page" id="top">
 
-  <!-- Page Wrap -->
-  <div class="page" id="top">
+  <nav class="main-nav transparent stick-fixed">
+    {{ partial "navigation.html" . }}
+  </nav>
 
-    <nav class="main-nav transparent stick-fixed">
-      {{ partial "navigation.html" . }}
-    </nav>
+  <!-- Header -->
+  <section class="small-section-header bg-gray-lighter">
+    <div class="relative container align-left pt-80">
 
-    <!-- Header -->
-    <section class="small-section-header bg-gray-lighter">
-      <div class="relative container align-left pt-80">
+      <div class="row">
 
-        <div class="row">
-
-          <div class="col-md-8">
-            <h1 class="hs-line-11 font-alt mb-0">Events</h1>
-            <div class="hs-line-4 font-alt black mt-20 mt-xs-0">
-              Lass es dir nicht entgehen
-            </div>
+        <div class="col-md-8">
+          <h1 class="hs-line-11 font-alt mb-0">Events</h1>
+          <div class="hs-line-4 font-alt black mt-10 mt-xs-0">
+            Lass es dir nicht entgehen
           </div>
         </div>
-
       </div>
-    </section>
-    <!-- End Header -->
 
-    <!-- Section Event list -->
-    <section class="page-section event">
-      <div class="container relative">
-        <!--
-        <h2 class="section-title font-alt mb-70 mb-sm-40">Eventliste</h2>
-        -->
-        <div class="eventlist">
-          {{ range sort (where .Data.Pages "Params.enddate" ">=" .Now) "Params.startdate" "asc" }}
+    </div>
+  </section>
+  <!-- End Header -->
 
-            {{ $start_month := index $.Site.Data.de.months .Params.startdate.Month }}
-            {{ $start_shortmonth := slicestr $start_month 0 3 }}
-            {{ $start_day := .Params.startdate.Day }}
-            {{ $start_time := printf "%02d:%02d" .Params.startdate.Hour .Params.startdate.Minute }}
-            {{ $end_time := printf "%02d:%02d" .Params.enddate.Hour .Params.enddate.Minute }}
+  <!-- Section Event list -->
+  <section class="page-section event">
+    <div class="container relative">
+      <!--
+      <h2 class="section-title font-alt mb-70 mb-sm-40">Eventliste</h2>
+      -->
+      <div class="eventlist">
+        {{ range sort (where .Data.Pages "Params.enddate" ">=" .Now) "Params.startdate" "asc" }}
 
-          <a href="{{ .RelPermalink }}">
-            <div class="event-item bg-gray clearfix">
-              <div class="cat">
-                {{ $cat_len := len .Params.categories }}
-                {{ range first 3 .Params.categories }}
-                <div class="{{ if eq $cat_len 2 }}half {{ else if gt $cat_len 2 }}third {{ end }}{{ . | urlize }}"></div>
-                {{ end }}
-              </div>
-              <div class="event-date text">
-                <div class="day">{{ $start_day }}</div>
-                <div class="month font-alt">{{ $start_shortmonth }}</div>
-              </div>
-              <div class="event-text text bg-white">
-                <h4 class="uppercase">{{ .Title }}</h4>
-                <p>
-                  {{ if eq .Params.enddate .Params.startdate }}
-                    <i class="fa fa-clock-o fa-inline"></i>&nbsp;{{ $start_time }} Uhr<span class="separator">&nbsp;</span>
-                  {{ else }}
-                    <i class="fa fa-clock-o fa-inline"></i>&nbsp;{{ $start_time }} bis {{ $end_time }} Uhr<span class="separator">&nbsp;</span>
-                  {{ end }}
-                  <i class="fa fa-map-marker fa-inline"></i>&nbsp;{{ .Params.location }}<span class="separator">&nbsp;</span>
-                  <i class="fa fa-tags fa-inline"></i>&nbsp;{{ delimit .Params.categories ", " }}
-                </p>
-              </div>
+          {{ $start_month := index $.Site.Data.de.months .Params.startdate.Month }}
+          {{ $start_shortmonth := slicestr $start_month 0 3 }}
+          {{ $start_day := .Params.startdate.Day }}
+          {{ $start_time := printf "%02d:%02d" .Params.startdate.Hour .Params.startdate.Minute }}
+          {{ $end_time := printf "%02d:%02d" .Params.enddate.Hour .Params.enddate.Minute }}
+
+        <a href="{{ .RelPermalink }}">
+          <div class="event-item bg-gray clearfix">
+            <div class="cat">
+              {{ $cat_len := len .Params.categories }}
+              {{ range first 3 .Params.categories }}
+              <div class="{{ if eq $cat_len 2 }}half {{ else if gt $cat_len 2 }}third {{ end }}{{ . | urlize }}"></div>
+              {{ end }}
             </div>
-          </a>
-          {{ end }}
-        </div>
+            <div class="event-date text">
+              <div class="day">{{ $start_day }}</div>
+              <div class="month font-alt">{{ $start_shortmonth }}</div>
+            </div>
+            <div class="event-text text bg-white">
+              <h4 class="uppercase">{{ .Title }}</h4>
+              <p>
+                {{ if eq .Params.enddate .Params.startdate }}
+                  <i class="fa fa-clock-o fa-inline"></i>&nbsp;{{ $start_time }} Uhr<span class="separator">&nbsp;</span>
+                {{ else }}
+                  <i class="fa fa-clock-o fa-inline"></i>&nbsp;{{ $start_time }} bis {{ $end_time }} Uhr<span class="separator">&nbsp;</span>
+                {{ end }}
+                <i class="fa fa-map-marker fa-inline"></i>&nbsp;{{ .Params.location }}<span class="separator">&nbsp;</span>
+                <i class="fa fa-tags fa-inline"></i>&nbsp;{{ delimit .Params.categories ", " }}
+              </p>
+            </div>
+          </div>
+        </a>
+        {{ end }}
       </div>
-    </section>
-    <!-- End Section Event list -->
-
-
-
-    {{ partial "footer.html" . }}
-  </div>
-  <!-- End Page Wrap -->
-
-  {{ partial "body_includes.html" . }}
-
-</body>
-
-</html>
+    </div>
+  </section>
+  <!-- End Section Event list -->
+</div>
+<!-- End Page Wrap -->
+{{ end }}

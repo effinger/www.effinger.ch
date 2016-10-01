@@ -1,349 +1,336 @@
-<!DOCTYPE html>
-<html lang="de">
-{{ partial "head.html" . }}
+{{ define "main" }}
+<!-- Page Wrap -->
+<div class="page" id="top">
 
-<body class="">
+  <nav class="main-nav dark transparent stick-fixed">
+    {{ partial "navigation.html" . }}
+  </nav>
 
-  <!-- Page Wrap -->
-  <div class="page" id="top">
+  <!-- Header -->
+  <section class="home-section bg-dark-alfa-70 parallax-2 fixed-height-small" data-background="kaffeebar_header_02.jpg">
+    <div class="js-height-parent container">
 
-    <nav class="main-nav dark transparent stick-fixed">
-      {{ partial "navigation.html" . }}
-    </nav>
+      <!-- Hero Content -->
+      <div class="home-content">
+        <div class="home-text">
+          <h1 class="font-alt mb-50 mb-xs-30">
+              Kaffeebar
+            </h1>
 
-    <!-- Header -->
-    <section class="home-section bg-dark-alfa-70 parallax-2 fixed-height-small" data-background="kaffeebar_header_02.jpg">
-      <div class="js-height-parent container">
-
-        <!-- Hero Content -->
-        <div class="home-content">
-          <div class="home-text">
-            <h1 class="font-alt mb-50 mb-xs-30">
-                Kaffeebar
-              </h1>
-
-            <div class="local-scroll">
-              <a href="#angebote" class="btn btn-mod btn-border-w btn-medium btn-round hidden-xs">Angebote</a>
-              <span class="hidden-xs">&nbsp;</span>
-              <a href="#team" class="btn btn-mod btn-border-w btn-medium btn-round hidden-xs">Team</a>
-            </div>
-
+          <div class="local-scroll">
+            <a href="#angebote" class="btn btn-mod btn-border-w btn-medium btn-round hidden-xs">Angebote</a>
+            <span class="hidden-xs">&nbsp;</span>
+            <a href="#team" class="btn btn-mod btn-border-w btn-medium btn-round hidden-xs">Team</a>
           </div>
-        </div>
-        <!-- End Hero Content -->
-
-      </div>
-    </section>
-    <!-- End Header -->
-
-    <!-- Section -->
-    <section class="page-section">
-      <div class="container relative">
-
-        <!-- Row -->
-        <div class="row">
-
-          <!-- Col -->
-
-          <div class="col-sm-8 mb-40">
-
-            <div class="text">
-              <h5 class="uppercase">Willkommen in der Effinger Kaffeebar.</h5>
-              <p>
-                Bei uns gibt es guten Kaffee für Tanten, Espresso für Eilige und Tee für Abwartende. Und auch Apéros für Prostende, Bier für Feierabende und Wein für alle.
-              </p>
-              <p>
-                Hast du ein Hüngerli? Wir haben die besten Quiches von Bern und frisches Grünzeug. Oder auch Amaretti und Süsses in Kuchenform.
-              </p>
-              <p>
-                Und perfekt zum Feierabendbier: Chorizo-Perlen, Oliven und Fetawürfeli.
-              </p>
-              <p>
-                Und was bestellst du? Wir freuen uns auf deinen Besuch.
-              </p>
-            </div>
-
-          </div>
-
-          <!-- End Col -->
-
-          <!-- Col -->
-
-          <div class="col-sm-4 mb-40">
-            <div class="contact-item mt-20 mb-20 clearfix">
-              <h4 class="uppercase">Öffnungszeiten</h4>
-              <div class="wave-spacer"></div>
-              <div class="item">
-                <!--
-                <p class="text-center"><em><strong>Pfingstmontag geschlossen</strong></em></p>
-                -->
-                <p>Mo-Fr <span>7-23</span></p>
-                <p>Sa <span>9-17</span></p>
-                <p>So <span>Ruhetag</span></p>
-              </div>
-              <div class="item mt-20">
-                <p>Telefon<span><a href="tel:+41313982020">031 398 20 20</a></span></p>
-              </div>
-              <div class="item mt-20">
-                <p>Email<span><a href="mailto:kaffeebar@effinger.ch">kaffeebar@effinger.ch</a></span></p>
-              </div>
-            </div>
-          </div>
-
-          <!-- End Col -->
 
         </div>
-        <!-- End Row -->
       </div>
-    </section>
+      <!-- End Hero Content -->
 
-    <!-- Section -->
-    <section id="impression" class="page-section bg-dark pb-20 pt-40">
-      <div class="relative">
+    </div>
+  </section>
+  <!-- End Header -->
 
-        <!-- Photo Grid -->
-        <div class="row multi-columns-row">
+  <!-- Section -->
+  <section class="page-section">
+    <div class="container relative">
 
-          <!-- Photo Item -->
-          <div class="col-xs-6 col-md-3 col-lg-3 mb-md-10">
+      <!-- Row -->
+      <div class="row">
 
-            <div class="post-prev-img">
-              <a href="kaffeebar_01.jpg" class="lightbox-gallery-2 mfp-image"><img src="kaffeebar_01-thumb.jpg" alt="" /></a>
-            </div>
+        <!-- Col -->
 
+        <div class="col-sm-8 mb-40">
+
+          <div class="text">
+            <h5 class="uppercase">Willkommen in der Effinger Kaffeebar.</h5>
+            <p>
+              Bei uns gibt es guten Kaffee für Tanten, Espresso für Eilige und Tee für Abwartende. Und auch Apéros für Prostende, Bier für Feierabende und Wein für alle.
+            </p>
+            <p>
+              Hast du ein Hüngerli? Wir haben die besten Quiches von Bern und frisches Grünzeug. Oder auch Amaretti und Süsses in Kuchenform.
+            </p>
+            <p>
+              Und perfekt zum Feierabendbier: Chorizo-Perlen, Oliven und Fetawürfeli.
+            </p>
+            <p>
+              Und was bestellst du? Wir freuen uns auf deinen Besuch.
+            </p>
           </div>
-          <!-- End Photo Item -->
-
-          <!-- Photo Item -->
-          <div class="col-xs-6 col-md-3 col-lg-3 mb-md-10">
-
-            <div class="post-prev-img">
-              <a href="kaffeebar_02.jpg" class="lightbox-gallery-2 mfp-image"><img src="kaffeebar_02-thumb.jpg" alt="" /></a>
-            </div>
-
-          </div>
-          <!-- End Photo Item -->
-
-          <!-- Photo Item -->
-          <div class="col-xs-6 col-md-3 col-lg-3 mb-md-10">
-
-            <div class="post-prev-img">
-              <a href="kaffeebar_03.jpg" class="lightbox-gallery-2 mfp-image"><img src="kaffeebar_03-thumb.jpg" alt="" /></a>
-            </div>
-
-          </div>
-          <!-- End Photo Item -->
-
-          <!-- Photo Item -->
-          <div class="col-xs-6 col-md-3 col-lg-3 mb-md-10">
-
-            <div class="post-prev-img">
-              <a href="kaffeebar_04.jpg" class="lightbox-gallery-2 mfp-image"><img src="kaffeebar_04-thumb.jpg" alt="" /></a>
-            </div>
-
-          </div>
-          <!-- End Photo Item -->
-
-          <!-- Photo Item -->
-          <div class="col-xs-6 col-md-3 col-lg-3 mb-md-10">
-
-            <div class="post-prev-img">
-              <a href="kaffeebar_05.jpg" class="lightbox-gallery-2 mfp-image"><img src="kaffeebar_05-thumb.jpg" alt="" /></a>
-            </div>
-
-          </div>
-          <!-- End Photo Item -->
-
-          <!-- Photo Item -->
-          <div class="col-xs-6 col-md-3 col-lg-3 mb-md-10">
-
-            <div class="post-prev-img">
-              <a href="kaffeebar_06.jpg" class="lightbox-gallery-2 mfp-image"><img src="kaffeebar_06-thumb.jpg" alt="" /></a>
-            </div>
-
-          </div>
-          <!-- End Photo Item -->
-
-          <!-- Photo Item -->
-          <div class="col-xs-6 col-md-3 col-lg-3 mb-md-10">
-
-            <div class="post-prev-img">
-              <a href="kaffeebar_07.jpg" class="lightbox-gallery-2 mfp-image"><img src="kaffeebar_07-thumb.jpg" alt="" /></a>
-            </div>
-
-          </div>
-          <!-- End Photo Item -->
-
-          <!-- Photo Item -->
-          <div class="col-xs-6 col-md-3 col-lg-3 mb-md-10">
-
-            <div class="post-prev-img">
-              <a href="kaffeebar_08.jpg" class="lightbox-gallery-2 mfp-image"><img src="kaffeebar_08-thumb.jpg" alt="" /></a>
-            </div>
-
-          </div>
-          <!-- End Photo Item -->
-
-        </div>
-        <!-- End Photo Grid -->
-
-      </div>
-    </section>
-    <!-- End Section -->
-
-    <!-- Section -->
-    <section id="angebote" class="page-section bg-gray-lighter">
-      <div class="container relative">
-
-        <h2 class="section-title font-alt mb-70 mb-sm-40">{{ .Params.offers_title }}</h2>
-
-        <!-- Accordion -->
-        <dl class="toggle offers">
-
-          {{ range .Params.offers }}
-          <dt>
-            <a href="" class="offers-title">
-              {{ if .icon }}
-                {{ .icon | safeHTML }}
-              {{ end }}
-              <span>
-                {{ .title }}
-              </span>
-            </a>
-          </dt>
-          <dd>
-            <div>
-              <!-- Two columns for medium and large screens with defined left/right ordering -->
-              <div class="row hidden-xs">
-                <div class="col-sm-6 left">
-                  {{ range where .section "column" "left" }}
-                    {{ partial "kaffeebar/menu_item.html" . }}
-                  {{end }}
-                </div>
-                <div class="col-sm-6 right">
-                  {{ range where .section "column" "right" }}
-                    {{ partial "kaffeebar/menu_item.html" . }}
-                  {{end }}
-                </div>
-              </div>
-              <!-- One column for small screens -->
-              <div class="visible-xs-block">
-              {{ range .section }}
-                {{ partial "kaffeebar/menu_item.html" . }}
-              {{end }}
-              </div>
-            </div>
-          </dd>
-          {{ end }}
-        </dl>
-        <!-- End Accordion -->
-
-      </div>
-    </section>
-    <!-- End Section -->
-
-    <!-- Team Section -->
-    <section class="page-section" id="team">
-      <div class="container relative">
-
-        <h2 class="section-title font-alt mb-70 mb-sm-40">Geschäftsführung Kaffeebar</h2>
-
-        <!-- <div class="row">
-          <div class="col-md-8 col-md-offset-2">
-            <div class="section-text align-center mb-70 mb-xs-40">
-              Text
-            </div>
-          </div>
-        </div> -->
-
-        <div class="row multi-columns-row">
-
-          <!-- Team Item -->
-          <div class="col-sm-6 col-md-3 col-md-offset-3 col-lg-3 mb-sm-30 wow fadeInUp">
-            <div class="team-item">
-              <div class="team-item-image">
-                <img src="/images/effianer/salome-hostettler.jpg" alt="" />
-                <div class="team-item-detail">
-                  <div class="team-social-links">
-                    <a href="mailto:salome@effinger.ch" target="_blank"><i class="fa fa-envelope"></i></a>
-                    <a href="https://www.facebook.com/salome.hostettler" target="_blank"><i class="fa fa-facebook"></i></a>
-                  </div>
-                </div>
-              </div>
-              <div class="team-item-descr font-alt">
-                <div class="team-item-name">
-                  Salome Hostettler
-                </div>
-                <!--
-                <div class="team-item-role">
-                  Leiterin Kaffeebar
-                </div>
-                -->
-              </div>
-            </div>
-          </div>
-          <!-- End Team Item -->
-
-          <!-- Team Item -->
-          <div class="col-sm-6 col-md-3 col-lg-3 mb-md-30 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="team-item">
-              <div class="team-item-image">
-                <img src="/images/effianer/domenica-winkler.jpg" alt="" />
-                <div class="team-item-detail">
-                  <div class="team-social-links">
-                    <a href="mailto:domenica@effinger.ch" target="_blank"><i class="fa fa-envelope"></i></a>
-                    <a href="https://www.instagram.com/effingerbern" target="_blank"><i class="fa fa-instagram"></i></a>
-                  </div>
-                </div>
-              </div>
-              <div class="team-item-descr font-alt">
-                <div class="team-item-name">
-                  Domenica Winkler
-                </div>
-                <!--
-                <div class="team-item-role">
-                  Leiterin Kaffeebar
-                </div>
-                -->
-              </div>
-            </div>
-          </div>
-          <!-- End Team Item -->
-
 
         </div>
 
-      </div>
-    </section>
-    <!-- End Team Section -->
+        <!-- End Col -->
 
-    <section class="page-section bg-dark-lighter">
-      <div class="container">
-        <div class="contact-item contact-kaffeebar mt-20 mb-20 clearfix">
-          <h4 class="uppercase">Kontakt</h4>
-          <div class="wave-spacer"></div>
-          <div class="item">
-            <p>Telefon<span><a href="tel:+41313982020">031 398 20 20</a></span></p>
-          </div>
-          <div class="item mt-20">
-            <p>Email<span><a href="mailto:kaffeebar@effinger.ch">kaffeebar@effinger.ch</a></span></p>
-          </div>
-          <div class="item mt-20">
-            <p>Mo-Fr <span>7-23</span></p>
-            <p>Sa <span>9-17</span></p>
-            <p>So <span>Ruhetag</span></p>
+        <!-- Col -->
+
+        <div class="col-sm-4 mb-40">
+          <div class="contact-item mt-20 mb-20 clearfix">
+            <h4 class="uppercase">Öffnungszeiten</h4>
+            <div class="wave-spacer"></div>
+            <div class="item">
+              <!--
+              <p class="text-center"><em><strong>Pfingstmontag geschlossen</strong></em></p>
+              -->
+              <p>Mo-Fr <span>7-23</span></p>
+              <p>Sa <span>9-17</span></p>
+              <p>So <span>Ruhetag</span></p>
+            </div>
+            <div class="item mt-20">
+              <p>Telefon<span><a href="tel:+41313982020">031 398 20 20</a></span></p>
+            </div>
+            <div class="item mt-20">
+              <p>Email<span><a href="mailto:kaffeebar@effinger.ch">kaffeebar@effinger.ch</a></span></p>
+            </div>
           </div>
         </div>
+
+        <!-- End Col -->
+
       </div>
-    </section>
+      <!-- End Row -->
+    </div>
+  </section>
 
-    {{ partial "footer.html" . }}
+  <!-- Section -->
+  <section id="impression" class="page-section bg-dark pb-20 pt-40">
+    <div class="relative">
 
-  </div>
-  <!-- End Page Wrap -->
+      <!-- Photo Grid -->
+      <div class="row multi-columns-row">
 
-  {{ partial "body_includes.html" . }}
+        <!-- Photo Item -->
+        <div class="col-xs-6 col-md-3 col-lg-3 mb-md-10">
 
-</body>
+          <div class="post-prev-img">
+            <a href="kaffeebar_01.jpg" class="lightbox-gallery-2 mfp-image"><img src="kaffeebar_01-thumb.jpg" alt="" /></a>
+          </div>
 
-</html>
+        </div>
+        <!-- End Photo Item -->
+
+        <!-- Photo Item -->
+        <div class="col-xs-6 col-md-3 col-lg-3 mb-md-10">
+
+          <div class="post-prev-img">
+            <a href="kaffeebar_02.jpg" class="lightbox-gallery-2 mfp-image"><img src="kaffeebar_02-thumb.jpg" alt="" /></a>
+          </div>
+
+        </div>
+        <!-- End Photo Item -->
+
+        <!-- Photo Item -->
+        <div class="col-xs-6 col-md-3 col-lg-3 mb-md-10">
+
+          <div class="post-prev-img">
+            <a href="kaffeebar_03.jpg" class="lightbox-gallery-2 mfp-image"><img src="kaffeebar_03-thumb.jpg" alt="" /></a>
+          </div>
+
+        </div>
+        <!-- End Photo Item -->
+
+        <!-- Photo Item -->
+        <div class="col-xs-6 col-md-3 col-lg-3 mb-md-10">
+
+          <div class="post-prev-img">
+            <a href="kaffeebar_04.jpg" class="lightbox-gallery-2 mfp-image"><img src="kaffeebar_04-thumb.jpg" alt="" /></a>
+          </div>
+
+        </div>
+        <!-- End Photo Item -->
+
+        <!-- Photo Item -->
+        <div class="col-xs-6 col-md-3 col-lg-3 mb-md-10">
+
+          <div class="post-prev-img">
+            <a href="kaffeebar_05.jpg" class="lightbox-gallery-2 mfp-image"><img src="kaffeebar_05-thumb.jpg" alt="" /></a>
+          </div>
+
+        </div>
+        <!-- End Photo Item -->
+
+        <!-- Photo Item -->
+        <div class="col-xs-6 col-md-3 col-lg-3 mb-md-10">
+
+          <div class="post-prev-img">
+            <a href="kaffeebar_06.jpg" class="lightbox-gallery-2 mfp-image"><img src="kaffeebar_06-thumb.jpg" alt="" /></a>
+          </div>
+
+        </div>
+        <!-- End Photo Item -->
+
+        <!-- Photo Item -->
+        <div class="col-xs-6 col-md-3 col-lg-3 mb-md-10">
+
+          <div class="post-prev-img">
+            <a href="kaffeebar_07.jpg" class="lightbox-gallery-2 mfp-image"><img src="kaffeebar_07-thumb.jpg" alt="" /></a>
+          </div>
+
+        </div>
+        <!-- End Photo Item -->
+
+        <!-- Photo Item -->
+        <div class="col-xs-6 col-md-3 col-lg-3 mb-md-10">
+
+          <div class="post-prev-img">
+            <a href="kaffeebar_08.jpg" class="lightbox-gallery-2 mfp-image"><img src="kaffeebar_08-thumb.jpg" alt="" /></a>
+          </div>
+
+        </div>
+        <!-- End Photo Item -->
+
+      </div>
+      <!-- End Photo Grid -->
+
+    </div>
+  </section>
+  <!-- End Section -->
+
+  <!-- Section -->
+  <section id="angebote" class="page-section bg-gray-lighter">
+    <div class="container relative">
+
+      <h2 class="section-title font-alt mb-70 mb-sm-40">{{ .Params.offers_title }}</h2>
+
+      <!-- Accordion -->
+      <dl class="toggle offers">
+
+        {{ range .Params.offers }}
+        <dt>
+          <a href="" class="offers-title">
+            {{ if .icon }}
+              {{ .icon | safeHTML }}
+            {{ end }}
+            <span>
+              {{ .title }}
+            </span>
+          </a>
+        </dt>
+        <dd>
+          <div>
+            <!-- Two columns for medium and large screens with defined left/right ordering -->
+            <div class="row hidden-xs">
+              <div class="col-sm-6 left">
+                {{ range where .section "column" "left" }}
+                  {{ partial "kaffeebar/menu_item.html" . }}
+                {{end }}
+              </div>
+              <div class="col-sm-6 right">
+                {{ range where .section "column" "right" }}
+                  {{ partial "kaffeebar/menu_item.html" . }}
+                {{end }}
+              </div>
+            </div>
+            <!-- One column for small screens -->
+            <div class="visible-xs-block">
+            {{ range .section }}
+              {{ partial "kaffeebar/menu_item.html" . }}
+            {{end }}
+            </div>
+          </div>
+        </dd>
+        {{ end }}
+      </dl>
+      <!-- End Accordion -->
+
+    </div>
+  </section>
+  <!-- End Section -->
+
+  <!-- Team Section -->
+  <section class="page-section" id="team">
+    <div class="container relative">
+
+      <h2 class="section-title font-alt mb-70 mb-sm-40">Geschäftsführung Kaffeebar</h2>
+
+      <!-- <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <div class="section-text align-center mb-70 mb-xs-40">
+            Text
+          </div>
+        </div>
+      </div> -->
+
+      <div class="row multi-columns-row">
+
+        <!-- Team Item -->
+        <div class="col-sm-6 col-md-3 col-md-offset-3 col-lg-3 mb-sm-30 wow fadeInUp">
+          <div class="team-item">
+            <div class="team-item-image">
+              <img src="/images/effianer/salome-hostettler.jpg" alt="" />
+              <div class="team-item-detail">
+                <div class="team-social-links">
+                  <a href="mailto:salome@effinger.ch" target="_blank"><i class="fa fa-envelope"></i></a>
+                  <a href="https://www.facebook.com/salome.hostettler" target="_blank"><i class="fa fa-facebook"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="team-item-descr font-alt">
+              <div class="team-item-name">
+                Salome Hostettler
+              </div>
+              <!--
+              <div class="team-item-role">
+                Leiterin Kaffeebar
+              </div>
+              -->
+            </div>
+          </div>
+        </div>
+        <!-- End Team Item -->
+
+        <!-- Team Item -->
+        <div class="col-sm-6 col-md-3 col-lg-3 mb-md-30 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="team-item">
+            <div class="team-item-image">
+              <img src="/images/effianer/domenica-winkler.jpg" alt="" />
+              <div class="team-item-detail">
+                <div class="team-social-links">
+                  <a href="mailto:domenica@effinger.ch" target="_blank"><i class="fa fa-envelope"></i></a>
+                  <a href="https://www.instagram.com/effingerbern" target="_blank"><i class="fa fa-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="team-item-descr font-alt">
+              <div class="team-item-name">
+                Domenica Winkler
+              </div>
+              <!--
+              <div class="team-item-role">
+                Leiterin Kaffeebar
+              </div>
+              -->
+            </div>
+          </div>
+        </div>
+        <!-- End Team Item -->
+
+
+      </div>
+
+    </div>
+  </section>
+  <!-- End Team Section -->
+
+  <section class="page-section bg-dark-lighter">
+    <div class="container">
+      <div class="contact-item contact-kaffeebar mt-20 mb-20 clearfix">
+        <h4 class="uppercase">Kontakt</h4>
+        <div class="wave-spacer"></div>
+        <div class="item">
+          <p>Telefon<span><a href="tel:+41313982020">031 398 20 20</a></span></p>
+        </div>
+        <div class="item mt-20">
+          <p>Email<span><a href="mailto:kaffeebar@effinger.ch">kaffeebar@effinger.ch</a></span></p>
+        </div>
+        <div class="item mt-20">
+          <p>Mo-Fr <span>7-23</span></p>
+          <p>Sa <span>9-17</span></p>
+          <p>So <span>Ruhetag</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+<!-- End Page Wrap -->
+{{ end }}

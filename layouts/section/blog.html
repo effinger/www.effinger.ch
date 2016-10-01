@@ -1,74 +1,70 @@
-<!DOCTYPE html>
-<html lang="de">
-  {{ partial "head.html" . }}
-  <body>
+{{/* Workaround until we have this: https://discuss.gohugo.io/t/node-improvements/1593 */}}
+{{ define "description1" }}Neuigkeiten vom Effinger und Interessantes aus der Community und aus unserem Arbeiten und Leben.{{ end }}
+{{ define "description2" }}Neuigkeiten vom Effinger und Interessantes aus der Community und aus unserem Arbeiten und Leben.{{ end }}
 
-    <!-- Page Wrap -->
-    <div class="page" id="top">
 
-      <nav class="main-nav stick-fixed">
-      {{ partial "navigation.html" . }}
-      </nav>
+{{ define "main" }}
+<!-- Page Wrap -->
+<div class="page" id="top">
 
-      <!-- Header -->
-      <section class="small-section-header bg-gray-lighter">
-        <div class="relative container align-left pt-80">
+  <nav class="main-nav stick-fixed">
+  {{ partial "navigation.html" . }}
+  </nav>
 
-          <div class="row">
+  <!-- Header -->
+  <section class="small-section-header bg-gray-lighter">
+    <div class="relative container align-left pt-80">
 
-            <div class="col-md-8">
-              <h1 class="hs-line-11 font-alt mb-0">Blog</h1>
-              <!--
-              <div class="hs-line-4 font-alt black mt-20 mt-xs-0">
-                Geschichten aus der Community
-              </div>
-              -->
-            </div>
+      <div class="row">
+
+        <div class="col-md-8">
+          <h1 class="hs-line-11 font-alt mb-0">Blog</h1>
+          <!--
+          <div class="hs-line-4 font-alt black mt-20 mt-xs-0">
+            Geschichten aus der Community
           </div>
-
+          -->
         </div>
-      </section>
-      <!-- End Header -->
-
-      <!-- Section -->
-      <section class="page-section">
-        <div class="container relative">
-
-          <div class="row">
-
-            <!-- Content -->
-            <div class="col-sm-8">
-              {{ range (.Paginator 7).Pages }}
-                {{ partial "blog/summary.html" . }}
-              {{ end }}
-
-              {{ partial "pagination.html" . }}
-            </div>
-            <!-- End Content -->
-
-            <!-- Sidebar -->
-            <div class="col-sm-4 col-md-3 col-md-offset-1 sidebar">
-              {{ partial "blog/search_widget.html" . }}
-
-              {{ partial "blog/tags_widget.html" . }}
-
-              {{ partial "blog/archive_widget.html" . }}
-            </div>
-            <!-- End Sidebar -->
-          </div>
-
-        </div>
-      </section>
-      <!-- End Section -->
-
-      {{ partial "footer.html" . }}
+      </div>
 
     </div>
-    <!-- End Page Wrap -->
+  </section>
+  <!-- End Header -->
 
-    {{ partial "body_includes.html" . }}
+  <!-- Section -->
+  <section class="page-section">
+    <div class="container relative">
 
-    {{ partial "disqus_count.html" . }}
+      <div class="row">
 
-  </body>
-</html>
+        <!-- Content -->
+        <div class="col-sm-8">
+          {{ range (.Paginator 7).Pages }}
+            {{ partial "blog/summary.html" . }}
+          {{ end }}
+
+          {{ partial "pagination.html" . }}
+        </div>
+        <!-- End Content -->
+
+        <!-- Sidebar -->
+        <div class="col-sm-4 col-md-3 col-md-offset-1 sidebar">
+          {{ partial "blog/search_widget.html" . }}
+
+          {{ partial "blog/tags_widget.html" . }}
+
+          {{ partial "blog/archive_widget.html" . }}
+        </div>
+        <!-- End Sidebar -->
+      </div>
+
+    </div>
+  </section>
+  <!-- End Section -->
+</div>
+<!-- End Page Wrap -->
+{{ end }}
+
+{{ define "body_includes" }}
+{{ partial "disqus_count.html" . }}
+{{ end }}

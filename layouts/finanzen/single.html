@@ -1,4 +1,9 @@
-{{ $.Scratch.Set "section_title" .Params.unternehmen }}
+{{ define "title" }}
+{{ .Title }} | {{ .Params.unternehmen }} | {{ .Site.Title }}
+{{ end }}
+
+
+{{ define "main" }}
 
 {{/* Calculation of total Ertrag und Aufwand. */}}
 {{ $.Scratch.Set "total_ertrag" 0 }}
@@ -11,220 +16,211 @@
 {{ $.Scratch.Add "total_aufwand" .betrag }}
 {{ end }}
 
-<!DOCTYPE html>
-<html lang="de">
-{{ partial "head.html" . }}
-<body>
+<!-- Page Wrap -->
+<div class="page finanzen" id="top">
 
-  <!-- Page Wrap -->
-  <div class="page finanzen" id="top">
+  <nav class="main-nav dark transparent stick-fixed">
+    {{ partial "navigation.html" . }}
+  </nav>
 
-    <nav class="main-nav dark transparent stick-fixed">
-      {{ partial "navigation.html" . }}
-    </nav>
+  <!-- Header -->
+  <section class="small-section-header bg-dark-lighter">
+    <div class="relative container align-left pt-80">
 
-    <!-- Header -->
-    <section class="small-section-header bg-dark-lighter">
-      <div class="relative container align-left pt-80">
+      <div class="row">
 
-        <div class="row">
-
-          <div class="col-md-8">
-            <h1 class="hs-line-11 font-alt mb-0">Finanzen</h1>
-            <div class="hs-line-4 font-alt mt-20 mt-xs-0">
-            {{ .Params.unternehmen }}
-            </div>
-          </div>
-
-          <div class="col-md-4 mt-30">
-            <div class="mod-breadcrumbs font-alt align-right">
-              <a href="/finanzen/"><i class="fa fa-angle-left"></i> Zur Übersicht</a>
-            </div>
+        <div class="col-md-8">
+          <h1 class="hs-line-11 font-alt mb-0">Finanzen</h1>
+          <div class="hs-line-4 font-alt mt-20 mt-xs-0">
+          {{ .Params.unternehmen }}
           </div>
         </div>
 
+        <div class="col-md-4 mt-30">
+          <div class="mod-breadcrumbs font-alt align-right">
+            <a href="/finanzen/"><i class="fa fa-angle-left"></i> Zur Übersicht</a>
+          </div>
+        </div>
       </div>
-    </section>
-    <!-- End Header -->
 
-    <!-- Section -->
-    <section class="page-section">
-      <div class="container relative long-text-body">
-        <!-- Prev/Next Post -->
-        <div class="clearfix prev-next mb-10">
-          {{ if .PrevInSection }}
-          <a href="{{ .PrevInSection.RelPermalink }}" class="blog-item-more left"><i class="fa fa-angle-left"></i>&nbsp;{{ index $.Site.Data.de.months .PrevInSection.Date.Month }}</a>
-          {{ end }}
-          {{ if .NextInSection }}
-          <a href="{{ .NextInSection.RelPermalink }}" class="blog-item-more right"><i class="fa fa-angle-right"></i>{{ index $.Site.Data.de.months .NextInSection.Date.Month }}</a>
-          {{ end }}
-        </div>
-        <!-- End Prev/Next Post -->
+    </div>
+  </section>
+  <!-- End Header -->
 
-        <h1 class="hs-line-11 font-alt mt-0 align-center">{{ print (index $.Site.Data.de.months .Date.Month ) " " .Date.Year }}</h1>
-
-        <div class="count-wrapper mb-20 mt-30">
-          <div class="row">
-            <!-- Counter Item -->
-            <div class="col-sm-4">
-              <div class="count-number">{{ sub ($.Scratch.Get "total_ertrag") ($.Scratch.Get "total_aufwand") }}</div>
-              <div class="count-descr font-alt">
-                <i class="fa fa-line-chart"></i>
-                <span class="count-title">Monatsergebnis</span>
-              </div>
-            </div>
-            <!-- End Counter Item -->
-
-            <!-- Counter Item -->
-            <div class="col-sm-4">
-              <div class="count-number">{{ .Params.kontostand }}</div>
-              <div class="count-descr font-alt">
-                <i class="fa fa-bank"></i>
-                <span class="count-title">Kontostand Ende Monat</span>
-              </div>
-            </div>
-            <!-- End Counter Item -->
-
-            <!-- Counter Item -->
-            <div class="col-sm-4">
-              <div class="count-number">{{ .Params.darlehen }}</div>
-              <div class="count-descr font-alt mb-xs-0">
-                <i class="fa fa-money"></i>
-                <span class="count-title">Darlehen</span>
-              </div>
-            </div>
-            <!-- End Counter Item -->
-          </div>
-        </div>
-
-        {{ with .Params.kommentar }}
-        <dl class="toggle">
-          <dt>
-            <a href="" class="">Kommentar</a>
-          </dt>
-          <dd style="display: none;">
-            {{ . }}
-          </dd>
-        </dl>
+  <!-- Section -->
+  <section class="page-section">
+    <div class="container relative long-text-body">
+      <!-- Prev/Next Post -->
+      <div class="clearfix prev-next mb-10">
+        {{ if .PrevInSection }}
+        <a href="{{ .PrevInSection.RelPermalink }}" class="blog-item-more left"><i class="fa fa-angle-left"></i>&nbsp;{{ index $.Site.Data.de.months .PrevInSection.Date.Month }}</a>
         {{ end }}
+        {{ if .NextInSection }}
+        <a href="{{ .NextInSection.RelPermalink }}" class="blog-item-more right"><i class="fa fa-angle-right"></i>{{ index $.Site.Data.de.months .NextInSection.Date.Month }}</a>
+        {{ end }}
+      </div>
+      <!-- End Prev/Next Post -->
 
-        <div class="row erfolg">
-          <div class="col-sm-6 item left-sm mt-40">
-            <div class="mb-40">
-              <canvas id="ertrag-chart"></canvas>
+      <h1 class="hs-line-11 font-alt mt-0 align-center">{{ print (index $.Site.Data.de.months .Date.Month ) " " .Date.Year }}</h1>
+
+      <div class="count-wrapper mb-20 mt-30">
+        <div class="row">
+          <!-- Counter Item -->
+          <div class="col-sm-4">
+            <div class="count-number">{{ sub ($.Scratch.Get "total_ertrag") ($.Scratch.Get "total_aufwand") }}</div>
+            <div class="count-descr font-alt">
+              <i class="fa fa-line-chart"></i>
+              <span class="count-title">Monatsergebnis</span>
             </div>
-
-            <h3 class="font-alt title">Ertrag
-              <span class="right">{{ partial "format/thousands" ($.Scratch.Get "total_ertrag") }}</span>
-            </h3>
-
-            {{ range .Params.ertrag }}
-            <table>
-              <tbody>
-                <tr>
-                  <th>{{ .name }}</th>
-                  <th>
-                    {{ partial "format/thousands" .betrag }}
-                  </th>
-                </tr>
-                {{ with .info }}
-                <tr>
-                  <td>{{ . }}</td>
-                  <td></td>
-                </tr>
-                {{ end }}
-              </tbody>
-            </table>
-            {{ end }}
           </div>
+          <!-- End Counter Item -->
 
-          <div class="col-sm-6 item right-sm mt-40 mt-xs-70">
-            <div class="mb-40">
-              <canvas id="aufwand-chart"></canvas>
+          <!-- Counter Item -->
+          <div class="col-sm-4">
+            <div class="count-number">{{ .Params.kontostand }}</div>
+            <div class="count-descr font-alt">
+              <i class="fa fa-bank"></i>
+              <span class="count-title">Kontostand Ende Monat</span>
             </div>
-            <h3 class="font-alt title">Aufwand
-              <span class="right">{{ partial "format/thousands" ($.Scratch.Get "total_aufwand") }}</span>
-            </h3>
-
-            {{ range .Params.aufwand }}
-            <table>
-              <tbody>
-                <tr>
-                  <th>{{ .name }}</th>
-                  <th>
-                    {{ partial "format/thousands" .betrag }}
-                  </th>
-                </tr>
-                {{ with .info }}
-                <tr>
-                  <td>{{ . }}</td>
-                  <td></td>
-                </tr>
-                {{ end }}
-              </tbody>
-            </table>
-            {{ end }}
-            <p><em>*Akontobeträge (werden Ende Jahr nachkorrigiert)</em></p>
           </div>
+          <!-- End Counter Item -->
+
+          <!-- Counter Item -->
+          <div class="col-sm-4">
+            <div class="count-number">{{ .Params.darlehen }}</div>
+            <div class="count-descr font-alt mb-xs-0">
+              <i class="fa fa-money"></i>
+              <span class="count-title">Darlehen</span>
+            </div>
+          </div>
+          <!-- End Counter Item -->
         </div>
       </div>
-    </section>
 
-    {{ partial "footer.html" . }}
+      {{ with .Params.kommentar }}
+      <dl class="toggle">
+        <dt>
+          <a href="" class="">Kommentar</a>
+        </dt>
+        <dd style="display: none;">
+          {{ . }}
+        </dd>
+      </dl>
+      {{ end }}
 
-  </div>
-  <!-- End Page Wrap -->
+      <div class="row erfolg">
+        <div class="col-sm-6 item left-sm mt-40">
+          <div class="mb-40">
+            <canvas id="ertrag-chart"></canvas>
+          </div>
 
-  {{ partial "body_includes.html" . }}
+          <h3 class="font-alt title">Ertrag
+            <span class="right">{{ partial "format/thousands" ($.Scratch.Get "total_ertrag") }}</span>
+          </h3>
 
-  <script type="text/javascript" src="/js/Chart.min.js"></script>
-  <script type="text/javascript">
-  var ctxErtrag = document.getElementById("ertrag-chart").getContext("2d");
-  var dataErtrag = [
-    {{ range $i, $e := .Params.ertrag }}
-    {{ $color_index := mod $i (len $.Site.Data.finanzen_colors.blue) }}
-    {
-        value: {{ $e.betrag }},
-        color: {{ index $.Site.Data.finanzen_colors.blue $color_index }},
-        highlight: "#5f5f5f",
-        label: {{ $e.name }}
-    },
-    {{ end }}
-  ];
-  var chartErtrag = new Chart(ctxErtrag).Doughnut(dataErtrag, {
-    tooltipTemplate: function(label){return label.label + ": CHF " + label.value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, "'");},
+          {{ range .Params.ertrag }}
+          <table>
+            <tbody>
+              <tr>
+                <th>{{ .name }}</th>
+                <th>
+                  {{ partial "format/thousands" .betrag }}
+                </th>
+              </tr>
+              {{ with .info }}
+              <tr>
+                <td>{{ . }}</td>
+                <td></td>
+              </tr>
+              {{ end }}
+            </tbody>
+          </table>
+          {{ end }}
+        </div>
 
-    //Number - Amount of animation steps
-    animationSteps : 50,
+        <div class="col-sm-6 item right-sm mt-40 mt-xs-70">
+          <div class="mb-40">
+            <canvas id="aufwand-chart"></canvas>
+          </div>
+          <h3 class="font-alt title">Aufwand
+            <span class="right">{{ partial "format/thousands" ($.Scratch.Get "total_aufwand") }}</span>
+          </h3>
 
-    //String - Animation easing effect
-    animationEasing : "easeOutQuart",
-    responsive: true
-  });
+          {{ range .Params.aufwand }}
+          <table>
+            <tbody>
+              <tr>
+                <th>{{ .name }}</th>
+                <th>
+                  {{ partial "format/thousands" .betrag }}
+                </th>
+              </tr>
+              {{ with .info }}
+              <tr>
+                <td>{{ . }}</td>
+                <td></td>
+              </tr>
+              {{ end }}
+            </tbody>
+          </table>
+          {{ end }}
+          <p><em>*Akontobeträge (werden Ende Jahr nachkorrigiert)</em></p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  var ctxAufwand = document.getElementById("aufwand-chart").getContext("2d");
-  var dataAufwand = [
-    {{ range $i, $e := .Params.aufwand }}
-    {{ $color_index := mod $i (len $.Site.Data.finanzen_colors.red) }}
-    {
-        value: {{ $e.betrag }},
-        color: {{ index $.Site.Data.finanzen_colors.red $color_index }},
-        highlight: "#5f5f5f",
-        label: {{ $e.name }}
-    },
-    {{ end }}
-  ];
-  var chartErtrag = new Chart(ctxAufwand).Doughnut(dataAufwand, {
-    tooltipTemplate: function(label){return label.label + ": CHF " + label.value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, "'");},
+</div>
+<!-- End Page Wrap -->
+{{ end }}
 
-    //Number - Amount of animation steps
-    animationSteps : 50,
+{{ define "body_includes" }}
+<script type="text/javascript" src="/js/Chart.min.js"></script>
+<script type="text/javascript">
+var ctxErtrag = document.getElementById("ertrag-chart").getContext("2d");
+var dataErtrag = [
+  {{ range $i, $e := .Params.ertrag }}
+  {{ $color_index := mod $i (len $.Site.Data.finanzen_colors.blue) }}
+  {
+      value: {{ $e.betrag }},
+      color: {{ index $.Site.Data.finanzen_colors.blue $color_index }},
+      highlight: "#5f5f5f",
+      label: {{ $e.name }}
+  },
+  {{ end }}
+];
+var chartErtrag = new Chart(ctxErtrag).Doughnut(dataErtrag, {
+  tooltipTemplate: function(label){return label.label + ": CHF " + label.value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, "'");},
 
-    //String - Animation easing effect
-    animationEasing : "easeOutQuart",
-    responsive: true
-  });
-  </script>
+  //Number - Amount of animation steps
+  animationSteps : 50,
 
-</body>
-</html>
+  //String - Animation easing effect
+  animationEasing : "easeOutQuart",
+  responsive: true
+});
+
+var ctxAufwand = document.getElementById("aufwand-chart").getContext("2d");
+var dataAufwand = [
+  {{ range $i, $e := .Params.aufwand }}
+  {{ $color_index := mod $i (len $.Site.Data.finanzen_colors.red) }}
+  {
+      value: {{ $e.betrag }},
+      color: {{ index $.Site.Data.finanzen_colors.red $color_index }},
+      highlight: "#5f5f5f",
+      label: {{ $e.name }}
+  },
+  {{ end }}
+];
+var chartErtrag = new Chart(ctxAufwand).Doughnut(dataAufwand, {
+  tooltipTemplate: function(label){return label.label + ": CHF " + label.value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, "'");},
+
+  //Number - Amount of animation steps
+  animationSteps : 50,
+
+  //String - Animation easing effect
+  animationEasing : "easeOutQuart",
+  responsive: true
+});
+</script>
+{{ end }}

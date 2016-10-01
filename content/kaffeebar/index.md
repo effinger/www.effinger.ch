@@ -1,5 +1,6 @@
 +++
 title = "Kaffeebar"
+description = "Bei uns gibt es guten Kaffee für Tanten, Espresso für Eilige und Tee für Abwartende. Und auch Apéros für Prostende, Bier für Feierabende und Wein für alle."
 image = "kaffeebar_header_02.jpg"
 
 offers_title = "Menu"

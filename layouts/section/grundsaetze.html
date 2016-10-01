@@ -1,137 +1,127 @@
-<!DOCTYPE html>
-<html lang="de">
-  {{ partial "head.html" . }}
-  <body class="">
+{{/* Workaround until we have this: https://discuss.gohugo.io/t/node-improvements/1593 */}}
+{{ define "description1" }}Die Grundsätze erzählen davon, wie wir miteinander Arbeiten und Leben möchten. Eine Utopie? Vielleicht. Oder hoffentlich?{{ end }}
+{{ define "description2" }}Die Grundsätze erzählen davon, wie wir miteinander Arbeiten und Leben möchten. Eine Utopie? Vielleicht. Oder hoffentlich?{{ end }}
 
-    <!-- Page Wrap -->
-    <div class="page grundsaetze" id="top">
+{{ define "main" }}
+<!-- Page Wrap -->
+<div class="page grundsaetze" id="top">
 
-      <nav class="main-nav dark transparent stick-fixed">
-        {{ partial "navigation.html" . }}
-      </nav>
+  <nav class="main-nav dark transparent stick-fixed">
+    {{ partial "navigation.html" . }}
+  </nav>
 
-      <!-- Header -->
-      <section class="small-section-header bg-dark-lighter">
-        <div class="relative container align-left pt-80">
+  <!-- Header -->
+  <section class="small-section-header bg-dark-lighter">
+    <div class="relative container align-left pt-80">
 
-          <div class="row">
+      <div class="row">
 
-            <div class="col-md-8">
-              <h1 class="hs-line-11 font-alt mb-0">Grundsätze</h1>
-              <!--
-              <div class="hs-line-4 font-alt mt-20 mt-xs-0">
-              Wie wir organisert sind.
-              </div>
-              -->
-            </div>
-
-            <div class="col-md-4 mt-30">
-              <div class="mod-breadcrumbs font-alt align-right">
-                <a href="/ueber/">Community</a>&nbsp;/&nbsp;<span>Grundsätze</span>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </section>
-      <!-- End Header -->
-
-      <!-- Section -->
-      <section class="page-section bg-gray-lighter">
-        <div class="container relative align-center">
+        <div class="col-md-8">
+          <h1 class="hs-line-11 font-alt mb-0">Grundsätze</h1>
           <!--
-          <h2 class="section-title font-alt mb-70 mb-sm-40">
-            Werte
-          </h2>
+          <div class="hs-line-4 font-alt mt-20 mt-xs-0">
+          Wie wir organisert sind.
+          </div>
           -->
+        </div>
 
-          <div class="row section-text">
-            <div class="col-sm-offset-1 col-sm-5 col-md-offset-2 col-md-4">
-              {{ range first 5 (sort .Data.Pages "Date" "asc") }}
-              <div class="mb-10">
-                <a href="{{ .RelPermalink }}" class="btn btn-mod btn-border btn-medium btn-round btn-wert">{{ .Title }}</a>
-              </div>
-              {{ end }}
-            </div>
-            <div class="col-sm-5 col-md-4">
-              {{ range last 5 (sort .Data.Pages "Date" "asc") }}
-              <div class="mb-10">
-                <a href="{{ .RelPermalink }}" class="btn btn-mod btn-border btn-medium btn-round btn-wert">{{ .Title }}</a>
-              </div>
-              {{ end }}
-            </div>
-          </div>
-          <div class="row section-text mt-70">
-            <div class="col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8">
-
-            <p>
-              Das offizielle Dokument mit den Grundsätzen kann auch als PDF heruntergeladen werden:
-            </p>
-
-            <a href="effinger-grundsaetze.pdf">
-              <span class="icon-download"></span><br>
-              Grundsätze als PDF (37 Seiten)
-            </a>
+        <div class="col-md-4 mt-30">
+          <div class="mod-breadcrumbs font-alt align-right">
+            <a href="/ueber/">Community</a>&nbsp;/&nbsp;<span>Grundsätze</span>
           </div>
         </div>
-      </section>
-      <!-- End Section -->
-
-      <!-- Section -->
-      <section class="page-section">
-        <div class="container relative">
-          <div class="section-text mb-sm-20">
-            <div class="row">
-              <div class="col-md-offset-2 col-md-4 col-sm-6 mb-50">
-                Während dem ersten Jahr haben wir gemeinsam ein Dokument erarbeitet über unsere Vision und Werte, nach denen wir uns als Community ausrichten wollen. Es ist ein ganz persönlicher Teil unserer Geschichte.
-              </div>
-
-              <div class="col-md-4 col-sm-6 mb-50">
-                Die Grundsätze erzählen auch eine neue Geschichte von einem Traum, wie wir miteinander Arbeiten und Leben möchten. Eine Utopie? Vielleicht. Oder hoffentlich?
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-offset-2 col-md-8">
-                <blockquote class="mb-0">
-                  <p>
-                    [...] so entsteht in der Welt etwas, das allen in die Kindheit scheint und worin noch niemand war: Heimat
-                  </p>
-                  <footer>
-                    Ernst Bloch
-                  </footer>
-                </blockquote>
-              </div>
-            </div>
-        </div>
-      </section>
-      <!-- End Section -->
-
-      <!-- Section -->
-      <section class="page-section bg-dark-lighter">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-              <h3 class="section-title font-alt">Hilf mit!</h3>
-              <div>
-                <p>
-                  Für die Umsetzung der Grundsätze sind wir auf dich angewiesen. Achte beim Lesen darauf, ob dir etwas besonders auffält. Dann fordere uns heraus, dies zu leben. Du kannst dafür auch eine Rolle übernehmen. Mit einer Rolle gibt dir die Community ein Mandat, dich für etwas einzusetzen und dafür auch die nötigen Massnahmen zu ergreifen.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- End Section -->
-
-
-      {{ partial "footer.html" . }}
+      </div>
 
     </div>
-    <!-- End Page Wrap -->
+  </section>
+  <!-- End Header -->
 
-    {{ partial "body_includes.html" . }}
+  <!-- Section -->
+  <section class="page-section bg-gray-lighter">
+    <div class="container relative align-center">
+      <!--
+      <h2 class="section-title font-alt mb-70 mb-sm-40">
+        Werte
+      </h2>
+      -->
 
-    {{ partial "disqus_count.html" . }}
+      <div class="row section-text">
+        <div class="col-sm-offset-1 col-sm-5 col-md-offset-2 col-md-4">
+          {{ range first 5 (sort .Data.Pages "Date" "asc") }}
+          <div class="mb-10">
+            <a href="{{ .RelPermalink }}" class="btn btn-mod btn-border btn-medium btn-round btn-wert">{{ .Title }}</a>
+          </div>
+          {{ end }}
+        </div>
+        <div class="col-sm-5 col-md-4">
+          {{ range last 5 (sort .Data.Pages "Date" "asc") }}
+          <div class="mb-10">
+            <a href="{{ .RelPermalink }}" class="btn btn-mod btn-border btn-medium btn-round btn-wert">{{ .Title }}</a>
+          </div>
+          {{ end }}
+        </div>
+      </div>
+      <div class="row section-text mt-70">
+        <div class="col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8">
 
-  </body>
-</html>
+        <p>
+          Das offizielle Dokument mit den Grundsätzen kann auch als PDF heruntergeladen werden:
+        </p>
+
+        <a href="effinger-grundsaetze.pdf">
+          <span class="icon-download"></span><br>
+          Grundsätze als PDF (37 Seiten)
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- End Section -->
+
+  <!-- Section -->
+  <section class="page-section">
+    <div class="container relative">
+      <div class="section-text mb-sm-20">
+        <div class="row">
+          <div class="col-md-offset-2 col-md-4 col-sm-6 mb-50">
+            Während dem ersten Jahr haben wir gemeinsam ein Dokument erarbeitet über unsere Vision und Werte, nach denen wir uns als Community ausrichten wollen. Es ist ein ganz persönlicher Teil unserer Geschichte.
+          </div>
+
+          <div class="col-md-4 col-sm-6 mb-50">
+            Die Grundsätze erzählen auch eine neue Geschichte von einem Traum, wie wir miteinander Arbeiten und Leben möchten. Eine Utopie? Vielleicht. Oder hoffentlich?
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-offset-2 col-md-8">
+            <blockquote class="mb-0">
+              <p>
+                [...] so entsteht in der Welt etwas, das allen in die Kindheit scheint und worin noch niemand war: Heimat
+              </p>
+              <footer>
+                Ernst Bloch
+              </footer>
+            </blockquote>
+          </div>
+        </div>
+    </div>
+  </section>
+  <!-- End Section -->
+
+  <!-- Section -->
+  <section class="page-section bg-dark-lighter">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <h3 class="section-title font-alt">Hilf mit!</h3>
+          <div>
+            <p>
+              Für die Umsetzung der Grundsätze sind wir auf dich angewiesen. Achte beim Lesen darauf, ob dir etwas besonders auffält. Dann fordere uns heraus, dies zu leben. Du kannst dafür auch eine Rolle übernehmen. Mit einer Rolle gibt dir die Community ein Mandat, dich für etwas einzusetzen und dafür auch die nötigen Massnahmen zu ergreifen.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Section -->
+</div>
+<!-- End Page Wrap -->
+{{ end }}

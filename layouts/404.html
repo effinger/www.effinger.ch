@@ -1,65 +1,50 @@
-<!DOCTYPE html>
-<html lang="de">
+{{ define "title" }}
+{{ .Title }}
+{{ end }}
 
-<head>
-  {{ partial "meta.html" . }}
+{{ define "main" }}
+<!-- Page Wrap -->
+<div class="page" id="top">
 
-  <title>{{ .Title }}</title>
+  <nav class="main-nav dark transparent stick-fixed">
+    {{ partial "navigation.html" . }}
+  </nav>
 
-  {{ partial "head_includes.html" . }} {{ partial "analytics_js.html" . }}
-</head>
+  <!-- Home Section -->
+  <section class="home-section bg-dark-alfa-50 parallax-2" data-background="/error.jpg">
+    <div class="js-height-full">
 
-<body class="">
+      <!-- Hero Content -->
+      <div class="home-content container">
+        <div class="home-text">
+          <div class="hs-cont">
 
-  <!-- Page Wrap -->
-  <div class="page" id="top">
+            <!-- Headings -->
+            <div class="hs-wrap">
 
-    <nav class="main-nav dark transparent stick-fixed">
-      {{ partial "navigation.html" . }}
-    </nav>
+              <div class="hs-line-13 font-alt mb-10">
+                404
+              </div>
 
-    <!-- Home Section -->
-    <section class="home-section bg-dark-alfa-50 parallax-2" data-background="/error.jpg">
-        <div class="js-height-full">
+              <div class="hs-line-4 font-alt mb-40">
+                Hicks, diese Seite existiert nicht.
+              </div>
 
-            <!-- Hero Content -->
-            <div class="home-content container">
-                <div class="home-text">
-                    <div class="hs-cont">
+              <div class="local-scroll">
+                <a href="/" class="btn btn-mod btn-w btn-round btn-small"><i class="fa fa-angle-left"></i> Zur Startseite</a>
+              </div>
 
-                        <!-- Headings -->
-                        <div class="hs-wrap">
-
-                            <div class="hs-line-13 font-alt mb-10">
-                                404
-                            </div>
-
-                            <div class="hs-line-4 font-alt mb-40">
-                                Hicks, diese Seite existiert nicht.
-                            </div>
-
-                            <div class="local-scroll">
-                                <a href="/" class="btn btn-mod btn-w btn-round btn-small"><i class="fa fa-angle-left"></i> Zur Startseite</a>
-                            </div>
-
-                        </div>
-                        <!-- End Headings -->
-
-                    </div>
-                </div>
             </div>
-            <!-- End Hero Content -->
+            <!-- End Headings -->
 
+          </div>
         </div>
-    </section>
-    <!-- End Home Section -->
+      </div>
+      <!-- End Hero Content -->
 
-    {{ partial "footer.html" . }}
-
-  </div>
-  <!-- End Page Wrap -->
-
-  {{ partial "body_includes.html" . }}
-</body>
-
-</html>
+    </div>
+</section>
+  <!-- End Home Section -->
+</div>
+<!-- End Page Wrap -->
+{{ end }}

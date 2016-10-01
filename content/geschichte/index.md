@@ -1,5 +1,6 @@
 +++
 title = "Geschichte"
+description = "Die Geschichte, wie wir gemeinsam im Zentrum von Bern eine Heimat für Jungunternehmer und Kreative mit Coworking Space und Kaffeebar geschaffen haben."
 image = "geschichte_header.jpg"
 
 block_1_title = "Der Anfang"
@@ -118,7 +119,7 @@ Im Januar 2016 läuft während 30 Tagen unsere [Crowdfunding Kampagne](/blog/cro
 title = "Umbau"
 image = "14-bau.jpg"
 text = """
-Im Februar 2016 wird es hektisch auf der Baustelle. Die Handwerker legen Nachtschichten ein, um die [Räume rechtzeitig fertigzustellen](/blog/effinger-eroeffnet-im-maerz/). 
+Im Februar 2016 wird es hektisch auf der Baustelle. Die Handwerker legen Nachtschichten ein, um die [Räume rechtzeitig fertigzustellen](/blog/effinger-eroeffnet-im-maerz/).
 """
 
 [[story_items]]

@@ -1,102 +1,89 @@
-<!DOCTYPE html>
-<html lang="de">
-{{ partial "head.html" . }}
+{{ define "main" }}
+<!-- Page Wrap -->
+<div class="page organisation" id="top">
 
-<body>
+  <nav class="main-nav dark transparent stick-fixed">
+    {{ partial "navigation.html" . }}
+  </nav>
 
-  <!-- Page Wrap -->
-  <div class="page organisation" id="top">
+  <!-- Header -->
+  <section class="small-section-header bg-dark-lighter">
+    <div class="relative container align-left pt-80">
 
-    <nav class="main-nav dark transparent stick-fixed">
-      {{ partial "navigation.html" . }}
-    </nav>
+      <div class="row">
 
-    <!-- Header -->
-    <section class="small-section-header bg-dark-lighter">
-      <div class="relative container align-left pt-80">
-
-        <div class="row">
-
-          <div class="col-md-8">
-            <h1 class="hs-line-11 font-alt mb-0">Organisation</h1>
-            <!--
-            <div class="hs-line-4 font-alt mt-20 mt-xs-0">
-            Grundsätze
-            </div>
-            -->
+        <div class="col-md-8">
+          <h1 class="hs-line-11 font-alt mb-0">Organisation</h1>
+          <!--
+          <div class="hs-line-4 font-alt mt-20 mt-xs-0">
+          Grundsätze
           </div>
-
-          <div class="col-md-4 mt-30">
-            <div class="mod-breadcrumbs font-alt align-right">
-              <a href="/ueber/">Community</a>&nbsp;/&nbsp;<span>Organisation</span>
-            </div>
-          </div>
+          -->
         </div>
 
-      </div>
-    </section>
-    <!-- End Header -->
-
-    <!-- Section -->
-    <section class="page-section bg-gray-lighter">
-      <div class="container relative align-center">
-        <!--
-        <h2 class="section-title font-alt mb-70 mb-sm-40">
-          Werte
-        </h2>
-        -->
-
-      <div class="row section-text">
-        <div class="col-md-offset-2 col-md-8">
-          <p>
-            Auf dieser Seite erfährst du alle Details, wie unsere Community und
-            der Betrieb des Coworking Spaces organisiert sind. Die Organisation
-            basiert auf unserem Dokument der <a href="/grundsaetze/">Grundsätze</a>.
-          </p>
-          <p>
-            Das offizielle Dokument zur Organisation kann auch als PDF heruntergeladen werden:
-          </p>
-          <a  href="effinger-organisation.pdf">
-            <span class="icon-download"></span><br>
-            Organisation als PDF
-          </a>
-        </div>
-      </div>
-    </section>
-    <!-- End Section -->
-
-    <!-- Section -->
-    <section class="page-section">
-      <div class="container relative">
-
-        <div class="row">
-
-          <!-- Content -->
-          <div class="col-sm-10 col-sm-offset-1">
-
-            <!-- Text -->
-            <div class="long-text-body">
-              <h1 class="mt-0 font-alt">{{ .Title }}</h1>
-
-              {{ .Content }}
-            </div>
-            <!-- End Text -->
-
+        <div class="col-md-4 mt-30">
+          <div class="mod-breadcrumbs font-alt align-right">
+            <a href="/ueber/">Community</a>&nbsp;/&nbsp;<span>Organisation</span>
           </div>
-          <!-- End Content -->
         </div>
-
       </div>
-    </section>
-    <!-- End Section -->
 
-    {{ partial "footer.html" . }}
+    </div>
+  </section>
+  <!-- End Header -->
 
-  </div>
-  <!-- End Page Wrap -->
+  <!-- Section -->
+  <section class="page-section bg-gray-lighter">
+    <div class="container relative align-center">
+      <!--
+      <h2 class="section-title font-alt mb-70 mb-sm-40">
+        Werte
+      </h2>
+      -->
 
-  {{ partial "body_includes.html" . }}
+    <div class="row section-text">
+      <div class="col-md-offset-2 col-md-8">
+        <p>
+          Auf dieser Seite erfährst du alle Details, wie unsere Community und
+          der Betrieb des Coworking Spaces organisiert sind. Die Organisation
+          basiert auf unserem Dokument der <a href="/grundsaetze/">Grundsätze</a>.
+        </p>
+        <p>
+          Das offizielle Dokument zur Organisation kann auch als PDF heruntergeladen werden:
+        </p>
+        <a  href="effinger-organisation.pdf">
+          <span class="icon-download"></span><br>
+          Organisation als PDF
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- End Section -->
 
-</body>
+  <!-- Section -->
+  <section class="page-section">
+    <div class="container relative">
 
-</html>
+      <div class="row">
+
+        <!-- Content -->
+        <div class="col-sm-10 col-sm-offset-1">
+
+          <!-- Text -->
+          <div class="long-text-body">
+            <h1 class="mt-0 font-alt">{{ .Title }}</h1>
+
+            {{ .Content }}
+          </div>
+          <!-- End Text -->
+
+        </div>
+        <!-- End Content -->
+      </div>
+
+    </div>
+  </section>
+  <!-- End Section -->
+</div>
+<!-- End Page Wrap -->
+{{ end }}

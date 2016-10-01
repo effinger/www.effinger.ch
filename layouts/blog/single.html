@@ -1,104 +1,95 @@
-{{ $.Scratch.Set "section_title" "Blog" }}
+{{ define "title" }}
+{{ .Title }} | Blog | {{ .Site.Title }}
+{{ end }}
 
-<!DOCTYPE html>
-<html lang="de">
-{{ partial "head.html" . }}
-<body>
+{{ define "main" }}
+<!-- Page Wrap -->
+<div class="page" id="top">
 
-  <!-- Page Wrap -->
-  <div class="page" id="top">
+  <nav class="main-nav stick-fixed">
+    {{ partial "navigation.html" . }}
+  </nav>
 
-    <nav class="main-nav stick-fixed">
-      {{ partial "navigation.html" . }}
-    </nav>
+  <!-- Header -->
+  <section class="small-section-header bg-gray-lighter">
+    <div class="relative container align-left pt-80">
 
-    <!-- Header -->
-    <section class="small-section-header bg-gray-lighter">
-      <div class="relative container align-left pt-80">
+      <div class="row">
 
-        <div class="row">
-
-          <div class="col-md-8">
-            <h1 class="hs-line-11 font-alt mb-0">Blog</h1>
-            <!--
-            <div class="hs-line-4 font-alt black mt-20 mt-xs-0">
-              Geschichten aus der Community
-            </div>
-            -->
+        <div class="col-md-8">
+          <h1 class="hs-line-11 font-alt mb-0"><a href="/blog/">Blog</a></h1>
+          <!--
+          <div class="hs-line-4 font-alt black mt-20 mt-xs-0">
+            Geschichten aus der Community
           </div>
-          <div class="col-md-4 mt-30">
-            <div class="mod-breadcrumbs font-alt align-right">
-              <a href="/blog/"><i class="fa fa-angle-left"></i> Zur Übersicht</a>
-            </div>
+          -->
+        </div>
+        <div class="col-md-4 mt-30">
+          <div class="mod-breadcrumbs font-alt align-right">
+            <a href="/blog/"><i class="fa fa-angle-left"></i> Zur Übersicht</a>
           </div>
         </div>
-
       </div>
-    </section>
-    <!-- End Header -->
 
-    <!-- Section -->
-    <section class="page-section">
-      <div class="container relative">
+    </div>
+  </section>
+  <!-- End Header -->
 
-        <div class="row">
+  <!-- Section -->
+  <section class="page-section">
+    <div class="container relative">
 
-          <!-- Content -->
-          <div class="col-sm-10 col-sm-offset-1">
+      <div class="row">
 
-            <!-- Post -->
-            <div class="blog-item mb-80 mb-xs-40">
+        <!-- Content -->
+        <div class="col-sm-10 col-sm-offset-1">
 
-              <!-- Text -->
-              <div class="blog-item-body">
+          <!-- Post -->
+          <div class="blog-item mb-80 mb-xs-40">
 
-                <h1 class="mt-0 font-alt">{{ .Title }}</h1>
+            <!-- Text -->
+            <div class="blog-item-body">
 
-                <!-- Author, Tags, Comments -->
-                <div class="blog-item-data local-scroll">
-                  {{ partial "blog/meta.html" . }}
-                </div>
+              <h1 class="mt-0 font-alt">{{ .Title }}</h1>
 
-                {{ .Content }}
+              <!-- Author, Tags, Comments -->
+              <div class="blog-item-data local-scroll">
+                {{ partial "blog/meta.html" . }}
               </div>
-              <!-- End Text -->
 
+              {{ .Content }}
             </div>
-            <!-- End Post -->
-
-            <!-- Prev/Next Post -->
-            <div class="clearfix mb-80 mb-xs-40">
-              {{ if .PrevInSection }}
-              <a href="{{ .PrevInSection.RelPermalink }}" class="blog-item-more left"><i class="fa fa-angle-left"></i>&nbsp;{{ .PrevInSection.Title }}</a> {{ end }} {{ if .NextInSection }}
-              <a href="{{ .NextInSection.RelPermalink }}" class="blog-item-more right"><i class="fa fa-angle-right"></i>{{ .NextInSection.Title }}</a> {{ end }}
-            </div>
-            <!-- End Prev/Next Post -->
-
-            <!-- Comments -->
-            {{ if .Params.comments }}
-            <div class="mb-80 mb-xs-40">
-
-              <h4 id="comments" class="blog-page-title font-alt">Kommentare</h4> {{ partial "disqus_comments.html" . }}
-            </div>
-            {{ end }}
-            <!-- End Comments -->
+            <!-- End Text -->
 
           </div>
-          <!-- End Content -->
+          <!-- End Post -->
+
+          <!-- Prev/Next Post -->
+          <div class="clearfix mb-80 mb-xs-40">
+            {{ if .PrevInSection }}
+            <a href="{{ .PrevInSection.RelPermalink }}" class="blog-item-more left"><i class="fa fa-angle-left"></i>&nbsp;{{ .PrevInSection.Title }}</a> {{ end }} {{ if .NextInSection }}
+            <a href="{{ .NextInSection.RelPermalink }}" class="blog-item-more right"><i class="fa fa-angle-right"></i>{{ .NextInSection.Title }}</a> {{ end }}
+          </div>
+          <!-- End Prev/Next Post -->
+
+          <!-- Comments -->
+          {{ if .Params.comments }}
+          <div class="mb-80 mb-xs-40">
+
+            <h4 id="comments" class="blog-page-title font-alt">Kommentare</h4>
+            {{ partial "disqus_comments.html" . }}
+          </div>
+          {{ end }}
+          <!-- End Comments -->
 
         </div>
+        <!-- End Content -->
 
       </div>
-    </section>
-    <!-- End Section -->
 
-    {{ partial "footer.html" . }}
-
-  </div>
-  <!-- End Page Wrap -->
-
-  {{ partial "body_includes.html" . }}
-
-</body>
-
-</html>
+    </div>
+  </section>
+  <!-- End Section -->
+</div>
+<!-- End Page Wrap -->
+{{ end }}

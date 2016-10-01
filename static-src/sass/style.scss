@@ -53,6 +53,11 @@ strong {
   background-color: $primary-color;
 }
 
+h1 > a,
+h1 > a:hover {
+  text-decoration: none;
+}
+
 .draft-title {
   display: table-cell;
   vertical-align: middle;

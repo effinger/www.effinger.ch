@@ -1,250 +1,282 @@
-{{/* Hack: Hugo (v0.15) does not have way to use a content file for the homepage. As a workaround we go trough all pages (content files) here and pick the "index.md". Through "range" this becomes the new context (the dot). See: https://github.com/spf13/hugo/issues/330
-*/}} {{ range where .Data.Pages "RelPermalink" "/" }}
-<!DOCTYPE html>
-<html lang="de">
+{{ define "title" }}
+{{ .Title }}
+{{ end }}
 
-<head>
-  {{ partial "meta.html" . }}
+{{/* Workaround until we have this: https://discuss.gohugo.io/t/node-improvements/1593 */}}
+{{ define "description1" }}Kaffeebar und Coworking Space. Für Jungunternehmer, Handwerkerinnen, Weltveränderer, Bernerinnen, Zugereiste, Kaffeeliebhaber, Biertrinker und für dich.{{ end }}
+{{ define "description2" }}Kaffeebar und Coworking Space. Für Jungunternehmer, Handwerkerinnen, Weltveränderer, Bernerinnen, Zugereiste, Kaffeeliebhaber, Biertrinker und für dich.{{ end }}
 
-  <title>{{ .Title }}</title>
 
-  {{ partial "head_includes.html" . }} {{ partial "analytics_js.html" . }}
-</head>
+{{ define "main" }}
+<!-- Page Wrap -->
+<div class="page" id="top">
 
-<body class="">
+  <nav class="main-nav dark transparent stick-fixed">
+    {{ partial "navigation.html" . }}
+  </nav>
 
-  <!-- Page Wrap -->
-  <div class="page" id="top">
+  <!-- Home Section -->
+  <section class="home-section bg-dark-alfa-70 parallax-2 fixed-height-small" data-background="effinger_header.jpg" id="home">
+    <div class="js-height-parent container">
 
-    <nav class="main-nav dark transparent stick-fixed">
-      {{ partial "navigation.html" . }}
-    </nav>
+      <!-- Hero Content -->
+      <div class="home-content">
+        <div class="home-text">
+          <img src="images/Logo-Effinger-normal-weiss.svg" alt="Logo Effinger" class="mb-10 mt-50">
+          <h1 class="font-tagline font-alt mb-50 mb-xs-30">
+              Kaffeebar &amp; Coworking Space
+            </h1>
 
-    <!-- Home Section -->
-    <section class="home-section bg-dark-alfa-70 parallax-2 fixed-height-small" data-background="effinger_header.jpg" id="home">
-      <div class="js-height-parent container">
-
-        <!-- Hero Content -->
-        <div class="home-content">
-          <div class="home-text">
-            <img src="images/Logo-Effinger-normal-weiss.svg" alt="Logo Effinger" class="mb-10 mt-50">
-            <h1 class="font-tagline font-alt mb-50 mb-xs-30">
-                Kaffeebar &amp; Coworking Space
-              </h1>
-
-            <!-- <div class="local-scroll">
-              <a href="#kaffeebar" class="btn btn-mod btn-border-w btn-medium btn-round hidden-xs">Kaffebar</a>
-              <span class="hidden-xs">&nbsp;</span>
-              <a href="#kaffeebar" class="btn btn-mod btn-border-w btn-medium btn-round hidden-xs">Coworking</a>
-              <span class="hidden-xs">&nbsp;</span>
-              <a href="#kaffeebar" class="btn btn-mod btn-border-w btn-medium btn-round hidden-xs">Community</a>
-            </div> -->
-
-          </div>
-        </div>
-        <!-- End Hero Content -->
-
-      </div>
-    </section>
-    <!-- End Home Section -->
-
-    <!-- Quote Section -->
-    <section class="page-section" id="about">
-      <div class="container relative">
-        <div class="section-text">
-          <h1 class="font-alt">Kaffeebar & Coworking Space</h1> Für Jungunternehmer, Kreative, Handwerkerinnen, Weltveränderer, Bernerinnen, Zugereiste, Kaffeeliebhaberinnen, Biertrinker, Kulturschaffende, junge Kunst und für dich.
-        </div>
-      </div>
-    </section>
-    <!-- End Quote Section -->
-
-    <!-- CTA Kaffeebar Section -->
-    <section class="page-section bg-gray">
-      <div class="container relative">
-
-        <div class="row">
-
-          <div class="col-md-7 mb-sm-40">
-
-            <!-- Gallery -->
-            <div class="work-full-media mt-0 white-shadow">
-              <ul class="clearlist work-full-slider owl-carousel">
-                <li>
-                  <img src="kaffeebar_01.jpg" alt="" />
-                </li>
-                <li>
-                  <img src="kaffeebar_02.jpg" alt="" />
-                </li>
-              </ul>
-            </div>
-            <!-- End Gallery -->
-
-          </div>
-
-          <div class="col-md-5 col-lg-4 col-lg-offset-1">
-
-            <!-- About Project -->
-            <div class="text">
-
-              <h3 class="font-alt mb-30 mb-xxs-10">Kaffeebar</h3>
-
-              <p>
-                Bei uns gibt es guten Kaffee für Tanten, Espresso für Eilige und Tee für Abwartende. Und auch Apéros für Prostende, Bier für Feierabende und Wein für alle.
-              </p>
-
-              <div class="mt-40">
-                <a href="/kaffeebar/" class="btn btn-mod btn-border btn-round btn-medium">Mehr</a>
-              </div>
-
-            </div>
-            <!-- End About Project -->
-
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End CTA Kaffeebar Section -->
-
-    <!-- CTA Coworking Section -->
-    <section class="page-section">
-      <div class="container relative">
-
-        <div class="row">
-
-          <div class="col-md-7 col-md-push-5 mb-sm-40">
-
-            <!-- Gallery -->
-            <div class="work-full-media mt-0 white-shadow">
-              <ul class="clearlist work-full-slider owl-carousel">
-                <li>
-                  <img src="coworking_01.jpg" alt="" />
-                </li>
-                <li>
-                  <img src="coworking_02.jpg" alt="" />
-                </li>
-              </ul>
-            </div>
-            <!-- End Gallery -->
-
-          </div>
-
-          <div class="col-md-5 col-md-pull-7 col-lg-4">
-
-            <!-- About Project -->
-            <div class="text">
-
-              <h3 class="font-alt mb-30 mb-xxs-10">Coworking Space</h3>
-
-              <p>
-                Der Coworking Space stellt Arbeitsplätze zur Verfügung, die flexibel auf Tagesbasis gemietet werden können.
-              </p>
-
-              <div class="mt-40">
-                <a href="/coworking/" class="btn btn-mod btn-border btn-round btn-medium">Mehr</a>
-              </div>
-
-            </div>
-            <!-- End About Project -->
-
-          </div>
-
+          <!-- <div class="local-scroll">
+            <a href="#kaffeebar" class="btn btn-mod btn-border-w btn-medium btn-round hidden-xs">Kaffebar</a>
+            <span class="hidden-xs">&nbsp;</span>
+            <a href="#kaffeebar" class="btn btn-mod btn-border-w btn-medium btn-round hidden-xs">Coworking</a>
+            <span class="hidden-xs">&nbsp;</span>
+            <a href="#kaffeebar" class="btn btn-mod btn-border-w btn-medium btn-round hidden-xs">Community</a>
+          </div> -->
 
         </div>
       </div>
-    </section>
-    <!-- End CTA Coworking Section -->
+      <!-- End Hero Content -->
 
-    <!-- CTA Community Section -->
-    <section class="page-section bg-gray">
-      <div class="container relative">
+    </div>
+  </section>
+  <!-- End Home Section -->
 
-        <div class="row">
+  <!-- Quote Section -->
+  <section class="page-section" id="about">
+    <div class="container relative">
+      <div class="section-text">
+        <h1 class="font-alt">Kaffeebar & Coworking Space</h1> Für Jungunternehmer, Kreative, Handwerkerinnen, Weltveränderer, Bernerinnen, Zugereiste, Kaffeeliebhaberinnen, Biertrinker, Kulturschaffende, junge Kunst und für dich.
+      </div>
+    </div>
+  </section>
+  <!-- End Quote Section -->
 
-          <div class="col-md-7 mb-sm-40">
+  <!-- CTA Kaffeebar Section -->
+  <section class="page-section bg-gray">
+    <div class="container relative">
 
-            <!-- Gallery -->
-            <div class="work-full-media mt-0 white-shadow">
-              <ul class="clearlist work-full-slider owl-carousel">
-                <li>
-                  <img src="community_01.jpg" alt="" />
-                </li>
-              </ul>
+      <div class="row">
+
+        <div class="col-md-7 mb-sm-40">
+
+          <!-- Gallery -->
+          <div class="work-full-media mt-0 white-shadow">
+            <ul class="clearlist work-full-slider owl-carousel">
+              <li>
+                <img src="kaffeebar_01.jpg" alt="" />
+              </li>
+              <li>
+                <img src="kaffeebar_02.jpg" alt="" />
+              </li>
+            </ul>
+          </div>
+          <!-- End Gallery -->
+
+        </div>
+
+        <div class="col-md-5 col-lg-4 col-lg-offset-1">
+
+          <!-- About Project -->
+          <div class="text">
+
+            <h3 class="font-alt mb-30 mb-xxs-10">Kaffeebar</h3>
+
+            <p>
+              Bei uns gibt es guten Kaffee für Tanten, Espresso für Eilige und Tee für Abwartende. Und auch Apéros für Prostende, Bier für Feierabende und Wein für alle.
+            </p>
+
+            <div class="mt-40">
+              <a href="/kaffeebar/" class="btn btn-mod btn-border btn-round btn-medium">Mehr</a>
             </div>
-            <!-- End Gallery -->
 
           </div>
+          <!-- End About Project -->
 
-          <div class="col-md-5 col-lg-4 col-lg-offset-1">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End CTA Kaffeebar Section -->
 
-            <!-- About Project -->
-            <div class="text">
+  <!-- CTA Coworking Section -->
+  <section class="page-section">
+    <div class="container relative">
 
-              <h3 class="font-alt mb-30 mb-xxs-10">Über uns</h3>
+      <div class="row">
 
-              <p>
-                Wir sind eine innovative, kreative Community mit einer gemeinsamen Kaffeebar und Coworking Space in Bern. Wir sind eine Heimat für Jungunternehmer, Kreative und andere Weltveränderer, die einander helfen, ihre Ideen in Firmen, Innovationen und soziale Aktionen umzusetzen.
-              </p>
+        <div class="col-md-7 col-md-push-5 mb-sm-40">
 
-              <div class="mt-40">
-                <a href="/ueber/" class="btn btn-mod btn-border btn-round btn-medium">Mehr</a>
-              </div>
+          <!-- Gallery -->
+          <div class="work-full-media mt-0 white-shadow">
+            <ul class="clearlist work-full-slider owl-carousel">
+              <li>
+                <img src="coworking_01.jpg" alt="" />
+              </li>
+              <li>
+                <img src="coworking_02.jpg" alt="" />
+              </li>
+            </ul>
+          </div>
+          <!-- End Gallery -->
 
+        </div>
+
+        <div class="col-md-5 col-md-pull-7 col-lg-4">
+
+          <!-- About Project -->
+          <div class="text">
+
+            <h3 class="font-alt mb-30 mb-xxs-10">Coworking Space</h3>
+
+            <p>
+              Der Coworking Space stellt Arbeitsplätze zur Verfügung, die flexibel auf Tagesbasis gemietet werden können.
+            </p>
+
+            <div class="mt-40">
+              <a href="/coworking/" class="btn btn-mod btn-border btn-round btn-medium">Mehr</a>
             </div>
-            <!-- End About Project -->
 
+          </div>
+          <!-- End About Project -->
+
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+  <!-- End CTA Coworking Section -->
+
+  <!-- CTA Community Section -->
+  <section class="page-section bg-gray">
+    <div class="container relative">
+
+      <div class="row">
+
+        <div class="col-md-7 mb-sm-40">
+
+          <!-- Gallery -->
+          <div class="work-full-media mt-0 white-shadow">
+            <ul class="clearlist work-full-slider owl-carousel">
+              <li>
+                <img src="raeume.jpg" alt="" />
+              </li>
+            </ul>
+          </div>
+          <!-- End Gallery -->
+
+        </div>
+
+        <div class="col-md-5 col-lg-4 col-lg-offset-1">
+
+          <!-- About Project -->
+          <div class="text">
+
+            <h3 class="font-alt mb-30 mb-xxs-10">Raumvermietung</h3>
+
+            <p>
+              Wir vermieten innovative Sitzungszimmer und Workshopräume. Hier soll out-of-the-box gedacht werden - mit beschreibbaren und magnetischen Wänden, mit Design Thinking Materialien und mit Lego Serious Play.
+            </p>
+
+            <div class="mt-40">
+              <a href="/raeume/" class="btn btn-mod btn-border btn-round btn-medium">Mehr</a>
+            </div>
+
+          </div>
+          <!-- End About Project -->
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End CTA Community Section -->
+
+  <!-- CTA Coworking Section -->
+  <section class="page-section">
+    <div class="container relative">
+
+      <div class="row">
+
+        <div class="col-md-7 col-md-push-5 mb-sm-40">
+
+          <!-- Gallery -->
+          <div class="work-full-media mt-0 white-shadow">
+            <ul class="clearlist work-full-slider owl-carousel">
+              <li>
+                <img src="community_01.jpg" alt="" />
+              </li>
+            </ul>
+          </div>
+          <!-- End Gallery -->
+
+        </div>
+
+        <div class="col-md-5 col-md-pull-7 col-lg-4">
+
+          <!-- About Project -->
+          <div class="text">
+
+            <h3 class="font-alt mb-30 mb-xxs-10">Über uns</h3>
+
+            <p>
+              Wir sind eine innovative, kreative Community mit einer gemeinsamen Kaffeebar und Coworking Space in Bern. Wir sind eine Heimat für Jungunternehmer, Kreative und andere Weltveränderer, die einander helfen, ihre Ideen in Firmen, Innovationen und soziale Aktionen umzusetzen.
+            </p>
+
+            <div class="mt-40">
+              <a href="/ueber/" class="btn btn-mod btn-border btn-round btn-medium">Mehr</a>
+            </div>
+
+          </div>
+          <!-- End About Project -->
+
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+  <!-- End CTA Coworking Section -->
+
+  <!-- contact section -->
+  <section class="page-section bg-dark-lighter">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="contact-item contact-kaffeebar mt-20 mb-20 clearfix">
+            <h4 class="uppercase">Kaffeebar</h4>
+            <div class="wave-spacer"></div>
+            <div class="item">
+              <p>Telefon<span>031 398 20 20</span></p>
+            </div>
+            <div class="item mt-20">
+              <p>Email<span><a href="mailto:kaffeebar@effinger.ch">kaffeebar@effinger.ch</a></span></p>
+            </div>
+            <div class="item mt-20">
+              <p>Mo-Fr <span>7-23</span></p>
+              <p>Sa <span>9-17</span></p>
+              <p>So <span>Ruhetag</span></p>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-sm-6">
+          <div class="contact-item contact-kaffeebar mt-20 mb-20 clearfix">
+            <h4 class="uppercase">Coworking Space</h4>
+            <div class="wave-spacer"></div>
+            <div class="item">
+              <p>Telefon<span>031 398 20 21</span></p>
+            </div>
+            <div class="item mt-20">
+              <p>Email<span><a href="mailto:coworking@effinger.ch">coworking@effinger.ch</a></span></p>
+            </div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- End CTA Community Section -->
-
-    <!-- contact section -->
-    <section class="page-section bg-dark-lighter">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-6">
-            <div class="contact-item contact-kaffeebar mt-20 mb-20 clearfix">
-              <h4 class="uppercase">Kaffeebar</h4>
-              <div class="wave-spacer"></div>
-              <div class="item">
-                <p>Telefon<span>031 398 20 20</span></p>
-              </div>
-              <div class="item mt-20">
-                <p>Email<span><a href="mailto:kaffeebar@effinger.ch">kaffeebar@effinger.ch</a></span></p>
-              </div>
-              <div class="item mt-20">
-                <p>Mo-Fr <span>7-23</span></p>
-                <p>Sa <span>9-17</span></p>
-                <p>So <span>Ruhetag</span></p>
-              </div>
-            </div>
-
-          </div>
-          <div class="col-sm-6">
-            <div class="contact-item contact-kaffeebar mt-20 mb-20 clearfix">
-              <h4 class="uppercase">Coworking Space</h4>
-              <div class="wave-spacer"></div>
-              <div class="item">
-                <p>Telefon<span>031 398 20 21</span></p>
-              </div>
-              <div class="item mt-20">
-                <p>Email<span><a href="mailto:coworking@effinger.ch">coworking@effinger.ch</a></span></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End contact section -->
-
-    {{ partial "footer.html" . }}
-
-  </div>
-  <!-- End Page Wrap -->
-
-  {{ partial "body_includes.html" . }}
-</body>
-
-</html>
-
+    </div>
+  </section>
+  <!-- End contact section -->
+</div>
+<!-- End Page Wrap -->
 {{ end }}

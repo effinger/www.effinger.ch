@@ -1,119 +1,106 @@
-<!DOCTYPE html>
-<html lang="de">
-  {{ partial "head.html" . }}
+{{ define "main" }}
+<!-- Page Wrap -->
+<div class="page" id="top">
 
-  <body class="">
+  <nav class="main-nav dark transparent stick-fixed">
+    {{ partial "navigation.html" . }}
+  </nav>
 
-    <!-- Page Wrap -->
-    <div class="page" id="top">
+  <!-- Section -->
+  <section class="page-section bg-dark-alfa-70 bg-scroll" data-background="{{ .Params.image }}">
+    <div class="relative container align-left pt-140 pb-60">
 
-      <nav class="main-nav dark transparent stick-fixed">
-        {{ partial "navigation.html" . }}
-      </nav>
+      <div class="row">
 
-      <!-- Section -->
-      <section class="page-section bg-dark-alfa-70 bg-scroll" data-background="{{ .Params.image }}">
-        <div class="relative container align-left pt-140 pb-60">
+        <div class="col-md-8">
+          <h1 class="hs-line-11 font-alt mb-0">Geschichte</h1>
+          <!--
+          <div class="hs-line-4 font-alt mt-20 mt-xs-0">
+            Es war einmal, vor nicht all zu langer Zeit...
+          </div>
+          -->
+        </div>
 
-          <div class="row">
-
-            <div class="col-md-8">
-              <h1 class="hs-line-11 font-alt mb-0">Geschichte</h1>
-              <!--
-              <div class="hs-line-4 font-alt mt-20 mt-xs-0">
-                Es war einmal, vor nicht all zu langer Zeit...
-              </div>
-              -->
-            </div>
-
-            <div class="col-md-4 mt-30">
-              <div class="mod-breadcrumbs font-alt align-right">
-                <a href="/ueber/">Community</a>&nbsp;/&nbsp;<span>Geschichte</span>
-              </div>
-
-            </div>
+        <div class="col-md-4 mt-30">
+          <div class="mod-breadcrumbs font-alt align-right">
+            <a href="/ueber/">Community</a>&nbsp;/&nbsp;<span>Geschichte</span>
           </div>
 
         </div>
-      </section>
-      <!-- End Section -->
-
-      <!-- Section -->
-      <section class="page-section bg-gray-lighter">
-        <div class="container">
-
-          <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-              <div class="section-text">
-                <h3 class="section-title font-alt">{{ .Params.block_1_title }}</h3>
-                <p>
-                {{ .Params.block_1_text | markdownify }}
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-              <div class="section-text">
-                <h3 class="section-title font-alt mb-20 mt-30">{{ .Params.block_2_title }}</h3>
-                <p>
-                  {{ .Params.block_2_text | markdownify }}
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- End Section -->
-
-      <!-- Section -->
-      <section class="page-section" id="about">
-        <div class="container relative">
-
-          <!-- Intro Text -->
-          <div class="row mb-70 mb-xs-30">
-            <div class="col-md-8 col-md-offset-2">
-              <div class="section-text">
-                <h3 class="section-title font-alt">{{ .Params.story_title }}</h3>
-              </div>
-            </div>
-          </div>
-          <!-- End Intro Text -->
-
-          <!-- Story Grid -->
-          <div class="row multi-columns-row alt-features-grid">
-
-            {{ range .Params.story_items }}
-            <!-- Story Item -->
-            <div class="col-sm-6 col-md-4 col-lg-4">
-              <div class="alt-features-item align-left">
-                <div class="alt-features-icon">
-                  <img src="{{ .image }}" alt="">
-                </div>
-                <h3 class="alt-features-title font-alt">{{ .title }}</h3>
-                <div class="alt-features-descr align-left">
-                  {{ .text | markdownify }}
-                </div>
-              </div>
-            </div>
-            <!-- End Story Item -->
-            {{ end }}
-
-          </div>
-          <!-- End Story Grid -->
-
-        </div>
-      </section>
-      <!-- End Section -->
-
-      {{ partial "footer.html" . }}
+      </div>
 
     </div>
-    <!-- End Page Wrap -->
+  </section>
+  <!-- End Section -->
 
-    {{ partial "body_includes.html" . }}
+  <!-- Section -->
+  <section class="page-section bg-gray-lighter">
+    <div class="container">
 
-  </body>
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <div class="section-text">
+            <h3 class="section-title font-alt">{{ .Params.block_1_title }}</h3>
+            <p>
+            {{ .Params.block_1_text | markdownify }}
+            </p>
+          </div>
+        </div>
+      </div>
 
-</html>
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <div class="section-text">
+            <h3 class="section-title font-alt mb-20 mt-30">{{ .Params.block_2_title }}</h3>
+            <p>
+              {{ .Params.block_2_text | markdownify }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Section -->
+
+  <!-- Section -->
+  <section class="page-section" id="about">
+    <div class="container relative">
+
+      <!-- Intro Text -->
+      <div class="row mb-70 mb-xs-30">
+        <div class="col-md-8 col-md-offset-2">
+          <div class="section-text">
+            <h3 class="section-title font-alt">{{ .Params.story_title }}</h3>
+          </div>
+        </div>
+      </div>
+      <!-- End Intro Text -->
+
+      <!-- Story Grid -->
+      <div class="row multi-columns-row alt-features-grid">
+
+        {{ range .Params.story_items }}
+        <!-- Story Item -->
+        <div class="col-sm-6 col-md-4 col-lg-4">
+          <div class="alt-features-item align-left">
+            <div class="alt-features-icon">
+              <img src="{{ .image }}" alt="">
+            </div>
+            <h3 class="alt-features-title font-alt">{{ .title }}</h3>
+            <div class="alt-features-descr align-left">
+              {{ .text | markdownify }}
+            </div>
+          </div>
+        </div>
+        <!-- End Story Item -->
+        {{ end }}
+
+      </div>
+      <!-- End Story Grid -->
+
+    </div>
+  </section>
+  <!-- End Section -->
+</div>
+<!-- End Page Wrap -->
+{{ end }}

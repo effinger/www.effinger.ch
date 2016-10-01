@@ -1,6 +1,6 @@
 +++
 title = "Organisation"
-description = ""
+description = "Alle Details, wie unsere Community und der Betrieb des Coworking Spaces organisiert sind."
 
 [menu.main]
   parent = "Community"
