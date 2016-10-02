@@ -1,4 +1,4 @@
-baseurl = "http://www.effinger.ch"
+baseurl = "https://www.effinger.ch"
 languageCode = "de"
 title = "Effinger — Kaffeebar & Coworking Space Bern"
 pluralizeListTitles = false

@@ -22,16 +22,16 @@ Seit Mitte Juli wissen wir, dass wir die Effingerstrasse 10 beziehen können und
 
 ### Die erste Runde
 
-Wie sollten wir da nur den Richtigen unter den Vielen finden? Ich hatte mir erhoft, dass einer uns alle überzeugen würde. Doch dieser eine Name war nicht zu finden. Die Meinungen darüber, was der Name ausdrücken sollte, gingen weit auseinander. 
+Wie sollten wir da nur den Richtigen unter den Vielen finden? Ich hatte mir erhoft, dass einer uns alle überzeugen würde. Doch dieser eine Name war nicht zu finden. Die Meinungen darüber, was der Name ausdrücken sollte, gingen weit auseinander.
 
 Wir diskutierten, hirnten, versuchten durch kreative Methoden zu neuen Namen zu kommen. Nach längerer Zeit kristalisierte sich «Macherei» heraus. Wir hatten uns schon fast definitiv für diesen entschieden, als doch noch einmal Einwände von Personen aus der Community kamen.
 
 
 ### Die zweite Runde
 
-Wir entschieden uns, eine zusätzliche Runde zu nehmen und nochmals unsere Hirne nach neuen Namen zu durchsuchen. Ein neuer Silberstreifen am Horrizont tauchte auf: «Zweierlei». Könnte dies der Name sein, mit dem wir uns alle anfreuden können? Es stellte sich heraus: nein. Da tauchte ein Name auf, dem wir vorher kaum Beachtung geschenkt hatten: **EFFINGER**. 
+Wir entschieden uns, eine zusätzliche Runde zu nehmen und nochmals unsere Hirne nach neuen Namen zu durchsuchen. Ein neuer Silberstreifen am Horrizont tauchte auf: «Zweierlei». Könnte dies der Name sein, mit dem wir uns alle anfreuden können? Es stellte sich heraus: nein. Da tauchte ein Name auf, dem wir vorher kaum Beachtung geschenkt hatten: **EFFINGER**.
 
-Unsere Nachforschungen haben ergeben, dass ein gewisser [Sam](https://twitter.com/smrbu) am [13. Juli als Kommentar](http://www.effinger.ch/blog/namensvorschlaege/#comment-2134262745) diesen Namen vorgeschlagen hatte. Schliesslich war es [Nadia](https://twitter.com/froumeier), welche Effinger mit folgenden Worten zum Spitzenreiter befördert hat:
+Unsere Nachforschungen haben ergeben, dass ein gewisser [Sam](https://twitter.com/smrbu) am [13. Juli als Kommentar](/blog/namensvorschlaege/#comment-2134262745) diesen Namen vorgeschlagen hatte. Schliesslich war es [Nadia](https://twitter.com/froumeier), welche Effinger mit folgenden Worten zum Spitzenreiter befördert hat:
 
 > EFFINGER. Warum Effinger, das hat doch nichts mit Café und Co-Working zu tun? Das stimmt. Hat es noch nicht. Aber das Effinger wird die Bedeutung bekommen, die wir ihm geben. Und damit auch die Bekanntheit, die es verdient. Das Effinger ist mehr als eine Macherei, weil wir dort auch geniessen, netzwerken, nachdenken, Zeit schenken und das Weinglas schwenken. Es geht ja auch nicht nur um das Machen, es geht auch um das Sein. Und unser Sein wird vielseitig und offen sein, deshalb reicht auch Zweierlei als Name nicht.
 

@@ -14,7 +14,7 @@ Von [Anfang an](/blog/how-the-heck/) ging es uns darum, Menschen zusammenzubring
 
 ## Schöne Dinge
 
-Das grosse und offensichtliche Projekt ist der Aufbau der physischen Heimat vom Effinger, welche wir hoffentlich bald eröffnen können. Es geht aber um mehr, nämlich darum, eine Kultur zu fördern, in der **schöne Dinge möglich werden**, die vorher unmöglich schienen. 
+Das grosse und offensichtliche Projekt ist der Aufbau der physischen Heimat vom Effinger, welche wir hoffentlich bald eröffnen können. Es geht aber um mehr, nämlich darum, eine Kultur zu fördern, in der **schöne Dinge möglich werden**, die vorher unmöglich schienen.
 
 "Schöne Dinge" tönt recht allgemein, doch es geht um die Momente, wo sich etwas einfach schön und gut anfühlt: Lust und Freude an der Arbeit, ein Handwerk, das mit Leidenschaft ausgeübt wird, bei der Entstehung von Kunst dabei sein, die Gemeinschaft unter Freunden geniessen, eine verknortzte Beziehung klären, ein Funkeln in den Augen eines Kunden zu sehen, vom Kunden grosszügig bezahlt zu werden, auf etwas Unnötiges zu verzichten, die Schönheit der Natur geniessen, diese Schönheit zu erhalten und zu fördern, einen Menschen zu sehen, der wirklich sich selbst ist, usw.
 
@@ -35,12 +35,12 @@ Wir merken einfach, wie das Interesse da ist, entweder durch persönliche Kontak
 
 ![Besuche Internetseite](analytics.png)
 
-Diese Grafik zeigt die Besucher auf [effinger.ch](http://www.effinger.ch) im letzten Monat. Die erste Spitze ist die Veröffentlichung des [Bund Artikels](http://www.derbund.ch/bern/stadt/der-filmemacher-arbeitet-neben-dem-tshirtdesigner/story/27208890), die zweite das Erscheinen in [Ron Orp](http://www.ronorp.net/bern/inspiration/archiv/newsletter/6e14e48cbf0137fd874efd0952cc544b#content273838). Beides haben wir nicht selber initiiert.
+Diese Grafik zeigt die Besucher auf [effinger.ch](/) im letzten Monat. Die erste Spitze ist die Veröffentlichung des [Bund Artikels](http://www.derbund.ch/bern/stadt/der-filmemacher-arbeitet-neben-dem-tshirtdesigner/story/27208890), die zweite das Erscheinen in [Ron Orp](http://www.ronorp.net/bern/inspiration/archiv/newsletter/6e14e48cbf0137fd874efd0952cc544b#content273838). Beides haben wir nicht selber initiiert.
 
 
 ### Newsletter und Social Media
 
-Aktuell haben 222 Personen unseren [Newsletters](http://eepurl.com/bw3j3H) abonniert.
+Aktuell haben 222 Personen unseren [Newsletter](http://eepurl.com/bw3j3H) abonniert.
 
 ![Besuche Internetseite](newsletter.png)
 
@@ -63,4 +63,3 @@ Für den Start **limitieren wir diese Plätze auf 12 Personen**, damit wir eine 
 ## Wow
 
 Ich bin echt begeistert über all die positiven Reaktionen und die genialen Leute, die ihre Hilfe anbieten, mitmachen und sich engagieren. Und ich freue mich darauf, neben und mit euch zu arbeiten, am Mittag einen Salat mit euch zu essen oder bei Feierabend in den Erinnernungen an die herausfordernde aber schöne Aufbauzeit zu schwelgen.
-
