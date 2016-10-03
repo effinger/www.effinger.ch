@@ -1,26 +1,27 @@
 +++
-title = "Finanzen August 2016"
-date = "2016-08-01"
+title = "Finanzen September 2016"
+date = "2016-09-01"
 unternehmen = "Verein Coworking Community Bern"
 
-darlehen = 140000
-kontostand = 78488
+darlehen = 145000
+kontostand = 70612
 kommentar = """
+Wir haben auf September minus 1 Effianerin und plus 4 neue EffianerInnen (2 Vollzeit und 2 Teilzeit). Ausserdem ist neu das Six-Pack Monatsabo dabei.
 """
 
 [[ertrag]]
 name = "Coworker Vollzeit"
-betrag = 1400
-info = "4 Personen à 350"
+betrag = 2100
+info = "6 Personen à 350"
 
 [[ertrag]]
 name = "Coworker Teilzeit"
-betrag = 960
-info = "6 Personen à 160"
+betrag = 1280
+info = "8 Personen à 160"
 
 [[ertrag]]
 name = "Extras"
-betrag = 425
+betrag = 625
 info = "Fixer Desk, Schliessfach, Lagerfläche"
 
 [[ertrag]]
@@ -29,24 +30,29 @@ betrag = 600
 info = "1 Platz à 600 (inkl. Fix Desk und Schliessfach)"
 
 [[ertrag]]
+name = "Six-Pack Monatsabo"
+betrag = 370
+info = "2 Personen à 160, 2 Zusatztage à 25"
+
+[[ertrag]]
 name = "Tagespässe"
-betrag = 725
-info = "29 Pässe à 30 (5.- davon an Kaffeebar)"
+betrag = 325
+info = "13 Pässe à 30 (5.- davon an Kaffeebar)"
 
 [[ertrag]]
 name = "10er-Abos"
-betrag = 1980
-info = "9 Abos à 270 (je 50.- davon an Kaffeebar)"
+betrag = 1320
+info = "6 Abos à 270 (je 50.- davon an Kaffeebar)"
 
 [[ertrag]]
 name = "Raumvermietung"
-betrag = 1100
+betrag = 1150
 info = "7 Vermietungen (diverse Beträge)"
 
 [[ertrag]]
 name = "Vermietung Lounge an Kaffeebar"
 betrag = 500
-info = "Jeden Tag ab 17 Uhr (Testbetrieb)"
+info = "Jeden Tag ab 17 Uhr"
 
 [[ertrag]]
 name = "Community Member"
@@ -58,6 +64,11 @@ info = "1 neue Membership"
 name = "Miete Coworking-Bereich"
 betrag = 3741
 info = "Der Mietanteil der Kaffeebar ist bereits abgezogen"
+
+[[aufwand]]
+name = "Administration Raumvermietung"
+betrag = 345
+info = "Lohn von 30% der Einnahmen aus Raumvermietungen"
 
 [[aufwand]]
 name = "Reinigung"
