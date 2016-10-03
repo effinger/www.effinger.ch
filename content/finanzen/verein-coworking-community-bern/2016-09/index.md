@@ -16,8 +16,8 @@ info = "6 Personen à 350"
 
 [[ertrag]]
 name = "Coworker Teilzeit"
-betrag = 1280
-info = "8 Personen à 160"
+betrag = 1120
+info = "7 Personen à 160"
 
 [[ertrag]]
 name = "Extras"
