@@ -141,3 +141,15 @@ website = "http://www.iveinstitute.org/"
 twitter = ""
 facebook = ""
 instagram = ""
+
+[[Person]]
+host = [ "Freitag" ]
+name = "Michael Aerni"
+gender = "m"
+image = "/images/effianer/michael-aerni.jpg"
+email = "michael@effinger.ch"
+phone = ""
+website = ""
+twitter = ""
+facebook = "michael.aerni"
+instagram = ""
