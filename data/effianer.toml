@@ -41,10 +41,22 @@ gender = "f"
 image = "/images/effianer/claudia-schaeren.jpg"
 email = "claudia@effinger.ch"
 phone = "+41 78 789 63 77"
-website = "http://www.a-und-o.ch/"
+website = "http://www.a-und-o.ch"
 twitter = ""
 facebook = ""
 instagram = ""
+
+[[Person]]
+host = [ ]
+name = "Damaris Berger"
+gender = "f"
+image = "/images/effianer/damaris-berger.jpg"
+email = "damaris@effinger.ch"
+phone = ""
+website = "http://www.dmrsbrgr.com"
+twitter = ""
+facebook = ""
+instagram = "dmrsbrgr"
 
 [[Person]]
 host = [ "Dienstag" ]
