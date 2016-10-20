@@ -190,6 +190,12 @@
   </section>
   <!-- End About Section Workshopraum -->
 
+  <section class="page-section">
+    <div class="container relative" id="calendar">
+
+    </div>
+  </section>
+
   <!-- Daily Contact Section -->
   <section class="page-section bg-gray" id="kontakt">
     <div class="relative container">
@@ -215,4 +221,100 @@
   <!-- End Daily Contact Section -->
 </div>
 <!-- End Page Wrap -->
+{{ end }}
+
+{{ define "body_includes" }}
+<link href='/js/fullcalendar/fullcalendar.css' rel='stylesheet' />
+<link href='/js/fullcalendar/fullcalendar.print.css' rel='stylesheet' media='print' />
+<script src='/js/fullcalendar/moment.min.js'></script>
+<script src='/js/fullcalendar/fullcalendar.min.js'></script>
+<script src='/js/fullcalendar/locale-de.js'></script>
+<script type="text/javascript">
+$(document).ready(function(){
+
+  $('#calendar').fullCalendar({
+     header: {
+       left: 'prev,next today',
+       center: 'title',
+       right: 'month,agendaWeek,agendaDay'
+     },
+     defaultDate: '2016-09-12',
+     locale: 'de',
+     navLinks: false, // can click day/week names to navigate views
+     selectable: true,
+     selectHelper: true,
+     select: function(start, end) {
+     var title = prompt('Event Title:');
+     var eventData;
+     if (title) {
+     eventData = {
+     title: title,
+     start: start,
+     end: end
+     };
+     $('#calendar').fullCalendar('renderEvent', eventData, true); // stick? = true
+     }
+     $('#calendar').fullCalendar('unselect');
+     },
+     editable: false,
+     eventLimit: false, // allow "more" link when too many events
+     events: [
+       {
+         title: 'All Day Event',
+         start: '2016-09-01'
+       },
+       {
+         title: 'Long Event',
+         start: '2016-09-07',
+         end: '2016-09-10'
+       },
+       {
+         id: 999,
+         title: 'Repeating Event',
+         start: '2016-09-09T16:00:00'
+       },
+       {
+         id: 999,
+         title: 'Repeating Event',
+         start: '2016-09-16T16:00:00'
+       },
+       {
+         title: 'Conference',
+         start: '2016-09-11',
+         end: '2016-09-13'
+       },
+       {
+         title: 'Meeting',
+         start: '2016-09-12T10:30:00',
+         end: '2016-09-12T12:30:00'
+       },
+       {
+         title: 'Lunch',
+         start: '2016-09-12T12:00:00'
+       },
+       {
+         title: 'Meeting',
+         start: '2016-09-12T14:30:00'
+       },
+       {
+         title: 'Happy Hour',
+         start: '2016-09-12T17:30:00'
+       },
+       {
+         title: 'Dinner',
+         start: '2016-09-12T20:00:00'
+       },
+       {
+         title: 'Birthday Party',
+         start: '2016-09-13T07:00:00'
+       },
+       {
+         title: 'Click for Google',
+         url: 'http://google.com/',
+         start: '2016-09-28'
+       }
+     ]
+   });
+ });
+</script>
 {{ end }}
