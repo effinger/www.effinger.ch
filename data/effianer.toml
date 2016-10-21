@@ -47,18 +47,6 @@ facebook = ""
 instagram = ""
 
 [[Person]]
-host = [ ]
-name = "Damaris Berger"
-gender = "f"
-image = "/images/effianer/damaris-berger.jpg"
-email = "damaris@effinger.ch"
-phone = ""
-website = "http://www.dmrsbrgr.com"
-twitter = ""
-facebook = ""
-instagram = "dmrsbrgr"
-
-[[Person]]
 host = [ "Dienstag" ]
 name = "Marco Jakob"
 gender = "m"
@@ -141,6 +129,18 @@ website = "http://www.herrbuerli.ch/"
 twitter = ""
 facebook = "herrbuerli"
 instagram = ""
+
+[[Person]]
+host = [ "Freitag" ]
+name = "Damaris Berger"
+gender = "f"
+image = "/images/effianer/damaris-berger.jpg"
+email = "damaris@effinger.ch"
+phone = ""
+website = "http://www.dmrsbrgr.com"
+twitter = ""
+facebook = ""
+instagram = "dmrsbrgr"
 
 [[Person]]
 host = [ "Freitag" ]
