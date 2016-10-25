@@ -1,9 +1,11 @@
 +++
-title = "Räume"
+title = "Workshopraum"
 description = "Wir vermieten innovative Sitzungszimmer und Workshopräume. Mit beschreibbaren Wänden, Design Thinking Materialien und Lego Serious Play."
-image = "coworking_header.jpg"
+image = "workshopraum.jpg"
 
-[menu.main]
-  pre = "<i class='fa fa-calendar-check-o'></i>"
-  weight = 4
+capacity = "4-8 Personen"
+
+[[prices]]
+text = "test"
+price = "CHF 150"
 +++
