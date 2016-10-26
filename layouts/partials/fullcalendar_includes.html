@@ -1,0 +1,122 @@
+<link href='/js/fullcalendar/fullcalendar.css' rel='stylesheet' />
+<link href='/js/fullcalendar/fullcalendar.print.css' rel='stylesheet' media='print' />
+<script src='/js/fullcalendar/moment.min.js'></script>
+<script src='/js/fullcalendar/fullcalendar.min.js'></script>
+<script src='/js/fullcalendar/locale-de.js'></script>
+<script type="text/javascript">
+var loadCalendar = function(calendarApiPath, calendarId, calendarElement, loadingElement, detailsElement) {
+  var createDetailsContent = function(event) {
+    var result = '';
+    if (event['title']) {
+      result += '\
+      <div class="calendar-details-title">Reservationsdetails</div> \
+      <div class="calendar-details-content"> \
+        ' + event['title'] + ' \
+      </div>'
+    }
+    result += '\
+      <div class="calendar-details-title mt-10">Start</div> \
+      <div class="calendar-details-content"> \
+        ' + event['start'].format('dddd, Do MMM YYYY, HH:mm') + ' Uhr \
+      </div> \
+      <div class="calendar-details-title mt-10">Ende</div> \
+      <div class="calendar-details-content"> \
+        ' + event['end'].format('dddd, Do MMM YYYY, HH:mm') + ' Uhr \
+      </div> \
+      ';
+    return result;
+  };
+
+  calendarElement.fullCalendar({
+    allDaySlot: false,
+    businessHours: [
+      {
+        dow: [ 1, 2, 3, 4, 5 ], // Monday, Tuesday,...
+        start: '08:00',
+        end: '22:00'
+      },
+      {
+        dow: [ 6 ], // Saturday
+        start: '09:00',
+        end: '17:00'
+      }
+    ],
+    editable: false,
+    eventLimit: false, // allow "more" link when too many events
+    header: {
+      left: 'prev,next today',
+      center: 'title',
+      right: 'month,agendaWeek'
+    },
+    events: function(start, end, timezone, callback) {
+      var xhr = $.ajax({
+        url: calendarApiPath,
+        data: {
+          calendarId: calendarId,
+          start: start.toISOString(),
+          end: end.toISOString()
+        },
+        success: function(data) {
+          //console.log(this.url);
+          callback(data.results);
+        }
+      });
+    },
+    eventClick: function( event, jsEvent, view ) {
+      detailsElement.stop(true, true);
+      detailsElement.html(createDetailsContent(event)).show();
+    },
+    eventMouseover: function( event, jsEvent, view ) {
+      detailsElement.stop(true, true);
+      detailsElement.html(createDetailsContent(event)).show();
+    },
+    eventMouseout: function( event, jsEvent, view ) {
+      detailsElement.stop(true, true);
+      detailsElement.delay(700).fadeOut(300);
+    },
+    dayClick: function(date, jsEvent, view) {
+      date.local();
+      date.set({'hour': 0, 'minute': 0, 'second': 0, 'millisecond': 0});
+      var nowM = moment(new Date());
+      nowM.local();
+      nowM.set({'hour': 0, 'minute': 0, 'second': 0, 'millisecond': 0});
+      if (!date.isBefore(nowM)) {
+        var datum  = date.format('DD.MM.YYYY');
+        window.location.href='/de/objekte/reservieren.php?id=8&start='+datum+'&ende='+datum;
+      }
+    },
+    loading: function(isLoading) {
+      if (isLoading) {
+        loadingElement.show();
+      } else {
+        loadingElement.hide();
+      }
+    },
+    locale: 'de',
+    navLinks: false, // can click day/week names to navigate views
+    selectable: true,
+    selectHelper: true,
+    select: function(start, end) {
+      var title = prompt('Event Title: ');
+      var eventData;
+      if (title) {
+        eventData = {
+          title: title,
+          start: start,
+           end: end
+         };
+         calendarElement.fullCalendar('renderEvent', eventData, true); // stick? = true
+       }
+       calendarElement.fullCalendar('unselect');
+     },
+     scrollTime: '08:00',
+     timezone: 'local'
+   });
+
+   // For touch devices - hide on click.
+   detailsElement.click(function (event) {
+     detailsElement.stop(true, true);
+     detailsElement.fadeOut(300);
+   });
+}
+</script>

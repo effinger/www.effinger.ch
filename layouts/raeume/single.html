@@ -4,206 +4,151 @@
 
 {{ define "main" }}
 <!-- Page Wrap -->
-<div class="page" id="top">
+<div class="page raeume" id="top">
 
   <nav class="main-nav dark transparent stick-fixed">
     {{ partial "navigation.html" . }}
   </nav>
 
   <!-- Header -->
-  <section class="home-section bg-dark-alfa-70 parallax-2 fixed-height-small" data-background="raeume_header.jpg">
-    <div class="js-height-parent container">
+  <section class="small-section-header bg-dark-lighter">
+    <div class="relative container align-left pt-80">
 
-      <!-- Hero Content -->
-      <div class="home-content">
-        <div class="home-text">
-          <h1 class="font-alt mb-50 mb-xs-30">Raumvermietung</h1>
-          <h2 class="hs-line-8 no-transp font-alt mb-50 mb-xs-30"></h2>
+      <div class="row">
+
+        <div class="col-md-8">
+          <h1 class="hs-line-11 font-alt mb-0">Raumvermietung</h1>
+          <!--
+          <div class="hs-line-4 font-alt mt-20 mt-xs-0">
+          Räume
+          </div>
+          -->
+        </div>
+
+        <div class="col-md-4 mt-30">
+          <div class="mod-breadcrumbs font-alt align-right">
+            <a href="/raeume/"><i class="fa fa-angle-left"></i> Zeige alle Räume</a>
+          </div>
+
         </div>
       </div>
-      <!-- End Hero Content -->
 
     </div>
   </section>
   <!-- End Header -->
 
-  <!-- About Section Workshopraum -->
+  <!-- About Section -->
   <section class="page-section">
-    <div class="container relative">
-      <h1 class="hs-line-11 font-alt">Sitzungszimmer</h1>
-      <div class="section-text local-scroll">
-        <p>
-          Der abgetrennte Raum oberhalb des Kaffeebar-Bereichs eignet sich als Sitzungszimmer und Workshopraum. Hier soll out-of-the-box gedacht werden und dies spürt und sieht man schon beim Betreten des Raums.
-        </p>
-        <p>
-          Der Raum bietet 360 Grad beschreibbare, magnetische Wände sowie einen grossen Screen. Hier sollen neue Ideen geboren, Bestehendes hinterfragt und ohne Grenzen "gebrainstormed" werden.
-        </p>
-        <h3 class="font-alt mt-50">Details</h3>
-        <table style="width:100%">
-          <tr>
-            <td style="width:15%; min-width:110px;">Fläche</td>
-            <td>17m2</td>
-          </tr>
-          <tr>
-            <td>Personen</td>
-            <td>4-8</td>
-          </tr>
-          <tr>
-            <td>Elemente</td>
-            <td>45m2 (magnetische) Whiteboard Fläche, 55 Zoll Screen, Fenster mit Blick in die Kaffeebar.</td>
-          </tr>
-          <tr>
-            <td>Verfügbarkeit</td>
-            <td>Montag bis Samstag</td>
-          </tr>
-          <tr>
-            <td style="vertical-align: top;">Preise</td>
-            <td><strong>CHF 150</strong> für 4 Stunden <br><strong>CHF 250</strong> für 8 Stunden</td>
-          </tr>
-          <tr>
-            <td style="vertical-align: top;">Zusatzmaterial</td>
-            <td><strong>+ CHF 50</strong> für Moderationsmaterial (Stifte für beschreibbare Wände)</td>
-          </tr>
-        </table>
-        <p>
-          <a href="#kontakt" class="btn btn-mod btn-gray btn-round mt-10">Anfrage &amp; Reservation</a>
-        </p>
+    <div class="container relative long-text-body">
+
+      <h1 class="mt-0 font-alt">{{ .Title }}</h1>
+
+      <div class="row">
+
+        <div class="col-sm-8 mb-sm-40">
+
+          <!-- Gallery -->
+          <div class="work-full-media mt-0 white-shadow">
+            <ul class="clearlist work-full-slider owl-carousel">
+              {{ $url := .URL }}
+              {{ range .Params.gallery }}
+              <li>
+                <img src="{{ $url }}{{ . }}" alt="" />
+              </li>
+              {{ end }}
+            </ul>
+          </div>
+          <!-- End Gallery -->
+        </div>
+
+        <div class="col-sm-4">
+          <div class="text">
+
+            <div class="row raeume-eigenschaften">
+              <div class="col-xs-6">
+                <div class="raeume-title">Kapazität</div>
+                <div class="raeume-content">
+                  {{ .Params.capacity }} Personen
+                </div>
+              </div>
+
+              <div class="col-xs-6">
+                <div class="raeume-title">Grösse</div>
+                <div class="raeume-content">
+                  {{ .Params.square_meters }}m<sup>2</sup>
+                </div>
+              </div>
+            </div>
+
+            <div class="row raeume-eigenschaften">
+              <div class="col-sm-12">
+                <div class="raeume-title">Elemente</div>
+                <div class="raeume-content">
+                  {{ .Params.elements }}
+                </div>
+              </div>
+            </div>
+
+            <div class="row raeume-eigenschaften">
+              <div class="col-sm-12">
+                <div class="raeume-title">Preise</div>
+                {{ range .Params.prices }}
+                <div class="raeume-content">
+                  {{ . }}
+                </div>
+                {{ end }}
+              </div>
+            </div>
+
+          </div>
+
+        </div>
       </div>
 
-      <!-- Accordion / Toggle -->
-      <dl class="accordion mt-50">
-        <dt>
-          <a href="" class="">Verfügbarkeit überprüfen und Raum buchen</a>
-        </dt>
-        <dd>
-          <div id="calendar">
+      <div class="row">
+        <div class="col-sm-10">
+          <h3 class="font-alt mt-50">Details</h3>
+          {{ .Content | markdownify }}
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-12">
+          <h3 class="font-alt mt-50">Reservation</h3>
+          <div class="mt-20" id="calendar">
+            <div id="calendar-loading">
+              <i class="fa fa-refresh fa-spin fa-3x fa-fw mb-10"></i>
+              <div>Reservationen werden geladen...</div>
+            </div>
           </div>
-        </dd>
-      </dl>
-      <!-- End Accordion -->
+          <div id="calendar-details">
+          </div>
+        </div>
+      </div>
+
+      <!-- Prev/Next -->
+      <div class="clearfix mt-40">
+        {{ if .PrevInSection }}
+        <a href="{{ .PrevInSection.RelPermalink }}" class="prev-next-btn left"><i class="fa fa-angle-left"></i>&nbsp;{{ .PrevInSection.Title }}</a>
+        {{ end }}
+        {{ if .NextInSection }}
+        <a href="{{ .NextInSection.RelPermalink }}" class="prev-next-btn right">{{ .NextInSection.Title }}&nbsp;<i class="fa fa-angle-right"></i></a>
+        {{ end }}
+      </div>
+      <!-- End Prev/Next Post -->
     </div>
   </section>
   <!-- End About Section Workshopraum -->
-
-  <!-- Daily Contact Section -->
-  <section class="page-section bg-gray" id="kontakt">
-    <div class="relative container">
-      <h1 class="hs-line-11 font-alt">Kontakt</h1>
-      <div class="row">
-        <div class="col-md-4 col-md-push-8 col-sm-6 col-sm-push-6 mb-md-50">
-          <div class="contact-item clearfix">
-            <h4 class="uppercase">Kontakt Coworking</h4>
-            <div class="wave-spacer"></div>
-            <div class="item">
-              <p>Telefon<span><a href="tel:+41313982021">031 398 20 21</a></span></p>
-              <p>E-Mail<span><a href="mailto:coworking@effinger.ch">coworking@effinger.ch</a></span></p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-8 col-md-pull-4 col-sm-6 col-sm-pull-6">
-          <img src="/images/effianer/claudia-schaeren.jpg" alt="Claudia Schären" />
-          <p class="font-alt mt-20 mb-sm-40">Claudia Schären</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End Daily Contact Section -->
 </div>
 <!-- End Page Wrap -->
 {{ end }}
 
 {{ define "body_includes" }}
-<link href='/js/fullcalendar/fullcalendar.css' rel='stylesheet' />
-<link href='/js/fullcalendar/fullcalendar.print.css' rel='stylesheet' media='print' />
-<script src='/js/fullcalendar/moment.min.js'></script>
-<script src='/js/fullcalendar/fullcalendar.min.js'></script>
-<script src='/js/fullcalendar/locale-de.js'></script>
+{{ partial "fullcalendar_includes.html" }}
 <script type="text/javascript">
 $(document).ready(function(){
+  loadCalendar({{ .Params.calendar_api_path }}, {{ .Params.calendar_id }}, $('#calendar'), $('#calendar-loading'), $('#calendar-details'));
+});
 
-  $('#calendar').fullCalendar({
-     header: {
-       left: 'prev,next today',
-       center: 'title',
-       right: 'month,agendaWeek,agendaDay'
-     },
-     defaultDate: '2016-09-12',
-     locale: 'de',
-     navLinks: false, // can click day/week names to navigate views
-     selectable: true,
-     selectHelper: true,
-     select: function(start, end) {
-     var title = prompt('Event Title:');
-     var eventData;
-     if (title) {
-     eventData = {
-     title: title,
-     start: start,
-     end: end
-     };
-     $('#calendar').fullCalendar('renderEvent', eventData, true); // stick? = true
-     }
-     $('#calendar').fullCalendar('unselect');
-     },
-     editable: false,
-     eventLimit: false, // allow "more" link when too many events
-     events: [
-       {
-         title: 'All Day Event',
-         start: '2016-09-01'
-       },
-       {
-         title: 'Long Event',
-         start: '2016-09-07',
-         end: '2016-09-10'
-       },
-       {
-         id: 999,
-         title: 'Repeating Event',
-         start: '2016-09-09T16:00:00'
-       },
-       {
-         id: 999,
-         title: 'Repeating Event',
-         start: '2016-09-16T16:00:00'
-       },
-       {
-         title: 'Conference',
-         start: '2016-09-11',
-         end: '2016-09-13'
-       },
-       {
-         title: 'Meeting',
-         start: '2016-09-12T10:30:00',
-         end: '2016-09-12T12:30:00'
-       },
-       {
-         title: 'Lunch',
-         start: '2016-09-12T12:00:00'
-       },
-       {
-         title: 'Meeting',
-         start: '2016-09-12T14:30:00'
-       },
-       {
-         title: 'Happy Hour',
-         start: '2016-09-12T17:30:00'
-       },
-       {
-         title: 'Dinner',
-         start: '2016-09-12T20:00:00'
-       },
-       {
-         title: 'Birthday Party',
-         start: '2016-09-13T07:00:00'
-       },
-       {
-         title: 'Click for Google',
-         url: 'http://google.com/',
-         start: '2016-09-28'
-       }
-     ]
-   });
- });
 </script>
 {{ end }}

@@ -175,10 +175,12 @@ Common styles
   box-sizing: border-box;
 }
 
-html{
-  overflow-y: scroll;
-  -ms-overflow-style: scrollbar;
-}
+// This eliminates Jumps in Horizontal Centering By Forcing a Scroll Bar.
+// BUT the month-view of the FullCalendar does not work when enabling this.
+// html{
+//   overflow-y: scroll;
+//   -ms-overflow-style: scrollbar;
+// }
 html, body{
   height: 100%;
   -webkit-font-smoothing: antialiased;

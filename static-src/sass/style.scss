@@ -35,6 +35,7 @@ $font-family-serif: "Times New Roman", Times, serif;
 @import "custom/kaffeebar";
 @import "custom/kontakt";
 @import "custom/organisation";
+@import "custom/raeume";
 
 .font-alt {
   font-weight: 300;
@@ -53,8 +54,12 @@ strong {
   background-color: $primary-color;
 }
 
-h1 > a,
-h1 > a:hover {
+h1 a,
+h1 a:hover,
+h2 a,
+h2 a:hover,
+h3 a,
+h3 a:hover {
   text-decoration: none;
 }
 
