@@ -63,8 +63,31 @@ var loadCalendar = function(calendarApiPath, calendarId, calendarElement, loadin
       });
     },
     eventClick: function( event, jsEvent, view ) {
-      detailsElement.stop(true, true);
-      detailsElement.html(createDetailsContent(event)).show();
+      // detailsElement.stop(true, true);
+      // detailsElement.html(createDetailsContent(event)).show();
+      var options = {
+        title: "Test",
+        content: "asdf",
+        placement: function (context, source) {
+          var position = $(source).position();
+
+          if (position.left > 515) {
+            return "left";
+          }
+
+          if (position.left < 515) {
+            return "right";
+          }
+
+          if (position.top < 110){
+            return "bottom";
+          }
+
+          return "top";
+        }
+        , trigger: "hover"
+      };
+      $(jsEvent.target).closest('.fc-content').popover(options);
     },
     eventMouseover: function( event, jsEvent, view ) {
       detailsElement.stop(true, true);
