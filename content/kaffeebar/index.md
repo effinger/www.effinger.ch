@@ -27,6 +27,19 @@ offers_title = "Menu"
       [[offers.section.element.subelement]]
         text = "nach Tagesangebot"
 
+
+[[offers.section]]
+  title = "Suppe"
+  column = "left"
+
+  [[offers.section.element]]
+    text = "Suppe nach Tagesangebot"
+    price = "9.50"
+
+    [[offers.section.element.subelement]]
+      text = "«es het solang's het»"
+
+
   [[offers.section]]
     title = "Grünzeug"
     column = "right"
@@ -227,6 +240,13 @@ offers_title = "Menu"
         text = "(Kräutertee)"
 
     [[offers.section.element]]
+      text = "Orange-Ingwer"
+      price = "4.80"
+
+      [[offers.section.element.subelement]]
+        text = "(Früchtetee)"
+
+    [[offers.section.element]]
       text = "Rote Zora"
       price = "4.80"
 
@@ -281,7 +301,7 @@ offers_title = "Menu"
 
     [[offers.section.element]]
       text = "Firefly"
-      price = "5.50"
+      price = "6.00"
 
       [[offers.section.element.subelement]]
         text = "- Lemon, Lime, Ginger"
@@ -290,7 +310,7 @@ offers_title = "Menu"
         text = "- Peach, Greentea"
 
       [[offers.section.element.subelement]]
-        text = "- Pommegranate, Elderflower"
+        text = "- Bramley Apple, Ginger"
 
       [[offers.section.element.subelement]]
         text = "- Kiwi, Lime, Mint"
@@ -310,7 +330,7 @@ offers_title = "Menu"
       price = "5.00"
 
       [[offers.section.element.subelement]]
-        text = "Tonic Water, Ginger Ale, Bitter Lemon"
+        text = "Tonic Water, Ginger Ale"
 
     [[offers.section.element]]
       text = "Pimento Ginger"
@@ -331,15 +351,19 @@ offers_title = "Menu"
       price = "4.50/6.50"
 
     [[offers.section.element]]
-      text = "Süssmost/Schorle"
+      text = "Apfelsaft/Schorle"
       price = "4.00/5.50"
 
+      [[offers.section.element.subelement]]
+        text = "sortenrein"
+
     [[offers.section.element]]
-      text = "Saft"
+      text = "Orangensaft"
       price = "4.50"
 
-      [[offers.section.element.subelement]]
-        text = "Orangensaft, Pfirsich"
+    [[offers.section.element]]
+      text = "Pfirsichsaft"
+      price = "4.50"
 
 
 [[offers]]
@@ -380,18 +404,25 @@ offers_title = "Menu"
         text="Bernstein-Weizen, leicht gehopft, Bananennote"
 
     [[offers.section.element]]
-      text="BFM Mandragore"
+      text="La Mandragore - BFM"
       price="8.00"
 
       [[offers.section.element.subelement]]
         text="Schwarzbier, Pfeffer, Kaffee, bittersüss"
 
     [[offers.section.element]]
-      text="Chopfab Summer"
-      price="6.50"
+      text="La Fraîcheur - trois dames"
+      price="7.50"
 
       [[offers.section.element.subelement]]
-        text="Special White Ale, Weisswein-Bouquet, erfrischend"
+        text="Belgian Style Blanche, Zitrusnoten, erfrischend"
+
+    [[offers.section.element]]
+      text="Appenzeller Leermond"
+      price="5.50"
+
+      [[offers.section.element.subelement]]
+        text="alkoholfreies, dunkelblondes Bier"
 
     [[offers.section.element]]
       text="Zobo Cider"
@@ -401,18 +432,11 @@ offers_title = "Menu"
         text="Bio Apfelwein nach englischer Art"
 
     [[offers.section.element]]
-      text="Sam Smith Apricot"
-      price="7.50"
+      text="Spezial-Bier"
+      price=""
 
       [[offers.section.element.subelement]]
-        text="Fruchtbier mit Aprikosen, vegan"
-
-    [[offers.section.element]]
-      text="Appenzeller Leermond"
-      price="5.50"
-
-      [[offers.section.element.subelement]]
-        text="alkoholfreies, dunkelblondes Bier"
+        text="Erkundige dich nach dem aktuellen Angebot"
 
   [[offers.section]]
     title = "Offen"
@@ -520,13 +544,6 @@ offers_title = "Menu"
     column = "left"
 
     [[offers.section.element]]
-      text="Hugo"
-      price="9.50"
-
-      [[offers.section.element.subelement]]
-        text="Prosecco, Holunder, Mineral, Zitrone, Minze"
-
-    [[offers.section.element]]
       text="Aperol Spritz"
       price="9.50"
 
@@ -557,7 +574,7 @@ offers_title = "Menu"
       price="14.00"
 
       [[offers.section.element.subelement]]
-        text="Pimm’s No 1, Ginger Ale, Gurke, Zitrone, Orangen, Limette, Minzen"
+        text="Pimm’s No 1, Ginger Beer, Gurke, Zitrone, Orangen, Limette, Minzen"
 
     [[offers.section.element]]
       text="Amaretto sour"
@@ -646,7 +663,7 @@ offers_title = "Menu"
       text="Vodka"
 
       [[offers.section.element.subelement]]
-        text="Xellent Swiss Vodka"
+        text="Hanz Vodka"
         price="9.00"
 
       [[offers.section.element.subelement]]
