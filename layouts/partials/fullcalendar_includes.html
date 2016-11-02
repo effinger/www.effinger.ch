@@ -63,12 +63,12 @@ var loadCalendar = function(calendarApiPath, calendarId, calendarTitle,
 
           var events = [];
           $.each(data.results, function(index, value) {
-            // Use "Besetzt" if private or title is empty.
+            // Use "Besetzt" if title is empty.
             var title;
-            if (value.private || !value.title.trim()) {
-              title = 'Besetzt';
-            } else {
+            if (value.title.trim()) {
               title = value.title;
+            } else {
+              title = 'Besetzt';
             }
 
             var classes = [];
@@ -126,8 +126,10 @@ var loadCalendar = function(calendarApiPath, calendarId, calendarTitle,
     selectable: true,
     selectHelper: true,
     select: function(start, end) {
+      // Set the dialog title.
       dialogElement.find('#calendar-dialog-title').html('Reservation für ' + calendarTitle);
 
+      // Set the date and time from the selection.
       dialogElement.find('#res-date').val(start.format('DD.MM.YYYY'));
 
       if (start.hours() < 8) {
@@ -146,6 +148,7 @@ var loadCalendar = function(calendarApiPath, calendarId, calendarTitle,
         dialogElement.find('#res-end-time').val(end.format('HH:mm'));
       }
 
+      clearErrorIndicators();
       dialogElement.modal('show');
     },
     scrollTime: '08:00',
@@ -163,8 +166,7 @@ var loadCalendar = function(calendarApiPath, calendarId, calendarTitle,
   // *******************************
   dialogElement.on('click', '#res-save-button', function (e) {
     // Clear invalid markers.
-    dialogElement.find('.invalid').removeClass('invalid');
-
+    clearErrorIndicators();
 
     var eventData = {};
 
@@ -180,14 +182,11 @@ var loadCalendar = function(calendarApiPath, calendarId, calendarTitle,
     }
     eventData.title = resTitle;
 
-    // Private, i.e. title visibility.
-    var resTitleVisible = dialogElement.find('#res-title-visible').prop('checked');
-    eventData.private = !resTitleVisible;
-
     // Start and end dates.
     var resDate = dialogElement.find('#res-date').val();
     var parsedDate = moment(resDate, 'DD.MM.YYYY');
-    if (parsedDate == null || !parsedDate.isValid()) {
+    // Must be valid and not in the past.
+    if (parsedDate == null || !parsedDate.isValid() || parsedDate.isBefore(moment().subtract(1, 'day'))) {
       dialogElement.find('#res-date').addClass('invalid');
       valid = false;
     }
@@ -284,8 +283,8 @@ var loadCalendar = function(calendarApiPath, calendarId, calendarTitle,
     var resComments = dialogElement.find('#res-comments').val();
     eventData.comments = resComments;
 
+    // Submit when valid.
     if (valid) {
-
       dialogElement.modal('hide');
 
       // Reset fields, leave all contact info in the form.
@@ -297,16 +296,49 @@ var loadCalendar = function(calendarApiPath, calendarId, calendarTitle,
         return this.defaultSelected;
       });
 
-
-      calendarElement.fullCalendar('renderEvent', eventData, false); // stick? = false
+      submitNewEvent(eventData);
+      // calendarElement.fullCalendar('renderEvent', eventData, true); // stick? = true
       calendarElement.fullCalendar('unselect');
+    } else {
+      // Show validation error message.
+      dialogElement.find('#validation-error-message').show();
     }
-
   });
+
+  function clearErrorIndicators() {
+    dialogElement.find('.invalid').removeClass('invalid');
+    dialogElement.find('#validation-error-message').hide();
+  }
 
   function isEmail(email) {
     var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
     return regex.test(email);
+  }
+
+  function submitNewEvent(eventData) {
+    // Convert the date to ISO String.
+    eventData.start = eventData.start.toISOString();
+    eventData.end = eventData.end.toISOString();
+
+    // POST-like request from GET via "_method" parameter,
+    // to be cross-origin friendly.
+    var xhr = $.ajax({
+      method: "GET",
+      url: calendarApiPath,
+      data: {
+        _method: "POST",
+        calendarId: calendarId,
+        event: JSON.stringify(eventData)
+      },
+      dataType: "jsonp",
+      success: function(data) {
+        // Refetch events to show that our event is now visible.
+        calendarElement.fullCalendar('refetchEvents');
+
+        // console.log(this.url);
+        // console.log(JSON.stringify(data));
+      }
+    });
   }
 }
 </script>

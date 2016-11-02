@@ -14,13 +14,6 @@
           <div class="mb-20 mb-md-10">
             <label for="res-title">Name des Anlasses*</label>
             <input type="text" name="res-title" id="res-title" class="input-md form-control" placeholder="z.B. Kreativworkshop von Max, Startup-Event für Aareschwimmer" maxlength="100">
-
-            <!-- Title visibility -->
-            <div class="checkbox">
-              <label>
-                <input type="checkbox" id="res-title-visible" checked>Anlassname im öffentlichen Kalender anzeigen
-              </label>
-            </div>
           </div>
 
           <div class="row">
@@ -189,6 +182,11 @@
           </div>
 
         </form>
+
+        <div id="validation-error-message" class="alert error" style="display: none;">
+          <button class="alert-close" type="button" data-dismiss="alert" aria-label="Close"><i class="fa fa-lg  fa-times-circle"></i></button>
+					 Hoppla Schorsch! Bitte die markierten Felder überprüfen.
+				</div>
       </div>
       <div class="modal-footer">
         <button class="btn btn-mod btn-gray btn-medium btn-round" data-dismiss="modal">Abbrechen</button>
