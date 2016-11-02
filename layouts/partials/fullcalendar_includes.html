@@ -148,7 +148,7 @@ var loadCalendar = function(calendarApiPath, calendarId, calendarTitle,
         dialogElement.find('#res-end-time').val(end.format('HH:mm'));
       }
 
-      clearErrorIndicators();
+      reset();
       dialogElement.modal('show');
     },
     scrollTime: '08:00',
@@ -166,7 +166,7 @@ var loadCalendar = function(calendarApiPath, calendarId, calendarTitle,
   // *******************************
   dialogElement.on('click', '#res-save-button', function (e) {
     // Clear invalid markers.
-    clearErrorIndicators();
+    reset();
 
     var eventData = {};
 
@@ -285,8 +285,6 @@ var loadCalendar = function(calendarApiPath, calendarId, calendarTitle,
 
     // Submit when valid.
     if (valid) {
-      dialogElement.modal('hide');
-
       // Reset fields, leave all contact info in the form.
       dialogElement.find('#res-title, #res-date, #res-comments').val('');
       dialogElement.find('#res-extras input').prop('checked', function() {
@@ -297,7 +295,11 @@ var loadCalendar = function(calendarApiPath, calendarId, calendarTitle,
       });
 
       submitNewEvent(eventData);
-      // calendarElement.fullCalendar('renderEvent', eventData, true); // stick? = true
+
+      // Show the success message.
+      dialogElement.find('#calendar-dialog-form-content').hide();
+      dialogElement.find('#calendar-dialog-success-content').show();
+
       calendarElement.fullCalendar('unselect');
     } else {
       // Show validation error message.
@@ -305,9 +307,11 @@ var loadCalendar = function(calendarApiPath, calendarId, calendarTitle,
     }
   });
 
-  function clearErrorIndicators() {
+  function reset() {
     dialogElement.find('.invalid').removeClass('invalid');
     dialogElement.find('#validation-error-message').hide();
+    dialogElement.find('#calendar-dialog-success-content').hide();
+    dialogElement.find('#calendar-dialog-form-content').show();
   }
 
   function isEmail(email) {

@@ -1,7 +1,7 @@
 <!-- Modal -->
 <div class="modal fade" id="calendar-dialog" tabindex="-1" role="dialog">
   <div class="modal-dialog" role="document">
-    <div class="modal-content">
+    <div class="modal-content" id="calendar-dialog-form-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h3 class="modal-title" id="calendar-dialog-title">Reservation</h3>
@@ -192,6 +192,24 @@
         <button class="btn btn-mod btn-gray btn-medium btn-round" data-dismiss="modal">Abbrechen</button>
         <button id="res-save-button" class="btn btn-mod btn-medium btn-round">Reservieren</button>
       </div>
+    </div>
+
+    <div class="modal-content" id="calendar-dialog-success-content" style="display:none">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h3 class="modal-title" id="calendar-dialog-title"><i class="fa fa-heart"></i> Danke!</h3>
+      </div>
+      <div class="modal-body">
+        <h4>Ihre Reservationsanfrage wurde abgeschickt</h4>
+        <p>
+          Wir werden nun die Reservation überprüfung und Sie allenfalls kontaktieren.
+        </p>
+        <p>
+          Wenn Sie noch Fragen haben, schreiben Sie ein Mail an <a href="mailto:raumvermietung@effinger.ch">raumvermietung@effinger.ch</a>
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-mod btn-gray btn-medium btn-round" data-dismiss="modal">Schliessen</button>
     </div>
   </div>
 </div>
