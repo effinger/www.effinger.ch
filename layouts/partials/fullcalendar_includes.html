@@ -3,8 +3,9 @@
 <script src='/js/fullcalendar/moment.min.js'></script>
 <script src='/js/fullcalendar/fullcalendar.min.js'></script>
 <script src='/js/fullcalendar/locale-de.js'></script>
-<script type="text/javascript">
-var loadCalendar = function(calendarApiPath, calendarId, calendarElement, loadingElement, detailsElement) {
+<script>
+var loadCalendar = function(calendarApiPath, calendarId, calendarTitle,
+    calendarElement, loadingElement, detailsElement, dialogElement) {
   var createDetailsContent = function(event) {
     var result = '';
     if (event['title']) {
@@ -15,13 +16,13 @@ var loadCalendar = function(calendarApiPath, calendarId, calendarElement, loadin
       </div>'
     }
     result += '\
-    <div class="calendar-details-title mt-10">Start</div> \
+    <div class="calendar-details-title mt-10">Datum</div> \
     <div class="calendar-details-content"> \
-    ' + event['start'].format('dddd, Do MMM YYYY, HH:mm') + ' Uhr \
+    ' + event['start'].format('dddd, Do MMM YYYY') + '\
     </div> \
-    <div class="calendar-details-title mt-10">Ende</div> \
+    <div class="calendar-details-title mt-10">Zeit</div> \
     <div class="calendar-details-content"> \
-    ' + event['end'].format('dddd, Do MMM YYYY, HH:mm') + ' Uhr \
+    ' + event['start'].format('HH:mm') + ' - ' + event['end'].format('HH:mm') + ' Uhr \
     </div> \
     ';
     return result;
@@ -62,9 +63,12 @@ var loadCalendar = function(calendarApiPath, calendarId, calendarElement, loadin
 
           var events = [];
           $.each(data.results, function(index, value) {
-            var title = value.title;
-            if (!title.trim()) {
+            // Use "Besetzt" if private or title is empty.
+            var title;
+            if (value.private || !value.title.trim()) {
               title = 'Besetzt';
+            } else {
+              title = value.title;
             }
 
             var classes = [];
@@ -74,7 +78,6 @@ var loadCalendar = function(calendarApiPath, calendarId, calendarElement, loadin
             }
             events.push({
               id: value.id,
-              // Empty titles are usually private events.
               title: title,
               start: value.start,
               end: value.end,
@@ -86,50 +89,30 @@ var loadCalendar = function(calendarApiPath, calendarId, calendarElement, loadin
       });
     },
     eventClick: function( event, jsEvent, view ) {
-      // detailsElement.stop(true, true);
-      // detailsElement.html(createDetailsContent(event)).show();
-      var options = {
-        title: "Test",
-        content: "asdf",
-        placement: function (context, source) {
-          var position = $(source).position();
-
-          if (position.left > 515) {
-            return "left";
-          }
-
-          if (position.left < 515) {
-            return "right";
-          }
-
-          if (position.top < 110){
-            return "bottom";
-          }
-
-          return "top";
-        }
-        , trigger: "hover"
-      };
-      $(jsEvent.target).closest('.fc-content').popover(options);
-    },
-    eventMouseover: function( event, jsEvent, view ) {
       detailsElement.stop(true, true);
       detailsElement.html(createDetailsContent(event)).show();
+    },
+    eventMouseover: function( event, jsEvent, view ) {
+      // Don't show for selection helper.
+      if (event.className.indexOf('fc-helper') == -1) {
+        detailsElement.stop(true, true);
+        detailsElement.html(createDetailsContent(event)).show();
+      }
     },
     eventMouseout: function( event, jsEvent, view ) {
       detailsElement.stop(true, true);
       detailsElement.delay(700).fadeOut(300);
     },
     dayClick: function(date, jsEvent, view) {
-      date.local();
-      date.set({'hour': 0, 'minute': 0, 'second': 0, 'millisecond': 0});
-      var nowM = moment(new Date());
-      nowM.local();
-      nowM.set({'hour': 0, 'minute': 0, 'second': 0, 'millisecond': 0});
-      if (!date.isBefore(nowM)) {
-        var datum  = date.format('DD.MM.YYYY');
-        window.location.href='/de/objekte/reservieren.php?id=8&start='+datum+'&ende='+datum;
-      }
+      // date.local();
+      // date.set({'hour': 0, 'minute': 0, 'second': 0, 'millisecond': 0});
+      // var nowM = moment(new Date());
+      // nowM.local();
+      // nowM.set({'hour': 0, 'minute': 0, 'second': 0, 'millisecond': 0});
+      // if (!date.isBefore(nowM)) {
+      //   var datum  = date.format('DD.MM.YYYY');
+      //   window.location.href='reservation-dialog.html?start='+datum+'&ende='+datum;
+      // }
     },
     loading: function(isLoading) {
       if (isLoading) {
@@ -143,17 +126,27 @@ var loadCalendar = function(calendarApiPath, calendarId, calendarElement, loadin
     selectable: true,
     selectHelper: true,
     select: function(start, end) {
-      var title = prompt('Event Title: ');
-      var eventData;
-      if (title) {
-        eventData = {
-          title: title,
-          start: start,
-          end: end
-        };
-        calendarElement.fullCalendar('renderEvent', eventData, true); // stick? = true
+      dialogElement.find('#calendar-dialog-title').html('Reservation für ' + calendarTitle);
+
+      dialogElement.find('#res-date').val(start.format('DD.MM.YYYY'));
+
+      if (start.hours() < 8) {
+        dialogElement.find('#res-start-time').val('08:00');
+      } else if (start.hours() > 22) {
+        dialogElement.find('#res-start-time').val('22:00');
+      } else {
+        dialogElement.find('#res-start-time').val(start.format('HH:mm'));
       }
-      calendarElement.fullCalendar('unselect');
+
+      if (end.hours() < 9) {
+        dialogElement.find('#res-end-time').val('12:00');
+      } else if (end.hours() > 23) {
+        dialogElement.find('#res-end-time').val('23:00');
+      } else {
+        dialogElement.find('#res-end-time').val(end.format('HH:mm'));
+      }
+
+      dialogElement.modal('show');
     },
     scrollTime: '08:00',
     timezone: 'local'
@@ -164,5 +157,156 @@ var loadCalendar = function(calendarApiPath, calendarId, calendarElement, loadin
     detailsElement.stop(true, true);
     detailsElement.fadeOut(300);
   });
+
+  // *******************************
+  // Handle the reservation.
+  // *******************************
+  dialogElement.on('click', '#res-save-button', function (e) {
+    // Clear invalid markers.
+    dialogElement.find('.invalid').removeClass('invalid');
+
+
+    var eventData = {};
+
+    // Get input field values and validate
+    // We simply change border color to red if empty field using .css()
+    var valid = true;
+
+    // Title.
+    var resTitle = dialogElement.find('#res-title').val();
+    if (!resTitle.trim()) {
+      dialogElement.find('#res-title').addClass('invalid');
+      valid = false;
+    }
+    eventData.title = resTitle;
+
+    // Private, i.e. title visibility.
+    var resTitleVisible = dialogElement.find('#res-title-visible').prop('checked');
+    eventData.private = !resTitleVisible;
+
+    // Start and end dates.
+    var resDate = dialogElement.find('#res-date').val();
+    var parsedDate = moment(resDate, 'DD.MM.YYYY');
+    if (parsedDate == null || !parsedDate.isValid()) {
+      dialogElement.find('#res-date').addClass('invalid');
+      valid = false;
+    }
+
+    var resStartTime = dialogElement.find('#res-start-time').val();
+    var start = moment(resDate + ' ' + resStartTime, 'DD.MM.YYYY HH:mm');
+
+    var resEndTime = dialogElement.find('#res-end-time').val();
+    var end = moment(resDate + ' ' + resEndTime, 'DD.MM.YYYY HH:mm');
+
+    // Silently swap if start is after end date.
+    if (start.isAfter(end)) {
+      var tmpStart = start;
+      start = end;
+      end = tmpStart;
+    }
+
+    // Enforce minimum of 1 hour.
+    if (moment.duration(end.diff(start)).asMinutes() < 60) {
+      end.minutes(start.minutes() + 60);
+    }
+
+    eventData.start = start;
+    eventData.end = end;
+
+    // Extras.
+    var extras = [];
+    var resExtrasModerationMaterial = dialogElement.find('#res-extras-moderation-material').prop('checked');
+    if (resExtrasModerationMaterial) {
+      extras.push('Moderationsmaterial');
+    }
+    var resExtrasFood = dialogElement.find('#res-extras-food').prop('checked');
+    if (resExtrasFood) {
+      extras.push('Verpflegung gewünscht');
+    }
+    eventData.extras = extras.join(', ');
+
+    // Price level.
+    var resPriceLevel = dialogElement.find('#res-price-level').val();
+    eventData.priceLevel = resPriceLevel;
+
+    // Contact Name.
+    var resContactName = dialogElement.find('#res-contact-name').val();
+    if (!resContactName.trim()) {
+      dialogElement.find('#res-contact-name').addClass('invalid');
+      valid = false;
+    }
+    eventData.contactName = resContactName;
+
+    // Company (optional).
+    var resContactCompany = dialogElement.find('#res-contact-company').val();
+    eventData.contactCompany = resContactCompany;
+
+    // Street.
+    var resContactStreet = dialogElement.find('#res-contact-street').val();
+    if (!resContactStreet.trim()) {
+      dialogElement.find('#res-contact-street').addClass('invalid');
+      valid = false;
+    }
+    eventData.contactStreet = resContactStreet;
+
+    // Zip.
+    var resContactZip = dialogElement.find('#res-contact-zip').val();
+    if (!resContactZip.trim()) {
+      dialogElement.find('#res-contact-zip').addClass('invalid');
+      valid = false;
+    }
+    eventData.contactZip = resContactZip;
+
+    var resContactCity = dialogElement.find('#res-contact-city').val();
+    if (!resContactCity.trim()) {
+      dialogElement.find('#res-contact-city').addClass('invalid');
+      valid = false;
+    }
+    eventData.contactCity = resContactCity;
+
+    // Email.
+    var resContactEmail = dialogElement.find('#res-contact-email').val();
+    if (!resContactEmail.trim() || !isEmail(resContactEmail)) {
+      dialogElement.find('#res-contact-email').addClass('invalid');
+      valid = false;
+    }
+    eventData.contactEmail = resContactEmail;
+
+    // Phone.
+    var resContactPhone = dialogElement.find('#res-contact-phone').val();
+    if (!resContactPhone.trim()) {
+      dialogElement.find('#res-contact-phone').addClass('invalid');
+      valid = false;
+    }
+    eventData.contactPhone = resContactPhone;
+
+    // Comments (optional).
+    var resComments = dialogElement.find('#res-comments').val();
+    eventData.comments = resComments;
+
+    if (valid) {
+
+      dialogElement.modal('hide');
+
+      // Reset fields, leave all contact info in the form.
+      dialogElement.find('#res-title, #res-date, #res-comments').val('');
+      dialogElement.find('#res-extras input').prop('checked', function() {
+        return this.defaultChecked;
+      });
+      dialogElement.find('#res-start-time option, #res-end-time option').prop('selected', function() {
+        return this.defaultSelected;
+      });
+
+
+      calendarElement.fullCalendar('renderEvent', eventData, false); // stick? = false
+      calendarElement.fullCalendar('unselect');
+    }
+
+  });
+
+  function isEmail(email) {
+    var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    return regex.test(email);
+  }
 }
 </script>

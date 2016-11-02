@@ -120,6 +120,16 @@ table .clickable-row {
   display: inline;
 }
 
+// The yellow wave spacer.
+.wave-spacer {
+  height: 4px;
+  width: 100%;
+  background-image: url(/images/icons/wave.svg);
+  margin: 20px 0;
+  clear: both;
+}
+
+
 // Navigation.
 .logo img {
   height: 36px;

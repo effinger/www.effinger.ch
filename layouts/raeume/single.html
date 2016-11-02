@@ -123,6 +123,14 @@
           </div>
           <div id="calendar-details">
           </div>
+
+          <!-- Button trigger calendar dialog -->
+          <button type="button" class="btn btn-mod btn-medium btn-round mt-40 center-block" data-toggle="modal" data-target="#calendar-dialog">
+            Raum buchen
+          </button>
+
+          {{ partial "fullcalendar_dialog.html" . }}
+
         </div>
       </div>
 
@@ -147,7 +155,10 @@
 {{ partial "fullcalendar_includes.html" }}
 <script type="text/javascript">
 $(document).ready(function(){
-  loadCalendar({{ .Params.calendar_api_path }}, {{ .Params.calendar_id }}, $('#calendar'), $('#calendar-loading'), $('#calendar-details'));
+  loadCalendar({{ .Params.calendar_api_path }},
+    {{ .Params.calendar_id }}, {{ .Title }},
+    $('#calendar'), $('#calendar-loading'), $('#calendar-details'),
+    $('#calendar-dialog'));
 });
 
 </script>

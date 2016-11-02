@@ -58,8 +58,35 @@
     }
   }
 
-  // Full Calendar Stuff
+  #calendar-dialog {
+    label {
+      font-weight: normal;
+    }
 
+    input, textarea, select {
+      text-transform: none !important;
+    }
+
+    input[type="radio"], input[type="checkbox"] {
+      margin-top: 8px;
+    }
+
+    .radio, .checkbox {
+      margin-top: 0px;
+      margin-bottom: 0px;
+
+      label {
+        font-weight: 300;
+      }
+    }
+
+    .invalid {
+      border-color: #e41919;
+    }
+  }
+
+
+  // Full Calendar Stuff
   .fc-widget-content {
     cursor: pointer;
   }
@@ -72,8 +99,8 @@
       font-weight: 300;
     }
 
-    background-color: #222;
-    border-color: #222;
+    background-color: #373737;
+    border-color: #373737;
     cursor: pointer;
 
     &:hover {
@@ -85,7 +112,7 @@
       border-color: #888;
 
       &:hover, &:focus {
-        background-color: #aaa;
+        background-color: #999;
       }
     }
 
