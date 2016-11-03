@@ -39,6 +39,12 @@ paginatePath = "seite"
     url = "/finanzen/"
 
 [[menu.main]]
+  name = "Räume"
+  pre = "<i class='fa fa-calendar-check-o'></i>"
+  weight = 4
+  url = "/raeume/"
+
+[[menu.main]]
   name = "Events"
   weight = 5
   url = "/events/"

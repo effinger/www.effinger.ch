@@ -1,218 +1,165 @@
+{{ define "title" }}
+{{ .Title }} | Räume | {{ .Site.Title }}
+{{ end }}
+
 {{ define "main" }}
 <!-- Page Wrap -->
-<div class="page" id="top">
+<div class="page raeume" id="top">
 
   <nav class="main-nav dark transparent stick-fixed">
     {{ partial "navigation.html" . }}
   </nav>
 
   <!-- Header -->
-  <section class="home-section bg-dark-alfa-70 parallax-2 fixed-height-small" data-background="raeume_header.jpg">
-    <div class="js-height-parent container">
+  <section class="small-section-header bg-dark-lighter">
+    <div class="relative container align-left pt-80">
 
-      <!-- Hero Content -->
-      <div class="home-content">
-        <div class="home-text">
-          <h1 class="font-alt mb-50 mb-xs-30">Raumvermietung</h1>
-          <h2 class="hs-line-8 no-transp font-alt mb-50 mb-xs-30"></h2>
+      <div class="row">
+
+        <div class="col-md-8">
+          <h1 class="hs-line-11 font-alt mb-0">Raumvermietung</h1>
+          <!--
+          <div class="hs-line-4 font-alt mt-20 mt-xs-0">
+          Räume
+          </div>
+          -->
+        </div>
+
+        <div class="col-md-4 mt-30">
+          <div class="mod-breadcrumbs font-alt align-right">
+            <a href="/raeume/"><i class="fa fa-angle-left"></i> Zeige alle Räume</a>
+          </div>
+
         </div>
       </div>
-      <!-- End Hero Content -->
 
     </div>
   </section>
   <!-- End Header -->
 
-  <!-- Features Section / Remove style="disyplay:none" to make it visible -->
-  <section class="page-section" id="offers" style="display:none;">
-    <div class="container relative">
-
-      <!-- Features Grid -->
-      <div class="benefits-grid local-scroll">
-
-        <!-- Features Item -->
-        <a href="#workshopraum">
-          <div class="benefit-item">
-            <div class="benefit-icon">
-              <span class="icon-target"></span>
-            </div>
-            <h3 class="benefit-title font-alt">Workshopraum</h3>
-            <div class="benefits-descr">
-              Im Workshopraum kannst du deinen Ideen freien Lauf lassen. Alle Wände sind magnetisch und beschreibbar, sogar die Decke.
-            </div>
-          </div></a>
-          <!-- End Features Item -->
-        <!-- Features Item -->
-        <a href="#coworking">
-          <div class="benefit-item">
-            <div class="benefit-icon">
-              <span class="icon-puzzle"></span>
-            </div>
-            <h3 class="benefit-title font-alt">KreativSpace</h3>
-            <div class="benefits-descr">
-              Durch eine offene Treppe gelangt man von der Kaffeebar in den Arbeitsbereich des Coworking Spaces.
-            </div>
-          </div></a>
-        <!-- End Features Item -->
-        <!-- Features Item -->
-        <a href="#atelier">
-          <div class="benefit-item">
-            <div class="benefit-icon">
-              <span class="icon-circle-compass"></span>
-            </div>
-            <h3 class="benefit-title font-alt">Atelier</h3>
-            <div class="benefits-descr">
-              Wir wollen uns nicht nur in der virtuellen Welt bewegen. Im Atelier und der Werkstatt entsteht Kunst zum Anfassen.
-            </div>
-          </div></a>
-        <!-- End Features Item -->
-
-      </div>
-      <!-- End Features Grid -->
-
-    </div>
-  </section>
-  <!-- End Features Section -->
-
-  <!-- Section Workshopraum Title-->
-  <!-- <section class="small-section bg-dark-alfa-30 bg-scroll" id="workshopraum" data-background="workshopraum.jpg">
-  </section> -->
-  <!-- End Section Workshopraum Title -->
-
-  <!-- About Section Workshopraum -->
+  <!-- About Section -->
   <section class="page-section">
-    <div class="container relative">
-      <h1 class="hs-line-11 font-alt">Sitzungszimmer</h1>
-      <div class="section-text local-scroll">
-        <p>
-          Der abgetrennte Raum oberhalb des Kaffeebar-Bereichs eignet sich als Sitzungszimmer und Workshopraum für die Unternehmen im Coworking Space sowie externe Gäste. Hier soll out-of-the-box gedacht werden und dies spürt und sieht man schon beim Betreten des Raums.
-        </p>
-        <p>
-          Der Raum bietet 360 Grad beschreibbare, magnetische Wände sowie einen grossen Screen. Hier sollen neue Ideen geboren, Bestehendes hinterfragt und ohne Grenzen "gebrainstormed" werden.
-        </p>
-        <h3 class="font-alt mt-50">Details</h3>
-        <table style="width:100%">
-          <tr>
-            <td style="width:15%; min-width:110px;">Fläche</td>
-            <td>17m2</td>
-          </tr>
-          <tr>
-            <td>Personen</td>
-            <td>4-8</td>
-          </tr>
-          <tr>
-            <td>Elemente</td>
-            <td>45m2 (magnetische) Whiteboard Fläche, 10 Sitzwürfel, Fenster mit Blick in die Kaffeebar, 55 Zoll Screen, Stühle und Tische auf Verlangen.</td>
-          </tr>
-          <tr>
-            <td>Verfügbarkeit</td>
-            <td>Montag bis Samstag</td>
-          </tr>
-        </table>
-        <h3 class="font-alt mt-50">Preise</h3>
-        <table style="width:100%">
-          <tr>
-            <td style="width:15%; min-width:110px;">Halber Tag</td>
-            <td style="width:15%; min-width:90px;">CHF 200.-</td>
-            <td>8.00-12.00 Uhr / 13.00-17.00 Uhr / 18.00-22.00</td>
-          </tr>
-          <tr>
-            <td>Ganzer Tag</td>
-            <td>CHF 300.-</td>
-            <td>8.00-17.00 Uhr / 13.00-22.00 Uhr</td>
-          </tr>
-          <tr>
-            <td>Tag &amp; Abend</td>
-            <td>CHF 350.-</td>
-            <td>8.00-22.00 Uhr</td>
-          </tr>
-        </table>
-        <p class="mt-20">Workshopraum ist auch für 2 Stunden à CHF 100.00 mietbar.<br>Ab 4 Stunden können Start-ups und NGOs einen Rabatt von CHF 50.- beantragen.</p>
-        <a href="#kontakt" class="btn btn-mod btn-gray btn-round mt-10">Anfrage &amp; Reservation</a>
+    <div class="container relative long-text-body">
+
+      <h1 class="mt-0 font-alt">{{ .Title }}</h1>
+
+      <div class="row">
+
+        <div class="col-sm-8 mb-sm-40">
+
+          <!-- Gallery -->
+          <div class="work-full-media mt-0 white-shadow">
+            <ul class="clearlist work-full-slider owl-carousel">
+              {{ $url := .URL }}
+              {{ range .Params.gallery }}
+              <li>
+                <img src="{{ $url }}{{ . }}" alt="" />
+              </li>
+              {{ end }}
+            </ul>
+          </div>
+          <!-- End Gallery -->
+        </div>
+
+        <div class="col-sm-4">
+          <div class="text">
+
+            <div class="row raeume-eigenschaften">
+              <div class="col-xs-6">
+                <div class="raeume-title">Kapazität</div>
+                <div class="raeume-content">
+                  {{ .Params.capacity }} Personen
+                </div>
+              </div>
+
+              <div class="col-xs-6">
+                <div class="raeume-title">Grösse</div>
+                <div class="raeume-content">
+                  {{ .Params.square_meters }}m<sup>2</sup>
+                </div>
+              </div>
+            </div>
+
+            <div class="row raeume-eigenschaften">
+              <div class="col-sm-12">
+                <div class="raeume-title">Elemente</div>
+                <div class="raeume-content">
+                  {{ .Params.elements }}
+                </div>
+              </div>
+            </div>
+
+            <div class="row raeume-eigenschaften">
+              <div class="col-sm-12">
+                <div class="raeume-title">Preise</div>
+                {{ range .Params.prices }}
+                <div class="raeume-content">
+                  {{ . }}
+                </div>
+                {{ end }}
+              </div>
+            </div>
+
+          </div>
+
+        </div>
       </div>
 
-      <!-- Accordion -->
-      <!-- <dl class="toggle workshopraum mt-50">
-          <dt>
-              <a href="" class="active">Details</a>
-          </dt>
-          <dd>
-            <div class="section-text">
-              <table>
-                <tr>
-                  <td>Fläche</td>
-                  <td>17m2</td>
-                </tr>
-                <tr>
-                  <td>Personen</td>
-                  <td>4-8</td>
-                </tr>
-                <tr>
-                  <td>Elemente</td>
-                  <td>45m2 (magnetische) Whiteboard Fläche, 10 Sitzwürfel, Fenster mit Blick in die Kaffeebar, 55 Zoll Screen, Stühle und Tische auf Verlangen.</td>
-                </tr>
-                <tr>
-                  <td>Verfügbarkeit</td>
-                  <td>Montag bis Samstag</td>
-                </tr>
-              </table>
+      <div class="row">
+        <div class="col-sm-10">
+          <h3 class="font-alt mt-50">Details</h3>
+          {{ .Content | markdownify }}
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-12">
+          <h3 class="font-alt mt-50">Reservation</h3>
+          <div class="mt-20" id="calendar">
+            <div id="calendar-loading">
+              <i class="fa fa-refresh fa-spin fa-3x fa-fw mb-10"></i>
+              <div>Reservationen werden geladen...</div>
             </div>
-          </dd>
-          <dt>
-              <a href="" class="active">Preise</a>
-          </dt>
-          <dd>
-            <div class="section-text local-scroll">
-              <table>
-                <tr>
-                  <td>Halber Tag</td>
-                  <td>CHF 200.-</td>
-                  <td>8.00-12.00 Uhr / 13.00-17.00 Uhr / 18.00-22.00</td>
-                </tr>
-                <tr>
-                  <td>Ganzer Tag</td>
-                  <td>CHF 300.-</td>
-                  <td>8.00-17.00 Uhr / 13.00-22.00 Uhr</td>
-                </tr>
-                <tr>
-                  <td>Tag &amp; Abend</td>
-                  <td>CHF 350.-</td>
-                  <td>8.00-22.00 Uhr</td>
-                </tr>
-              </table>
-              <p class="mt-20">Workshopraum ist auch für 2 Stunden à CHF 100.00 mietbar.<br>Ab 4 Stunden können Start-ups und NGOs einen Rabatt von CHF 50.- beantragen.</p>
-              <a href="#kontakt" class="btn btn-mod btn-gray btn-round mt-10">Anfrage &amp; Reservation</a>
-            </div>
-          </dd>
-      </dl> -->
-      <!-- End Accordion -->
+          </div>
+          <div id="calendar-details">
+          </div>
+
+          <!-- Button trigger calendar dialog -->
+          <button type="button" class="btn btn-mod btn-medium btn-round mt-40 center-block" data-toggle="modal" data-target="#calendar-dialog">
+            Raum reservieren
+          </button>
+
+          {{ partial "fullcalendar_dialog.html" . }}
+
+        </div>
+      </div>
+
+      <!-- Prev/Next -->
+      <div class="clearfix mt-40">
+        {{ if .PrevInSection }}
+        <a href="{{ .PrevInSection.RelPermalink }}" class="prev-next-btn left"><i class="fa fa-angle-left"></i>&nbsp;{{ .PrevInSection.Title }}</a>
+        {{ end }}
+        {{ if .NextInSection }}
+        <a href="{{ .NextInSection.RelPermalink }}" class="prev-next-btn right">{{ .NextInSection.Title }}&nbsp;<i class="fa fa-angle-right"></i></a>
+        {{ end }}
+      </div>
+      <!-- End Prev/Next Post -->
     </div>
   </section>
   <!-- End About Section Workshopraum -->
-
-  <!-- Daily Contact Section -->
-  <section class="page-section bg-gray" id="kontakt">
-    <div class="relative container">
-      <h1 class="hs-line-11 font-alt">Kontakt</h1>
-      <div class="row">
-        <div class="col-md-4 col-md-push-8 col-sm-6 col-sm-push-6 mb-md-50">
-          <div class="contact-item clearfix">
-            <h4 class="uppercase">Kontakt Coworking</h4>
-            <div class="wave-spacer"></div>
-            <div class="item">
-              <p>Telefon<span><a href="tel:+41313982021">031 398 20 21</a></span></p>
-              <p>E-Mail<span><a href="mailto:coworking@effinger.ch">coworking@effinger.ch</a></span></p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-8 col-md-pull-4 col-sm-6 col-sm-pull-6">
-          <img src="/images/effianer/claudia-schaeren.jpg" alt="Claudia Schären" />
-          <p class="font-alt mt-20 mb-sm-40">Claudia Schären</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End Daily Contact Section -->
 </div>
 <!-- End Page Wrap -->
+{{ end }}
+
+{{ define "body_includes" }}
+{{ partial "fullcalendar_includes.html" }}
+<script type="text/javascript">
+$(document).ready(function(){
+  loadCalendar({{ .Params.calendar_api_path }},
+    {{ .Params.calendar_id }}, {{ .Title }},
+    $('#calendar'), $('#calendar-loading'), $('#calendar-details'),
+    $('#calendar-dialog'));
+});
+
+</script>
 {{ end }}

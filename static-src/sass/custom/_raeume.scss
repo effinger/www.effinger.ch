@@ -1,0 +1,129 @@
+.raeume {
+
+  .raeume-eigenschaften {
+    margin-top: 10px;
+
+    .raeume-title {
+      font-size: 80%;
+    }
+
+    .raeume-content {
+      font-weight: normal;
+    }
+  }
+
+  #calendar {
+    position: relative;
+  }
+
+  #calendar-loading {
+    display: none;
+    position: absolute;
+    top: 35%;
+    left: 25%;
+    width: 50%;
+    text-align: center;
+    z-index: 1000;
+    background-color: rgba(235, 235, 235, 0.7);
+    border: 2px solid #5f5f5f;
+    padding: 20px;
+  }
+
+  #calendar-details {
+    top: 80px;
+    right: 20px;
+    position: fixed;
+    display: none;
+    z-index: 1000;
+    background-color: rgba(245, 245, 245, 0.95);
+    border: 2px solid #5f5f5f;
+    padding: 20px;
+    margin-left: 20px;
+    max-width: 500px;
+
+    &::before {
+      font-family: FontAwesome;
+      content: "\f00d";
+      position: absolute;
+      right: 10px;
+      top: 5px;
+    }
+
+    .calendar-details-title {
+      font-size: 80%;
+    }
+
+    .calendar-details-content {
+      font-weight: normal;
+    }
+  }
+
+  #calendar-dialog {
+    label {
+      font-weight: normal;
+    }
+
+    input, textarea, select {
+      text-transform: none !important;
+    }
+
+    input[type="radio"], input[type="checkbox"] {
+      margin-top: 8px;
+    }
+
+    .radio, .checkbox {
+      margin-top: 0px;
+      margin-bottom: 0px;
+
+      label {
+        font-weight: 300;
+      }
+    }
+
+    .invalid {
+      border-color: #e41919;
+    }
+
+    .alert-close {
+      padding: 0;
+      cursor: pointer;
+      background: transparent;
+      border: 0;
+      -webkit-appearance: none;
+    }
+  }
+
+
+  // Full Calendar Stuff
+  .fc-widget-content {
+    cursor: pointer;
+  }
+  .fc-day-grid-event {
+    .fc-time {
+      font-weight: normal;
+    }
+
+    .fc-title {
+      font-weight: 300;
+    }
+
+    background-color: #373737;
+    border-color: #373737;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #555;
+    }
+
+    &.provisional {
+      background-color: #888;
+      border-color: #888;
+
+      &:hover, &:focus {
+        background-color: #999;
+      }
+    }
+
+  }
+
+}
