@@ -1,5 +1,6 @@
 +++
 title = "Workshopraum"
+weight = 1
 description = "Der abgetrennte Raum oberhalb des Kaffeebar-Bereichs eignet sich als Sitzungszimmer und Workshopraum. Der Raum bietet 360° beschreibbare, magnetische Wände sowie einen grossen Screen."
 image = "workshopraum-01.jpg"
 
