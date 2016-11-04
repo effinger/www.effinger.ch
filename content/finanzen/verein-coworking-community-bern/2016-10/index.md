@@ -56,8 +56,8 @@ info = "Jeden Tag ab 17 Uhr"
 
 [[ertrag]]
 name = "Community Member"
-betrag = 250
-info = "1 neue Membership"
+betrag = 500
+info = "2 neue Memberships"
 
 
 [[aufwand]]
