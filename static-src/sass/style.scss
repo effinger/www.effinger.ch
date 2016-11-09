@@ -56,11 +56,18 @@ strong {
 
 h1 a,
 h1 a:hover,
+h1 a:focus,
 h2 a,
 h2 a:hover,
+h2 a:focus,
 h3 a,
-h3 a:hover {
+h3 a:hover,
+h3 a:focus {
   text-decoration: none;
+}
+
+.hs-line-6 {
+  opacity: .65;
 }
 
 .draft-title {
@@ -68,7 +75,8 @@ h3 a:hover {
   vertical-align: middle;
   text-decoration: none;
 
-  &:hover {
+  &:hover,
+  &:focus {
     text-decoration: none;
   }
 
