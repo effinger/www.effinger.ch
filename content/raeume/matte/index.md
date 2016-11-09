@@ -1,11 +1,18 @@
 +++
 title = "Matte"
 weight = 2
-description = "Der grosse Raum."
-image = "kreativraum-01.jpg"
+description = "Raum für innovative Workshops und kreative Sitzungen."
+image = "workshopraum-01.jpg"
 
 gallery = [
-  "kreativraum-01.jpg"
+  "workshopraum-01.jpg",
+  "workshopraum-02.jpg",
+  "workshopraum-03.jpg",
+  "workshopraum-04.jpg",
+  "workshopraum-05.jpg",
+  "workshopraum-06.jpg",
+  "workshopraum-07.jpg",
+  "workshopraum-08.jpg"
 ]
 
 square_meters = 45
@@ -31,6 +38,10 @@ text = "Screen"
 price = "CHF 50"
 
 [[extras]]
+text = "Moving Walls (beschreibbar)"
+price = "CHF 50"
+
+[[extras]]
 text = "Moderationskoffer"
 price = "CHF 50"
 
@@ -52,4 +63,4 @@ text = "Weitere Verpflegung gewünscht"
 hidden = true
 
 +++
-Viel Raum für Ideen.
+Raum für innovative Workshops und kreative Sitzungen.
