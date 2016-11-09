@@ -1,6 +1,6 @@
 {{/* Workaround until we have this: https://discuss.gohugo.io/t/node-improvements/1593 */}}
-{{ define "description1" }}Wir vermieten innovative Sitzungszimmer und Workshopräume. Mit beschreibbaren Wänden, Design Thinking Materialien und Lego Serious Play.{{ end }}
-{{ define "description2" }}Wir vermieten innovative Sitzungszimmer und Workshopräume. Mit beschreibbaren Wänden, Design Thinking Materialien und Lego Serious Play.{{ end }}
+{{ define "description1" }}Wir vermieten innovative Sitzungszimmer und Workshopräume. Mit beschreibbaren Wänden, Design Thinking Materialien und LEGO Serious Play.{{ end }}
+{{ define "description2" }}Wir vermieten innovative Sitzungszimmer und Workshopräume. Mit beschreibbaren Wänden, Design Thinking Materialien und LEGO Serious Play.{{ end }}
 
 
 {{ define "main" }}
@@ -36,7 +36,7 @@
           <div class="section-text align-center">
             <blockquote>
               <p>
-                Wir vermieten innovative Sitzungszimmer und Workshopräume in Bern. Mit beschreibbaren Wänden, Design Thinking Materialien und Lego Serious Play.
+                Wir vermieten innovative Sitzungszimmer und Workshopräume in Bern. Mit beschreibbaren Wänden, Design Thinking Materialien und LEGO Serious Play.
               </p>
             </blockquote>
           </div>
@@ -51,7 +51,7 @@
 
   <section class="page-section">
     <div class="container relative">
-      <h2 class="mt-0 font-alt mb-30 mb-xs-10"><a href="{{ .URL }}">{{ .Title }}</a></h2>
+      <h2 class="mt-0 font-alt mb-30 mb-xs-10"><a href="{{ .URL }}">Raum &laquo;<strong>{{ .Title }}</strong>&raquo;</a></h2>
 
       <div class="row">
         <div class="col-sm-6 mb-sm-40">
@@ -91,9 +91,22 @@
 
             <div class="row raeume-eigenschaften">
               <div class="col-sm-12">
-                <div class="raeume-title">Elemente</div>
+                <div class="raeume-title">Ausrüstung</div>
                 <div class="raeume-content">
-                  {{ .Params.elements }}
+                  {{ delimit .Params.equipment ", " }}
+                </div>
+              </div>
+            </div>
+
+            <div class="row raeume-eigenschaften">
+              <div class="col-sm-12">
+                <div class="raeume-title">Zusätzliche Infrastruktur</div>
+                <div class="raeume-content">
+                  {{ range $index, $element := .Params.extras }}
+                    {{- if not $element.hidden -}}
+                    {{- if gt $index 0 }},{{ end }} {{ $element.text -}}
+                    {{- end -}}
+                  {{ end }}
                 </div>
               </div>
             </div>

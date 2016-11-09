@@ -98,13 +98,18 @@
   .fc-widget-content {
     cursor: pointer;
   }
-  .fc-day-grid-event {
+  .fc-day-grid-event,
+  .fc-time-grid-event {
     .fc-time {
       font-weight: normal;
     }
 
     .fc-title {
       font-weight: 300;
+    }
+
+    .fc-bg {
+      background: #373737;
     }
 
     background-color: #373737;
@@ -123,7 +128,13 @@
         background-color: #999;
       }
     }
+  }
 
+  .fc-helper-container {
+    .fc-bg {
+      background: #fff;
+      opacity: .25;
+    }
   }
 
 }

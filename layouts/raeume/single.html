@@ -82,9 +82,22 @@
 
             <div class="row raeume-eigenschaften">
               <div class="col-sm-12">
-                <div class="raeume-title">Elemente</div>
+                <div class="raeume-title">Ausrüstung</div>
                 <div class="raeume-content">
-                  {{ .Params.elements }}
+                  {{ delimit .Params.equipment ", " }}
+                </div>
+              </div>
+            </div>
+
+            <div class="row raeume-eigenschaften">
+              <div class="col-sm-12">
+                <div class="raeume-title">Zusätzliche Infrastruktur</div>
+                <div class="raeume-content">
+                  {{ range $index, $element := .Params.extras }}
+                    {{- if not $element.hidden -}}
+                    {{- if gt $index 0 }},{{ end }} {{ $element.text -}}
+                    {{- end -}}
+                  {{ end }}
                 </div>
               </div>
             </div>
@@ -153,10 +166,10 @@
 
 {{ define "body_includes" }}
 {{ partial "fullcalendar_includes.html" }}
+
 <script type="text/javascript">
 $(document).ready(function(){
-  loadCalendar({{ .Params.calendar_api_path }},
-    {{ .Params.calendar_id }}, {{ .Title }},
+  loadCalendar({{ .Params.calendar_api_path }}, {{ .Params.calendar_id }}, {{ .Title }}, {{ .Params.extras }},
     $('#calendar'), $('#calendar-loading'), $('#calendar-details'),
     $('#calendar-dialog'));
 });

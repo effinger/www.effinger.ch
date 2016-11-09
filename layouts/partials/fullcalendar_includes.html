@@ -4,7 +4,7 @@
 <script src='/js/fullcalendar/fullcalendar.min.js'></script>
 <script src='/js/fullcalendar/locale-de.js'></script>
 <script>
-var loadCalendar = function(calendarApiPath, calendarId, calendarTitle,
+var loadCalendar = function(calendarApiPath, calendarId, roomTitle, roomExtras,
     calendarElement, loadingElement, detailsElement, dialogElement) {
   var createDetailsContent = function(event) {
     var result = '';
@@ -42,6 +42,8 @@ var loadCalendar = function(calendarApiPath, calendarId, calendarTitle,
         end: '17:00'
       }
     ],
+    displayEventTime: true,
+    displayEventEnd: true,
     editable: false,
     eventLimit: false, // allow "more" link when too many events
     header: {
@@ -70,6 +72,10 @@ var loadCalendar = function(calendarApiPath, calendarId, calendarTitle,
             } else {
               title = 'Besetzt';
             }
+
+            // Add hours.
+            // var hours = Math.round(moment.duration(moment(value.end).diff(moment(value.start))).asHours());
+            // title = hours + ' Std. ' + title;
 
             var classes = [];
             if (value.provisional) {
@@ -127,7 +133,7 @@ var loadCalendar = function(calendarApiPath, calendarId, calendarTitle,
     selectHelper: true,
     select: function(start, end) {
       // Set the dialog title.
-      dialogElement.find('#calendar-dialog-title').html('Reservation für ' + calendarTitle);
+      dialogElement.find('#calendar-dialog-title').html('Reservation für ' + roomTitle);
 
       // Set the date and time from the selection.
       dialogElement.find('#res-date').val(start.format('DD.MM.YYYY'));
@@ -146,6 +152,24 @@ var loadCalendar = function(calendarApiPath, calendarId, calendarTitle,
         dialogElement.find('#res-end-time').val('23:00');
       } else {
         dialogElement.find('#res-end-time').val(end.format('HH:mm'));
+      }
+
+      // Set the extras.
+      var extrasElement = dialogElement.find('#res-extras');
+      extrasElement.empty();
+      for (var i = 0; i < roomExtras.length; i++) {
+        if (i == 0) {
+          extrasElement.append('<label>Extras</label>');
+        }
+        var priceString = roomExtras[i].price ? ' - ' + roomExtras[i].price : '';
+        var textAndPrice = roomExtras[i].text + priceString;
+        extrasElement.append(
+          '<div class="checkbox">\
+            <label>\
+              <input type="checkbox" value="' + textAndPrice + '">' + textAndPrice + '\
+            </label>\
+          </div>'
+        );
       }
 
       reset();
@@ -214,19 +238,22 @@ var loadCalendar = function(calendarApiPath, calendarId, calendarTitle,
 
     // Extras.
     var extras = [];
-    var resExtrasModerationMaterial = dialogElement.find('#res-extras-moderation-material').prop('checked');
-    if (resExtrasModerationMaterial) {
-      extras.push('Moderationsmaterial');
-    }
-    var resExtrasFood = dialogElement.find('#res-extras-food').prop('checked');
-    if (resExtrasFood) {
-      extras.push('Verpflegung gewünscht');
-    }
+    dialogElement.find('#res-extras input:checked').each(function() {
+      extras.push($(this).val());
+    });
     eventData.extras = extras.join(', ');
 
     // Price level.
     var resPriceLevel = dialogElement.find('#res-price-level').val();
     eventData.priceLevel = resPriceLevel;
+
+    // Contact Name.
+    var resPersons = dialogElement.find('#res-persons').val();
+    if (!resPersons.trim()) {
+      dialogElement.find('#res-persons').addClass('invalid');
+      valid = false;
+    }
+    eventData.persons = resPersons;
 
     // Contact Name.
     var resContactName = dialogElement.find('#res-contact-name').val();
