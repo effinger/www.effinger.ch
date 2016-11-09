@@ -42,6 +42,11 @@ text = "LEGO Serious Play Material"
 price = "CHF 100"
 
 [[extras]]
+text = "Seminarverpflegung (Wasser & Früchte)"
+price = "CHF 7 pro Person"
+hidden = true
+
+[[extras]]
 text = "Weitere Verpflegung gewünscht"
 hidden = true
 
