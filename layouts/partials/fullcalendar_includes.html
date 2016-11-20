@@ -59,6 +59,7 @@ var loadCalendar = function(calendarApiPath, calendarId, roomTitle, roomExtras,
           start: start.toISOString(),
           end: end.toISOString()
         },
+        dataType: "jsonp",
         success: function(data) {
           //console.log(this.url);
           //callback(data.results);
@@ -91,6 +92,10 @@ var loadCalendar = function(calendarApiPath, calendarId, roomTitle, roomExtras,
             });
           });
           callback(events);
+        },
+        error: function (err) {
+          console.log(this.url);
+          console.log("AJAX error in request: " + JSON.stringify(err, null, 2));
         }
       });
     },
