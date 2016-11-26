@@ -71,6 +71,18 @@ facebook = ""
 instagram = ""
 
 [[Person]]
+host = [ "Dienstag" ]
+name = "Claudine Etter"
+gender = "f"
+image = "/images/effianer/claudine-etter.jpg"
+email = "claudine@effinger.ch"
+phone = ""
+website = "http://www.atelier-c.ch/"
+twitter = ""
+facebook = ""
+instagram = "atelier.c"
+
+[[Person]]
 host = [ "Mittwoch" ]
 name = "Timon Andeer"
 gender = "m"
@@ -92,6 +104,30 @@ phone = ""
 website = ""
 twitter = ""
 facebook = "timon.marmet"
+instagram = ""
+
+[[Person]]
+host = [ "Mittwoch" ]
+name = "Christa-Maria Tobler"
+gender = "f"
+image = "/images/effianer/christa-maria-tobler.jpg"
+email = "christamaria@effinger.ch"
+phone = ""
+website = ""
+twitter = ""
+facebook = ""
+instagram = ""
+
+[[Person]]
+host = [ "Mittwoch" ]
+name = "Hanne Vie"
+gender = "f"
+image = "/images/effianer/hanne-vie-child.jpg"
+email = "hanne@effinger.ch"
+phone = ""
+website = ""
+twitter = ""
+facebook = ""
 instagram = ""
 
 [[Person]]
@@ -144,18 +180,6 @@ instagram = "dmrsbrgr"
 
 [[Person]]
 host = [ "Freitag" ]
-name = "Matthias Tobler"
-gender = "m"
-image = "/images/effianer/matthias-tobler.jpg"
-email = "matthias@effinger.ch"
-phone = ""
-website = "http://www.iveinstitute.org/"
-twitter = ""
-facebook = ""
-instagram = ""
-
-[[Person]]
-host = [ "Freitag" ]
 name = "Michael Aerni"
 gender = "m"
 image = "/images/effianer/michael-aerni.jpg"
@@ -164,4 +188,16 @@ phone = ""
 website = ""
 twitter = ""
 facebook = "michael.aerni"
+instagram = ""
+
+[[Person]]
+host = [ "Freitag" ]
+name = "Matthias Tobler"
+gender = "m"
+image = "/images/effianer/matthias-tobler.jpg"
+email = "matthias@effinger.ch"
+phone = ""
+website = "http://www.iveinstitute.org/"
+twitter = ""
+facebook = ""
 instagram = ""
