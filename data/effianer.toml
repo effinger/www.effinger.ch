@@ -47,6 +47,18 @@ facebook = ""
 instagram = ""
 
 [[Person]]
+host = [ ]
+name = "Oleg Lavrovsky"
+gender = "m"
+image = "/images/effianer/oleg-lavrovsky.jpg"
+email = "oleg@effinger.ch"
+phone = ""
+website = "https://datalets.ch/"
+twitter = "loleg"
+facebook = "lavrovsky"
+instagram = ""
+
+[[Person]]
 host = [ "Dienstag" ]
 name = "Marco Jakob"
 gender = "m"
@@ -122,7 +134,7 @@ instagram = ""
 host = [ "Mittwoch" ]
 name = "Hanne Vie"
 gender = "f"
-image = "/images/effianer/hanne-vie-child.jpg"
+image = "/images/effianer/hanne-vie.jpg"
 email = "hanne@effinger.ch"
 phone = ""
 website = ""
@@ -177,6 +189,18 @@ website = "http://www.dmrsbrgr.com"
 twitter = ""
 facebook = ""
 instagram = "dmrsbrgr"
+
+[[Person]]
+host = [ ]
+name = "Daniel Osterwalder"
+gender = "m"
+image = "/images/effianer/daniel-osterwalder.jpg"
+email = "daniel@effinger.ch"
+phone = ""
+website = "http://www.visualdynamics.ch/"
+twitter = "DOsterwalder"
+facebook = "daniel.osterwalder.7"
+instagram = ""
 
 [[Person]]
 host = [ "Freitag" ]
