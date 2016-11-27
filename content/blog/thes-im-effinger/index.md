@@ -20,7 +20,7 @@ draft = true
 
 THES bedeutet TauscHaus/EduSpace. Es ist ein offener Raum, wo sich Menschen treffen, die miteinander in der Bildung etwas bewegen wollen.
 
-Der THES ist eingebettet im Effinger - ganz bewusst an einem schul-neutralen Ort. So wird er zu einem Treffpunkt, wo man Bildung hinterfragen darf, sie weiterentwickelt und mit neuen Formen experimentiert. Dafür kommen ganz unterschiedliche Menschen zusammen und werden sich gegenseitig inspirieren und zum Handeln motivieren.
+Der THES ist eingebettet im Effinger - ganz bewusst an einem schul-neutralen Ort. So wird er zu einem Treffpunkt, wo man Bildung hinterfragen darf, sie weiterentwickeln und mit neuen Formen experimentieren kann. Dazu kommen ganz unterschiedliche Menschen zusammen und werden sich gegenseitig inspirieren und zum Handeln motivieren.
 
 ![THES im Effinger](thes-im-effinger.jpg)
 
@@ -29,9 +29,9 @@ Der THES ist eingebettet im Effinger - ganz bewusst an einem schul-neutralen Ort
 
 Im April 2016 trafen sich Leute vom heutigen Vorstand von [RaumBildung](http://www.raumbildung.ch/) im Effinger. Sie waren interessiert, etwas über die Hintergründe vom Effinger zu erfahren und so kam es zur ersten Begegnung.
 
-Nach einem Workshop und einigen Gesprächen war klar, dass es in Bern ein Bedürfnis nach einem Ort für Austausch über Bildung gibt. Bildung darf aber nicht zu eng oder losgelöst gedacht werden. Es braucht Austausch und Vernetzung mit Leuten, die gerade nicht aus dem Bildungsbereich kommen und sich auch sonst gewohnt sind, ausserhalb von Normen zu denken. Deshalb war es naheliegend, THES im Effinger anzusiedeln.
+Nach einem Workshop und einigen Gesprächen war klar, dass es in Bern ein Bedürfnis gibt nach einem Ort für Austausch über Bildung. Bildung darf aber nicht zu eng oder losgelöst gedacht werden. Es braucht Vernetzung mit Leuten, die gerade nicht aus dem Bildungsbereich kommen und sich auch sonst gewohnt sind, ausserhalb von Normen zu denken. Deshalb war es naheliegend, THES im Effinger in der bestehenden Coworking Community anzusiedeln.
 
-Ich freue mich persönlich sehr, dass wir im Effinger durch THES eine ganz grosse Vielfalt hinzugewonnen haben. Die THES Community ist eine enorme Bereicherung für uns! Natürlich freue ich mich auch als Lehrer ganz besonders, dass das Thema Bildung im Effinger stärker verwurzelt wird. Coworking wird erweitert durch Colearning.
+Ich freue mich persönlich sehr, dass wir im Effinger durch THES eine ganz grosse Vielfalt hinzugewonnen haben. Die THES Community ist eine enorme Bereicherung für uns! Natürlich freue ich mich auch als Lehrer ganz besonders, dass das Thema Bildung im Effinger stärker verwurzelt wird. Coworking wird dadurch erweitert durch Colearning.
 
 
 ## Sei dabei!
