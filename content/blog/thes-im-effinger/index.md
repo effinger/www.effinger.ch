@@ -1,18 +1,17 @@
 +++
 title = "THES im Effinger"
 date = "2016-11-28"
-description = "Über 70 Bildungsinteressierte haben im Effinger im ersten Stock auf den Start vom TauscHaus/EduSpace angestossen."
+description = "Über 70 Bildungsinteressierte haben im Effinger im ersten Stock auf den Start vom TauscHaus/EduSpace und dessen Crowdfunding-Kampagne angestossen."
 image = "thes-eroeffnung.jpg"
 author = "Marco Jakob"
 comments = true
 tags = [ "Coworking", "Colearning" ]
-draft = true
 +++
 
 ![TauscHaus/EduSpace Logo](thes-eroeffnung.jpg)
 
 <div class="lead">
-  Wow, das war eine Eröffnungsparty! Über 70 Bildungsinteressierte haben im Effinger im ersten Stock auf den Start vom TauscHaus/EduSpace angestossen.
+  Wow, das war eine Eröffnungsparty! Über 70 Bildungsinteressierte haben im Effinger im ersten Stock auf den Start vom TauscHaus/EduSpace und dessen Crowdfunding-Kampagne angestossen.
 </div>
 
 
@@ -48,4 +47,4 @@ Wenn dich das Thema von THES interessiert, du selber mitmachen oder einfach dies
 
 <a href="https://wemakeit.com/projects/thes-cokreationsraeume" class="btn btn-mod btn-medium btn-round mb-10">&rarr; Zur Crowdfunding Kampagne</a>
 
-Weitere Informationen findest du auf [raumbildung.ch](http://www.raumbildung.ch) oder du schaust einfach spontan bei THES im Effinger im ersten Stock vorbei!
+Schau einfach spontan bei THES im Effinger im ersten Stock vorbei. Weitere Informationen findest du auf [raumbildung.ch](http://www.raumbildung.ch). Trag dich dort am besten gleich für ihren Newsletter ein - dann bleibst du auf dem Laufenden.
