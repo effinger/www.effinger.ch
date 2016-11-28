@@ -28,7 +28,7 @@ Der THES ist eingebettet im Effinger - ganz bewusst an einem schul-neutralen Ort
 
 Im April 2016 trafen sich Leute vom heutigen Vorstand von [RaumBildung](http://www.raumbildung.ch/) im Effinger. Sie waren interessiert, etwas über die Hintergründe vom Effinger zu erfahren und so kam es zur ersten Begegnung.
 
-Nach einem Workshop und einigen Gesprächen war klar, dass es in Bern ein Bedürfnis gibt nach einem Ort für Austausch über Bildung. Bildung darf aber nicht zu eng oder losgelöst gedacht werden. Es braucht Vernetzung mit Leuten, die gerade nicht aus dem Bildungsbereich kommen und sich auch sonst gewohnt sind, ausserhalb von Normen zu denken. Deshalb war es naheliegend, THES im Effinger in der bestehenden Coworking Community anzusiedeln.
+Nach einem Workshop und einigen Gesprächen war klar, dass es in Bern das Bedürfnis gibt nach einem Ort für Austausch über Bildung. Bildung darf aber weder zu eng noch losgelöst gedacht werden. Es braucht Vernetzung mit Leuten, die gerade nicht aus dem Bildungsbereich kommen und sich auch sonst gewohnt sind, ausserhalb von Normen zu denken. Deshalb war es naheliegend, THES im Effinger in der bestehenden Coworking Community anzusiedeln.
 
 Ich freue mich persönlich sehr, dass wir im Effinger durch THES eine ganz grosse Vielfalt hinzugewonnen haben. Die THES Community ist eine enorme Bereicherung für uns! Natürlich freue ich mich auch als Lehrer ganz besonders, dass das Thema Bildung im Effinger stärker verwurzelt wird. Coworking wird dadurch erweitert durch Colearning.
 
@@ -43,7 +43,7 @@ Wenn dich das Thema von THES interessiert, du selber mitmachen oder einfach dies
 </div>
 </p>
 
-*Tipp:* Am besten löst du gleich eine <strong class="text-nowrap"><i class="fa fa-user"></i> THES-Membership <i class="fa fa-user"></i></strong> (bei der Jahresmitgliedschaft über das Crowdfunding werden dir zwei Monate geschenkt). Damit kannst du Coworken im THES, KollegInnen mitnehmen für Diskussionen oder Workshops Rund um Bildung durchführen. Und wenn dir ein Vorstandsmitlied, als Zauberfee verkleidet, deine Wünsche erfüllen soll, dann schnappe dir eine <strong class="text-nowrap"><i class="fa fa-magic"></i> THES-Fördership <i class="fa fa-magic"></i></strong>.
+*Tipp:* Am besten löst du gleich eine <strong class="text-nowrap"><i class="fa fa-user"></i> THES-Membership <i class="fa fa-user"></i></strong> (bei der Jahresmitgliedschaft über das Crowdfunding werden dir zwei Monate geschenkt). Damit kannst du Coworken im THES, KollegInnen mitnehmen für Diskussionen oder Workshops rund um Bildung durchführen. Und wenn dir ein Vorstandsmitglied, als Zauberfee verkleidet, deine Wünsche erfüllen soll, dann schnappe dir eine <strong class="text-nowrap"><i class="fa fa-magic"></i> THES-Fördership <i class="fa fa-magic"></i></strong>.
 
 <a href="https://wemakeit.com/projects/thes-cokreationsraeume" class="btn btn-mod btn-medium btn-round mb-10">&rarr; Zur Crowdfunding Kampagne</a>
 
