@@ -35,7 +35,7 @@ Ich freue mich persönlich sehr, dass wir im Effinger durch THES eine ganz gross
 
 ## Sei dabei!
 
-Wenn dich das Thema von THES interessiert, du selber mitmachen oder einfach diese Initiative unterstützen willst, dann schau dir unbedingt die [Crowdfunding Kampagne von THES](https://wemakeit.com/projects/thes-cokreationsraeume) an und mache mit!
+Wenn dich das Thema von THES interessiert, du selber mitmachen oder einfach diese Initiative unterstützen willst, dann schau dir unbedingt die [Crowdfunding Kampagne von THES](https://wemakeit.com/projects/thes-cokreationsraeume) an und mache mit! Damit der Betrieb von THES im neuen Jahr sichergestellt werden kann, brauchen sie tatkräftige und finanzielle Unterstützung. Lasst uns mithelfen, dass die Kampagne von THES ein grosser Erfolg wird.
 
 <p>
 <div class="embed-responsive embed-responsive-16by9">
