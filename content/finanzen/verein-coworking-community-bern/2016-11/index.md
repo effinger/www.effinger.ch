@@ -4,7 +4,7 @@ date = "2016-11-01"
 unternehmen = "Verein Coworking Community Bern"
 
 darlehen = 145000
-kontostand = 83568
+kontostand = 65396
 kommentar = """
 """
 
@@ -15,8 +15,8 @@ info = "7 Personen à 350"
 
 [[ertrag]]
 name = "Coworker Teilzeit"
-betrag = 1120
-info = "7 Personen à 160"
+betrag = 1280
+info = "8 Personen à 160"
 
 [[ertrag]]
 name = "Extras"
