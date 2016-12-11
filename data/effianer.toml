@@ -225,3 +225,28 @@ website = "http://www.iveinstitute.org/"
 twitter = ""
 facebook = ""
 instagram = ""
+
+[[Person]]
+host = [ ]
+name = "David Brühlmeier"
+gender = "m"
+image = "/images/effianer/david-bruehlmeier.jpg"
+email = "dave@effinger.ch"
+phone = ""
+website = "http://www.villageoffice.ch/about/dave"
+twitter = "ResponsiveDave"
+facebook = ""
+instagram = ""
+
+
+[[Person]]
+host = [ ]
+name = "Roland Studer"
+gender = "m"
+image = "/images/effianer/roland-studer.jpg"
+email = "roland@effinger.ch"
+phone = ""
+website = "http://hitobito.com/"
+twitter = ""
+facebook = ""
+instagram = ""
