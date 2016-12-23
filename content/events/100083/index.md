@@ -2,7 +2,7 @@
 title = "Service Design Jam Bern - Tag 3"
 
 startdate = 2017-02-19T08:00:00Z
-enddate = 2017-02-19T22:00:00Z
+enddate = 2017-02-19T15:00:00Z
 categories = [ "Coworking" ]
 location = "Effingerstrasse 10, Bern"
 address = "46.945842, 7.435864"
