@@ -37,11 +37,19 @@
       <div class="eventlist">
         {{ range sort (where .Data.Pages "Params.enddate" ">=" .Now) "Params.startdate" "asc" }}
 
-          {{ $start_month := index $.Site.Data.de.months .Params.startdate.Month }}
+          {{/* startdate/enddate parameters should already be of type time.Time but they somehow
+            aren't. It works if we call time again which contains the golang indirect()
+            call - that probably converts it to the time type we actually need.
+            See https://github.com/spf13/cast/blob/master/caste.go#L19 */}}
+
+          {{ $start := time .Params.startdate }}
+          {{ $end := time .Params.enddate }}
+
+          {{ $start_month := index $.Site.Data.de.months $start.Month }}
           {{ $start_shortmonth := slicestr $start_month 0 3 }}
-          {{ $start_day := .Params.startdate.Day }}
-          {{ $start_time := printf "%02d:%02d" .Params.startdate.Hour .Params.startdate.Minute }}
-          {{ $end_time := printf "%02d:%02d" .Params.enddate.Hour .Params.enddate.Minute }}
+          {{ $start_day := $start.Day }}
+          {{ $start_time := printf "%02d:%02d" $start.Hour $start.Minute }}
+          {{ $end_time := printf "%02d:%02d" $end.Hour $end.Minute }}
 
         <a href="{{ .RelPermalink }}">
           <div class="event-item bg-gray clearfix">
@@ -58,7 +66,7 @@
             <div class="event-text text bg-white">
               <h4 class="uppercase">{{ .Title }}</h4>
               <p>
-                {{ if eq .Params.enddate .Params.startdate }}
+                {{ if eq $end $start }}
                   <i class="fa fa-clock-o fa-inline"></i>&nbsp;{{ $start_time }} Uhr<span class="separator">&nbsp;</span>
                 {{ else }}
                   <i class="fa fa-clock-o fa-inline"></i>&nbsp;{{ $start_time }} bis {{ $end_time }} Uhr<span class="separator">&nbsp;</span>
