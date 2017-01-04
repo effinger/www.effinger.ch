@@ -3,6 +3,7 @@ title = "Kleine Schanze"
 weight = 5
 description = "Sitzungsraum mit Stehtischen."
 image = "sitzungsraum-01.jpg"
+draft = true
 
 gallery = [
   "sitzungsraum-01.jpg",
