@@ -1,8 +1,8 @@
 +++
 title = "Community-Treffen"
 
-startdate = 2017-06-01T19:00:00Z
-enddate = 2017-06-01T21:30:00Z
+startdate = 2017-05-04T19:00:00Z
+enddate = 2017-05-04T21:30:00Z
 categories = [ "Community" ]
 location = "Effingerstrasse 10, Bern"
 address = "46.945842, 7.435864"
