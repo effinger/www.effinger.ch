@@ -3,9 +3,12 @@ title = "Finanzen Dezember 2016"
 date = "2016-12-01"
 unternehmen = "Verein Coworking Community Bern"
 
-darlehen = 145000
-kontostand = 65396
+darlehen = 136000
+kontostand = 42008
 kommentar = """
+Der Kontostand ist stark gesunken, da wir ein Darlehen von CHF 10'000 zurückgezahlt
+und noch eine (hoffentlich letzte) Baurechnung von über CHF 10'000 beglichen
+haben
 """
 
 [[ertrag]]
