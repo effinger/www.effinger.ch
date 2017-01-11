@@ -243,8 +243,12 @@ var loadCalendar = function(calendarApiPath, calendarId, roomTitle, roomExtras,
     eventData.extras = extras.join(', ');
 
     // Price level.
-    var resPriceLevel = dialogElement.find('#res-price-level').val();
-    eventData.priceLevel = resPriceLevel;
+    //var resPriceLevel = dialogElement.find('#res-price-level').val();
+    //eventData.priceLevel = resPriceLevel;
+
+    // Visibility (default, private, public).
+    // For now, we always set the visibility to private.
+    eventData.visibility = 'private';
 
     // Contact Name.
     var resPersons = dialogElement.find('#res-persons').val();
