@@ -47,4 +47,4 @@ text = "Weitere Verpflegung gewünscht"
 hidden = true
 
 +++
-Ein grosser, hoher und heller Raum für Events.
+Ein grosser, hoher und heller Raum für Events. Der Raum kann für Events jeweils unter der Woche ab 18 Uhr und am Wochenende den ganzen Tag gemietet werden.
