@@ -487,13 +487,6 @@ offers_title = "Menu"
         text="Tinto  no (Tempranillo)"
 
     [[offers.section.element]]
-      text="Don Baffo, DO (ES)"
-      price="6.50"
-
-      [[offers.section.element.subelement]]
-        text="50% Monastrell, 30% Syrah, 20% Petit Verdot"
-
-    [[offers.section.element]]
       text="Cuvée Noir «Drunk», Pfalz (DE)"
       price="8.00"
 
@@ -544,30 +537,29 @@ offers_title = "Menu"
     column = "left"
 
     [[offers.section.element]]
-      text="Aperol Spritz"
+      text="Apéritivo Spritz"
       price="9.50"
 
       [[offers.section.element.subelement]]
-        text="Aperol, Prosecco, Mineral, Orange"
+        text="Apéritivo, Prosecco, Mineral, Orange"
 
     [[offers.section.element]]
       text="Gespritzer Weisser"
       price="7.50"
 
-
     [[offers.section.element]]
-      text="Lillet Vive"
+      text="Bianco Vive"
       price="9.50"
 
       [[offers.section.element.subelement]]
-        text="Lillet, Tonic, Gurke, Zitrone, Minze"
+        text="weisser Wermuth, Tonic, Gurke, Zitrone, Minze"
 
     [[offers.section.element]]
-      text="Rosato Musa"
+      text="Rosso Spritz"
       price="9.50"
 
       [[offers.section.element.subelement]]
-        text="Ramazotti Rosato, Vanillesirup, Apfelsaft, Mineral"
+        text="roter Wermuth, Prosecco, Mineral, Orange"
 
     [[offers.section.element]]
       text="Pimm’s No 1 Cup"
@@ -584,12 +576,12 @@ offers_title = "Menu"
         text="Amaretto, Limettensaft, Orangensaft"
 
     [[offers.section.element]]
-      text="Vermouth Bianco L’Osteria"
+      text="Vermouth Bianco Formula Matter"
       price="8.00"
 
 
     [[offers.section.element]]
-      text="Ramazotti Rosato"
+      text="Vermouth Rosso Formula Matter"
       price="8.00"
 
 
@@ -600,18 +592,17 @@ offers_title = "Menu"
         text="Peppe’s Ingwerer"
         price="9.00"
 
-    [[offers.section.element.subelement]]
-      text="Bündner Röteli"
-      price="9.00"
-
-    [[offers.section.element.subelement]]
-      text="Lillet blanc"
-      price="8.00"
-
-
       [[offers.section.element.subelement]]
         text="Amaretto di Mattia Walcher"
         price="9.00"
+
+      [[offers.section.element.subelement]]
+        text="Apéritivo Meletti"
+        price="8.00"
+
+      [[offers.section.element.subelement]]
+        text="Amaro Meletti"
+        price="8.00"
 
   [[offers.section]]
     title = "Hoch&shy;pro&shy;zen&shy;ti&shy;ges"
@@ -620,10 +611,6 @@ offers_title = "Menu"
 
     [[offers.section.element]]
       text="Grappa"
-
-      [[offers.section.element.subelement]]
-        text="Grappa di Brunello"
-        price="8.00"
 
       [[offers.section.element.subelement]]
         text="Grappa di Barolo"
@@ -650,10 +637,6 @@ offers_title = "Menu"
       [[offers.section.element.subelement]]
         text="Gin 27, Appenzeller Dry Gin"
         price="13.00"
-
-      [[offers.section.element.subelement]]
-        text="Gin 1948, Kindschi"
-        price="10.00"
 
       [[offers.section.element.subelement]]
         text="* mit Tonic"
