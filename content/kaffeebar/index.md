@@ -566,7 +566,7 @@ offers_title = "Menu"
       price="14.00"
 
       [[offers.section.element.subelement]]
-        text="Pimm’s No 1, Ginger Beer, Gurke, Zitrone, Orangen, Limette, Minzen"
+        text="Pimm’s No 1, Ginger Beer, Gurke, Zitrone, Orangen, Minzen"
 
     [[offers.section.element]]
       text="Amaretto sour"
