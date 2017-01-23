@@ -48,3 +48,13 @@ hidden = true
 
 +++
 Ein grosser, hoher und heller Raum für Events. Der Raum kann für Events jeweils unter der Woche ab 18 Uhr und am Wochenende den ganzen Tag gemietet werden.
+
+<small><em>
+Wenn kreatives Arbeiten und die Benutzung der Wände geplant sind, muss die Moderationskiste gebucht werden (Kosten zusätzlich zur Raummiete: CHF 50). Die Kiste enthält abwischbare Stifte sowie diverse Papier-, Post-it-, Klebeutensilien und Magnete.
+
+Damit wir das Risiko von Schäden an der Infrastruktur minimieren können, bitten wir euch, keine eigenen Moderationsutensilien (Stifte usw.) mitzubringen.
+
+Bei Annullationen innert 72h Stunden vor Beginn der Raummiete ermöglichen wir eine kostenlose Verschiebung innerhalb eines Monats. Kann dies nicht realisiert werden, werden 50% der vereinbarten Raummiete fällig.
+
+Für NPO gibt es eine Reduktion von CHF 50.-.
+</em></small>
