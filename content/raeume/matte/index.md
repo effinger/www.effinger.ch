@@ -21,7 +21,7 @@ capacity = "20"
 equipment = [
   "(beschreibbare) Tische",
   "Sitzgelegenheiten",
-  "Screen",
+  "Beamer",
   "High-Speed Internet"
 ]
 
@@ -34,7 +34,7 @@ calendar_api_path = "https://script.google.com/macros/s/AKfycbwiAp5fLXtS_P16QUXV
 calendar_id = "effinger.ch_3838383235323139363736@resource.calendar.google.com"
 
 [[extras]]
-text = "Screen"
+text = "Beamer"
 price = "CHF 50"
 
 [[extras]]
