@@ -1,5 +1,5 @@
 +++
-title = "WeAreCinema – Das erste Virtual Reality Kino der Schweiz"
+title = "We Are Cinema – Das erste Virtual Reality Kino der Schweiz"
 
 startdate = 2017-03-10T19:00:00Z
 enddate = 2017-03-10T20:00:00Z
@@ -14,11 +14,6 @@ image = "wearecinema.jpg"
 
 Um dem grauen Alltag zu entkommen, entführen wir dich in ferne Länder, animierte, unbekannte Welten und an fiktive Orten, die du noch nie zuvor gesehen hast. Aber Achtung, das VR Erlebnis ist visuell sehr stark - man schaut keinen Film auf einer Leinwand, sondern sitzt mitten in einer Filmkugel und ist sozusagen der Mittelpunkt und Teil vom Filmgeschehen.
 
-*Test*
-
-# Test 2
-
-
-"WeAreCinema" - das VR Kino bietet dir die Möglichkeit dieses neuartige Erlebnis in einem stilvollen, modernen Konzept mit Barbetrieb auszuprobieren. Auf einem Drehstuhl mit dem VR Headset und abschirmenden Kopfhörern sitzend wirst du entführt - wohin wird dich überraschen. Wow Effekt garantiert!
+"We Are Cinema" - das VR Kino bietet dir die Möglichkeit dieses neuartige Erlebnis in einem stilvollen, modernen Konzept mit Barbetrieb auszuprobieren. Auf einem Drehstuhl mit dem VR Headset und abschirmenden Kopfhörern sitzend wirst du entführt - wohin wird dich überraschen. Wow Effekt garantiert!
 
 CHF 19.-  Tickets unter http://www.wearecinema.ch/tickets-bern
