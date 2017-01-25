@@ -1,8 +1,8 @@
 +++
 title = "We Are Cinema – Das erste Virtual Reality Kino der Schweiz"
 
-startdate = 2017-03-10T19:00:00Z
-enddate = 2017-03-10T20:00:00Z
+startdate = 2017-03-10T20:00:00Z
+enddate = 2017-03-10T21:00:00Z
 categories = [ "Kaffeebar" ]
 location = "Effingerstrasse 10, Bern"
 address = "46.945842, 7.435864"
