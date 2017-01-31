@@ -21,7 +21,7 @@
     {{ if .Params.image -}}
     <meta property="og:image" content="{{ .Permalink }}{{ .Params.image }}" />
     {{ else -}}
-    <meta property="og:image" content="{{ .Permalink }}images/logo-black-tagline.png" />
+    <meta property="og:image" content="{{ .Site.BaseURL }}images/logo-black-tagline.png" />
     {{ end }}
 
 
