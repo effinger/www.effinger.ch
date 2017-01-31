@@ -7,7 +7,7 @@
     <meta name="robots" content="all" >
     <meta name="keywords" content="{{ .Site.Params.keywords }}">
 
-    <meta name="description" content="{{ block "description1" . }}{{ .Description }}{{ end }}">
+    <meta name="description" content="{{ .Description }}">
     <meta name="author" content="{{ .Site.Params.author }}" >
 
     <!-- Twitter Card data -->
@@ -15,8 +15,8 @@
 
     <!-- Open Graph data -->
     <meta property="og:type" content="article" />
-    <meta property="og:title" content="{{ .Title }}" />
-    <meta property="og:description" content="{{ block "description2" . }}{{ .Description }}{{ end }}" />
+    <meta property="og:title" content="{{ if .Title }}{{ .Title }}{{ else }}{{ .Site.Title }}{{ end }}" />
+    <meta property="og:description" content="{{ .Description }}" />
     <meta property="og:url" content="{{ .Permalink }}" />
     {{ if .Params.image -}}
     <meta property="og:image" content="{{ .Permalink }}{{ .Params.image }}" />
@@ -25,9 +25,7 @@
     {{ end }}
 
 
-    <title>{{ block "title" . }}
-      {{ .Title }} | {{ .Site.Title }}
-    {{ end }}</title>
+    <title>{{ block "title" . }}{{ with .Title }}{{ . }} | {{ end }}{{ .Site.Title }}{{ end }}</title>
 
     <!-- Favicons -->
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
