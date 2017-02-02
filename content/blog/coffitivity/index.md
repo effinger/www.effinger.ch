@@ -8,7 +8,7 @@ comments = true
 tags = [ "Coworking" ]
 +++
 
-Angeblich können sich viele Menschen besser konzentrieren, wenn ein gewisser Lärmteppich vorhanden ist. Einen solchen findet man klassischer Weise in einem Café. Nun wollen aber nicht alle Leute ständig in irgendwelchen Cafés rumhängen/arbeiten. [«coffitivity»](https://www.coffitivity.com) ist die Lösung: die wohlklingende Lärmkulisse eines Cafés für Zuhause. 
+Angeblich können sich viele Menschen besser konzentrieren, wenn ein gewisser Lärmteppich vorhanden ist. Einen solchen findet man klassischer Weise in einem Café. Nun wollen aber nicht alle Leute ständig in irgendwelchen Cafés rumhängen/arbeiten. [«coffitivity»](https://www.coffitivity.com) ist die Lösung: die wohlklingende Lärmkulisse eines Cafés für Zuhause.
 
 <a href="https://www.coffitivity.com">
   <img src="coffitivity.png" alt="coffitivity" style="width: 400px;">

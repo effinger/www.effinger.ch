@@ -5,11 +5,11 @@
   <div class="widget-body">
     <div class="tags">
       {{ $title := .Title }}
-      {{ range $key, $taxonomy := .Site.Taxonomies.tags }}
-        {{ if eq $title $key }}
-          {{ partial "blog/tag_link_active.html" $key }}
+      {{ range where .Site.RegularPages "Section" "blog-tag" }}
+        {{ if eq $title .Title }}
+          {{ partial "blog/tag_link_active.html" .Title }}
         {{ else }}
-          {{ partial "blog/tag_link.html" $key }}
+          {{ partial "blog/tag_link.html" .Title }}
         {{ end }}
       {{ end }}
 

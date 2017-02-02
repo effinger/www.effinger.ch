@@ -17,12 +17,10 @@
       <div class="row">
 
         <div class="col-md-8">
-          <h1 class="hs-line-11 font-alt mb-0">Blog - {{ .Title }}</h1>
-          <!--
-          <div class="hs-line-4 font-alt black mt-20 mt-xs-0">
-            Artikel mit Tag: {{ .Title }}
+          <h1 class="hs-line-11 font-alt mb-0"><a href="/blog/">Blog</a></h1>
+          <div class="mt-20 mt-xs-10 alert alert-info mb-0">
+            <h2 class="hs-line-11 font-alt mb-0"><i class="fa fa-tags fa-inline"></i> {{ .Title }}</h2>
           </div>
-          -->
         </div>
 
         <div class="col-md-4 mt-30">
@@ -44,8 +42,11 @@
 
         <!-- Content -->
         <div class="col-sm-8">
-          {{ range (index .Site.Taxonomies.tags .Title).Pages }}
-          {{ partial "blog/summary.html" . }}
+          {{ $title := .Title }}
+          {{ range where .Site.RegularPages "Section" "blog" }}
+            {{ if in .Params.tags $title }}
+              {{ partial "blog/summary.html" . }}
+            {{ end }}
           {{ end }}
         </div>
         <!-- End Content -->
