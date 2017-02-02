@@ -42,8 +42,9 @@
 
         <!-- Content -->
         <div class="col-sm-8">
-          {{ range (index .Site.Taxonomies.tags .Title).Pages }}
-            {{ if eq .Section "blog" }}
+          {{ $title := .Title }}
+          {{ range where .Site.RegularPages "Section" "blog" }}
+            {{ if in .Params.tags $title }}
               {{ partial "blog/summary.html" . }}
             {{ end }}
           {{ end }}
