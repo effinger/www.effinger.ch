@@ -6,11 +6,11 @@
   <div class="widget-body">
     <ul class="clearlist widget-menu">
       <li>
-        <a href="/blog/archive/"><strong>Alle ({{ len (where .Site.Pages "Section" "blog") }})</strong></a>
+        <a href="/blog/archiv/"><strong>Alle ({{ len (where .Site.Pages "Section" "blog") }})</strong></a>
       </li>
       {{ range (where .Site.Pages "Section" "blog").GroupByDate "2006" }}
       <li>
-        <a href="/blog/archive/#{{ .Key }}">{{ .Key }} ({{ len .Pages }})</a>
+        <a href="/blog/archiv/#{{ .Key }}">{{ .Key }} ({{ len .Pages }})</a>
       </li>
       {{ end }}
     </ul>
