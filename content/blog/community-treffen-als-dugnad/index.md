@@ -6,6 +6,7 @@ image = "community-januar-dugnad.jpg"
 author = "Urs Vögeli"
 comments = true
 tags = [ "Community" ]
+aliases = [ "/blog/community-treffen-januar/" ]
 +++
 
 ![Community-Treffen Januar](community-januar-dugnad.jpg)
