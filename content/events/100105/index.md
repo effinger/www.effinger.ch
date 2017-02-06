@@ -22,4 +22,4 @@ Die anschliessende Diskussionsrunde soll uns inspirieren, in unserem Tun bestär
 
 TOMORROW trifft den Nerv der Zeit. Mit dem César als Bester Dokumentarfilm ausgezeichnet, avancierte der Film in den vergangenen Monaten in Frankreich zum Publikumsliebling und inspirierte bisher mehr als 850.000 Zuschauer. Für ihren mitreißenden Dokumentarfilm reisten Mélanie Laurent und Cyril Dion in zehn Länder. Wie bei einem Puzzle wird bald klar, dass erst die Summe der Lösungsansätze das Bild einer anderen Zukunft zeichnet. TOMORROW beweist, dass aus einem Traum die Realität von morgen werden kann, sobald Menschen aktiv werden."
 
-Wer Interesse hat, bitte bei mir per Mail an [urs@effinger.ch](mailto:urs@effinger.ch) melden.
+Der Film wird gezeigt im Raum «Matte», 1. OG im Effinger. Keine Anmeldung nötig.
