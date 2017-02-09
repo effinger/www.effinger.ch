@@ -85,31 +85,18 @@
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- End Section Event Single View -->
 
-  {{ if .Params.address }}
-  <!-- Google Map -->
-  <div class="google-map">
-    <div data-address="{{ .Params.address }}" id="map-canvas"></div>
-  </div>
-  <!-- End Google Map -->
-  {{ end }}
-
-  {{ if .Params.registration }}
-  <!-- Section Event Registration -->
-  <section class="page-section event">
-    <div class="container eventsingle">
-      <div class="row">
+      {{ if .Params.registration }}
+      <hr>
+      <!-- Event Registration -->
+      <div class="row mt-40">
         <div class="col-md-6">
           <p class="uppercase">Anmeldung</p>
           <!-- Form -->
           <form class="form event-manager-form"
             data-event-id="{{ .Params.registration.event_id }}"
             data-folder-id ="{{ .Params.registration.folder_id }}"
-            data-api-url="{{ .Params.registration.api_url }}"
-          >
+            data-api-url="{{ .Params.registration.api_url }}">
             <div class="row">
               <div class="col-sm-6 mb-20 mb-md-10">
                 <input type="text" name="firstname" class="input-md form-control" placeholder="Vorname" maxlength="100">
@@ -125,7 +112,7 @@
             </div>
 
             <div class="mb-20 mb-md-10">
-              <textarea name="comments" id="text" class="input-md form-control" rows="5" placeholder="Kommentare" maxlength="400"></textarea>
+              <textarea name="comments" id="text" class="input-md form-control" rows="5" placeholder="Kommentar (optional)" maxlength="400"></textarea>
             </div>
 
             <div class="mb-20 mb-md-10">
@@ -135,20 +122,28 @@
           <!-- End Form -->
         </div>
         <div class="col-md-6 mt-md-60">
-          <p class="uppercase">Teilnehmende</p>
+          <p class="uppercase event-manager-number-of-attendees">Teilnehmende</p>
           <ul class="list-unstyled event-manager-attendee-list">
-            <li class="attendee"><span>Christoph Höschele</span>
-              <div class="bubble small">Gerne übernehme ich dabei ein Part und bis 11 Uhr am Start ;)</div>
-            </li>
-            <li class="attendee"><span>Jonathan Hess</span></li>
           </ul>
 
         </div>
       </div>
+      <!-- End Event Registration -->
+      {{ end }}
+
     </div>
   </section>
-  <!-- End Section Event Registration -->
+  <!-- End Section Event Single View -->
+
+  {{ if .Params.address }}
+  <!-- Google Map -->
+  <div class="google-map">
+    <div data-address="{{ .Params.address }}" id="map-canvas"></div>
+  </div>
+  <!-- End Google Map -->
   {{ end }}
+
+
 
 <!-- End Page Wrap -->
 {{ end }}

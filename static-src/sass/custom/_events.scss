@@ -120,33 +120,39 @@
         }
       }
     }
-    .list-unstyled {
-      .attendee {
-        margin-bottom: 15px;
-        font-weight: 300;
-        position: relative;
-        width: 100%;
-        margin-top: 10px;
-        padding: 10px;
-        background: #f4f4f4;
-        // Not sure if Triangle is necessary?
-        &:after {
-          content: '';
-          position: absolute;
-          width: 0;
-          height: 0;
-          border-left: 8px solid transparent;
-          border-right: 8px solid transparent;
-          border-bottom: 10px solid #f8f8f8;
-          display: block;
-          z-index: 1;
-          top: -10px;
-          left: 20px;
-        }
-        .bubble {
-          color: grey;
-          padding-left: 10px;
-        }
+
+    .form .form-control {
+      font-size: 16px;
+      text-transform: none !important;
+      letter-spacing: normal;
+      font-weight: 300;
+    }
+
+    .attendee {
+      margin-bottom: 15px;
+    }
+
+    .attendee-comment {
+      font-weight: 300;
+      font-size: 85%;
+      position: relative;
+      width: 100%;
+      margin-top: 5px;
+      padding: 8px;
+      background: #f4f4f4;
+      // Not sure if Triangle is necessary?
+      &:after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        border-bottom: 10px solid #f8f8f8;
+        display: block;
+        z-index: 1;
+        top: -10px;
+        left: 20px;
       }
     }
   }
