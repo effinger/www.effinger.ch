@@ -1,13 +1,12 @@
 +++
-title = "Community Member Fest"
+title = "1 Jahr Effinger - Member Brunch"
 
 startdate = 2017-03-18T10:00:00Z
 enddate = 2017-03-18T12:00:00Z
 categories = [ "Community" ]
 location = "Effingerstrasse 10, Bern"
 address_link = "https://www.google.ch/maps/place/Effinger+-+Kaffeebar+%26+Coworking+Space/@46.94604,7.4336198,17z/data=!3m1!4b1!4m2!3m1!1s0x478e39bf613a53f7:0x30f7464656fbe3b2"
-image = ""
-draft = true
+image = "party.gif"
 
 [registration]
 event_id = 100107
@@ -15,4 +14,35 @@ folder_id = "0BxUuL-tU5pi2a21Eak51dDNnSE0"
 api_url = "https://script.google.com/macros/s/AKfycbzM-0WOT43rWxBRe7z-O0T8bNWDFUIhivv0GNnC3IqcX1EC7dze/exec"
 +++
 
-Community Member Fest
+![Party](party.gif)
+
+Wir feiern 1 Jahr Effinger! Im März 2016 war die Eröffnung unserer Kaffeebar und des Coworking Spaces. Damit hat unserer Community hier im Effinger ihre Heimat gefunden.
+
+Dies wäre jedoch alles nicht möglich gewesen, ohne die Unterstützung von Freunden und Familie. Besonders die Community Member und Darlehensgeber haben diesen Traum ermöglicht.
+
+Deshalb möchten wir mit euch am **18. März 2017** dieses Jubiläum feiern und unsere Dankbarkeit ausdrücken.
+
+
+### Für Member und Darlehensgeber
+
+Alle Community Member (oder wer es grad vor Ort werden will) und Darlehensgeber sind eingeladen. Partnerinnen und Partner dürfen gerne ebenfalls für einen Unkostenbeitrag von 20 CHF teilnehmen. Dabei sollt ihr hautnah erleben, sehen und hören, was dieses Jahr schon alles im und um den Effinger entstehen durfte. Neben dem, dass wir schon schwarze Zahlen schreiben durften, konnten wir bereits von einem auf bald vier Stockwerke wachsen.
+
+Die Vielfalt wird grösser und die Herausforderungen wachsen ebenso.
+
+
+### Programm
+
+* 10.00 Uhr: Begrüssung und Jahresrückblick
+* Brunch
+* 11.15 Uhr: Geschichten aus dem Effinger
+* 12.00 Uhr: Entscheidung über persönlichen Mitgliedschaftsbeitrag 2017
+* Open End
+
+
+### Anmeldung
+
+Am besten sofort per Formular unten anmelden. *Anmeldeschluss ist der 11. März*. Bei mehreren Personen bitte diese einzeln eintragen.
+
+Fragen an [coworking@effinger.ch](mailto:coworking@effinger.ch).
+
+*Wir freuen uns auf deinen Besuch!*
