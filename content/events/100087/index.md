@@ -1,5 +1,5 @@
 +++
-title = "Community-Treffen"
+title = "Community-Treffen (Vereins-GV)"
 
 startdate = 2017-04-06T19:00:00Z
 enddate = 2017-04-06T21:30:00Z
