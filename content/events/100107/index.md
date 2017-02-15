@@ -18,16 +18,14 @@ api_url = "https://script.google.com/macros/s/AKfycbzM-0WOT43rWxBRe7z-O0T8bNWDFU
 
 Wir feiern 1 Jahr Effinger! Im März 2016 war die Eröffnung unserer Kaffeebar und des Coworking Spaces. Damit hat unserer Community hier im Effinger ihre Heimat gefunden.
 
-Dies wäre jedoch alles nicht möglich gewesen, ohne die Unterstützung von Freunden und Familie. Besonders die Community Member und Darlehensgeber haben diesen Traum ermöglicht.
+Dies wäre jedoch alles nicht möglich gewesen ohne die Unterstützung von Freunden und Familie. Besonders die Community Member und Darlehensgeber haben diesen Traum ermöglicht.
 
-Deshalb möchten wir mit euch am **18. März 2017** dieses Jubiläum feiern und unsere Dankbarkeit ausdrücken.
+Deshalb möchten wir mit euch am **Samstag, 18. März 2017** dieses Jubiläum feiern damit auch danke sagen.
 
 
 ### Für Member und Darlehensgeber
 
-Alle Community Member (oder wer es grad vor Ort werden will) und Darlehensgeber sind eingeladen. Partnerinnen und Partner dürfen gerne ebenfalls für einen Unkostenbeitrag von 20 CHF teilnehmen. Dabei sollt ihr hautnah erleben, sehen und hören, was dieses Jahr schon alles im und um den Effinger entstehen durfte. Neben dem, dass wir schon schwarze Zahlen schreiben durften, konnten wir bereits von einem auf bald vier Stockwerke wachsen.
-
-Die Vielfalt wird grösser und die Herausforderungen wachsen ebenso.
+Alle Community Member (oder wer es grad vor Ort werden will) und Darlehensgeber sind eingeladen. Partnerinnen und Partner dürfen gerne ebenfalls teilnehmen. Dabei sollt ihr hautnah erleben, sehen und hören, was dieses Jahr schon alles im und um den Effinger entstehen durfte. Neben dem, dass wir schon schwarze Zahlen schreiben durften, konnten wir von einem auf bald vier Stockwerke wachsen. Die Vielfalt wird grösser und die Herausforderungen wachsen ebenso.
 
 
 ### Programm
