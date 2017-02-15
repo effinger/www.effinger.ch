@@ -41,6 +41,6 @@ Alle Community Member (oder wer es grad vor Ort werden will) und Darlehensgeber 
 
 Am besten sofort per Formular unten anmelden. *Anmeldeschluss ist der 11. März*. Bei mehreren Personen bitte diese einzeln eintragen.
 
-Fragen an [coworking@effinger.ch](mailto:coworking@effinger.ch).
+Fragen an [events@effinger.ch](mailto:events@effinger.ch).
 
 *Wir freuen uns auf deinen Besuch!*
