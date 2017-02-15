@@ -42,9 +42,7 @@
         transition: transform 0.5s;
         transform: translateX(-15px);
         z-index: 5;
-        .community,
-        .kaffeebar,
-        .coworking {
+        > * {
           height: 100%;
           width: 100%;
         }
@@ -56,6 +54,9 @@
         }
         .coworking {
           background-color: powderblue;
+        }
+        .atelier {
+          background-color:#e0e6b0;
         }
         .half {
           height: 50%;
