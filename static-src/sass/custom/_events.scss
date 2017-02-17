@@ -109,6 +109,13 @@
       }
     }
     .event-detail {
+      @media only screen and (max-width: 768px) {
+        max-width: 250px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+
       p {
         padding-left: 30px;
         position: relative;
