@@ -37,7 +37,7 @@ Alle Community Member (oder wer es grad vor Ort werden will) und Darlehensgeber 
 * Open End
 
 
-### Anmeldung
+### Anmelden
 
 Am besten sofort per Formular unten anmelden. *Anmeldeschluss ist der 11. März*. Bei mehreren Personen bitte diese einzeln eintragen.
 
