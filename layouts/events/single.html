@@ -74,8 +74,15 @@
                 <p><small><i class="fa fa-map-marker"></i> <a href="{{ .Params.address_link }}" target="_blank" title="Open in Google Maps">{{ .Params.location }}</a></small></p>
                 <p><small><i class="fa fa-tags"></i>
                   {{ delimit .Params.categories ", " }}
-                  </small></p>
-              </div>
+                  </small>
+                </p>
+                {{ if .Params.registration }}
+                <p class="local-scroll">
+                  <i class="fa fa-user-plus mt-10"></i>
+                  <a href="#anmeldung" class="btn btn-mod btn-gray btn-medium btn-round">Anmeldung</a>
+                </p>
+                {{ end }}
+                </div>
             </div>
           </div>
         </div>
@@ -91,7 +98,7 @@
       <!-- Event Registration -->
       <div class="row mt-40">
         <div class="col-md-6">
-          <p class="uppercase">Anmeldung</p>
+          <p class="uppercase" id="anmeldung">Anmeldung</p>
           <!-- Form -->
           <form class="form event-manager-form"
             data-event-id="{{ .Params.registration.event_id }}"
