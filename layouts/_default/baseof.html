@@ -11,7 +11,9 @@
     <meta name="author" content="{{ .Site.Params.author }}" >
 
     <!-- Twitter Card data -->
+    {{ block "twitter_card" . }}
     <meta name="twitter:card" value="summary">
+    {{ end }}
 
     <!-- Open Graph data -->
     <meta property="og:type" content="article" />
