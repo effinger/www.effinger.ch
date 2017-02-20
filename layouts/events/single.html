@@ -24,7 +24,7 @@
   {{- $.Scratch.Add "start_time" (printf "%02d:%02d" $start.Hour $start.Minute) -}}
   {{- $.Scratch.Add "end_time" (printf "%02d:%02d" $end.Hour $end.Minute) -}}
 
-  <meta name="twitter:card" value="summary">
+  <meta name="twitter:card" value="summary_large_image">
   <meta name="twitter:label1" value="Datum" />
   <meta name="twitter:data1" value="{{ $.Scratch.Get "start_weekday" }}, {{ $.Scratch.Get "start_day" }}. {{ $.Scratch.Get "start_month" }} {{ $.Scratch.Get "start_year" }}" />
   {{ if .Params.registration }}
