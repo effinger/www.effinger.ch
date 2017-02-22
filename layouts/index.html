@@ -7,24 +7,32 @@
   </nav>
 
   <!-- Home Section -->
-  <section class="home-section bg-dark-alfa-70 parallax-2 fixed-height-small" data-background="effinger_header.jpg" id="home">
+  <section class="home-section bg-dark-alfa-80 parallax-2 fixed-height-small" data-background="effinger_header.jpg" id="home">
     <div class="js-height-parent container">
 
       <!-- Hero Content -->
       <div class="home-content">
         <div class="home-text">
-          <img src="images/Logo-Effinger-normal-weiss.svg" alt="Logo Effinger" class="mb-10 mt-50">
-          <h1 class="font-tagline font-alt mb-50 mb-xs-30">
+          <img src="images/Logo-Effinger-normal-weiss.svg" alt="Logo Effinger" class="mb-60 mb-xs-30 mt-50">
+          <h1 class="font-alt mb-10">
               Kaffeebar &amp; Coworking Space
-            </h1>
+          </h1>
 
-          <!-- <div class="local-scroll">
-            <a href="#kaffeebar" class="btn btn-mod btn-border-w btn-medium btn-round hidden-xs">Kaffebar</a>
+          <div class="row">
+            <div class="col-md-offset-2 col-md-8">
+Für Jungunternehmer, Kreative, Handwerkerinnen, Weltveränderer, Bernerinnen, Zugereiste, Kaffeeliebhaberinnen, Biertrinker, Kulturschaffende, junge Kunst und für dich.
+            </div>
+          </div>
+
+          <!--
+           <div class="">
+            <a href="/kaffeebar/" class="btn btn-mod btn-border-w btn-medium btn-round hidden-xs">Kaffebar</a>
             <span class="hidden-xs">&nbsp;</span>
-            <a href="#kaffeebar" class="btn btn-mod btn-border-w btn-medium btn-round hidden-xs">Coworking</a>
+            <a href="/coworking/" class="btn btn-mod btn-border-w btn-medium btn-round hidden-xs">Coworking</a>
             <span class="hidden-xs">&nbsp;</span>
-            <a href="#kaffeebar" class="btn btn-mod btn-border-w btn-medium btn-round hidden-xs">Community</a>
-          </div> -->
+            <a href="/ueber/" class="btn btn-mod btn-border-w btn-medium btn-round hidden-xs">Community</a>
+          </div>
+          -->
 
         </div>
       </div>
@@ -34,15 +42,50 @@
   </section>
   <!-- End Home Section -->
 
-  <!-- Quote Section -->
-  <section class="page-section" id="about">
+  <section class="page-section pt-80 pb-80 bg-gray-lighter" id="about">
     <div class="container relative">
       <div class="section-text">
-        <h1 class="font-alt">Kaffeebar &amp; Coworking Space</h1> Für Jungunternehmer, Kreative, Handwerkerinnen, Weltveränderer, Bernerinnen, Zugereiste, Kaffeeliebhaberinnen, Biertrinker, Kulturschaffende, junge Kunst und für dich.
+        <h3 class="font-alt mb-60 text-center"><a href="/blog/">Effinger Stories</a></h3>
+
+        <div class="row">
+          {{ range first 3 (where .Site.Pages "Section" "blog") }}
+          <div class="col-sm-4">
+            {{ partial "blog/home_summary.html" . }}
+          </div>
+          {{ end }}
+        </div>
+        <div class="mt-40 text-center">
+          <a href="/blog/" class="btn btn-mod btn-border btn-round btn-medium">Mehr</a>
+        </div>
       </div>
     </div>
   </section>
-  <!-- End Quote Section -->
+
+  <section class="page-section pt-80 pb-80 event" id="about">
+    <div class="container relative">
+      <div class="section-text">
+        <h3 class="font-alt mb-60 text-center"><a href="/blog/">Nächste Events</a></h3>
+
+        <div class="eventlist row">
+          <div class="col-sm-6">
+          {{ range $index, $element := first 6 (sort (where (where .Site.Pages "Section" "events") "Params.enddate" ">=" .Now) "Params.startdate" "asc") }}
+            {{ if eq $index 3 }}
+            </div>
+            <div class="col-sm-6">
+            {{ end }}
+            {{ partial "events/calc_dates.html" $element }}
+            {{ partial "events/event_summary.html" $element }}
+          {{ end }}
+          </div>
+        </div>
+
+        <div class="mt-40 text-center">
+          <a href="/events/" class="btn btn-mod btn-border btn-round btn-medium">Mehr</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
 
   <!-- CTA Kaffeebar Section -->
   <section class="page-section bg-gray">

@@ -33,46 +33,9 @@
       <div class="eventlist">
         {{ range sort (where .Data.Pages "Params.enddate" ">=" .Now) "Params.startdate" "asc" }}
 
-          {{/* startdate/enddate parameters should already be of type time.Time but they somehow
-            aren't. It works if we call time again which contains the golang indirect()
-            call - that probably converts it to the time type we actually need.
-            See https://github.com/spf13/cast/blob/master/caste.go#L19 */}}
-
-          {{ $start := time .Params.startdate }}
-          {{ $end := time .Params.enddate }}
-
-          {{ $start_month := index $.Site.Data.de.months $start.Month }}
-          {{ $start_shortmonth := slicestr $start_month 0 3 }}
-          {{ $start_day := $start.Day }}
-          {{ $start_time := printf "%02d:%02d" $start.Hour $start.Minute }}
-          {{ $end_time := printf "%02d:%02d" $end.Hour $end.Minute }}
-
-        <a href="{{ .RelPermalink }}">
-          <div class="event-item bg-gray clearfix">
-            <div class="cat">
-              {{ $cat_len := len .Params.categories }}
-              {{ range first 3 .Params.categories }}
-              <div class="{{ if eq $cat_len 2 }}half {{ else if gt $cat_len 2 }}third {{ end }}{{ . | urlize }}"></div>
-              {{ end }}
-            </div>
-            <div class="event-date text">
-              <div class="day">{{ $start_day }}</div>
-              <div class="month font-alt">{{ $start_shortmonth }}</div>
-            </div>
-            <div class="event-text text bg-white">
-              <h4 class="uppercase">{{ .Title }}</h4>
-              <p>
-                {{ if eq $end $start }}
-                  <i class="fa fa-clock-o fa-inline"></i>&nbsp;{{ $start_time }} Uhr<span class="separator">&nbsp;</span>
-                {{ else }}
-                  <i class="fa fa-clock-o fa-inline"></i>&nbsp;{{ $start_time }} bis {{ $end_time }} Uhr<span class="separator">&nbsp;</span>
-                {{ end }}
-                <i class="fa fa-map-marker fa-inline"></i>&nbsp;{{ .Params.location }}<span class="separator">&nbsp;</span>
-                <i class="fa fa-tags fa-inline"></i>&nbsp;{{ delimit .Params.categories ", " }}
-              </p>
-            </div>
-          </div>
-        </a>
+        {{ partial "events/calc_dates.html" . }}
+        {{ partial "events/event_summary.html" . }}
+        
         {{ end }}
       </div>
     </div>

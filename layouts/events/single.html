@@ -3,30 +3,11 @@
 {{ end }}
 
 {{ define "twitter_card" }}
-  {{/* Calculate the Dates and Times and save them to
-
-    startdate/enddate parameters should already be of type time.Time but they somehow
-    aren't. It works if we call time again which contains the golang indirect()
-    call - that probably converts it to the time type we actually need.
-    See https://github.com/spf13/cast/blob/master/caste.go#L19 */}}
-
-  {{- $start := time .Params.startdate -}}
-  {{- $.Scratch.Add "start_date" $start -}}
-
-  {{- $end := time .Params.enddate -}}
-  {{- $.Scratch.Add "end_date" $end -}}
-
-  {{- $.Scratch.Add "start_year" $start.Year -}}
-  {{- $.Scratch.Add "start_month" (index $.Site.Data.de.months $start.Month) -}}
-  {{- $.Scratch.Add "start_shortmonth" (slicestr ($.Scratch.Get "start_month") 0 3) -}}
-  {{- $.Scratch.Add "start_day" $start.Day -}}
-  {{- $.Scratch.Add "start_weekday" (index $.Site.Data.de.weekdays $start.Weekday) -}}
-  {{- $.Scratch.Add "start_time" (printf "%02d:%02d" $start.Hour $start.Minute) -}}
-  {{- $.Scratch.Add "end_time" (printf "%02d:%02d" $end.Hour $end.Minute) -}}
+  {{ partial "events/calc_dates.html" . }}
 
   <meta name="twitter:card" value="summary_large_image">
   <meta name="twitter:label1" value="Datum" />
-  <meta name="twitter:data1" value="{{ $.Scratch.Get "start_weekday" }}, {{ $.Scratch.Get "start_day" }}. {{ $.Scratch.Get "start_month" }} {{ $.Scratch.Get "start_year" }}" />
+  <meta name="twitter:data1" value="{{ .Scratch.Get "start_weekday" }}, {{ .Scratch.Get "start_day" }}. {{ .Scratch.Get "start_month" }} {{ .Scratch.Get "start_year" }}" />
   {{ if .Params.registration }}
   <meta name="twitter:label2" value="Anmeldung" />
   <meta name="twitter:data2" value="{{ index (split .Permalink "://") 1 }}" />
@@ -75,18 +56,18 @@
           <div class="row mb-md-30">
             <div class="col-md-12 col-sm-4 mb-20 mb-md-0">
               <div class="date">
-                <div class="weekday uppercase">{{ $.Scratch.Get "start_weekday" }}</div>
-                <div class="day">{{ $.Scratch.Get "start_day" }}</div>
-                <div class="monthyear uppercase">{{ $.Scratch.Get "start_shortmonth" }} {{ $.Scratch.Get "start_year" }}</div>
+                <div class="weekday uppercase">{{ .Scratch.Get "start_weekday" }}</div>
+                <div class="day">{{ .Scratch.Get "start_day" }}</div>
+                <div class="monthyear uppercase">{{ .Scratch.Get "start_shortmonth" }} {{ .Scratch.Get "start_year" }}</div>
               </div>
             </div>
             <div class="col-md-12 col-sm-8 mt-xs-20">
               <div class="event-detail text">
-                <p><small><i class="fa fa-calendar-o"></i> {{ $.Scratch.Get "start_weekday" }}, {{ $.Scratch.Get "start_day" }}. {{ $.Scratch.Get "start_month" }} {{ $.Scratch.Get "start_year" }}</small></p>
-                {{ if eq ($.Scratch.Get "end_date") ($.Scratch.Get "start_date") }}
-                  <p><small><i class="fa fa-clock-o"></i> {{ $.Scratch.Get "start_time" }} Uhr</small></p>
+                <p><small><i class="fa fa-calendar-o"></i> {{ .Scratch.Get "start_weekday" }}, {{ .Scratch.Get "start_day" }}. {{ .Scratch.Get "start_month" }} {{ .Scratch.Get "start_year" }}</small></p>
+                {{ if eq (.Scratch.Get "end_date") (.Scratch.Get "start_date") }}
+                  <p><small><i class="fa fa-clock-o"></i> {{ .Scratch.Get "start_time" }} Uhr</small></p>
                 {{ else }}
-                  <p><small><i class="fa fa-clock-o"></i> {{ $.Scratch.Get "start_time" }} bis {{ $.Scratch.Get "end_time" }} Uhr</small></p>
+                  <p><small><i class="fa fa-clock-o"></i> {{ .Scratch.Get "start_time" }} bis {{ .Scratch.Get "end_time" }} Uhr</small></p>
                 {{ end }}
                 <p><small><i class="fa fa-map-marker"></i> <a href="{{ .Params.address_link }}" target="_blank" title="Open in Google Maps">{{ .Params.location }}</a></small></p>
                 <p><small><i class="fa fa-tags"></i>

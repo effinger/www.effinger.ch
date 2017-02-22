@@ -1,0 +1,20 @@
+{{/* Calculate the Dates and Times and save them to
+
+  startdate/enddate parameters should already be of type time.Time but they somehow
+  aren't. It works if we call time again which contains the golang indirect()
+  call - that probably converts it to the time type we actually need.
+  See https://github.com/spf13/cast/blob/master/caste.go#L19 */}}
+
+{{- $start := time .Params.startdate -}}
+{{- .Scratch.Set "start_date" $start -}}
+
+{{- $end := time .Params.enddate -}}
+{{- .Scratch.Set "end_date" $end -}}
+
+{{- .Scratch.Set "start_year" $start.Year -}}
+{{- .Scratch.Set "start_month" (index $.Site.Data.de.months $start.Month) -}}
+{{- .Scratch.Set "start_shortmonth" (slicestr (.Scratch.Get "start_month") 0 3) -}}
+{{- .Scratch.Set "start_day" $start.Day -}}
+{{- .Scratch.Set "start_weekday" (index $.Site.Data.de.weekdays $start.Weekday) -}}
+{{- .Scratch.Set "start_time" (printf "%02d:%02d" $start.Hour $start.Minute) -}}
+{{- .Scratch.Set "end_time" (printf "%02d:%02d" $end.Hour $end.Minute) -}}
