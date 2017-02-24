@@ -25,17 +25,17 @@ Am Freitagnachmittag bieten die Effinger-Coworker Rundgänge an durch die drei S
 
 Die Führungen finden am Freitagnachmittag zu folgenden Zeiten statt:
 
-* 14.00 h
-* 16.00 h
-* 18.00 h
-* 19.00 h
+* 14:00h
+* 16:00h
+* 18:00h
+* 19:00h
 
 *Treffpunkt jeweils im Effinger Erdgeschoss vor dem Lift.*
 
 
 ## Konzert
 
-Um 21.30 h  kommen wir in den Genuss eines Konzerts von Patrick Bishop in Duo-Formation 'wie früher' und somit herrlich enstpannt und guttuend.
+Um 21:30h  kommen wir in den Genuss eines Konzerts von Patrick Bishop in Duo-Formation 'wie früher' und somit herrlich enstpannt und guttuend.
 
 
 ## Für Member
