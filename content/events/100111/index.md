@@ -1,5 +1,5 @@
 +++
-title = "1 Jahr Effinger - Jubiläums-Freitag mit Abendkonzert"
+title = "Effinger-Jubiläum - Lasst uns feiern"
 
 startdate = 2017-03-17T07:00:00Z
 enddate = 2017-03-17T23:00:00Z
