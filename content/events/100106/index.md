@@ -8,6 +8,8 @@ location = "Landsgemeindeplatz, Appenzell"
 address = "47.331927, 9.407608"
 address_link = "https://www.google.ch/maps/place/Landsgemeindepl.,+9050+Appenzell/@47.3317237,9.4054462,17z/data=!4m13!1m7!3m6!1s0x479b217c40e2cc37:0xe7831204ca944f12!2sLandsgemeindepl.,+9050+Appenzell!3b1!8m2!3d47.3317237!4d9.4076349!3m4!1s0x479b217c40e2cc37:0xe7831204ca944f12!8m2!3d47.3317237!4d9.4076349"
 image = "landsgemeinde.jpg"
+# Deaktiviert. Findet nicht statt.
+draft = true
 +++
 
 ![Landsgemeinde](landsgemeinde.jpg)
