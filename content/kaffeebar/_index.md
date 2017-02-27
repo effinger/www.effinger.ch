@@ -7,7 +7,7 @@ offers_title = "Menu"
 
 [[offers]]
   title = "Essen"
-  icon = "<img src='/images/icons/kaffeebar-dark/eat.svg'>"
+  icon = "<img src='icons/eat.svg'>"
 
   [[offers.section]]
     title = "Ein Stück vom Glück"
@@ -134,12 +134,65 @@ offers_title = "Menu"
         text="Brot, 1 Gipfeli, Konfi, Honig, Butter"
 
 [[offers]]
+  title = "Zmorge am Samstag"
+  icon = "<img src='icons/breakfast.svg'>"
+
+  [[offers.section]]
+    title = "Zmorge am Samstag"
+    column = "left"
+
+    [[offers.section.element]]
+      text = "Grundstock"
+      price = "19.00"
+
+      [[offers.section.element.subelement]]
+        text = "Brot, Zopf, Konfitüre, Honig, Butter bis gnueg"
+
+      [[offers.section.element.subelement]]
+        text = "Heissgetränk bis gnueg und 1 Glas Orangensaft"
+
+    [[offers.section.element]]
+      text = "Grundstock mit Feinem us dr Chäsi"
+      price = "24.00"
+
+    [[offers.section.element]]
+      text = "Grundstock mit Feinem us dr Metzg"
+      price = "27.00"
+
+    [[offers.section.element]]
+      text = "Grundstock mit Feinem us dr Chäsi und Metzg"
+      price = "31.00"
+
+    [[offers.section.element]]
+      text = "---"
+
+      [[offers.section.element.subelement]]
+        text = "Jeden Samstag von 9 – 13h"
+
+      [[offers.section.element.subelement]]
+        text = "Reservation erwünscht, auch spontane Besuche sind willkommen"
+
+
+  [[offers.section]]
+    title = "Darfs no öpis meh sy?"
+    column = "right"
+
+    [[offers.section.element]]
+      text = "Müesli mit Beeri"
+      price = "5.50"
+
+    [[offers.section.element]]
+      text = "Ei usem Ofe"
+      price = "4.50"
+
+
+[[offers]]
   title = "Heisse Getränke"
-  icon = "<img src='/images/icons/kaffeebar-dark/coffee.svg'>"
+  icon = "<img src='icons/coffee.svg'>"
 
   [[offers.section]]
     title = "Kaffee"
-    icon = "<img src='/images/icons/kaffeebar-dark/coffee.svg'>"
+    icon = "<img src='icons/coffee.svg'>"
     column = "left"
 
     [[offers.section.element]]
@@ -187,7 +240,7 @@ offers_title = "Menu"
 
   [[offers.section]]
     title = "Tee"
-    icon = "<img src='/images/icons/kaffeebar-dark/tea.svg'>"
+    icon = "<img src='icons/tea.svg'>"
     column = "right"
 
     [[offers.section.element]]
@@ -260,7 +313,7 @@ offers_title = "Menu"
 
 [[offers]]
   title = "Kalte Getränke"
-  icon = "<img src='/images/icons/kaffeebar-dark/softdrink.svg'>"
+  icon = "<img src='icons/softdrink.svg'>"
 
   [[offers.section]]
     column = "left"
@@ -368,11 +421,11 @@ offers_title = "Menu"
 
 [[offers]]
   title = "Bier"
-  icon = "<img src='/images/icons/kaffeebar-dark/beer.svg'>"
+  icon = "<img src='icons/beer.svg'>"
 
   [[offers.section]]
     title = "Flaschen"
-    icon = "<img src='/images/icons/kaffeebar-dark/bottle.svg'>"
+    icon = "<img src='icons/bottle.svg'>"
     column = "left"
 
     [[offers.section.element]]
@@ -440,7 +493,7 @@ offers_title = "Menu"
 
   [[offers.section]]
     title = "Offen"
-    icon = "<img src='/images/icons/kaffeebar-dark/beer.svg'>"
+    icon = "<img src='icons/beer.svg'>"
     column = "right"
 
     [[offers.section.element]]
@@ -458,11 +511,11 @@ offers_title = "Menu"
 
 [[offers]]
   title = "Wein"
-  icon = "<img src='/images/icons/kaffeebar-dark/vine-red.svg'>"
+  icon = "<img src='icons/vine-red.svg'>"
 
   [[offers.section]]
     title = "Rotweine"
-    icon = "<img src='/images/icons/kaffeebar-dark/vine-red.svg'>"
+    icon = "<img src='icons/vine-red.svg'>"
     column = "left"
 
     [[offers.section.element]]
@@ -495,7 +548,7 @@ offers_title = "Menu"
 
   [[offers.section]]
     title = "Weissweine"
-    icon = "<img src='/images/icons/kaffeebar-dark/vine-white.svg'>"
+    icon = "<img src='icons/vine-white.svg'>"
     column = "right"
 
     [[offers.section.element]]
@@ -529,11 +582,11 @@ offers_title = "Menu"
 
 [[offers]]
   title = "Drinks und Hochprozentiges"
-  icon = "<img src='/images/icons/kaffeebar-dark/cocktails.svg'>"
+  icon = "<img src='icons/cocktails.svg'>"
 
   [[offers.section]]
     title = "Aperitiv & Drinks"
-    icon = "<img src='/images/icons/kaffeebar-dark/drinks.svg'>"
+    icon = "<img src='icons/drinks.svg'>"
     column = "left"
 
     [[offers.section.element]]
@@ -606,7 +659,7 @@ offers_title = "Menu"
 
   [[offers.section]]
     title = "Hoch&shy;pro&shy;zen&shy;ti&shy;ges"
-    icon = "<img src='/images/icons/kaffeebar-dark/cocktails.svg'>"
+    icon = "<img src='icons/cocktails.svg'>"
     column = "right"
 
     [[offers.section.element]]
