@@ -131,6 +131,13 @@ var loadCalendar = function(calendarApiPath, calendarId, roomTitle, roomExtras,
     selectable: true,
     selectHelper: true,
     select: function(start, end) {
+
+      // Do nothing when sunday is clicked.
+      if (start.isoWeekday() == 7) {
+        alert('Sonntag ist unser Ruhetag und steht deshalb im Moment nicht zur Verfügung.')
+        return;
+      }
+
       // Set the dialog title.
       dialogElement.find('#calendar-dialog-title').html('Reservation für ' + roomTitle);
 
@@ -195,13 +202,13 @@ var loadCalendar = function(calendarApiPath, calendarId, roomTitle, roomExtras,
 
     // Get input field values and validate
     // We simply change border color to red if empty field using .css()
-    var valid = true;
+    var error = '';
 
     // Title.
     var resTitle = dialogElement.find('#res-title').val();
     if (!resTitle.trim()) {
       dialogElement.find('#res-title').addClass('invalid');
-      valid = false;
+      error += '<li>Name des Anlasses fehlt</li>';
     }
     eventData.title = resTitle;
 
@@ -211,7 +218,12 @@ var loadCalendar = function(calendarApiPath, calendarId, roomTitle, roomExtras,
     // Must be valid and not in the past.
     if (parsedDate == null || !parsedDate.isValid() || parsedDate.isBefore(moment().subtract(1, 'day'))) {
       dialogElement.find('#res-date').addClass('invalid');
-      valid = false;
+      error += '<li>Ungültiges Datum</li>';
+    }
+
+    if (parsedDate.isoWeekday() == 7) {
+      dialogElement.find('#res-date').addClass('invalid');
+      error += '<li>Sonntag ist unser Ruhetag und steht deshalb im Moment nicht zur Verfügung.</li>';
     }
 
     var resStartTime = dialogElement.find('#res-start-time').val();
@@ -254,7 +266,7 @@ var loadCalendar = function(calendarApiPath, calendarId, roomTitle, roomExtras,
     var resPersons = dialogElement.find('#res-persons').val();
     if (!resPersons.trim()) {
       dialogElement.find('#res-persons').addClass('invalid');
-      valid = false;
+      error += '<li>Anzahl Personen fehlt</li>';
     }
     eventData.persons = resPersons;
 
@@ -262,7 +274,7 @@ var loadCalendar = function(calendarApiPath, calendarId, roomTitle, roomExtras,
     var resContactName = dialogElement.find('#res-contact-name').val();
     if (!resContactName.trim()) {
       dialogElement.find('#res-contact-name').addClass('invalid');
-      valid = false;
+      error += '<li>Name der Kontaktperson fehlt</li>';
     }
     eventData.contactName = resContactName;
 
@@ -274,7 +286,7 @@ var loadCalendar = function(calendarApiPath, calendarId, roomTitle, roomExtras,
     var resContactStreet = dialogElement.find('#res-contact-street').val();
     if (!resContactStreet.trim()) {
       dialogElement.find('#res-contact-street').addClass('invalid');
-      valid = false;
+      error += '<li>Strasse fehlt</li>';
     }
     eventData.contactStreet = resContactStreet;
 
@@ -282,14 +294,14 @@ var loadCalendar = function(calendarApiPath, calendarId, roomTitle, roomExtras,
     var resContactZip = dialogElement.find('#res-contact-zip').val();
     if (!resContactZip.trim()) {
       dialogElement.find('#res-contact-zip').addClass('invalid');
-      valid = false;
+      error += '<li>PLZ fehlt</li>';
     }
     eventData.contactZip = resContactZip;
 
     var resContactCity = dialogElement.find('#res-contact-city').val();
     if (!resContactCity.trim()) {
       dialogElement.find('#res-contact-city').addClass('invalid');
-      valid = false;
+      error += '<li>Stadt fehlt</li>';
     }
     eventData.contactCity = resContactCity;
 
@@ -297,7 +309,7 @@ var loadCalendar = function(calendarApiPath, calendarId, roomTitle, roomExtras,
     var resContactEmail = dialogElement.find('#res-contact-email').val();
     if (!resContactEmail.trim() || !isEmail(resContactEmail)) {
       dialogElement.find('#res-contact-email').addClass('invalid');
-      valid = false;
+      error += '<li>E-Mail fehlt</li>';
     }
     eventData.contactEmail = resContactEmail;
 
@@ -305,7 +317,7 @@ var loadCalendar = function(calendarApiPath, calendarId, roomTitle, roomExtras,
     var resContactPhone = dialogElement.find('#res-contact-phone').val();
     if (!resContactPhone.trim()) {
       dialogElement.find('#res-contact-phone').addClass('invalid');
-      valid = false;
+      error += '<li>Telefon fehlt</li>';
     }
     eventData.contactPhone = resContactPhone;
 
@@ -314,7 +326,7 @@ var loadCalendar = function(calendarApiPath, calendarId, roomTitle, roomExtras,
     eventData.comments = resComments;
 
     // Submit when valid.
-    if (valid) {
+    if (!error) {
       // Reset fields, leave all contact info in the form.
       dialogElement.find('#res-title, #res-date, #res-comments').val('');
       dialogElement.find('#res-extras input').prop('checked', function() {
@@ -333,6 +345,7 @@ var loadCalendar = function(calendarApiPath, calendarId, roomTitle, roomExtras,
       calendarElement.fullCalendar('unselect');
     } else {
       // Show validation error message.
+      dialogElement.find('#validation-error-message .error-details').html(error);
       dialogElement.find('#validation-error-message').show();
     }
   });
