@@ -2,14 +2,14 @@
 title = "Kaffeepause mit Joni Hess"
 date = "2017-02-14"
 description = "Der Effinger wird geprägt durch die verschiedenen Menschen, die hier ein- und ausgehen. Wir möchten euch einige von ihnen näher vorstellen. Diesmal im Gespräch mit Joni Hess, Filmemacher und Webprogrammierer."
-image = "ph-rechteck.jpg"
+image = "effinger_blog_joni-draussen.jpg"
 author = "Graziella Bärtsch"
 comments = true
 tags = [ "Coworking" ]
 draft = true
 +++
 
-![Bildbeschrieb](ph-rechteck.jpg)
+![Bildbeschrieb](effinger_blog_joni-compi.jpg)
 
 <div class="lead">
 Der Effinger wird geprägt durch die verschiedenen Menschen, die hier ein- und ausgehen. Wir möchten euch einige von ihnen näher vorstellen. Diesmal im Gespräch mit Joni Hess, Filmemacher und Webprogrammierer.
@@ -20,16 +20,15 @@ Weil die geilen Leute da sind. Nein, ich bin zum Effinger gekommen, weil ich ein
 
 ### Was machst du im Effinger?
 Filme planen, aufnehmen, schneiden, Websites erstellen.
-Mein momentanes Projekt: Infofilm über Geburtsfisteln (Gewebe, das abstirbt unter der Geburt, wenn der Geburtsprozess stehen bleibt.) Das Problem hat viele negative Auswirkungen  für die Gesellschaft.) Ärztin, die erzählt arbeitet in Bangladesh. Hilfswerk: Woman‘s Hope International.
-
+Mein momentanes Projekt: Infofilm über Geburtsfisteln (Gewebe, das abstirbt unter der Geburt, wenn der Geburtsprozess stehen bleibt. Das Problem hat viele negative Auswirkungen für die Gesellschaft.) Die Ärztin, die erzählt, arbeitet in Bangladesh. Hilfswerk: Woman‘s Hope International.
 
 ### Dein Geheimtipp im Effinger?
 Was mich fasziniert ist, das Potenzial das zusammenkommt, die verschiedenen Menschen und was daraus entsteht. Im Moment sind viele noch Einzelkämpfer, ich glaube, das kommt noch näher zusammen. Auch zu sehen, wie das wahrgenommen wird, beeindruckt mich.
 Ich bin Effinger, weil Grossartiges nur gemeinsam entsteht.
 
-![Bildbeschrieb](ph-rechteck-klein.jpg)
+![Bildbeschrieb](effinger_blog_joni-klein.jpg)
 
 #### Joni Hess, Filmemacher und Webprogrammierer
-Liebt gute Musik und tüftelt gerne an alter Technik herum.
+Liebt es, ausgiebig zu Frühstücken und schwört auf sein treues Cargo-Velo.
 
 [Webseite von Jonathan Hess](http://movingwater.ch/)
