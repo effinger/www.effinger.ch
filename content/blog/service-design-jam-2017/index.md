@@ -5,7 +5,6 @@ description = "Der Service Design Jam hat das Ziel, sich weltweit gemeinsam eine
 image = "service-jam.jpg"
 author = "Daniel Osterwalder"
 comments = true
-draft = true
 tags = [ "Coworking" ]
 +++
 
