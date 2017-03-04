@@ -2,7 +2,7 @@
 title = "Effinger-Jubiläum - Lasst uns feiern"
 
 startdate = 2017-03-17T07:00:00Z
-enddate = 2017-03-17T23:00:00Z
+enddate = 2017-03-18T00:30:00Z
 categories = [ "Community" ]
 location = "Effingerstrasse 10, Bern"
 address_link = "https://www.google.ch/maps/place/Effinger+-+Kaffeebar+%26+Coworking+Space/@46.94604,7.4336198,17z/data=!3m1!4b1!4m2!3m1!1s0x478e39bf613a53f7:0x30f7464656fbe3b2"
