@@ -15,7 +15,7 @@ tags = [ "Coworking" ]
   Teilnehmer/innen, Coaches, Orga- und Cateringteam des Jam 2017 samt unseren Sponsoren
 </p>
 
-Noch etwas erschöpft, sicher auch müde und doch sehr neugierig und gespannt und mit viel Energie treffen am Sonntag, 19. Februar 2017, morgens um 8 Uhr 30 die ersten Jammer/innen im Coworkingspace Effinger ein. Erschöpft und müde von den vorangegangenen zwei Tagen Service-Design Thinking, gespannt und neugierig darauf, ob sie es bis am Nachmittag noch schaffen werden, den Prototypen ihrer Idee und ihres Konzepts noch einmal so zu überarbeiten, dass er bei ihren Kunden auch tatsächlich ankommt und tatsächlich mit viel Energie und Überzeugung, dass es durchaus möglich ist, einen ersten Prototypen sehr rasch zu überarbeiten und zu weiter zu entwickeln.
+Noch etwas erschöpft, sicher auch müde und doch sehr neugierig und gespannt und mit viel Energie treffen am Sonntag, 19. Februar 2017, morgens um 8 Uhr 30 die ersten Jammer/innen im Coworkingspace Effinger ein. Erschöpft und müde von den vorangegangenen zwei Tagen Service-Design Thinking, gespannt und neugierig darauf, ob sie es bis am Nachmittag noch schaffen werden, den Prototypen ihrer Idee und ihres Konzepts noch einmal so zu überarbeiten, dass er bei ihren Kunden auch tatsächlich ankommt und tatsächlich mit viel Energie und Überzeugung, dass es durchaus möglich ist, einen ersten Prototypen sehr rasch zu überarbeiten und weiter zu entwickeln.
 
 ## Jam, Jammer/innen, Design Thinking
 
