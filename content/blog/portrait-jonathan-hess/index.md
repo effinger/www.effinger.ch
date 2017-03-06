@@ -1,12 +1,11 @@
 +++
 title = "Kaffeepause mit Joni Hess"
-date = "2017-02-14"
+date = "2017-02-25"
 description = "Der Effinger wird geprägt durch die verschiedenen Menschen, die hier ein- und ausgehen. Wir möchten euch einige von ihnen näher vorstellen. Diesmal im Gespräch mit Joni Hess, Filmemacher und Webprogrammierer."
 image = "effinger_blog_joni-draussen.jpg"
 author = "Graziella Bärtsch"
 comments = true
-tags = [ "Coworking" ]
-draft = true
+tags = [ "Portrait" ]
 +++
 
 ![Bildbeschrieb](effinger_blog_joni-compi.jpg)
@@ -16,11 +15,11 @@ Der Effinger wird geprägt durch die verschiedenen Menschen, die hier ein- und a
 </div>
 
 ### Warum arbeitest du im Effinger?
-Weil die geilen Leute da sind. Nein, ich bin zum Effinger gekommen, weil ich ein Gemeinschaftsbüro gesucht habe. Wollte nicht alleine zuhause arbeiten. Zuerst wollte ich mit branchenähnlichen zusammen arbeiten. Als ich auf Matthias getroffen bin, hat er mir vom Effinger erzählt, ich war beim ersten How-the-Heck-Abend mit dabei...
+Weil die geilen Leute da sind. Nein, ich bin zum Effinger gekommen, weil ich ein Gemeinschaftsbüro gesucht habe. Ich wollte nicht mehr alleine zuhause arbeiten. Zuerst wollte ich mit branchenähnlichen zusammen co-worken. Als ich auf Matthias getroffen bin, hat er mir vom Effinger erzählt, ich war beim ersten How-the-Heck-Abend mit dabei...
 
 ### Was machst du im Effinger?
 Filme planen, aufnehmen, schneiden, Websites erstellen.
-Mein momentanes Projekt: Infofilm über Geburtsfisteln (Gewebe, das abstirbt unter der Geburt, wenn der Geburtsprozess stehen bleibt. Das Problem hat viele negative Auswirkungen für die Gesellschaft.) Die Ärztin, die erzählt, arbeitet in Bangladesh. Hilfswerk: Woman‘s Hope International.
+Meine momentanen Projekte sind ein Infofilm für ein Hilfswerk, ein Werbefilme für IVP NMS Bern, die Programmierung eines Webshops und dem UG im Keller Leben einhauchen.
 
 ### Dein Geheimtipp im Effinger?
 Was mich fasziniert ist, das Potenzial das zusammenkommt, die verschiedenen Menschen und was daraus entsteht. Im Moment sind viele noch Einzelkämpfer, ich glaube, das kommt noch näher zusammen. Auch zu sehen, wie das wahrgenommen wird, beeindruckt mich.
