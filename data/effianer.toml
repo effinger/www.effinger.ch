@@ -61,18 +61,6 @@ instagram = ""
 
 
 [[Person]]
-host = [ ]
-name = "Oleg Lavrovsky"
-gender = "m"
-image = "/images/effianer/oleg-lavrovsky.jpg"
-email = "oleg@effinger.ch"
-phone = ""
-website = "https://datalets.ch/"
-twitter = "loleg"
-facebook = "lavrovsky"
-instagram = ""
-
-[[Person]]
 host = [ "Dienstag" ]
 name = "Marco Jakob"
 gender = "m"
@@ -178,6 +166,18 @@ phone = ""
 website = ""
 twitter = ""
 facebook = ""
+instagram = ""
+
+[[Person]]
+host = [ "Freitag" ]
+name = "Oleg Lavrovsky"
+gender = "m"
+image = "/images/effianer/oleg-lavrovsky.jpg"
+email = "oleg@effinger.ch"
+phone = ""
+website = "https://datalets.ch/"
+twitter = "loleg"
+facebook = "lavrovsky"
 instagram = ""
 
 [[Person]]
