@@ -8,10 +8,10 @@ comments = true
 tags = [ "Coworking" ]
 +++
 
-![Service Jam](service-jam.jpg)
-
-<p class="image-caption">
-  Teilnehmer/innen, Coaches, Orga- und Cateringteam des Jam 2017 samt unseren Sponsoren
+<p>
+  <div class="embed-responsive embed-responsive-16by9">
+    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/9uqIkhLZ1FA?rel=0" frameborder="0" allowfullscreen></iframe>
+  </div>
 </p>
 
 Noch etwas erschöpft, sicher auch müde und doch sehr neugierig und gespannt und mit viel Energie treffen am Sonntag, 19. Februar 2017, morgens um 8 Uhr 30 die ersten Jammer/innen im Coworkingspace Effinger ein. Erschöpft und müde von den vorangegangenen zwei Tagen Service-Design Thinking, gespannt und neugierig darauf, ob sie es bis am Nachmittag noch schaffen werden, den Prototypen ihrer Idee und ihres Konzepts noch einmal so zu überarbeiten, dass er bei ihren Kunden auch tatsächlich ankommt und tatsächlich mit viel Energie und Überzeugung, dass es durchaus möglich ist, einen ersten Prototypen sehr rasch zu überarbeiten und weiter zu entwickeln.
@@ -46,3 +46,10 @@ Klar können Menschen mit wenig Phantasie und wohl eher eingeschränktem Blickwi
 
 
 Und, wer hat gewonnen? Genau darum geht es nicht! Nicht darum, den besten, tollsten und was auch immer Prototypen entwickelt zu haben oder etwa zu gewinnen. Auch nicht darum, das schnellste Team gewesen zu sein oder genau die richtige Antwort gefunden zu haben (weil es eine derartige Antwort ja nicht gegeben hat und wie unsere eigene Erfahrung zeigt, wenn wir offenen Sinns durch die Welt gehen, in vielem gerade auch Alltäglichen sowieso nicht gibt). Vielmehr ging es darum, viel Freude und Spass zu entwickeln, die eigene Offenheit anzurühren, sich mit anderen und teilweise gänzlich unbekannten Menschen über auch nicht gar so einfache Themen auszustauschen und gleichwohl immer auch mit den Händen am eigenen Prototypen zu arbeiten, um eben zu lernen, mit den Händen zu denken. Darum: Der nächste Global Service Jam kommt bestimmt – und mit recht hoher Sicherheit werden wir auch 2018 den Raum dafür schaffen und halten für den Service Design Jam Bern.
+
+
+![Service Jam](service-jam.jpg)
+
+<p class="image-caption">
+  Teilnehmer/innen, Coaches, Orga- und Cateringteam des Jam 2017 samt unseren Sponsoren
+</p>
