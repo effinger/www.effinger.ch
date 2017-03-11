@@ -1,17 +1,18 @@
 +++
-title = "Kaffeepause mit Claudia Schären"
-date = "2017-03-11"
-description = "Der Effinger wird geprägt durch die verschiedenen Menschen, die hier ein- und ausgehen. Wir möchten euch einige von ihnen näher vorstellen. Diesmal im Gespräch mit Claudia Schären, Office Managerin und Raumvermieterin im Effinger."
+title = "Kaffeepause mit Timon Marmet"
+date = "2017-03-06"
+description = "Der Effinger wird geprägt durch die verschiedenen Menschen, die hier ein- und ausgehen. Wir möchten euch einige von ihnen näher vorstellen. Diesmal im Gespräch mit Claudia Schären, Office Managerin."
 image = "effinger_blog_claudia-draussen.jpg"
 author = "Graziella Bärtsch"
 comments = true
 tags = [ "Portrait" ]
+draft = true
 +++
 
 ![Bildbeschrieb](effinger_blog_claudia-compi.jpg)
 
 <div class="lead">
-Der Effinger wird geprägt durch die verschiedenen Menschen, die hier ein- und ausgehen. Wir möchten euch einige von ihnen näher vorstellen. Diesmal im Gespräch mit Claudia Schären, Office Managerin und Raumvermieterin im Effinger.
+Der Effinger wird geprägt durch die verschiedenen Menschen, die hier ein- und ausgehen. Wir möchten euch einige von ihnen näher vorstellen. Diesmal im Gespräch mit Claudia Schären, Office Managerin.
 </div>
 
 ### Warum arbeitest du im Effinger?
@@ -27,7 +28,7 @@ Administration und Organisation für die Informatikorganisation. Tagungen organi
 
 ![Bildbeschrieb](effinger_blog_claudia-klein.jpg)
 
-#### Claudia Schären, Office Managerin und Raumvermieterin im Effinger
-Liebt violette VW-Käfer-Cabrios, trinkt gerne Cappuccino und trägt neuerdings gerne die Appenzeller Tracht.
+#### Claudia Schären, Office Managerin
+Ist Multi-Tasking geprüft und wird auch «die gute Seele vom Effinger» genannt.
 
 [Webseite von Claudia Schären](http://www.a-und-o.ch/)
