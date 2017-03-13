@@ -8,11 +8,6 @@ location = "Effingerstrasse 10, Bern"
 address_link = "https://www.google.ch/maps/place/Effinger+-+Kaffeebar+%26+Coworking+Space/@46.94604,7.4336198,17z/data=!3m1!4b1!4m2!3m1!1s0x478e39bf613a53f7:0x30f7464656fbe3b2"
 image = "effinger-feier.jpg"
 description = "Wir feiern 1 Jahr Effinger! Im März 2016 war die Eröffnung unserer Kaffeebar und des Coworking Spaces. Damit hat unserer Community hier im Effinger ihre Heimat gefunden."
-
-[registration]
-event_id = 100107
-folder_id = "0BxUuL-tU5pi2a21Eak51dDNnSE0"
-api_url = "https://script.google.com/macros/s/AKfycbzM-0WOT43rWxBRe7z-O0T8bNWDFUIhivv0GNnC3IqcX1EC7dze/exec"
 +++
 
 ![Effinger Party](effinger-feier.jpg)
@@ -40,8 +35,6 @@ Alle Community Member (oder wer es grad vor Ort werden will) und Darlehensgeber 
 
 ### Anmelden
 
-Am besten sofort per Formular unten anmelden. *Anmeldeschluss ist der 11. März*. Bei mehreren Personen bitte diese einzeln eintragen.
-
-Fragen an [events@effinger.ch](mailto:events@effinger.ch).
+Die Anmeldung war nur bis zum  *12. März* möglich. Für Fragen zum Event wende dich an [events@effinger.ch](mailto:events@effinger.ch).
 
 *Wir freuen uns auf deinen Besuch!*
