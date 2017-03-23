@@ -15,29 +15,29 @@ offers_title = "Menu"
 
     [[offers.section.element]]
       text = "Fleischquiche mit Salat"
-      price = "19.50"
+      price = "18.50"
 
       [[offers.section.element.subelement]]
         text = "nach Tagesangebot"
 
     [[offers.section.element]]
       text = "Vegiquiche mit Salat"
-      price = "18.00"
+      price = "17.00"
 
       [[offers.section.element.subelement]]
         text = "nach Tagesangebot"
 
 
-[[offers.section]]
-  title = "Suppe"
-  column = "left"
-
-  [[offers.section.element]]
-    text = "Suppe nach Tagesangebot"
-    price = "9.50"
-
-    [[offers.section.element.subelement]]
-      text = "«es het solang's het»"
+#[[offers.section]]
+#  title = "Suppe"
+#  column = "left"
+#
+#  [[offers.section.element]]
+#    text = "Suppe nach Tagesangebot"
+#    price = "9.50"
+#
+#    [[offers.section.element.subelement]]
+#      text = "«es het solang's het»"
 
 
   [[offers.section]]
@@ -93,7 +93,7 @@ offers_title = "Menu"
         text="Eine Komposition aus mediterranen Köstlichkeiten"
 
   [[offers.section]]
-    title = "Süsses und Gebäck"
+    title = "Vom Bäcker"
     column = "right"
 
     [[offers.section.element]]
@@ -101,23 +101,22 @@ offers_title = "Menu"
       price="2.00"
 
       [[offers.section.element.subelement]]
-        text="Französisches Croissant, Laugen, Vollkorn"
+        text="Butter, Laugen, Vollkorn"
 
     [[offers.section.element]]
-      text="Früchtebrötli"
+      text="Gebäck"
       price="2.50"
 
-    [[offers.section.element]]
-      text="Brioche"
-      price="2.50"
+      [[offers.section.element.subelement]]
+        text="Früchtebrötli, Brioche"
 
     [[offers.section.element]]
-      text="Florentinerkuchen"
+      text="Kuchen"
       price="5.00"
 
-    [[offers.section.element]]
-      text="Schokoladekuchen"
-      price="5.00"
+      [[offers.section.element.subelement]]
+        text="Praliné, Florentiner"
+
 
     [[offers.section.element]]
       text="Amaretti"
@@ -300,7 +299,7 @@ offers_title = "Menu"
         text = "(Früchtetee)"
 
     [[offers.section.element]]
-      text = "Rote Zora"
+      text = "Wilde Hilde"
       price = "4.80"
 
       [[offers.section.element.subelement]]
@@ -671,10 +670,6 @@ offers_title = "Menu"
 
     [[offers.section.element]]
       text="Whisky"
-
-      [[offers.section.element.subelement]]
-        text="Lagavulin Single Islay Malt"
-        price="13.00"
 
       [[offers.section.element.subelement]]
         text="Säntis Malt Dreifaltigkeit"
