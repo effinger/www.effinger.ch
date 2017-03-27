@@ -19,6 +19,6 @@ Für diesen Workshop sind keine Vorkenntnisse nötig.
 **Dauer**: ca. 2h  
 **Preis**: 50.- (inkl. allen Materialien)    
 **Kursleitung**: Damaris Berger   
-**Anmeldung**\*: Unter http://www.dmrsbrgr.com/anmeldung
+**Anmeldung**\*: Unter <a href="http://www.dmrsbrgr.com/anmeldung" target="_blank">http://www.dmrsbrgr.com/anmeldung</a>
 
 <small>*\*Die Anmeldung ist verbindlich. Bei einer Abmeldung wird der Teilnehmerbetrag in Rechnung gestellt. Es besteht allerdings die Möglichkeit selber eine/n Ersatz-TeilnehmerIn zu organisieren, in diesem Fall entfallen die Kosten für die abgemeldete Person. Versicherung ist Sache der Teilnehmer.*</small>
