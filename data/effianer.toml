@@ -1,28 +1,4 @@
 [[Person]]
-name = "Salome Hostettler"
-gender = "f"
-image = "/images/effianer/salome-hostettler.jpg"
-description = "Geschäftsführerin Kaffeebar"
-email = "salome@effinger.ch"
-phone = ""
-website = ""
-twitter = ""
-facebook = "salome.hostettler"
-instagram = ""
-
-[[Person]]
-name = "Domenica Winkler"
-gender = "f"
-image = "/images/effianer/domenica-winkler.jpg"
-description = "Geschäftsführerin Kaffeebar"
-email = "domenica@effinger.ch"
-phone = ""
-website = ""
-twitter = ""
-facebook = ""
-instagram = "effingerbern"
-
-[[Person]]
 host = [ "Montag" ]
 name = "Urs Vögeli"
 gender = "m"
@@ -145,6 +121,19 @@ facebook = ""
 instagram = ""
 
 [[Person]]
+host = [ "Mittwoch" ]
+name = "Salome Hostettler"
+gender = "f"
+image = "/images/effianer/salome-hostettler.jpg"
+description = "Geschäftsführerin Kaffeebar"
+email = "salome@effinger.ch"
+phone = ""
+website = ""
+twitter = ""
+facebook = "salome.hostettler"
+instagram = ""
+
+[[Person]]
 host = [ "Donnerstag" ]
 name = "Jonathan Hess"
 gender = "m"
@@ -179,6 +168,19 @@ website = "https://datalets.ch/"
 twitter = "loleg"
 facebook = "lavrovsky"
 instagram = ""
+
+[[Person]]
+host = [ "Freitag" ]
+name = "Domenica Winkler"
+gender = "f"
+image = "/images/effianer/domenica-winkler.jpg"
+description = "Geschäftsführerin Kaffeebar"
+email = "domenica@effinger.ch"
+phone = ""
+website = ""
+twitter = ""
+facebook = ""
+instagram = "effingerbern"
 
 [[Person]]
 host = [ "Freitag" ]
