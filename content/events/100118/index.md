@@ -28,9 +28,7 @@ Hast du Pläne für ein Möbelprojekt? Steht bei dir Zuhause ein angefangenes Ba
 - Diverses Werkzeug
 - ...
 
-
 **Öffnungszeit**: 18:30 – 22:00 Uhr
-
 **Preis**:
 - Einlass: 10.- (pauschal pro Abend)    
 - Material: Individuell nach Verbrauch
