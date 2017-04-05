@@ -98,8 +98,9 @@
           <h3 class="uppercase mt-0"><i class="fa fa-user-plus"></i> Anmeldung</h3>
           <!-- Form -->
           <form class="form event-manager-form"
-            data-event-id="{{ .Params.registration.event_id }}"
             data-folder-id ="{{ .Params.registration.folder_id }}"
+            data-event-id="{{ .Params.registration.event_id }}"
+            data-event-title="{{ .Title }}"
             data-api-url="{{ .Params.registration.api_url }}">
             <div class="row">
               <div class="col-sm-6 mb-20 mb-md-10">
