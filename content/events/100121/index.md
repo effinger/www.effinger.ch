@@ -39,7 +39,7 @@ Hast du Pläne für ein Möbelprojekt? Steht bei dir Zuhause ein angefangenes Ba
   <tr>
     <td style="vertical-align:top;"><strong>Preis:</strong></td>
     <td>
-      Einlass: 10.- (pauschal pro Abend)<br>
+      Einlass: 20.- (pauschal pro Abend)<br>
       Material: Individuell nach Verbrauch<br>
       Maschinenbenutzung: ab Fr. 5.-/Stunde (je nach Aufwand)
     </td>
