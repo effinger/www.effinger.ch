@@ -41,8 +41,43 @@ text = "Küchenbenutzung"
 price = "CHF 100"
 
 [[extras]]
-text = "Seminarverpflegung (Wasser & Früchte)"
+text = "Seminarverpflegung Kaffee/Obst/Brötli/Gipfeli (ganzer Tag)"
+price = "CHF 17 pro Person"
+hidden = true
+
+[[extras]]
+text = "Seminarverpflegung Kaffee/Obst/Brötli/Gipfeli (halber Tag)"
+price = "CHF 13 pro Person"
+hidden = true
+
+[[extras]]
+text = "Seminarverpflegung Kaffee/Obst (ganzer Tag)"
+price = "CHF 15 pro Person"
+hidden = true
+
+[[extras]]
+text = "Seminarverpflegung Kaffee/Obst (halber Tag)"
+price = "CHF 11 pro Person"
+hidden = true
+
+[[extras]]
+text = "Seminarverpflegung Kaffee/Mineral (ganzer Tag)"
+price = "CHF 9 pro Person"
+hidden = true
+
+[[extras]]
+text = "Seminarverpflegung Kaffee/Mineral (halber Tag)"
 price = "CHF 7 pro Person"
+hidden = true
+
+[[extras]]
+text = "Seminarverpflegung Kaffee/Mineral/Brötli (ganzer Tag)"
+price = "CHF 15 pro Person"
+hidden = true
+
+[[extras]]
+text = "Seminarverpflegung Kaffee/Mineral/Brötli (halber Tag)"
+price = "CHF 11 pro Person"
 hidden = true
 
 [[extras]]
@@ -53,11 +88,8 @@ hidden = true
 Sitzungsraum, wahlweise mit Küche.
 
 <small><em>
-Wenn kreatives Arbeiten und die Benutzung der Wände geplant sind, muss die Moderationskiste gebucht werden (Kosten zusätzlich zur Raummiete: CHF 50). Die Kiste enthält abwischbare Stifte sowie diverse Papier-, Post-it-, Klebeutensilien und Magnete.
-
-Damit wir das Risiko von Schäden an der Infrastruktur minimieren können, bitten wir euch, keine eigenen Moderationsutensilien (Stifte usw.) mitzubringen.
-
-Bei Annullationen innert 72h Stunden vor Beginn der Raummiete ermöglichen wir eine kostenlose Verschiebung innerhalb eines Monats. Kann dies nicht realisiert werden, werden 50% der vereinbarten Raummiete fällig.
-
+Wenn kreatives Arbeiten und die Benutzung der Wände geplant sind, muss die Moderationskiste gebucht werden (Kosten zusätzlich zur Raummiete: CHF 50). Die Kiste enthält abwischbare Stifte sowie diverse Papier-, Post-it-, Klebeutensilien und Magnete.<br>
+Damit wir das Risiko von Schäden an der Infrastruktur minimieren können, bitten wir euch, keine eigenen Moderationsutensilien (Stifte usw.) mitzubringen.<br>
+Bei Annullationen innert 72h Stunden vor Beginn der Raummiete ermöglichen wir eine kostenlose Verschiebung innerhalb eines Monats. Kann dies nicht realisiert werden, werden 50% der vereinbarten Raummiete fällig.<br>
 Für NPO gibt es eine Reduktion von CHF 50.-.
 </em></small>
