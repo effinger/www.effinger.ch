@@ -31,11 +31,11 @@ Grundsätzlich kann man mit einem Tagespass/ Zehnerabo oder zeitlich noch verbin
 Wer froh ist, um ein wenig Unterstützung oder eine Ansprechperson: Ich werde ab April 2017 immer am dritten Donnerstagabend im Monat eine offene Werkstatt anbieten. Es soll allen, die keinen Zugang zu einer Werkstatt haben, die Möglichkeit bieten, ihre handwerklichen Ideen umzusetzen. In einem nächsten Schritt plane ich auch, Workshops anzubieten. Beispielsweise für Kinder oder Lehrpersonen.
 
 
-### Event offenen Werkstatt
+#### Event offenen Werkstatt
 [Erfahre mehr zur offenen Werkstatt von Timon Marmet](https://www.effinger.ch/events/100118/)
 
 
 ![Bildbeschrieb](timon-marmet-klein.jpg)
 
 #### Timon Marmet, Möbel- und Wohngestalter
-Liebt den Umgang mit Kunst und Menschen
+Interessiert sich für die Lebensgeschichte vom betagten Nachbarn bis hin zu der von Nelson Mandela und ist leidenschaftlicher Podcast-Hörer
