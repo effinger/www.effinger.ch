@@ -41,43 +41,23 @@ text = "Moderationskoffer"
 price = "CHF 50"
 
 [[extras]]
-text = "Seminarverpflegung Kaffee/Obst/Brötli/Gipfeli (ganzer Tag)"
-price = "CHF 17 pro Person"
+text = "Seminarverpflegung Kaffee & Mineral"
+price = "halber Tag CHF 7 / ganzer Tag CHF 9 pro Person"
 hidden = true
 
 [[extras]]
-text = "Seminarverpflegung Kaffee/Obst/Brötli/Gipfeli (halber Tag)"
-price = "CHF 13 pro Person"
+text = "Seminarverpflegung Kaffee, Mineral & Obst"
+price = "halber Tag CHF 11 / ganzer Tag CHF 15 pro Person"
 hidden = true
 
 [[extras]]
-text = "Seminarverpflegung Kaffee/Obst (ganzer Tag)"
-price = "CHF 15 pro Person"
+text = "Seminarverpflegung Kaffee, Mineral & Brötli/Gipfeli"
+price = "halber Tag CHF 11 / ganzer Tag CHF 15 pro Person"
 hidden = true
 
 [[extras]]
-text = "Seminarverpflegung Kaffee/Obst (halber Tag)"
-price = "CHF 11 pro Person"
-hidden = true
-
-[[extras]]
-text = "Seminarverpflegung Kaffee/Mineral (ganzer Tag)"
-price = "CHF 9 pro Person"
-hidden = true
-
-[[extras]]
-text = "Seminarverpflegung Kaffee/Mineral (halber Tag)"
-price = "CHF 7 pro Person"
-hidden = true
-
-[[extras]]
-text = "Seminarverpflegung Kaffee/Mineral/Brötli (ganzer Tag)"
-price = "CHF 15 pro Person"
-hidden = true
-
-[[extras]]
-text = "Seminarverpflegung Kaffee/Mineral/Brötli (halber Tag)"
-price = "CHF 11 pro Person"
+text = "Seminarverpflegung Kaffee, Mineral, Obst & Brötli/Gipfeli"
+price = "halber Tag CHF 13 / ganzer Tag CHF 17 pro Person"
 hidden = true
 
 [[extras]]

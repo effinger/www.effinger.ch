@@ -39,23 +39,13 @@ text = "Moderationskoffer"
 price = "CHF 50"
 
 [[extras]]
-text = "Seminarverpflegung Obst/Brötli/Gipfeli (ganzer Tag)"
-price = "CHF 13 pro Person"
+text = "Seminarverpflegung Obst & Brötli/Gipfeli"
+price = "halber Tag CHF 9 / ganzer Tag CHF 13 pro Person"
 hidden = true
 
 [[extras]]
-text = "Seminarverpflegung Obst/Brötli/Gipfeli (halber Tag)"
-price = "CHF 9 pro Person"
-hidden = true
-
-[[extras]]
-text = "Seminarverpflegung Obst (ganzer Tag)"
-price = "CHF 10 pro Person"
-hidden = true
-
-[[extras]]
-text = "Seminarverpflegung Obst (halber Tag)"
-price = "CHF 7 pro Person"
+text = "Seminarverpflegung Obst"
+price = "halber Tag CHF 7 / ganzer Tag CHF 10 pro Person"
 hidden = true
 
 [[extras]]
