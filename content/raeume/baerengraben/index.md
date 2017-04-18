@@ -12,10 +12,8 @@ square_meters = 22
 capacity = "10"
 
 equipment = [
-  "Tische",
-  "Sitzgelegenheiten",
+  "Tisch",
   "Flipchart",
-  "Beamer",
   "High-Speed Internet"
 ]
 
@@ -27,6 +25,10 @@ prices = [
 
 calendar_api_path = "https://script.google.com/macros/s/AKfycbwiAp5fLXtS_P16QUXV3nUBv0QiL1xTemNUe7JPxD61k0DTbtQ/exec"
 calendar_id = "effinger.ch_3931343830323437383537@resource.calendar.google.com"
+
+[[extras]]
+text = "Beamer"
+price = "CHF 50"
 
 [[extras]]
 text = "Moderationskoffer"
