@@ -34,10 +34,6 @@ calendar_api_path = "https://script.google.com/macros/s/AKfycbwiAp5fLXtS_P16QUXV
 calendar_id = "effinger.ch_3838383235323139363736@resource.calendar.google.com"
 
 [[extras]]
-text = "Beamer"
-price = "CHF 50"
-
-[[extras]]
 text = "Moving Walls (beschreibbar)"
 price = "CHF 50"
 
