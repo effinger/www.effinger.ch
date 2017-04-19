@@ -101,6 +101,12 @@ h3 a:focus {
   }
 }
 
+.hyphenate {
+  hyphens: auto;
+  overflow-wrap: break-word;
+}
+
+
 // Image Cropping.
 .image-crop {
   position: relative;
