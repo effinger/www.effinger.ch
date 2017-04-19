@@ -50,7 +50,7 @@ Für Jungunternehmer, Kreative, Handwerkerinnen, Weltveränderer, Bernerinnen, Z
         <div class="row">
           {{ range first 3 (where .Site.Pages "Section" "blog") }}
           <div class="col-sm-4">
-            {{ partial "blog/home_summary.html" . }}
+            {{ partial "blog/summary_home.html" . }}
           </div>
           {{ end }}
         </div>

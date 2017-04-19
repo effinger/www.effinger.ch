@@ -101,6 +101,30 @@ h3 a:focus {
   }
 }
 
+// Image Cropping.
+.image-crop {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+
+  img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto; // Crops to the center of the image.
+  }
+}
+
+.image-crop-3by2 {
+  padding-top: 66.666666667%;
+}
+
+.image-crop-5by3 {
+  padding-top: 60%;
+}
+
 
 // Tables.
 table th {
