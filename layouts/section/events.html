@@ -31,11 +31,11 @@
       <h2 class="section-title font-alt mb-70 mb-sm-40">Eventliste</h2>
       -->
       <div class="eventlist">
-        {{ range sort (where .Data.Pages "Params.enddate" ">=" .Now) "Params.startdate" "asc" }}
+        {{ range sort (where .Data.Pages "Params.enddate" ">=" now) "Params.startdate" "asc" }}
 
         {{ partial "events/calc_dates.html" . }}
         {{ partial "events/event_summary.html" . }}
-        
+
         {{ end }}
       </div>
     </div>

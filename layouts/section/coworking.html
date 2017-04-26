@@ -464,7 +464,7 @@
     <div class="relative container">
       <h1 class="hs-line-11 font-alt">Kontakt</h1>
 
-      {{ $today := index $.Site.Data.de.weekdays .Now.Weekday }}
+      {{ $today := index $.Site.Data.de.weekdays now.Weekday }}
 
       {{ $.Scratch.Set "num_effianer_today" 0 }}
       {{ range $.Site.Data.effianer.Person }}

@@ -68,7 +68,7 @@ Für Jungunternehmer, Kreative, Handwerkerinnen, Weltveränderer, Bernerinnen, Z
 
         <div class="eventlist row">
           <div class="col-sm-6">
-          {{ range $index, $element := first 6 (sort (where (where .Site.Pages "Section" "events") "Params.enddate" ">=" .Now) "Params.startdate" "asc") }}
+          {{ range $index, $element := first 6 (sort (where (where .Site.Pages "Section" "events") "Params.enddate" ">=" now) "Params.startdate" "asc") }}
             {{ if eq $index 3 }}
             </div>
             <div class="col-sm-6">

@@ -115,7 +115,7 @@
       </div>
 
       <div class="row multi-columns-row">
-        {{ $today := index $.Site.Data.de.weekdays .Now.Weekday }}
+        {{ $today := index $.Site.Data.de.weekdays now.Weekday }}
         {{ range $.Site.Data.effianer.Person }}
         <!-- Effianer Item -->
         <div class="col-sm-6 col-md-3 col-lg-3 mb-140">
