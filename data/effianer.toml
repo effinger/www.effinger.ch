@@ -22,7 +22,6 @@ twitter = ""
 facebook = ""
 instagram = ""
 
-
 [[Person]]
 host = [ "Montag" ]
 name = "Roland Studer"
@@ -35,6 +34,17 @@ twitter = "rolandstuder"
 facebook = ""
 instagram = ""
 
+[[Person]]
+host = [ "Montag" ]
+name = "David Brühlmeier"
+gender = "m"
+image = "/images/effianer/david-bruehlmeier.jpg"
+email = "dave@effinger.ch"
+phone = ""
+website = "http://www.villageoffice.ch/about/dave"
+twitter = "ResponsiveDave"
+facebook = ""
+instagram = ""
 
 [[Person]]
 host = [ "Dienstag" ]
@@ -86,18 +96,6 @@ instagram = ""
 
 [[Person]]
 host = [ "Mittwoch" ]
-name = "Timon Marmet"
-gender = "m"
-image = "/images/effianer/timon-marmet.jpg"
-email = "timon.m@effinger.ch"
-phone = ""
-website = ""
-twitter = ""
-facebook = "timon.marmet"
-instagram = ""
-
-[[Person]]
-host = [ "Mittwoch" ]
 name = "Christa-Maria Tobler"
 gender = "f"
 image = "/images/effianer/christa-maria-tobler.jpg"
@@ -125,7 +123,7 @@ host = [ "Mittwoch" ]
 name = "Salome Hostettler"
 gender = "f"
 image = "/images/effianer/salome-hostettler.jpg"
-description = "Geschäftsführerin Kaffeebar"
+description = ""
 email = "salome@effinger.ch"
 phone = ""
 website = ""
@@ -174,7 +172,7 @@ host = [ "Freitag" ]
 name = "Domenica Winkler"
 gender = "f"
 image = "/images/effianer/domenica-winkler.jpg"
-description = "Geschäftsführerin Kaffeebar"
+description = ""
 email = "domenica@effinger.ch"
 phone = ""
 website = ""
@@ -195,7 +193,7 @@ facebook = ""
 instagram = "dmrsbrgr"
 
 [[Person]]
-host = [ ]
+host = [ "Freitag" ]
 name = "Daniel Osterwalder"
 gender = "m"
 image = "/images/effianer/daniel-osterwalder.jpg"
@@ -219,13 +217,13 @@ facebook = ""
 instagram = ""
 
 [[Person]]
-host = [ ]
-name = "David Brühlmeier"
+host = [ "Freitag" ]
+name = "Timon Marmet"
 gender = "m"
-image = "/images/effianer/david-bruehlmeier.jpg"
-email = "dave@effinger.ch"
+image = "/images/effianer/timon-marmet.jpg"
+email = "timon.m@effinger.ch"
 phone = ""
-website = "http://www.villageoffice.ch/about/dave"
-twitter = "ResponsiveDave"
-facebook = ""
+website = ""
+twitter = ""
+facebook = "timon.marmet"
 instagram = ""
