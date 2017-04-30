@@ -7,6 +7,11 @@ categories = [ "Community" ]
 location = "Effingerstrasse 10, Bern (1. OG)"
 address = "46.945842, 7.435864"
 address_link = "https://www.google.ch/maps/place/Effinger+-+Kaffeebar+%26+Coworking+Space/@46.94604,7.4336198,17z/data=!3m1!4b1!4m2!3m1!1s0x478e39bf613a53f7:0x30f7464656fbe3b2"
+
+[registration]
+event_id = 100089
+folder_id = "0BxUuL-tU5pi2a21Eak51dDNnSE0"
+api_url = "https://script.google.com/macros/s/AKfycbzM-0WOT43rWxBRe7z-O0T8bNWDFUIhivv0GNnC3IqcX1EC7dze/exec"
 +++
 
 Wir treffen uns an jedem ersten Donnerstag im Monat als Community. Neben den Community Membern sind auch **Gäste herzlich willkommen**.
