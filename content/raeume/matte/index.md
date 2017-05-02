@@ -20,6 +20,7 @@ capacity = "20"
 
 equipment = [
   "(beschreibbare) Tische",
+  "Stühle oder Hocker",
   "High-Speed Internet"
 ]
 

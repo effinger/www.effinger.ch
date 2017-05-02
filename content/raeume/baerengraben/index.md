@@ -13,6 +13,7 @@ capacity = "10"
 
 equipment = [
   "Tisch",
+  "Stühle",
   "Flipchart",
   "High-Speed Internet"
 ]
