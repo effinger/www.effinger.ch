@@ -1,0 +1,99 @@
+{{ define "main" }}
+<!-- Page Wrap -->
+<div class="page finanzen" id="top">
+
+  <nav class="main-nav dark transparent stick-fixed">
+    {{ partial "navigation.html" . }}
+  </nav>
+
+  <!-- Header -->
+  <section class="small-section-header bg-dark-lighter">
+    <div class="relative container align-left pt-80">
+
+      <div class="row">
+
+        <div class="col-md-8">
+          <h1 class="hs-line-11 font-alt mb-0">Finanzen</h1>
+          <div class="hs-line-4 font-alt mt-20 mt-xs-0">
+            Verein Coworking Community Bern
+          </div>
+        </div>
+
+        <div class="col-md-4 mt-30">
+          <div class="mod-breadcrumbs font-alt align-right">
+            <a href="/ueber/">Community</a>&nbsp;/&nbsp;<a href="/finanzen/">Finanzen</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- End Header -->
+
+<!-- bg-gray-lighter -->
+
+
+  <!-- Section -->
+  <section class="page-section bg-gray-lighter">
+    <div class="container relative">
+      <!-- Text -->
+      <div class="long-text-body">
+
+        {{ range .Pages.GroupByDate "2006" }}
+
+        <h1 class="mt-0 font-alt">Monatsübersicht {{ .Key }}</h1>
+
+        <div class="row mb-100">
+
+          {{ range $i, $e := sort .Pages "Date" "asc" }}
+
+            {{/* Calculation of total Ertrag und Aufwand. */}}
+            {{ $.Scratch.Set "total_ertrag" 0 }}
+            {{ range $e.Params.ertrag }}
+              {{ $.Scratch.Add "total_ertrag" .betrag }}
+            {{ end }}
+
+            {{ $.Scratch.Set "total_aufwand" 0 }}
+            {{ range $e.Params.aufwand }}
+              {{ $.Scratch.Add "total_aufwand" .betrag }}
+            {{ end }}
+
+            {{/* Putting the totals into a map to make it available in the script below. */}}
+            {{ $.Scratch.Get "total_aufwand" | $.Scratch.SetInMap "aufwaende" (print $i) }}
+            {{ $.Scratch.Get "total_ertrag" | $.Scratch.SetInMap "ertraege" (print $i) }}
+
+            {{/* Collecting the month names in German. */}}
+            {{ index $.Site.Data.de.months .Date.Month | $.Scratch.SetInMap "monate" (print $i) }}
+
+            <a href="{{ .RelPermalink }}" class="col-md-4 col-sm-6 monats-box">
+              <div class="inner mt-20 mb-20 clearfix">
+                <h4 class="title">{{ index $.Site.Data.de.months .Date.Month }}</h4>
+                <div class="wave-spacer"></div>
+                <div class="item">
+                  <p>Ertrag<span class="amount">{{ partial "format/thousands" ($.Scratch.Get "total_ertrag") }}</span></p>
+                  <p>Aufwand<span class="amount">-{{ partial "format/thousands" ($.Scratch.Get "total_aufwand") }}</span></p>
+                  <p>ERGEBNIS<span class="total amount">{{ partial "format/thousands" (sub ($.Scratch.Get "total_ertrag") ($.Scratch.Get "total_aufwand")) }}</span></p>
+                </div>
+                <div class="item clearfix">
+                  <p>Darlehen<span class="amount">{{ partial "format/thousands" .Params.darlehen }}</span></p>
+                  <p><small>Kontostand Ende Monat</small><span class="amount">{{ partial "format/thousands" .Params.kontostand }}</span></p>
+                </div>
+                <div class="item">
+                  <p class="align-center">
+                    <span class="btn btn-mod btn-gray btn-round"><i class="fa fa-angle-right"></i> Details</span>
+                  </p>
+                </div>
+              </div>
+
+            </a>
+          {{ end }}
+          </div>
+        {{ end }}
+      </div>
+      <!-- End Text -->
+    </div>
+  </section>
+
+</div>
+<!-- End Page Wrap -->
+{{ end }}

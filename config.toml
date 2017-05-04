@@ -15,6 +15,7 @@ paginatePath = "seite"
 
 [taxonomies]
   category = "categories"  # Used for events
+  finanzen = "finanzen"
 
 [permalinks]
   blog-tag = "/blog/tag/:title/"
