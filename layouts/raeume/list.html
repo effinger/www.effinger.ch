@@ -93,7 +93,7 @@
 
             <div class="row raeume-eigenschaften">
               <div class="col-sm-12">
-                <div class="raeume-title">Preise</div>
+                <div class="raeume-title">Preise{{ if .Params.prices_excluding_vat }} (exkl. MwSt.){{ end }}</div>
                 {{ range .Params.prices }}
                 <div class="raeume-content">
                   {{ . }}

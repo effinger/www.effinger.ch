@@ -30,6 +30,8 @@ prices = [
   "CHF 250 für 8 Stunden"
 ]
 
+prices_excluding_vat = false
+
 calendar_api_path = "https://script.google.com/macros/s/AKfycbwiAp5fLXtS_P16QUXV3nUBv0QiL1xTemNUe7JPxD61k0DTbtQ/exec"
 
 calendar_id = "effinger.ch_2d35313235363038352d333337@resource.calendar.google.com"

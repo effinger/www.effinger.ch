@@ -22,6 +22,8 @@ prices = [
   "auf Anfrage"
 ]
 
+prices_excluding_vat = true
+
 calendar_api_path = "https://script.google.com/macros/s/AKfycbwiAp5fLXtS_P16QUXV3nUBv0QiL1xTemNUe7JPxD61k0DTbtQ/exec"
 calendar_id = "effinger.ch_3737343630303933363438@resource.calendar.google.com"
 
@@ -47,6 +49,5 @@ Ein grosser, hoher und heller Raum für Events. Der Raum kann für Events jeweil
 <small><em>
 Wenn kreatives Arbeiten und die Benutzung der Wände geplant sind, muss die Moderationskiste gebucht werden (Kosten zusätzlich zur Raummiete: CHF 50). Die Kiste enthält abwischbare Stifte sowie diverse Papier-, Post-it-, Klebeutensilien und Magnete.<br>
 Damit wir das Risiko von Schäden an der Infrastruktur minimieren können, bitten wir euch, keine eigenen Moderationsutensilien (Stifte usw.) mitzubringen.<br>
-Bei Annullationen innert 72h Stunden vor Beginn der Raummiete ermöglichen wir eine kostenlose Verschiebung innerhalb eines Monats. Kann dies nicht realisiert werden, werden 50% der vereinbarten Raummiete fällig.<br>
-Für NPO gibt es eine Reduktion von CHF 50.-.
+Bei Annullationen innert 72h Stunden vor Beginn der Raummiete ermöglichen wir eine kostenlose Verschiebung innerhalb eines Monats. Kann dies nicht realisiert werden, werden 50% der vereinbarten Raummiete fällig.
 </em></small>
