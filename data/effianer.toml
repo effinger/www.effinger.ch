@@ -156,6 +156,18 @@ facebook = ""
 instagram = ""
 
 [[Person]]
+host = [ "Donnerstag" ]
+name = "Damaris Berger"
+gender = "f"
+image = "/images/effianer/damaris-berger.jpg"
+email = "damaris@effinger.ch"
+phone = ""
+website = "http://www.dmrsbrgr.com"
+twitter = ""
+facebook = ""
+instagram = "dmrsbrgr"
+
+[[Person]]
 host = [ "Freitag" ]
 name = "Oleg Lavrovsky"
 gender = "m"
@@ -179,18 +191,6 @@ website = ""
 twitter = ""
 facebook = ""
 instagram = "effingerbern"
-
-[[Person]]
-host = [ "Freitag" ]
-name = "Damaris Berger"
-gender = "f"
-image = "/images/effianer/damaris-berger.jpg"
-email = "damaris@effinger.ch"
-phone = ""
-website = "http://www.dmrsbrgr.com"
-twitter = ""
-facebook = ""
-instagram = "dmrsbrgr"
 
 [[Person]]
 host = [ "Freitag" ]
