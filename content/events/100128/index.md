@@ -1,6 +1,6 @@
 +++
-title = "Open Debate: Demokratie und Menschenrechte – Gegensätze, Spannungen oder Gleichursprünglichkeit?"
-description = ""
+title = "Open Debate: Demokratie und Menschenrechte"
+description = "Demokratie und Menschenrechte – Gegensätze, Spannungen oder Gleichursprünglichkeit?"
 
 startdate = 2017-09-11T19:30:00Z
 enddate = 2017-09-11T21:30:00Z
@@ -12,6 +12,8 @@ image = "demokratie-menschenrechte.png"
 +++
 
 ![Demokratie und Menschenrechte](demokratie-menschenrechte.png)
+
+## Gegensätze, Spannungen oder Gleichursprünglichkeit?
 
 Im Rahmen aktueller Debatten zur EMRK, allgemein zum Thema Völkerrecht und Menschenrechte, aber auch wenn es um direkte Demokratie, Souveränität oder Selbstbestimmung geht, wird fast von allen Lagern das Gegensätzliche zwischen den Konzepten Demokratie und Menschenrechten betont.
 
