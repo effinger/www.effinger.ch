@@ -70,11 +70,7 @@
             <h4 class="uppercase">Öffnungszeiten</h4>
             <div class="wave-spacer"></div>
             <div class="item">
-              <!--
-              <p class="text-center"><em>Achtung: Karfreitag bis Ostermontag geschlossen</em></p>
-              <div class="wave-spacer"></div>
-              -->
-
+              {{ partial "spezielle_oeffnungszeiten.html" . }}
               <p>Mo-Fr <span>7-23</span></p>
               <p>Sa <span>9-17</span></p>
               <p>So <span>Ruhetag</span></p>
@@ -326,10 +322,7 @@
         <h4 class="uppercase">Kontakt</h4>
         <div class="wave-spacer"></div>
         <div class="item">
-          <!--
-          <p class="text-center"><em><strong>Betriebsferien Kaffeebar <br>24. Dez bis 8. Jan</strong></em></p>
-          <div class="wave-spacer"></div>
-          -->
+          {{ partial "spezielle_oeffnungszeiten.html" . }}
 
           <p>Telefon<span><a href="tel:+41313982020">031 398 20 20</a></span></p>
           <p>Email<span><a href="mailto:kaffeebar@effinger.ch">kaffeebar@effinger.ch</a></span></p>
