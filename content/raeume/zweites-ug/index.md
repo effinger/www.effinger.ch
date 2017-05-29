@@ -1,5 +1,4 @@
 +++
-draft = true
 title = "E-0010"
 weight = 6
 description = "Raum «E-0010» (Zweites UG) für Events, Aktivitäten und digitale Projekte."
@@ -19,7 +18,10 @@ equipment = [
 ]
 
 prices = [
-  "auf Anfrage"
+  "CHF 250 für 4 Stunden",
+  "CHF 350 für 8 Stunden",
+  "CHF 250 pro Abend",
+  "Grössere Events und regelmässige Nutzung auf Anfrage"
 ]
 
 prices_excluding_vat = true
