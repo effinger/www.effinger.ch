@@ -1,3 +1,6 @@
-geschlossen = "Auffahrt (Donnerstag) geschlossen. Freitag, Samstag geöffnet."
-geschlossen_display_start = 2017-05-20T00:00:00Z
-geschlossen_display_end = 2017-05-28T00:00:00Z
+geschlossen = """
+Öffnungszeiten Pfingsten:   
+Pfingstmontag geschlossen
+"""
+geschlossen_display_start = 2017-05-31T00:00:00Z
+geschlossen_display_end = 2017-06-06T00:00:00Z
