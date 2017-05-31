@@ -1,14 +1,16 @@
 +++
-draft = true
 title = "Ein Jahr Effinger"
 date = "2017-05-21"
 description = "Schön war es mit euch zu feiern und in Erinnerungen schwelgen. Wunderbar war es anzusehen, wie auch unser Jubiläumsfest die Vielfalt verkörpert hat, die im Effinger im letzten Jahr entstanden ist."
-image = "EFFINGER_JUB_17-15.jpg"
+image = "thumb.jpg"
 author = "Urs Vögeli"
 comments = true
 tags = [ "Location", "Community", "Unterhaltung" ]
 +++
 
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/Z3kyv0BdIvM?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+</div>
 
 
 <div class="lead">
@@ -23,7 +25,7 @@ Der Abschluss unseres Jubiläums war dann der Memberbrunch am Samstagvormittag. 
 
 Herzlichen Dank an alle, die dieses Jubiläumsfest und unseren Effinger möglich gemacht haben!
 
-<div class="blog-posts-carousel-alt">
+<div class="blog-posts-carousel-alt mb-30">
   <div>
     <img src="EFFINGER_JUB_17-15.jpg">
   </div>
@@ -49,3 +51,7 @@ Herzlichen Dank an alle, die dieses Jubiläumsfest und unseren Effinger möglich
     <img src="EFFINGER_JUB_17-54.jpg">
   </div>
 </div>
+
+<small>
+  *<i class="fa fa-pencil" aria-hidden="true"></i> Urs Vögeli, <i class="fa fa-camera" aria-hidden="true"></i> [Damaris Berger](http://www.dmrsbrgr.com/), <i class="fa fa-video-camera" aria-hidden="true"></i> [Jonathan Hess](http://www.movingwater.ch/)*
+</small>

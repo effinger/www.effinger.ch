@@ -65,6 +65,14 @@ hidden = true
 text = "Weitere Verpflegung gewünscht"
 hidden = true
 
+[[extras]]
+text = "Töggeli-Kasten"
+price ="auf Anfrage"
+
+[[extras]]
+text = "Pingpong-Tisch"
+price = "auf Anfrage"
+
 +++
 Raum «E-0010» (Zweites UG) für Events, Aktivitäten und digitale Projekte.
 
