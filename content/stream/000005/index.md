@@ -1,4 +1,4 @@
 +++
-image = "image.jpg"
+image = "image.png"
 +++
-Achtung Gurke
+Gute Aussichten beim Coworking im Effinger

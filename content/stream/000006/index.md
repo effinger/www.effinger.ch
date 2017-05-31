@@ -1,4 +1,5 @@
 +++
-image = "image.png"
+image = "image.jpg"
 +++
-Gute Aussichten beim Coworking im Effinger
+Wer keine Fmax hat, kann auch nicht auf Kraft bauen:) - Quintessenz aus der Weiterbildung in Magglingen - Velocity based strength training
+arms Roboterli, schläft ja nie:))
