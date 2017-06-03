@@ -11,7 +11,9 @@
 
   <!-- Image -->
   <div class="blog-media image-crop image-crop-3by2">
-    <a href="{{ .RelPermalink }}"><img src="{{ .RelPermalink }}{{ .Params.image }}" alt="" /></a>
+    <a class="image-crop-inner" href="{{ .RelPermalink }}"
+        style="background-image: url({{ .RelPermalink }}{{ .Params.image }})">
+    </a>
   </div>
 
   <!-- Text Intro -->

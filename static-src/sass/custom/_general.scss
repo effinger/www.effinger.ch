@@ -71,16 +71,20 @@ h3 a:focus {
 // Image Cropping.
 .image-crop {
   position: relative;
-  height: 0;
-  overflow: hidden;
 
-  img {
+  // Use this with any element and then set the image as background.
+  // This works for all sizes.
+  .image-crop-inner {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
     position: absolute;
-    left: 0;
-    right: 0;
     top: 0;
+    right: 0;
     bottom: 0;
-    margin: auto; // Crops to the center of the image.
+    left: 0;
+    margin: auto;
+    max-width: 100%;
   }
 }
 

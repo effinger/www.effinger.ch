@@ -1,6 +1,8 @@
 <!-- Image -->
 <div class="blog-media mb-10 image-crop image-crop-5by3">
-  <a class="" href="{{ .RelPermalink }}"><img src="{{ .RelPermalink }}{{ .Params.image }}" alt="" /></a>
+  <a class="image-crop-inner" href="{{ .RelPermalink }}"
+      style="background-image: url({{ .RelPermalink }}{{ .Params.image }})">
+  </a>
 </div>
 
 <!-- Date, Author -->
