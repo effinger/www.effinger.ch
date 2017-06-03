@@ -29,7 +29,7 @@ Als "Verein Coworking Community Bern" betreiben wir den Coworking-Bereich im Eff
 
 Unter folgenden Links findest du unsere aktuellen Finanzzahlen. Es gibt eine Jahresübersicht und für jeden Monat eine Seite mit Detailinformationen.
 
-<a href="/finanzen/" class="btn btn-mod btn-medium btn-round mb-10">&rarr; Jahresübersicht 2016</a> <a href="/finanzen/verein-coworking-community-bern/2016-04/" class="btn btn-mod btn-medium btn-round mb-10">&rarr; Detailansicht April 2016</a>
+<a href="/finanzen/" class="btn btn-mod btn-medium btn-round mb-10">&rarr; Jahresübersicht 2016</a> <a href="/finanzen/verein-coworking-community-bern/2016/04/" class="btn btn-mod btn-medium btn-round mb-10">&rarr; Detailansicht April 2016</a>
 
 
 ### Detailansicht April 2016
@@ -60,7 +60,7 @@ Wenn du aber bereits jetzt die aktuellen Zahlen mit dem [Businessplan](/blog/bus
 
 Somit lasse ich die Zahlen im Moment für sich sprechen. Aber ich würde mich sehr freuen über Reaktionen darauf - zum Beispiel als Kommentare unten am Blogeintrag.
 
-*Update:* In einem [Kommentar](#comment-2669690497) unten und bei persönlichen Gesprächen wurde bemerkt, dass wir nirgendwo die Stunden an investierter Arbeit sichtbar gemacht haben (danke @abi und @claudia für den Hinweis). Das ist ein wichtiger Punkt. Wenn wir dafür Lohnkosten bezahlen würden, würde das Bild definitiv anders aussehen. Vielleicht finden wir eine Form, wie wir die aufgewendete Zeit für den laufenden Betrieb irgendwie erfassen und sichbar machen können (Ideen?). 
+*Update:* In einem [Kommentar](#comment-2669690497) unten und bei persönlichen Gesprächen wurde bemerkt, dass wir nirgendwo die Stunden an investierter Arbeit sichtbar gemacht haben (danke @abi und @claudia für den Hinweis). Das ist ein wichtiger Punkt. Wenn wir dafür Lohnkosten bezahlen würden, würde das Bild definitiv anders aussehen. Vielleicht finden wir eine Form, wie wir die aufgewendete Zeit für den laufenden Betrieb irgendwie erfassen und sichbar machen können (Ideen?).
 
 
 ## Warum transparente Finanzzahlen?

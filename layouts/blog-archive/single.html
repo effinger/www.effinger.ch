@@ -44,7 +44,7 @@
 
         <!-- Content -->
         <div class="col-sm-8">
-          {{ range (where .Site.Pages "Section" "blog").GroupByDate "2006" }}
+          {{ range (where .Site.RegularPages "Section" "blog").GroupByDate "2006" }}
           <div id="{{ .Key }}" class="year-anchor"></div>
           <h2 class="hs-line-11 font-alt">{{ .Key }}</h2>
 
