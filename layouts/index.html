@@ -1,13 +1,13 @@
 {{ define "main" }}
 <!-- Page Wrap -->
-<div class="page" id="top">
+<div class="page page-home" id="top">
 
   <nav class="main-nav dark transparent stick-fixed">
     {{ partial "navigation.html" . }}
   </nav>
 
   <!-- Home Section -->
-  <section class="home-section bg-dark-alfa-80 parallax-2 fixed-height-small" data-background="effinger_header.jpg" id="home">
+  <section class="home-section bg-dark-alfa-80 parallax-2 fixed-height-small" data-background="effinger_header.jpg">
     <div class="js-height-parent container">
 
       <!-- Hero Content -->
@@ -42,13 +42,13 @@ Für Jungunternehmer, Kreative, Handwerkerinnen, Weltveränderer, Bernerinnen, Z
   </section>
   <!-- End Home Section -->
 
-  <section class="page-section pt-80 pb-80 bg-gray-lighter" id="about">
+  <section class="page-section pt-80 pb-80 bg-gray-lighter">
     <div class="container relative">
       <div class="section-text">
         <h3 class="font-alt mb-60 text-center"><a href="/blog/">Effinger Stories</a></h3>
 
         <div class="row">
-          {{ range first 3 (where .Site.Pages "Section" "blog") }}
+          {{ range first 3 (where .Site.RegularPages "Section" "blog") }}
           <div class="col-sm-4">
             {{ partial "blog/summary_home.html" . }}
           </div>
@@ -61,7 +61,7 @@ Für Jungunternehmer, Kreative, Handwerkerinnen, Weltveränderer, Bernerinnen, Z
     </div>
   </section>
 
-  <section class="page-section pt-80 pb-80 event" id="about">
+  <section class="page-section pt-80 pb-80 event">
     <div class="container relative">
       <div class="section-text">
         <h3 class="font-alt mb-60 text-center"><a href="/blog/">Nächste Events</a></h3>
