@@ -1,0 +1,90 @@
+{{ define "main" }}
+<!-- Page Wrap -->
+<div class="page page-medien" id="top">
+
+  <nav class="main-nav stick-fixed">
+  {{ partial "navigation.html" . }}
+  </nav>
+
+  <!-- Header -->
+  <section class="small-section-header bg-gray-lighter">
+    <div class="relative container align-left pt-80">
+
+      <div class="row">
+
+        <div class="col-md-8">
+          <h1 class="hs-line-11 font-alt mb-0">Medien</h1>
+          <div class="hs-line-4 font-alt black mt-20 mt-xs-0">
+            Medienberichte über Effinger
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- End Header -->
+
+  {{ range $i, $e := .Data.Pages.GroupByDate "2006" }}
+    <section class="page-section pb-40 {{ if not (modBool $i 2) }}bg-gray{{ end }}">
+      <div class="container relative">
+        <div class="row">
+          <div class="col-md-5 col-md-offset-1 col-sm-6 col-xs-4 mb-80">
+            <h2 class="hs-line-11 font-alt">{{ $e.Key }}</h2>
+          </div>
+        </div>
+        {{ range $e.Pages }}
+        <div class="row">
+          <div class="col-md-5 col-md-offset-1 col-sm-6 col-xs-4 mb-80">
+            <!-- Image -->
+            <div class="blog-media mb-10 image-crop image-crop-4by3">
+              <div class="image-crop-inner"
+                style="background-image: url({{ .RelPermalink }}{{ .Params.image }})">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-5 col-sm-6 col-xs-8 mb-80">
+            <!-- Post Title -->
+            <h3 class="blog-item-title font-alt mt-0 hyphenate">{{ .Params.author }}</h3>
+
+            <!-- Date, Author -->
+            <div class="blog-item-data mb-20">
+              <a><i class="fa fa-clock-o fa-newspaper-o"></i>&nbsp;{{ .Description }}</a><br>
+              <a><i class="fa fa-clock-o fa-inline"></i>&nbsp;{{ .Date.Format "02.01.2006" }}</a>
+            </div>
+
+            <!-- Text Intro -->
+            <div class="post-prev-text">
+              <p>
+                {{ .Title }}
+              </p>
+            </div>
+
+            <!-- Read More Link -->
+            <div class="blog-item-foot">
+              {{ if .Params.video }}
+              <a href="{{ .Params.video }}" class="btn btn-mod btn-round btn-small mb-xs-10" target="_blank"><i class="fa fa-video-camera"></i> Podcast als Video</a>
+              {{ end }}
+              {{ if .Params.pdf }}
+              <a href="{{ .RelPermalink }}{{ .Params.pdf }}" class="btn btn-mod btn-round btn-small mb-xs-10" target="_blank"><i class="fa fa-download"></i> Artikel als PDF</a>
+              {{ end }}
+              {{ if .Params.online }}
+              <a href="{{ .Params.online }}" class="btn btn-mod btn-round btn-small mb-xs-10" target="_blank"><i class="fa fa-external-link"></i> Artikel Online</a>
+              {{ end }}
+              {{ if .Params.mp3 }}
+              <a href="{{ .Params.mp3 }}" class="btn btn-mod btn-round btn-small mb-xs-10" target="_blank"><i class="fa fa-music"></i> Podcast anhören</a>
+              {{ end }}
+            </div>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+    </section>
+  {{ end }}
+</div>
+<!-- End Page Wrap -->
+{{ end }}
+
+{{ define "body_includes" }}
+{{ partial "disqus_count.html" . }}
+{{ end }}

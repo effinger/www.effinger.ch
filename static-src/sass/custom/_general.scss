@@ -72,8 +72,9 @@ h3 a:focus {
 .image-crop {
   position: relative;
 
-  // Use this with any element and then set the image as background.
-  // This works for all sizes.
+  // Use with an image background: style="background-image: url(...)".
+  // Note: If used with an <img> tag it will only crop images height but not
+  //       the images width.
   .image-crop-inner {
     background-position: center center;
     background-repeat: no-repeat;
@@ -88,12 +89,24 @@ h3 a:focus {
   }
 }
 
+.image-crop-5by3 {
+  padding-top: 60%;
+}
+
 .image-crop-3by2 {
   padding-top: 66.666666667%;
 }
 
-.image-crop-5by3 {
-  padding-top: 60%;
+.image-crop-4by3 {
+  padding-top: 75%;
+}
+
+.image-crop-square {
+  padding-top: 100%;
+}
+
+.image-crop-2by3 {
+  padding-top: 150%;
 }
 
 
