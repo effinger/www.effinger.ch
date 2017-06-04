@@ -2,19 +2,19 @@
 <!-- Page Wrap -->
 <div class="page page-medien" id="top">
 
-  <nav class="main-nav stick-fixed">
+  <nav class="main-nav dark transparent stick-fixed">
   {{ partial "navigation.html" . }}
   </nav>
 
   <!-- Header -->
-  <section class="small-section-header bg-gray-lighter">
+  <section class="small-section-header bg-dark-lighter">
     <div class="relative container align-left pt-80">
 
       <div class="row">
 
         <div class="col-md-8">
           <h1 class="hs-line-11 font-alt mb-0">Medien</h1>
-          <div class="hs-line-4 font-alt black mt-20 mt-xs-0">
+          <div class="hs-line-4 font-alt mt-20 mt-xs-0">
             Medienberichte über Effinger
           </div>
         </div>
@@ -24,11 +24,26 @@
   </section>
   <!-- End Header -->
 
+  <!-- Medien Kit -->
+  <section class="page-section pt-80 pb-80 bg-gray">
+    <div class="container relative">
+      <div class="contact-item clearfix">
+        <h4 class="uppercase">Medienkit</h4>
+        <div class="wave-spacer"></div>
+        <div class="item">
+          <p>Fotos für Medien können unter folgendem Link heruntergeladen werden.</p>
+          <a href="https://sites.google.com/effinger.ch/medien/" target="_blank"
+              class="btn btn-mod btn-medium btn-round mt-20 white">&rarr; Zum Medienkit</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   {{ range $i, $e := .Data.Pages.GroupByDate "2006" }}
     <section class="page-section pb-40 {{ if not (modBool $i 2) }}bg-gray{{ end }}">
       <div class="container relative">
         <div class="row">
-          <div class="col-md-5 col-md-offset-1 col-sm-6 col-xs-4 mb-80">
+          <div class="col-md-5 col-md-offset-1 col-sm-6 col-xs-4">
             <h2 class="hs-line-11 font-alt">{{ $e.Key }}</h2>
           </div>
         </div>
