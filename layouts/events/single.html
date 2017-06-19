@@ -90,18 +90,18 @@
           </div>
         </div>
       </div>
-
       {{ if .Params.registration }}
       <!-- Event Registration -->
+      {{ $lastUrlElement := index (last 2 (split .URL "/")) 0 }}
       <div class="row pt-60" id="anmeldung">
         <div class="col-md-6">
           <h3 class="uppercase mt-0"><i class="fa fa-user-plus"></i> Anmeldung</h3>
           <!-- Form -->
           <form class="form event-manager-form"
-            data-folder-id ="{{ .Params.registration.folder_id }}"
-            data-event-id="{{ .Params.registration.event_id }}"
+            data-folder-id ="{{ .Site.Data.event_manager.folderId }}"
+            data-event-id="{{ $lastUrlElement }}"
             data-event-title="{{ .Title }}"
-            data-api-url="{{ .Params.registration.api_url }}">
+            data-api-url="{{ .Site.Data.event_manager.apiUrl }}">
             <div class="row">
               <div class="col-sm-6 mb-20 mb-md-10">
                 <input type="text" name="firstname" class="input-md form-control" placeholder="Vorname" maxlength="100">

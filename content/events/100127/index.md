@@ -9,10 +9,7 @@ address_link = "https://www.google.ch/maps/place/Hof+24,+3124+Belp/@46.8713873,7
 image = "hof-belpberg.jpg"
 description = "Wir feiern die Einweihung der gemeinsamen Werkstatt auf dem Belpberg. Schon seit Jahrzehnten wird auf diesem Bauernhof gebaut und repariert. Neu gibt es dort eine CNC-Maschine, welche computergesteuerte Arbeiten mit Holz und Alu ermöglicht."
 
-[registration]
-event_id = 100127
-folder_id = "0BxUuL-tU5pi2a21Eak51dDNnSE0"
-api_url = "https://script.google.com/macros/s/AKfycbzM-0WOT43rWxBRe7z-O0T8bNWDFUIhivv0GNnC3IqcX1EC7dze/exec"
+registration = true
 +++
 
 ![Hof Belbperg](hof-belpberg.jpg)
