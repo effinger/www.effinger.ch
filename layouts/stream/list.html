@@ -32,9 +32,10 @@
       <div class="col-sm-6 mb-md-50">
         <div class="team-item">
           <div class="team-item-image">
-            <img src="{{ .RelPermalink }}{{ .Params.image }}" alt="" />
+            <img src="{{ .Params.image }}" alt="" />
             <div class="team-item-detail">
-              <p class="font-alt normal">[[Date]]</p>
+              <p class="font-alt normal">{{ dateFormat "02.01.2006 15:04:05" .Date }}</p>
+              <p class="font-alt normal">{{ .Params.author }}</p>
             </div>
           </div>
           <div class="team-item-descr font-alt">
