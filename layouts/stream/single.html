@@ -1,0 +1,72 @@
+{{ define "main" }}
+<!-- Page Wrap -->
+<div class="page" id="top">
+
+  <nav class="main-nav transparent stick-fixed">
+    {{ partial "navigation.html" . }}
+  </nav>
+
+  <!-- Header -->
+  <section class="small-section-header bg-gray-lighter">
+    <div class="relative container align-left pt-80">
+
+      <div class="row">
+
+        <div class="col-md-8">
+          <h1 class="hs-line-11 font-alt mb-0">Stream</h1>
+          <!--
+          <div class="hs-line-4 font-alt black mt-20 mt-xs-0">
+            get in touch
+          </div>
+        -->
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- End Header -->
+
+  <section class="page-section">
+    <div class="container" id="stream-container">
+      <img src="{{ .Params.image }}" alt="" />
+      <p class="font-alt normal">{{ dateFormat "02.01.2006 15:04:05" .Date }}</p>
+      <p class="font-alt normal">{{ .Params.author }}</p>
+      <div>
+        {{ .Content }}
+      </div>
+    </div>
+  </section>
+
+</div>
+<!-- End Page Wrap -->
+{{ end }}
+
+{{ define "body_includes" }}
+<!-- Fetch streams
+<script type="text/javascript">
+$(document).ready(function() {
+  $.get( "https://script.google.com/macros/s/AKfycbzK4OUO-rs82EC8TwSnZ43mVZgN83fMbuVmg7JL8XZi91Larvg/exec", function( data ) {
+    $.each(data, function(i, item) {
+      $('#stream-container').append('\
+        <div class="col-sm-6 mb-md-50">\
+          <div class="team-item">\
+            <div class="team-item-image">\
+              <img src="' + item.url + '" alt="" />\
+              <div class="team-item-detail">\
+                <p class="font-alt normal">' + item.date + '</p>\
+              </div>\
+            </div>\
+            <div class="team-item-descr font-alt">\
+              <div class="team-item-name">\
+                ' + item.comment + '\
+              </div>\
+            </div>\
+          </div>\
+        </div>');
+    });
+  });
+
+});
+</script>
+-->
+{{ end }}

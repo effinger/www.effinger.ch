@@ -21,7 +21,11 @@
     <meta property="og:description" content="{{ .Description }}" />
     <meta property="og:url" content="{{ .Permalink }}" />
     {{ if .Params.image -}}
-    <meta property="og:image" content="{{ .Permalink }}{{ .Params.image }}" />
+      {{ if (hasPrefix .Params.image "http") -}}
+      <meta property="og:image" content="{{ .Params.image }}" />
+      {{ else }}
+      <meta property="og:image" content="{{ .Permalink }}{{ .Params.image }}" />
+      {{ end }}
     {{ else -}}
     <meta property="og:image" content="{{ .Site.BaseURL }}images/logo-black-tagline.png" />
     {{ end }}
