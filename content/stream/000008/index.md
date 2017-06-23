@@ -1,4 +1,0 @@
-+++
-image = "image.jpg"
-+++
-Schaumparty
