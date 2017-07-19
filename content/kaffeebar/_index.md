@@ -330,15 +330,32 @@ offers_title = "Menu"
       price = "5.00"
 
       [[offers.section.element.subelement]]
-        text = "Zitrone, Mandarine, Orange, Rosa Grapefruit"
+        text = "Zitrone, Mandarine, Rosa Grapefruit"
 
     [[offers.section.element]]
       text = "Chinotto Lurisia"
       price = "5.00"
 
     [[offers.section.element]]
-      text = "Club Mate"
+      text = "selo Coffee Fruit"
+      price = "5.50"
+
+      [[offers.section.element.subelement]]
+        text = "Koffeinhaltiges Erfrischungsgetränk aus der Kaffeekirsche"
+
+    [[offers.section.element]]
+      text = "Cucumis"
       price = "5.00"
+
+      [[offers.section.element.subelement]]
+        text = "Limonade auf Gurkensaftbasis"
+
+    [[offers.section.element]]
+      text = "Rose Lemonade"
+      price = "5.50"
+
+      [[offers.section.element.subelement]]
+        text = "Limonade mit Rosenessenzen"
 
     [[offers.section.element]]
       text = "Quittenschorle"
@@ -360,9 +377,6 @@ offers_title = "Menu"
 
       [[offers.section.element.subelement]]
         text = "- Peach, Greentea"
-
-      [[offers.section.element.subelement]]
-        text = "- Bramley Apple, Ginger"
 
       [[offers.section.element.subelement]]
         text = "- Kiwi, Lime, Mint"
@@ -428,25 +442,25 @@ offers_title = "Menu"
     column = "left"
 
     [[offers.section.element]]
-      text="Anchor Steam"
-      price="7.50"
+      text="Bière Ambrée - Haldemann"
+      price="6.00"
 
       [[offers.section.element.subelement]]
-        text="Red Ale (Amber), Hopfen- und Malznote, Caramell"
+        text="Amber, ausgewogene Hopfung, vollmundig"
 
     [[offers.section.element]]
-      text="Liberty Ale"
+      text="Pacifique - trois dames"
       price="7.50"
 
       [[offers.section.element.subelement]]
-        text="Pale Ale, hopfenbetont, fruchtig"
+        text="Pale Ale, tropisch-fruchtige Noten, gut gehopft"
 
     [[offers.section.element]]
-      text="Anchor IPA"
+      text="Innah - Officina della Birra"
       price="7.50"
 
       [[offers.section.element.subelement]]
-        text="IPA, bitter, herb, hopfenbetont"
+        text="IPA, Zitrusaromen, Malz, bitterer Abgang"
 
     [[offers.section.element]]
       text="Störtebeker"
@@ -463,11 +477,11 @@ offers_title = "Menu"
         text="Schwarzbier, Pfeffer, Kaffee, bittersüss"
 
     [[offers.section.element]]
-      text="La Fraîcheur - trois dames"
-      price="7.50"
+      text="Chopfab Summer"
+      price="6.50"
 
       [[offers.section.element.subelement]]
-        text="Belgian Style Blanche, Zitrusnoten, erfrischend"
+        text="Special White Ale, Weisswein-Bouquet, erfrischend"
 
     [[offers.section.element]]
       text="Appenzeller Leermond"
@@ -684,11 +698,11 @@ offers_title = "Menu"
 
       [[offers.section.element.subelement]]
         text="Gin 27, Appenzeller Dry Gin"
-        price="13.00"
+        price="11.00"
 
       [[offers.section.element.subelement]]
         text="* mit Tonic"
-        price="+ 4.00"
+        price="+ 3.00"
 
     [[offers.section.element]]
       text="Vodka"
