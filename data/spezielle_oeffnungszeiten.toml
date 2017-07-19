@@ -1,6 +1,5 @@
 geschlossen = """
-Öffnungszeiten Pfingsten:   
-Pfingstmontag geschlossen
+Am 31. Juli & 1. August ist geschlossen. Frohes Feiern!
 """
-geschlossen_display_start = 2017-05-31T00:00:00Z
-geschlossen_display_end = 2017-06-06T00:00:00Z
+geschlossen_display_start = 2017-07-27T00:00:00Z
+geschlossen_display_end = 2017-08-02T00:00:00Z
