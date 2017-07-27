@@ -22,7 +22,7 @@ prices = [
   "auf Anfrage"
 ]
 
-prices_excluding_vat = true
+prices_excluding_vat = false
 
 calendar_api_path = "https://script.google.com/macros/s/AKfycbwiAp5fLXtS_P16QUXV3nUBv0QiL1xTemNUe7JPxD61k0DTbtQ/exec"
 calendar_id = "effinger.ch_3737343630303933363438@resource.calendar.google.com"
