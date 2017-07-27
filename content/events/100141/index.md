@@ -11,8 +11,11 @@ image = "latte-art.jpg"
 registration = true
 +++
 
-![Latte Art](latte-art.jpg)
+<div class="embed-responsive embed-responsive-4by3">
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/8GeilGgv994?rel=0" frameborder="0" allowfullscreen></iframe>
+</div>
 
+<br>
 Möchtest du mal mit einer richtig grossen Kaffeemaschine guten Cappuccino machen? Und wie bekommt man die drei Schichten bei einem Latte Macchiato hin? Im Workshop lernst du, auf was man achten muss, um einen exzellenten Espresso zu machen und wie man den perfekten Milchschaum hinbekommt, um damit Latte Art auf den Kaffee zu zaubern.
 
 Du kannst Kaffee trinken, so viel du willst. Dazu gibt es Süsses aus der Backstube vom [Apfelgold](http://www.apfelgold.ch).
