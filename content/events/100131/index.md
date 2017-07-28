@@ -1,8 +1,8 @@
 +++
 title = "We Are Cinema – Das erste Virtual Reality Kino der Schweiz"
 
-startdate = 2017-08-11T19:00:00Z
-enddate = 2017-08-11T22:00:00Z
+startdate = 2017-09-01T19:00:00Z
+enddate = 2017-09-01T22:00:00Z
 categories = [ "E-0010" ]
 location = "Effingerstrasse 10, Bern (Untergeschoss)"
 address = "46.945842, 7.435864"
@@ -20,8 +20,8 @@ Das VR Kino findet jeweils um 19.00 / 20.00 / 21.00 Uhr statt.
 
 Folgende Filme werden gezeigt:
 
-* 19.00 Uhr: Lustige Kurzfilme in VR (Panchos Sandwich, Longing for Wilderness, Rasante Bobfahrt, Yoga-Pancho, Patent Ochsner)
-* 20.00 Uhr: Notes on Blindness
-* 21.00 Uhr: Adrenalin Filme in VR (Sonar, Longing for Wilderness, Gerettet: Air Zermatt, Patrouille Suisse)
+* 19.00 Uhr: Notes on Blindness
+* 20.00 Uhr: Dokus in VR (Patrouille Suisse, Gerettet: Air Zermatt, Eigerbesteigung, Tansania, Kampf gegen IS)
+* 21.00 Uhr: Lustige Kurzfilme in VR
 
 **Tickets für CHF 19.- unter** http://www.wearecinema.ch/tickets-bern
