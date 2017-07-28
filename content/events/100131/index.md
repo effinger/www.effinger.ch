@@ -24,4 +24,4 @@ Folgende Filme werden gezeigt:
 * 20.00 Uhr: Dokus in VR (Patrouille Suisse, Gerettet: Air Zermatt, Eigerbesteigung, Tansania, Kampf gegen IS)
 * 21.00 Uhr: Lustige Kurzfilme in VR
 
-**Tickets für CHF 19.- unter** http://www.wearecinema.ch/tickets-bern
+**Tickets unter** http://www.wearecinema.ch/tickets-bern

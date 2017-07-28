@@ -24,4 +24,4 @@ Folgende Filme werden gezeigt:
 * 20.00 Uhr: Adrenalin Filme in VR (Sonar, Longing for Wilderness, Gerettet: Air Zermatt, Patrouille Suisse)
 * 21.00 Uhr: Notes on Blindness
 
-**Tickets für CHF 19.- unter** http://www.wearecinema.ch/tickets-bern
+**Tickets unter** http://www.wearecinema.ch/tickets-bern
