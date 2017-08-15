@@ -87,7 +87,11 @@
               <a href="{{ .Params.online }}" class="btn btn-mod btn-round btn-small mb-xs-10" target="_blank"><i class="fa fa-external-link"></i> Artikel Online</a>
               {{ end }}
               {{ if .Params.mp3 }}
-              <a href="{{ .Params.mp3 }}" class="btn btn-mod btn-round btn-small mb-xs-10" target="_blank"><i class="fa fa-music"></i> Podcast anhören</a>
+                {{ if hasPrefix .Params.mp3 "http" }}
+                  <a href="{{ .Params.mp3 }}" class="btn btn-mod btn-round btn-small mb-xs-10" target="_blank"><i class="fa fa-music"></i> Podcast anhören</a>
+                {{ else }}
+                  <a href="{{ .RelPermalink }}{{ .Params.mp3 }}" class="btn btn-mod btn-round btn-small mb-xs-10" target="_blank"><i class="fa fa-music"></i> Podcast anhören</a>
+                {{ end }}
               {{ end }}
             </div>
           </div>
