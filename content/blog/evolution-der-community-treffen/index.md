@@ -1,15 +1,15 @@
 +++
 title = "Die Evolution der Community-Treffen"
 date = "2017-08-30"
-description = "Man könnte sagen, dass wir uns über die letzten drei Jahre rund ein Mal pro Monat als Community getroffen haben. Ich möchte in diesem Blogartikel zurück schauen, wie sich unsere Treffen verändert haben und auch vorwärts blicken, wie sie sich in Zukunft weiterentwickeln könnten."
-image = "2016-12-adventsapero.jpg"
+description = "Wir haben uns über die letzten drei Jahre rund ein Mal pro Monat als Community getroffen. Natürlich hiess es zu Beginn noch nicht Community-Treffen und auch sonst haben sich diese Treffen stark gewandelt. Schauen wir zurück, wie sich unsere Treffen verändert haben und blicken auch vorwärts, wie sie sich in Zukunft weiterentwickeln könnten."
+image = "2017-03-virtual-reality.jpg"
 author = "Marco Jakob"
 comments = true
 tags = [ "Community" ]
 +++
 
 <div class="lead">
-Man könnte sagen, dass wir uns über die letzten drei Jahre rund ein Mal pro Monat als Community getroffen haben. Natürlich hiess es zu Beginn noch nicht Community-Treffen und auch sonst haben sich diese Treffen stark gewandelt. Ich möchte in diesem Blogartikel zurück schauen, wie sich unsere Treffen verändert haben und auch vorwärts blicken, wie sie sich in Zukunft weiterentwickeln könnten.
+Wir haben uns über die letzten drei Jahre rund ein Mal pro Monat als Community getroffen. Natürlich hiess es zu Beginn noch nicht Community-Treffen und auch sonst haben sich diese Treffen stark gewandelt. Schauen wir zurück, wie sich unsere Treffen verändert haben und blicken auch vorwärts, wie sie sich in Zukunft weiterentwickeln könnten.
 </div>
 
 
