@@ -11,7 +11,7 @@ image = "permakultur.jpg"
 
 ![Prmakultur](permakultur.jpg)
 
-Wir sind ein paar Leute im Effinger, die sich für [Permakultur-Landwirtschaft](http://future.arte.tv/de/permakultur-landwirtschaft-der-zukunft) interessieren. Wir möchten auch im Effinger ein Projekt starten mit Aspekten von "Urban Farming" und Permakultur. Bereits haben wir erste Versuche durchgeführt mit dem Züchten von Pilzen auf Kaffeesatz.
+Wir sind ein paar Leute im Effinger, die sich für [Permakultur-Landwirtschaft](http://future.arte.tv/de/permakultur-landwirtschaft-der-zukunft) interessieren. Wir möchten auch im Effinger ein Projekt starten mit Aspekten von Permakultur. Bereits haben wir erste Versuche durchgeführt mit dem Züchten von Pilzen auf Kaffeesatz. Damit kann ein Abfallprodukt von unserer Kaffeebar und von den umliegenden Cafés weiter genutzt werden.
 
 Um unser Wissen zu erweitern, werden wir am 10. September bei einer Wanderung und Führung im Permakultur-Betrieb Birchhof teilnehmen. Interessierte sind herzlich willkommen, sich uns anzuschliessen.
 
@@ -19,4 +19,4 @@ Weitere Informationen unter: http://permakultur-landwirtschaft.org/wanderung/
 
 Bitte melde dich bei Interesse bei [marco@effinger.ch](mailto:marco@effinger.ch).
 
-Übrigens: Am [Community-Treffen vom 7. September](/events/100092/) werden wir auch schon eine Aktivität zum Thema "Urban Farming im Effinger" durchführen. Wir suchen noch Leute, die sich in diesem Bereich einsetzen möchten.
+Übrigens: Am [Community-Treffen vom 7. September](/events/100092/) werden wir auch schon eine Aktivität zum Thema "Permakultur-Landwirtschaft im Effinger" durchführen. Wir suchen noch Leute, die sich in diesem Bereich einsetzen möchten.
