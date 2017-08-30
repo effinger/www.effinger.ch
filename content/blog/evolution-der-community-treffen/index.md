@@ -155,7 +155,7 @@ Wir treffen uns jeweils am 1. Donnerstag im Monat im Effinger. Ab 18.00 Uhr zum 
 
 ## Die Zukunft
 
-Wie sich unsere Community-Treffen in Zukunft entwickeln werden, wissen wir nicht. Aber was wir wissen, ist, dass sie sich bestimmt ändern werden! Wir freuen uns darauf, zu lernen und neugierig neue Formen zu entdecken.
+Wie sich unsere Community-Treffen in Zukunft entwickeln werden, wissen wir nicht. Aber was wir wissen, ist, dass sie sich bestimmt ändern werden! Neue Ideen sind schon da, wie zum Beispiel, dass wir ein Potluck-Essen fest integrieren könnten. Wir freuen uns darauf, zu lernen und neugierig neue Formen zu entdecken.
 
 ![Virtual-Reality](2017-03-virtual-reality.jpg)
 
