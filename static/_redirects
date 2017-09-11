@@ -1,1 +1,2 @@
-/brownbag*  https://brownbag.herrbuerli.ch:splat  200
+/brownbag/  https://brownbag.herrbuerli.ch/  200
+/brownbag/*  https://brownbag.herrbuerli.ch/:splat  200
