@@ -51,6 +51,13 @@
   <section class="page-section event">
     <div class="container relative eventsingle">
       <h2 class="font-alt align-center mb-80">{{ .Title }}</h2>
+
+      {{ if (time .Params.enddate).Before now }}
+      <div class="alert alert-info text-center">
+        <i class="fa fa-ban"></i>
+        Event liegt in der Vergangenheit!
+      </div>
+      {{ end }}
       <div class="row">
         <div class="col-md-3">
           <div class="row mb-md-30">
@@ -96,12 +103,22 @@
       <div class="row pt-60" id="anmeldung">
         <div class="col-md-6">
           <h3 class="uppercase mt-0"><i class="fa fa-user-plus"></i> Anmeldung</h3>
+
+          <div class="event-manager-info alert alert-info" style="display:none;">
+          </div>
+
           <!-- Form -->
-          <form class="form event-manager-form"
-            data-folder-id ="{{ .Site.Data.event_manager.folderId }}"
+          <form class="form event-manager-form" style="display:none;"
+            data-event-folder="{{ .Site.Data.event_manager.folderId }}"
             data-event-id="{{ $lastUrlElement }}"
             data-event-title="{{ .Title }}"
-            data-api-url="{{ .Site.Data.event_manager.apiUrl }}">
+            {{ if isset .Params.registration "max" }}
+            data-event-max="{{ .Params.registration.max }}"
+            {{ end }}
+            {{ if isset .Params.registration "close" }}
+            data-event-close="{{ (time .Params.registration.close).Format "2006-01-02T15:04:05Z" }}"
+            {{ end }}
+            data-event-api="{{ .Site.Data.event_manager.apiUrl }}">
             <div class="row">
               <div class="col-sm-6 mb-20 mb-md-10">
                 <input type="text" name="firstname" class="input-md form-control" placeholder="Vorname" maxlength="100">
@@ -125,11 +142,18 @@
             </div>
           </form>
           <!-- End Form -->
+
+          <div class="event-manager-loading">
+            <i class="fa fa-spinner fa-spin fa-2x fa-fw"></i>
+          </div>
         </div>
         <div class="col-md-6 mt-md-60">
           <p class="event-manager-number-of-attendees uppercase">Teilnehmende</p>
           <ul class="list-unstyled event-manager-attendee-list">
           </ul>
+          <div class="event-manager-loading">
+            <i class="fa fa-spinner fa-spin fa-2x fa-fw"></i>
+          </div>
         </div>
       </div>
       <!-- End Event Registration -->

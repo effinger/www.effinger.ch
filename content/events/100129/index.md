@@ -8,7 +8,9 @@ location = "Innere Altachen, Zofingen"
 address_link = "https://www.google.ch/maps/dir/Innere+Altachen,+4800+Zofingen/Ackerstrasse+8,+Zofingen/@47.2890493,7.938292,15z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x4790258f6d30009d:0x20bcbf89d8dc59b5!2m2!1d7.9437565!2d47.2808485!1m5!1m1!1s0x4790257a5e79e89f:0x67212b669a30bb78!2m2!1d7.951071!2d47.2981993?hl=en"
 image = "umzug-urs.jpg"
 
-registration = true
+[registration]
+max = 20
+close = 2017-06-11T00:00:00Z
 +++
 
 ![Umzug Urs](umzug-urs.jpg)
