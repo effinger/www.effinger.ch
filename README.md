@@ -1,5 +1,11 @@
 # www.effinger.ch
 
+## Getting Started
+
+* Hugo installieren: https://gohugo.io/getting-started/installing/
+* command `hugo server` ausführen
+* Rendered Website ist dann unter `http://localhost:1313/` erreichbar
+
 ## Strukturideen
 
 ### Home
