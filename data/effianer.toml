@@ -1,5 +1,4 @@
 [[Person]]
-host = [ "Montag" ]
 name = "Urs Vögeli"
 gender = "m"
 image = "/images/effianer/urs-voegeli.jpg"
@@ -11,7 +10,6 @@ facebook = "urs.vogeli.3"
 instagram = ""
 
 [[Person]]
-host = [ "Montag" ]
 name = "Claudia Schären"
 gender = "f"
 image = "/images/effianer/claudia-schaeren.jpg"
@@ -23,7 +21,6 @@ facebook = ""
 instagram = ""
 
 [[Person]]
-host = [ "Montag" ]
 name = "Roland Studer"
 gender = "m"
 image = "/images/effianer/roland-studer.jpg"
@@ -35,7 +32,6 @@ facebook = ""
 instagram = ""
 
 [[Person]]
-host = [ "Montag" ]
 name = "David Brühlmeier"
 gender = "m"
 image = "/images/effianer/david-bruehlmeier.jpg"
@@ -47,7 +43,6 @@ facebook = ""
 instagram = ""
 
 [[Person]]
-host = [ "Dienstag" ]
 name = "Marco Jakob"
 gender = "m"
 image = "/images/effianer/marco-jakob.jpg"
@@ -59,7 +54,6 @@ facebook = "marco.jakob.x"
 instagram = ""
 
 [[Person]]
-host = [ "Dienstag" ]
 name = "Ismael Basler"
 gender = "m"
 image = "/images/effianer/ismael-basler.jpg"
@@ -71,7 +65,6 @@ facebook = ""
 instagram = ""
 
 [[Person]]
-host = [ "Dienstag" ]
 name = "Claudine Etter"
 gender = "f"
 image = "/images/effianer/claudine-etter.jpg"
@@ -83,7 +76,6 @@ facebook = ""
 instagram = "atelier.c"
 
 [[Person]]
-host = [ "Mittwoch" ]
 name = "Timon Andeer"
 gender = "m"
 image = "/images/effianer/timon-andeer.jpg"
@@ -95,7 +87,6 @@ facebook = "monmonupcycling"
 instagram = ""
 
 [[Person]]
-host = [ "Mittwoch" ]
 name = "Christa-Maria Tobler"
 gender = "f"
 image = "/images/effianer/christa-maria-tobler.jpg"
@@ -107,7 +98,6 @@ facebook = ""
 instagram = ""
 
 [[Person]]
-host = [ "Mittwoch" ]
 name = "Hanne Vie"
 gender = "f"
 image = "/images/effianer/hanne-vie.jpg"
@@ -119,7 +109,6 @@ facebook = ""
 instagram = ""
 
 [[Person]]
-host = [ "Mittwoch" ]
 name = "Salome Hostettler"
 gender = "f"
 image = "/images/effianer/salome-hostettler.jpg"
@@ -132,7 +121,6 @@ facebook = "salome.hostettler"
 instagram = ""
 
 [[Person]]
-host = [ "Donnerstag" ]
 name = "Jonathan Hess"
 gender = "m"
 image = "/images/effianer/jonathan-hess.jpg"
@@ -144,7 +132,6 @@ facebook = ""
 instagram = ""
 
 [[Person]]
-host = [ "Donnerstag" ]
 name = "Graziella Bärtsch"
 gender = "f"
 image = "/images/effianer/graziella-baertsch.jpg"
@@ -156,7 +143,6 @@ facebook = ""
 instagram = ""
 
 [[Person]]
-host = [ "Donnerstag" ]
 name = "Damaris Berger"
 gender = "f"
 image = "/images/effianer/damaris-berger.jpg"
@@ -168,7 +154,6 @@ facebook = ""
 instagram = "dmrsbrgr"
 
 [[Person]]
-host = [ "Freitag" ]
 name = "Oleg Lavrovsky"
 gender = "m"
 image = "/images/effianer/oleg-lavrovsky.jpg"
@@ -180,7 +165,6 @@ facebook = "lavrovsky"
 instagram = ""
 
 [[Person]]
-host = [ "Freitag" ]
 name = "Domenica Winkler"
 gender = "f"
 image = "/images/effianer/domenica-winkler.jpg"
@@ -193,7 +177,6 @@ facebook = ""
 instagram = "effingerbern"
 
 [[Person]]
-host = [ "Freitag" ]
 name = "Daniel Osterwalder"
 gender = "m"
 image = "/images/effianer/daniel-osterwalder.jpg"
@@ -205,7 +188,6 @@ facebook = "daniel.osterwalder.7"
 instagram = ""
 
 [[Person]]
-host = [ "Freitag" ]
 name = "Matthias Tobler"
 gender = "m"
 image = "/images/effianer/matthias-tobler.jpg"
@@ -217,7 +199,6 @@ facebook = ""
 instagram = ""
 
 [[Person]]
-host = [ "Freitag" ]
 name = "Timon Marmet"
 gender = "m"
 image = "/images/effianer/timon-marmet.jpg"
