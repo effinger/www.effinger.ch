@@ -116,7 +116,6 @@
       </div>
 
       <div class="row multi-columns-row">
-        {{ $today := index $.Site.Data.de.weekdays now.Weekday }}
         {{ range $.Site.Data.effianer.Person }}
         <!-- Effianer Item -->
         <div class="col-sm-6 col-md-3 col-lg-3 mb-140">
@@ -150,6 +149,19 @@
               <div class="team-item-name">
                 {{ .name }}
               </div>
+              <!-- Was used for fixed Host-Days.
+              {{ $today := index $.Site.Data.de.weekdays now.Weekday }}
+              <div class="team-item-role">
+                {{ .description }}
+                {{ if .host }}
+                  {{ if eq .gender "m" }}Gastgeber{{ else }}Gastgeberin{{ end }}
+                   am
+                  {{ $num_days := len .host }}
+                  {{ range $i, $day := .host }}{{ if gt $i 0 }}{{ if eq (add $i 1) $num_days }} und {{ else }}, {{ end }}{{ end }}
+                  {{ if eq $day $today }}<span class="active-day text-nowrap"><i class="fa fa-chevron-right"></i>{{ end }}{{ $day }}{{ if eq $day $today }}<i class="fa fa-chevron-left"></i></span>{{ end }}{{ end }}
+                {{ end }}
+              </div>
+              -->
             </div>
           </div>
         </div>

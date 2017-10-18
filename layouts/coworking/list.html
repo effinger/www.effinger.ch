@@ -468,65 +468,74 @@
   <section class="page-section" id="kontakt">
     <div class="relative container">
       <h1 class="hs-line-11 font-alt">Kontakt</h1>
-
-      {{ $today := index $.Site.Data.de.weekdays now.Weekday }}
-
-      {{ $.Scratch.Set "num_effianer_today" 0 }}
-      {{ range $.Site.Data.effianer.Person }}
-        {{ if in .host $today }}
-          {{ $.Scratch.Add "num_effianer_today" 1 }}
+      
+      {{/* TODO: HostString im Kalender holen */}}
+      {{ $hostString := lower "..." }}
+      
+      {{ $hostString := strings.TrimPrefix "host" $hostString }}
+      {{ $hostString := trim $hostString ".: " }}
+      {{ $.Scratch.Set "nameParts" (split $hostString " ") }}
+      {{ $.Scratch.Set "host" false }}
+      
+      {{ if gt (len $hostString) 2 }}
+        {{ range $.Site.Data.effianer.Person }}
+          {{ if and (in (lower .name) $hostString) (not ($.Scratch.Get "host")) }}
+            {{ $.Scratch.Set "host" . }}
+          {{ end }}
         {{ end }}
       {{ end }}
 
-      {{ if eq ($.Scratch.Get "num_effianer_today") 0 }}
       <div class="row">
+        {{ if $.Scratch.Get "host" }}
+        <div class="col-md-4 col-md-push-8 col-sm-6 mb-md-50">
+        {{ else }}
         <div class="col-md-4 col-sm-6 mb-50">
-      {{ else if eq ($.Scratch.Get "num_effianer_today") 1 }}
-      <p class="font-alt mb-80 mb-sm-40">Heute dein Gastgeber</p>
-      <div class="row">
-        <div class="col-md-4 col-md-push-8 col-sm-6 mb-md-50">
-      {{ else }}
-      <p class="font-alt mb-80 mb-sm-40">Heute deine Gastgeber</p>
-      <div class="row">
-        <div class="col-md-4 col-md-push-8 col-sm-6 mb-md-50">
-      {{ end }}
+        {{ end }}
           <div class="contact-item clearfix">
             <h4 class="uppercase">Kontakt Coworking</h4>
             <div class="wave-spacer"></div>
             <div class="item">
+              {{ partial "spezielle_oeffnungszeiten.html" . }}
               <p>Telefon<span><a href="tel:+41313982021">031 398 20 21</a></span></p>
               <p>E-Mail<span><a href="mailto:coworking@effinger.ch">coworking@effinger.ch</a></span></p>
               <p>Adresse<span><a href="https://www.google.ch/maps/place/Effinger+-+Kaffeebar+%26+Coworking+Space/@46.94604,7.4336198,17z/data=!3m1!4b1!4m2!3m1!1s0x478e39bf613a53f7:0x30f7464656fbe3b2">Effingerstr. 10, Bern</a></span></p>
             </div>
           </div>
         </div>
-        <div class="col-md-8 col-md-pull-4 col-sm-12">
-          <div class="row">
-            {{ range $.Site.Data.effianer.Person }}
-            {{ if in .host $today }}
-            <div class="col-sm-6 mb-100">
-              <div class="team-item">
-                <div class="team-item-image">
-                  <img src="{{ .image }}" alt="{{ .name }}" />
-                  <div class="team-item-detail">
-                    <p class="font-alt normal">{{ if eq .gender "m" }}Gastgeber{{ else }}Gastgeberin{{ end }}</p>
+        
+        {{ with $.Scratch.Get "host" }}
+          <div class="col-md-8 col-md-pull-4 col-sm-12">
+            <div class="row">
+
+              <div class="col-sm-6 mb-100">
+                <div class="team-item">
+                  <div class="team-item-image">
+                    <img src="{{ .image }}" alt="{{ .name }}" />
+                    <div class="team-item-detail">
+                      <p class="font-alt normal">Coworking</p>
+                    </div>
                   </div>
-                </div>
-                <div class="team-item-descr font-alt">
-                  <div class="team-item-name">
-                    {{ .name }}
+                  <div class="team-item-descr font-alt">
+                    <div class="team-item-name">
+                      {{ .name }}
+                    </div>
+                    <div class="team-item-role">
+                      <span class="active-day"><i class="fa fa-chevron-right"></i>{{ if eq .gender "m" }}Gastgeber{{ else }}Gastgeberin{{ end }}
+                         heute <i class="fa fa-chevron-left"></i>
+                       </span>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            {{ end }}
-            {{ end }}
           </div>
+        {{ end }}
+        
         </div>
-      </div>
 
-      <div class=" team-item">
-        <a href="/ueber/#effianer" class="btn btn-mod btn-border btn-medium btn-round">&rarr; Alle Gastgeber anzeigen</a>
+        <div class="team-item">
+          <a href="/ueber/#effianer" class="btn btn-mod btn-border btn-medium btn-round">&rarr; Alle Gastgeber anzeigen</a>
+        </div>
       </div>
     </div>
   </section>
