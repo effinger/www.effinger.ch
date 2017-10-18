@@ -102,9 +102,33 @@
       {{ $lastUrlElement := index (last 2 (split .URL "/")) 0 }}
       <div class="row pt-60" id="anmeldung">
         <div class="col-md-6">
-          <h3 class="uppercase mt-0"><i class="fa fa-user-plus"></i> Anmeldung</h3>
+          <h3 class="uppercase mt-0 mb-0"><i class="fa fa-user-plus"></i> Anmeldung</h3>
+          
+          <div class="event-manager-close">
+            {{ if .Params.registration.close }}
+              <i class="fa fa-clock-o"></i> Anmeldeschluss: {{ dateFormat "02.01.2006" .Params.registration.close }} 
+              {{ $delta := (time .Params.registration.close).Sub now }}
+              {{ if gt $delta.Hours 24 }}
+              (noch {{ int (div $delta.Hours 24) }} Tage)
+              {{ else if ge (int $delta.Hours) 2 }}
+              (nur noch {{ int $delta.Hours }} Stunden!)
+              {{ else if eq (int $delta.Hours) 1 }}
+              (nur noch 1 Stunde!)
+              {{ else if gt (int $delta.Minutes) 1 }}
+              (nur noch {{ int $delta.Minutes }} Minuten!)
+              {{ else }}
+              (allerletzte Minute!)
+              {{ end }}
+            {{ end }}
+            &nbsp;
+          </div>
+          
 
           <div class="event-manager-info alert alert-info" style="display:none;">
+          </div>
+          
+          <div class="event-manager-loading">
+            <i class="fa fa-spinner fa-spin fa-2x fa-fw"></i>
           </div>
 
           <!-- Form -->
@@ -112,10 +136,10 @@
             data-event-folder="{{ .Site.Data.event_manager.folderId }}"
             data-event-id="{{ $lastUrlElement }}"
             data-event-title="{{ .Title }}"
-            {{ if isset .Params.registration "max" }}
+            {{ if .Params.registration.max }}
             data-event-max="{{ .Params.registration.max }}"
             {{ end }}
-            {{ if isset .Params.registration "close" }}
+            {{ if .Params.registration.close }}
             data-event-close="{{ (time .Params.registration.close).Format "2006-01-02T15:04:05Z" }}"
             {{ end }}
             data-event-api="{{ .Site.Data.event_manager.apiUrl }}">
@@ -143,17 +167,27 @@
           </form>
           <!-- End Form -->
 
-          <div class="event-manager-loading">
-            <i class="fa fa-spinner fa-spin fa-2x fa-fw"></i>
-          </div>
         </div>
         <div class="col-md-6 mt-md-60">
           <p class="event-manager-number-of-attendees uppercase">Teilnehmende</p>
-          <ul class="list-unstyled event-manager-attendee-list">
-          </ul>
+          
+          <div class="event-manager-max">
+            {{ if .Params.registration.max }}
+              <i class="fa fa-users"></i> Max:
+              {{ if gt .Params.registration.max 1 }}
+              {{ .Params.registration.max }} Plätze
+              {{ else }}
+              1 Platz
+              {{ end }}
+            {{ end }}
+            &nbsp;
+          </div>
+          
           <div class="event-manager-loading">
             <i class="fa fa-spinner fa-spin fa-2x fa-fw"></i>
           </div>
+          <ul class="list-unstyled event-manager-attendee-list">
+          </ul>
         </div>
       </div>
       <!-- End Event Registration -->

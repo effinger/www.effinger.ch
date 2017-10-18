@@ -10,8 +10,8 @@ address_link = "https://www.google.ch/maps/place/Effinger+-+Kaffeebar+%26+Cowork
 image = "latte-art.jpg"
 
 [registration]
-max = 6
-close = 2017-09-23T00:00:00Z
+  max = 6
+  close = 2017-09-23T00:00:00Z
 +++
 
 <div class="embed-responsive embed-responsive-4by3">

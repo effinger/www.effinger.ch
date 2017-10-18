@@ -9,8 +9,8 @@ address_link = "https://www.google.ch/maps/dir/Innere+Altachen,+4800+Zofingen/Ac
 image = "umzug-urs.jpg"
 
 [registration]
-max = 20
-close = 2017-06-11T00:00:00Z
+  max = 20
+  close = 2017-06-11T00:00:00Z
 +++
 
 ![Umzug Urs](umzug-urs.jpg)

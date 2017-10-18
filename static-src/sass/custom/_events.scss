@@ -1,4 +1,5 @@
 .event {
+  
   .eventlist {
     .event-item {
       overflow: hidden;
@@ -170,5 +171,17 @@
         left: 20px;
       }
     }
+  }
+
+  .event-manager-close,
+  .event-manager-max {
+    font-weight: 300;
+    font-size: 14px;
+    color: #aaa;
+    margin-bottom: 20px;
+  }
+  
+  .event-manager-number-of-attendees {
+    margin-bottom: 8px;
   }
 }

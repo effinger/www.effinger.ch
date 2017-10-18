@@ -10,8 +10,8 @@ image = "hof-belpberg.jpg"
 description = "Wir feiern die Einweihung der gemeinsamen Werkstatt auf dem Belpberg. Schon seit Jahrzehnten wird auf diesem Bauernhof gebaut und repariert. Neu gibt es dort eine CNC-Maschine, welche computergesteuerte Arbeiten mit Holz und Alu ermöglicht."
 
 [registration]
-max = 50
-close = 2017-04-30T00:00:00Z
+  max = 50
+  close = 2017-04-30T00:00:00Z
 +++
 
 ![Hof Belbperg](hof-belpberg.jpg)
