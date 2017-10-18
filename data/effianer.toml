@@ -1,3 +1,7 @@
+# API for accessing the host calendar information.
+apiUrl = "https://script.google.com/a/effinger.ch/macros/s/AKfycbw3aGTPwR4t_UdMmcwjQEERrMN_pbx5Dl6NYXVf8zGlzKU5_Y8/exec"
+calendarId = "effinger.ch_3736303136393637343739@resource.calendar.google.com"
+
 [[Person]]
 name = "Urs Vögeli"
 gender = "m"

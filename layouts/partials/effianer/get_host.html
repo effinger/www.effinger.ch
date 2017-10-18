@@ -1,0 +1,16 @@
+{{/* HostString im Kalender holen */}}
+{{ $hostString := getJSON (print $.Site.Data.effianer.apiUrl "?calendarId=" $.Site.Data.effianer.calendarId) }}
+{{ $hostString := lower ($hostString.results) }}
+
+{{ $hostString := strings.TrimPrefix "host" $hostString }}
+{{ $hostString := trim $hostString ".: " }}
+{{ $.Scratch.Set "nameParts" (split $hostString " ") }}
+{{ $.Scratch.Set "host" false }}
+
+{{ if gt (len $hostString) 2 }}
+  {{ range $.Site.Data.effianer.Person }}
+    {{ if and (in (lower .name) $hostString) (not ($.Scratch.Get "host")) }}
+      {{ $.Scratch.Set "host" . }}
+    {{ end }}
+  {{ end }}
+{{ end }}

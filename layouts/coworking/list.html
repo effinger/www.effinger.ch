@@ -469,21 +469,7 @@
     <div class="relative container">
       <h1 class="hs-line-11 font-alt">Kontakt</h1>
       
-      {{/* TODO: HostString im Kalender holen */}}
-      {{ $hostString := lower "..." }}
-      
-      {{ $hostString := strings.TrimPrefix "host" $hostString }}
-      {{ $hostString := trim $hostString ".: " }}
-      {{ $.Scratch.Set "nameParts" (split $hostString " ") }}
-      {{ $.Scratch.Set "host" false }}
-      
-      {{ if gt (len $hostString) 2 }}
-        {{ range $.Site.Data.effianer.Person }}
-          {{ if and (in (lower .name) $hostString) (not ($.Scratch.Get "host")) }}
-            {{ $.Scratch.Set "host" . }}
-          {{ end }}
-        {{ end }}
-      {{ end }}
+      {{ partial "effianer/get_host.html" . }}
 
       <div class="row">
         {{ if $.Scratch.Get "host" }}
@@ -520,8 +506,7 @@
                       {{ .name }}
                     </div>
                     <div class="team-item-role">
-                      <span class="active-day"><i class="fa fa-chevron-right"></i>{{ if eq .gender "m" }}Gastgeber{{ else }}Gastgeberin{{ end }}
-                         heute <i class="fa fa-chevron-left"></i>
+                      <span class="active-day"><i class="fa fa-chevron-right"></i>Heute {{ if eq .gender "m" }}Gastgeber{{ else }}Gastgeberin{{ end }}<i class="fa fa-chevron-left"></i>
                        </span>
                     </div>
                   </div>
