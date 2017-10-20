@@ -1,6 +1,6 @@
 +++
 title = "Bierdegustation"
-description = "Bei unserer Bierdegustation kommen Sie in den Genuss von 9 verschiedenen Biersorten, welche alle aus Kleinbrauereien stammen. Lassen Sie sich vom Biersommelier Michael Gfeller überraschen!"
+description = "Bei unserer Bierdegustation kommst du in den Genuss von 9 verschiedenen Biersorten, welche alle aus Kleinbrauereien stammen. Lasse dich vom Biersommelier Michael Gfeller überraschen!"
 startdate = 2017-11-16T18:30:00Z
 enddate = 2017-11-16T21:00:00Z
 categories = [ "Community" ]
@@ -16,9 +16,9 @@ image = "bierdegustation.jpg"
 
 ## Reise in die Welt der Biere
 
-Bei unserer 2.5- bis 3-stündigen Bierdegustation kommen Sie in den Genuss von 9 verschiedenen Biersorten, welche alle aus Kleinbrauereien mit Herz stammen. Es erwartet Sie ein Erlebnis, das all Ihre Geschmacksnerven anregen wird. Zwei Biersorten werden mit kleinen Häppchen als Food Pairing kombiniert. Lassen Sie sich vom Biersommelier Michael Gfeller überraschen! Ein Erlebnis in Kontrast und Harmonie.
+Bei unserer 2.5- bis 3-stündigen Bierdegustation kommst du in den Genuss von 9 verschiedenen Biersorten, welche alle aus Kleinbrauereien mit Herz stammen. Es erwartet dich ein Erlebnis, das all deine Geschmacksnerven anregen wird. Zwei Biersorten werden mit kleinen Häppchen als Food Pairing kombiniert. Lasse dich vom Biersommelier Michael Gfeller überraschen! Ein Erlebnis in Kontrast und Harmonie.
 
-Neben einem gelungenen Abend unter Freunden werden Sie Geschichten und Anekdoten rund ums Thema Bier erfahren.
+Neben einem gelungenen Abend unter Freunden wirst du Geschichten und Anekdoten rund ums Thema Bier erfahren.
 
 
 * **Kosten**: CHF 90   
