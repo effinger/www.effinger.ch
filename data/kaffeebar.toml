@@ -1,0 +1,41 @@
+[[Person]]
+name = "Dominic"
+gender = "m"
+image = "/images/kaffeebar/dominic.jpg"
+comment = ""
+
+[[Person]]
+name = "Corinne"
+gender = "f"
+image = "/images/kaffeebar/corinne.jpg"
+comment = "Möge dein Kaffee stark und dein Montag kurz sein."
+
+[[Person]]
+name = "Hanne"
+gender = "f"
+image = "/images/kaffeebar/hanne.jpg"
+comment = ""
+
+[[Person]]
+name = "Kiona"
+gender = "f"
+image = "/images/kaffeebar/kiona.jpg"
+comment = "Und warum trinkst du Kaffee?"
+
+[[Person]]
+name = "Rebecca"
+gender = "f"
+image = "/images/kaffeebar/rebecca.jpg"
+comment = ""
+
+[[Person]]
+name = "Sabina"
+gender = "f"
+image = "/images/kaffeebar/sabina.jpg"
+comment = ""
+
+[[Person]]
+name = "tina"
+gender = "f"
+image = "/images/kaffeebar/tina.jpg"
+comment = "Das Leben ist an und für sich eine riskante Angelegenheit."
