@@ -116,8 +116,10 @@
               (nur noch 1 Stunde!)
               {{ else if gt (int $delta.Minutes) 1 }}
               (nur noch {{ int $delta.Minutes }} Minuten!)
-              {{ else }}
+              {{ else if gt $delta.Seconds 0 }}
               (allerletzte Minute!)
+              {{ else }}
+              (geschlossen)
               {{ end }}
             {{ end }}
             &nbsp;
