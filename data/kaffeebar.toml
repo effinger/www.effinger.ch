@@ -2,7 +2,7 @@
 name = "Dominic"
 gender = "m"
 image = "/images/kaffeebar/dominic.jpg"
-comment = ""
+comment = "tip is top"
 
 [[Person]]
 name = "Corinne"
@@ -14,7 +14,7 @@ comment = "Möge dein Kaffee stark und dein Montag kurz sein."
 name = "Hanne"
 gender = "f"
 image = "/images/kaffeebar/hanne.jpg"
-comment = ""
+comment = "Eg e kaffetørst!"
 
 [[Person]]
 name = "Kiona"
@@ -26,13 +26,13 @@ comment = "Und warum trinkst du Kaffee?"
 name = "Rebecca"
 gender = "f"
 image = "/images/kaffeebar/rebecca.jpg"
-comment = ""
+comment = "So Alegria!"
 
 [[Person]]
 name = "Sabina"
 gender = "f"
 image = "/images/kaffeebar/sabina.jpg"
-comment = ""
+comment = "A cup of coffee a day keeps the sorrows away."
 
 [[Person]]
 name = "tina"
