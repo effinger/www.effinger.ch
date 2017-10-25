@@ -2,7 +2,7 @@
 name = "Dominic"
 gender = "m"
 image = "/images/kaffeebar/dominic.jpg"
-comment = "tip is top"
+comment = "Life is too short to drink Latte Macchiatto."
 
 [[Person]]
 name = "Corinne"
