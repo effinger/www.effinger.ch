@@ -27,7 +27,7 @@ Für wen es ist: Unsere Teilnehmenden beraten oder leiten als Change-Angels und 
 
 **Organisator:** Daniel Osterwalder, visualdynamics
 
-**Datum:** 09.11 - 12.11.2017	/ 09:00-16:00 Uhr
+**Datum:** 23.11 - 26.11.2017	/ 09:00-16:00 Uhr
 
 **Mehr Infos und Anmeldung** unter
 [www.visualdynammics.ch](http://visualdynamics.ch/detailseite-seminar.html?seminar=26&event=69)
