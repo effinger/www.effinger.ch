@@ -1,8 +1,8 @@
 +++
 title = "Facilitation – Modul 3: Organisationen im Wandel und das Spiel in Raum und Zeit"
 
-startdate = 2017-11-09T09:00:00Z
-enddate = 2017-11-12T16:00:00Z
+startdate = 2017-11-23T09:00:00Z
+enddate = 2017-11-26T16:00:00Z
 categories = [ "Community" ]
 location = "Effingerstrasse 10, Bern"
 address = "46.945842, 7.435864"
