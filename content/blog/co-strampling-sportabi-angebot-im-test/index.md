@@ -1,6 +1,6 @@
 +++
 title = "Co-Strampling: Das neue Sportabi-Angebot im Test"
-date = "2017-10-27"
+date = "2017-10-28"
 description = "Seit einigen Wochen läuft bei uns probeweise ein übertragbares Sportabi - alles inklusive für Effianer."
 image = "effinger-fitness.jpg"
 author = "Claudine Etter"
