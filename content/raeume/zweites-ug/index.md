@@ -2,10 +2,13 @@
 title = "E-0010"
 weight = 6
 description = "Raum «E-0010» (Zweites UG) für Events, Aktivitäten und digitale Projekte."
-image = "UG-Mockup.jpg"
+image = "Raum-UG_00002.jpg"
 
 gallery = [
-  "UG-Mockup.jpg"
+  "Raum-UG_00002.jpg",
+  "Raum-UG_00001.jpg",
+  "Raum-UG_00003.jpg",
+  "Raum-UG_00004.jpg"
 ]
 
 square_meters = 94
