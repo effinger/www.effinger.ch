@@ -35,7 +35,13 @@ image = "/images/kaffeebar/sabina.jpg"
 comment = "A cup of coffee a day keeps the sorrows away."
 
 [[Person]]
-name = "tina"
+name = "Tina"
 gender = "f"
 image = "/images/kaffeebar/tina.jpg"
 comment = "Das Leben ist an und für sich eine riskante Angelegenheit."
+
+[[Person]]
+name = "Luna"
+gender = "f"
+image = "/images/kaffeebar/luna.jpg"
+comment = "un cappuccino per favore"
