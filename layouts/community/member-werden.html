@@ -1,0 +1,146 @@
+{{ define "main" }}
+<!-- Page Wrap -->
+<div class="page organisation" id="top">
+
+  <nav class="main-nav dark transparent stick-fixed">
+    {{ partial "navigation.html" . }}
+  </nav>
+
+  <!-- Header -->
+  <section class="small-section-header bg-dark-lighter">
+    <div class="relative container align-left pt-80">
+
+      <div class="row">
+
+        <div class="col-md-8">
+          <h1 class="hs-line-11 font-alt mb-0">Member werden</h1>
+          <!--
+          <div class="hs-line-4 font-alt mt-20 mt-xs-0">
+          Grundsätze
+          </div>
+          -->
+        </div>
+
+        <div class="col-md-4 mt-30">
+          <div class="mod-breadcrumbs font-alt align-right">
+            <a href="/community/"><i class="fa fa-angle-left"></i> Zurück zu Community</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- End Header -->
+
+  <!-- Section -->
+  <section class="page-section bg-gray">
+    <div class="container relative">
+
+      <div class="row">
+
+        <!-- Content -->
+        <div class="col-sm-10 col-sm-offset-1">
+
+          <!-- Text -->
+          <div class="section-text">
+            {{ .Content }}
+            
+          </div>
+          <!-- End Text -->
+
+        </div>
+        <!-- End Content -->
+      </div>
+
+    </div>
+  </section>
+  <!-- End Section -->
+  
+  <!-- Section -->
+  <section class="page-section">
+    <div class="container relative">
+
+      <div class="row">
+
+        <!-- Content -->
+        <div class="col-sm-10 col-sm-offset-1">
+
+          <!-- Text -->
+          <div class="section-text">
+            <h1 class="mt-0 font-alt">{{ .Title }}</h1>
+
+            <form action="thank-you" class="form" netlify>
+
+              <div class="row">
+                
+                <div class="col-sm-6 mb-20 mb-md-10">
+                  <label for="res-contact-name">Vorname</label>
+                  <input type="text" name="res-contact-name" id="res-contact-name" class="input-md form-control" placeholder="" maxlength="100">
+                </div>
+                
+                <div class="col-sm-6 mb-20 mb-md-10">
+                  <label for="res-contact-company">Nachname</label>
+                  <input type="text" name="res-contact-company" id="res-contact-company" class="input-md form-control" placeholder="" maxlength="100">
+                </div>
+              </div>
+          
+              <div class="row">
+                <div class="col-sm-4 mb-20 mb-md-10">
+                  <label for="res-date">Geburtsdatum</label>
+                  <input type="text" name="res-date" id="res-date" class="input-md form-control" placeholder="tt.mm.jjjj" maxlength="10">
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-sm-6 mb-20 mb-md-10">
+                  <label for="res-contact-street">Strasse</label>
+                  <input type="text" name="res-contact-street" id="res-contact-street" class="input-md form-control" placeholder="" maxlength="100">
+                </div>
+                
+                <div class="col-sm-2 mb-20 mb-md-10">
+                  <label for="res-contact-zip">PLZ</label>
+                  <input type="text" name="res-contact-zip" id="res-contact-zip" class="input-md form-control" placeholder="" maxlength="5">
+                </div>
+                
+                <div class="col-sm-4 mb-20 mb-md-10">
+                  <label for="res-contact-city">Ort</label>
+                  <input type="text" name="res-contact-city" id="res-contact-city" class="input-md form-control" placeholder="" maxlength="50">
+                </div>
+              </div>
+              
+              <div class="row">
+                
+                <div class="col-sm-6 mb-20 mb-md-10">
+                  <label for="res-contact-email">E-Mail-Adresse</label>
+                  <input type="email" name="res-contact-email" id="res-contact-email" class="input-md form-control" placeholder="" maxlength="100">
+                </div>
+
+                
+                <div class="col-sm-6 mb-20 mb-md-10">
+                  <label for="res-contact-phone">Telefon</label>
+                  <input type="text" name="res-contact-phone" id="res-contact-phone" class="input-md form-control" placeholder="" maxlength="100">
+                </div>
+              </div>
+
+              <div class="mb-20 mb-md-10">
+                <label for="res-comments">Bemerkungen</label>
+                <textarea name="res-comments" id="res-comments" class="input-md form-control" rows="3" placeholder="" maxlength="400"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-mod btn-large btn-round">Abschicken</button>
+
+            </form>
+            
+          </div>
+          <!-- End Text -->
+
+        </div>
+        <!-- End Content -->
+      </div>
+
+    </div>
+  </section>
+  <!-- End Section -->
+</div>
+<!-- End Page Wrap -->
+{{ end }}

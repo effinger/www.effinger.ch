@@ -130,6 +130,10 @@ table .clickable-row {
   border: none;
 }
 
+label {
+  font-weight: normal;
+}
+
 
 // Font Awesome Inline instead of inline-block to avoid line-break.
 .fa-inline {
