@@ -23,7 +23,7 @@ Und genau dies wollen wir hier transparent offen legen.
 
 Wir betonen immer wieder, dass unser zentrales Element die Menschen und unsere Beziehungen zueinander sind. Das ist das, was wir unsere *Effinger Community* nennen.
 
-Jede Person, welche sich mit uns und unseren Grundsätzen identifiziert oder uns einfach unterstützen möchte, darf Teil dieser Community sein. Dies ist möglich, auch wenn du keinen Arbeitsplatz bei uns hast. Dazu haben wir die [Community Membership](/ueber/#community) eingeführt.
+Jede Person, welche sich mit uns und unseren Grundsätzen identifiziert oder uns einfach unterstützen möchte, darf Teil dieser Community sein. Dies ist möglich, auch wenn du keinen Arbeitsplatz bei uns hast. Dazu haben wir die [Community Membership](/community/) eingeführt.
 
 
 <div class="row">

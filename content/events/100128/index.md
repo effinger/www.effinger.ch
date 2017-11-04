@@ -26,7 +26,7 @@ Sind dies wirklich Gegensätze oder einfach nur Spannungen, die ausgeglichen und
 
 Ort: Effinger Kaffeebar & Coworking Space, Raum «Grosse Schanze» 1. OG
 
-Trägerschaft: [Effinger Community](https://www.effinger.ch/ueber/) und [Forum Demokratie und Menschenrechte](https://www.facebook.com/Forum-Demokratie-und-Menschenrechte-669507219864337/)
+Trägerschaft: [Effinger Community](https://www.effinger.ch/community/) und [Forum Demokratie und Menschenrechte](https://www.facebook.com/Forum-Demokratie-und-Menschenrechte-669507219864337/)
 
 Podiumsteilnehmer:
 

@@ -148,7 +148,7 @@ Wir möchten die Community-Treffen ein weiteres Mal weiterentwickeln. **Es soll 
 
 So bieten wir die Treffen an als Plattform, wo Leute ihre Projekte vorstellen können. Als Community nehmen wir uns dann eine Stunde Zeit, um in Gruppen eine Idee vorwärts zu bringen oder konkret an Projekten mitzuarbeiten.
 
-Wenn du also ein Projekt oder eine Idee hast, informiere kurz einen [Effianer](/ueber/) darüber und komm damit an das nächste [Treffen](/events/). Und es braucht Leute, die sich gerne für eine Stunde in ein Projekt vertiefen, motivierendes Feedback geben und damit mithelfen, dass tolle Ideen zur Umsetzunge gelangen können. Alle, natürlich auch Nicht-Member, sind herzlich willkommen.
+Wenn du also ein Projekt oder eine Idee hast, informiere kurz einen [Effianer](/community/) darüber und komm damit an das nächste [Treffen](/events/). Und es braucht Leute, die sich gerne für eine Stunde in ein Projekt vertiefen, motivierendes Feedback geben und damit mithelfen, dass tolle Ideen zur Umsetzunge gelangen können. Alle, natürlich auch Nicht-Member, sind herzlich willkommen.
 
 Wir treffen uns jeweils am 1. Donnerstag im Monat im Effinger. Ab 18.00 Uhr zum gemeinsamen Essen (jeder bringt sein eigenes Essen mit) und ab 19.00 Uhr zum offiziellen Treffen im 1. OG. Frag einfach im Coworking oder in der Kaffeebar, falls du dich mit den Räumlickkeiten nicht auskennst. Alle Daten für die Communitytreffen findest du in unserem [Kalender](/events/). Anmeldung ist keine erforderlich.
 

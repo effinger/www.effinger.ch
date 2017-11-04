@@ -4,8 +4,7 @@ description = "Wir sind eine Heimat für Jungunternehmer, Kreative und andere W
 image = "community_header.jpg"
 
 aliases = [
-    "/community/",
-    "/community/ueber/"
+    "/ueber/"
 ]
 
 [menu.main]

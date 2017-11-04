@@ -23,7 +23,7 @@ In einem früheren Blogeintrag haben wir beschrieben, wie ein [Coworking Space z
 Ich werde immer wieder gefragt, wie gross denn unser Team oder unsere Community sei. Das ist gar nicht so einfach zu beantworten: 
 
 * 4 Initiatorinnen/Initiatoren
-* 7 [Köpfe](/ueber/) auf der Website
+* 7 [Köpfe](/community/) auf der Website
 * 22 auf [Slack](/blog/slack/)
 * ca. 50 Teilnehmende an Diskussionabenden
 * 146 Abonnenten des Newsletters

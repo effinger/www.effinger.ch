@@ -49,7 +49,7 @@ Weitere Kanäle, über die man Neuigkeiten erfahren kann sind [Facebook](https:/
 
 ## (Engere) Community
 
-Zur engeren Community zählen wir alle, welche mit einer Rolle Verantwortung übernehmen. Zurzeit sind dies **elf Personen**. Nächste Woche werden am Community-Treffen wieder ca. drei Personen dazu kommen. Alle aktuellen Rollenträger mit den entsprechenden Rollen sind auf der [über uns Seite](/ueber/) aufgeführt (Update: im Moment sind die Rollen nicht mehr drauf).
+Zur engeren Community zählen wir alle, welche mit einer Rolle Verantwortung übernehmen. Zurzeit sind dies **elf Personen**. Nächste Woche werden am Community-Treffen wieder ca. drei Personen dazu kommen. Alle aktuellen Rollenträger mit den entsprechenden Rollen sind auf der [über uns Seite](/community/) aufgeführt (Update: im Moment sind die Rollen nicht mehr drauf).
 
 
 ## Als Mieter und Gastgeber von Anfang an dabei sein
