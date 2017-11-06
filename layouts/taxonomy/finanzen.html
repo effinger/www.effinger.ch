@@ -45,7 +45,7 @@
 
         <div class="row mb-100">
 
-          {{ range $i, $e := sort .Pages "Date" "asc" }}
+          {{ range $i, $e := sort .Pages "Date" "desc" }}
 
             {{/* Calculation of total Ertrag und Aufwand. */}}
             {{ $.Scratch.Set "total_ertrag" 0 }}
