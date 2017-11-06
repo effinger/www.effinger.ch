@@ -1,7 +1,7 @@
 +++
 layout = "member-werden"
 title = "Community Member werden"
-description = "."
+description = "Anmeldung für eine Effinger Community Membership."
 +++
 
 ### Folgendes gehört zur Membership
