@@ -134,6 +134,19 @@ label {
   font-weight: normal;
 }
 
+form {
+  .invalid {
+    border-color: #e41919 !important;
+  }
+  
+  .alert-close {
+    padding: 0;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    -webkit-appearance: none;
+  }
+}
 
 // Font Awesome Inline instead of inline-block to avoid line-break.
 .fa-inline {

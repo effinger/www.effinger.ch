@@ -69,54 +69,63 @@
           <div class="section-text">
             <h1 class="mt-0 font-alt">{{ .Title }}</h1>
 
-            <form name="Community Membership" action="thank-you" class="form" netlify>
-
+            <form name="Community Membership" action="" class="form" netlify>
+              <input type="hidden" name="form-name" value="Community Membership" />
+              
               <div class="row">
                 
                 <div class="col-sm-6 mb-20 mb-md-10">
-                  <label for="vorname">Vorname</label>
+                  <label for="firma">Firma</label>
+                  <input type="text" name="firma" class="input-md form-control" placeholder="" maxlength="100">
+                </div>
+              </div>
+              
+              <div class="row">
+                
+                <div class="col-sm-6 mb-20 mb-md-10">
+                  <label for="vorname">Vorname*</label>
                   <input type="text" name="vorname" class="input-md form-control" placeholder="" maxlength="100" validate="notEmpty">
                 </div>
                 
                 <div class="col-sm-6 mb-20 mb-md-10">
-                  <label for="nachname">Nachname</label>
+                  <label for="nachname">Nachname*</label>
                   <input type="text" name="nachname" class="input-md form-control" placeholder="" maxlength="100" validate="notEmpty">
                 </div>
               </div>
           
               <div class="row">
                 <div class="col-sm-4 mb-20 mb-md-10">
-                  <label for="geburtsdatum">Geburtsdatum</label>
+                  <label for="geburtsdatum">Geburtsdatum*</label>
                   <input type="text" name="geburtsdatum" class="input-md form-control" placeholder="tt.mm.jjjj" maxlength="10" validate="notEmpty">
                 </div>
               </div>
 
               <div class="row">
                 <div class="col-sm-6 mb-20 mb-md-10">
-                  <label for="strasse">Strasse</label>
+                  <label for="strasse">Strasse*</label>
                   <input type="text" name="strasse" class="input-md form-control" placeholder="" maxlength="100" validate="notEmpty">
                 </div>
                 
                 <div class="col-sm-2 mb-20 mb-md-10">
-                  <label for="plz">PLZ</label>
+                  <label for="plz">PLZ*</label>
                   <input type="text" name="plz" class="input-md form-control" placeholder="" maxlength="5"  validate="notEmpty">
                 </div>
                 
                 <div class="col-sm-4 mb-20 mb-md-10">
-                  <label for="ort">Ort</label>
+                  <label for="ort">Ort*</label>
                   <input type="text" name="ort" class="input-md form-control" placeholder="" maxlength="50"  validate="notEmpty">
                 </div>
               </div>
               
               <div class="row">
                 <div class="col-sm-6 mb-20 mb-md-10">
-                  <label for="email">E-Mail-Adresse</label>
+                  <label for="email">E-Mail-Adresse*</label>
                   <input type="email" name="email" class="input-md form-control" placeholder="" maxlength="100" validate="email">
                 </div>
 
                 
                 <div class="col-sm-6 mb-20 mb-md-10">
-                  <label for="telefon">Telefon</label>
+                  <label for="telefon">Telefon*</label>
                   <input type="text" name="telefon" class="input-md form-control" placeholder="" maxlength="100" validate="notEmpty">
                 </div>
               </div>
@@ -125,10 +134,30 @@
                 <label for="bemerkungen">Bemerkungen</label>
                 <textarea name="bemerkungen" class="input-md form-control" rows="3" placeholder="" maxlength="400"></textarea>
               </div>
-
-              <button type="submit" class="btn btn-mod btn-large btn-round">Abschicken</button>
-
+              
+              <div id="validation-error-message" class="alert error" style="display: none;">
+                <button class="alert-close" type="button" data-dismiss="alert" aria-label="Close"><i class="fa fa-lg  fa-times-circle"></i></button>
+                Hoppla Schorsch! Bitte die markierten Felder überprüfen.
+                <ul class="error-details list-unstyled small"></ul>
+              </div>
+              
+              <button type="submit" class="btn btn-mod btn-large btn-round">Abschicken <i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
             </form>
+            
+            <div class="modal-content" id="form-success-content" style="display:none">
+              <div class="modal-header">
+                <h3 class="modal-title" id="calendar-dialog-title"><i class="fa fa-heart"></i> Danke!</h3>
+              </div>
+              <div class="modal-body">
+                <h4>Deine Anmeldung für die Membership wurde abgeschickt</h4>
+                <p>
+                  Wir überprüfen nun die Anfrage und werden uns bei dir melden mit weiteren Details.
+                </p>
+                <p>
+                  Wenn du noch Fragen hast, schreibe bitte ein Mail an <a href="mailto:community@effinger.ch">community@effinger.ch</a>
+                </p>
+              </div>
+            </div>
             
           </div>
           <!-- End Text -->
@@ -142,105 +171,71 @@
   <!-- End Section -->
 </div>
 <!-- End Page Wrap -->
+{{ end }}
 
+{{ define "body_includes" }}
 <script>
 // *******************************
 // Handle the form.
 // *******************************
-$('form').on('click', 'button', function (e) {
-  // Clear invalid markers.
-  reset();
-
-  var formData = {};
-
-  // Get input field values and validate
-  // We simply change border color to red if empty field using .css()
-  var error = '';
-
-  $(this).find(':input').each(function () {
-    var validate = $(this).attr('validate');
-    if (validate) {
-      if (validate == 'notEmpty') {
-        if (!$(this).val().trim()) {
-          $(this).addClass('invalid');
-          error += '<li>' + $(this).name + ' fehlt</li>';
-        }
-      } else if (validate == 'email') {
-        if (!$(this).val().trim() || !isEmail($(this).val())) {
-          $(this).addClass('invalid');
-          error += '<li>Keine korrekte E-Mail-Adresse</li>';
-        }
+$(document).ready(function() {
+  
+  var $form = $('form');
+  
+  function reset() {
+    $form.find('.invalid').removeClass('invalid');
+    $form.find('#validation-error-message').hide();
+  }
+  
+  function isEmail(email) {
+    var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    return regex.test(email);
+  }
+  
+  $form.on('click', 'button', function (e) {
+    e.preventDefault();
+    
+    // Clear invalid markers.
+    reset();
+    
+    // Get input field values and validate
+    // We simply change border color to red if empty field using .css()
+    var error = false;
+    
+    $form.find(':input').each(function () {
+      var validate = $(this).attr('validate');
+      if (validate) {
+        if (validate == 'notEmpty') {
+          if (!$(this).val().trim()) {
+            $(this).addClass('invalid');
+            error = true;
+          }
+        } else if (validate == 'email') {
+          if (!$(this).val().trim() || !isEmail($(this).val())) {
+            $(this).addClass('invalid');
+            error = true;
+          }
         }
       }
-    }
-    // TODO: Continue here. The following is not finished!
+    });
     
     // Submit when valid.
     if (!error) {
-      // Reset fields, leave all contact info in the form.
-      dialogElement.find('#res-title, #res-date, #res-comments').val('');
-      dialogElement.find('#res-extras input').prop('checked', function() {
-        return this.defaultChecked;
+      // Submit.
+      $.post($form.attr("action"), $form.serialize()).then(function() {
+        // Show the success message.
+        $form.hide();
+        $('#form-success-content').show();
       });
-      dialogElement.find('#res-start-time option, #res-end-time option').prop('selected', function() {
-        return this.defaultSelected;
-      });
-      
-      submitNewEvent(eventData);
-      
-      
-      // Show the success message.
-      dialogElement.find('#calendar-dialog-form-content').hide();
-      dialogElement.find('#calendar-dialog-success-content').show();
-      
-      calendarElement.fullCalendar('unselect');
+        
     } else {
       // Show validation error message.
-      dialogElement.find('#validation-error-message .error-details').html(error);
-      dialogElement.find('#validation-error-message').show();
+      // $form.find('#validation-error-message .error-details').html(error);
+      $form.find('#validation-error-message').show();
     }
   });
 });
 
-
-function reset() {
-  
-  dialogElement.find('.invalid').removeClass('invalid');
-  dialogElement.find('#validation-error-message').hide();
-  dialogElement.find('#calendar-dialog-success-content').hide();
-  dialogElement.find('#calendar-dialog-form-content').show();
-}
-
-function isEmail(email) {
-  var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-  return regex.test(email);
-}
-
-function submitNewEvent(eventData) {
-  // Convert the date to ISO String.
-  eventData.start = eventData.start.toISOString();
-  eventData.end = eventData.end.toISOString();
-
-  // POST-like request from GET via "_method" parameter,
-  // to be cross-origin friendly.
-  var xhr = $.ajax({
-    method: "GET",
-    url: calendarApiPath,
-    data: {
-      _method: "POST",
-      calendarId: calendarId,
-      event: JSON.stringify(eventData)
-    },
-    dataType: "jsonp",
-    success: function(data) {
-      // Refetch events to show that our event is now visible.
-      calendarElement.fullCalendar('refetchEvents');
-
-      // console.log(this.url);
-      // console.log(JSON.stringify(data));
-    }
-  });
-}
 </script>
 
 
