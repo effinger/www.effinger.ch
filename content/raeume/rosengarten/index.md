@@ -1,7 +1,7 @@
 +++
 title = "Rosengarten"
 weight = 3
-description = "Sitzungsraum, wahlweise mit Küche."
+description = "Sitzungsraum im Kunstatelier"
 image = "rosengarten-skizze.jpg"
 
 gallery = [
@@ -61,7 +61,7 @@ text = "Weitere Verpflegung gewünscht"
 hidden = true
 
 +++
-Sitzungsraum im Kunst-Atelier.
+Sitzungsraum im Kunstatelier.
 
 <small><em>
 Wenn kreatives Arbeiten und die Benutzung der Wände geplant sind, muss die Moderationskiste gebucht werden (Kosten zusätzlich zur Raummiete: CHF 50). Die Kiste enthält abwischbare Stifte sowie diverse Papier-, Post-it-, Klebeutensilien und Magnete.<br>
