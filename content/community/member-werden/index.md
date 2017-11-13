@@ -13,7 +13,6 @@ description = "Anmeldung für eine Effinger Community Membership."
 * Heimatgefühl im Effinger: Du wirst Teil der "Effinger Community"
 * Vereinsmitgliedschaft
 
-
 ### Preis
 
 * CHF 250 zu überweisen auf **IBAN CH46 0900 0000 6137 4150 1** (lautend auf Verein Coworking Community Bern)

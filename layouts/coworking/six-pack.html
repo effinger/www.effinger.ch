@@ -13,7 +13,7 @@
       <div class="row">
 
         <div class="col-md-8">
-          <h1 class="hs-line-11 font-alt mb-0">Member werden</h1>
+          <h1 class="hs-line-11 font-alt mb-0">Six-Pack-Abo</h1>
           <!--
           <div class="hs-line-4 font-alt mt-20 mt-xs-0">
           Grundsätze
@@ -23,7 +23,7 @@
 
         <div class="col-md-4 mt-30">
           <div class="mod-breadcrumbs font-alt align-right">
-            <a href="/community/"><i class="fa fa-angle-left"></i> Zurück zu Community</a>
+            <a href="/coworking/#preise"><i class="fa fa-angle-left"></i> Zurück zu Coworking</a>
           </div>
         </div>
       </div>
@@ -69,11 +69,54 @@
           <div class="section-text">
             <h1 class="mt-0 font-alt">{{ .Title }}</h1>
 
-            <form name="Community Membership" action="" class="form" netlify>
-              <input type="hidden" name="form-name" value="Community Membership" />
+            <form name="Six-Pack-Abo" action="" class="form" netlify>
+              <input type="hidden" name="form-name" value="Six-Pack-Abo" />
               
               <div class="row">
+                <div class="col-sm-6 mb-20 mb-md-10">
+                  <label for="anzahl-tage">Anzahl Tage*</label>
+                  <select name="anzahl-tage" class="input-md form-control">
+                    <option selected="selected">6 Tage (CHF 160) - Six-Pack</option>
+                    <option>7 Tage (CHF 185)</option>
+                    <option>8 Tage (CHF 210)</option>
+                    <option>9 Tage (CHF 235)</option>
+                    <option>10 Tage (CHF 260)</option>
+                    <option>11 Tage (CHF 285)</option>
+                    <option>12 Tage (CHF 310)</option>
+                    <option>13 Tage (CHF 335)</option>
+                    <option>14 Tage (CHF 360)</option>
+                    <option>15 Tage (CHF 385)</option>
+                    <option>16 Tage (CHF 410)</option>
+                    <option>17 Tage (CHF 435)</option>
+                    <option>18 Tage (CHF 460)</option>
+                    <option>19 Tage (CHF 485)</option>
+                    <option>20 Tage (CHF 510)</option>
+                  </select>
+                  <br><small>Das Six-Pack beinhaltet 6 Tage pro Monat. Wer regelmässig mehr als 6 Tage im Effinger ist, kann die Zusatztage auch gleich fix in das Six-Pack Monatsabo einbauen.</small>
+                </div>
+                <div class="col-sm-6 mb-20 mb-md-10">
+                  <label for="startmonat">Startmonat*</label>
+                  <select name="startmonat" class="input-md form-control">
+                    <option selected="selected">Januar</option>
+                    <option>Februar</option>
+                    <option>März</option>
+                    <option>April</option>
+                    <option>Mai</option>
+                    <option>Juni</option>
+                    <option>Juli</option>
+                    <option>August</option>
+                    <option>September</option>
+                    <option>Oktober</option>
+                    <option>November</option>
+                    <option>Dezember</option>
+                  </select>
+                  <br><small>Ab welchem Monat soll der Vertrag gültig sein?</small>
+                </div>
+              </div>
+              
+              <hr>
                 
+              <div class="row">
                 <div class="col-sm-6 mb-20 mb-md-10">
                   <label for="firma">Firma</label>
                   <input type="text" name="firma" class="input-md form-control" placeholder="" maxlength="100">
@@ -149,7 +192,7 @@
                 <h3 class="modal-title" id="calendar-dialog-title"><i class="fa fa-heart"></i> Danke!</h3>
               </div>
               <div class="modal-body">
-                <h4>Deine Anmeldung für die Membership wurde abgeschickt</h4>
+                <h4>Deine Anmeldung für das Six-Pack wurde abgeschickt</h4>
                 <p>
                   Wir überprüfen nun die Anfrage und werden uns mit weiteren Details bei dir melden.
                 </p>
