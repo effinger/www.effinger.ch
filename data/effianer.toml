@@ -3,6 +3,51 @@ apiUrl = "https://script.google.com/a/effinger.ch/macros/s/AKfycbw3aGTPwR4t_UdMm
 calendarId = "effinger.ch_3736303136393637343739@resource.calendar.google.com"
 
 [[Person]]
+name = "Kim Eggimann"
+gender = "f"
+image = "/images/effianer/kim-eggimann.jpg"
+email = "kim@effinger.ch"
+phone = ""
+website = ""
+twitter = ""
+facebook = ""
+instagram = ""
+
+[[Person]]
+name = "David Eggimann"
+gender = "m"
+image = "/images/effianer/david-eggimann.jpg"
+email = "david@effinger.ch"
+phone = ""
+website = ""
+twitter = ""
+facebook = ""
+instagram = ""
+
+[[Person]]
+name = "Fabian Steiner"
+gender = "m"
+image = "/images/effianer/fabian-steiner.jpg"
+email = "fabian@effinger.ch"
+phone = ""
+website = ""
+twitter = ""
+facebook = ""
+instagram = ""
+
+[[Person]]
+name = "Alexis Giard"
+gender = "m"
+image = "/images/effianer/alexis-giard.jpg"
+email = "alexis@effinger.ch"
+phone = ""
+website = ""
+twitter = ""
+facebook = ""
+instagram = ""
+
+
+[[Person]]
 name = "Urs Vögeli"
 gender = "m"
 image = "/images/effianer/urs-voegeli.jpg"
@@ -80,32 +125,10 @@ facebook = ""
 instagram = "atelier.c"
 
 [[Person]]
-name = "Timon Andeer"
-gender = "m"
-image = "/images/effianer/timon-andeer.jpg"
-email = "timon.a@effinger.ch"
-phone = ""
-website = ""
-twitter = ""
-facebook = "monmonupcycling"
-instagram = ""
-
-[[Person]]
 name = "Christa-Maria Tobler"
 gender = "f"
 image = "/images/effianer/christa-maria-tobler.jpg"
 email = "christamaria@effinger.ch"
-phone = ""
-website = ""
-twitter = ""
-facebook = ""
-instagram = ""
-
-[[Person]]
-name = "Hanne Vie"
-gender = "f"
-image = "/images/effianer/hanne-vie.jpg"
-email = "hanne@effinger.ch"
 phone = ""
 website = ""
 twitter = ""
