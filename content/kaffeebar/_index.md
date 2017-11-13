@@ -28,16 +28,20 @@ offers_title = "Menu"
         text = "nach Tagesangebot"
 
 
-#[[offers.section]]
-#  title = "Suppe"
-#  column = "left"
-#
-#  [[offers.section.element]]
-#    text = "Suppe nach Tagesangebot"
-#    price = "9.50"
-#
-#    [[offers.section.element.subelement]]
-#      text = "«es het solang's het»"
+  [[offers.section]]
+   title = "Suppe"
+   column = "left"
+
+   [[offers.section.element]]
+     text = "Suppe nach Tagesangebot"
+     price = "9.00"
+
+     [[offers.section.element.subelement]]
+       text = "«es het solang's het»"
+       
+     [[offers.section.element.subelement]]
+       text = "mit Salat"
+       price = "+3.00"
 
 
   [[offers.section]]
@@ -456,11 +460,11 @@ offers_title = "Menu"
         text="Pale Ale, tropisch-fruchtige Noten, gut gehopft"
 
     [[offers.section.element]]
-      text="Innah - Officina della Birra"
-      price="7.50"
+      text="Ipanema - Dr. Gabs"
+      price="8.00"
 
       [[offers.section.element.subelement]]
-        text="IPA, Zitrusaromen, Malz, bitterer Abgang"
+        text="India Pale Ale, kräftige Bitternote, malziger Körper, vollmundig"
 
     [[offers.section.element]]
       text="Störtebeker"
@@ -477,11 +481,11 @@ offers_title = "Menu"
         text="Schwarzbier, Pfeffer, Kaffee, bittersüss"
 
     [[offers.section.element]]
-      text="Chopfab Summer"
-      price="6.50"
+      text="La Fraîcheur – trois dames"
+      price="7.50"
 
       [[offers.section.element.subelement]]
-        text="Special White Ale, Weisswein-Bouquet, erfrischend"
+        text="Belgian Style Blanche, Zitrusnoten, erfrischend"
 
     [[offers.section.element]]
       text="Appenzeller Leermond"
