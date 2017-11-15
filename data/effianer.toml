@@ -30,10 +30,10 @@ gender = "m"
 image = "/images/effianer/fabian-steiner.jpg"
 email = "fabian@effinger.ch"
 phone = ""
-website = ""
+website = "https://www.fabust.ch/"
 twitter = ""
 facebook = ""
-instagram = ""
+instagram = "fabust.film"
 
 [[Person]]
 name = "Alexis Giard"
