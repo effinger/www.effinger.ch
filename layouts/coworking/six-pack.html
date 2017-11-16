@@ -44,7 +44,7 @@
           <!-- Text -->
           <div class="section-text">
             {{ .Content }}
-            
+
           </div>
           <!-- End Text -->
 
@@ -55,7 +55,7 @@
     </div>
   </section>
   <!-- End Section -->
-  
+
   <!-- Section -->
   <section class="page-section">
     <div class="container relative">
@@ -71,6 +71,10 @@
 
             <form name="Six-Pack-Abo" action="" class="form" netlify>
               <input type="hidden" name="form-name" value="Six-Pack-Abo" />
+
+              <!-- Wird zur Identifikation vom Formular beim Formularroboterli
+                    verwendet und als Betreff des E-Mails. -->
+              <input type="hidden" name="subject" value="Six-Pack-Abo" />
               
               <div class="row">
                 <div class="col-sm-6 mb-20 mb-md-10">
@@ -113,29 +117,29 @@
                   <br><small>Ab welchem Monat soll der Vertrag gültig sein?</small>
                 </div>
               </div>
-              
+
               <hr>
-                
+
               <div class="row">
                 <div class="col-sm-6 mb-20 mb-md-10">
                   <label for="firma">Firma</label>
                   <input type="text" name="firma" class="input-md form-control" placeholder="" maxlength="100">
                 </div>
               </div>
-              
+
               <div class="row">
-                
+
                 <div class="col-sm-6 mb-20 mb-md-10">
                   <label for="vorname">Vorname*</label>
                   <input type="text" name="vorname" class="input-md form-control" placeholder="" maxlength="100" validate="notEmpty">
                 </div>
-                
+
                 <div class="col-sm-6 mb-20 mb-md-10">
                   <label for="nachname">Nachname*</label>
                   <input type="text" name="nachname" class="input-md form-control" placeholder="" maxlength="100" validate="notEmpty">
                 </div>
               </div>
-          
+
               <div class="row">
                 <div class="col-sm-4 mb-20 mb-md-10">
                   <label for="geburtsdatum">Geburtsdatum*</label>
@@ -148,25 +152,25 @@
                   <label for="strasse">Strasse*</label>
                   <input type="text" name="strasse" class="input-md form-control" placeholder="" maxlength="100" validate="notEmpty">
                 </div>
-                
+
                 <div class="col-sm-2 mb-20 mb-md-10">
                   <label for="plz">PLZ*</label>
                   <input type="text" name="plz" class="input-md form-control" placeholder="" maxlength="5"  validate="notEmpty">
                 </div>
-                
+
                 <div class="col-sm-4 mb-20 mb-md-10">
                   <label for="ort">Ort*</label>
                   <input type="text" name="ort" class="input-md form-control" placeholder="" maxlength="50"  validate="notEmpty">
                 </div>
               </div>
-              
+
               <div class="row">
                 <div class="col-sm-6 mb-20 mb-md-10">
                   <label for="email">E-Mail-Adresse*</label>
                   <input type="email" name="email" class="input-md form-control" placeholder="" maxlength="100" validate="email">
                 </div>
 
-                
+
                 <div class="col-sm-6 mb-20 mb-md-10">
                   <label for="telefon">Telefon*</label>
                   <input type="text" name="telefon" class="input-md form-control" placeholder="" maxlength="100" validate="notEmpty">
@@ -177,16 +181,16 @@
                 <label for="bemerkungen">Bemerkungen</label>
                 <textarea name="bemerkungen" class="input-md form-control" rows="3" placeholder="" maxlength="400"></textarea>
               </div>
-              
+
               <div id="validation-error-message" class="alert error" style="display: none;">
                 <button class="alert-close" type="button" data-dismiss="alert" aria-label="Close"><i class="fa fa-lg  fa-times-circle"></i></button>
                 Hoppla Schorsch! Bitte die markierten Felder überprüfen.
                 <ul class="error-details list-unstyled small"></ul>
               </div>
-              
+
               <button type="submit" class="btn btn-mod btn-large btn-round">Abschicken <i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
             </form>
-            
+
             <div class="modal-content" id="form-success-content" style="display:none">
               <div class="modal-header">
                 <h3 class="modal-title" id="calendar-dialog-title"><i class="fa fa-heart"></i> Danke!</h3>
@@ -201,7 +205,7 @@
                 </p>
               </div>
             </div>
-            
+
           </div>
           <!-- End Text -->
 
@@ -222,29 +226,29 @@
 // Handle the form.
 // *******************************
 $(document).ready(function() {
-  
+
   var $form = $('form');
-  
+
   function reset() {
     $form.find('.invalid').removeClass('invalid');
     $form.find('#validation-error-message').hide();
   }
-  
+
   function isEmail(email) {
     var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
     return regex.test(email);
   }
-  
+
   $form.on('click', 'button', function (e) {
     e.preventDefault();
-    
+
     // Clear invalid markers.
     reset();
-    
+
     // Get input field values and validate
     // We simply change border color to red if empty field using .css()
     var error = false;
-    
+
     $form.find(':input').each(function () {
       var validate = $(this).attr('validate');
       if (validate) {
@@ -261,7 +265,7 @@ $(document).ready(function() {
         }
       }
     });
-    
+
     // Submit when valid.
     if (!error) {
       // Submit.
@@ -270,7 +274,7 @@ $(document).ready(function() {
         $form.hide();
         $('#form-success-content').show();
       });
-        
+
     } else {
       // Show validation error message.
       // $form.find('#validation-error-message .error-details').html(error);
