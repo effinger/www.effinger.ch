@@ -23,12 +23,6 @@ image = "/images/kaffeebar/kiona.jpg"
 comment = "Und warum trinkst du Kaffee?"
 
 [[Person]]
-name = "Rebecca"
-gender = "f"
-image = "/images/kaffeebar/rebecca.jpg"
-comment = "So Alegria!"
-
-[[Person]]
 name = "Sabina"
 gender = "f"
 image = "/images/kaffeebar/sabina.jpg"
