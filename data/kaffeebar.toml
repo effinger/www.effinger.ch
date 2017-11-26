@@ -39,3 +39,9 @@ name = "Luna"
 gender = "f"
 image = "/images/kaffeebar/luna.jpg"
 comment = "un cappuccino per favore"
+
+[[Person]]
+name = "Nico"
+gender = "m"
+image = "/images/kaffeebar/nico.jpg"
+comment = "A wish without a plan is just a goal."
