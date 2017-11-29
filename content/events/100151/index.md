@@ -1,6 +1,6 @@
 +++
 title = "Unico-Schule Community-Treffen"
-description = Wir eröffnen bald im Raum Bern eine Schule, in der Kinder frei und selbstbestimmt lernen und ihren Schulalltag mitbestimmen können. An unseren Community-Treffen können alle teilnehmen, die sich von unserem Leitbild und unserer Organisationsform angesprochen fühlen."
+description = "Wir eröffnen bald im Raum Bern eine Schule, in der Kinder frei und selbstbestimmt lernen und ihren Schulalltag mitbestimmen können. An unseren Community-Treffen können alle teilnehmen, die sich von unserem Leitbild und unserer Organisationsform angesprochen fühlen."
 startdate = 2017-12-09T13:30:00Z
 enddate = 2017-12-09T16:30:00Z
 categories = [ "Community" ]
