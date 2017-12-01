@@ -1,5 +1,5 @@
 +++
-title = "Bart-Workshop"
+title = "Smart-mit-Bart (Workshop Bart)"
 description = "Die Coiffeuse Anina vermittelt dir in diesem Workshop wie du deinen Bart pflegen und schneiden kannst. Du erfährst, welcher Bartschnitt mit deinem Gesicht harmoniert und wie du den Schnauz am besten passend zum Bart schneidest."
 startdate = 2018-01-18T18:00:00Z
 enddate = 2018-01-18T20:30:00Z
