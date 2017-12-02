@@ -70,13 +70,13 @@
                 <h4 class="title">{{ index $.Site.Data.de.months .Date.Month }}</h4>
                 <div class="wave-spacer"></div>
                 <div class="item">
-                  <p>Ertrag<span class="amount">{{ partial "format/thousands" ($.Scratch.Get "total_ertrag") }}</span></p>
-                  <p>Aufwand<span class="amount">-{{ partial "format/thousands" ($.Scratch.Get "total_aufwand") }}</span></p>
-                  <p>ERGEBNIS<span class="total amount">{{ partial "format/thousands" (sub ($.Scratch.Get "total_ertrag") ($.Scratch.Get "total_aufwand")) }}</span></p>
+                  <p>Ertrag<span class="amount">{{ partial "utils/format_thousands" ($.Scratch.Get "total_ertrag") }}</span></p>
+                  <p>Aufwand<span class="amount">-{{ partial "utils/format_thousands" ($.Scratch.Get "total_aufwand") }}</span></p>
+                  <p>ERGEBNIS<span class="total amount">{{ partial "utils/format_thousands" (sub ($.Scratch.Get "total_ertrag") ($.Scratch.Get "total_aufwand")) }}</span></p>
                 </div>
                 <div class="item clearfix">
-                  <p>Darlehen<span class="amount">{{ partial "format/thousands" .Params.darlehen }}</span></p>
-                  <p><small>Kontostand Ende Monat</small><span class="amount">{{ partial "format/thousands" .Params.kontostand }}</span></p>
+                  <p>Darlehen<span class="amount">{{ partial "utils/format_thousands" .Params.darlehen }}</span></p>
+                  <p><small>Kontostand Ende Monat</small><span class="amount">{{ partial "utils/format_thousands" .Params.kontostand }}</span></p>
                 </div>
                 <div class="item">
                   <p class="align-center">

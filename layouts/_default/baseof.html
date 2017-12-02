@@ -20,16 +20,7 @@
     <meta property="og:title" content="{{ if .Title }}{{ .Title }}{{ else }}{{ .Site.Title }}{{ end }}" />
     <meta property="og:description" content="{{ .Description }}" />
     <meta property="og:url" content="{{ .Permalink }}" />
-    {{ if .Params.image -}}
-      {{ if (hasPrefix .Params.image "http") -}}
-      <meta property="og:image" content="{{ .Params.image }}" />
-      {{ else }}
-      <meta property="og:image" content="{{ .Permalink }}{{ .Params.image }}" />
-      {{ end }}
-    {{ else -}}
-    <meta property="og:image" content="{{ .Site.BaseURL }}images/logo-black-tagline.png" />
-    {{ end }}
-
+    {{ partial "utils/image_meta.html" . }}
 
     <title>{{ block "title" . }}{{ with .Title }}{{ . }} | {{ end }}{{ .Site.Title }}{{ end }}</title>
 

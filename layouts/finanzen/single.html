@@ -115,7 +115,7 @@
           </div>
 
           <h3 class="font-alt title">Ertrag
-            <span class="right">{{ partial "format/thousands" ($.Scratch.Get "total_ertrag") }}</span>
+            <span class="right">{{ partial "utils/format_thousands" ($.Scratch.Get "total_ertrag") }}</span>
           </h3>
 
           {{ range .Params.ertrag }}
@@ -124,7 +124,7 @@
               <tr>
                 <th>{{ .name }}</th>
                 <th>
-                  {{ partial "format/thousands" .betrag }}
+                  {{ partial "utils/format_thousands" .betrag }}
                 </th>
               </tr>
               {{ with .info }}
@@ -143,7 +143,7 @@
             <canvas id="aufwand-chart"></canvas>
           </div>
           <h3 class="font-alt title">Aufwand
-            <span class="right">{{ partial "format/thousands" ($.Scratch.Get "total_aufwand") }}</span>
+            <span class="right">{{ partial "utils/format_thousands" ($.Scratch.Get "total_aufwand") }}</span>
           </h3>
 
           {{ range .Params.aufwand }}
@@ -152,7 +152,7 @@
               <tr>
                 <th>{{ .name }}</th>
                 <th>
-                  {{ partial "format/thousands" .betrag }}
+                  {{ partial "utils/format_thousands" .betrag }}
                 </th>
               </tr>
               {{ with .info }}
