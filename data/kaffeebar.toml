@@ -41,6 +41,12 @@ image = "/images/kaffeebar/luna.jpg"
 comment = "un cappuccino per favore"
 
 [[Person]]
+name = "Paula"
+gender = "f"
+image = "/images/kaffeebar/paula.jpg"
+comment = ""
+
+[[Person]]
 name = "Nico"
 gender = "m"
 image = "/images/kaffeebar/nico.jpg"
