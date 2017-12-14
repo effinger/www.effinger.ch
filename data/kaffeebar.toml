@@ -44,7 +44,7 @@ comment = "un cappuccino per favore"
 name = "Paula"
 gender = "f"
 image = "/images/kaffeebar/paula.jpg"
-comment = ""
+comment = "Wenn ich wüsste, dass die Welt morgen untergeht, würde ich heute einen ‘Öpfuboum’ pflanzen."
 
 [[Person]]
 name = "Nico"
