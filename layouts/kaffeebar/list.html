@@ -35,6 +35,7 @@
   <section class="page-section">
     <div class="container relative">
 
+
       <!-- Row -->
       <div class="row">
 
@@ -43,7 +44,7 @@
         <div class="col-sm-8 mb-40">
 
           <div class="text">
-            <h5 class="uppercase">Willkommen in der Effinger Kaffeebar.</h5>
+            <h2 class="hs-line-11 font-alt mb-60">Effinger Kaffeebar</h2>
             <p>
               Bei uns gibt es guten Kaffee für Tanten, Espresso für Eilige und Tee für Abwartende. Und auch Apéros für Prostende, Bier für Feierabende und Wein für alle.
             </p>
@@ -66,7 +67,7 @@
         <!-- Col -->
 
         <div class="col-sm-4">
-          <div class="contact-item mt-20 mb-20 clearfix">
+          <div class="contact-item mb-20 clearfix">
             <h4 class="uppercase">Öffnungszeiten</h4>
             <div class="wave-spacer"></div>
             <div class="item">
@@ -192,10 +193,10 @@
   <!-- End Section -->
 
   <!-- Section -->
-  <section id="angebote" class="page-section bg-gray-lighter">
+  <section id="angebote" class="page-section pt-80 pb-80 bg-gray-lighter">
     <div class="container relative">
 
-      <h2 class="section-title font-alt mb-70 mb-sm-40">{{ .Params.offers_title }}</h2>
+      <h2 class="hs-line-11 font-alt mb-60 text-center">{{ .Params.offers_title }}</h2>
 
       <!-- Accordion -->
       <dl class="toggle offers">
@@ -243,10 +244,10 @@
   <!-- End Section -->
 
   <!-- Team Section -->
-  <section class="page-section" id="team">
+  <section class="page-section pb-40" id="team">
     <div class="container relative">
 
-      <h2 class="section-title font-alt mb-70 mb-sm-40">Geschäftsführung Kaffeebar</h2>
+      <h3 class="hs-line-11 font-alt mb-60 text-center">Geschäftsführung Kaffeebar</h3>
 
       <!-- <div class="row">
         <div class="col-md-8 col-md-offset-2">
@@ -312,11 +313,11 @@
 
 
       </div>
-      
-      <h2 class="section-title font-alt mt-100 mb-70 mb-sm-40 wow fadeInUp">Kaffeebar Team</h2>
+
+      <h2 class="hs-line-11 font-alt mb-60 text-center mt-140 wow fadeInUp" data-wow-delay="0.4s">Kaffeebar Team</h2>
 
       <div class="row multi-columns-row">
-      
+
         {{ range $.Site.Data.kaffeebar.Person }}
         <div class="col-sm-6 col-md-3 col-lg-3 mb-140 wow fadeInUp">
           <div class="team-item">
@@ -332,12 +333,12 @@
               <div class="team-item-name">
                 {{ .name }}
               </div>
-              
+
             </div>
           </div>
         </div>
         {{ end }}
-        
+
       </div>
 
     </div>
