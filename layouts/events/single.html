@@ -76,7 +76,13 @@
                 {{ else }}
                   <p><small><i class="fa fa-clock-o"></i> {{ .Scratch.Get "start_time" }} bis {{ .Scratch.Get "end_time" }} Uhr</small></p>
                 {{ end }}
-                <p><small><i class="fa fa-map-marker"></i> <a href="{{ .Params.address_link }}" target="_blank" title="Open in Google Maps">{{ .Params.location }}</a></small></p>
+                <p><small><i class="fa fa-map-marker"></i>
+                  {{ if .Params.address_link }}
+                    <a href="{{ .Params.address_link }}" target="_blank" title="Open in Google Maps">{{ .Params.location }}</a>
+                  {{ else }}
+                    {{ .Params.location }}
+                  {{ end }}
+                </small></p>
                 <p><small><i class="fa fa-tags"></i>
                   {{ delimit .Params.categories ", " }}
                   </small>
@@ -103,10 +109,10 @@
       <div class="row pt-60" id="anmeldung">
         <div class="col-md-6">
           <h3 class="uppercase mt-0 mb-0"><i class="fa fa-user-plus"></i> Anmeldung</h3>
-          
+
           <div class="event-manager-close">
             {{ if .Params.registration.close }}
-              <i class="fa fa-clock-o"></i> Anmeldeschluss: {{ dateFormat "02.01.2006" .Params.registration.close }} 
+              <i class="fa fa-clock-o"></i> Anmeldeschluss: {{ dateFormat "02.01.2006" .Params.registration.close }}
               {{ $delta := (time .Params.registration.close).Sub now }}
               {{ if gt $delta.Hours 24 }}
               (noch {{ int (div $delta.Hours 24) }} Tage)
@@ -124,11 +130,11 @@
             {{ end }}
             &nbsp;
           </div>
-          
+
 
           <div class="event-manager-info alert alert-info" style="display:none;">
           </div>
-          
+
           <div class="event-manager-loading">
             <i class="fa fa-spinner fa-spin fa-2x fa-fw"></i>
           </div>
@@ -172,7 +178,7 @@
         </div>
         <div class="col-md-6 mt-md-60">
           <p class="event-manager-number-of-attendees uppercase">Teilnehmende</p>
-          
+
           <div class="event-manager-max">
             {{ if .Params.registration.max }}
               <i class="fa fa-users"></i> Max:
@@ -184,7 +190,7 @@
             {{ end }}
             &nbsp;
           </div>
-          
+
           <div class="event-manager-loading">
             <i class="fa fa-spinner fa-spin fa-2x fa-fw"></i>
           </div>
