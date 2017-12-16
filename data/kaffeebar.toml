@@ -51,3 +51,9 @@ name = "Nico"
 gender = "m"
 image = "/images/kaffeebar/nico.jpg"
 comment = "A goal without a plan is just a wish."
+
+[[Person]]
+name = "Simone"
+gender = "f"
+image = "/images/kaffeebar/simone.jpg"
+comment = "Now is the new later."
