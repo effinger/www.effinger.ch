@@ -18,7 +18,7 @@ Wir treffen uns an jedem ersten Donnerstag im Monat als Community. Neben den Com
 
 Im Voraus schreiben wir in das Protokoll die geplanten Aktivitäten und Entscheide. Unter folgendem Link kannst du lesen, um was es geht und bereits im Vorfeld kommentieren:
 
-<a target="_blank" class="btn btn-mod btn-border btn-round btn-medium">Aktivitäten und Protokoll (folgt)</a>
+<a target="_blank" href="https://docs.google.com/a/effinger.ch/document/d/1Nb68EnMXrSmfP53ZA5pcDy5bsdoHZbN7XKXd0jxem6E/edit?usp=sharing" class="btn btn-mod btn-border btn-round btn-medium">Aktivitäten und Protokoll</a>
 
 ---
 
