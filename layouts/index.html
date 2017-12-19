@@ -286,7 +286,8 @@ Für Jungunternehmer, Kreative, Handwerkerinnen, Weltveränderer, Bernerinnen, Z
             <h4 class="uppercase">Kaffeebar</h4>
             <div class="wave-spacer"></div>
             <div class="item">
-              {{ partial "spezielle_oeffnungszeiten.html" . }}
+              {{ $test := "kaffeebar" }}
+              {{ partial "spezielle_oeffnungszeiten_kaffeebar.html" . }}
 
               <p>Mo-Fr <span>7-23</span></p>
               <p>Sa <span>9-17</span></p>
@@ -305,7 +306,7 @@ Für Jungunternehmer, Kreative, Handwerkerinnen, Weltveränderer, Bernerinnen, Z
             <h4 class="uppercase">Coworking Space</h4>
             <div class="wave-spacer"></div>
             <div class="item">
-              {{ partial "spezielle_oeffnungszeiten.html" . }}
+              {{ partial "spezielle_oeffnungszeiten_coworking.html" . }}
 
               <p>Mo-Fr <span>7-23</span></p>
               <p>Sa <span>9-17</span></p>
