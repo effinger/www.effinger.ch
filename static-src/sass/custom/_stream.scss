@@ -1,0 +1,78 @@
+// Stream
+
+
+.streamEntry {
+  display: flex;
+  position: relative;
+  &__column {
+    width: 40%;
+  }
+  &:nth-child(even) {
+    justify-content: flex-end;
+  }
+}
+
+
+.streamEntry::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 3px;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  background-color: $primary-color;
+  z-index: -2;
+}
+
+.streamEntry__image {
+  width: 100%;
+}
+
+/* Datebox */
+
+.datebox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 3px solid $primary-color;
+  padding: 0.5rem 0;
+  line-height: 1;
+  z-index: -1;
+  background-color: white;
+  &__day {
+    padding: 0.2rem 0.3rem;
+    font-size: 1.5rem;
+  }
+  &__month {
+    padding: 0 0.5rem 0.6rem;
+    text-transform: uppercase;
+    font-size: 1.0rem ;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      height: 3px;
+      width: 30rem;
+      right: 0;
+      bottom: 0;
+      background-color: $primary-color;
+    }
+  }
+  &__year {
+    padding: 0.5rem 0.5rem 0;
+    font-size: 1.5rem;
+  }
+}
+
+.streamEntry:nth-child(even) {
+  .datebox__month::after {
+    left: 0;
+    right: auto;
+  }
+}
