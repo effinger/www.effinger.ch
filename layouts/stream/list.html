@@ -18,7 +18,7 @@
           <div class="hs-line-4 font-alt black mt-20 mt-xs-0">
             get in touch
           </div>
-        -->
+          -->
         </div>
       </div>
 
@@ -29,7 +29,7 @@
   <section class="page-section">
     <div class="container" id="stream-container">
       <!-- streamEntry -->
-      <div class="row streamEntry">
+      <!--<div class="row streamEntry">
         <div class="streamEntry__column">
           <img class="streamEntry__image" src="http://via.placeholder.com/1000x800">
           <h3 class="streamEntry__text">Das ist ein Test</h3>
@@ -43,40 +43,62 @@
             <span class="datebox__year">17</span>
           </div>
         </div>
-      </div>
+      </div>-->
       <!-- End streamEntry -->
     </div>
+    <button id="button-load-more">Mehr laden</button>
   </section>
 </div>
 <!-- End Page Wrap -->
 {{ end }}
 
 {{ define "body_includes" }}
-<!-- Fetch streams
+<!-- Fetch streams -->
+<script src="/js/moment-with-locales.min.js"></script>
 <script type="text/javascript">
-$(document).ready(function() {
-  $.get( "https://script.google.com/macros/s/AKfycbzK4OUO-rs82EC8TwSnZ43mVZgN83fMbuVmg7JL8XZi91Larvg/exec", function( data ) {
-    $.each(data, function(i, item) {
-      $('#stream-container').append('\
-        <div class="col-sm-6 mb-md-50">\
-          <div class="team-item">\
-            <div class="team-item-image">\
-              <img src="' + item.url + '" alt="" />\
-              <div class="team-item-detail">\
-                <p class="font-alt normal">' + item.date + '</p>\
-              </div>\
+  function loadPosts(skip, take) {
+    $.get("https://script.google.com/a/effinger.ch/macros/s/AKfycbzK4OUO-rs82EC8TwSnZ43mVZgN83fMbuVmg7JL8XZi91Larvg/exec", function( data ) {
+      $.each(data, function(i, item) {
+        $('#stream-container').append('\
+        <div class="row streamEntry">\
+          <div class="streamEntry__column">\
+            <img class="streamEntry__image" src="' + item.cloudinaryImageUrl.replace("upload/", "upload/w_1000,h_1000,c_limit/") + '">\
+            <h3 class="streamEntry__text">\
+              ' + item.comment + '\
+            </h3>\
+            <div class="streamEntry__authoring">\
+              <span class="streamEntry__name">\
+                @' + item.author + '\
+              </span>\
+              <span class="streamEntry__time">\
+                ' + moment(item.date).format("HH.mm") + ' Uhr\
+              </span>\
             </div>\
-            <div class="team-item-descr font-alt">\
-              <div class="team-item-name">\
-                ' + item.comment + '\
-              </div>\
+            <div class="datebox">\
+              <span class="datebox__day">\
+                ' + moment(item.date).format("D") + '\
+              </span>\
+              <span class="datebox__month">\
+                ' + moment(item.date).format("MMM") + '\
+              </span>\
+              <span class="datebox__year">\
+                ' + moment(item.date).format("YY") + '\
+              </span>\
             </div>\
           </div>\
         </div>');
+      });
     });
-  });
+  }
 
-});
+  $(document).ready(function() {
+    $("#button-load-more").click(function() {
+      loadPosts();
+    });
+
+    moment.locale("de");
+
+    loadPosts();
+  });
 </script>
--->
 {{ end }}
