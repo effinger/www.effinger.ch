@@ -17,12 +17,6 @@ image = "/images/kaffeebar/hanne.jpg"
 comment = "Eg e kaffetørst!"
 
 [[Person]]
-name = "Kiona"
-gender = "f"
-image = "/images/kaffeebar/kiona.jpg"
-comment = "Und warum trinkst du Kaffee?"
-
-[[Person]]
 name = "Sabina"
 gender = "f"
 image = "/images/kaffeebar/sabina.jpg"
@@ -39,12 +33,6 @@ name = "Luna"
 gender = "f"
 image = "/images/kaffeebar/luna.jpg"
 comment = "un cappuccino per favore"
-
-[[Person]]
-name = "Paula"
-gender = "f"
-image = "/images/kaffeebar/paula.jpg"
-comment = "Wenn ich wüsste, dass die Welt morgen untergeht, würde ich heute einen ‘Öpfuboum’ pflanzen."
 
 [[Person]]
 name = "Nico"
