@@ -16,6 +16,13 @@ $font-family-sans: YeniZaman, arial, sans-serif;
 $font-family-sans-alt: YeniZaman, arial, sans-serif;
 $font-family-serif: "Times New Roman", Times, serif;
 
+// Media Queries
+$small: 0px;
+$medium: 750px;
+$large: 1050px;
+$xlarge: 1700px;
+$xxlarge: 2000px;
+
 // Styles from the Rhythm template.
 @import "rhythm/style";
 @import "rhythm/style-responsive";
@@ -25,6 +32,7 @@ $font-family-serif: "Times New Roman", Times, serif;
 //
 // Custom styles.
 //
+@import "mixin";
 @import "custom/general";
 @import "custom/blog";
 @import "custom/community";

@@ -26,16 +26,18 @@
   </section>
   <!-- End Header -->
 
-  <section class="page-section">
-    <div class="container" id="stream-container">
+  <section class="page-section page-section--small">
+    <div class="stream-container" id="stream-container">
       <!-- streamEntry -->
-      <!--<div class="row streamEntry">
+      <!--<div class="streamEntry">
         <div class="streamEntry__column">
           <img class="streamEntry__image" src="http://via.placeholder.com/1000x800">
-          <h3 class="streamEntry__text">Das ist ein Test</h3>
-          <div class="streamEntry__authoring">
-            <span class="streamEntry__name">Hans Wurst</span>
-            <span class="streamEntry__time">12.55 Uhr</span>
+          <div class="streamEntry__textbox">
+            <h3 class="streamEntry__text">Das ist ein Test</h3>
+            <div class="streamEntry__authoring">
+              <span class="streamEntry__name">Hans Wurst</span>
+              <span class="streamEntry__time">12.55 Uhr</span>
+            </div>
           </div>
           <div class="datebox">
             <span class="datebox__day">03</span>
@@ -46,7 +48,9 @@
       </div>-->
       <!-- End streamEntry -->
     </div>
-    <button id="button-load-more">Mehr laden</button>
+    <div class="container container--stream">
+      <button id="button-load-more" class="btn btn-medium btn-mod btn-border">Mehr laden</button>
+  </div>
   </section>
 </div>
 <!-- End Page Wrap -->
@@ -60,19 +64,21 @@
     $.get("https://script.google.com/a/effinger.ch/macros/s/AKfycbzK4OUO-rs82EC8TwSnZ43mVZgN83fMbuVmg7JL8XZi91Larvg/exec", function( data ) {
       $.each(data, function(i, item) {
         $('#stream-container').append('\
-        <div class="row streamEntry">\
+        <div class="streamEntry">\
           <div class="streamEntry__column">\
             <img class="streamEntry__image" src="' + item.cloudinaryImageUrl.replace("upload/", "upload/w_1000,h_1000,c_limit/") + '">\
-            <h3 class="streamEntry__text">\
-              ' + item.comment + '\
-            </h3>\
-            <div class="streamEntry__authoring">\
-              <span class="streamEntry__name">\
-                @' + item.author + '\
-              </span>\
-              <span class="streamEntry__time">\
-                ' + moment(item.date).format("HH.mm") + ' Uhr\
-              </span>\
+            <div class="streamEntry__textbox">\
+              <h3 class="streamEntry__text">\
+                ' + item.comment + '\
+              </h3>\
+              <div class="streamEntry__authoring">\
+                <span class="streamEntry__name">\
+                  @' + item.author + '\
+                </span>\
+                <span class="streamEntry__time">\
+                  ' + moment(item.date).format("HH.mm") + ' Uhr\
+                </span>\
+              </div>\
             </div>\
             <div class="datebox">\
               <span class="datebox__day">\
