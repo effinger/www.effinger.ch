@@ -1,18 +1,18 @@
 +++
-title = "Schnäfel-Schnäfel (Workshop Haare lang)"
-description = "Die Coiffeuse Anina vermittelt dir in diesem Workshop die Grundlagen für einen Mittel-/Langhaarschnitt."
+title = "Schnäfel-Schnäfel (Workshop Haare kurz)"
+description = "Die Coiffeuse Anina vermittelt dir in diesem Workshop die Grundlagen für einen Kurzhaarschnitt."
 startdate = 2018-01-20T09:30:00Z
 enddate = 2018-01-20T16:00:00Z
 categories = [ "Atelier" ]
 location = "Effingerstrasse 10, Bern"
 address_link = "https://www.google.ch/maps/place/Effinger+-+Kaffeebar+%26+Coworking+Space/@46.94604,7.4336198,17z/data=!3m1!4b1!4m2!3m1!1s0x478e39bf613a53f7:0x30f7464656fbe3b2"
-image = "workshop-haar-lang.jpg"
+image = "workshop-haar-kurz.jpg"
 [registration]
   max = 5
   close = 2018-01-15T23:59:59Z
 +++
 
-![Workshop Haar Lang](workshop-haar-lang.jpg)
+![Workshop Haar Kurz](workshop-haar-kurz.jpg)
 
 Die Coiffeuse Anina vermittelt dir in diesem Workshop die Grundlagen für einen Mittel-/Langhaarschnitt. Im ersten Teil zeigt sie am Modell, wie ein Schnitt aufgebaut ist. Du hast die Möglichkeit, Notizen, Zeichnungen oder Fotos zu machen. Im zweiten Teil schneidest du schon selbst und wirst dabei unterstützt.
 
