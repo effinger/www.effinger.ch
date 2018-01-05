@@ -22,7 +22,7 @@ Melde dich, falls du am Workshop teilnehmen möchtest, aber kein Modell hast, od
 
 
 * **Dauer**: 1. Teil, ca. 2.5h | 2. Teil, ca. 3h
-* **Preis**: CHF 120 (inkl. Zwischenverpflegung am Vor-
+* **Preis**: CHF 100 (inkl. Zwischenverpflegung am Vor-
 und Nachmittag)
 * **Kursleitung**: Anina Tschirren  
 * **Anmeldung**\*: Mit untenstehendem Formular   
