@@ -18,7 +18,7 @@ Wir treffen uns an jedem ersten Donnerstag im Monat als Community. Neben den Com
 
 Im Voraus schreiben wir in das Protokoll die geplanten Aktivitäten und Entscheide. Unter folgendem Link kannst du lesen, um was es geht und bereits im Vorfeld kommentieren:
 
-<a target="_blank" href="https://docs.google.com/a/effinger.ch/document/d/1-ZOjX-meHQ-Y6Fep4S_xN8LFU8CH0irLlaDYBSW1G-c/edit?usp=sharing" class="btn btn-mod btn-border btn-round btn-medium">Aktivitäten und Protokoll</a>
+<a target="_blank" href="https://docs.google.com/a/effinger.ch/document/d/1TRDUiVnRuZ5qoWgsElXq-DslMS_s20dTAUQQIwULxIk/edit?usp=sharing" class="btn btn-mod btn-border btn-round btn-medium">Aktivitäten und Protokoll</a>
 
 ---
 
@@ -59,7 +59,7 @@ Weitere Aktivitäten findet ihr im Protokoll oben.
 Resultate der Aktivitäten werden präsentiert.
 
 
-### D.) Infos (~10 Min.) 
+### D.) Infos (~10 Min.)
 
 In diesem Block können Informationen an die Community mitgeteilt werden (z.B. Entscheide, welche im Beratungsprinzip gefällt wurden). Die Infos müssen hier schriftlich ausformuliert werden, damit abwesende Mitglieder sich informieren können. Am Treffen selber gibt es dafür nur kurze Redezeit. Die Moderation wird die Zeit stoppen.
 
