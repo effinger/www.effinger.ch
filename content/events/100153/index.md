@@ -14,7 +14,7 @@ image = "workshop-haar-kurz.jpg"
 
 ![Workshop Haar Kurz](workshop-haar-kurz.jpg)
 
-Die Coiffeuse Anina vermittelt dir in diesem Workshop die Grundlagen für einen Kurzhaarschnitt. Im ersten Teil zeigt sie am Modell, wie ein Schnitt aufgebaut ist. Du hast die Möglichkeit, Notizen, Zeichnungen oder Fotos zu machen. Im zweiten Teil schneidest du schon selbst und wirst da-bei unterstützt.
+Die Coiffeuse Anina vermittelt dir in diesem Workshop die Grundlagen für einen Kurzhaarschnitt. Im ersten Teil zeigt sie am Modell, wie ein Schnitt aufgebaut ist. Du hast die Möglichkeit, Notizen, Zeichnungen oder Fotos zu machen. Im zweiten Teil schneidest du schon selbst und wirst dabei unterstützt.
 
 Wenn möglich bringst du für den zweiten Teil eine Person mit, die sich von dir die Haare schneiden lässt.
 
