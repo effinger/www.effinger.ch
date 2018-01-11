@@ -14,11 +14,11 @@ image = "workshop-haar-kurz.jpg"
 
 ![Workshop Haar Kurz](workshop-haar-kurz.jpg)
 
-Die Coiffeuse Anina vermittelt dir in diesem Workshop die Grundlagen für einen Mittel-/Langhaarschnitt. Im ersten Teil zeigt sie am Modell, wie ein Schnitt aufgebaut ist. Du hast die Möglichkeit, Notizen, Zeichnungen oder Fotos zu machen. Im zweiten Teil schneidest du schon selbst und wirst dabei unterstützt.
+Die Coiffeuse Anina vermittelt dir in diesem Workshop die Grundlagen für einen Kurzhaarschnitt. Im ersten Teil zeigt sie am Modell, wie ein Schnitt aufgebaut ist. Du hast die Möglichkeit, Notizen, Zeichnungen oder Fotos zu machen. Im zweiten Teil schneidest du schon selbst und wirst da-bei unterstützt.
 
 Wenn möglich bringst du für den zweiten Teil eine Person mit, die sich von dir die Haare schneiden lässt.
 
-Melde dich, falls du am Workshop teilnehmen möchtest, aber kein Modell hast, oder nur am 1. Teil interessiert bist.
+Melde dich, falls du am Workshop teilnehmen möchtest, aber kein Modell hast oder nur am 1. Teil interessiert bist.
 
 
 * **Dauer**: 1. Teil, ca. 2.5h | 2. Teil, ca. 3h
