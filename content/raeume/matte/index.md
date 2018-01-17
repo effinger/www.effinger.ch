@@ -25,8 +25,8 @@ equipment = [
 ]
 
 prices = [
-  "CHF 250 für 4 Stunden",
-  "CHF 350 für 8 Stunden"
+  "CHF 300 für 4 Stunden",
+  "CHF 400 für 8 Stunden"
 ]
 
 prices_excluding_vat = true

@@ -1,8 +1,12 @@
 +++
-title = "E-0010"
+title = "Labor"
 weight = 6
-description = "Raum «E-0010» (Zweites UG) für Events, Aktivitäten und digitale Projekte."
+description = "Raum «Labor» (Zweites UG) für Events, Aktivitäten und digitale Projekte."
 image = "Raum-UG_00002.jpg"
+
+aliases = [
+    "/raeume/zweites-ug/"
+]
 
 gallery = [
   "Raum-UG_00002.jpg",
