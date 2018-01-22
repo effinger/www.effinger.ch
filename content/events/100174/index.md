@@ -44,3 +44,8 @@ Details, Vierteltöne, Wellen und Schichten.
 Eine Performance von through nature   
 Tanz: Gianna Grünig   
 Musik: Hasan Nakhleh
+
+
+## Anmeldung und Preis
+
+Bitte per Formular unten anmelden. Der Preis kann am Abend selber gewählt werden (pay as you wish).
