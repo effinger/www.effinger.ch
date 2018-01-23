@@ -61,16 +61,16 @@
 <script src="/js/moment-with-locales.min.js"></script>
 <script type="text/javascript">
 
-  function loadPosts(skip, take) {
+  function loadPosts(fromRow, toRow) {
+    
     var Index = {
       DATE: 0,
       AUTHOR: 1,
       COMMENT: 2,
-      FILE_NAME: 3,
-      CLOUDINARY_IMAGE_URL: 4,
+      CLOUDINARY_IMAGE_URL: 3,
     };
     
-    $.get("https://sheets.googleapis.com/v4/spreadsheets/1zdudRkT_1emT-ngS0aKWOZ15QN440OT7ULA_1hedeLM/values/Sheet1!2:20?key=AIzaSyAcKsXpUFgllXtNsRJaOBz-0kBR2PkqC04", function( data ) {
+    $.get("https://sheets.googleapis.com/v4/spreadsheets/1zdudRkT_1emT-ngS0aKWOZ15QN440OT7ULA_1hedeLM/values/Sheet1!" + fromRow + ":" + toRow + "?key=AIzaSyAcKsXpUFgllXtNsRJaOBz-0kBR2PkqC04", function( data ) {
       $.each(data.values, function(i, item) {
         $('#stream-container').append('\
         <div class="streamEntry">\
@@ -109,13 +109,43 @@
   }
 
   $(document).ready(function() {
+
+    var exactRow = -1;
+    
+    // Get the location hash value and test if it is a number.
+    var hash = window.location.hash.substring(1);
+    if (hash && !isNaN(hash)) {
+      exactRow = hash;
+    }
+    
+    var totalRows = 0;
+    var currentFromRow = 0;
+    var currentToRow = 0;
+    
+    $.get("https://sheets.googleapis.com/v4/spreadsheets/1zdudRkT_1emT-ngS0aKWOZ15QN440OT7ULA_1hedeLM/values/Sheet1!G1?key=AIzaSyAcKsXpUFgllXtNsRJaOBz-0kBR2PkqC04", function( data ) {
+      totalRows = data.values[0][0];
+      
+      if (exactRow > -1) {
+        currentFromRow = exactRow;
+        currentToRow = exactRow;
+      } else {
+        currentFromRow = totalRows;
+        currentToRow = currentFromRow - 3;
+      }
+      
+      loadPosts(currentFromRow, currentToRow);
+    });
+    
     $("#button-load-more").click(function() {
-      loadPosts();
+      currentFromRow -= 3;
+      currentToRow = currentFromRow - 3;
+      
+      loadPosts(currentFromRow, currentToRow);
     });
 
     moment.locale("de");
 
-    loadPosts();
+
   });
 </script>
 {{ end }}
