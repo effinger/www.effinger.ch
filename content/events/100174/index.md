@@ -37,13 +37,19 @@ Tanz und Choreografie: Sunita Asnani, Sandra Chatterjee, Chris Lechner
 
 ![oued](oued.jpg)
 
-Tanz und Musik verweben sich,   
-im Dialog eine weite Landschaft,   
-Details, Vierteltöne, Wellen und Schichten.
+cosmos streaming through the valley into an open field of oceans   
+interwoven landscapes   
+in the detail a glade   
+in the distance a shadow
 
-Eine Performance von through nature   
 Tanz: Gianna Grünig   
 Musik: Hasan Nakhleh
+
+Eine Produktion von: **t h r o u g h * n a t u r e**
+
+Die Plattform through*nature steht für Begegnungen, Kreationen und Performances zwischen Kunstschaffenden aus den Sparten Tanz und Musik. Nach ‚membrane of a thought’, der letzten Zusammenarbeit von Gianna Grünig und Hasan Nakhleh, wird die gemeinsame Recherche des Dialoges welcher durch die Komposition im Moment entsteht vertieft und erweitert.
+
+Die Improvisation ist das Handwerk zum Stück, wobei davon ausgegangen wird, dass das im Moment kreierte eine unveränderbare, hoch spezifische Realität ist, welche den Grund für jeden nächsten Moment legt. Es kristallisiert sich die Essenz des Stückes, wobei die Form veränderbar und immer neu (er)findbar bleibt.
 
 
 ## Anmeldung und Preis
