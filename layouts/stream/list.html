@@ -60,35 +60,46 @@
 <!-- Fetch streams -->
 <script src="/js/moment-with-locales.min.js"></script>
 <script type="text/javascript">
+
   function loadPosts(skip, take) {
-    $.get("https://script.google.com/a/effinger.ch/macros/s/AKfycbzK4OUO-rs82EC8TwSnZ43mVZgN83fMbuVmg7JL8XZi91Larvg/exec", function( data ) {
-      $.each(data, function(i, item) {
+    var Index = {
+      DATE: 0,
+      AUTHOR: 1,
+      COMMENT: 2,
+      FILE_NAME: 3,
+      CLOUDINARY_IMAGE_URL: 4,
+    };
+    
+    $.get("https://sheets.googleapis.com/v4/spreadsheets/1zdudRkT_1emT-ngS0aKWOZ15QN440OT7ULA_1hedeLM/values/Sheet1!2:20?key=AIzaSyAcKsXpUFgllXtNsRJaOBz-0kBR2PkqC04", function( data ) {
+      $.each(data.values, function(i, item) {
         $('#stream-container').append('\
         <div class="streamEntry">\
           <div class="streamEntry__column">\
-            <img class="streamEntry__image" src="' + item.cloudinaryImageUrl.replace("upload/", "upload/w_1000,h_1000,c_limit/") + '">\
+            <img class="streamEntry__image" src="' + 
+            // cloudinaryImageUrl
+            item[Index.CLOUDINARY_IMAGE_URL].replace("upload/", "upload/w_1000,h_1000,c_limit/") + '">\
             <div class="streamEntry__textbox">\
               <h3 class="streamEntry__text">\
-                ' + item.comment + '\
+                ' + item[Index.COMMENT] + '\
               </h3>\
               <div class="streamEntry__authoring">\
                 <span class="streamEntry__name">\
-                  @' + item.author + '\
+                  @' + item[Index.AUTHOR] + '\
                 </span>\
                 <span class="streamEntry__time">\
-                  ' + moment(item.date).format("HH.mm") + ' Uhr\
+                  ' + moment(item[Index.DATE]).format("HH.mm") + ' Uhr\
                 </span>\
               </div>\
             </div>\
             <div class="datebox">\
               <span class="datebox__day">\
-                ' + moment(item.date).format("D") + '\
+                ' + moment(item[Index.DATE]).format("D") + '\
               </span>\
               <span class="datebox__month">\
-                ' + moment(item.date).format("MMM") + '\
+                ' + moment(item[Index.DATE]).format("MMM") + '\
               </span>\
               <span class="datebox__year">\
-                ' + moment(item.date).format("YY") + '\
+                ' + moment(item[Index.DATE]).format("YY") + '\
               </span>\
             </div>\
           </div>\
