@@ -66,33 +66,37 @@
 <script src="/js/moment-with-locales.min.js"></script>
 <script type="text/javascript">
 
-  function loadPosts(fromRow, toRow) {
+  var StreamIndex = {
+    DATE: 0,
+    AUTHOR: 1,
+    COMMENT: 2,
+    IMAGE_URL: 3,
+    IMAGE_WIDTH: 4,
+    IMAGE_HEIGHT: 5,
+  };
 
-    var Index = {
-      DATE: 0,
-      AUTHOR: 1,
-      COMMENT: 2,
-      IMAGE_URL: 3,
-      IMAGE_WIDTH: 4,
-      IMAGE_HEIGHT: 5,
-    };
+  var streamAmount = 3;
 
-    $.get("https://sheets.googleapis.com/v4/spreadsheets/1zdudRkT_1emT-ngS0aKWOZ15QN440OT7ULA_1hedeLM/values/Sheet1!" + fromRow + ":" + toRow + "?key=AIzaSyAcKsXpUFgllXtNsRJaOBz-0kBR2PkqC04", function( data ) {
-      $.each(data.values, function(i, item) {
+
+
+  // Loads from the specified amount of images.
+  function loadPosts(currentFromRow, currentToRow) {
+    $.get("https://sheets.googleapis.com/v4/spreadsheets/1zdudRkT_1emT-ngS0aKWOZ15QN440OT7ULA_1hedeLM/values/Sheet1!" + currentFromRow + ":" + currentToRow + "?key=AIzaSyAcKsXpUFgllXtNsRJaOBz-0kBR2PkqC04", function( data ) {
+      $.each(data.values.reverse(), function(i, item) {
 
         var maxImageSize = 1000;
-        var imageUrl = item[Index.IMAGE_URL].replace("upload/", "upload/w_" + maxImageSize + ",h_" + maxImageSize + ",c_limit/");
-        var originalImageWidth = item[Index.IMAGE_WIDTH];
-        var originalImageHeight = item[Index.IMAGE_HEIGHT];
+        var imageUrl = item[StreamIndex.IMAGE_URL].replace("upload/", "upload/w_" + maxImageSize + ",h_" + maxImageSize + ",c_limit/");
+        var originalImageWidth = item[StreamIndex.IMAGE_WIDTH];
+        var originalImageHeight = item[StreamIndex.IMAGE_HEIGHT];
 
         // Calculate the actual image dimensions.
         var ratio = Math.min(maxImageSize / originalImageWidth, maxImageSize / originalImageHeight);
         var imageWidth = Math.round(originalImageWidth * ratio);
         var imageHeight = Math.round(originalImageHeight * ratio);
 
-        var itemComment = item[Index.COMMENT];
-        var itemAuthor = item[Index.AUTHOR];
-        var itemDate = item[Index.DATE];
+        var itemComment = item[StreamIndex.COMMENT];
+        var itemAuthor = item[StreamIndex.AUTHOR];
+        var itemDate = item[StreamIndex.DATE];
 
 
         $('#stream-container').append('\
@@ -130,8 +134,8 @@
           </div>\
         </div>');
 
-        if (fromRow == toRow) {
-          // We have only one element.
+        if (currentFromRow == currentToRow) {
+          // We have only one element. It is a single image page.
 
           // Set open graph meta data.
           // Note: This will only work if the server does prerendering.
@@ -149,42 +153,47 @@
   $(document).ready(function() {
 
     var totalRows = 0;
-    var currentFromRow = 0;
-    var currentToRow = 0;
-
+    var currentFromRow;
+    var currentToRow;
 
     // var hash = window.location.hash.substring(1);
     // if (hash && !isNaN(hash)) {
 
     // Get the image id from url if available.
     var pathArray = window.location.pathname.split( '/' );
-    console.log('pathArray: ' + pathArray);
+
     if (pathArray.length > 2 && pathArray[2]) {
-      var imageId = pathArray[2];
-
       // We have a row specified in the location hash.
-      currentFromRow = imageId;
-      currentToRow = imageId;
-
-      loadPosts(currentFromRow, currentToRow);
+      currentRow = pathArray[2];
+      loadPosts(currentRow, 1);
 
     } else {
       $.get("https://sheets.googleapis.com/v4/spreadsheets/1zdudRkT_1emT-ngS0aKWOZ15QN440OT7ULA_1hedeLM/values/Sheet1!L1?key=AIzaSyAcKsXpUFgllXtNsRJaOBz-0kBR2PkqC04", function( data ) {
         totalRows = data.values[0][0];
         currentFromRow = totalRows;
-        currentToRow = currentFromRow - 3;
+
+        // Do not go below row 1.
+        currentToRow = Math.max(currentFromRow - streamAmount + 1, 1);
 
         loadPosts(currentFromRow, currentToRow);
+        
+        if (currentToRow <= 1) {
+          $("#button-load-more").remove();
+        }
       });
     }
 
 
 
     $("#button-load-more").click(function() {
-      currentFromRow -= 3;
-      currentToRow = currentFromRow - 3;
+      currentFromRow = currentToRow - 1;
+      currentToRow = Math.max(currentFromRow - streamAmount + 1, 1);
 
       loadPosts(currentFromRow, currentToRow);
+
+      if (currentToRow <= 1) {
+        $("#button-load-more").remove();
+      }
     });
 
     moment.locale("de");
