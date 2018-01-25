@@ -1,3 +1,8 @@
+{{ define "head_includes" }}
+<!-- Needed so that prerendering is used by web crawlers. -->
+<meta name="fragment" content="!">
+{{ end }}
+
 {{ define "main" }}
 <!-- Page Wrap -->
 <div class="page" id="top">
@@ -62,27 +67,27 @@
 <script type="text/javascript">
 
   function loadPosts(fromRow, toRow) {
-    
+
     var Index = {
       DATE: 0,
       AUTHOR: 1,
       COMMENT: 2,
       CLOUDINARY_IMAGE_URL: 3,
     };
-    
+
     $.get("https://sheets.googleapis.com/v4/spreadsheets/1zdudRkT_1emT-ngS0aKWOZ15QN440OT7ULA_1hedeLM/values/Sheet1!" + fromRow + ":" + toRow + "?key=AIzaSyAcKsXpUFgllXtNsRJaOBz-0kBR2PkqC04", function( data ) {
       $.each(data.values, function(i, item) {
-        
+
         var cloudinaryImageUrl = item[Index.CLOUDINARY_IMAGE_URL].replace("upload/", "upload/w_1000,h_1000,c_limit/")
         var itemComment = item[Index.COMMENT];
         var itemAuthor = item[Index.AUTHOR];
         var itemDate = item[Index.DATE];
-        
-        
+
+
         $('#stream-container').append('\
         <div class="streamEntry">\
           <div class="streamEntry__column">\
-            <img class="streamEntry__image" src="' + 
+            <img class="streamEntry__image" src="' +
             cloudinaryImageUrl + '">\
             <div class="streamEntry__textbox">\
               <h3 class="streamEntry__text">\
@@ -113,22 +118,23 @@
             </div>\
           </div>\
         </div>');
-        
+
         if (fromRow == toRow) {
           // We have only one element.
-          
+
+          // Set open graph meta data.
+          // Note: This will only work if the server does prerendering.
+          $('meta[property=og\\:image]').attr('content', cloudinaryImageUrl);
+          $('meta[property=og\\:url]').attr('content', window.location);
+          $('meta[property=og\\:description]').attr('content', itemComment);
+          $('meta[name=description]').attr('content', itemComment);
+
           var real_width, real_height;
           $('.streamEntry__image') // Make in memory copy of image
           .load(function() {
             real_width = this.naturalWidth;   // Note: $(this).width() will not
             real_height = this.naturalHeight; // work for in memory images.
-            
-            // Set open graph meta data.
-            // Note: This will only work if the server does prerendering.
-            $('meta[property=og\\:image]').attr('content', cloudinaryImageUrl);
-            $('meta[property=og\\:url]').attr('content', window.location);
-            $('meta[property=og\\:description]').attr('content', itemComment);
-            $('meta[name=description]').attr('content', itemComment);
+
             $('meta[property=og\\:image\\:width]').attr('content', real_width);
             $('meta[property=og\\:image\\:height]').attr('content', real_height);
           });
@@ -142,39 +148,39 @@
     var totalRows = 0;
     var currentFromRow = 0;
     var currentToRow = 0;
-    
-    
+
+
     // var hash = window.location.hash.substring(1);
     // if (hash && !isNaN(hash)) {
-    
+
     // Get the image id from url if available.
     var pathArray = window.location.pathname.split( '/' );
     console.log('pathArray: ' + pathArray);
     if (pathArray.length > 2 && pathArray[2]) {
       var imageId = pathArray[2];
-    
+
       // We have a row specified in the location hash.
       currentFromRow = imageId;
       currentToRow = imageId;
-  
+
       loadPosts(currentFromRow, currentToRow);
-      
+
     } else {
       $.get("https://sheets.googleapis.com/v4/spreadsheets/1zdudRkT_1emT-ngS0aKWOZ15QN440OT7ULA_1hedeLM/values/Sheet1!G1?key=AIzaSyAcKsXpUFgllXtNsRJaOBz-0kBR2PkqC04", function( data ) {
         totalRows = data.values[0][0];
         currentFromRow = totalRows;
         currentToRow = currentFromRow - 3;
-        
+
         loadPosts(currentFromRow, currentToRow);
       });
     }
-    
 
-    
+
+
     $("#button-load-more").click(function() {
       currentFromRow -= 3;
       currentToRow = currentFromRow - 3;
-      
+
       loadPosts(currentFromRow, currentToRow);
     });
 
