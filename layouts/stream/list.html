@@ -82,7 +82,7 @@
     };
 
     // The batch of images that should be loaded.
-    var LOAD_BATCH = 3;
+    var LOAD_BATCH = 12;
     var currentPostId;
 
 
@@ -127,13 +127,6 @@
 
       var maxImageSize = 1000;
       var imageUrl = item[StreamIndex.IMAGE_URL].replace("upload/", "upload/w_" + maxImageSize + ",h_" + maxImageSize + ",c_limit/");
-      var originalImageWidth = item[StreamIndex.IMAGE_WIDTH];
-      var originalImageHeight = item[StreamIndex.IMAGE_HEIGHT];
-
-      // Calculate the actual image dimensions.
-      var ratio = Math.min(maxImageSize / originalImageWidth, maxImageSize / originalImageHeight);
-      var imageWidth = Math.round(originalImageWidth * ratio);
-      var imageHeight = Math.round(originalImageHeight * ratio);
 
       var itemComment = item[StreamIndex.COMMENT];
       var itemAuthor = item[StreamIndex.AUTHOR];
@@ -141,7 +134,7 @@
 
 
       $('#stream-container').append('\
-      <div class="streamEntry">\
+      <div class="streamEntry" id="' + itemId + '">\
         <div class="streamEntry__column">\
           <img class="streamEntry__image" src="' +
           imageUrl + '">\
@@ -179,6 +172,14 @@
       if (isSinglePage) {
         // We have only one element. It is a single image page.
 
+        var originalImageWidth = item[StreamIndex.IMAGE_WIDTH];
+        var originalImageHeight = item[StreamIndex.IMAGE_HEIGHT];
+
+        // Calculate the actual image dimensions.
+        var ratio = Math.min(maxImageSize / originalImageWidth, maxImageSize / originalImageHeight);
+        var imageWidth = Math.round(originalImageWidth * ratio);
+        var imageHeight = Math.round(originalImageHeight * ratio);
+
         // Set open graph meta data.
         // Note: This will only work if the server does prerendering.
         $('meta[property=og\\:image]').attr('content', imageUrl);
@@ -189,9 +190,6 @@
         $('meta[property=og\\:image\\:height]').attr('content', imageHeight);
       }
     }
-
-    // var hash = window.location.hash.substring(1);
-    // if (hash && !isNaN(hash)) {
 
     // Get the image id from url if available.
     var pathArray = window.location.pathname.split( '/' );
@@ -209,6 +207,7 @@
       $("#button-load-more").hide();
 
     } else {
+      // Get the total number of posts.
       $.get("https://sheets.googleapis.com/v4/spreadsheets/1zdudRkT_1emT-ngS0aKWOZ15QN440OT7ULA_1hedeLM/values/Sheet1!L1?key=AIzaSyAcKsXpUFgllXtNsRJaOBz-0kBR2PkqC04", function( data ) {
         // Start with the last row.
         currentPostId = data.values[0][0];
