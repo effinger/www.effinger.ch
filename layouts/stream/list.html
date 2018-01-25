@@ -196,16 +196,18 @@
     var pathArray = window.location.pathname.split( '/' );
 
     // test for single post locally.
-    // currentPostId = 2;
+    // currentPostId = 3;
     // loadSinglePost();
-    // $("#button-load-more").remove();
 
     if (pathArray.length > 2 && pathArray[2]) {
       // We have a row specified in the location hash.
       currentPostId = pathArray[2];
       loadSinglePost();
 
-      $("#button-load-more").hide();
+      $("#stream-loader").hide();
+      $("#button-load-more").html('zum Stream').click(function() {
+        window.location.href = '/stream/';
+      });
 
     } else {
       // Get the total number of posts.
@@ -214,13 +216,11 @@
         currentPostId = data.values[0][0];
         loadPosts();
       });
+
+      $("#button-load-more").click(function() {
+        loadPosts();
+      });
     }
-
-
-
-    $("#button-load-more").click(function() {
-      loadPosts();
-    });
 
     moment.locale("de");
 
