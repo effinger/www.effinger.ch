@@ -184,6 +184,7 @@
         // Note: This will only work if the server does prerendering.
         $('meta[property=og\\:image]').attr('content', imageUrl);
         $('meta[property=og\\:url]').attr('content', window.location);
+        $('meta[property=og\\:title]').attr('content', itemAuthor + ' via Effinger Stream');
         $('meta[property=og\\:description]').attr('content', itemComment);
         $('meta[name=description]').attr('content', itemComment);
         $('meta[property=og\\:image\\:width]').attr('content', imageWidth);
