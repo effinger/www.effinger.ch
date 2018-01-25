@@ -72,13 +72,24 @@
       DATE: 0,
       AUTHOR: 1,
       COMMENT: 2,
-      CLOUDINARY_IMAGE_URL: 3,
+      IMAGE_URL: 3,
+      IMAGE_WIDTH: 4,
+      IMAGE_HEIGHT: 5,
     };
 
     $.get("https://sheets.googleapis.com/v4/spreadsheets/1zdudRkT_1emT-ngS0aKWOZ15QN440OT7ULA_1hedeLM/values/Sheet1!" + fromRow + ":" + toRow + "?key=AIzaSyAcKsXpUFgllXtNsRJaOBz-0kBR2PkqC04", function( data ) {
       $.each(data.values, function(i, item) {
 
-        var cloudinaryImageUrl = item[Index.CLOUDINARY_IMAGE_URL].replace("upload/", "upload/w_1000,h_1000,c_limit/")
+        var maxImageSize = 1000;
+        var imageUrl = item[Index.IMAGE_URL].replace("upload/", "upload/w_" + maxImageSize + ",h_" + maxImageSize + ",c_limit/");
+        var originalImageWidth = item[Index.IMAGE_WIDTH];
+        var originalImageHeight = item[Index.IMAGE_HEIGHT];
+
+        // Calculate the actual image dimensions.
+        var ratio = Math.min(maxImageSize / originalImageWidth, maxImageSize / originalImageHeight);
+        var imageWidth = originalImageWidth * ratio;
+        var imageHeight = originalImageHeight * ratio;
+
         var itemComment = item[Index.COMMENT];
         var itemAuthor = item[Index.AUTHOR];
         var itemDate = item[Index.DATE];
@@ -88,7 +99,7 @@
         <div class="streamEntry">\
           <div class="streamEntry__column">\
             <img class="streamEntry__image" src="' +
-            cloudinaryImageUrl + '">\
+            imageUrl + '">\
             <div class="streamEntry__textbox">\
               <h3 class="streamEntry__text">\
                 ' + itemComment + '\
@@ -124,20 +135,12 @@
 
           // Set open graph meta data.
           // Note: This will only work if the server does prerendering.
-          $('meta[property=og\\:image]').attr('content', cloudinaryImageUrl);
+          $('meta[property=og\\:image]').attr('content', imageUrl);
           $('meta[property=og\\:url]').attr('content', window.location);
           $('meta[property=og\\:description]').attr('content', itemComment);
           $('meta[name=description]').attr('content', itemComment);
-
-          var real_width, real_height;
-          $('.streamEntry__image') // Make in memory copy of image
-          .load(function() {
-            real_width = this.naturalWidth;   // Note: $(this).width() will not
-            real_height = this.naturalHeight; // work for in memory images.
-
-            $('meta[property=og\\:image\\:width]').attr('content', real_width);
-            $('meta[property=og\\:image\\:height]').attr('content', real_height);
-          });
+          $('meta[property=og\\:image\\:width]').attr('content', imageWidth);
+          $('meta[property=og\\:image\\:height]').attr('content', imageHeight);
         }
       });
     });
@@ -166,7 +169,7 @@
       loadPosts(currentFromRow, currentToRow);
 
     } else {
-      $.get("https://sheets.googleapis.com/v4/spreadsheets/1zdudRkT_1emT-ngS0aKWOZ15QN440OT7ULA_1hedeLM/values/Sheet1!G1?key=AIzaSyAcKsXpUFgllXtNsRJaOBz-0kBR2PkqC04", function( data ) {
+      $.get("https://sheets.googleapis.com/v4/spreadsheets/1zdudRkT_1emT-ngS0aKWOZ15QN440OT7ULA_1hedeLM/values/Sheet1!L1?key=AIzaSyAcKsXpUFgllXtNsRJaOBz-0kBR2PkqC04", function( data ) {
         totalRows = data.values[0][0];
         currentFromRow = totalRows;
         currentToRow = currentFromRow - 3;
