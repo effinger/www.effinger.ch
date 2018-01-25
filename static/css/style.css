@@ -9964,7 +9964,8 @@ form .alert-close {
           flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  z-index: 1; }
   @media (min-width: 750px) {
     .streamEntry__column {
       width: 45%; } }
