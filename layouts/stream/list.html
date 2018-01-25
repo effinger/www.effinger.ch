@@ -143,12 +143,19 @@
     var currentFromRow = 0;
     var currentToRow = 0;
     
-    // Get the location hash value and test if it is a number.
-    var hash = window.location.hash.substring(1);
-    if (hash && !isNaN(hash)) {
+    
+    // var hash = window.location.hash.substring(1);
+    // if (hash && !isNaN(hash)) {
+    
+    // Get the image id from url if available.
+    var pathArray = window.location.pathname.split( '/' );
+    console.log('pathArray: ' + pathArray);
+    if (pathArray.length > 2 && pathArray[2]) {
+      var imageId = pathArray[2];
+    
       // We have a row specified in the location hash.
-      currentFromRow = hash;
-      currentToRow = hash;
+      currentFromRow = imageId;
+      currentToRow = imageId;
   
       loadPosts(currentFromRow, currentToRow);
       
