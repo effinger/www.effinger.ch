@@ -87,8 +87,8 @@
 
         // Calculate the actual image dimensions.
         var ratio = Math.min(maxImageSize / originalImageWidth, maxImageSize / originalImageHeight);
-        var imageWidth = originalImageWidth * ratio;
-        var imageHeight = originalImageHeight * ratio;
+        var imageWidth = Math.round(originalImageWidth * ratio);
+        var imageHeight = Math.round(originalImageHeight * ratio);
 
         var itemComment = item[Index.COMMENT];
         var itemAuthor = item[Index.AUTHOR];
