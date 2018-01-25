@@ -1,6 +1,119 @@
 /* Stream */
 
 
+/* Stream Teaser Index */
+
+.streamTeaser {
+  padding: 12rem 2rem;
+  position: relative;
+  overflow: hidden;
+  @include breakpoint(medium) {
+    padding: 22rem 2rem;
+  }
+  @include breakpoint(xlarge) {
+    padding: 30rem 2rem;
+  }
+}
+
+.streamTeaser__imagecontainer  {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.streamTeaser__columns {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  // margin-top: -10vw;
+  margin-bottom: -8vw;
+
+  &:after {
+    content: "";
+    height: 100%;
+    width: 3px;
+    position: absolute;
+    top: 0;
+    left: calc(50% - 1px);
+    background-color: $primary-color;
+  }
+}
+
+/* Positioning Items */
+
+.streamTeaser__columns:nth-child(1) {
+  justify-content: flex-start;
+  padding-top: 10vw;
+}
+
+.streamTeaser__columns:nth-child(2) {
+  justify-content: flex-end;
+  // padding-bottom: 3vw;
+}
+
+.streamTeaser__columns:nth-child(3) {
+  display: none;
+  @include breakpoint(medium) {
+      display: flex;
+      justify-content: flex-start;
+      // padding-top: 1vw;
+
+   }
+}
+
+.streamTeaser__columns:nth-child(4) {
+  display: none;
+  @include breakpoint(large) {
+      display: flex;
+      justify-content: flex-end;
+      // padding-bottom: 14vw;
+   }
+}
+
+.image-item {
+  text-decoration: none;
+  position: relative;
+  z-index: 1;
+  display: block;
+  max-width: 40vw;
+  transition: all 500ms ease;
+  @include breakpoint(medium) {
+    max-width: 26vw;
+  }
+  @include breakpoint(large) {
+    max-width: 22vw;
+  }
+  @include breakpoint(xlarge) {
+    max-width: none;
+  }
+}
+
+.image-item:hover {
+  transform: scale(1.5);
+}
+
+.image-item__src {
+  margin-bottom: 1.5rem;
+}
+
+
+.streamTeaser__textcontainer {
+  padding: 3rem 1rem;
+  background-color: fade-out(white, 0.05);
+  position: relative;
+  text-align: center;
+  z-index: 1;
+  @include breakpoint(medium) {
+    padding: 8rem 1rem;
+   }
+}
+
+
 /* Page Section Modifier */
 .page-section--small {
   @media (max-width: $medium) {
@@ -199,8 +312,12 @@
   @include breakpoint(xlarge) {
     font-size: 1.6rem;
   }
-
 }
+
+.streamEntry__authoring--left {
+  padding-left: 1.5rem;
+}
+
 
 .streamEntry__name {
   font-weight: 400;
@@ -209,6 +326,7 @@
 
 .streamEntry__time {
   margin: 0;
+  text-decoration: none;
   &::before {
     content: "—";
   }

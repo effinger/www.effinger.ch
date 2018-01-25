@@ -49,7 +49,7 @@ Für Jungunternehmer, Kreative, Handwerkerinnen, Weltveränderer, Bernerinnen, Z
   <!--
   <section class="page-section pt-80 pb-80">
     <div class="container relative">
-      
+
       <div class="row">
         <div class="col-sm-8 col-md-7 mb-md-40">
           <div class="section-text">
@@ -74,25 +74,59 @@ Für Jungunternehmer, Kreative, Handwerkerinnen, Weltveränderer, Bernerinnen, Z
   </section>
   -->
 
-  <section class="page-section pt-80 pb-80 bg-gray-lighter">
-    <div class="container relative">
-      <div class="section-text">
-        <h2 class="hs-line-11 font-alt mb-60 text-center"><a href="/blog/">Effinger Stories</a></h2>
+  <!-- Stream Teaser -->
+  <section class="streamTeaser page-section bg-gray-lighter">
+    <div class="streamTeaser__imagecontainer">
 
-        <div class="row">
-          {{ range first 3 (where .Site.RegularPages "Section" "blog") }}
-          <div class="col-sm-4">
-            {{ partial "blog/summary_home.html" . }}
+      <div class="streamTeaser__columns">
+        <a class="image-item js-rellax" href="stream" data-rellax-speed="7">
+          <img class="image-item__src" src="http://via.placeholder.com/300x400" alt="" >
+          <div class="streamEntry__authoring  streamEntry__authoring--left">
+            <span class="streamEntry__name">@Hans Wurst</span>
+            <span class="streamEntry__time">12.55 Uhr</span>
           </div>
-          {{ end }}
-        </div>
-        <div class="mt-40 text-center">
-          <a href="/blog/" class="btn btn-mod btn-border btn-round btn-medium">Mehr</a>
-        </div>
+        </a>
       </div>
+
+      <div class="streamTeaser__columns">
+        <a class="image-item js-rellax" href="stream" data-rellax-speed="4">
+          <img class="image-item__src" src="http://via.placeholder.com/400x300" alt="" >
+          <div class="streamEntry__authoring  streamEntry__authoring--left">
+            <span class="streamEntry__name">@Hans Wurst</span>
+            <span class="streamEntry__time">12.55 Uhr</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="streamTeaser__columns">
+        <a class="image-item js-rellax" href="stream" data-rellax-speed="7">
+          <img class="image-item__src" src="http://via.placeholder.com/300x400" alt="" >
+          <div class="streamEntry__authoring  streamEntry__authoring--left">
+            <span class="streamEntry__name">@Hans Wurst</span>
+            <span class="streamEntry__time">12.55 Uhr</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="streamTeaser__columns">
+        <a class="image-item js-rellax" href="stream" data-rellax-speed="20">
+          <img class="image-item__src" src="http://via.placeholder.com/400x300" alt="" >
+          <div class="streamEntry__authoring  streamEntry__authoring--left">
+            <span class="streamEntry__name">@Hans Wurst</span>
+            <span class="streamEntry__time">12.55 Uhr</span>
+          </div>
+        </a>
+      </div>
+
+    </div>
+
+    <div class="container streamTeaser__textcontainer">
+      <h2 class="hs-line-11 font-alt mb-60 text-center"><a href="/stream/">Community Stream</a></h2>
+      <a href="stream" class="btn btn-mod btn-border btn-round btn-medium">Zum Stream</a>
     </div>
   </section>
 
+  <!-- Events -->
   <section class="page-section pt-80 pb-80 event">
     <div class="container relative">
       <div class="section-text">
@@ -115,6 +149,26 @@ Für Jungunternehmer, Kreative, Handwerkerinnen, Weltveränderer, Bernerinnen, Z
           <a href="/events/" class="btn btn-mod btn-border btn-round btn-medium">Mehr</a>
         </div>
 
+      </div>
+    </div>
+  </section>
+
+    <!-- Blog -->
+    <section class="page-section pt-80 pb-80 bg-gray-lighter">
+    <div class="container relative">
+      <div class="section-text">
+        <h2 class="hs-line-11 font-alt mb-60 text-center"><a href="/blog/">Effinger Stories</a></h2>
+
+        <div class="row">
+          {{ range first 3 (where .Site.RegularPages "Section" "blog") }}
+          <div class="col-sm-4">
+            {{ partial "blog/summary_home.html" . }}
+          </div>
+          {{ end }}
+        </div>
+        <div class="mt-40 text-center">
+          <a href="/blog/" class="btn btn-mod btn-border btn-round btn-medium">Mehr</a>
+        </div>
       </div>
     </div>
   </section>
@@ -353,4 +407,17 @@ Für Jungunternehmer, Kreative, Handwerkerinnen, Weltveränderer, Bernerinnen, Z
   <!-- End contact section -->
 </div>
 <!-- End Page Wrap -->
+{{ end }}
+
+{{ define "body_includes" }}
+
+<script type="text/javascript" src="/js/rellax.min.js"></script>
+<script>
+ if ( $('.js-rellax').length ) {
+   var rellax = new Rellax('.js-rellax', {
+     // center: true
+   });
+ }
+</script>
+
 {{ end }}
