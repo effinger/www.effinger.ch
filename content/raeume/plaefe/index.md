@@ -35,7 +35,7 @@ prices_excluding_vat = false
 calendar_id = "effinger.ch_2d35313235363038352d333337@resource.calendar.google.com"
 
 [[extras]]
-text = "Moderationskoffer"
+text = "Moderationsmaterial"
 price = "CHF 50"
 
 [[extras]]

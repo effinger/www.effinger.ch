@@ -44,7 +44,7 @@ text = "Moving Walls (beschreibbar)"
 price = "CHF 50"
 
 [[extras]]
-text = "Moderationskoffer"
+text = "Moderationsmaterial"
 price = "CHF 50"
 
 [[extras]]
