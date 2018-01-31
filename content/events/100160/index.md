@@ -1,13 +1,11 @@
 +++
-title = "Effinger Community-Treffen Januar"
+title = "Effinger Community-Treffen Januar (OPEN SPACE)"
 
 startdate = 2018-01-11T19:00:00Z
 enddate = 2018-01-11T21:00:00Z
 categories = [ "Community" ]
 location = "Effinger im 1. OG"
 image = "community-treffen.jpg"
-[registration]
-  close = 2018-01-11T21:00:00Z
 +++
 
 Wir treffen uns an jedem ersten Donnerstag im Monat als Community. Neben den Community Membern sind auch **Gäste herzlich willkommen**.
@@ -22,7 +20,9 @@ Im Voraus schreiben wir in das Protokoll die geplanten Aktivitäten und Entschei
 
 ---
 
-## Typischer Ablauf eines Community-Treffens
+Alternierend haben wir jeweils Treffen mit einem Ablauf als **Open Space** und als **Circles**.
+
+## Ablauf Community-Treffen - OPEN SPACE
 
 ### Gemeinsames Essen (18.00 Uhr)
 
@@ -44,16 +44,6 @@ An dieser Stelle können grosse Entscheide [soziokratisch](/organisation/soziokr
 Hier kann man ein Abendprojekt, eine Diskussion oder einen Austausch zu einem Thema vorschlagen und kurz präsentieren. Aktivitäten dürfen auch spontan am Treffen vorgeschlagen werden. Die Anwesenden entscheiden, wo sie hingehen wollen. Es darf und soll zwischen Aktivitäten gewechselt werden. Weitere Details findet man unter dem Begriff “Open Space Technology”.
 
 
-#### Aktivität: Eifach öppis zämä trinkä
-
-Das Community-Treffen soll auch eben das sein, was der Name sagt: Ein Treffen für die Community. Deshalb gibt es neben allen anderen Aktivitäten jeweils eine fixe Aktivität "*Eifach öppis zämä trinkä*".
-
-
-#### Weitere Aktivitäten
-
-Weitere Aktivitäten findet ihr im Protokoll oben.
-
-
 ### C.) Resultate vorstellen (~15 Min.)
 
 Resultate der Aktivitäten werden präsentiert.
@@ -67,3 +57,7 @@ In diesem Block können Informationen an die Community mitgeteilt werden (z.B. E
 ### Check-Out
 
 Das Check-Out ist eine Aktivität, um gemeinsam das Treffen abzuschliessen.
+
+---
+
+<a href="/events/100161/" class="blog-item-more right"><i class="fa fa-angle-right"></i>Nächstes Community-Treffen</a>

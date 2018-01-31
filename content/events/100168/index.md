@@ -1,13 +1,11 @@
 +++
-title = "Effinger Community-Treffen September"
+title = "Effinger Community-Treffen September (OPEN SPACE)"
 
 startdate = 2018-09-06T19:00:00Z
 enddate = 2018-09-06T21:00:00Z
 categories = [ "Community" ]
 location = "Effinger im 1. OG"
 image = "community-treffen.jpg"
-[registration]
-  close = 2018-09-06T21:00:00Z
 +++
 
 Wir treffen uns an jedem ersten Donnerstag im Monat als Community. Neben den Community Membern sind auch **Gäste herzlich willkommen**.
@@ -18,11 +16,13 @@ Wir treffen uns an jedem ersten Donnerstag im Monat als Community. Neben den Com
 
 Im Voraus schreiben wir in das Protokoll die geplanten Aktivitäten und Entscheide. Unter folgendem Link kannst du lesen, um was es geht und bereits im Vorfeld kommentieren:
 
-<a target="_blank" class="btn btn-mod btn-border btn-round btn-medium">Aktivitäten und Protokoll (folgt)</a>
+<a href="https://docs.google.com/document/d/1SyR42e6F64dEMiZRNhrTZwh1pu28O4P2UuGvZfKyfQ0/edit?usp=sharing" target="_blank" class="btn btn-mod btn-border btn-round btn-medium">Aktivitäten und Protokoll</a>
 
 ---
 
-## Typischer Ablauf eines Community-Treffens
+Alternierend haben wir jeweils Treffen mit einem Ablauf als **Open Space** und als **Circles**.
+
+## Ablauf Community-Treffen - OPEN SPACE
 
 ### Gemeinsames Essen (18.00 Uhr)
 
@@ -44,22 +44,12 @@ An dieser Stelle können grosse Entscheide [soziokratisch](/organisation/soziokr
 Hier kann man ein Abendprojekt, eine Diskussion oder einen Austausch zu einem Thema vorschlagen und kurz präsentieren. Aktivitäten dürfen auch spontan am Treffen vorgeschlagen werden. Die Anwesenden entscheiden, wo sie hingehen wollen. Es darf und soll zwischen Aktivitäten gewechselt werden. Weitere Details findet man unter dem Begriff “Open Space Technology”.
 
 
-#### Aktivität: Eifach öppis zämä trinkä
-
-Das Community-Treffen soll auch eben das sein, was der Name sagt: Ein Treffen für die Community. Deshalb gibt es neben allen anderen Aktivitäten jeweils eine fixe Aktivität "*Eifach öppis zämä trinkä*".
-
-
-#### Weitere Aktivitäten
-
-Weitere Aktivitäten findet ihr im Protokoll oben.
-
-
 ### C.) Resultate vorstellen (~15 Min.)
 
 Resultate der Aktivitäten werden präsentiert.
 
 
-### D.) Infos (~10 Min.) 
+### D.) Infos (~10 Min.)
 
 In diesem Block können Informationen an die Community mitgeteilt werden (z.B. Entscheide, welche im Beratungsprinzip gefällt wurden). Die Infos müssen hier schriftlich ausformuliert werden, damit abwesende Mitglieder sich informieren können. Am Treffen selber gibt es dafür nur kurze Redezeit. Die Moderation wird die Zeit stoppen.
 
@@ -67,3 +57,8 @@ In diesem Block können Informationen an die Community mitgeteilt werden (z.B. E
 ### Check-Out
 
 Das Check-Out ist eine Aktivität, um gemeinsam das Treffen abzuschliessen.
+
+---
+
+<a href="/events/100167/" class="blog-item-more left"><i class="fa fa-angle-left"></i>&nbsp;Vorheriges Community-Treffen</a>
+<a href="/events/100169/" class="blog-item-more right"><i class="fa fa-angle-right"></i>Nächstes Community-Treffen</a>
