@@ -22,11 +22,11 @@ gender = "f"
 image = "/images/kaffeebar/sabina.jpg"
 comment = "A cup of coffee a day keeps the sorrows away."
 
-[[Person]]
-name = "Tina"
-gender = "f"
-image = "/images/kaffeebar/tina.jpg"
-comment = "Das Leben ist an und für sich eine riskante Angelegenheit."
+# [[Person]]
+# name = "Tina"
+# gender = "f"
+# image = "/images/kaffeebar/tina.jpg"
+# comment = "Das Leben ist an und für sich eine riskante Angelegenheit."
 
 [[Person]]
 name = "Luna"
@@ -45,3 +45,9 @@ name = "Simone"
 gender = "f"
 image = "/images/kaffeebar/simone.jpg"
 comment = "Now is the new later."
+
+[[Person]]
+name = "David"
+gender = "m"
+image = "/images/kaffeebar/david.jpg"
+comment = "Espresso auf Espresso auf geflossenen Espresso."
