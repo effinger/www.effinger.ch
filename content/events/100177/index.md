@@ -1,11 +1,14 @@
 +++
-title = "table conversations #3 / oued"
+title = "table conversations #3 / oued (2. Durchführung)"
 description = "Zwei Tanzstücke, aufgeführt auf mehreren Stockwerken: table conversations #3 und oued. Dieser Abend findet im Rahmen des Beta Stage Festivals statt, ein Pop-up Festival der Berner Tanzszene."
-startdate = 2018-02-23T18:30:00Z
-enddate = 2018-02-23T19:45:00Z
+startdate = 2018-02-23T20:15:00Z
+enddate = 2018-02-23T21:30:00Z
 categories = [ "Community" ]
 location = "Effinger"
 image = "tableconversations.jpg"
+aliases = [
+  "/beta/"
+]
 [registration]
   max = 30
   close = 2018-02-23T18:30:00Z
@@ -14,8 +17,6 @@ image = "tableconversations.jpg"
 <div class="lead" style="margin-top: 0px">
 Zwei Tanzstücke, aufgeführt auf mehreren Stockwerken: <strong style="white-space: nowrap;">table conversations #3</strong> und <strong>oued</strong>. Dieser Abend findet im Rahmen des <a href="https://www.be-ta.ch/festival" style="color: #777;">Beta Stage Festivals</a> statt, ein Pop-up Festival der Berner Tanzszene.
 </div>
-
-**Achtung:** Die Tickets für diesen Event sind ausgebucht. Wir haben aber eine zweite Durchführung aufgeschaltet: [table conversations #3 / oued (2. Durchführung)](/events/100177/)
 
 ## table conversations #3
 
@@ -54,5 +55,3 @@ Die Improvisation ist das Handwerk zum Stück, wobei davon ausgegangen wird, das
 ## Anmeldung und Preis
 
 Bitte per Formular unten anmelden. Der Preis kann am Abend selber gewählt werden (pay as you wish).
-
-**Achtung:** Die Tickets für diesen Event sind ausgebucht. Wir haben aber eine zweite Durchführung aufgeschaltet: [table conversations #3 / oued (2. Durchführung)](/events/100177/)
