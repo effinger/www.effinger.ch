@@ -1,7 +1,7 @@
 +++
 title = "Labor"
 weight = 6
-description = "Raum «Labor» (Zweites UG) für Events, Aktivitäten und digitale Projekte."
+description = "Raum «Labor» (Zweites UG) für Events, Workshops und digitale Projekte."
 image = "Raum-UG_00002.jpg"
 
 aliases = [
@@ -15,7 +15,7 @@ gallery = [
   "Raum-UG_00004.jpg"
 ]
 
-square_meters = 94
+square_meters = 55
 capacity = "50"
 
 equipment = [
@@ -80,8 +80,11 @@ text = "Pingpong-Tisch"
 price = "auf Anfrage"
 
 +++
-Raum «E-0010» (Zweites UG) für Events, Aktivitäten und digitale Projekte.
+Das Ambiente im Untergeschoss lädt ein um Projekte auszuhecken, Ideen zu präsentieren, Gruppenarbeiten durchzuführen und vieles mehr, was eben in einem Labor so möglich ist. Die grosszügige Fläche bietet viel Freiraum sich auszubreiten, Ideen auszulegen oder kreativ zu wirken. Auf der wandfüllenden Leinwand mit integrierten Soundanlage können Filme oder Präsentationen in Full HD Qualität wiedergegeben werden.
 
 <small><em>
-Dieser Raum ist in Entstehung. Weitere Infos folgen oder können auf Anfrage eingeholt werden.
+Hinweis zur Raumnutzung: Im hinteren Bereich des Raumes (optisch durch Trennwände abgetrennt) arbeiten 1 bis maximal 3 Effinger Coworker. Diese werden vorgängig informiert und nehmen akustisch Rücksicht auf Ihren Event.  
+Wenn kreatives Arbeiten und die Benutzung von Flipcharts oder Whiteboards geplant sind, muss die Moderationskiste gebucht werden (Kosten zusätzlich zur Raummiete: CHF 50). Die Kiste enthält abwischbare Stifte sowie diverse Papier-, Post-it-, Klebeutensilien und Magnete.
+Damit wir das Risiko von Schäden an der Infrastruktur minimieren können, bitten wir euch, keine eigenen Moderationsutensilien (Stifte usw.) mitzubringen.
+Bei Annullationen innert 72h Stunden vor Beginn der Raummiete ermöglichen wir eine kostenlose Verschiebung innerhalb eines Monats. Kann dies nicht realisiert werden, werden 50% der vereinbarten Raummiete fällig.
 </em></small>
