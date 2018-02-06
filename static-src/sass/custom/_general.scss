@@ -67,6 +67,10 @@ h3 a:focus {
   }
 }
 
+.section-text .lead:first-child {
+  margin-top: 0;
+}
+
 .hyphenate {
   hyphens: auto;
   overflow-wrap: break-word;
