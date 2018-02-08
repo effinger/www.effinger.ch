@@ -1,6 +1,6 @@
 +++
 title = "Open Data Day"
-description = "Open debate zum Thema 'Direkte Demokratie verbindet - Menschen, Vergangenheit und Zukunft'"
+description = "Samstag, 3. März ist Internationaler Tag der offenen Daten, und die Berner Community von Opendata.ch trifft sich diesen Jahr im Effinger Labor."
 startdate = 2018-03-03T14:00:00Z
 enddate = 2018-03-03T18:00:00Z
 categories = [ "Community" ]
