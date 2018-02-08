@@ -73,7 +73,7 @@ Community Member dürfen gerne auch Verantwortung mit einer Rolle über-nehmen. 
 
 Effianer sind Community Member mit einer **Effianer-Rolle**. Die Effianer-Rolle wird wie folgt beschrieben:
 
-*Wir gehören zum Stamm der Effinger. Als JungunternehmerInnen nutzen wir an mindestens zwei Tage in der Woche den Effinger als unseren Arbeitsort. Via Rollen und Vereinsmitgliedschaft tragen wir die Verantwortung für eine florierende Community und betreiben gemeinsam unseren Space. Wir investieren Geld (zinslose Darlehen von mind 1'000 CHF für Teilzeit und mind 2'000 CHF für Vollzeit) und 9,424777 (oder 3π) Prozent unserer Zeit in die Community, ineinander und in den Betrieb des Spaces.*
+*Wir gehören zum Stamm der Effinger. Als JungunternehmerInnen nutzen wir an mindestens zwei Tage in der Woche den Effinger als unseren Arbeitsort. Via Rollen und Vereinsmitgliedschaft tragen wir die Verantwortung für eine florierende Community und betreiben gemeinsam unseren Space. Wir investieren Geld (zinslose Darlehen von mind 1'000 CHF für Teilzeit und mind 2'000 CHF für Vollzeit) und 9.8696 (oder π<sup>2</sup>) Prozent unserer Zeit in die Community, ineinander und in den Betrieb des Spaces.*
 
 
 ### Übersicht Mitgliedschaft
