@@ -3,7 +3,7 @@ title = "Hacknight: Effinger Website Stream"
 description = "Dieser Workshop bietet eine Einführung in das Erstellen von Websites mit dem Static Site Generator Hugo."
 startdate = 2017-12-20T19:00:00Z
 enddate = 2017-12-20T21:00:00Z
-categories = [ "e-0010" ]
+categories = [ "Labor" ]
 location = "Effinger UG"
 image = "stream.png"
 [registration]

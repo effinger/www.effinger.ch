@@ -3,7 +3,7 @@ title = "Demonight 004"
 
 startdate = 2018-02-03T19:00:00Z
 enddate = 2018-02-04T00:00:00Z
-categories = [ "E-0010" ]
+categories = [ "Labor" ]
 location = "Effinger im -2 UG"
 image = "demonight.jpg"
 +++
@@ -23,7 +23,7 @@ Captain Obvious forced the agenda: a two-part demoshow with the subjective and/o
 
 ![Space](space.jpg)
 
-The E-0010 space in the undergrounds of Bern has been improved again, and now comes with a sweet new flooring, comfy furniture and even a kids corner if you feel like bringing your youngsters along - parental discretion advised. So get down to the demoshow and let's soak in the scene spirit!
+The Labor (E-0010) space in the undergrounds of Bern has been improved again, and now comes with a sweet new flooring, comfy furniture and even a kids corner if you feel like bringing your youngsters along - parental discretion advised. So get down to the demoshow and let's soak in the scene spirit!
 
 ## // // / ONE EFFECT COMPO // /// / /
 

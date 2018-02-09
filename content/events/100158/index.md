@@ -3,7 +3,7 @@ title = "Workshop: Static Site Generators"
 description = "Dieser Workshop bietet eine Einführung in das Erstellen von Websites mit dem Static Site Generator Hugo."
 startdate = 2017-12-20T17:00:00Z
 enddate = 2017-12-20T18:30:00Z
-categories = [ "e-0010" ]
+categories = [ "Labor" ]
 location = "Effinger UG"
 address_link = "https://www.google.ch/maps/place/Effinger+-+Kaffeebar+%26+Coworking+Space/@46.94604,7.4336198,17z/data=!3m1!4b1!4m2!3m1!1s0x478e39bf613a53f7:0x30f7464656fbe3b2"
 image = "hugo.png"
