@@ -6,6 +6,7 @@ enddate = 2018-03-03T18:00:00Z
 categories = [ "Community" ]
 location = "Effinger Labor (UG -2)"
 image = ""
+
 registration = true
 +++
 

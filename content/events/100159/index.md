@@ -6,8 +6,9 @@ enddate = 2017-12-20T21:00:00Z
 categories = [ "Labor" ]
 location = "Effinger UG"
 image = "stream.png"
-[registration]
-  close = 2017-12-20T17:00:00Z
+
+registration = true
+registration_close = 2017-12-20T17:00:00Z
 +++
 
 ![Effinger Stream](stream.png)

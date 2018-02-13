@@ -111,9 +111,9 @@
           <h3 class="uppercase mt-0 mb-0"><i class="fa fa-user-plus"></i> Anmeldung</h3>
 
           <div class="event-manager-close">
-            {{ if isset .Params.registration "close" }}
-              <i class="fa fa-clock-o"></i> Anmeldeschluss: {{ dateFormat "02.01.2006" .Params.registration.close }}
-              {{ $delta := (time .Params.registration.close).Sub now }}
+            {{ if .Params.registration_close }}
+              <i class="fa fa-clock-o"></i> Anmeldeschluss: {{ dateFormat "02.01.2006" .Params.registration_close }}
+              {{ $delta := (time .Params.registration_close).Sub now }}
               {{ if gt $delta.Hours 24 }}
               (noch {{ int (div $delta.Hours 24) }} Tage)
               {{ else if ge (int $delta.Hours) 2 }}
@@ -144,11 +144,11 @@
             data-event-folder="{{ .Site.Data.event_manager.folderId }}"
             data-event-id="{{ $lastUrlElement }}"
             data-event-title="{{ .Title }}"
-            {{ if isset .Params.registration "max" }}
-            data-event-max="{{ .Params.registration.max }}"
+            {{ if .Params.registration_max }}
+            data-event-max="{{ .Params.registration_max }}"
             {{ end }}
-            {{ if isset .Params.registration "close" }}
-            data-event-close="{{ (time .Params.registration.close).Format "2006-01-02T15:04:05Z" }}"
+            {{ if .Params.registration_close }}
+            data-event-close="{{ (time .Params.registration_close).Format "2006-01-02T15:04:05Z" }}"
             {{ else }}
             data-event-close="{{ (time .Params.startdate).Format "2006-01-02T15:04:05Z" }}"
             {{ end }}
@@ -182,10 +182,10 @@
           <p class="event-manager-number-of-attendees uppercase">Teilnehmende</p>
 
           <div class="event-manager-max">
-            {{ if isset .Params.registration "max" }}
+            {{ if .Params.registration_max }}
               <i class="fa fa-users"></i> Max:
-              {{ if gt .Params.registration.max 1 }}
-              {{ .Params.registration.max }} Plätze
+              {{ if gt .Params.registration_max 1 }}
+              {{ .Params.registration_max }} Plätze
               {{ else }}
               1 Platz
               {{ end }}

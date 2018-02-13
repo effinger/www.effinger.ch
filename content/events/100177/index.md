@@ -9,9 +9,10 @@ image = "tableconversations.jpg"
 aliases = [
   "/beta/"
 ]
-[registration]
-  max = 30
-  close = 2018-02-23T18:30:00Z
+
+registration = true
+registration_max = 30
+registration_close = 2018-02-23T18:30:00Z
 +++
 
 <div class="lead" style="margin-top: 0px">

@@ -6,9 +6,10 @@ enddate = 2018-02-23T19:45:00Z
 categories = [ "Community" ]
 location = "Effinger"
 image = "tableconversations.jpg"
-[registration]
-  max = 30
-  close = 2018-02-23T18:30:00Z
+
+registration = true
+registration_max = 30
+registration_close = 2018-02-23T18:30:00Z
 +++
 
 <div class="alert alert-warning">

@@ -6,6 +6,7 @@ enddate = 2018-03-06T21:00:00Z
 categories = [ "Community" ]
 location = "Effinger 1. OG (Beginn in Kaffeebar)"
 image = "sofa.jpg"
+
 registration = true
 +++
 

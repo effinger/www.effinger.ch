@@ -9,9 +9,9 @@ address = "46.945842, 7.435864"
 address_link = "https://www.google.ch/maps/place/Effinger+-+Kaffeebar+%26+Coworking+Space/@46.94604,7.4336198,17z/data=!3m1!4b1!4m2!3m1!1s0x478e39bf613a53f7:0x30f7464656fbe3b2"
 image = "latte-art.jpg"
 
-[registration]
-  max = 6
-  close = 2017-09-23T00:00:00Z
+registration = true
+registration_max = 6
+registration_close = 2017-09-23T00:00:00Z
 +++
 
 <div class="embed-responsive embed-responsive-4by3">

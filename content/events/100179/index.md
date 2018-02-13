@@ -6,6 +6,7 @@ enddate = 2018-04-25T21:30:00Z
 categories = [ "Community" ]
 location = "Effinger 1. OG (Grosse Schanze)"
 image = "direkte-demokratie.jpg"
+
 registration = false
 +++
 
