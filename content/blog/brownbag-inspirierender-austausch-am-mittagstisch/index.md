@@ -23,23 +23,24 @@ Im Effinger geht viel ‚Know-How‘ ein und aus. Der Brownbag bietet die Mögli
 
 ## Wann findet der nächste Brownbag statt?
 
-Das Programm wird auf der Brownbag Website (insert Link: https://www.effinger.ch/brownbag/) publiziert. (Für Community Mitglieder gibt es zusätzlich die Möglichkeit per Effinger Slack App im Channel #brownbag Infos zu erhalten.) Die Brownbags finden mindestens einmal im Monat im ersten Obergeschoss des Effinger von 12 – 13 Uhr statt. Das Mittagessen bringt jeder selber mit. Eine Anmeldung ist erwünscht, aber nicht zwingend.
+Das Programm wird auf der [Brownbag Website](https://www.effinger.ch/brownbag/) publiziert. Für [Community Mitglieder](https://www.effinger.ch/community/member-werden/) gibt es zusätzlich die Möglichkeit per Effinger Slack App im Channel #brownbag Infos zu erhalten. Die Brownbags finden mindestens einmal im Monat im ersten Obergeschoss des Effinger von 12 – 13 Uhr statt. Das Mittagessen bringt jeder selber mit. Eine Anmeldung ist erwünscht, aber nicht zwingend.
 
 ## Programm
 
-https://www.effinger.ch/brownbag/
+Zum [Brownbag Programm](https://www.effinger.ch/brownbag/)
 
 ## Thema verpasst?
 
-Neu gibts Videomittschnitte: https://www.youtube.com/channel/UCgGnRHU6W3577Ond0pN18rw/playlists
+Neu gibts Videomittschnitte: Siehe [YouTube Playlist](https://www.youtube.com/channel/UCgGnRHU6W3577Ond0pN18rw/playlists)
 
 
 ## Wie alles begann
 
-Der Anfang der Brownbags im Effinger: https://herrbuerli.ch/community/brownbag/
+[Artikel über den Anfang der Brownbags im Effinger](https://herrbuerli.ch/community/brownbag/)
 
 ## Kontakt & Fragen 
-[manuel@effinger.ch](mailto:manuel@effinger.ch)
+
+Per Mail an [manuel@effinger.ch](mailto:manuel@effinger.ch)
 
 
 *Manuel Bürli*
