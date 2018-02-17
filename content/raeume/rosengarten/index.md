@@ -2,10 +2,12 @@
 title = "Rosengarten"
 weight = 3
 description = "Sitzungsraum im Kunstatelier"
-image = "rosengarten-skizze.jpg"
+image = "rosengarten-1.jpg"
 
 gallery = [
-  "rosengarten-skizze.jpg"
+  "rosengarten-1.jpg",
+  "rosengarten-2.jpg",
+  "rosengarten-3.jpg"
 ]
 
 square_meters = 26
