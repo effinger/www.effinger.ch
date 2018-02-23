@@ -15,6 +15,10 @@ registration_max = 30
 registration_close = 2018-02-23T18:30:00Z
 +++
 
+<div class="alert alert-warning">
+<strong>Achtung:</strong> Die Online-Tickets für diesen Event sind ausgebucht. Wir haben aber <strong>einige Tickets an der Abendkasse vor Ort</strong>. Dies gilt auch für die <a href="/events/100174/">erste Durchführung</a> an diesem Abend.
+</div>
+
 <div class="lead" style="margin-top: 0px">
 Zwei Tanzstücke, aufgeführt auf mehreren Stockwerken: <strong style="white-space: nowrap;">table conversations #3</strong> und <strong>oued</strong>. Dieser Abend findet im Rahmen des <a href="https://www.be-ta.ch/festival" style="color: #777;">Beta Stage Festivals</a> statt, ein Pop-up Festival der Berner Tanzszene.
 </div>
@@ -56,3 +60,7 @@ Die Improvisation ist das Handwerk zum Stück, wobei davon ausgegangen wird, das
 ## Anmeldung und Preis
 
 Bitte per Formular unten anmelden. Der Preis kann am Abend selber gewählt werden (pay as you wish).
+
+<div class="alert alert-warning">
+<strong>Achtung:</strong> Die Online-Tickets für diesen Event sind ausgebucht. Wir haben aber <strong>einige Tickets an der Abendkasse vor Ort</strong>. Dies gilt auch für die <a href="/events/100174/">erste Durchführung</a> an diesem Abend.
+</div>

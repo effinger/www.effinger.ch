@@ -13,7 +13,7 @@ registration_close = 2018-02-23T18:30:00Z
 +++
 
 <div class="alert alert-warning">
-<strong>Achtung:</strong> Die Tickets für diesen Event sind ausgebucht. Wir haben aber eine <strong>2.&nbsp;Durchführung</strong> aufgeschaltet: <a href="/events/100177/">table conversations #3 / oued (2. Durchführung)</a>
+<strong>Achtung:</strong> Die Online-Tickets für diesen Event sind ausgebucht. Wir haben aber <strong>einige Tickets an der Abendkasse vor Ort</strong>. Dies gilt auch für die <a href="/events/100177/">zweite Durchführung</a> an diesem Abend.
 </div>
 
 <div class="lead" style="margin-top: 0px">
@@ -61,5 +61,5 @@ Die Improvisation ist das Handwerk zum Stück, wobei davon ausgegangen wird, das
 Bitte per Formular unten anmelden. Der Preis kann am Abend selber gewählt werden (pay as you wish).
 
 <div class="alert alert-warning">
-<strong>Achtung:</strong> Die Tickets für diesen Event sind ausgebucht. Wir haben aber eine <strong>2.&nbsp;Durchführung</strong> aufgeschaltet: <a href="/events/100177/">table conversations #3 / oued (2. Durchführung)</a>
+<strong>Achtung:</strong> Die Online-Tickets für diesen Event sind ausgebucht. Wir haben aber <strong>einige Tickets an der Abendkasse vor Ort</strong>. Dies gilt auch für die <a href="/events/100177/">zweite Durchführung</a> an diesem Abend.
 </div>
