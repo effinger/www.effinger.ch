@@ -17,10 +17,9 @@ Was würde sich ändern, wenn wir in unseren Büros und an unseren Arbeitsplätz
 
 Durch die Achtsamkeitsangebote im Effinger lernst du, ungünstige Haltungsmuster des Körpers zu erkennen und im Alltag darauf zu reagieren. Damit kannst du Fehl-und Überlastung des Körpers vermeiden.
 
+> Am [08. März](/events/100183/) und [15. März](/events/100184/) alle 8-samkeits-Angebote Schnuppern! Bitte unten anmelden.
 
-
-**Wann?** Jeweils Donnerstags (konkrete Daten siehe [Effinger Events](/events/))   
-**Wo?** Im Effinger Labor (UG - 2)
+---
 
 # Angebote
 
@@ -28,105 +27,78 @@ Durch die Achtsamkeitsangebote im Effinger lernst du, ungünstige Haltungsmuster
 
 ![Check-in](check-in.jpg)
 
-**Dauer:** 30 Minuten   
-**Zeit:** 8:15 - 8.45 Uhr   
-**Ziele:** bewusste Atmung, sich Zentrieren   
-**Methode:** bewegte Meditation, Mobilisation / Dehnen (Feldenkrais Methode)
+* **Dauer:** 30 Minuten   
+* **Zeit:** 8:15 - 8.45 Uhr   
+* **Ziele & Inhalt:**
+  * bewusste Atmung
+  * sich Zentrieren
+  * bewegte Meditation
+  * Feldenkrais Methode
 
 Die Feldenkrais-Methode hilft, falsche Bewegungsmuster zu durchbrechen. Durch gezielte Übungen sollen die eigenen Bewegungsabläufe bewusster wahrgenommen werden. Man lernt, sich harmonischer und wirksamer zu bewegen, damit Fehlhaltungen vorgebeugt und das Körpergefühl verbessert werden kann. Durch Optimierung von Bewegungsabläufen sollen unnötige Muskelverspannungen vermieden werden
+
+<a target="_blank" href="https://check-in1.youcanbook.me" class="btn btn-mod btn-border btn-round btn-medium">Anmeldung Check-in</a>
 
 
 ## 2. Time-out
 
 ![Time-out](time-out.jpg)
 
-**Dauer:** 30 Minuten   
-**Zeit:** 12:30 - 12:55 Uhr   
-**Ziele:** Relax, Powernap   
-**Methode:** PMR = Progressive Muskelrelaxation
+* **Dauer:** 30 Minuten   
+* **Zeit:** 12:30 - 12:55 Uhr   
+* **Ziele & Inhalt:**
+  * Relax
+  * Powernap
+  * Progressive Muskelrelaxation (PMR)
 
 PMR ist eine körperorientierte Entspannungsmethode. Durch bewusstes Anspannen und Entspannen einzelner Muskelgruppen wird eine tiefe muskuläre Körperentspannung erreicht. Die Methode reduziert auch sämtliche stressbedingte Symptome wie Verspannungen, Kopfschmerzen, Migräne, Rückenschmerzen, Erschöpfung oder Müdigkeit.
+
+<a target="_blank" href="https://timeout.youcanbook.me" class="btn btn-mod btn-border btn-round btn-medium">Anmeldung Time-out</a>
 
 
 ## 3. Check-out
 
 ![Check-out](check-out.jpg)
 
-**Dauer:** 45 Minuten   
-**Zeit:** 17:15 - 18:00 Uhr   
-**Ziele:** Kräftigung der Muskulatur, Verbesserung der Körperhaltung, Beweglichkeit   
-**Methode:** Pilates, Haltungsschulung
- 
-Die Pilates-Methode ist ein ganzheitliches Körpertraining, in dem vor allem die tief liegenden, kleinen und meist schwächeren Muskelgruppen angesprochen werden, die für eine korrekte und gesunde Körperhaltung sorgen. 
+* **Dauer:** 45 Minuten   
+* **Zeit:** 17:15 - 18:00 Uhr   
+* **Ziele & Inhalt:**
+  * Kräftigung der Muskulatur
+  * Verbesserung der Körperhaltung
+  * Beweglichkeit
+  * Haltungsschulung
+  * Pilates
+
+Die Pilates-Methode ist ein ganzheitliches Körpertraining, in dem vor allem die tief liegenden, kleinen und meist schwächeren Muskelgruppen angesprochen werden, die für eine korrekte und gesunde Körperhaltung sorgen.
+
+<a target="_blank" href="https://check-out.youcanbook.me" class="btn btn-mod btn-border btn-round btn-medium">Anmeldung Check-out</a>
 
 
 ## 4. Massage
 
 ![Massage](massage.jpg)
 
-**Dauer:** Nach Wunsch   
-**Zeit:**	Nach Wunsch   
-**Ziel:** Lockerung und Dehnung der Muskulatur, Förderung der Stoffwechsel und der Durchblutung   
-**Methode:** Klassische Massage
+* **Dauer:** Nach Wunsch   
+* **Zeit:**	Nach Wunsch   
+* **Ziel & Inhalt:**
+  * Relax
+  * Lockerung und Dehnung der Muskulatur
+  * Förderung der Stoffwechsel und der Durchblutung
+  * Klassische Massage
 
 Die Massage ist eine der ältesten Heilmittel der Menschheit. Sie dient zur mechanischen Beeinflussung von Haut, Bindegewebe und Muskulatur durch Dehnungs-, Zug und Druckreiz. Die Wirkung erstreckt sich von der behandelten Stelle des Körpers über den gesamten Organismus und schliesst auch die Psyche mit ein. Massagen zielen auf die Regeneration des Körpers ab und beleben die Selbstheilungskräfte.
 
----
-
-# Infos
-
-* 8. und 15.März alle 8-samkeit –Angebote Schnuppern Preis : Give what you can. Danach besteht Möglichkeit zur einen Abo.
-* Check-in und Time-out können in Alltagskleidern durchgeführt werden. Fürs Check-out (Pilates) sind Sportkleider empfehlenswert.
-* Matten sind vorhanden
-* Versicherung ist Sache der Teilnehmenden
-
+<a target="_blank" href="https://3-bewegt.youcanbook.me" class="btn btn-mod btn-border btn-round btn-medium">Massage buchen</a>
 
 
 ---
 
-# Abos
+# Wichtige Infos
 
-## Schnupper Abo
-
-Beinhaltet alle 8-samkeits Angebote   
-+ eine Massage à 15 Min.   
-1 Monat gültig, pro Person nur einmal lösbar
-
-Community Mitglieder: 	60.- CHF   
-Nicht Mitglieder:	 	80.- CHF
-
-
-## Abo 8-samkeit 
-
-beinhaltet Check-in und Time-out   
-2. Monate gültig
-
-Community Mitglieder 	140.- CHF   
-Nicht Mitglieder: 		180.- CHF
-
-
-## Abo Check-out
-
-Stempelkarte, 8x teilnehmen, 3 Monate gültig
-
-Community Mitglieder	160.- CHF   
-Nicht Mitglieder		200.- CHF
-
-
-## Abo Massage
-
-8x à 15 Min. /4x 30 Min. /2x60 Min.   
-Stempelkarte, 6 Monate gültig
-
-Community Mitglieder 	190.-   
-Nicht Mitglieder 		195.-
-
-
-## Abo 8-samkeit Plus
-
-Beinhaltet alle 8-samkeits Angebote   
-+ sechs Massagen à 15 Minuten   
-3 Monate gültig
-
-Community Mitglieder: 	240.- CHF   
-Nicht Mitglieder: 		280.- CHF
+*	Alle Angebote richten sich an männliche sowie weibliche Teilnehmende
+*	Am 8. und 15. März gibt es bei allen 8-samkeits–Angeboten die Möglichkeit mit Anmeldung zu schnuppern.  Preis: Give what you can. Danach können Abos gelöst werden.
+*	Check-in und Time-out können in Alltagskleidern durchgeführt werden. Fürs Check-out (Pilates) sind Sportkleider empfehlenswert.
+*	Check-out (Pilates) richtet sich an Anfänger wie auch an Fortgeschrittene
+*	Matten sind vorhanden
+*	Max. 10 Teilnehmer pro Angebot
+*	Versicherung ist Sache der Teilnehmenden
