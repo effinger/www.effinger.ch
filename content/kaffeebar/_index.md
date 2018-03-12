@@ -38,7 +38,7 @@ offers_title = "Menu"
 
      [[offers.section.element.subelement]]
        text = "«es het solang's het»"
-       
+
      [[offers.section.element.subelement]]
        text = "mit Salat"
        price = "+3.00"
@@ -341,11 +341,11 @@ offers_title = "Menu"
       price = "5.00"
 
     [[offers.section.element]]
-      text = "selo Coffee Fruit"
-      price = "5.50"
+      text = "ChariTea Mate"
+      price = "5.00"
 
       [[offers.section.element.subelement]]
-        text = "Koffeinhaltiges Erfrischungsgetränk aus der Kaffeekirsche"
+        text = "koffeinhaltiges Erfrischungsgetränk"
 
     [[offers.section.element]]
       text = "Cucumis"
@@ -536,32 +536,41 @@ offers_title = "Menu"
     column = "left"
 
     [[offers.section.element]]
-      text="The Invisible Man, Rioja DOC (ES)"
+      text="Zweigelt No2"
+      price="7.00"
+
+      [[offers.section.element.subelement]]
+        text="Zweigelt"
+      [[offers.section.element.subelement]]
+        text="Thomas Lehner, Burgenland, Österreich"
+
+    [[offers.section.element]]
+      text="The Invisible Man"
       price="7.50"
 
       [[offers.section.element.subelement]]
-        text="95% Tempranillo, 5% Mazuelo"
-
-    [[offers.section.element]]
-      text="Maquinon, Priorat DOQ (ES)"
-      price="9.00"
-
+        text="Tempranillo, Mazuelo"
       [[offers.section.element.subelement]]
-        text="Garnacha"
+        text="Casa Rojo, Rioja, Spanien"
 
     [[offers.section.element]]
-      text="Alexander vs. The ham factory, Ribera del Duero DO (ES)"
-      price="9.50"
-
-      [[offers.section.element.subelement]]
-        text="Tinto  no (Tempranillo)"
-
-    [[offers.section.element]]
-      text="Cuvée Noir «Drunk», Pfalz (DE)"
+      text="Cabernet Sauvignon «Philosophy»"
       price="8.00"
 
       [[offers.section.element.subelement]]
-        text="Cabernet Sauvignon, Merlot, Nebbiolo, Spätburgunder (trocken)"
+        text="Cabernet Sauvignon"
+      [[offers.section.element.subelement]]
+        text="Emil Bauer, Pfalz, Deutschland"
+
+    [[offers.section.element]]
+      text="Valpolicella Vescovo Moro"
+      price="8.00"
+
+      [[offers.section.element.subelement]]
+        text="Croatina, Corvina"
+      [[offers.section.element.subelement]]
+        text="Cà dei Conti, Veneto, Italien"
+
 
   [[offers.section]]
     title = "Weissweine"
@@ -569,25 +578,34 @@ offers_title = "Menu"
     column = "right"
 
     [[offers.section.element]]
-      text="La Marimorena, Rias Baixas DO (ES)"
-      price="7.50"
-
-      [[offers.section.element.subelement]]
-        text="Albarino"
-
-    [[offers.section.element]]
-      text="El Gordo del Circo, Rueda DO (ES)"
+      text="Blanco Rioja"
       price="6.00"
 
       [[offers.section.element.subelement]]
-        text="Verdejo"
+        text="Tempranillo Blanco, Viura"
+      [[offers.section.element.subelement]]
+        text="Gómez Cruzado, Rioja, Spanien"
 
     [[offers.section.element]]
-      text="Riesling «No Sex», Pfalz (DE)"
+      text="Sauvignon Blanc «Ass...»"
       price="6.50"
 
       [[offers.section.element.subelement]]
-      text="Riesling (trocken)"
+        text="Sauvignon Blanc"
+      [[offers.section.element.subelement]]
+        text="Emil Bauer, Pfalz, Deutschland"
+
+    [[offers.section.element]]
+      text="Cuvée Weiss No1"
+      price="7.50"
+
+      [[offers.section.element.subelement]]
+        text="Gewürztraminer, Pinot Blanc, Viognier, Muscat"
+      [[offers.section.element.subelement]]
+        text="Winzerei zur Metzg, Zürcher Weinland, Schweiz"
+
+
+
 
     [[offers.section.element]]
       text="Schaumwein"
