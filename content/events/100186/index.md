@@ -2,7 +2,7 @@
 title = "THES aktiv"
 description = "Wir treffen uns als Gruppe THESaktiv einmal im Monat um Bildungsthemen und Aktuelles aus dem Umfeld des Lernens anzugehen. Wer aktiv werden und sich eingeben will, ist herzlich willkommen."
 startdate = 2018-04-03T18:00:00Z
-enddate = 2018-04-03T21:00:00Z
+enddate = 2018-04-03T20:30:00Z
 categories = [ "Community" ]
 location = "Effinger 1. OG (Beginn in Kaffeebar)"
 image = "thesaktiv.jpg"
@@ -33,19 +33,19 @@ Wer kann und will, trifft sich bereits um 18 Uhr zu einer Art Stammtisch unter a
 Das Check-In ist eine Aktivität, um richtig im 1. OG bei THESaktiv anzukommen und um uns auf das Treffen einzustimmen.
 
 
-### A.) Infos (~15 Min.)
+### A.) Infos & Anliegen (~30 Min.)
 
-In diesem Block können Informationen von THESaktiv zu aktuellen Ereignissen im Umfeld von THES im Effinger erfolgen. Diese werden in der Regel durch ein Mitglied des Kernteams THESaktiv eingebracht.
-
-
-### B.) Bildungsthemen, Gesprächsrunden, Projekte (~120 Min.)
-
-Es werden Fragen, Themen, Impulse, Inputs, Ideen zu Projekten aufgenommen, diskutiert, hinterfragt und es wird geklärt, in welcher Form eine mögliche Vertiefung erfolgen soll.
+In diesem Block können Informationen von THESaktiv zu aktuellen Ereignissen im Umfeld von THES im Effinger erfolgen. Diese werden in der Regel durch ein Mitglied des Kernteams THESaktiv eingebracht. Hier werden auch die Anliegen für Ideen, Themen aufgenommen und zur Bearbeitung im Treffen organisiert.
 
 
-### C.) Check-Out
+### B.) Ideenkorb mit Bildungsthemen, Gesprächsrunden, Projekte (~60 Min.)
 
-Das Check-Out ist eine Aktivität, um gemeinsam das Treffen abzuschliessen.
+Es werden Fragen, Themen, Impulse, Inputs, Ideen zu Projekten präsentiert, diskutiert, hinterfragt und es wird geklärt, in welcher Form eine mögliche Vertiefung geschehen kann. Dies erfolgt mittels der Struktur des Ideenkorbs, in den die Themen eingegeben werden (Vorstellen, Feedback, Notizen). Die verfügbare Zeit wird dabei anteilsmässig aufgeteilt.
+
+
+### C.) Check-Out (~30 Min.)
+
+Das Check-Out ist die Aktivität, bei der die Erkenntnisse der Teilnehmenden festgehalten werden. Gemeinsam werden die „Take aways“ ausgetauscht, um das Treffen abzuschliessen.
 
 
 ## Anmeldung und Preis
