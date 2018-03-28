@@ -51,3 +51,9 @@ name = "David"
 gender = "m"
 image = "/images/kaffeebar/david.jpg"
 comment = "Espresso auf Espresso auf geflossenen Espresso."
+
+[[Person]]
+name = "Natascha"
+gender = "f"
+image = "/images/kaffeebar/natascha.jpg"
+comment = "The future is golden."
