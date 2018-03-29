@@ -16,7 +16,7 @@ gallery = [
 ]
 
 square_meters = 55
-capacity = "50"
+capacity = "40"
 
 equipment = [
   "Stühle",
