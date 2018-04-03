@@ -5,14 +5,12 @@ startdate = 2018-04-17T16:30:00Z
 enddate = 2018-04-17T21:00:00Z
 categories = [ "Community" ]
 location = "Effinger"
-image = "image.png"
+image = "image.jpg"
 
 registration = false
 +++
 
 ![Guest Lecture](image.jpg)
-
-
 
 <a target="_blank" href="GuestLectureFestival-Programm.pdf" class="btn btn-mod btn-round btn-medium">&rarr; Programm Guest Lecture Festival</a>
 
