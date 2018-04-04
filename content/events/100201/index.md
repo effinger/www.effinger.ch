@@ -29,7 +29,7 @@ in die Community und deren Organisation.
 
 Lecture & Workshop mit Isabel Brücher & Federico García, Architecture for Refugees Schweiz (Deutsch & Engl.)
 
-[www.architectureforrefugees.ch](www.architectureforrefugees.ch)
+[www.architectureforrefugees.ch](http://architectureforrefugees.ch/)
 
 »Architecture for Refugees SCHWEIZ« verfolgt das Ziel, den Integrationsprozess von Flüchtlingen zu verbessern, indem sowohl für Flüchtlinge als auch für die lokale Bevölkerung Räume geschaffen werden. Nach einer kurzen Erläuterung der Philosophie des Vereins, dem Aufzeigen einiger aktuellen Projekte und zukünftiger Ziele von AfR werden uns Isabel und Federico, beide Mitinitianten des Vereins, vertiefte Einblicke in die Entwicklung eines aktuellen Projektes gewähren. Im Anschluss wird das Projekt in einer offenen Runde diskutiert: Wie kann dieses »Programm der Inklusion« seinen Zweck erfüllen? Deine Inputs sind gefragt!
 
