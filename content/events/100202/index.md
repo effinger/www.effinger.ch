@@ -36,7 +36,7 @@ The date for the next Compo will be announced at DEMONIGHTS 005. If you missed i
 
 Ideally reachable by public transport, 5 minute walk from the main station in Bern; No parking on site: please use nearby designated city parking houses (City West).
 
-We will have some drinks & snacks available (again via tip-jar) on location. Please sign up and let us know you're coming on our Facebook event page (https://www.facebook.com/events/197730591003267) ~ or just reply to this email.
+We will have some drinks & snacks available (again via tip-jar) on location. Please sign up and let us know you're coming on our [Facebook event page](https://www.facebook.com/events/197730591003267).
 
 
 ## // / §
