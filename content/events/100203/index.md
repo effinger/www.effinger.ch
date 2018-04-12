@@ -19,5 +19,5 @@ Der Frühling ist da und es ist wieder Zeit, den Kleiderschrank aufzuräumen. Vi
 * Ort: Kaffeebar & Coworking Space im 2. UG Labor
 Effingerstrasse 10, 3011 Bern
 * Verpflegung: Kaffe & Kuchen
-* Info:	Die verbleibenden Kleider werden der Passantenhilfe Bern gespendet passantenhilfe-bern.ch
-* Organisiert durch: Faustina [info@3-bewegt.ch](mailto:info@3-bewegt.ch) & Iljana
+* Info:	Die verbleibenden Kleider werden der [Passantenhilfe Bern](passantenhilfe-bern.ch) gespendet 
+* Organisiert durch: Faustina ([info@3-bewegt.ch](mailto:info@3-bewegt.ch)) & Iljana
