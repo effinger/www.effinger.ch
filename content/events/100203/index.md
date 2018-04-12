@@ -9,7 +9,7 @@ image = "kleidertausch.jpg"
 +++
 
 <div class="lead">
-Der Frühling ist da und es ist wieder Zeit, den Kleiderschrank aufzuräumen. Vielleicht gibt es Kleider, die zwar noch in gutem Zustand sind, die du aber nicht mehr anziehst. Und vielleicht hast du auch einmal wieder Lust, andere Kleider anzuziehen, ohne gleich neue zu kaufen. Dann bist du herzlich eingeladen zu unserem…
+Der Frühling ist da und es ist wieder Zeit, den Kleiderschrank aufzuräumen. Vielleicht gibt es Kleider, die zwar noch in gutem Zustand sind, die du aber nicht mehr anziehst. Und vielleicht hast du auch einmal wieder Lust, andere Kleider anzuziehen, ohne gleich neue zu kaufen. Dann bist du herzlich eingeladen zu unserem Kleidertausch.
 </div>
 
 ![Kleidertausch](kleidertausch.jpg)
