@@ -94,7 +94,7 @@
       // Do not go below row 1.
       var endPostId = Math.max(currentPostId - LOAD_BATCH + 1, 1);
 
-      $.get("https://sheets.googleapis.com/v4/spreadsheets/1zdudRkT_1emT-ngS0aKWOZ15QN440OT7ULA_1hedeLM/values/Sheet1!" + currentPostId + ":" + endPostId + "?key=AIzaSyAcKsXpUFgllXtNsRJaOBz-0kBR2PkqC04", function( data ) {
+      $.get("https://sheets.googleapis.com/v4/spreadsheets/1zdudRkT_1emT-ngS0aKWOZ15QN440OT7ULA_1hedeLM/values/Sheet1!" + currentPostId + ":" + endPostId + "?key=AIzaSyCkd_yvqqh0gb_T4S4kCw57X3BZiYIK-hI", function( data ) {
 
         $("#stream-loader").hide();
 
@@ -112,7 +112,7 @@
 
     // Loads a single post with current postId.
     function loadSinglePost() {
-      $.get("https://sheets.googleapis.com/v4/spreadsheets/1zdudRkT_1emT-ngS0aKWOZ15QN440OT7ULA_1hedeLM/values/Sheet1!" + currentPostId + ":" + currentPostId + "?key=AIzaSyAcKsXpUFgllXtNsRJaOBz-0kBR2PkqC04", function( data ) {
+      $.get("https://sheets.googleapis.com/v4/spreadsheets/1zdudRkT_1emT-ngS0aKWOZ15QN440OT7ULA_1hedeLM/values/Sheet1!" + currentPostId + ":" + currentPostId + "?key=AIzaSyCkd_yvqqh0gb_T4S4kCw57X3BZiYIK-hI", function( data ) {
 
         // Check if postId is valid.
         if (data.values) {
@@ -211,7 +211,7 @@
 
     } else {
       // Get the total number of posts.
-      $.get("https://sheets.googleapis.com/v4/spreadsheets/1zdudRkT_1emT-ngS0aKWOZ15QN440OT7ULA_1hedeLM/values/Sheet1!L1?key=AIzaSyAcKsXpUFgllXtNsRJaOBz-0kBR2PkqC04", function( data ) {
+      $.get("https://sheets.googleapis.com/v4/spreadsheets/1zdudRkT_1emT-ngS0aKWOZ15QN440OT7ULA_1hedeLM/values/Sheet1!L1?key=AIzaSyCkd_yvqqh0gb_T4S4kCw57X3BZiYIK-hI", function( data ) {
         // Start with the last row.
         currentPostId = data.values[0][0];
         loadPosts();

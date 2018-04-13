@@ -431,7 +431,7 @@ Für Jungunternehmer, Kreative, Handwerkerinnen, Weltveränderer, Bernerinnen, Z
 
     function loadPosts(latestPostId) {
 
-      $.get("https://sheets.googleapis.com/v4/spreadsheets/1zdudRkT_1emT-ngS0aKWOZ15QN440OT7ULA_1hedeLM/values/Sheet1!" + latestPostId + ":" + (latestPostId - 3) + "?key=AIzaSyAcKsXpUFgllXtNsRJaOBz-0kBR2PkqC04", function( data ) {
+      $.get("https://sheets.googleapis.com/v4/spreadsheets/1zdudRkT_1emT-ngS0aKWOZ15QN440OT7ULA_1hedeLM/values/Sheet1!" + latestPostId + ":" + (latestPostId - 3) + "?key=AIzaSyCkd_yvqqh0gb_T4S4kCw57X3BZiYIK-hI", function( data ) {
 
         $.each(data.values.reverse(), function(i, item) {
           var streamTeaserColumn = $('.streamTeaser__imagecontainer .streamTeaser__columns:nth-child(' + (i+1) + ')');
@@ -453,7 +453,7 @@ Für Jungunternehmer, Kreative, Handwerkerinnen, Weltveränderer, Bernerinnen, Z
     }
 
     // Get the total number of posts.
-    $.get("https://sheets.googleapis.com/v4/spreadsheets/1zdudRkT_1emT-ngS0aKWOZ15QN440OT7ULA_1hedeLM/values/Sheet1!L1?key=AIzaSyAcKsXpUFgllXtNsRJaOBz-0kBR2PkqC04", function( data ) {
+    $.get("https://sheets.googleapis.com/v4/spreadsheets/1zdudRkT_1emT-ngS0aKWOZ15QN440OT7ULA_1hedeLM/values/Sheet1!L1?key=AIzaSyCkd_yvqqh0gb_T4S4kCw57X3BZiYIK-hI", function( data ) {
       // Start with the last row.
       var latestPostId = data.values[0][0];
 
