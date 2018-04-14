@@ -1,5 +1,5 @@
 +++
-title = "Massage"
+title = "Massage (jeden Donnerstag)"
 description = "Eine Massage - Donnerstags im Effinger"
 startdate = 2018-04-26T10:00:00Z
 enddate = 2018-04-26T17:00:00Z
