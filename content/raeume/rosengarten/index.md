@@ -23,6 +23,7 @@ equipment = [
 prices = [
   "CHF 150 für 2 Stunden",
   "CHF 200 für 4 Stunden",
+  "CHF 250 für 6 Stunden",
   "CHF 300 für 8 Stunden"
 ]
 
@@ -61,12 +62,19 @@ hidden = true
 [[extras]]
 text = "Weitere Verpflegung gewünscht"
 hidden = true
-
 +++
-Sitzungsraum im Kunstatelier.
 
-<small><em>
-Wenn kreatives Arbeiten und die Benutzung der Wände geplant sind, muss die Moderationskiste gebucht werden (Kosten zusätzlich zur Raummiete: CHF 50). Die Kiste enthält abwischbare Stifte sowie diverse Papier-, Post-it-, Klebeutensilien und Magnete.<br>
-Damit wir das Risiko von Schäden an der Infrastruktur minimieren können, bitten wir euch, keine eigenen Moderationsutensilien (Stifte usw.) mitzubringen.<br>
-Bei Annullationen innert 72h Stunden vor Beginn der Raummiete ermöglichen wir eine kostenlose Verschiebung innerhalb eines Monats. Kann dies nicht realisiert werden, werden 50% der vereinbarten Raummiete fällig.
-</em></small>
+Der Rosengarten ist ein Workshopraum, welcher als Kunstatelier gestaltet ist. Dieser Raum wird an 1-2 Tage pro Woche von Künstlern genutzt. An den anderen Tagen steht er für Raumvermietungen zur Verfügung.
+
+<div class="local-scroll">
+ <a href="#reservation" class="btn btn-mod btn-border btn-round btn-medium">&darr; Reservation</a>
+</div>
+
+
+### Hinweise zur Raumvermietung
+
+* **Essen**: Für Mittagessen oder Apéro gibt es die Möglichkeit, direkt bei unserem Catering Partner [Lunchbag](https://www.lunchbag.ch/) zu bestellen, oder (bei Gruppen bis 10 Personen) einen Tisch in unserer [Kaffeebar](/kaffeebar/) zu reservieren.
+* **Moderationsmaterial**: Wenn kreatives Arbeiten und die Benutzung der Wände geplant sind, muss die Moderationskiste gebucht werden (Kosten zusätzlich zur Raummiete: CHF 50). Die Kiste enthält abwischbare Stifte sowie diverse Papier-, Post-it-, Klebeutensilien und Magnete. Damit wir das Risiko von Schäden an der Infrastruktur minimieren können, bitten wir euch, keine eigenen Moderationsutensilien (Stifte usw.) mitzubringen.
+* **15 Min. Einrichten**: Der Raum darf 15 Minuten vor der gebuchten Zeit zur Vorbereitung benutzt werden.
+* **Rollstühle**: Leider sind unsere Räumlichkeiten und Toiletten nicht rollstuhlgängig.
+* **Annulationen**: Bei Annullationen innert 72h Stunden vor Beginn der Raummiete ermöglichen wir eine kostenlose Verschiebung innerhalb eines Monats. Kann dies nicht realisiert werden, werden 50% der vereinbarten Raummiete fällig.

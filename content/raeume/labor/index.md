@@ -26,6 +26,7 @@ equipment = [
 
 prices = [
   "CHF 250 für 4 Stunden",
+  "CHF 300 für 6 Stunden",
   "CHF 350 für 8 Stunden",
   "CHF 250 pro Abend",
   "Grössere Events und regelmässige Nutzung auf Anfrage"
@@ -82,9 +83,17 @@ price = "auf Anfrage"
 +++
 Das Ambiente im Untergeschoss lädt ein um Projekte auszuhecken, Ideen zu präsentieren, Gruppenarbeiten durchzuführen und vieles mehr, was eben in einem Labor so möglich ist. Die grosszügige Fläche bietet viel Freiraum sich auszubreiten, Ideen auszulegen oder kreativ zu wirken. Auf der wandfüllenden Leinwand mit integrierten Soundanlage können Filme oder Präsentationen in Full HD Qualität wiedergegeben werden.
 
-<small><em>
-Hinweis zur Raumnutzung: Im hinteren Bereich des Raumes (optisch durch Trennwände abgetrennt) arbeiten 1 bis maximal 3 Effinger Coworker. Diese werden vorgängig informiert und nehmen akustisch Rücksicht auf Ihren Event.  
-Wenn kreatives Arbeiten und die Benutzung von Flipcharts oder Whiteboards geplant sind, muss die Moderationskiste gebucht werden (Kosten zusätzlich zur Raummiete: CHF 50). Die Kiste enthält abwischbare Stifte sowie diverse Papier-, Post-it-, Klebeutensilien und Magnete.
-Damit wir das Risiko von Schäden an der Infrastruktur minimieren können, bitten wir euch, keine eigenen Moderationsutensilien (Stifte usw.) mitzubringen.
-Bei Annullationen innert 72h Stunden vor Beginn der Raummiete ermöglichen wir eine kostenlose Verschiebung innerhalb eines Monats. Kann dies nicht realisiert werden, werden 50% der vereinbarten Raummiete fällig.
-</em></small>
+**Spezialität vom Raum Labor:** Im hinteren Bereich des Raumes (optisch durch Trennwände abgetrennt) arbeiten 1 bis maximal 3 Effinger Coworker. Diese werden vorgängig informiert und nehmen akustisch Rücksicht auf Ihren Event.
+
+<div class="local-scroll">
+ <a href="#reservation" class="btn btn-mod btn-border btn-round btn-medium">&darr; Reservation</a>
+</div>
+
+
+### Hinweise zur Raumvermietung
+
+* **Essen**: Für Mittagessen oder Apéro gibt es die Möglichkeit, direkt bei unserem Catering Partner [Lunchbag](https://www.lunchbag.ch/) zu bestellen, oder (bei Gruppen bis 10 Personen) einen Tisch in unserer [Kaffeebar](/kaffeebar/) zu reservieren.
+* **Moderationsmaterial**: Wenn kreatives Arbeiten und die Benutzung der Wände geplant sind, muss die Moderationskiste gebucht werden (Kosten zusätzlich zur Raummiete: CHF 50). Die Kiste enthält abwischbare Stifte sowie diverse Papier-, Post-it-, Klebeutensilien und Magnete. Damit wir das Risiko von Schäden an der Infrastruktur minimieren können, bitten wir euch, keine eigenen Moderationsutensilien (Stifte usw.) mitzubringen.
+* **15 Min. Einrichten**: Der Raum darf 15 Minuten vor der gebuchten Zeit zur Vorbereitung benutzt werden.
+* **Rollstühle**: Leider sind unsere Räumlichkeiten und Toiletten nicht rollstuhlgängig.
+* **Annulationen**: Bei Annullationen innert 72h Stunden vor Beginn der Raummiete ermöglichen wir eine kostenlose Verschiebung innerhalb eines Monats. Kann dies nicht realisiert werden, werden 50% der vereinbarten Raummiete fällig.
