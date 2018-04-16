@@ -58,7 +58,7 @@ Der abgetrennte Raum oberhalb des Kaffeebar-Bereichs eignet sich als Sitzungszim
 
 Der Raum bietet 360° beschreibbare, magnetische Wände sowie einen grossen Screen. Hier sollen neue Ideen geboren und Bestehendes hinterfragt werden. Es kann ohne Grenzen "gebrainstormed" werden.
 
-**Spezialität vom Raum Pläfe:** In diesem Raum bieten wir eine *Reduktion von CHF 50 für NPOs.*
+**Spezialität vom Raum Pläfe:** In diesem Raum bieten wir eine *Reduktion von CHF 50 für NPOs.* Rabatte können nicht kumuliert werden.
 
 <div class="local-scroll">
  <a href="#reservation" class="btn btn-mod btn-border btn-round btn-medium">&darr; Reservation</a>

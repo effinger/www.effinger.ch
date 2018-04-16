@@ -28,7 +28,7 @@ prices = [
   "CHF 300 für 4 Stunden",
   "CHF 350 für 6 Stunden",
   "CHF 400 für 8 Stunden",
-  "CHF 450 ab 8 Stunden",
+  "CHF 450 ab 10 Stunden",
 ]
 
 prices_excluding_vat = true
