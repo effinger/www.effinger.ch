@@ -29,5 +29,4 @@ Du kannst Kaffee trinken, so viel du willst. Dazu gibt es Süsses aus der Backst
 
 #### Weitere Termine
 
-* [Latte Art & Schnouse am 4. Februar 2018](/events/100155/)
-* [Latte Art & Schnouse am 11. März 2018](/events/100156/)
+* [Latte Art & Schnouse am 3. Juni 2018](/events/100212/)
