@@ -1,7 +1,7 @@
 +++
 title = "Demonight 005"
 description = "On April 27 we take a look back at what has been going on in the spring of the worldwide demoscene, not least of which the results of REVISION 2018! Join us for an evening of the real-time underground."
-startdate = 2018-04-27T17:00:00Z
+startdate = 2018-04-27T18:00:00Z
 enddate = 2018-04-28T00:00:00Z
 categories = [ "Labor" ]
 location = "Effinger im -2 UG"
@@ -30,7 +30,7 @@ The date for the next Compo will be announced at DEMONIGHTS 005. If you missed i
 ## // // THE HARD FACTS / /
 
 * When: FRIDAY, April, 27, 2018
-* Doors: 17:00 - Midnight, workshop starting at ~18:00, screen programme starting at ~19:30
+* Doors: 18:00 - Midnight, screen programme starting at ~19:30
 * Entrance: CHF 10.- cover (please deposit in tip-jar)
 * Where: Effingerstrasse 10, Bern. Underground -2 (side entrance)
 
