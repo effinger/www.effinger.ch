@@ -206,7 +206,7 @@
 
 .streamEntry:first-child::after {
   @include breakpoint(medium) {
-  top: 42%;
+  top: 33%;
   bottom: auto;
   }
 }
@@ -253,6 +253,8 @@
     flex-direction: column;
     align-items: center;
     z-index: 1;
+    padding-left: 0.5rem;
+    padding-right: 1.4rem;
     @include breakpoint(medium) {
       width: 45%;
     }
@@ -263,8 +265,7 @@
 .streamEntry__image {
   width: 100%;
   height: auto;
-  padding-left: 0.5rem;
-  padding-right: 1.4rem;
+  border: 1px solid fade-out(black, 0.85);
   @include breakpoint(medium) {
     width: auto;
     height: auto;
@@ -349,7 +350,7 @@
   padding: 0.5rem 0 0.2rem;
   z-index: 1;
   @include breakpoint(medium) {
-    top: 42%;
+    top: 33%;
     left: 50%;
     right: auto;
     transform: translate(-50%, -50%);
