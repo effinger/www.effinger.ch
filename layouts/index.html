@@ -420,31 +420,20 @@ Für Jungunternehmer, Kreative, Handwerkerinnen, Weltveränderer, Bernerinnen, Z
       });
     }
 
-    var StreamIndex = {
-      DATE: 0,
-      AUTHOR: 1,
-      COMMENT: 2,
-      IMAGE_URL: 3,
-      IMAGE_WIDTH: 4,
-      IMAGE_HEIGHT: 5,
-    };
-
-    function loadPosts(latestPostId) {
-
-      $.get("https://sheets.googleapis.com/v4/spreadsheets/1zdudRkT_1emT-ngS0aKWOZ15QN440OT7ULA_1hedeLM/values/Sheet1!" + latestPostId + ":" + (latestPostId - 3) + "?key=AIzaSyCkd_yvqqh0gb_T4S4kCw57X3BZiYIK-hI", function( data ) {
-
-        $.each(data.values.reverse(), function(i, item) {
+    function loadPosts() {
+      $.get("https://api.kurtli.com/resources/T031CHQFJ/share/C8YRABMR9/?maxResults=4", function( data ) {
+        $.each(data, function(i, item) {
           var streamTeaserColumn = $('.streamTeaser__imagecontainer .streamTeaser__columns:nth-child(' + (i+1) + ')');
 
           streamTeaserColumn.find('.image-item').attr('href', '/stream/');
 
           var maxImageSize = 400;
-          var imageUrl = item[StreamIndex.IMAGE_URL].replace("upload/", "upload/w_" + maxImageSize + ",h_" + maxImageSize + ",c_limit/");
+          var imageUrl = item.image.replace("upload/", "upload/w_" + maxImageSize + ",h_" + maxImageSize + ",c_limit/");
           streamTeaserColumn.find('.image-item__src').attr('src', imageUrl);
 
-          streamTeaserColumn.find('.streamEntry__name').text('@' + item[StreamIndex.AUTHOR]);
+          streamTeaserColumn.find('.streamEntry__name').text('@' + item.authorName);
 
-          var itemDate = ' ' + item[StreamIndex.DATE].substr(11, 5) + ' Uhr';
+          var itemDate = ' ' + item.date.substr(11, 5) + ' Uhr';
           streamTeaserColumn.find('.streamEntry__time').text(itemDate);
 
           streamTeaserColumn.fadeIn( 400 );
@@ -452,13 +441,7 @@ Für Jungunternehmer, Kreative, Handwerkerinnen, Weltveränderer, Bernerinnen, Z
       });
     }
 
-    // Get the total number of posts.
-    $.get("https://sheets.googleapis.com/v4/spreadsheets/1zdudRkT_1emT-ngS0aKWOZ15QN440OT7ULA_1hedeLM/values/Sheet1!L1?key=AIzaSyCkd_yvqqh0gb_T4S4kCw57X3BZiYIK-hI", function( data ) {
-      // Start with the last row.
-      var latestPostId = data.values[0][0];
-
-      loadPosts(latestPostId);
-    });
+    loadPosts();
   });
 </script>
 
