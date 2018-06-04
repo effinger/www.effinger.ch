@@ -5,10 +5,10 @@ startdate = 2018-08-24T19:00:00Z
 enddate = 2018-08-24T22:00:00Z
 categories = [ "Labor" ]
 location = "Effinger Labor (UG -2)"
-image = "https://www.effinger.ch/events/100181/wearecinema.jpg"
+image = "wearecinema.jpg"
 +++
 
-![WeAreCinema](https://www.effinger.ch/events/100181/wearecinema.jpg)
+![WeAreCinema](wearecinema.jpg)
 
 Um dem grauen Alltag zu entkommen, entführen wir dich in ferne Länder, animierte, unbekannte Welten und an fiktive Orten, die du noch nie zuvor gesehen hast. Aber Achtung, das VR Erlebnis ist visuell sehr stark - man schaut keinen Film auf einer Leinwand, sondern sitzt mitten in einer Filmkugel und ist sozusagen der Mittelpunkt und Teil vom Filmgeschehen.
 
