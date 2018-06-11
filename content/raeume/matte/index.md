@@ -52,23 +52,28 @@ text = "Design Thinking Material"
 price = "CHF 100"
 
 [[extras]]
-text = "Seminarverpflegung Kaffee & Mineral"
-price = "halber Tag CHF 7 / ganzer Tag CHF 9 pro Person"
+text = "Seminarverpflegung 1. OG Kaffee/Tee, Mineral & Brötli/Gipfeli"
+price = "halber Tag CHF 13 / ganzer Tag CHF 15 pro Person"
 hidden = true
 
 [[extras]]
-text = "Seminarverpflegung Kaffee, Mineral & Obst"
-price = "halber Tag CHF 11 / ganzer Tag CHF 15 pro Person"
+text = "Seminarverpflegung 1. OG Kaffee/Tee, Mineral, Obst,  Brötli/Gipfeli & Süsses"
+price = "ganzer Tag CHF 19 pro Person"
 hidden = true
 
 [[extras]]
-text = "Seminarverpflegung Kaffee, Mineral & Brötli/Gipfeli"
-price = "halber Tag CHF 11 / ganzer Tag CHF 15 pro Person"
+text = "Seminarverpflegung 1. OG Kaffee/Tee, Mineral, Obst & Süsses"
+price = "halber Tag CHF 13 pro Person"
 hidden = true
 
 [[extras]]
-text = "Seminarverpflegung Kaffee, Mineral, Obst & Brötli/Gipfeli"
-price = "halber Tag CHF 13 / ganzer Tag CHF 17 pro Person"
+text = "Seminarverpflegung 1. OG Kaffee/Tee, Mineral & Obst"
+price = "halber Tag CHF 13 pro Person"
+hidden = true
+
+[[extras]]
+text = "Seminarverpflegung 1. OG Kaffee/Tee, Mineral & Süsses"
+price = "halber Tag CHF 13 pro Person"
 hidden = true
 
 [[extras]]

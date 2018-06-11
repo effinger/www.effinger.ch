@@ -50,6 +50,26 @@ price = "halber Tag CHF 9 / ganzer Tag CHF 13 pro Person"
 hidden = true
 
 [[extras]]
+text = "Seminarverpflegung Mineral, Obst & Brötli/Gipfeli & Süsses"
+price =  "ganzer Tag CHF 14 pro Person"
+hidden = true
+
+[[extras]]
+text = "Seminarverpflegung Mineral, Obst & Süsses"
+price = "halber Tag CHF 9 pro Person"
+hidden = true
+
+[[extras]]
+text = "Seminarverpflegung Mineral & Süsses"
+price = "halber Tag CHF 8 pro Person"
+hidden = true
+
+[[extras]]
+text = "Seminarverpflegung Mineral, Brötli/Gipfeli"
+price = "halber Tag CHF 8 pro Person"
+hidden = true
+
+[[extras]]
 text = "Weitere Verpflegung gewünscht"
 hidden = true
 +++
