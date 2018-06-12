@@ -1,7 +1,7 @@
 +++
 title = "Open Debate - Direkte Demokratie verbindet"
 date = "2018-05-02"
-description = "Eine interessante Diskussionsrunde zum Thema «Direkte Demokratie verbindet». Ziel war es, die verbindenden Elemente der direkten Demokratie aus unterschiedlichen Perspektiven auszuleuchten. Direkte Demokratie verbindet Vergangenheit und Zukunft, sowie Menschen. Diese Diskussion ist auch im Hinblick auf die Menschenrechte mehr als relevant. Es wurden auch neue und innovative Ideen zum Thema direkte Demokratie diskutiert."
+description = "Eine interessante Diskussionsrunde zum Thema «Direkte Demokratie verbindet». Ziel war es, die verbindenden Elemente der direkten Demokratie aus unterschiedlichen Perspektiven auszuleuchten. Direkte Demokratie verbindet Vergangenheit und Zukunft, sowie Menschen. Es wurden auch neue und innovative Ideen zum Thema direkte Demokratie diskutiert."
 image = "open-debate.jpg"
 author = "Urs Vögeli"
 comments = true
