@@ -2,17 +2,15 @@
 title = "Matte"
 weight = 2
 description = "Raum für innovative Workshops und kreative Sitzungen."
-image = "workshopraum-01.jpg"
+image = "workshop-raum.jpg"
 
 gallery = [
-  "workshopraum-01.jpg",
-  "workshopraum-02.jpg",
-  "workshopraum-03.jpg",
-  "workshopraum-04.jpg",
-  "workshopraum-05.jpg",
-  "workshopraum-06.jpg",
-  "workshopraum-07.jpg",
-  "workshopraum-08.jpg"
+  "workshop-raum.jpg",
+  "workshop-raum-2.jpg",
+  "workshop-raum-3.jpg",
+  "workshop-raum-4.jpg",
+  "workshop-raum-5.jpg",
+  "workshop-raum-6.jpg"
 ]
 
 square_meters = 45

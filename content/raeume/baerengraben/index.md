@@ -2,10 +2,12 @@
 title = "Bärengraben"
 weight = 4
 description = "Sitzungsraum, wahlweise mit Küche."
-image = "sitzungsraum-01.jpg"
+image = "sitzungs-raum.jpg"
 
 gallery = [
-  "sitzungsraum-01.jpg"
+  "sitzungs-raum.jpg",
+  "sitzungs-raum-2.jpg",
+  "sitzungs-raum-3.jpg"
 ]
 
 square_meters = 22

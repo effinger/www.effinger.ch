@@ -2,15 +2,16 @@
 title = "Pläfe"
 weight = 1
 description = "Der abgetrennte Raum oberhalb des Kaffeebar-Bereichs eignet sich als Sitzungszimmer und Workshopraum. Der Raum bietet 360° beschreibbare, magnetische Wände sowie einen grossen Screen."
-image = "workshopraum-01.jpg"
+image = "raum-mieten.jpg"
 
 gallery = [
-  "workshopraum-01.jpg",
-  "workshopraum-02.jpg",
-  "workshopraum-03.jpg",
-  "workshopraum-04.jpg",
-  "workshopraum-05.jpg",
-  "workshopraum-06.jpg"
+  "raum-mieten.jpg",
+  "raum-mieten-2.jpg",
+  "raum-mieten-3.jpg",
+  "raum-mieten-4.jpg",
+  "raum-mieten-5.jpg",
+  "raum-mieten-6.jpg",
+  "raum-mieten-7.jpg"
 ]
 
 square_meters = 17
