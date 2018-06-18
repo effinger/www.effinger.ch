@@ -10,11 +10,11 @@ gender = "f"
 image = "/images/kaffeebar/corinne.jpg"
 comment = "Möge dein Kaffee stark und dein Montag kurz sein."
 
-[[Person]]
-name = "Hanne"
-gender = "f"
-image = "/images/kaffeebar/hanne.jpg"
-comment = "Eg e kaffetørst!"
+# [[Person]]
+# name = "Hanne"
+# gender = "f"
+# image = "/images/kaffeebar/hanne.jpg"
+# comment = "Eg e kaffetørst!"
 
 [[Person]]
 name = "Sabina"
