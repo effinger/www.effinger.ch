@@ -1,4 +1,0 @@
-{{ if and (lt $.Site.Data.spezielle_oeffnungszeiten.coworking.display_start now) (gt $.Site.Data.spezielle_oeffnungszeiten.coworking.display_end now) }}
-  <p class="text-center"><em>{{ $.Site.Data.spezielle_oeffnungszeiten.coworking.text | markdownify }}</em></p>
-  <div class="wave-spacer"></div>
-{{ end }}

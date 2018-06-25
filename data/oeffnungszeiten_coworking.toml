@@ -1,0 +1,34 @@
+[normal]
+# Normale Öffnungszeit wird verwendet, wenn keine unter "spezial" von
+# den Zeiten her zutrifft.
+text = """
+<p>Mo-Fr <span>7-23</span></p>
+<p>Sa <span>9-17</span></p>
+<p>So <span>Ruhetag</span></p>
+"""
+
+[[spezial]]
+# Pfinsten 2018
+display_start = 2018-04-25T00:00:00Z
+display_end = 2018-05-21T23:59:59Z
+text = """
+<p class="text-center"><em>ACHTUNG: Auffahrt (10. Mai) und Pfingstmontag (21. Mai) geschlossen! Sonst normal geöffnet.</em></p>
+<div class="wave-spacer"></div>
+<p>Mo-Fr <span>7-23</span></p>
+<p>Sa <span>9-17</span></p>
+<p>So <span>Ruhetag</span></p>
+"""
+
+[[spezial]]
+# Sommerferien 2018
+display_start = 2018-07-05T00:00:00Z
+display_end = 2018-08-11T23:59:59Z
+text = """
+<p class="text-center"><em>SOMMERÖFFNUNGSZEITEN<br>vom 9. Juli - 11. August</em></p>
+<div class="wave-spacer"></div>
+<p>Mo, Di & Fr <span>7-<strong>19(!)</strong></span></p>
+<p>Mi & Do <span>7-23</span></p>
+<p>Sa <span>9-<strong>14(!)</strong></span></p>
+<p>So <span>Ruhetag</span></p>
+<p>1. August <span>geschlossen</span></p>
+"""
