@@ -7,10 +7,16 @@ categories = [ "Kaffeebar" ]
 location = "Effingerstrasse 10, Bern"
 image = "latte-art.jpg"
 
-registration = true
+registration = false
 registration_max = 6
 registration_close = 2018-07-01T00:00:00Z
 +++
+
+<div class="alert alert-danger text-center">
+  <i class="fa fa-ban"></i>
+  Event abgesagt!
+</div>
+<br>
 
 <div class="embed-responsive embed-responsive-4by3">
   <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/8GeilGgv994?rel=0" frameborder="0" allowfullscreen></iframe>
