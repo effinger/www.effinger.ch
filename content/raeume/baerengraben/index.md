@@ -73,6 +73,12 @@ text = "Weitere Verpflegung gewünscht"
 hidden = true
 
 +++
+
+<div class="alert alert-info">
+<strong>SOMMERSPECIAL 30%</strong><br>30% Reduktion auf die Raummieten im <a href="/raeume/baerengraben/">Bärengraben</a>, <a href="/raeume/rosengarten/">Rosengarten</a> und <a href="/raeume/matte/">Matte</a>! Das Spezialangebot* gilt für Raumbuchungen, die ab dem 28. Juni 2018 bei uns eingehen und zwischen dem 9.  - 31. Juli 2018 stattfinden.<br>
+<small>*Exklusive zusätzliche Infrastruktur, Extras und Seminarverpflegung</small>.
+</div>
+
 Sitzungsraum, wahlweise mit Küche.
 
 <div class="local-scroll">
