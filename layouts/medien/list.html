@@ -27,17 +27,41 @@
   <!-- Medien Kit -->
   <section class="page-section pt-80 pb-80 bg-gray">
     <div class="container relative">
-      <div class="contact-item clearfix">
-        <h4 class="uppercase">Medienkit</h4>
-        <div class="wave-spacer"></div>
-        <div class="item">
-          <p>Fotos für Medien können unter folgendem Link heruntergeladen werden.</p>
-          <a href="https://sites.google.com/effinger.ch/medien/" target="_blank"
-              class="btn btn-mod btn-medium btn-round mt-20 white">&rarr; Zum Medienkit</a>
+      <div class="row">
+        <div class="col-sm-7 col-md-8 mb-40">
+          <div class="row">
+            <div class="col-xs-4 col-md-3 mb-xs-40">
+              <a href="/medien/">
+                <span class="icon-newspaper" style="font-size: 80px;"></span>
+              </a>
+            </div>
+            <div class="col-xs-8 col-md-7 col-lg-6 mb-xs-60">
+              <p>Auf dieser Seite findest du Zeitungsartikel und andere Medienberichte über den Effinger.
+              </p>
+              <div class="local-scroll">
+                <a href="#medienberichte" class="btn btn-mod btn-border btn-medium btn-round">&darr; Medienberichte</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-5 col-md-4 mb-40">
+          <div class="contact-item clearfix">
+            <h4 class="uppercase">Medienkit</h4>
+            <div class="wave-spacer"></div>
+            <div class="item">
+              <p>Fotos für Medien können unter folgendem Link heruntergeladen werden.</p>
+              <a href="https://sites.google.com/effinger.ch/medien/" target="_blank"
+                  class="btn btn-mod btn-medium btn-round mt-20 white">&rarr; Zum Medienkit</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
+
+  <div id="medienberichte">
+
+  </div>
 
   {{ range $i, $e := .Data.Pages.GroupByDate "2006" }}
     <section class="page-section pb-40 {{ if not (modBool $i 2) }}bg-gray{{ end }}">
