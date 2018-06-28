@@ -6,5 +6,5 @@ author = "Der Bund"
 image = "bund-bern-wird-zu-einem-mini-berlin.jpg"
 
 pdf = "bund-bern-wird-zu-einem-mini-berlin.pdf"
-online = "http://www.derbund.ch/bern/stadt/bern-wird-zu-einem-miniberlin/story/11832472"
+online = "https://www.derbund.ch/bern/stadt/bern-wird-zu-einem-miniberlin/story/11832472"
 +++
