@@ -13,7 +13,7 @@
       <div class="row">
 
         <div class="col-md-8">
-          <h1 class="hs-line-11 font-alt mb-0">Soziokratische Entscheidungen</h1>
+          <h1 class="hs-line-11 font-alt mb-0">{{ .Title }}</h1>
           <!--
           <div class="hs-line-4 font-alt mt-20 mt-xs-0">
           Grundsätze
@@ -31,31 +31,64 @@
     </div>
   </section>
   <!-- End Header -->
-
-  <!-- Section -->
-  <section class="page-section">
-    <div class="container relative">
-
+  
+  <section class="page-section bg-gray">
+    <div class="relative container">
       <div class="row">
 
+        <div class="col-sm-10 col-sm-offset-1">
+          <div class="blog-item-body">
+            <h1 class="hs-line-11 font-alt">Soziokratie</h1>
+            {{ .Params.soziokartie_einleitung | markdownify }}
+
+            <div class="local-scroll">
+              <a href="#entscheidungen" class="btn btn-mod btn-border btn-medium btn-round mb-md-10">↓ Soziokratische Entscheidungen</a><span class="hidden-xs">&nbsp;</span>
+              <a href="#wahlen" class="btn btn-mod btn-border btn-medium btn-round">↓ Soziokratische Wahlen</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section -->
+  <section class="page-section" id="entscheidungen">
+    <div class="container relative">
+      <div class="row">
         <!-- Content -->
         <div class="col-sm-10 col-sm-offset-1">
-
           <!-- Text -->
           <div class="blog-item-body">
-            <h1 class="mt-0 font-alt">{{ .Title }}</h1>
-
-            {{ .Content }}
+            <h1 class="mt-0 font-alt" >Soziokratische Entscheidungen</h1>
+            {{ .Params.soziokratische_entscheidungen | markdownify }}
           </div>
           <!-- End Text -->
-
         </div>
         <!-- End Content -->
       </div>
-
     </div>
   </section>
   <!-- End Section -->
+  
+  <!-- Section -->
+  <section class="page-section" id="wahlen">
+    <div class="container relative">
+      <div class="row">
+        <!-- Content -->
+        <div class="col-sm-10 col-sm-offset-1">
+          <!-- Text -->
+          <div class="blog-item-body">
+            <h1 class="mt-0 font-alt" >Soziokratische Wahlen</h1>
+            {{ .Params.soziokratische_wahlen | markdownify }}
+          </div>
+          <!-- End Text -->
+        </div>
+        <!-- End Content -->
+      </div>
+    </div>
+  </section>
+  <!-- End Section -->
+  
 </div>
 <!-- End Page Wrap -->
 {{ end }}

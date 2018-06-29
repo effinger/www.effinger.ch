@@ -27,7 +27,7 @@ Eine hierarchielose Organisationsform braucht neue Formen der Entscheidungsfindu
 
 ### Beratungsprozess
 
-Beim Beratungsprozess muss die Person, welche eine Entscheidung fällen will, betroffene Kollegen sowie Experten um Rat fragen. So lernt er/sie Einwände, Fragen und Ideen von Kollegen kennen. Nachdem die Person sich offen die Ratschläge angehört hat, fällt diese selbständig eine Entscheidung.
+Beim Beratungsprozess muss die Person, welche eine Entscheidung fällen will, betroffene Kollegen sowie Experten um Rat fragen. So lernt er/sie Einwände, Fragen und Ideen von Kollegen kennen. Nachdem die Person sich offen die Ratschläge angehört hat, fällt diese selbständig eine Entscheidung. Schliesslich wird transparent kommuniziert, was entschieden wurde und welche Personen um Rat gefragt wurden.
 
 
 ### Soziokratie statt Demokratie
