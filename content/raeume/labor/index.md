@@ -50,6 +50,11 @@ text = "Moderationsmaterial"
 price = "CHF 50"
 
 [[extras]]
+text = "Seminarverpflegung UG Kaffee/Tee, Mineral"
+price = "halber Tag CHF 7 / ganzer Tag CHF 9 pro Person"
+hidden = true
+
+[[extras]]
 text = "Seminarverpflegung UG Kaffee/Tee, Mineral & Brötli/Gipfeli"
 price = "halber Tag CHF 13 / ganzer Tag CHF 15 pro Person"
 hidden = true
