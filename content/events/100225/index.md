@@ -22,10 +22,6 @@ registration = false
 - Nationalrat Felix Müri für ein Grusswort der WBK
 
 
-### Moderation und Live-Visualisierung
-
-- [Daniel Osterwalder](https://www.visualdynamics.ch/)  
-
 Moderation und Live-Visualisierung: Daniel Osterwalder, Visual Dynamics
 
 
