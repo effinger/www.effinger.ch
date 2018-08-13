@@ -34,9 +34,21 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="/css/bootstrap.css">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/animate.css">
+    {{/* Process bootstrap.scss */}}
+    {{ $bootstrapOptions := (dict "targetPath" "css/bootstrap.css" "outputStyle" "compressed" "enableSourceMap" true) }}
+    {{ $bootstrapCss := resources.Get "sass/bootstrap.scss" | resources.ToCSS $bootstrapOptions }}
+    <link rel="stylesheet" href="{{ $bootstrapCss.Permalink }}">
+    
+    {{/* Process style.scss */}}
+    {{ $styleOptions := (dict "targetPath" "css/style.css" "outputStyle" "compressed" "enableSourceMap" true) }}
+    {{ $styleCss := resources.Get "sass/style.scss" | resources.ToCSS $styleOptions }}
+    <link rel="stylesheet" href="{{ $styleCss.Permalink }}">
+    
+    {{/* Process animate.scss */}}
+    {{ $animateOptions := (dict "targetPath" "css/animate.css" "outputStyle" "compressed" "enableSourceMap" true) }}
+    {{ $animateCss := resources.Get "sass/animate.scss" | resources.ToCSS $animateOptions }}
+    <link rel="stylesheet" href="{{ $animateCss.Permalink }}">
+    
     <link rel="stylesheet" href="/css/owl.carousel.min.css">
     <link rel="stylesheet" href="/css/magnific-popup.min.css">
 
