@@ -17,7 +17,7 @@ square_meters = 45
 capacity = "20"
 
 equipment = [
-  "(beschreibbare) Tische",
+  "Tische",
   "Stühle oder Hocker",
   "High-Speed Internet"
 ]
@@ -84,13 +84,6 @@ text = "Weitere Verpflegung gewünscht"
 hidden = true
 
 +++
-
-<div class="alert alert-info">
-<strong>SOMMERSPECIAL 30%</strong><br>30% Reduktion auf die Raummieten im <a href="/raeume/baerengraben/">Bärengraben</a>, <a href="/raeume/rosengarten/">Rosengarten</a> und <a href="/raeume/matte/">Matte</a>! Das Spezialangebot* gilt für Raumbuchungen, die ab dem 28. Juni 2018 bei uns eingehen und zwischen dem 9.  - 31. Juli 2018 stattfinden.<br>
-<small>*Exklusive zusätzliche Infrastruktur, Extras und Seminarverpflegung</small>.
-</div>
-
-Raum für innovative Workshops und kreative Sitzungen.
 
 <div class="local-scroll">
  <a href="#reservation" class="btn btn-mod btn-border btn-round btn-medium">&darr; Reservation</a>
