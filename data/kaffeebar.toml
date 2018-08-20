@@ -62,10 +62,10 @@ comment = "The future is golden."
 name = "Silvia"
 gender = "f"
 image = "/images/kaffeebar/silvia.jpg"
-comment = ""
+comment = "Darfs eine Ingwerer-Philosophy-Schoko-Heldenpause to go sein?"
 
 [[Person]]
 name = "Christa"
 gender = "f"
 image = "/images/kaffeebar/christa.jpg"
-comment = ""
+comment = "life happens, coffee helps"
