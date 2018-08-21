@@ -4,7 +4,7 @@ description = "In ungezwungener Atmosphäre können spielfreudige Individuen die
 startdate = 2018-08-22T17:00:00Z
 enddate = 2018-08-22T21:00:00Z
 categories = [ "Community" ]
-location = "Effinger 1. OG (Raum Matte)"
+location = "Effinger 2. UG (Raum Labor)"
 image = "image.jpg"
 
 registration = false

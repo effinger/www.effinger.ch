@@ -4,11 +4,11 @@ gender = "m"
 image = "/images/kaffeebar/dominic.jpg"
 comment = "Life is too short to drink Latte Macchiatto."
 
-[[Person]]
-name = "Corinne"
-gender = "f"
-image = "/images/kaffeebar/corinne.jpg"
-comment = "Möge dein Kaffee stark und dein Montag kurz sein."
+# [[Person]]
+# name = "Corinne"
+# gender = "f"
+# image = "/images/kaffeebar/corinne.jpg"
+# comment = "Möge dein Kaffee stark und dein Montag kurz sein."
 
 # [[Person]]
 # name = "Hanne"
@@ -22,11 +22,11 @@ gender = "f"
 image = "/images/kaffeebar/sabina.jpg"
 comment = "A cup of coffee a day keeps the sorrows away."
 
-# [[Person]]
-# name = "Tina"
-# gender = "f"
-# image = "/images/kaffeebar/tina.jpg"
-# comment = "Das Leben ist an und für sich eine riskante Angelegenheit."
+[[Person]]
+name = "Tina"
+gender = "f"
+image = "/images/kaffeebar/tina.jpg"
+comment = "Das Leben ist an und für sich eine riskante Angelegenheit."
 
 [[Person]]
 name = "Luna"
@@ -57,3 +57,15 @@ name = "Natascha"
 gender = "f"
 image = "/images/kaffeebar/natascha.jpg"
 comment = "The future is golden."
+
+[[Person]]
+name = "Silvia"
+gender = "f"
+image = "/images/kaffeebar/silvia.jpg"
+comment = "Darfs eine Ingwerer-Philosophy-Schoko-Heldenpause to go sein?"
+
+[[Person]]
+name = "Christa"
+gender = "f"
+image = "/images/kaffeebar/christa.jpg"
+comment = "life happens, coffee helps"
