@@ -5,14 +5,13 @@
   <div class="widget-body">
     <div class="tags">
       {{ $title := .Title }}
-      {{ range where .Site.RegularPages "Section" "blog-tag" }}
-        {{ if eq $title .Title }}
-          {{ partial "blog/tag_link_active.html" .Title }}
+      {{ range $taxonomyname, $taxonomy := .Site.Taxonomies.tags }}
+        {{ if eq $title $taxonomyname }}
+          {{ partial "blog/tag_link_active.html" $taxonomyname }}
         {{ else }}
-          {{ partial "blog/tag_link.html" .Title }}
+          {{ partial "blog/tag_link.html" $taxonomyname }}
         {{ end }}
       {{ end }}
-
     </div>
   </div>
 </div>

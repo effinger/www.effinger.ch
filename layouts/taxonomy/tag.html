@@ -42,12 +42,11 @@
 
         <!-- Content -->
         <div class="col-sm-8">
-          {{ $title := .Title }}
-          {{ range where .Site.RegularPages "Section" "blog" }}
-            {{ if in .Params.tags $title }}
-              {{ partial "blog/summary.html" . }}
-            {{ end }}
+          {{ range (.Paginator 7).Pages }}
+            {{ partial "blog/summary.html" . }}
           {{ end }}
+
+          {{ partial "pagination.html" . }}
         </div>
         <!-- End Content -->
 

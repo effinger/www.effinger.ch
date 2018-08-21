@@ -17,9 +17,10 @@ disableFastRender = true
 [taxonomies]
   category = "categories"  # Used for events
   finanzen = "finanzen"
+  tag = "tags"
 
 [permalinks]
-  blog-tag = "/blog/tag/:title/"
+  tags = "/blog/tag/:slug/"
 
 [[menu.main]]
   name = "Community"
