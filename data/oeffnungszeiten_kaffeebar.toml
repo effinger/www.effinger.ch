@@ -3,7 +3,9 @@
 [normal]
 text = """
 <p>Mo-Fr <span>7-23</span></p>
-<p>Sa <span>9-17</span></p>
+<p class="mb-0">Sa <span></span></p>
+<p class="small mt-0 mb-0">Jun &ndash; Sept <span>9-14</span></p>
+<p class="small mt-0">Okt &ndash; Mai <span>9-17</span></p>
 <p>So <span>Ruhetag</span></p>
 """
 
@@ -13,16 +15,6 @@ text = """
 # normale Öffnungszeit damit ersetzt.
 # 
 # Falls mehrere Spezial-Zeiten zutreffen, kommt der unterste zur Anwendung.
-
-# Samstagsöffnungszeit Juni-September 2018
-[[spezial]]
-display_start = 2018-06-01T00:00:00Z
-display_end = 2018-09-30T23:59:59Z
-text = """
-<p>Mo-Fr <span>7-23</span></p>
-<p>Sa <span>9-14</span></p>
-<p>So <span>Ruhetag</span></p>
-"""
 
 # Pfinsten 2018
 [[spezial]]
