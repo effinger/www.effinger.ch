@@ -27,23 +27,6 @@ offers_title = "Menu"
       [[offers.section.element.subelement]]
         text = "nach Tagesangebot"
 
-
-  [[offers.section]]
-   title = "Suppe"
-   column = "left"
-
-   [[offers.section.element]]
-     text = "Suppe nach Tagesangebot"
-     price = "9.00"
-
-     [[offers.section.element.subelement]]
-       text = "«es het solang's het»"
-
-     [[offers.section.element.subelement]]
-       text = "mit Salat"
-       price = "+3.00"
-
-
   [[offers.section]]
     title = "Grünzeug"
     column = "right"
@@ -61,6 +44,7 @@ offers_title = "Menu"
       [[offers.section.element.subelement]]
         text = "Ziegenkäse, Honig, Nüsse"
         price = "+4.00"
+        
       [[offers.section.element.subelement]]
         text = "Rohschinken, Parmesan"
         price = "+6.00"
@@ -68,6 +52,20 @@ offers_title = "Menu"
   [[offers.section]]
     title = "Apero"
     column = "left"
+
+    [[offers.section.element]]
+      text="Apéroteller mediterran"
+      price="22.00"
+
+      [[offers.section.element.subelement]]
+        text="Parmesan, Fetawürfel, Rohschinken, Chorizo-Perlen, Oliven, serviert mit Brot"
+    
+    [[offers.section.element]]
+      text="Apéroteller orientalisch"
+      price="25.00"
+
+      [[offers.section.element.subelement]]
+        text="Hummus, gefüllte Weinblätter, Kapernäpfel, Tomaten-Gemüse Aufstrich, Fetawürfel, serviert mit Brot"
 
     [[offers.section.element]]
         text = "Parmesan"
@@ -90,11 +88,26 @@ offers_title = "Menu"
       price="5.00"
 
     [[offers.section.element]]
-      text="Apéroteller"
-      price="22.00"
+      text="Hummus"
+      price="5.50"
 
+    [[offers.section.element]]
+      text="Gefüllte Weinblätter"
+      price="7.00"
+      
+    [[offers.section.element]]
+      text="Kapernäpfel"
+      price="5.00"
+      
+    [[offers.section.element]]
+      text="Tomaten-Gemüse Aufstrich"
+      price="5.00"
+    
+    [[offers.section.element]]
+        text=""
+        
       [[offers.section.element.subelement]]
-        text="Eine Komposition aus mediterranen Köstlichkeiten"
+        text="Einzelportion jeweils serviert mit Brot"
 
   [[offers.section]]
     title = "Vom Bäcker"
@@ -446,11 +459,11 @@ offers_title = "Menu"
     column = "left"
 
     [[offers.section.element]]
-      text="Bière Ambrée - Haldemann"
-      price="6.00"
+      text="Cascade Anber Ale - Kitchen Brew"
+      price="7.00"
 
       [[offers.section.element.subelement]]
-        text="Amber, ausgewogene Hopfung, vollmundig"
+        text="Amber, gehaltvoll, fruchtig-würzig, ausgewogen in Malzigkeit und Bitterkeit"
 
     [[offers.section.element]]
       text="Pacifique - trois dames"
@@ -481,11 +494,11 @@ offers_title = "Menu"
         text="Schwarzbier, Pfeffer, Kaffee, bittersüss"
 
     [[offers.section.element]]
-      text="La Fraîcheur – trois dames"
-      price="7.50"
+      text="Chopfab Summer"
+      price="6.50"
 
       [[offers.section.element.subelement]]
-        text="Belgian Style Blanche, Zitrusnoten, erfrischend"
+        text="Special White Ale, Weisswein Bouquet, erfrischend"
 
     [[offers.section.element]]
       text="Appenzeller Leermond"
