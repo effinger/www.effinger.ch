@@ -1,7 +1,7 @@
 +++
 title = "Effianer auf Wanderschaft"
 date = "2018-09-06"
-description = "Was soll man tun, wenn man eine länger Zeit im Effinger aktiv war, man aber eine Weile auf etwas anderes fokussieren möchte. Trotzdem möchte man den Effinger als Heimat behalten und vielleicht nach einer Weile wieder stärker aktiv sein vor Ort. Kann man Weiterziehen, ohne zu gehen?"
+description = "Was soll man tun, wenn man eine länger Zeit im Effinger aktiv war, man sich aber eine Weile auf etwas anderes fokussieren möchte? Trotzdem möchte man den Effinger als Heimat behalten und vielleicht nach einer Weile wieder stärker aktiv sein vor Ort. Kann man Weiterziehen, ohne zu gehen?"
 image = "wanderschaft.jpg"
 author = "Marco Jakob"
 comments = true
@@ -14,9 +14,9 @@ tags = [ "Community", "Effianer" ]
   Besuch bei den Effinger-Coworkerinnen Hanne und Marion in ihrer Heimat Norwegen | Foto <a href="http://www.dmrsbrgr.com/">Damaris Berger</a>
 </p>
 
-Was soll man tun, wenn man eine länger Zeit im Effinger aktiv war, man aber irgendwann merkt, dass man eine Weile auf etwas anderes fokussieren möchte. Trotzdem möchte man den Effinger als Heimat behalten und vielleicht nach einer Weile wieder stärker aktiv sein vor Ort.
+Was soll man tun, wenn man eine länger Zeit im Effinger aktiv war, man aber irgendwann merkt, dass man sich eine Weile auf etwas anderes fokussieren möchte? Trotzdem möchte man den Effinger als Heimat behalten und vielleicht nach einer Weile wieder stärker aktiv sein vor Ort.
 
-So geht es mir im Moment. Vor über 4 Jahren hat die Idee für die Kombination aus Kaffeebar & Coworking, getragen von einer Community [ihren Anfang genommen](/geschichte/). Ich war zuerst noch vorsichtig. Weil es mich aber so richtig gepackt hat, bin ich viel tiefer eingetaucht, als ich mir das vorher überhaupt hätte vorstellen können. Es war eine fantastische Reise und ich habe viele Freunde und Heimat gefunden.
+So geht es mir im Moment. Vor über 4 Jahren hat die Idee für die Kombination aus Kaffeebar & Coworking, getragen von einer Community, [ihren Anfang genommen](/geschichte/). Ich war zuerst noch vorsichtig. Weil es mich aber so richtig gepackt hat, bin ich viel tiefer eingetaucht, als ich mir das vorher überhaupt hätte vorstellen können. Es war eine fantastische Reise und ich habe viele Freunde und Heimat gefunden.
 
 
 ## Weiterziehen, ohne zu gehen
@@ -27,16 +27,16 @@ Wir haben als Community nach Mitgliedschaftsformen gesucht, wo die Grenzen nicht
 
 Was Organisationen viel zu wenig planen, ist, wie Mitglieder wieder aus dem Kern herausfinden oder die Organisation verlassen können. Ich bin überzeugt, dass Organisationen, die den Ausgang klar definieren und Mitglieder auf gute Art weiterziehen lassen, mehr Leute anziehen, die dazukommen. Eine grosse Türe am Ausgang braucht Mut, macht aber den Eingang attraktiv.
 
-Das schönste wäre, wenn man weiterziehen kann, ohne wirklich zu gehen. Wie schon oft, versuchen wir hier etwas Gegensätzliches zu kombinieren. So haben wir einen neuen Status eingeführt: **"Effianer auf Wanderschaft"**.
+Das schönste wäre, wenn man weiterziehen könnte, ohne wirklich zu gehen. Wie schon oft, versuchen wir hier etwas Gegensätzliches zu kombinieren. So haben wir einen neuen Status eingeführt: **"Effianer auf Wanderschaft"**.
 
 
 ## Was sind "Effianer auf Wanderschaft"?
 
-“Effianer auf Wanderschaft” sind Effianer, die etwas persönlich oder beruflich verändern und eine bestimmte Zeit die Effianer-Rolle nicht ausüben. Für jedes Jahr als Effianer kann ein Wanderjahr angehängt werden.
+“Effianer auf Wanderschaft” sind Effianer, die etwas persönlich oder beruflich verändern und für eine bestimmte Zeit die Effianer-Rolle nicht ausüben. Für jedes Jahr als Effianer kann ein Wanderjahr angehängt werden.
 
 Spätestens nach einem Jahr berichten sie von ihren Erlebnissen und tragen so ihre Erfahrung zurück in den Effinger. Sie können jederzeit wieder in den Status als Effianer wechseln.
 
-Effianer auf Wanderschaft haben keine Verpflichtung, vor Ort zu sein. Sie sind aber frei, als Coworker hier zu arbeiten. Auch vom Zeitinvestment in Community, ineinander und den Betrieb sind sie frei. Wenn es aber drauf ankommt, können sie im Effinger beigezogen werden (z.B. bei Schwierigkeiten oder Krisen). Und mit dem Status “Effianer auf Wanderschaft” drücken sie die Verbundenheit mit dem Effinger aus.
+Effianer auf Wanderschaft haben keine Verpflichtung, vor Ort zu sein. Sie sind aber frei, als Coworker hier zu arbeiten. Auch vom Zeitinvestment in die Community, ineinander und den Betrieb sind sie frei. Wenn es aber drauf ankommt, können sie im Effinger beigezogen werden (z.B. bei Schwierigkeiten oder Krisen). Und mit dem Status “Effianer auf Wanderschaft” drücken sie die Verbundenheit mit dem Effinger aus.
 
 ---
 
@@ -57,7 +57,7 @@ Ich fahre ähnlich weiter mit Arbeit aus Leidenschaft in Programmieren, Bildung,
 
 ### Warum überhaupt?
 
-Nach über 4 Jahren seit dem Start von Vision und Community merke ich, dass es mir nicht mehr gut geht, wenn ich im Effinger genau gleich weiter fahre. Mir fehlt etwas die Energie. Das hat bestimmt zu tun mit der intensiven Zeit in den letzten Jahren, aber auch damit, dass in der aktuellen Phase andere Fähigkeiten wichtig sind als die, die meinen Stärken entsprechen.
+Nach über 4 Jahren, seit dem Start von Vision und Community, merke ich, dass es mir nicht mehr gut geht, wenn ich im Effinger genau gleich weiterfahre. Mir fehlt etwas die Energie. Das hat bestimmt zu tun mit der intensiven Zeit in den letzten Jahren, aber auch damit, dass in der aktuellen Phase andere Fähigkeiten wichtig sind als die, die meinen Stärken entsprechen.
 
 
 ### Bist du frustriert?
@@ -66,15 +66,15 @@ Ganz im Gegenteil! Klar, es war sehr intensiv und sehr viel Arbeit. Ich versucht
 
 > Wenn Community entstehen soll, geht es nicht um "Geben & Nehmen" sondern um "Geben & Empfangen". 
 
-Ich durfte auf so vielen Ebenen enorm viel empfangen in dieser Zeit. Das Wertvollste für mich sind sicher die vielen Beziehungen, das, was wir zusammen lernen durften und die Glücksmomente, wenn Träume tatsächlich wahr werden. Obwohl das Meiste in einen nicht-gewinnorientierten Verein geflossen ist, durfte ich auch finanziell profitieren: Das Effinger-Netzwerk und die gegenseitige Unterstützung hat mir ermöglicht, in Selbständigkeit oder eben [Gemeinsamständigkeit](/blog/gemeinsamstaendigkeit/) Fuss zu fassen.
+Ich durfte auf so vielen Ebenen enorm viel empfangen in dieser Zeit. Das Wertvollste für mich sind sicher die vielen Beziehungen, das, was wir zusammen lernen durften und die Glücksmomente, wenn Träume tatsächlich wahr werden. Obwohl das meiste in einen nicht-gewinnorientierten Verein geflossen ist, durfte ich auch finanziell profitieren: Das Effinger-Netzwerk und die gegenseitige Unterstützung hat mir ermöglicht, in der Selbständigkeit oder eben [Gemeinsamständigkeit](/blog/gemeinsamstaendigkeit/) Fuss zu fassen.
 
 
 ### Welche Vorbereitungen treffe ich?
 
-Da wir im Effinger keine klassischen "Stellen" und "Hierarchien" haben, ging es während den letzten Monaten lediglich darum zu schauen, welche meiner Rollen weitergeführt werden sollen und falls ja, von wem. Es gibt also keine "Nachfolge", sondern verschiedene Leute aus der Community werden sich um Dinge kümmern, die ich bisher gemacht hatte. Man wird feststellen, dass vieles ganz anders gemacht werden kann.
+Da wir im Effinger keine klassischen "Stellen" und "Hierarchien" haben, ging es während den letzten Monaten lediglich darum zu schauen, welche meiner Rollen weitergeführt werden sollen und falls ja, von wem. Es gibt also keine "Nachfolge", sondern verschiedene Leute aus der Community werden sich um Dinge kümmern, die ich bisher gemacht habe. Man wird feststellen, dass vieles ganz anders gemacht werden kann.
 
 
-### Und Wandern?
+### Und das Wandern?
 
 Ich möchte die Zeit gerade nutzen, um etwas in meinem Wochenablauf zu ändern. Ich plane, jeweils an Sonntagen auf Pilgerwegen unterwegs zu sein. Ich werde ankünden, wo ich gerade bin und freuen mich sehr über Begleitung! Unter [gehpause.ch](https://www.gehpause.ch) findest du die Tage, an denen ich unterwegs bin.
 
