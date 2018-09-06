@@ -16,7 +16,7 @@ tags = [ "Community", "Effianer" ]
 
 Was soll man tun, wenn man eine länger Zeit im Effinger aktiv war, man aber irgendwann merkt, dass man sich eine Weile auf etwas anderes fokussieren möchte? Trotzdem möchte man den Effinger als Heimat behalten und vielleicht nach einer Weile wieder stärker aktiv sein vor Ort.
 
-So geht es mir im Moment. Vor über 4 Jahren hat die Idee für die Kombination aus Kaffeebar & Coworking, getragen von einer Community, [ihren Anfang genommen](/geschichte/). Ich war zuerst noch vorsichtig. Weil es mich aber so richtig gepackt hat, bin ich viel tiefer eingetaucht, als ich mir das vorher überhaupt hätte vorstellen können. Es war eine fantastische Reise und ich habe viele Freunde und Heimat gefunden.
+So geht es mir im Moment. Angetrieben von der Idee für die Kombination aus Kaffeebar & Coworking haben Domenica, Salome, Matthias und ich [vor 4 Jahren](/geschichte/) zum ersten How-the-Heck-Abend eingeladen. Ich war zuerst noch vorsichtig. Weil es mich aber so richtig gepackt hat, bin ich viel tiefer eingetaucht, als ich mir das vorher überhaupt hätte vorstellen können. Es war eine fantastische Reise und ich habe viele Freunde und Heimat gefunden und jetzt ist etwas Neues dran.
 
 
 ## Weiterziehen, ohne zu gehen
@@ -47,7 +47,7 @@ Hier sind ein paar Fragen, die in den letzten Monaten gestellt wurden, seit wir 
 
 ### Wann beginnt meine Wanderschaft?
 
-Beginn ist September 2018. Ich werde spätestens im September 2019 z.B. in einem Brownbag am Mittag über die gemachten Erfahrungen berichten. Dann können wir gerne zusammen im Gespräch eine Standortbestimmung machen für den weiteren Weg (ob z.B. weiter Wandern oder wieder als Effianer aktiv vor Ort).
+Beginn ist September 2018. Ich werde spätestens im September 2019 z.B. in einem [Brownbag](/brownbag/) am Mittag über die gemachten Erfahrungen berichten. Dann können wir gerne zusammen im Gespräch eine Standortbestimmung machen für den weiteren Weg (ob ich z.B. weiter wandere oder wieder als Effianer aktiv bin vor Ort).
 
 
 ### Was mache ich während der Wanderschaft?
@@ -71,7 +71,7 @@ Ich durfte auf so vielen Ebenen enorm viel empfangen in dieser Zeit. Das Wertvol
 
 ### Welche Vorbereitungen treffe ich?
 
-Da wir im Effinger keine klassischen "Stellen" und "Hierarchien" haben, ging es während den letzten Monaten lediglich darum zu schauen, welche meiner Rollen weitergeführt werden sollen und falls ja, von wem. Es gibt also keine "Nachfolge", sondern verschiedene Leute aus der Community werden sich um Dinge kümmern, die ich bisher gemacht habe. Man wird feststellen, dass vieles ganz anders gemacht werden kann.
+Da wir im Effinger keine klassischen "Stellen" und "Hierarchien" haben, ging es während den letzten Monaten lediglich darum zu schauen, welche meiner Effinger-Rollen weitergeführt werden sollen und falls ja, von wem. Es gibt also keine "Nachfolge", sondern verschiedene Leute aus der Community werden sich um Dinge kümmern, die ich bisher gemacht habe. Man wird feststellen, dass vieles ganz anders gemacht werden kann.
 
 
 ### Und das Wandern?
