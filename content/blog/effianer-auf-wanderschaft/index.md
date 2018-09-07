@@ -1,7 +1,7 @@
 +++
 title = "Effianer auf Wanderschaft"
 date = "2018-09-06"
-description = "Was soll man tun, wenn man eine länger Zeit im Effinger aktiv war, man sich aber eine Weile auf etwas anderes fokussieren möchte? Trotzdem möchte man den Effinger als Heimat behalten und vielleicht nach einer Weile wieder stärker aktiv sein vor Ort. Kann man weiterziehen, ohne zu gehen?"
+description = "Was soll man tun, wenn man eine längere Zeit im Effinger aktiv war, man sich aber eine Weile auf etwas anderes fokussieren möchte? Trotzdem möchte man den Effinger als Heimat behalten und vielleicht später wieder stärker aktiv sein vor Ort. Kann man weiterziehen, ohne zu gehen?"
 image = "wanderschaft.jpg"
 author = "Marco Jakob"
 comments = true
@@ -14,14 +14,14 @@ tags = [ "Community", "Effianer" ]
   Besuch bei den Effinger-Coworkerinnen Hanne und Marion in ihrer Heimat Norwegen | Foto <a href="http://www.dmrsbrgr.com/">Damaris Berger</a>
 </p>
 
-Was soll man tun, wenn man eine länger Zeit im Effinger aktiv war, man aber irgendwann merkt, dass man sich eine Weile auf etwas anderes fokussieren möchte? Trotzdem möchte man den Effinger als Heimat behalten und vielleicht nach einer Weile wieder stärker aktiv sein vor Ort.
+Was soll man tun, wenn man eine längere Zeit im Effinger aktiv war, man aber irgendwann merkt, dass man sich eine Weile auf etwas anderes fokussieren möchte? Trotzdem möchte man den Effinger als Heimat behalten und vielleicht später wieder stärker aktiv sein vor Ort.
 
-So geht es mir im Moment. Angetrieben von der Idee für die Kombination aus Kaffeebar & Coworking haben Domenica, Salome, Matthias und ich [vor 4 Jahren](/geschichte/) zum ersten How-the-Heck-Abend eingeladen. Ich war zuerst noch vorsichtig. Weil es mich aber so richtig gepackt hat, bin ich viel tiefer eingetaucht, als ich mir das vorher überhaupt hätte vorstellen können. Es war eine fantastische Reise und ich habe viele Freunde und Heimat gefunden und jetzt ist etwas Neues dran.
+So geht es mir im Moment. Angetrieben von der Idee für die Kombination aus Kaffeebar & Coworking haben Domenica, Salome, Matthias und ich [vor 4 Jahren](/geschichte/) zum ersten How-the-Heck-Abend eingeladen. Ich war zuerst noch vorsichtig. Weil es mich aber so richtig gepackt hat, bin ich viel tiefer eingetaucht, als ich mir das vorher überhaupt hätte vorstellen können. Es war eine fantastische Reise und ich habe viele Freunde und Heimat gefunden. Jetzt ist etwas Neues dran.
 
 
 ## Weiterziehen, ohne zu gehen
 
-Aber wie soll ein solcher Wechsel jetzt aussehen? Fast alle wissen, was passiert, wenn man eine Arbeitsstelle beendet oder eine Organisation verlässt: Man verspricht sich, öfter mal vorbei zu schauen, wobei jeder weiss, dass das unwahrscheinlich ist. Die meisten Organisationen haben ganz klare Grenzen. Entweder man ist drinnen oder draussen. Etwas dazwischen gibt es nicht.
+Aber wie soll ein solcher Wechsel aussehen? Fast alle wissen, was passiert, wenn man eine Arbeitsstelle beendet oder eine Organisation verlässt: Man verspricht sich, öfter mal vorbei zu schauen, wobei jeder weiss, dass das unwahrscheinlich ist. Die meisten Organisationen haben ganz klare Grenzen. Entweder man ist drinnen oder draussen. Etwas dazwischen gibt es nicht.
 
 Wir haben als Community nach Mitgliedschaftsformen gesucht, wo die Grenzen nicht so klar sind, damit fliessende Übergänge möglich werden - ein möglichst organisches Ökosystem. Manchmal ist uns das gelungen, oft aber auch nicht. Zwei Effianer kümmern sich aktuell darum, Lücken zu schliessen im Weg, wie man zur Community dazukommen kann (Onboarding).
 
