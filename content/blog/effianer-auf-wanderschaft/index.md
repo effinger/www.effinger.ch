@@ -27,7 +27,7 @@ Wir haben als Community nach Mitgliedschaftsformen gesucht, wo die Grenzen nicht
 
 Was Organisationen viel zu wenig planen, ist, wie Mitglieder wieder aus dem Kern herausfinden oder die Organisation verlassen können. Ich bin überzeugt, dass Organisationen, die den Ausgang klar definieren und Mitglieder auf gute Art weiterziehen lassen, mehr Leute anziehen, die dazukommen. Eine grosse Türe am Ausgang braucht Mut, macht aber den Eingang attraktiv.
 
-Das schönste wäre, wenn man weiterziehen könnte, ohne wirklich zu gehen. Wie schon oft, versuchen wir hier etwas Gegensätzliches zu kombinieren. So haben wir einen neuen Status eingeführt: **"Effianer auf Wanderschaft"**.
+Das Schönste wäre, wenn man weiterziehen könnte, ohne wirklich zu gehen. Wie schon oft, versuchen wir hier etwas Gegensätzliches zu kombinieren. So haben wir einen neuen Status eingeführt: **"Effianer auf Wanderschaft"**.
 
 
 ## Was sind "Effianer auf Wanderschaft"?
@@ -36,7 +36,7 @@ Das schönste wäre, wenn man weiterziehen könnte, ohne wirklich zu gehen. Wie 
 
 Spätestens nach einem Jahr berichten sie von ihren Erlebnissen und tragen so ihre Erfahrung zurück in den Effinger. Sie können jederzeit wieder in den Status als Effianer wechseln.
 
-Effianer auf Wanderschaft haben keine Verpflichtung, vor Ort zu sein. Sie sind aber frei, als Coworker hier zu arbeiten. Auch vom Zeitinvestment in die Community, ineinander und den Betrieb sind sie frei. Wenn es aber drauf ankommt, können sie im Effinger beigezogen werden (z.B. bei Schwierigkeiten oder Krisen). Und mit dem Status “Effianer auf Wanderschaft” drücken sie die Verbundenheit mit dem Effinger aus.
+Effianer auf Wanderschaft haben keine Verpflichtung, vor Ort zu sein. Sie sind aber frei, als Coworker im Effinger zu arbeiten. Auch vom Zeitinvestment in die Community, ineinander und den Betrieb sind sie frei. Wenn es aber drauf ankommt, können sie im Effinger beigezogen werden (z.B. bei Schwierigkeiten oder Krisen). Und mit dem Status “Effianer auf Wanderschaft” drücken sie die Verbundenheit mit dem Effinger aus.
 
 ---
 
@@ -66,7 +66,7 @@ Ganz im Gegenteil! Klar, es war sehr intensiv und sehr viel Arbeit. Ich versucht
 
 > Wenn Community entstehen soll, geht es nicht um "Geben & Nehmen" sondern um "Geben & Empfangen". 
 
-Ich durfte auf so vielen Ebenen enorm viel empfangen in dieser Zeit. Das Wertvollste für mich sind sicher die vielen Beziehungen, das, was wir zusammen lernen durften und die Glücksmomente, wenn Träume tatsächlich wahr werden. Obwohl das meiste in einen nicht-gewinnorientierten Verein geflossen ist, durfte ich auch finanziell profitieren: Das Effinger-Netzwerk und die gegenseitige Unterstützung hat mir ermöglicht, in der Selbständigkeit oder eben [Gemeinsamständigkeit](/blog/gemeinsamstaendigkeit/) Fuss zu fassen.
+Ich durfte auf so vielen Ebenen enorm viel empfangen in dieser Zeit. Das Wertvollste für mich sind sicher die vielen Beziehungen, das, was wir zusammen lernen durften und die Glücksmomente, wenn Träume tatsächlich wahr werden. Obwohl das Meiste in einen nicht-gewinnorientierten Verein geflossen ist, durfte ich auch finanziell profitieren: Das Effinger-Netzwerk und die gegenseitige Unterstützung hat mir ermöglicht, in der Selbständigkeit oder eben [Gemeinsamständigkeit](/blog/gemeinsamstaendigkeit/) Fuss zu fassen.
 
 
 ### Welche Vorbereitungen treffe ich?
