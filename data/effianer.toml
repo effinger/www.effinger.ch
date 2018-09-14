@@ -3,6 +3,17 @@ apiUrl = "https://script.google.com/a/effinger.ch/macros/s/AKfycbw3aGTPwR4t_UdMm
 calendarId = "effinger.ch_3736303136393637343739@resource.calendar.google.com"
 
 [[Person]]
+name = "Tom Bucher"
+gender = "m"
+image = "/images/effianer/tom-bucher.jpg"
+email = "tom@effinger.ch"
+phone = ""
+website = ""
+twitter = ""
+facebook = ""
+instagram = ""
+
+[[Person]]
 name = "Kim Eggimann"
 gender = "f"
 image = "/images/effianer/kim-eggimann.jpg"
