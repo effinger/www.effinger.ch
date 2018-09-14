@@ -3,12 +3,12 @@ apiUrl = "https://script.google.com/a/effinger.ch/macros/s/AKfycbw3aGTPwR4t_UdMm
 calendarId = "effinger.ch_3736303136393637343739@resource.calendar.google.com"
 
 [[Person]]
-name = "Tom Bucher"
+name = "Thomas Bucher"
 gender = "m"
 image = "/images/effianer/tom-bucher.jpg"
-email = "tom@effinger.ch"
+email = "thomas@effinger.ch"
 phone = ""
-website = ""
+website = "https://www.co-wing.ch"
 twitter = ""
 facebook = ""
 instagram = ""
