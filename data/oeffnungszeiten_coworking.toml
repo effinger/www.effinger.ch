@@ -4,8 +4,8 @@
 text = """
 <p>Mo-Fr <span>7-23</span></p>
 <p class="mb-0">Sa <span></span></p>
-<p class="small mt-0 mb-0">Jun &ndash; Sept <span>9-14</span></p>
-<p class="small mt-0">Okt &ndash; Mai <span>9-17</span></p>
+<p class="mt-0 mb-0"><small>Jun &ndash; Sept </small><span>9-14</span></p>
+<p class="mt-0"><small>Okt &ndash; Mai </small><span>9-17</span></p>
 <p>So <span>Ruhetag</span></p>
 """
 
