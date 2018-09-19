@@ -9,7 +9,7 @@ image = "latte-art.jpg"
 
 registration = true
 registration_max = 6
-registration_close = 2018-09-23T00:00:00Z
+registration_close = 2018-09-19T00:00:00Z
 +++
 
 
