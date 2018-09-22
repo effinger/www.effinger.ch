@@ -5,7 +5,7 @@ description = "Ich hatte die Hoffnung schon fast aufgegeben, dann meldete sich p
 image = "bier.jpg"
 author = "Marco Jakob"
 comments = true
-tags = [ "Coworking" ]
+tags = [ "Coworking", "Werkstatt" ]
 +++
 
 ![Bier](bier.jpg)

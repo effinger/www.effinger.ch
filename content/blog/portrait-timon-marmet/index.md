@@ -5,7 +5,7 @@ description = "Der Effinger wird geprägt durch die verschiedenen Menschen, die 
 image = "effinger_blog_timon-marmet-draussen.jpg"
 author = "Graziella Bärtsch"
 comments = true
-tags = [ "Portrait" ]
+tags = [ "Portrait", "Werkstatt" ]
 +++
 
 ![Bildbeschrieb](effinger_timon-marmet-schreinert.jpg)

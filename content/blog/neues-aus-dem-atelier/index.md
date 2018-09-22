@@ -5,7 +5,7 @@ description = "Das Effinger-Atelier bietet verschiedenen Künstlern und Kreative
 image = "Bild1.jpg"
 author = "Damaris Berger"
 comments = true
-tags = [ "Atelier", "Community", "Unterhaltung" ]
+tags = [ "Atelier", "Community", "Werkstatt" ]
 +++
 
 <div class="lead">
