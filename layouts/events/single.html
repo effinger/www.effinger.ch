@@ -46,18 +46,34 @@
   </section>
   <!-- End Header -->
 
+  {{ $isPast := (time .Params.enddate).Before now }}
+  {{ $archiveDate := now.AddDate 0 (int (mul -1 .Site.Params.archiveEventsAfterMonths)) 0 }}
+  {{ $isArchived := (time .Params.enddate).Before $archiveDate }}
 
   <!-- Section Event Single View -->
   <section class="page-section event">
     <div class="container relative eventsingle">
-      <h2 class="font-alt align-center mb-80">{{ .Title }}</h2>
-
-      {{ if (time .Params.enddate).Before now }}
-      <div class="alert alert-info text-center">
-        <i class="fa fa-ban"></i>
-        Event liegt in der Vergangenheit!
-      </div>
+      {{ if $isArchived }}
+        <h2 class="font-alt align-center">{{ .Title }}</h2>
+        <p class="align-center"><small><i class="fa fa-calendar-o"></i> {{ .Scratch.Get "start_weekday" }}, {{ .Scratch.Get "start_day" }}. {{ .Scratch.Get "start_month" }} {{ .Scratch.Get "start_year" }}</small></p>
+        <div class="alert alert-warning text-center">
+          <i class="fa fa-ban"></i>
+          Event liegt über {{ .Site.Params.archiveEventsAfterMonths }} Monte zurück und wurde archiviert!
+        </div>
+        <div class="text-center mt-40">
+          <a href="/events/" class="btn btn-mod btn-border btn-round btn-large">Aktuelle Events anzeigen</a>
+        </div>
+      {{ else if $isPast }}
+        <h2 class="font-alt align-center mb-80">{{ .Title }}</h2>
+        <div class="alert alert-info text-center">
+          <i class="fa fa-ban"></i>
+          Event liegt in der Vergangenheit!
+        </div>
+      {{ else }}
+        <h2 class="font-alt align-center mb-80">{{ .Title }}</h2>
       {{ end }}
+
+      {{ if (not $isArchived) }}
       <div class="row">
         <div class="col-md-3">
           <div class="row mb-md-30">
@@ -87,7 +103,7 @@
                   {{ delimit .Params.categories ", " }}
                   </small>
                 </p>
-                {{ if .Params.registration }}
+                {{ if and .Params.registration (not $isPast) }}
                 <p class="local-scroll">
                   <i class="fa fa-user-plus mt-10"></i>
                   <a href="#anmeldung" class="btn btn-mod btn-gray btn-medium btn-round">Anmeldung</a>
@@ -103,7 +119,9 @@
           </div>
         </div>
       </div>
-      {{ if .Params.registration }}
+      {{ end }}
+
+      {{ if and .Params.registration (not $isArchived) }}
       <!-- Event Registration -->
       {{ $lastUrlElement := index (last 2 (split .URL "/")) 0 }}
       <div class="row pt-60" id="anmeldung">
