@@ -111,4 +111,4 @@ Das Ambiente im Untergeschoss lädt ein um Projekte auszuhecken, Ideen zu präse
 
 ### Annulationen
 
-Bei Annullationen bis drei Arbeitstagen vor Beginn der Raummiete ermöglichen wir eine kostenlose Verschiebung innerhalb eines Monats. Kann dies nicht realisiert werden, werden 50% der vereinbarten Raummiete fällig.
+Wenn eine Buchung weniger als drei Arbeitstage vor Beginn der Buchung annulliert wird, verrechnen wir 50% der vereinbarten Raummiete.
