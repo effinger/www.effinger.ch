@@ -55,7 +55,7 @@ An dieser Stelle ein riesiges Dankeschön an Marion und Hanne! Wir geben zu, uns
 
 ![Rueckweg grau](6_Rueckweg_grau.jpg)
 <p class="image-caption">
-  Autofahrt in der Umgebung von Lyngen
+  Rückweg vom See Blåvatnet
 </p>
 
 ![Zackenberge](7_Zackenberge.jpg)
