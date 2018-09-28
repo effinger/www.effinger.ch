@@ -19,7 +19,7 @@ Marion und Hanne, zwei Effinger-Coworkerinnen, die nun in ihre Heimat im Norden 
 
 ![Kajak](9_Kajak.jpg)
 <p class="image-caption">
-  Kajak-Ausflug mit Mitternachtsson
+  Kajak-Ausflug mit Mitternachtssonne
 </p>
 
 Höhepunkte waren ein abendliches Sonnenuntergangs-Picknick auf dem Ulriken, dem "Gurten" der Stadt Bergen, wie Hanne erklärte, und später eine Mitternachtssonnen-Kajaktour nördlich des Polarkreises, die fast unwirklich schön war. Oder war jemand von Euch schon mal in einem vierstündigen „Sonnenuntergang“ auf dem Wasser unterwegs zwischen vielen kleinen Inseln, im glasklaren, türkisgrünen Wasser, umgeben von gezackten Bergspitzen? Ja, das dachten wir schon. Über die zahlreichen Mücken beim mitternächtlichen Dessert auf einer kleinen Insel kann man da schon hinwegsehen.
@@ -55,7 +55,7 @@ An dieser Stelle ein riesiges Dankeschön an Marion und Hanne! Wir geben zu, uns
 
 ![Rueckweg grau](6_Rueckweg_grau.jpg)
 <p class="image-caption">
-  Autofah rt in der Umgebung von Lyngen
+  Autofahrt in der Umgebung von Lyngen
 </p>
 
 ![Zackenberge](7_Zackenberge.jpg)
