@@ -115,7 +115,7 @@
       $("#stream-loader").show();
       $("#button-load-more").hide();
 
-      var url = "https://www.kurtli.com/api/resources/T031CHQFJ/share/C8YRABMR9/?maxResults=" + LOAD_BATCH;
+      var url = "https://www.kurtli.com/api/resources/T031CHQFJ/?maxResults=" + LOAD_BATCH;
 
       if (nextCursor) {
         url += "&nextCursor=" + new Date(nextCursor).toISOString();
