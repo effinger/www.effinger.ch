@@ -18,12 +18,13 @@
         <div class="home-text">
           <img src="images/Logo-Effinger-normal-weiss.svg" alt="Logo Effinger" class="mb-60 mb-xs-30 mt-50">
           <h1 class="font-alt mb-10">
-              Kaffeebar &amp; Coworking Space
+            Kaffeebar &amp; Coworking Space
           </h1>
 
           <div class="row">
             <div class="col-md-offset-2 col-md-8">
-Für Jungunternehmer, Kreative, Handwerkerinnen, Weltveränderer, Bernerinnen, Zugereiste, Kaffeeliebhaberinnen, Biertrinker, Kulturschaffende, junge Kunst und für dich.
+              Für Jungunternehmer, Kreative, Handwerkerinnen, Weltveränderer, Bernerinnen, Zugereiste,
+              Kaffeeliebhaberinnen, Biertrinker, Kulturschaffende, junge Kunst und für dich.
             </div>
           </div>
 
@@ -74,55 +75,11 @@ Für Jungunternehmer, Kreative, Handwerkerinnen, Weltveränderer, Bernerinnen, Z
   </section>
   -->
 
-  <!-- Stream Teaser -->
-  <section class="streamTeaser page-section bg-gray-lighter">
-    <div class="streamTeaser__imagecontainer">
-
-      <div class="streamTeaser__columns" style="display: none;">
-        <a class="image-item js-rellax" href="/stream/" data-rellax-speed="-1">
-          <img class="image-item__src" src="" alt="" >
-          <div class="streamEntry__authoring  streamEntry__authoring--left">
-            <span class="streamEntry__name"></span>
-            <span class="streamEntry__time"></span>
-          </div>
-        </a>
-      </div>
-
-      <div class="streamTeaser__columns" style="display: none;">
-        <a class="image-item js-rellax" href="/stream/" data-rellax-speed="4">
-          <img class="image-item__src" src="" alt="" >
-          <div class="streamEntry__authoring  streamEntry__authoring--left">
-            <span class="streamEntry__name"></span>
-            <span class="streamEntry__time"></span>
-          </div>
-        </a>
-      </div>
-
-      <div class="streamTeaser__columns" style="display: none;">
-        <a class="image-item js-rellax" href="/stream/" data-rellax-speed="-4">
-          <img class="image-item__src" src="" alt="" >
-          <div class="streamEntry__authoring  streamEntry__authoring--left">
-            <span class="streamEntry__name"></span>
-            <span class="streamEntry__time"></span>
-          </div>
-        </a>
-      </div>
-
-      <div class="streamTeaser__columns" style="display: none;">
-        <a class="image-item js-rellax" href="/stream/" data-rellax-speed="6">
-          <img class="image-item__src" src="" alt="" >
-          <div class="streamEntry__authoring  streamEntry__authoring--left">
-            <span class="streamEntry__name"></span>
-            <span class="streamEntry__time"></span>
-          </div>
-        </a>
-      </div>
-
-    </div>
-
-    <div class="container streamTeaser__textcontainer">
-      <h2 class="hs-line-11 font-alt mb-60 text-center"><a href="/stream/">Community Stream</a></h2>
-      <a href="/stream/" class="btn btn-mod btn-border btn-round btn-medium">Zum Stream</a>
+  <!-- Kurtli Feed -->
+  <section class="page-section pt-80 pb-80 bg-gray-lighter">
+    <div class="container">
+      <h2 class="hs-line-11 font-alt mb-60 text-center">Aus der Community</h2>
+      <div id="kurtlifeed" data-teamid="T031CHQFJ"></div>
     </div>
   </section>
 
@@ -134,14 +91,14 @@ Für Jungunternehmer, Kreative, Handwerkerinnen, Weltveränderer, Bernerinnen, Z
 
         <div class="eventlist row">
           <div class="col-sm-6">
-          {{ range $index, $element := first 6 (sort (where (where .Site.Pages "Section" "events") "Params.enddate" ">=" now) "Params.startdate" "asc") }}
+            {{ range $index, $element := first 6 (sort (where (where .Site.Pages "Section" "events") "Params.enddate" ">=" now) "Params.startdate" "asc") }}
             {{ if eq $index 3 }}
-            </div>
-            <div class="col-sm-6">
+          </div>
+          <div class="col-sm-6">
             {{ end }}
             {{ partial "events/calc_dates.html" $element }}
             {{ partial "events/event_summary.html" $element }}
-          {{ end }}
+            {{ end }}
           </div>
         </div>
 
@@ -156,25 +113,25 @@ Für Jungunternehmer, Kreative, Handwerkerinnen, Weltveränderer, Bernerinnen, Z
   <!-- Brownbag Section -->
   <section class="bg-dark-lighter pt-30 pb-30">
     <div class="relative container align-left">
-        <div class="row">
-            <div class="col-md-8">
-                <h4 class="font-alt mb-0">Zum Brownbag Programm</h4>
-            </div>
-
-            <div class="col-md-4">
-                <div class="font-alt align-right">
-                    <a href="/brownbag/" class="btn btn-mod btn-border-w btn-round btn-large">Brownbag</a>
-                </div>
-
-            </div>
+      <div class="row">
+        <div class="col-md-8">
+          <h4 class="font-alt mb-0">Zum Brownbag Programm</h4>
         </div>
+
+        <div class="col-md-4">
+          <div class="font-alt align-right">
+            <a href="/brownbag/" class="btn btn-mod btn-border-w btn-round btn-large">Brownbag</a>
+          </div>
+
+        </div>
+      </div>
 
     </div>
   </section>
   <!-- End Brownbag Section -->
 
-    <!-- Blog -->
-    <section class="page-section pt-80 pb-80 bg-gray-lighter">
+  <!-- Blog -->
+  <section class="page-section pt-80 pb-80 bg-gray-lighter">
     <div class="container relative">
       <div class="section-text">
         <h2 class="hs-line-11 font-alt mb-60 text-center"><a href="/blog/">Effinger Stories</a></h2>
@@ -224,7 +181,8 @@ Für Jungunternehmer, Kreative, Handwerkerinnen, Weltveränderer, Bernerinnen, Z
             <h3 class="font-alt mb-30 mb-md-10"><a href="/kaffeebar/">Kaffeebar</a></h3>
 
             <p>
-              Bei uns gibt es guten Kaffee für Tanten, Espresso für Eilige und Tee für Abwartende. Und auch Apéros für Prostende, Bier für Feierabende und Wein für alle.
+              Bei uns gibt es guten Kaffee für Tanten, Espresso für Eilige und Tee für Abwartende. Und auch Apéros für
+              Prostende, Bier für Feierabende und Wein für alle.
             </p>
 
             <div class="mt-40">
@@ -271,7 +229,8 @@ Für Jungunternehmer, Kreative, Handwerkerinnen, Weltveränderer, Bernerinnen, Z
             <h3 class="font-alt mb-30 mb-md-10"><a href="/coworking/">Coworking Space</a></h3>
 
             <p>
-              Der Coworking Space stellt Arbeitsplätze zur Verfügung, die flexibel auf Tagesbasis gemietet werden können.
+              Der Coworking Space stellt Arbeitsplätze zur Verfügung, die flexibel auf Tagesbasis gemietet werden
+              können.
             </p>
 
             <div class="mt-40">
@@ -317,7 +276,8 @@ Für Jungunternehmer, Kreative, Handwerkerinnen, Weltveränderer, Bernerinnen, Z
             <h3 class="font-alt mb-30 mb-md-10"><a href="/raeume/">Raumvermietung</a></h3>
 
             <p>
-              Wir vermieten innovative Sitzungszimmer und Workshopräume. Hier soll out-of-the-box gedacht werden - mit beschreibbaren, magnetischen Wänden und mit Design Thinking Materialien.
+              Wir vermieten innovative Sitzungszimmer und Workshopräume. Hier soll out-of-the-box gedacht werden - mit
+              beschreibbaren, magnetischen Wänden und mit Design Thinking Materialien.
             </p>
 
             <div class="mt-40">
@@ -361,7 +321,9 @@ Für Jungunternehmer, Kreative, Handwerkerinnen, Weltveränderer, Bernerinnen, Z
             <h3 class="font-alt mb-30 mb-md-10"><a href="/community/">Über uns</a></h3>
 
             <p>
-              Wir sind eine innovative, kreative Community mit einer gemeinsamen Kaffeebar und Coworking Space in Bern. Wir sind eine Heimat für Jungunternehmer, Kreative und andere Weltveränderer, die einander helfen, ihre Ideen in Firmen, Innovationen und soziale Aktionen umzusetzen.
+              Wir sind eine innovative, kreative Community mit einer gemeinsamen Kaffeebar und Coworking Space in Bern.
+              Wir sind eine Heimat für Jungunternehmer, Kreative und andere Weltveränderer, die einander helfen, ihre
+              Ideen in Firmen, Innovationen und soziale Aktionen umzusetzen.
             </p>
 
             <div class="mt-40">
@@ -393,7 +355,8 @@ Für Jungunternehmer, Kreative, Handwerkerinnen, Weltveränderer, Bernerinnen, Z
             <div class="item mt-20">
               <p>Telefon<span><a href="tel:+41313982020">031 398 20 20</a></span></p>
               <p>Email<span><a href="mailto:kaffeebar@effinger.ch">kaffeebar@effinger.ch</a></span></p>
-              <p>Adresse<span><a href="https://www.google.ch/maps/place/Effinger+-+Kaffeebar+%26+Coworking+Space/@46.94604,7.4336198,17z/data=!3m1!4b1!4m2!3m1!1s0x478e39bf613a53f7:0x30f7464656fbe3b2">Effingerstrasse 10, Bern</a></span></p>
+              <p>Adresse<span><a href="https://www.google.ch/maps/place/Effinger+-+Kaffeebar+%26+Coworking+Space/@46.94604,7.4336198,17z/data=!3m1!4b1!4m2!3m1!1s0x478e39bf613a53f7:0x30f7464656fbe3b2">Effingerstrasse
+                    10, Bern</a></span></p>
             </div>
             <div class="wave-spacer"></div>
             <div class="item mt-20">
@@ -412,7 +375,8 @@ Für Jungunternehmer, Kreative, Handwerkerinnen, Weltveränderer, Bernerinnen, Z
             <div class="item mt-20">
               <p>Telefon<span><a href="tel:+41313982021">031 398 20 21</a></span></p>
               <p>Email<span><a href="mailto:coworking@effinger.ch">coworking@effinger.ch</a></span></p>
-              <p>Adresse<span><a href="https://www.google.ch/maps/place/Effinger+-+Kaffeebar+%26+Coworking+Space/@46.94604,7.4336198,17z/data=!3m1!4b1!4m2!3m1!1s0x478e39bf613a53f7:0x30f7464656fbe3b2">Effingerstrasse 10, Bern</a></span></p>
+              <p>Adresse<span><a href="https://www.google.ch/maps/place/Effinger+-+Kaffeebar+%26+Coworking+Space/@46.94604,7.4336198,17z/data=!3m1!4b1!4m2!3m1!1s0x478e39bf613a53f7:0x30f7464656fbe3b2">Effingerstrasse
+                    10, Bern</a></span></p>
             </div>
           </div>
         </div>
@@ -425,39 +389,12 @@ Für Jungunternehmer, Kreative, Handwerkerinnen, Weltveränderer, Bernerinnen, Z
 {{ end }}
 
 {{ define "body_includes" }}
-
-<script type="text/javascript" src="/js/rellax.min.js"></script>
 <script>
-  $(document).ready(function() {
-    if ( $('.js-rellax').length ) {
-      var rellax = new Rellax('.js-rellax', {
-        // center: true
-      });
-    }
-
-    function loadPosts() {
-      $.get("https://www.kurtli.com/api/resources/T031CHQFJ/?maxResults=4", function( data ) {
-        $.each(data, function(i, item) {
-          var streamTeaserColumn = $('.streamTeaser__imagecontainer .streamTeaser__columns:nth-child(' + (i+1) + ')');
-
-          streamTeaserColumn.find('.image-item').attr('href', '/stream/');
-
-          var maxImageSize = 400;
-          var imageUrl = item.image.replace("upload/", "upload/w_" + maxImageSize + ",h_" + maxImageSize + ",c_limit/");
-          streamTeaserColumn.find('.image-item__src').attr('src', imageUrl);
-
-          streamTeaserColumn.find('.streamEntry__name').text('@' + item.authorName);
-
-          var itemDate = ' ' + item.date.substr(11, 5) + ' Uhr';
-          streamTeaserColumn.find('.streamEntry__time').text(itemDate);
-
-          streamTeaserColumn.fadeIn( 400 );
-        });
-      });
-    }
-
-    loadPosts();
-  });
+  (function () {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://www.kurtli.com/feed/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
 </script>
-
 {{ end }}
