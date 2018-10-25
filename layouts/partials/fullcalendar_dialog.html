@@ -105,16 +105,13 @@
           </div>
 
           <div class="row">
-            <!-- Price level
-            <div class="col-sm-8 mb-20 mb-md-10">
-              <label for="res-price-level">Tarifstufe*</label>
-              <select name="res-price-level" id="res-price-level" class="input-md form-control">
-                <option selected="selected">Regulär</option>
-                <option>Verein RaumBildung</option>
-                <option>Effianer intern</option>
+            <!-- Room Setup -->
+            <div class="col-sm-8 mb-20 mb-md-10" id="res-setup-container">
+              <label for="res-setup">Bestuhlung*</label>
+              <select name="res-setup" id="res-setup" class="input-md form-control">
+                  <option selected="selected"></option>
               </select>
             </div>
-            -->
 
             <!-- Number of people -->
             <div class="col-sm-4 mb-20 mb-md-10">
@@ -172,6 +169,38 @@
               <input type="text" name="res-contact-phone" id="res-contact-phone" class="input-md form-control" placeholder="" maxlength="100">
             </div>
           </div>
+
+          <hr>
+
+          <h4>Rechnungsadresse</h4>
+
+          <div class="mb-20 mb-md-10">
+            <div class="radio">
+              <label>
+                <input type="radio" name="res-billing-address-option" value="no" checked onclick="handleBillContactOptionChange(this);">
+                Kontaktadresse als Rechnungsadresse verwenden
+              </label>
+              <label>
+                <input type="radio" name="res-billing-address-option" value="yes" onclick="handleBillContactOptionChange(this);">
+                Abweichende Rechnungsadresse angeben
+              </label>
+            </div>
+            <div id="res-billing-address-container" style="display:none;">
+              <label for="res-billing-address">Rechnungsadresse</label>
+              <textarea name="res-billing-address" id="res-billing-address" class="input-md form-control" 
+                    rows="4" placeholder="" maxlength="400"></textarea>
+            </div>
+          </div>
+          <script>
+          function handleBillContactOptionChange(radio) {
+            if (radio.value == "no") {
+              $('#res-billing-address-container').hide();
+              $('#res-billing-address').val('');
+            } else {
+              $('#res-billing-address-container').show();
+            }
+          }
+          </script>
 
           <hr>
 

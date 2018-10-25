@@ -37,6 +37,12 @@ prices_excluding_vat = true
 
 calendar_id = "effinger.ch_34303231313530323931@resource.calendar.google.com"
 
+setup = [
+  "3 runde Tische mit je 6 Stühlen (Standard)",
+  "Konzertbestuhlung (+ CHF 30 Umbaukosten)",
+  "Seminarbestuhlung (+ CHF 30 Umbaukosten)"
+]
+
 [[extras]]
 text = "Beamer und Leinwand (8m2) mit HDMI-Anschluss"
 price = "CHF 50"
@@ -82,14 +88,6 @@ hidden = true
 [[extras]]
 text = "Weitere Verpflegung gewünscht"
 hidden = true
-
-[[extras]]
-text = "Töggeli-Kasten"
-price ="auf Anfrage"
-
-[[extras]]
-text = "Pingpong-Tisch"
-price = "auf Anfrage"
 
 +++
 Das Ambiente im Untergeschoss lädt ein um Projekte auszuhecken, Ideen zu präsentieren, Gruppenarbeiten durchzuführen und vieles mehr, was eben in einem Labor so möglich ist. Die grosszügige Fläche bietet viel Freiraum sich auszubreiten, Ideen auszulegen oder kreativ zu wirken. Auf der wandfüllenden Leinwand mit integrierten Soundanlage können Filme oder Präsentationen in Full HD Qualität wiedergegeben werden.

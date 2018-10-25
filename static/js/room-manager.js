@@ -1,4 +1,4 @@
-var loadCalendar = function(calendarApiPath, calendarId, roomTitle, roomExtras,
+var loadCalendar = function(calendarApiPath, calendarId, roomTitle, roomExtras, roomSetup,
     calendarElement, loadingElement, detailsElement, dialogElement) {
   var createDetailsContent = function(event) {
     var result = '';
@@ -160,11 +160,11 @@ var loadCalendar = function(calendarApiPath, calendarId, roomTitle, roomExtras,
         dialogElement.find('#res-end-time').val(end.format('HH:mm'));
       }
 
-      // Set the extras.
+      // Set the room extras.
       var extrasElement = dialogElement.find('#res-extras');
       extrasElement.empty();
       for (var i = 0; i < roomExtras.length; i++) {
-        if (i == 0) {
+        if (i === 0) {
           extrasElement.append('<label>Extras</label>');
         }
         var priceString = roomExtras[i].price ? ' - ' + roomExtras[i].price : '';
@@ -176,6 +176,21 @@ var loadCalendar = function(calendarApiPath, calendarId, roomTitle, roomExtras,
             </label>\
           </div>'
         );
+      }
+
+      // Set the room setup.
+      if (roomSetup) {
+        var setupElement = dialogElement.find('#res-setup');
+        setupElement.empty();
+        for (var i = 0; i < roomSetup.length; i++) {
+          if (i === 0) {
+            setupElement.append('<option selected="selected">' + roomSetup[i] + '</option>');
+          } else {
+            setupElement.append('<option>' + roomSetup[i] + '</option>');
+          }
+        }
+      } else {
+        dialogElement.find('#res-setup-container').hide();
       }
 
       reset();
@@ -254,13 +269,13 @@ var loadCalendar = function(calendarApiPath, calendarId, roomTitle, roomExtras,
     });
     eventData.extras = extras.join(', ');
 
-    // Price level.
-    //var resPriceLevel = dialogElement.find('#res-price-level').val();
-    //eventData.priceLevel = resPriceLevel;
+    // Room setup.
+    var resSetup = dialogElement.find('#res-setup').val();
+    eventData.setup = resSetup;
 
     // Visibility (default, private, public).
-    // For now, we always set the visibility to private.
-    eventData.visibility = 'private';
+    // For now, we always set the visibility to calendar default.
+    eventData.visibility = 'default';
 
     // Contact Name.
     var resPersons = dialogElement.find('#res-persons').val();
@@ -312,7 +327,7 @@ var loadCalendar = function(calendarApiPath, calendarId, roomTitle, roomExtras,
       error += '<li>E-Mail fehlt</li>';
     }
     eventData.contactEmail = resContactEmail;
-
+    
     // Phone.
     var resContactPhone = dialogElement.find('#res-contact-phone').val();
     if (!resContactPhone.trim()) {
@@ -320,6 +335,10 @@ var loadCalendar = function(calendarApiPath, calendarId, roomTitle, roomExtras,
       error += '<li>Telefon fehlt</li>';
     }
     eventData.contactPhone = resContactPhone;
+
+    // Billing Address (optional).
+    var resBillingAddress = dialogElement.find('#res-billing-address').val();
+    eventData.billingAddress = resBillingAddress;
 
     // Comments (optional).
     var resComments = dialogElement.find('#res-comments').val();

@@ -237,7 +237,7 @@
   {{ if .Params.calendar_id }}
   <script type="text/javascript">
   $(document).ready(function(){
-    loadCalendar({{ .Site.Data.room_manager.apiUrl }}, {{ .Params.calendar_id }}, {{ .Title }}, {{ .Params.extras }},
+    loadCalendar({{ .Site.Data.room_manager.apiUrl }}, {{ .Params.calendar_id }}, {{ .Title }}, {{ .Params.extras }}, {{ .Params.setup }},
       $('#calendar'), $('#calendar-loading'), $('#calendar-details'),
       $('#calendar-dialog'));
   });
