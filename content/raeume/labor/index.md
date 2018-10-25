@@ -38,11 +38,11 @@ prices_excluding_vat = true
 calendar_id = "effinger.ch_34303231313530323931@resource.calendar.google.com"
 
 [[extras]]
-text = "Beamer und Leinwand (8m2)"
+text = "Beamer und Leinwand (8m2) mit HDMI-Anschluss"
 price = "CHF 50"
 
 [[extras]]
-text = "Moving Walls (beschreibbar)"
+text = "Movingwall (Whiteboard)"
 price = "CHF 50"
 
 [[extras]]

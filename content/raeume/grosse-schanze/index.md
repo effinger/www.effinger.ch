@@ -28,7 +28,7 @@ prices_excluding_vat = false
 calendar_id = "effinger.ch_3737343630303933363438@resource.calendar.google.com"
 
 [[extras]]
-text = "Moving Walls (beschreibbar)"
+text = "Movingwall (Whiteboard)"
 price = "CHF 50"
 
 [[extras]]

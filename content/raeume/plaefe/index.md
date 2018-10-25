@@ -20,7 +20,7 @@ capacity = "8"
 equipment = [
   "Tische",
   "Sitzwürfel und Stühle",
-  "Screen",
+  "Screen mit HDMI-Anschluss",
   "rundum beschreibbare Wände",
   "High-Speed Internet"
 ]

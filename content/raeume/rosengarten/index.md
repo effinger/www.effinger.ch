@@ -32,7 +32,7 @@ prices_excluding_vat = true
 calendar_id = "effinger.ch_31313730333433383430@resource.calendar.google.com"
 
 [[extras]]
-text = "Screen"
+text = "Screen mit HDMI-Anschluss"
 price = "CHF 50"
 
 [[extras]]

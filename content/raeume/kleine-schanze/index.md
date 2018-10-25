@@ -30,11 +30,11 @@ prices_excluding_vat = true
 calendar_id = "effinger.ch_3737343630303933363438@resource.calendar.google.com"
 
 [[extras]]
-text = "Screen"
+text = "Screen mit HDMI-Anschluss"
 price = "CHF 50"
 
 [[extras]]
-text = "Moving Walls (beschreibbar)"
+text = "Movingwall (Whiteboard)"
 price = "CHF 50"
 
 [[extras]]

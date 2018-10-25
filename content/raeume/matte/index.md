@@ -34,11 +34,11 @@ prices_excluding_vat = true
 calendar_id = "effinger.ch_3838383235323139363736@resource.calendar.google.com"
 
 [[extras]]
-text = "Beamer"
+text = "Beamer mit HDMI-Anschluss"
 price = "CHF 50"
 
 [[extras]]
-text = "Moving Walls (beschreibbar)"
+text = "Movingwall (Whiteboard)"
 price = "CHF 50"
 
 [[extras]]

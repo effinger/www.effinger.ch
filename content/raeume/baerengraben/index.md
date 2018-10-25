@@ -32,7 +32,7 @@ prices_excluding_vat = true
 calendar_id = "effinger.ch_3931343830323437383537@resource.calendar.google.com"
 
 [[extras]]
-text = "Beamer"
+text = "Beamer mit HDMI-Anschluss"
 price = "CHF 50"
 
 [[extras]]
