@@ -3,6 +3,17 @@ apiUrl = "https://script.google.com/a/effinger.ch/macros/s/AKfycbw3aGTPwR4t_UdMm
 calendarId = "effinger.ch_3736303136393637343739@resource.calendar.google.com"
 
 [[Person]]
+name = "Benji Ammann"
+gender = "m"
+image = "/images/effianer/benji-ammann.jpg"
+email = "benji@effinger.ch"
+phone = ""
+website = ""
+twitter = ""
+facebook = ""
+instagram = ""
+
+[[Person]]
 name = "Thomas Bucher"
 gender = "m"
 image = "/images/effianer/tom-bucher.jpg"
