@@ -297,29 +297,6 @@ var loadCalendar = function(calendarApiPath, calendarId, roomTitle, roomExtras, 
     var resContactCompany = dialogElement.find('#res-contact-company').val();
     eventData.contactCompany = resContactCompany;
 
-    // Street.
-    var resContactStreet = dialogElement.find('#res-contact-street').val();
-    if (!resContactStreet.trim()) {
-      dialogElement.find('#res-contact-street').addClass('invalid');
-      error += '<li>Strasse fehlt</li>';
-    }
-    eventData.contactStreet = resContactStreet;
-
-    // Zip.
-    var resContactZip = dialogElement.find('#res-contact-zip').val();
-    if (!resContactZip.trim()) {
-      dialogElement.find('#res-contact-zip').addClass('invalid');
-      error += '<li>PLZ fehlt</li>';
-    }
-    eventData.contactZip = resContactZip;
-
-    var resContactCity = dialogElement.find('#res-contact-city').val();
-    if (!resContactCity.trim()) {
-      dialogElement.find('#res-contact-city').addClass('invalid');
-      error += '<li>Stadt fehlt</li>';
-    }
-    eventData.contactCity = resContactCity;
-
     // Email.
     var resContactEmail = dialogElement.find('#res-contact-email').val();
     if (!resContactEmail.trim() || !isEmail(resContactEmail)) {
@@ -335,9 +312,13 @@ var loadCalendar = function(calendarApiPath, calendarId, roomTitle, roomExtras, 
       error += '<li>Telefon fehlt</li>';
     }
     eventData.contactPhone = resContactPhone;
-
-    // Billing Address (optional).
+    
+    // Billing Address.
     var resBillingAddress = dialogElement.find('#res-billing-address').val();
+    if (!resBillingAddress.trim()) {
+      dialogElement.find('#res-billing-address').addClass('invalid');
+      error += '<li>Rechnungsadresse fehlt</li>';
+    }
     eventData.billingAddress = resBillingAddress;
 
     // Comments (optional).

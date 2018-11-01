@@ -56,32 +56,32 @@ text = "Moderationsmaterial"
 price = "CHF 50"
 
 [[extras]]
-text = "Seminarverpflegung UG Kaffee/Tee, Mineral"
+text = "Kaffee/Tee, Mineral (UG)"
 price = "halber Tag CHF 7 / ganzer Tag CHF 9 pro Person"
 hidden = true
 
 [[extras]]
-text = "Seminarverpflegung UG Kaffee/Tee, Mineral & Brötli/Gipfeli"
+text = "Kaffee/Tee, Mineral & Brötli/Gipfeli (UG)"
 price = "halber Tag CHF 13 / ganzer Tag CHF 15 pro Person"
 hidden = true
 
 [[extras]]
-text = "Seminarverpflegung UG Kaffee/Tee, Mineral, Obst,  Brötli/Gipfeli & Süsses"
+text = "Kaffee/Tee, Mineral, Obst,  Brötli/Gipfeli & Süsses (UG)"
 price = "ganzer Tag CHF 19 pro Person"
 hidden = true
 
 [[extras]]
-text = "Seminarverpflegung UG Kaffee/Tee, Mineral, Obst & Süsses"
+text = "Kaffee/Tee, Mineral, Obst & Süsses (UG)"
 price = "halber Tag CHF 13 pro Person"
 hidden = true
 
 [[extras]]
-text = "Seminarverpflegung UG Kaffee/Tee, Mineral & Obst"
+text = "Kaffee/Tee, Mineral & Obst (UG)"
 price = "halber Tag CHF 13 pro Person"
 hidden = true
 
 [[extras]]
-text = "Seminarverpflegung UG Kaffee/Tee, Mineral & Süsses"
+text = "Kaffee/Tee, Mineral & Süsses (UG)"
 price = "halber Tag CHF 13 pro Person"
 hidden = true
 

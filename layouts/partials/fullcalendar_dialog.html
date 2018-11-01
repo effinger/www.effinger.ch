@@ -12,7 +12,7 @@
 
           <!-- Anlassname -->
           <div class="mb-20 mb-md-10">
-            <label for="res-title">Name des Anlasses*</label>
+            <label for="res-title">Name des Anlasses* <span>(wird am Eingang angezeigt)</span></label>
             <input type="text" name="res-title" id="res-title" class="input-md form-control" placeholder="z.B. Kreativworkshop von Max, Startup-Event für Aareschwimmer" maxlength="100">
           </div>
 
@@ -123,7 +123,7 @@
 
           <hr>
 
-          <h4>Kontaktadresse</h4>
+          <h4>Kontaktperson</h4>
 
           <div class="row">
             <!-- Name -->
@@ -135,24 +135,6 @@
             <div class="col-sm-6 mb-20 mb-md-10">
               <label for="res-contact-company">Firma / Organisation</label>
               <input type="text" name="res-contact-company" id="res-contact-company" class="input-md form-control" placeholder="" maxlength="100">
-            </div>
-          </div>
-
-          <div class="row">
-            <!-- Strasse -->
-            <div class="col-sm-6 mb-20 mb-md-10">
-              <label for="res-contact-street">Strasse*</label>
-              <input type="text" name="res-contact-street" id="res-contact-street" class="input-md form-control" placeholder="" maxlength="100">
-            </div>
-            <!-- Zip code -->
-            <div class="col-sm-2 mb-20 mb-md-10">
-              <label for="res-contact-zip">PLZ*</label>
-              <input type="text" name="res-contact-zip" id="res-contact-zip" class="input-md form-control" placeholder="" maxlength="5">
-            </div>
-            <!-- Ort -->
-            <div class="col-sm-4 mb-20 mb-md-10">
-              <label for="res-contact-city">Ort*</label>
-              <input type="text" name="res-contact-city" id="res-contact-city" class="input-md form-control" placeholder="" maxlength="50">
             </div>
           </div>
 
@@ -170,42 +152,17 @@
             </div>
           </div>
 
-          <hr>
-
-          <h4>Rechnungsadresse</h4>
-
           <div class="mb-20 mb-md-10">
-            <div class="radio">
-              <label>
-                <input type="radio" name="res-billing-address-option" value="no" checked onclick="handleBillContactOptionChange(this);">
-                Kontaktadresse als Rechnungsadresse verwenden
-              </label>
-              <label>
-                <input type="radio" name="res-billing-address-option" value="yes" onclick="handleBillContactOptionChange(this);">
-                Abweichende Rechnungsadresse angeben
-              </label>
-            </div>
-            <div id="res-billing-address-container" style="display:none;">
-              <label for="res-billing-address">Rechnungsadresse</label>
-              <textarea name="res-billing-address" id="res-billing-address" class="input-md form-control" 
-                    rows="4" placeholder="" maxlength="400"></textarea>
-            </div>
+            <label for="res-billing-address">Vollständige Rechnungsadresse*</label>
+            <textarea name="res-billing-address" id="res-billing-address" class="input-md form-control" 
+                  rows="5" placeholder="" maxlength="400"></textarea>
           </div>
-          <script>
-          function handleBillContactOptionChange(radio) {
-            if (radio.value == "no") {
-              $('#res-billing-address-container').hide();
-              $('#res-billing-address').val('');
-            } else {
-              $('#res-billing-address-container').show();
-            }
-          }
-          </script>
 
           <hr>
 
+          <h4>Bemerkungen</h4>
+
           <div class="mb-20 mb-md-10">
-            <label for="res-comments">Bemerkungen</label>
             <textarea name="res-comments" id="res-comments" class="input-md form-control" rows="3" placeholder="" maxlength="400"></textarea>
           </div>
 

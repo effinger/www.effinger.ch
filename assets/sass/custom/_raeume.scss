@@ -61,6 +61,10 @@
   #calendar-dialog {
     label {
       font-weight: normal;
+
+      span {
+        font-weight: 300;
+      }
     }
 
     input, textarea, select {

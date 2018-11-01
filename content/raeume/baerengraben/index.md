@@ -44,32 +44,32 @@ text = "Küchenbenutzung"
 price = "CHF 100"
 
 [[extras]]
-text = "Seminarverpflegung 1. OG Kaffee/Tee, Mineral"
+text = "Kaffee/Tee, Mineral (1. OG)"
 price = "halber Tag CHF 7 / ganzer Tag CHF 9 pro Person"
 hidden = true
 
 [[extras]]
-text = "Seminarverpflegung 1. OG Kaffee/Tee, Mineral & Brötli/Gipfeli"
+text = "Kaffee/Tee, Mineral & Brötli/Gipfeli (1. OG)"
 price = "halber Tag CHF 13 / ganzer Tag CHF 15 pro Person"
 hidden = true
 
 [[extras]]
-text = "Seminarverpflegung 1. OG Kaffee/Tee, Mineral, Obst,  Brötli/Gipfeli & Süsses"
+text = "Kaffee/Tee, Mineral, Obst,  Brötli/Gipfeli & Süsses (1. OG)"
 price = "ganzer Tag CHF 19 pro Person"
 hidden = true
 
 [[extras]]
-text = "Seminarverpflegung 1. OG Kaffee/Tee, Mineral, Obst & Süsses"
+text = "Kaffee/Tee, Mineral, Obst & Süsses (1. OG)"
 price = "halber Tag CHF 13 pro Person"
 hidden = true
 
 [[extras]]
-text = "Seminarverpflegung 1. OG Kaffee/Tee, Mineral & Obst"
+text = "Kaffee/Tee, Mineral & Obst (1. OG)"
 price = "halber Tag CHF 13 pro Person"
 hidden = true
 
 [[extras]]
-text = "Seminarverpflegung 1. OG Kaffee/Tee, Mineral & Süsses"
+text = "Kaffee/Tee, Mineral & Süsses (1. OG)"
 price = "halber Tag CHF 13 pro Person"
 hidden = true
 

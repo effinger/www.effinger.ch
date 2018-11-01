@@ -41,32 +41,32 @@ text = "Moderationsmaterial"
 price = "CHF 50"
 
 [[extras]]
-text = "Seminarverpflegung Mineral & Obst"
+text = "Mineral & Obst"
 price = "halber Tag CHF 7 / ganzer Tag CHF 10 pro Person"
 hidden = true
 
 [[extras]]
-text = "Seminarverpflegung Mineral, Brötli/Gipfeli"
+text = "Mineral, Brötli/Gipfeli"
 price = "halber Tag CHF 8 / ganzer Tag CHF 10 pro Person"
 hidden = true
 
 [[extras]]
-text = "Seminarverpflegung Mineral, Obst & Brötli/Gipfeli"
+text = "Mineral, Obst & Brötli/Gipfeli"
 price = "halber Tag CHF 9 / ganzer Tag CHF 13 pro Person"
 hidden = true
 
 [[extras]]
-text = "Seminarverpflegung Mineral, Obst & Brötli/Gipfeli & Süsses"
+text = "Mineral, Obst & Brötli/Gipfeli & Süsses"
 price =  "ganzer Tag CHF 14 pro Person"
 hidden = true
 
 [[extras]]
-text = "Seminarverpflegung Mineral, Obst & Süsses"
+text = "Mineral, Obst & Süsses"
 price = "halber Tag CHF 9 pro Person"
 hidden = true
 
 [[extras]]
-text = "Seminarverpflegung Mineral & Süsses"
+text = "Mineral & Süsses"
 price = "halber Tag CHF 8 pro Person"
 hidden = true
 
