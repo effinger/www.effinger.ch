@@ -61,12 +61,8 @@ var loadCalendar = function(calendarApiPath, calendarId, roomTitle, roomExtras, 
           var events = [];
           $.each(data.results, function(index, value) {
             // Use "Besetzt" if title is empty.
-            var title;
-            if (value.title.trim()) {
-              title = value.title;
-            } else {
-              title = 'Besetzt';
-            }
+            var title = 'Besetzt';
+            // var title = value.title;
 
             // Add hours.
             // var hours = Math.round(moment.duration(moment(value.end).diff(moment(value.start))).asHours());
