@@ -59,28 +59,35 @@ var loadCalendar = function(calendarApiPath, calendarId, roomTitle, roomExtras, 
           //callback(data.results);
 
           var events = [];
-          $.each(data.results, function(index, value) {
-            // Use "Besetzt" if title is empty.
-            var title = 'Besetzt';
-            // var title = value.title;
 
-            // Add hours.
-            // var hours = Math.round(moment.duration(moment(value.end).diff(moment(value.start))).asHours());
-            // title = hours + ' Std. ' + title;
+          for (var calendarName in data.results) {
+          
+            var calendarEvents = data.results[calendarName];
+            for (var i = 0; i < calendarEvents.length; i++) {
+              var value = calendarEvents[i];
 
-            var classes = [];
-            if (value.provisional) {
-              classes.push('provisional');
-              title = '(Prov) ' + title;
+              // Use "Besetzt".
+              var title = "Besetzt";
+    
+              // Add hours.
+              // var hours = Math.round(moment.duration(moment(value.end).diff(moment(value.start))).asHours());
+              // title = hours + ' Std. ' + title;
+    
+              var classes = [];
+              if (value.provisional) {
+                classes.push("provisional");
+                title = "(Prov) " + title;
+              }
+              events.push({
+                id: value.id,
+                title: title,
+                start: value.start,
+                end: value.end,
+                className: classes
+              });
             }
-            events.push({
-              id: value.id,
-              title: title,
-              start: value.start,
-              end: value.end,
-              className: classes
-            });
-          });
+          }
+
           callback(events);
         },
         error: function (err) {
