@@ -1,0 +1,94 @@
+{{ define "main" }}
+<div class="container">
+  <h1 class="title">Raumbesetzer</h1>
+
+  <table class="table room-table">
+  </table>
+
+  <div class="lds-grid"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+</div>
+{{ end }}
+
+{{ define "body_includes" }}
+<script type="text/javascript" src="/js/jquery-1.12.0.min.js"></script>
+<script type="text/javascript" src="/js/moment-with-locales.min.js"></script>
+<script>
+  $(document).ready(function() {
+
+    moment.locale("de");
+
+    // Set title date of today.
+    $('.title').html("Raumbesetzer &mdash; " + moment().format('dd DD.MM.YYYY'));
+
+    var calendarApiPath = {{ .Site.Data.room_manager.apiUrl }};
+    var xhr = $.ajax({
+      url: calendarApiPath,
+      data: {
+        calendarId: {{ delimit .Params.calendarIds "," }},
+        start: "2018-11-23T00:00:00.000Z",
+        end: "2018-11-24T00:00:00.000Z"
+      },
+      dataType: "jsonp",
+      success: function(data) {
+        var events = [];
+
+        for (var calendarName in data.results) {
+
+          var calendarEvents = data.results[calendarName];
+
+          var roomFloor = "";
+          var roomName = "";
+           
+          var calendarNameElements = calendarName.split("-");
+          if (calendarNameElements.length === 3) {
+            roomFloor = calendarNameElements[1];
+            roomName = calendarNameElements[2];
+          }
+
+          for (var i = 0; i < calendarEvents.length; i++) {
+            var value = calendarEvents[i];
+            var title = value.title;
+
+            events.push({
+              roomFloor: roomFloor,
+              roomName: roomName,
+              title: title,
+              start: value.start,
+              end: value.end,
+            });
+          }
+        }
+
+        // Sort by start time.
+        events.sort((a,b) => (a.start > b.start) ? 1 : ((b.start > a.start) ? -1 : 0));
+
+        // moment(value.start).format('HH:mm')
+
+        // Display in table.
+        console.log(events);
+
+        var tableContent = "<tbody>";
+        for (var i = 0; i < events.length; i++) {
+          var event = events[i];
+          tableContent += "<tr>";
+          tableContent += "<td class='room-time'>" + moment(event.start).format('HH:mm') + " &ndash; ";
+          tableContent += moment(event.end).format('HH:mm') + "</td>";
+          tableContent += "<td class='room-title'>" + event.title + "</td>";
+          tableContent += "<td class='room-floor'>" + event.roomFloor + "</td>";
+          tableContent += "<td class='room-name'>" + event.roomName + "</td>";
+          tableContent += "</tr>";
+        }
+        tableContent += "</tbody>";
+        
+        $('.room-table').html(tableContent);
+
+        $('.lds-grid').hide();
+      },
+      error: function(err) {
+        console.log(this.url);
+        console.log("AJAX error in request: " + JSON.stringify(err, null, 2));
+      }
+    });
+  });
+</script>
+{{ end }}

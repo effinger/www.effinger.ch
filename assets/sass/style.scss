@@ -1,27 +1,4 @@
-// Fonts.
-@import "et-line";
-@import "font-awesome";
-@import "yeni-zaman";
-
-//
-// Variables.
-//
-
-// Colors...
-$primary-color: #fae300; // Effinger Gelb
-$color-blue: #43a5de;
-
-// Font defaults.
-$font-family-sans: YeniZaman, arial, sans-serif;
-$font-family-sans-alt: YeniZaman, arial, sans-serif;
-$font-family-serif: "Times New Roman", Times, serif;
-
-// Media Queries
-$small: 0px;
-$medium: 750px;
-$large: 1050px;
-$xlarge: 1700px;
-$xxlarge: 2000px;
+@import "variables";
 
 // Styles from the Rhythm template.
 @import "rhythm/style";

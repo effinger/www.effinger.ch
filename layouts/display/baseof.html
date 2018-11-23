@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" >
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <meta name="description" content="{{ .Description }}">
+
+    <title>{{ block "title" . }}{{ with .Title }}{{ . }} | {{ end }}{{ .Site.Title }}{{ end }}</title>
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+
+    <!-- Stylesheets -->
+    {{/* Process bootstrap.scss */}}
+    {{ $bootstrapOptions := (dict "targetPath" "css/bootstrap.css" "outputStyle" "compressed" "enableSourceMap" true) }}
+    {{ $bootstrapCss := resources.Get "sass/bootstrap.scss" | resources.ToCSS $bootstrapOptions }}
+    <link rel="stylesheet" href="{{ $bootstrapCss.Permalink }}">
+    
+    {{/* Process display.scss */}}
+    {{ $displayOptions := (dict "targetPath" "css/display.css" "outputStyle" "compressed" "enableSourceMap" true) }}
+    {{ $displayCss := resources.Get "sass/display.scss" | resources.ToCSS $displayOptions }}
+    <link rel="stylesheet" href="{{ $displayCss.Permalink }}">
+    
+    {{ block "head_includes" . }}{{ end }}
+  </head>
+  <body>
+
+    {{ block "main" . }}{{ end }}
+
+    {{ block "body_includes" . }}{{ end }}
+  </body>
+</html>
