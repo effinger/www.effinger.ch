@@ -20,13 +20,19 @@
     // Set title date of today.
     $('.title').html("Raumbesetzer &mdash; " + moment().format('dd DD.MM.YYYY'));
 
+    var startOfDay = new Date();
+    startOfDay.setHours(0,0,0,0);
+
+    var endOfDay = new Date();
+    endOfDay.setHours(23,59,59,999);
+
     var calendarApiPath = {{ .Site.Data.room_manager.apiUrl }};
     var xhr = $.ajax({
       url: calendarApiPath,
       data: {
         calendarId: {{ delimit .Params.calendarIds "," }},
-        start: "2018-11-23T00:00:00.000Z",
-        end: "2018-11-24T00:00:00.000Z"
+        start: startOfDay.toISOString(),
+        end: endOfDay.toISOString()
       },
       dataType: "jsonp",
       success: function(data) {
