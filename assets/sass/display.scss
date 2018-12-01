@@ -1,11 +1,11 @@
 @import "variables";
 
-body{
+body {
   color: #111;
   background-color: $primary-color;
   font-size: 16px;
   font-family: $font-family-sans;
-  font-feature-settings: 'tnum';
+  font-feature-settings: "tnum";
   font-weight: 300;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
@@ -19,10 +19,18 @@ body{
 
 .room-table {
   margin-top: 60px;
-  background-color: #fff;
-  font-size: 20px;
-
-  tr>td {
+  font-size: 26px;
+  
+  tr {
+    background-color: #fff;
+  }
+  
+  tr.event-ended {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #999;
+  }
+  
+  tr > td {
     border-top: 3px solid $primary-color !important;
   }
 
@@ -98,7 +106,8 @@ body{
   animation-delay: -1.6s;
 }
 @keyframes lds-grid {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 1;
   }
   50% {

@@ -1,11 +1,11 @@
 {{ define "main" }}
 <div class="container">
-  <h1 class="title">Raumbesetzer</h1>
-
+  <h1 class="title">Gäste heute</h1>
+  
   <table class="table room-table">
   </table>
-
-  <div class="lds-grid"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+  
+  <div class="lds-grid" style="display:none;"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
 </div>
 {{ end }}
 
@@ -17,84 +17,101 @@
 
     moment.locale("de");
 
-    // Set title date of today.
-    $('.title').html("Raumbesetzer &mdash; " + moment().format('dd DD.MM.YYYY'));
+    // Periodically update events.
+    setInterval(function() {
+      loadEvents();
+    }, 20000);
+    loadEvents();
 
-    var startOfDay = new Date();
-    startOfDay.setHours(0,0,0,0);
+    function loadEvents() {
+      // Show loading indicator.
+      $('.lds-grid').show();
 
-    var endOfDay = new Date();
-    endOfDay.setHours(23,59,59,999);
+      // Set title date of today.
+      $('.title').html("Gäste heute &mdash; " + moment().format('dd DD.MM.YYYY'));
 
-    var calendarApiPath = {{ .Site.Data.room_manager.apiUrl }};
-    var xhr = $.ajax({
-      url: calendarApiPath,
-      data: {
-        calendarId: {{ delimit .Params.calendarIds "," }},
-        start: startOfDay.toISOString(),
-        end: endOfDay.toISOString()
-      },
-      dataType: "jsonp",
-      success: function(data) {
-        var events = [];
+      var startOfDay = moment().startOf('day');
+      var endOfDay = moment().endOf('day');
 
-        for (var calendarName in data.results) {
+      var calendarApiPath = '{{ .Site.Data.room_manager.apiUrl }}';
+      var xhr = $.ajax({
+        url: calendarApiPath,
+        data: {
+          calendarId: '{{ delimit .Params.calendarIds "," }}',
+          start: startOfDay.toISOString(),
+          end: endOfDay.toISOString()
+        },
+        dataType: "jsonp",
+        success: function(data) {
+          var events = [];
 
-          var calendarEvents = data.results[calendarName];
+          for (var calendarName in data.results) {
 
-          var roomFloor = "";
-          var roomName = "";
-           
-          var calendarNameElements = calendarName.split("-");
-          if (calendarNameElements.length === 3) {
-            roomFloor = calendarNameElements[1];
-            roomName = calendarNameElements[2];
+            var calendarEvents = data.results[calendarName];
+
+            var roomFloor = "";
+            var roomName = "";
+            
+            var calendarNameElements = calendarName.split("-");
+            if (calendarNameElements.length === 3) {
+              roomFloor = calendarNameElements[1];
+              roomName = calendarNameElements[2];
+            }
+
+            for (var i = 0; i < calendarEvents.length; i++) {
+              var value = calendarEvents[i];
+              var title = value.title;
+
+              events.push({
+                roomFloor: roomFloor,
+                roomName: roomName,
+                title: title,
+                start: value.start,
+                end: value.end,
+              });
+            }
           }
 
-          for (var i = 0; i < calendarEvents.length; i++) {
-            var value = calendarEvents[i];
-            var title = value.title;
+          // Sort by start time.
+          events.sort((a,b) => (a.start > b.start) ? 1 : ((b.start > a.start) ? -1 : 0));
 
-            events.push({
-              roomFloor: roomFloor,
-              roomName: roomName,
-              title: title,
-              start: value.start,
-              end: value.end,
-            });
+          // Display in table.
+          var tableContent = "<tbody>";
+          for (var i = 0; i < events.length; i++) {
+            var event = events[i];
+            
+            var eventStart = moment(event.start);
+            var eventEnd = moment(event.end);
+
+            // if (eventEnd.isAfter()) {
+            if (i < 1) {
+              tableContent += "<tr class='event-ended'>";
+            } else {
+              tableContent += "<tr>";
+            }
+
+            tableContent += "<td class='room-time'>" + eventStart.format('HH:mm') + " &ndash; ";
+            tableContent += eventEnd.format('HH:mm') + "</td>";
+            tableContent += "<td class='room-title'>" + event.title + "</td>";
+            tableContent += "<td class='room-floor'>" + event.roomFloor + "</td>";
+            tableContent += "<td class='room-name'>" + event.roomName + "</td>";
+            tableContent += "</tr>";
           }
-        }
+          tableContent += "</tbody>";
+          
+          $('.room-table').html(tableContent);
 
-        // Sort by start time.
-        events.sort((a,b) => (a.start > b.start) ? 1 : ((b.start > a.start) ? -1 : 0));
+          // Hide loading indicator.
+          $('.lds-grid').hide();
+        },
+        error: function(err) {
+          console.log(this.url);
+          console.log("AJAX error in request: " + JSON.stringify(err, null, 2));
+        },
+        timeout: 12000 // Set timeout.
+      });
+    }
 
-        // moment(value.start).format('HH:mm')
-
-        // Display in table.
-        console.log(events);
-
-        var tableContent = "<tbody>";
-        for (var i = 0; i < events.length; i++) {
-          var event = events[i];
-          tableContent += "<tr>";
-          tableContent += "<td class='room-time'>" + moment(event.start).format('HH:mm') + " &ndash; ";
-          tableContent += moment(event.end).format('HH:mm') + "</td>";
-          tableContent += "<td class='room-title'>" + event.title + "</td>";
-          tableContent += "<td class='room-floor'>" + event.roomFloor + "</td>";
-          tableContent += "<td class='room-name'>" + event.roomName + "</td>";
-          tableContent += "</tr>";
-        }
-        tableContent += "</tbody>";
-        
-        $('.room-table').html(tableContent);
-
-        $('.lds-grid').hide();
-      },
-      error: function(err) {
-        console.log(this.url);
-        console.log("AJAX error in request: " + JSON.stringify(err, null, 2));
-      }
-    });
   });
 </script>
 {{ end }}
