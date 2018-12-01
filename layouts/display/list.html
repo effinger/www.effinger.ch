@@ -1,11 +1,11 @@
 {{ define "main" }}
 <div class="container">
+  <div class="lds-grid" style="display:none;"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+
   <h1 class="title">Gäste heute</h1>
   
-  <table class="table room-table">
-  </table>
-  
-  <div class="lds-grid" style="display:none;"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+  <div class="content">
+  </div>
 </div>
 {{ end }}
 
@@ -27,11 +27,11 @@
       // Show loading indicator.
       $('.lds-grid').show();
 
-      // Set title date of today.
-      $('.title').html("Gäste heute &mdash; " + moment().format('dd DD.MM.YYYY'));
-
       var startOfDay = moment().startOf('day');
       var endOfDay = moment().endOf('day');
+
+      // Set title date of today.
+      $('.title').html("Gäste heute &mdash; " + startOfDay.format('dd DD.MM.YYYY'));
 
       var calendarApiPath = '{{ .Site.Data.room_manager.apiUrl }}';
       var xhr = $.ajax({
@@ -75,31 +75,35 @@
           // Sort by start time.
           events.sort((a,b) => (a.start > b.start) ? 1 : ((b.start > a.start) ? -1 : 0));
 
-          // Display in table.
-          var tableContent = "<tbody>";
-          for (var i = 0; i < events.length; i++) {
-            var event = events[i];
-            
-            var eventStart = moment(event.start);
-            var eventEnd = moment(event.end);
+          // Display events in table if we have events.
+          if (events.length > 0) {
+            var tableContent = "<table class='table room-table'><tbody>";
+            for (var i = 0; i < events.length; i++) {
+              var event = events[i];
+              
+              var eventStart = moment(event.start);
+              var eventEnd = moment(event.end);
 
-            // if (eventEnd.isAfter()) {
-            if (i < 1) {
-              tableContent += "<tr class='event-ended'>";
-            } else {
-              tableContent += "<tr>";
+              if (eventEnd.isAfter()) {
+                tableContent += "<tr class='event-ended'>";
+              } else {
+                tableContent += "<tr>";
+              }
+
+              tableContent += "<td class='room-time'>" + eventStart.format('HH:mm') + " &ndash; ";
+              tableContent += eventEnd.format('HH:mm') + "</td>";
+              tableContent += "<td class='room-title'>" + event.title + "</td>";
+              tableContent += "<td class='room-floor'>" + event.roomFloor + "</td>";
+              tableContent += "<td class='room-name'>" + event.roomName + "</td>";
+              tableContent += "</tr>";
             }
-
-            tableContent += "<td class='room-time'>" + eventStart.format('HH:mm') + " &ndash; ";
-            tableContent += eventEnd.format('HH:mm') + "</td>";
-            tableContent += "<td class='room-title'>" + event.title + "</td>";
-            tableContent += "<td class='room-floor'>" + event.roomFloor + "</td>";
-            tableContent += "<td class='room-name'>" + event.roomName + "</td>";
-            tableContent += "</tr>";
+            tableContent += "</tbody></table>";
+            
+            $('.content').html(tableContent);
+          } else {
+            // Empty table.
+            $('.content').html('Gibt nichts anzuzeigen heute...');
           }
-          tableContent += "</tbody>";
-          
-          $('.room-table').html(tableContent);
 
           // Hide loading indicator.
           $('.lds-grid').hide();

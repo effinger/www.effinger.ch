@@ -17,10 +17,12 @@ body {
   text-transform: uppercase;
 }
 
-.room-table {
+.content {
   margin-top: 60px;
   font-size: 26px;
-  
+}
+
+.room-table {
   tr {
     background-color: #fff;
   }
@@ -47,8 +49,9 @@ body {
 
 // Loader
 .lds-grid {
-  display: inline-block;
+  float: right;
   position: relative;
+  margin-top: 30px;
   width: 64px;
   height: 64px;
 }
