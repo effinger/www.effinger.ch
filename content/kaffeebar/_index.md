@@ -481,10 +481,6 @@ offers_title = "Menu"
     column = "left"
 
     [[offers.section.element]]
-      text="Pillows - Whitefrontier"
-      price="7.00"
-
-    [[offers.section.element]]
       text="Cascade Anber Ale - Kitchen Brew"
       price="7.00"
 
@@ -504,6 +500,13 @@ offers_title = "Menu"
 
       [[offers.section.element.subelement]]
         text="India Pale Ale, kräftige Bitternote, malziger Körper, vollmundig"
+
+    [[offers.section.element]]
+      text="Pillows - Whitefrontier"
+      price="7.00"
+      
+      [[offers.section.element.subelement]]
+        text="Session Wheat (Weizen), leicht, fruchtig-blumige Hopfen"
 
     [[offers.section.element]]
       text="Störtebeker"
