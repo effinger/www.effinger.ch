@@ -26,6 +26,21 @@ offers_title = "Menu"
 
       [[offers.section.element.subelement]]
         text = "nach Tagesangebot"
+    
+  [[offers.section]]
+   title = "Suppe"
+   column = "left"
+
+   [[offers.section.element]]
+     text = "Suppe nach Tagesangebot"
+     price = "9.00"
+
+     [[offers.section.element.subelement]]
+       text = "«es het solang's het»"
+
+     [[offers.section.element.subelement]]
+       text = "mit Salat"
+       price = "+3.00"
 
   [[offers.section]]
     title = "Grünzeug"
@@ -246,6 +261,13 @@ offers_title = "Menu"
     [[offers.section.element]]
       text = "Ovomaltine"
       price = "4.50"
+    
+    [[offers.section.element]]
+      text = "Nach Chai Latte 'Heisser Ingwer'"
+      price = "5.50"
+
+      [[offers.section.element.subelement]]
+        text = "Ingwer, Zitroner, Honig"
 
     [[offers.section.element]]
       text = ""
@@ -494,13 +516,6 @@ offers_title = "Menu"
         text="Schwarzbier, Pfeffer, Kaffee, bittersüss"
 
     [[offers.section.element]]
-      text="Chopfab Summer"
-      price="6.50"
-
-      [[offers.section.element.subelement]]
-        text="Special White Ale, Weisswein Bouquet, erfrischend"
-
-    [[offers.section.element]]
       text="Appenzeller Leermond"
       price="5.50"
 
@@ -514,12 +529,14 @@ offers_title = "Menu"
       [[offers.section.element.subelement]]
         text="Bio Apfelwein nach englischer Art"
 
+
     [[offers.section.element]]
       text="Spezial-Bier"
       price=""
 
       [[offers.section.element.subelement]]
         text="Erkundige dich nach dem aktuellen Angebot"
+
 
   [[offers.section]]
     title = "Offen"
@@ -684,6 +701,21 @@ offers_title = "Menu"
     [[offers.section.element]]
       text="Vermouth Rosso Formula Matter"
       price="8.00"
+    
+    
+    [[offers.section.element]]
+      text="Nach Rosso Spritz 'Rose Gin'"
+      price="14.00"
+
+      [[offers.section.element.subelement]]
+        text="Gin, Rose Limonade, Zitrone, Rosmarin"
+    
+    [[offers.section.element]]
+      text="Nach 'Amaro Meletti' 'Wisser Glühwein'"
+      price="7.50"
+
+      [[offers.section.element.subelement]]
+        text="Weisswein, Apfelsaft, Quittensirup, Zitrone"
 
 
     [[offers.section.element]]
