@@ -8,11 +8,12 @@ location = "Effinger im 1 OG - im Rosengarten"
 image = "Bild_WeinMaler.jpg"
 
 registration = true
+registration_close = 2018-12-10T00:00:00Z
 +++
 
 <div class="lead">
-Malen und Wein - Eine kreative Auseinandersetzung mit dem Genuss.
-Im Rahmen des 'offenen Kunstatelier' ist die Idee entstanden, diese beiden Bereiche miteinander zu verbinden.
+Malen und Wein - Eine kreative Auseinandersetzung mit dem Genuss.<br><br>
+Im Rahmen des 'offenen Kunstatelier' ist die Idee entstanden, diese beiden Bereiche miteinander zu verbinden.<br>
 Bist du neugierig und willst deine Sinne aktivieren? Komm vorbein und lass dich inspirieren.
 </div>
 
@@ -33,8 +34,9 @@ Spannende Fragen:
 Du als Community-Member, FreundIn und Genuss-Interessierte(r) bist herzlich Willkommen.
 
 ### Anmeldung und Preis
-Bitte mit untenstehenden Angaben anmelden. Der Preis für Gäste beträgt CHF 10.00, bitte ein gelbes Zehnernötli
-mitbringen.
+**Kosten für Gäste:** CHF 10.- (Betrag bitte ein gelbes Zehnernötli mitbringen)   
+**Anmeldung:** Mit untenstehendem Formular   
+**Fragen:** An [markus@effinger.ch](mailto:markus@effinger.ch)  
 
 
 
