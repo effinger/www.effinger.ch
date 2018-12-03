@@ -16,28 +16,14 @@ text = """
 # 
 # Falls mehrere Spezial-Zeiten zutreffen, kommt der unterste zur Anwendung.
 
-# Pfinsten 2018
+# Winter 2018
 [[spezial]]
-display_start = 2018-04-25T00:00:00Z
-display_end = 2018-05-21T23:59:59Z
+display_start = 2018-12-02T00:00:00Z
+display_end = 2019-01-06T23:59:59Z
 text = """
-<p class="text-center"><em>ACHTUNG: Auffahrt (10. Mai) und Pfingstmontag (21. Mai) geschlossen! Sonst normal geöffnet.</em></p>
+<p class="text-center"><em>Betriebsferien vom 22. Dezember bis 6. Januar.</em></p>
 <div class="wave-spacer"></div>
 <p>Mo-Fr <span>7-23</span></p>
 <p>Sa <span>9-17</span></p>
 <p>So <span>Ruhetag</span></p>
-"""
-
-# Sommerferien 2018
-[[spezial]]
-display_start = 2018-07-05T00:00:00Z
-display_end = 2018-08-11T23:59:59Z
-text = """
-<p class="text-center"><em>SOMMERÖFFNUNGSZEITEN<br>vom 9. Juli - 11. August</em></p>
-<div class="wave-spacer"></div>
-<p>Mo, Di & Fr <span>7-<strong>19(!)</strong></span></p>
-<p>Mi & Do <span>7-23</span></p>
-<p>Sa <span>9-<strong>14(!)</strong></span></p>
-<p>So <span>Ruhetag</span></p>
-<p>1. August <span>geschlossen</span></p>
 """
