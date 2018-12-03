@@ -346,7 +346,7 @@ offers_title = "Menu"
       price = "5.50"
 
       [[offers.section.element.subelement]]
-        text = "Ingwer, Zitroner, Honig"
+        text = "(Ingwer, Zitroner, Honig)"
 
 
 [[offers]]
@@ -734,12 +734,12 @@ offers_title = "Menu"
         text="Amaro Meletti"
         price="8.00"
       
-      [[offers.section.element.subelement]]
-        text="Wisser Glühwein"
-        price="7.50"
+    [[offers.section.element]]
+      text="Weisser Glühwein"
+      price="7.50"
 
-        [[offers.section.element.subelement.subelement]]
-          text="Weisswein, Apfelsaft, Quittensirup, Zitrone"
+      [[offers.section.element.subelement]]
+        text="Weisswein, Apfelsaft, Quittensirup, Zitrone"
 
   [[offers.section]]
     title = "Hoch&shy;pro&shy;zen&shy;ti&shy;ges"
