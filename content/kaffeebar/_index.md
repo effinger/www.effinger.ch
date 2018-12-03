@@ -261,13 +261,6 @@ offers_title = "Menu"
     [[offers.section.element]]
       text = "Ovomaltine"
       price = "4.50"
-    
-    [[offers.section.element]]
-      text = "Nach Chai Latte 'Heisser Ingwer'"
-      price = "5.50"
-
-      [[offers.section.element.subelement]]
-        text = "Ingwer, Zitroner, Honig"
 
     [[offers.section.element]]
       text = ""
@@ -347,6 +340,13 @@ offers_title = "Menu"
     [[offers.section.element]]
       text = "Chai Latte"
       price = "5.20"
+    
+    [[offers.section.element]]
+      text = "Heisser Ingwer"
+      price = "5.50"
+
+      [[offers.section.element.subelement]]
+        text = "Ingwer, Zitroner, Honig"
 
 
 [[offers]]
@@ -479,6 +479,10 @@ offers_title = "Menu"
     title = "Flaschen"
     icon = "<img src='icons/bottle.svg'>"
     column = "left"
+
+    [[offers.section.element]]
+      text="Pillows - Whitefrontier"
+      price="7.00"
 
     [[offers.section.element]]
       text="Cascade Anber Ale - Kitchen Brew"
@@ -678,6 +682,13 @@ offers_title = "Menu"
 
       [[offers.section.element.subelement]]
         text="roter Wermuth, Prosecco, Mineral, Orange"
+    
+    [[offers.section.element]]
+      text="Rose Gin"
+      price="14.00"
+
+      [[offers.section.element.subelement]]
+        text="Gin, Rose Limonade, Zitrone, Rosmarin"
 
     [[offers.section.element]]
       text="Pimm’s No 1 Cup"
@@ -702,20 +713,6 @@ offers_title = "Menu"
       text="Vermouth Rosso Formula Matter"
       price="8.00"
     
-    
-    [[offers.section.element]]
-      text="Nach Rosso Spritz 'Rose Gin'"
-      price="14.00"
-
-      [[offers.section.element.subelement]]
-        text="Gin, Rose Limonade, Zitrone, Rosmarin"
-    
-    [[offers.section.element]]
-      text="Nach 'Amaro Meletti' 'Wisser Glühwein'"
-      price="7.50"
-
-      [[offers.section.element.subelement]]
-        text="Weisswein, Apfelsaft, Quittensirup, Zitrone"
 
 
     [[offers.section.element]]
@@ -736,6 +733,13 @@ offers_title = "Menu"
       [[offers.section.element.subelement]]
         text="Amaro Meletti"
         price="8.00"
+      
+      [[offers.section.element.subelement]]
+        text="Wisser Glühwein"
+        price="7.50"
+
+        [[offers.section.element.subelement.subelement]]
+          text="Weisswein, Apfelsaft, Quittensirup, Zitrone"
 
   [[offers.section]]
     title = "Hoch&shy;pro&shy;zen&shy;ti&shy;ges"
