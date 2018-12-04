@@ -14,7 +14,7 @@ registration_close = 2018-12-10T00:00:00Z
 <div class="lead">
 Malen und Wein - Eine kreative Auseinandersetzung mit dem Genuss.<br><br>
 Im Rahmen des 'offenen Kunstatelier' ist die Idee entstanden, diese beiden Bereiche miteinander zu verbinden.<br>
-Bist du neugierig und willst deine Sinne aktivieren? Komm vorbein und lass dich inspirieren.
+Bist du neugierig und willst deine Sinne aktivieren? Komm vorbei und lass dich inspirieren.
 </div>
 
 ![Wein Maler](Bild_WeinMaler.jpg)
@@ -31,7 +31,7 @@ Spannende Fragen:
 * Wie wirkt das Ganze im Auge des Betrachters?
 * Was bedeutet Aus-Blick, Aus-Schank und Aus-Tausch?
 
-Du als Community-Member, FreundIn und Genuss-Interessierte(r) bist herzlich Willkommen.
+Du als Community-Member, FreundIn und Genuss-Interessierte/r bist herzlich Willkommen.
 
 ### Anmeldung und Preis
 **Kosten für Gäste:** CHF 10.- (Betrag bitte ein gelbes Zehnernötli mitbringen)   
