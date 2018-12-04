@@ -1,8 +1,8 @@
 +++
 title = "Effinger Community-Treffen Dezember (CIRCLES)"
 
-startdate = 2019-14-02T19:00:00Z
-enddate = 2019-14-02T21:00:00Z
+startdate = 2019-02-14T19:00:00Z
+enddate = 2019-02-14T21:00:00Z
 categories = [ "Community" ]
 location = "Effinger im 1. OG"
 image = "community-treffen.jpg"
