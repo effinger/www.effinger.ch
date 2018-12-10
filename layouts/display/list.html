@@ -1,10 +1,17 @@
 {{ define "main" }}
-<div class="container">
-  <div class="lds-grid" style="display:none;"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
 
-  <h1 class="title">Gäste heute</h1>
-  
-  <div class="content">
+<div class="container-outer">
+
+  <div class="container">
+    <div class="logo-container">
+      <div class="logo"></div>   
+      <div class="loader"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+    </div>
+    
+    <h1 class="title">Raumbesetzer</h1>
+    
+    <div class="content">
+    </div>
   </div>
 </div>
 {{ end }}
@@ -14,9 +21,43 @@
 <script type="text/javascript" src="/js/moment-with-locales.min.js"></script>
 <script>
   $(document).ready(function() {
-
     moment.locale("de");
+    var urlVars = getUrlVars();
 
+    // Color theme
+    var theme = urlVars['theme'];
+    if (theme) {
+      if (theme === "black") {
+        $('body').addClass('theme-black');
+      }
+    }
+
+    // Orientation
+    var orientation = urlVars['orientation'];
+    if (orientation) {
+      if (orientation === "vertical") {
+        $('body').addClass('orientation-vertical');
+      }
+    }
+
+    // Vertical alignment.
+    var align = urlVars['align'];
+    if (align) {
+      $('.container').css('height', 'auto');
+      if (align === "bottom") {
+        $('.container').css('bottom', '0');
+      }
+    }
+
+    // Keystone correction.
+    var keystone = urlVars['keystone'];
+    if (keystone) {
+      $('.container-outer').css('left', Math.abs(keystone) + 'px');
+      $('.container-outer').css('right', Math.abs(keystone) + 'px');
+      $('.container-outer').css('transform', 'perspective(5000px) rotateX(' + keystone + 'deg)');
+      $('.container-outer').css('height', (100-keystone/10) + '%');
+    }
+    
     // Periodically update events.
     setInterval(function() {
       loadEvents();
@@ -25,13 +66,13 @@
 
     function loadEvents() {
       // Show loading indicator.
-      $('.lds-grid').show();
+      $('.logo-container').addClass('loading');
 
       var startOfDay = moment().startOf('day');
       var endOfDay = moment().endOf('day');
 
       // Set title date of today.
-      $('.title').html("Gäste heute &mdash; " + startOfDay.format('dd DD.MM.YYYY'));
+      $('.title').html("Raumbesetzer &mdash; " + startOfDay.format('dd DD.MM.YYYY'));
 
       var calendarApiPath = '{{ .Site.Data.room_manager.apiUrl }}';
       var xhr = $.ajax({
@@ -100,11 +141,20 @@
                 tableContent += "<tr>";
               }
 
-              tableContent += "<td class='room-time'>" + eventStart.format('HH:mm') + " &ndash; ";
-              tableContent += eventEnd.format('HH:mm') + "</td>";
-              tableContent += "<td class='room-title'>" + event.title + "</td>";
-              tableContent += "<td class='room-floor'>" + event.roomFloor + "</td>";
-              tableContent += "<td class='room-name'>" + event.roomName + "</td>";
+              if (orientation === "vertical") {
+                tableContent += "<td>";
+                tableContent += "<div class='room-title'>" + event.title + "</div>"; 
+                tableContent += "<span class='room-name'>" + event.roomName + "</span>";
+                tableContent += "&nbsp;";
+                tableContent += "<span class='room-floor'>" + event.roomFloor + "</span>";
+                tableContent += "</td>";
+                tableContent += "<td class='room-time'>" + eventStart.format('HH:mm') + " &ndash; " + eventEnd.format('HH:mm') + "</td>";
+              } else {
+                tableContent += "<td class='room-time'>" + eventStart.format('HH:mm') + " &ndash; " + eventEnd.format('HH:mm') + "</td>";
+                tableContent += "<td class='room-title'>" + event.title + "</td>";
+                tableContent += "<td class='room-floor'>" + event.roomFloor + "</td>";
+                tableContent += "<td class='room-name'>" + event.roomName + "</td>";
+              }
               tableContent += "</tr>";
             }
             tableContent += "</tbody></table>";
@@ -116,7 +166,7 @@
           }
 
           // Hide loading indicator.
-          $('.lds-grid').hide();
+          $('.logo-container').removeClass('loading');
         },
         error: function(err) {
           console.log(this.url);
@@ -124,6 +174,18 @@
         },
         timeout: 12000 // Set timeout.
       });
+    }
+
+    // Read a page's GET URL variables and return them as an associative array.
+    function getUrlVars() {
+      var vars = [], hash;
+      var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+      for(var i = 0; i < hashes.length; i++) {
+        hash = hashes[i].split('=');
+        vars.push(hash[0]);
+        vars[hash[0]] = hash[1];
+      }
+      return vars;
     }
 
   });

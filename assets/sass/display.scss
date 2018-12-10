@@ -1,43 +1,102 @@
 @import "variables";
 
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
 body {
-  color: #111;
-  background-color: $primary-color;
+  margin: 0;
   font-size: 16px;
   font-family: $font-family-sans;
   font-feature-settings: "tnum";
   font-weight: 300;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
+  overflow: hidden;
+  color: #111;
+  background-color: #000;
+}
+
+.container-outer {
+  position: absolute;
+  right: 0;
+  left: 0;
+  height: 100%;
+}
+
+.container {
+  background-color: #fae300;
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  position: absolute;
+  overflow: hidden;
+
+  .theme-black & {
+    color: #fff;
+    background-color: #000;
+  }
 }
 
 .title {
-  margin-top: 40px;
+  margin-top: 0px;
+  padding-top: 25px;
+  margin-bottom: 10px;
+  font-size: 36px;
   font-weight: 400;
   text-transform: uppercase;
 }
 
 .content {
-  margin-top: 60px;
+  margin-top: 40px;
   font-size: 26px;
 }
 
 .room-table {
+  width: 100%;
+  max-width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+
   tr {
     background-color: #fff;
+
+    .theme-black & {
+      background-color: inherit;
+    }
   }
   
   tr.event-ended {
-    background-color: rgba(255, 255, 255, 0.5);
-    color: #999;
+    opacity: 0.5;
   }
   
   tr > td {
-    border-top: 3px solid $primary-color !important;
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
+
+    border-width: 3px;
+    border-top-style: solid;
+    border-color: #fae300; 
+    
+    .theme-black & {
+      border-width: 1px;
+      border-bottom-style: solid; 
+    }
   }
 
   .room-time {
     white-space: nowrap;
+
+    .orientation-vertical & {
+      text-align: right;
+      vertical-align: bottom;
+    }
   }
   .room-title {
     font-weight: 400;
@@ -47,68 +106,98 @@ body {
   }
 }
 
-// Loader
-.lds-grid {
+.logo-container {
   float: right;
   position: relative;
-  margin-top: 30px;
+
+  .logo {
+    width: 150px;
+    height: 110px;
+
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url('/images/logo-effinger-weiss-schwarz.svg');
+    
+    .theme-black & {
+      background-image: url('/images/logo-effinger-gelb-weiss.svg');
+    }
+  }
+
+  &.loading {
+    .logo {
+      opacity: 0.8;
+    }
+
+    .loader {
+      display: block;
+      opacity: 0.8;
+    }
+  }
+}
+
+// Loader
+.loader {
+  position: absolute;
+  display: none;
+  right: 40px;
+  top: 18px;
   width: 64px;
   height: 64px;
 }
-.lds-grid div {
+.loader div {
   position: absolute;
   width: 13px;
   height: 13px;
   border-radius: 50%;
   background: #fff;
-  animation: lds-grid 1.2s linear infinite;
+  animation: loader 1.2s linear infinite;
 }
-.lds-grid div:nth-child(1) {
+.loader div:nth-child(1) {
   top: 6px;
   left: 6px;
   animation-delay: 0s;
 }
-.lds-grid div:nth-child(2) {
+.loader div:nth-child(2) {
   top: 6px;
   left: 26px;
   animation-delay: -0.4s;
 }
-.lds-grid div:nth-child(3) {
+.loader div:nth-child(3) {
   top: 6px;
   left: 45px;
   animation-delay: -0.8s;
 }
-.lds-grid div:nth-child(4) {
+.loader div:nth-child(4) {
   top: 26px;
   left: 6px;
   animation-delay: -0.4s;
 }
-.lds-grid div:nth-child(5) {
+.loader div:nth-child(5) {
   top: 26px;
   left: 26px;
   animation-delay: -0.8s;
 }
-.lds-grid div:nth-child(6) {
+.loader div:nth-child(6) {
   top: 26px;
   left: 45px;
   animation-delay: -1.2s;
 }
-.lds-grid div:nth-child(7) {
+.loader div:nth-child(7) {
   top: 45px;
   left: 6px;
   animation-delay: -0.8s;
 }
-.lds-grid div:nth-child(8) {
+.loader div:nth-child(8) {
   top: 45px;
   left: 26px;
   animation-delay: -1.2s;
 }
-.lds-grid div:nth-child(9) {
+.loader div:nth-child(9) {
   top: 45px;
   left: 45px;
   animation-delay: -1.6s;
 }
-@keyframes lds-grid {
+@keyframes loader {
   0%,
   100% {
     opacity: 1;
