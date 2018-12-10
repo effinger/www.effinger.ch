@@ -1,5 +1,5 @@
 +++
-title = "Effinger Community-Treffen Dezember (CIRCLES)"
+title = "Effinger Community-Treffen Februar (CIRCLES)"
 
 startdate = 2019-02-14T19:00:00Z
 enddate = 2019-02-14T21:00:00Z
