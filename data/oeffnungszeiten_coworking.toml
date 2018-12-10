@@ -21,7 +21,7 @@ text = """
 display_start = 2018-12-02T00:00:00Z
 display_end = 2019-01-06T23:59:59Z
 text = """
-<p class="text-center"><em>Betriebsferien vom 22. Dezember bis 6. Januar.</em></p>
+<p class="text-center"><em>Betriebsferien vom 22. Dezember 2018 bis 6. Januar 2019.</em></p>
 <div class="wave-spacer"></div>
 <p>Mo-Fr <span>7-23</span></p>
 <p>Sa <span>9-17</span></p>
