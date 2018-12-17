@@ -32,14 +32,6 @@
       }
     }
 
-    // Orientation
-    var orientation = urlVars['orientation'];
-    if (orientation) {
-      if (orientation === "vertical") {
-        $('body').addClass('orientation-vertical');
-      }
-    }
-
     // Vertical alignment.
     var align = urlVars['align'];
     if (align) {
@@ -101,12 +93,12 @@
 
             for (var i = 0; i < calendarEvents.length; i++) {
               var value = calendarEvents[i];
-              var title = value.title;
 
               events.push({
                 roomFloor: roomFloor,
                 roomName: roomName,
-                title: title,
+                title: value.title,
+                name: value.name,
                 start: value.start,
                 end: value.end,
               });
@@ -140,24 +132,21 @@
               } else {
                 tableContent += "<tr>";
               }
-              
-              if (event.title.toLowerCase() == "raumvermietung@effinger.ch")
-                  event.title = "Intern";
 
-              if (orientation === "vertical") {
-                tableContent += "<td>";
-                tableContent += "<div class='room-title'>" + event.title + "</div>"; 
-                tableContent += "<span class='room-name'>" + event.roomName + "</span>";
-                tableContent += "&nbsp;";
-                tableContent += "<span class='room-floor'>" + event.roomFloor + "</span>";
-                tableContent += "</td>";
-                tableContent += "<td class='room-time'>" + eventStart.format('HH:mm') + " &ndash; " + eventEnd.format('HH:mm') + "</td>";
+              tableContent += "<td class='event-time'>" + eventStart.format('HH:mm') + " &ndash; " + eventEnd.format('HH:mm') + "</td>";
+              tableContent += "<td>";
+              if (event.name) {
+                tableContent += "<div class='event-title'>" + event.name + "</div>"; 
+                tableContent += "<div class='event-subtitle'>" + event.title + "</div>"; 
               } else {
-                tableContent += "<td class='room-time'>" + eventStart.format('HH:mm') + " &ndash; " + eventEnd.format('HH:mm') + "</td>";
-                tableContent += "<td class='room-title'>" + event.title + "</td>";
-                tableContent += "<td>" + "<div class='room-name'>" + event.roomName + "</div>";
-                tableContent += "<span class='room-floor'>" + event.roomFloor + "</span>" + "</td>";
+                tableContent += "<div class='event-title'>" + event.title + "</div>"; 
               }
+              tableContent += "</td>";
+              tableContent += "<td>";
+              tableContent += "<div class='room-floor'>" + event.roomFloor + "</div>";
+              tableContent += "<div class='room-name'>" + event.roomName + "</div>";
+              tableContent += "</td>";
+
               tableContent += "</tr>";
             }
             tableContent += "</tbody></table>";

@@ -90,19 +90,21 @@ body {
     }
   }
 
-  .room-time {
+  .event-time {
     white-space: nowrap;
-
-    .orientation-vertical & {
-      text-align: right;
-      vertical-align: bottom;
-    }
   }
-  .room-title {
+  .event-title {
     font-weight: 400;
+  }
+  .event-subtitle {
+    font-size: 20px;
   }
   .room-floor {
     font-weight: 400;
+  }
+  .room-name {
+    font-size: 20px;
+    white-space: nowrap;
   }
 }
 
