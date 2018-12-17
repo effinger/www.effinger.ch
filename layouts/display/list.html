@@ -8,7 +8,7 @@
       <div class="loader"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
     </div>
     
-    <h1 class="title">Raumbesetzer</h1>
+    <h1 class="title">Gäste Heute</h1>
     
     <div class="content">
     </div>
@@ -72,7 +72,7 @@
       var endOfDay = moment().endOf('day');
 
       // Set title date of today.
-      $('.title').html("Raumbesetzer &mdash; " + startOfDay.format('dd DD.MM.YYYY'));
+      $('.title').html("Gäste Heute &mdash; " + startOfDay.format('dd DD.MM.YYYY'));
 
       var calendarApiPath = '{{ .Site.Data.room_manager.apiUrl }}';
       var xhr = $.ajax({
@@ -140,6 +140,9 @@
               } else {
                 tableContent += "<tr>";
               }
+              
+              if (event.title.toLowerCase() == "raumvermietung@effinger.ch")
+                  event.title = "Intern";
 
               if (orientation === "vertical") {
                 tableContent += "<td>";
@@ -152,8 +155,8 @@
               } else {
                 tableContent += "<td class='room-time'>" + eventStart.format('HH:mm') + " &ndash; " + eventEnd.format('HH:mm') + "</td>";
                 tableContent += "<td class='room-title'>" + event.title + "</td>";
-                tableContent += "<td class='room-floor'>" + event.roomFloor + "</td>";
-                tableContent += "<td class='room-name'>" + event.roomName + "</td>";
+                tableContent += "<td>" + "<div class='room-name'>" + event.roomName + "</div>";
+                tableContent += "<span class='room-floor'>" + event.roomFloor + "</span>" + "</td>";
               }
               tableContent += "</tr>";
             }
@@ -162,7 +165,7 @@
             $('.content').html(tableContent);
           } else {
             // Empty table.
-            $('.content').html('Gibt nichts anzuzeigen heute...');
+            $('.content').html('Extra Raum gewünscht? Gastgeber fragen oder spontan reservieren unter effinger.ch/raeume');
           }
 
           // Hide loading indicator.
