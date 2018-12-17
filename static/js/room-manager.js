@@ -36,6 +36,7 @@ var loadCalendar = function(calendarApiPath, calendarId, roomTitle, roomExtras, 
         end: '17:00'
       }
     ],
+    defaultView: 'agendaWeek',
     displayEventTime: true,
     displayEventEnd: true,
     editable: false,
