@@ -41,6 +41,14 @@
       }
     }
 
+    // Size.
+    var size = urlVars['size'];
+    if (size) {
+      if (size === "large") {
+        $('body').addClass('size-large');
+      }
+    }
+
     // Keystone correction.
     var keystone = urlVars['keystone'];
     if (keystone) {
