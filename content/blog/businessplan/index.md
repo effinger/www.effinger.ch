@@ -202,4 +202,4 @@ Unter folgendem Link kannst du den gesamten Businessplan der Effinger Coworking 
 
 Wir veröffentlichen den Businessplan unter der [Creative Commons Namensnennung Lizenz](http://creativecommons.org/licenses/by/4.0/), was heisst, dass du ihn für dich verwenden darfst unter der einzigen Bedingung, dass du unseren Namen nennst. Falls dir dieser Businessplan für dein eigenes Projekt geholfen hat, freuen wir uns natürlich, von dir zu hören.
 
-Bei Fragen kannst du gerne unten Kommentare hinterlassen oder ein Mail schreiben an [christoph@effinger.ch](mailto:christoph@effinger.ch).
+Bei Fragen kannst du gerne unten Kommentare hinterlassen oder ein Mail schreiben an [coworking@effinger.ch](mailto:coworking@effinger.ch).
