@@ -169,17 +169,6 @@ facebook = ""
 instagram = ""
 
 [[Person]]
-name = "Graziella Bärtsch"
-gender = "f"
-image = "/images/effianer/graziella-baertsch.jpg"
-email = "graziella@effinger.ch"
-phone = ""
-website = ""
-twitter = ""
-facebook = ""
-instagram = ""
-
-[[Person]]
 name = "Damaris Berger"
 gender = "f"
 image = "/images/effianer/damaris-berger.jpg"
@@ -214,23 +203,12 @@ facebook = ""
 instagram = "effingerbern"
 
 [[Person]]
-name = "Daniel Osterwalder"
-gender = "m"
-image = "/images/effianer/daniel-osterwalder.jpg"
-email = "daniel@effinger.ch"
-phone = ""
-website = "http://www.visualdynamics.ch/"
-twitter = "DOsterwalder"
-facebook = "daniel.osterwalder.7"
-instagram = ""
-
-[[Person]]
 name = "Matthias Tobler"
 gender = "m"
 image = "/images/effianer/matthias-tobler.jpg"
 email = "matthias@effinger.ch"
 phone = ""
-website = "http://www.iveinstitute.org/"
+website = "https://www.matthiastobler.ch/"
 twitter = ""
 facebook = ""
 instagram = ""
