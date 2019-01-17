@@ -18,16 +18,20 @@
       <div class="row">
 
         <div class="col-md-8">
-          <h1 class="hs-line-11 font-alt mb-10"><a href="/jubilaeum/">Workshops</a></h1>
+          <h1 class="hs-line-11 font-alt mb-10">{{ .Title }}</h1>
           <div class="hs-line-4 font-alt black">
-            Lass es dir nicht entgehen
+              <i class="fa fa-user"></i>
+                  {{.Params.author}}
           </div>
         </div>
-        <div class="col-md-4 mt-30">
-          <div class="mod-breadcrumbs font-alt align-right">
-            <a href="/events"><i class="fa fa-angle-left"></i> Zeige alle Workshops</a>
-          </div>
+        {{ if .Params.registration }}
+        <div class="col-md-4 mt-30 align-right">
+                <p class="local-scroll">
+                    <i class="fa fa-user-plus mt-10"></i>
+                    <a href="#anmeldung" class="btn btn-mod btn-gray btn-medium btn-round">Anmeldung</a>
+                </p>
         </div>
+        {{ end }}
       </div>
 
     </div>
@@ -38,15 +42,11 @@
   <!-- Section Event Single View -->
   <section class="page-section event">
     <div class="container relative eventsingle">
-      <h2 class="font-alt align-center mb-10">{{ .Title }}</h2>
-      <p class="align-center mb-80"><i class="fa fa-user"></i>
-          {{.Params.author}}
-      </p>
       <div class="row">
         <div class="col-md-12">
           <div class="section-text">
               <div class="row">
-                  <div class="col-md-6">
+                  <div class="col-md-12">
                       <p><small><i class="fa fa-clock-o"></i> {{ .Params.time }}&nbsp;&nbsp;<i class="fa fa-map-marker"></i>
                           {{ if .Params.address_link }}
                           <a href="{{ .Params.address_link }}" target="_blank" title="Open in Google Maps">{{ .Params.location }}</a>
@@ -56,14 +56,6 @@
                       </small></p>
 
                   </div>
-                  {{ if .Params.registration }}
-                  <div class="col-md-6 align-right">
-                      <p class="local-scroll">
-                          <i class="fa fa-user-plus mt-10"></i>
-                          <a href="#anmeldung" class="btn btn-mod btn-gray btn-medium btn-round">Anmeldung</a>
-                      </p>
-                  </div>
-                  {{ end }}
               </div>
               <img class="img-responsive" src="{{ .Params.image }}" alt="">
 
@@ -174,6 +166,13 @@
       {{ end }}
 
     </div>
+  </section>
+  <section class="page-section pt-0">
+      <div class="container">
+          <div class="font-alt text-center clearfix">
+              <a class="btn btn-mod btn-medium" href="/jubilaeum#events"><i class="fa fa-angle-left"></i> Zurück</a>
+          </div>
+      </div>
   </section>
   <!-- End Section Event Single View -->
 
