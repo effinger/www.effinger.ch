@@ -44,10 +44,18 @@
 
   <section class="page-section">
       <div class="container relative">
-        <p class="lead text-center">
-            Der «Effinger – Kaffeebar und Coworking Space» wird drei Jahre alt! Das wollen wir mit dir feiern! Verweile bei Food & Drinks in der Kaffeebar oder besuche unsere verschiedensten Jubiläums­ aktivitäten und lass dich inspirieren. Die Aktivitäten werden von Mitgliedern der Effinger Community gestaltet und geben dir Einblicke in die Vielfalt des Effinger­Lebens.
-        </p>
-        <p class="lead text-center">Wir freuen uns auf dich.</p>
+          <div class="row">
+              <div class="col-md-4">
+                <img src="drei.jpg" alt="">
+              </div>
+              <div class="col-md-8">
+                  <p class="lead">
+                      Der «Effinger – Kaffeebar und Coworking Space» wird drei Jahre alt! Das wollen wir mit dir feiern! Verweile bei Food & Drinks in der Kaffeebar oder besuche unsere verschiedensten Jubiläums­aktivitäten und lass dich inspirieren. Die <span class="local-scroll"><a href="#events">Aktivitäten</a></span> werden von Mitgliedern der Effinger Community gestaltet und geben dir Einblicke in die Vielfalt des Effinger­Lebens.
+                  </p>
+                  <p class="lead">Wir freuen uns auf dich.</p>
+
+              </div>
+          </div>
       </div>
   </section>
   <!-- Section -->
@@ -64,7 +72,7 @@
                       <h3 class="alt-features-title font-alt">Brownbag</h3>
                       <div class="alt-features-descr">
                           <p class="mb-0">Machen Sie bloss einen Job oder leben Sie Ihre Berufung? Der Berufungs-Coach und Autor von «Out of the Box» spricht über das Glück, die eigene Berufung zu leben.
-                          Brownbag zum Thema Beruf & Berufung mit Matthias Morgenthaler</p>
+                          Um 12:00 Uhr Brownbag zum Thema Beruf & Berufung mit Matthias Morgenthaler</p>
                           <a class="btn btn-mod btn-small mt-20" href="">Mehr Infos</a>
                       </div>
                   </div>
@@ -77,8 +85,7 @@
                      <img style="height:100px;width:auto" src="poetryslam.png" alt="Brownbag" />
                       <h3 class="alt-features-title font-alt">Poetryslam</h3>
                       <div class="alt-features-descr">
-                          Ab 20:30h
-                        Poetryslam Kaiwasoimmeru.a. Kaffeebar (EG)
+                          Ab 20:30h Poetryslam mit Kai Wasoimmer u.a. in der Kaffeebar.
                       </div>
                   </div>
               </div>
@@ -119,7 +126,7 @@
 
 
   <!-- Section Event list -->
-  <section class="page-section event">
+  <section class="page-section event" id="events">
     <div class="container relative">
 
       <h2 class="section-title font-alt mb-70 mb-sm-40">Programmübersicht</h2>
@@ -130,10 +137,11 @@
             <div class="cat">
               <div style="background-color: #fae300;"></div>
             </div>
-            <div class="event-date text">
-              <img src="{{ .RelPermalink }}/{{ .Params.image }}" alt="">
+            <div class="event-date text" style="background-image:url({{ .RelPermalink }}/{{ .Params.image }}); background-repeat: no-repeat; background-size: cover; background-position: center; height: 100%; width: 150px; position: absolute">
+                <span></span>
+
             </div>
-            <div class="event-text text bg-white">
+            <div class="event-text text bg-white" style="margin-left: 150px;">
               <h4 class="uppercase">{{ .Title }}</h4>
               <p> <i class="fa fa-user fa-inline"></i> {{ .Params.author}}</p>
               <p>
