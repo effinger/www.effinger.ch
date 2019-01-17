@@ -4,7 +4,12 @@ description = "Bewegungstherapeutin Faustina hilft dir mitten im Arbeitsalltag m
 startdate = 2019-03-15T10:00:00Z
 enddate = 2019-03-15T10:15:00Z
 location = "Effinger im Labor  (UG)"
-image = ""
+time = "10:00 Uhr | 13:15 Uhr | 17:00 Uhr"
+author = "Faustina Kromah"
+image = "achtsamkeit.jpg"
+
+registration = true
+registration_close = 2019-03-15T00:00:00Z
 +++
 
 <div class="lead">

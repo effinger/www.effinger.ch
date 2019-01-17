@@ -2,18 +2,6 @@
 {{ .Title }} | Events | {{ .Site.Title }}
 {{ end }}
 
-{{ define "twitter_card" }}
-  {{ partial "events/calc_dates.html" . }}
-
-  <meta name="twitter:card" value="summary_large_image">
-  <meta name="twitter:label1" value="Datum" />
-  <meta name="twitter:data1" value="{{ .Scratch.Get "start_weekday" }}, {{ .Scratch.Get "start_day" }}. {{ .Scratch.Get "start_month" }} {{ .Scratch.Get "start_year" }}" />
-  {{ if .Params.registration }}
-  <meta name="twitter:label2" value="Anmeldung" />
-  <meta name="twitter:data2" value="{{ index (split .Permalink "://") 1 }}" />
-  {{ end }}
-{{ end }}
-
 
 {{ define "main" }}
 <!-- Page Wrap -->
@@ -30,14 +18,14 @@
       <div class="row">
 
         <div class="col-md-8">
-          <h1 class="hs-line-11 font-alt mb-10"><a href="/events/">Events</a></h1>
+          <h1 class="hs-line-11 font-alt mb-10"><a href="/jubilaeum/">Workshops</a></h1>
           <div class="hs-line-4 font-alt black">
             Lass es dir nicht entgehen
           </div>
         </div>
         <div class="col-md-4 mt-30">
           <div class="mod-breadcrumbs font-alt align-right">
-            <a href="/events"><i class="fa fa-angle-left"></i> Zeige alle Events</a>
+            <a href="/events"><i class="fa fa-angle-left"></i> Zeige alle Workshops</a>
           </div>
         </div>
       </div>
@@ -46,82 +34,46 @@
   </section>
   <!-- End Header -->
 
-  {{ $isPast := (time .Params.enddate).Before now }}
-  {{ $archiveDate := now.AddDate 0 (int (mul -1 .Site.Params.archiveEventsAfterMonths)) 0 }}
-  {{ $isArchived := (time .Params.enddate).Before $archiveDate }}
 
   <!-- Section Event Single View -->
   <section class="page-section event">
     <div class="container relative eventsingle">
-      {{ if $isArchived }}
-        <h2 class="font-alt align-center">{{ .Title }}</h2>
-        <p class="align-center"><small><i class="fa fa-calendar-o"></i> {{ .Scratch.Get "start_weekday" }}, {{ .Scratch.Get "start_day" }}. {{ .Scratch.Get "start_month" }} {{ .Scratch.Get "start_year" }}</small></p>
-        <div class="alert alert-warning text-center">
-          <i class="fa fa-ban"></i>
-          Event liegt über {{ .Site.Params.archiveEventsAfterMonths }} Monte zurück und wurde archiviert!
-        </div>
-        <div class="text-center mt-40">
-          <a href="/events/" class="btn btn-mod btn-border btn-round btn-large">Aktuelle Events anzeigen</a>
-        </div>
-      {{ else if $isPast }}
-        <h2 class="font-alt align-center mb-80">{{ .Title }}</h2>
-        <div class="alert alert-info text-center">
-          <i class="fa fa-ban"></i>
-          Event liegt in der Vergangenheit!
-        </div>
-      {{ else }}
-        <h2 class="font-alt align-center mb-80">{{ .Title }}</h2>
-      {{ end }}
-
-      {{ if (not $isArchived) }}
+      <h2 class="font-alt align-center mb-10">{{ .Title }}</h2>
+      <p class="align-center mb-80"><i class="fa fa-user"></i>
+          {{.Params.author}}
+      </p>
       <div class="row">
-        <div class="col-md-3">
-          <div class="row mb-md-30">
-            <div class="col-md-12 col-sm-4 mb-20 mb-md-0">
-              <div class="date">
-                <div class="weekday uppercase">{{ .Scratch.Get "start_weekday" }}</div>
-                <div class="day">{{ .Scratch.Get "start_day" }}</div>
-                <div class="monthyear uppercase">{{ .Scratch.Get "start_shortmonth" }} {{ .Scratch.Get "start_year" }}</div>
-              </div>
-            </div>
-            <div class="col-md-12 col-sm-8 mt-xs-20">
-              <div class="event-detail text">
-                <p><small><i class="fa fa-calendar-o"></i> {{ .Scratch.Get "start_weekday" }}, {{ .Scratch.Get "start_day" }}. {{ .Scratch.Get "start_month" }} {{ .Scratch.Get "start_year" }}</small></p>
-                {{ if eq (.Scratch.Get "end_date") (.Scratch.Get "start_date") }}
-                  <p><small><i class="fa fa-clock-o"></i> {{ .Scratch.Get "start_time" }} Uhr</small></p>
-                {{ else }}
-                  <p><small><i class="fa fa-clock-o"></i> {{ .Scratch.Get "start_time" }} bis {{ .Scratch.Get "end_time" }} Uhr</small></p>
-                {{ end }}
-                <p><small><i class="fa fa-map-marker"></i>
-                  {{ if .Params.address_link }}
-                    <a href="{{ .Params.address_link }}" target="_blank" title="Open in Google Maps">{{ .Params.location }}</a>
-                  {{ else }}
-                    {{ .Params.location }}
-                  {{ end }}
-                </small></p>
-                <p><small><i class="fa fa-tags"></i>
-                  {{ delimit .Params.categories ", " }}
-                  </small>
-                </p>
-                {{ if and .Params.registration (not $isPast) }}
-                <p class="local-scroll">
-                  <i class="fa fa-user-plus mt-10"></i>
-                  <a href="#anmeldung" class="btn btn-mod btn-gray btn-medium btn-round">Anmeldung</a>
-                </p>
-                {{ end }}
-                </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-9">
+        <div class="col-md-12">
           <div class="section-text">
+              <div class="row">
+                  <div class="col-md-6">
+                      <p><small><i class="fa fa-clock-o"></i> {{ .Params.time }}&nbsp;&nbsp;<i class="fa fa-map-marker"></i>
+                          {{ if .Params.address_link }}
+                          <a href="{{ .Params.address_link }}" target="_blank" title="Open in Google Maps">{{ .Params.location }}</a>
+                          {{ else }}
+                          {{ .Params.location }}
+                          {{ end }}
+                      </small></p>
+
+                  </div>
+                  {{ if .Params.registration }}
+                  <div class="col-md-6 align-right">
+                      <p class="local-scroll">
+                          <i class="fa fa-user-plus mt-10"></i>
+                          <a href="#anmeldung" class="btn btn-mod btn-gray btn-medium btn-round">Anmeldung</a>
+                      </p>
+                  </div>
+                  {{ end }}
+              </div>
+              <img src="{{ .Params.image }}" alt="">
+
             {{ .Content }}
+
           </div>
         </div>
       </div>
-      {{ end }}
 
-      {{ if and .Params.registration (not $isArchived) }}
+      {{ if .Params.registration }}
       <!-- Event Registration -->
       {{ $lastUrlElement := index (last 2 (split .URL "/")) 0 }}
       <div class="row pt-60" id="anmeldung">
@@ -159,7 +111,7 @@
 
           <!-- Form -->
           <form class="form event-manager-form" style="display:none;"
-            data-event-folder="{{ .Site.Data.event_manager.folderId }}"
+            data-event-folder="1ThaV4A-HFSTiSZph189OiliIDQuo-Nku"
             data-event-id="{{ $lastUrlElement }}"
             data-event-title="{{ .Title }}"
             {{ if .Params.registration_max }}
