@@ -17,10 +17,10 @@ comment = "Life is too short to drink Latte Macchiatto."
 # comment = "Eg e kaffetørst!"
 
 [[Person]]
-name = "Sabina"
+name = "Fränzi"
 gender = "f"
-image = "/images/kaffeebar/sabina.jpg"
-comment = "A cup of coffee a day keeps the sorrows away."
+image = "/images/kaffeebar/franzi.jpg"
+comment = "Aues uf dr Wäut isch entweder ä Härdöpfu oder ke Härdöpfu."
 
 [[Person]]
 name = "Tina"
