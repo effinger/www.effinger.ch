@@ -1,0 +1,163 @@
+{{ define "main" }}
+<!-- Page Wrap -->
+<div class="page" id="top">
+
+  <nav class="main-nav transparent stick-fixed">
+    {{ partial "navigation.html" . }}
+  </nav>
+
+  <!-- Home Section -->
+  <section class="home-section parallax-2" data-background="header.jpg" id="home">
+      <div class="js-height-full">
+
+
+          <!-- Scroll Down -->
+          <div class="local-scroll">
+              <a href="#about" class="scroll-down"><i class="fa fa-angle-down scroll-down-icon"></i></a>
+          </div>
+          <!-- End Scroll Down -->
+
+      </div>
+  </section>
+  <!-- End Home Section -->
+
+  <!-- Header -->
+  <section class="small-section-header bg-dark-lighter">
+    <div class="relative container">
+
+      <div class="row text-center">
+
+        <div class="col-md-6 col-md-offset-3">
+            <div class="mb-10">
+                <i class="fa fa-birthday-cake fa-5x"></i>
+            </div>
+          <h1 class="hs-line-11 font-alt mb-0">Jubiläum</h1>
+          <div class="hs-line-4 font-alt mt-10 mt-xs-0">
+            Der Effinger – Kaffeebar und Coworking Space wird 3 Jahre alt! Das wollen wir feiern!
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- End Header -->
+
+  <!-- Section -->
+  <section class="page-section">
+      <div class="container relative">
+
+          <!-- Features Grid -->
+          <div class="row multi-columns-row alt-features-grid">
+
+              <!-- Features Item -->
+              <div class="col-sm-6 col-md-4 col-lg-4">
+                  <div class="alt-features-item align-center">
+                      <img width="150" src="brownbag.png" alt="Brownbag">
+                      <h3 class="alt-features-title font-alt">Brownbag</h3>
+                      <div class="alt-features-descr align-left">
+                          Referat mit Matthias Morgenthaler
+                      </div>
+                  </div>
+              </div>
+              <!-- End Features Item -->
+
+              <!-- Features Item -->
+              <div class="col-sm-6 col-md-4 col-lg-4">
+                  <div class="alt-features-item align-center">
+                      <img width="150" src="brownbag.png" alt="Brownbag">
+                      <h3 class="alt-features-title font-alt">Marketing</h3>
+                      <div class="alt-features-descr align-left">
+                          Proin fringilla augue at maximus vestibulum.
+                          Nam pulvinar vitae neque et porttitor. Praesent sed
+                          nisi eleifend, lorem fermentum orci sit amet, iaculis libero.
+                      </div>
+                  </div>
+              </div>
+              <!-- End Features Item -->
+
+              <!-- Features Item -->
+              <div class="col-sm-6 col-md-4 col-lg-4">
+                  <div class="alt-features-item align-center">
+                      <img width="150" src="poetryslam.png" alt="Brownbag">
+                      <h3 class="alt-features-title font-alt">Web Design</h3>
+                      <div class="alt-features-descr align-left">
+                          Curabitur iaculis accumsan augue, nec finibus mauris pretium eu.
+                          Duis placerat ex gravida nibh tristique porta. Nulla facilisi.
+                          Suspendisse ultricies eros blandit.
+                      </div>
+                  </div>
+              </div>
+              <!-- End Features Item -->
+
+              <!-- Features Item -->
+              <div class="col-sm-6 col-md-4 col-lg-4">
+                  <div class="alt-features-item align-center">
+                      <img width="150" src="brownbag.png" alt="Brownbag">
+                      <h3 class="alt-features-title font-alt">Photography</h3>
+                      <div class="alt-features-descr align-left">
+                          Cras luctus interdum sodales. Quisque quis odio dui. Sedes sit
+                          amet neque malesuada, lobortis  commodo magna ntesque pharetra
+                          metus vivera sagittis.
+                      </div>
+                  </div>
+              </div>
+              <!-- End Features Item -->
+
+              <!-- Features Item -->
+              <div class="col-sm-6 col-md-4 col-lg-4">
+                  <div class="alt-features-item align-center">
+                      <img width="150" src="brownbag.png" alt="Brownbag">
+                      <h3 class="alt-features-title font-alt">Development</h3>
+                      <div class="alt-features-descr align-left">
+                          Fusce aliquet quam eget neque ultrices elementum. Nulla posuere
+                          felis id arcu blandit sagittis. Eleifender vestibulum purus, sit
+                          amet vulputate risus.
+                      </div>
+                  </div>
+              </div>
+              <!-- End Features Item -->
+
+              <!-- Features Item -->
+              <div class="col-sm-6 col-md-4 col-lg-4">
+                  <div class="alt-features-item align-center">
+                      <div class="alt-features-icon">
+                          <span class="icon-anchor"></span>
+                      </div>
+                      <h3 class="alt-features-title font-alt">Support</h3>
+                      <div class="alt-features-descr align-left">
+                          Pulvinar vitae neque et porttitor. Integer non dapibus diam, ac
+                          eleifend lectus. Praesent sed nisi eleifend, fermentum orci sit
+                          amet, iaculis libero interdum.
+                      </div>
+                  </div>
+              </div>
+              <!-- End Features Item -->
+
+          </div>
+          <!-- End Features Grid -->
+
+      </div>
+  </section>
+  <!-- End Section -->
+
+
+  <!-- Section Event list -->
+  <section class="page-section event">
+    <div class="container relative">
+      <!--
+      <h2 class="section-title font-alt mb-70 mb-sm-40">Eventliste</h2>
+      -->
+      <div class="eventlist">
+        {{ range sort (where .Data.Pages "Params.enddate" ">=" now) "Params.startdate" "asc" }}
+
+        {{ partial "events/calc_dates.html" . }}
+        {{ partial "events/event_summary.html" . }}
+
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  <!-- End Section Event list -->
+</div>
+<!-- End Page Wrap -->
+{{ end }}
