@@ -6,21 +6,94 @@
     {{ partial "navigation.html" . }}
   </nav>
 
-  <!-- Home Section -->
-  <section class="home-section parallax-2" data-background="header.jpg" id="home">
-      <div class="js-height-full">
+<section class="home-section">
+    <style media="screen">
+    .wrapper {
+        position: relative;
+    }
+    .marker {
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        background-color: #F6D84A;
+        border-radius: 50%;
+        text-align: center;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -12px;
+        margin-left: -12px;
+        transition: transform 1s ease;
+        box-shadow: 5px 10px 18px #888888;
 
+    }
+    .marker:hover {
+        transform: scale(1.3);
+    }
 
-          <!-- Scroll Down -->
-          <div class="local-scroll">
-              <a href="#start" class="scroll-down"><i class="fa fa-angle-down scroll-down-icon"></i></a>
-          </div>
-          <!-- End Scroll Down -->
+    .marker a {
+        padding: 5px 8px;
+        line-height: 2px;
+        font-size: 12px;
+        text-decoration: none;
+    }
+    @media screen and (max-width: 600px) {
+        .container {
+            margin: 20px 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+      .marker {
+          width: 30px;
+          height: 30px;
+          position: static;
+          margin: 5px;
+          box-shadow: 0px 0px 10px #555;
+      }
+      .marker a {
+          padding: 7px 10px;
+      }
+    }
+    @media screen and (min-width: 920px) {
+        .marker {
+            width: 30px;
+            height: 30px;
+            margin-top: -17px;
+            margin-left: -17 dpx;
 
-      </div>
-  </section>
-  <!-- End Home Section -->
-
+        }
+        .marker a {
+            padding: 7px 10px;
+            font-size: 16px;
+        }
+    }
+  </style>
+  <div class="wrapper">
+    <img class="img-responsive" src="header.jpg">
+          <div class="container">
+                      <div class="marker" style="left:55.57%; top:93.85%;"><a href="/jubilaeum/achtsamkeit" data-toggle="tooltip" data-placement="top" title="Achtsamkeit">1</a></div>
+                                    <div class="marker" style="left:71.66%; top:43.46%;"><a href="/jubilaeum/brownbag" data-toggle="tooltip" data-placement="top" title="Brownbag mit Mathias Morgenthaler">2</a></div>
+                                    <div class="marker" style="left:55.43%; top:20.11%;"><a href="/jubilaeum/lego" data-toggle="tooltip" data-placement="top" title="Legoworkshop">3</a></div>
+                                    <div class="marker" style="left:95.32%; top:38.59%;"><a href="/jubilaeum/oldertimer" data-toggle="tooltip" data-placement="top" title="Oldtimer Fahrte">4</a></div>
+                                    <div class="marker" style="left:7.6%; top:51.25%;"><a href="/jubilaeum/werkstatt" data-toggle="tooltip" data-placement="top" title="Offene Werkstatt">5</a></div>
+                                    <div class="marker" style="left:58.87%; top:40.73%;"><a href="/jubilaeum/gedankengang" data-toggle="tooltip" data-placement="top" title="Gedankengang">6</a></div>
+                                    <div class="marker" style="left:80.06%; top:77.7%;"><a href="/jubilaeum/filmmachen" data-toggle="tooltip" data-placement="top" title="Filmmachen praktisch">7</a></div>
+                                    <div class="marker" style="left:22.56%; top:72.25%;"><a href="/jubilaeum/game" data-toggle="tooltip" data-placement="top" title="Gameentwicklung">8</a></div>
+                                    <div class="marker" style="left:63.41%; top:22.64%;"><a href="/jubilaeum/branddesign" data-toggle="tooltip" data-placement="top" title="Design your brand">9</a></div>
+                                    <div class="marker" style="left:28.75%; top:43.26%;"><a href="/jubilaeum/selbstmanagement" data-toggle="tooltip" data-placement="top" title="Selbstmanagement">10</a></div>
+                                    <div class="marker" style="left:61.9%; top:56.1%;"><a href="/jubilaeum/schreiben" data-toggle="tooltip" data-placement="top" title="Ich schreibe. So bin ich.">11</a></div>
+                                    <div class="marker" style="left:62.72%; top:25.95%;"><a href="/jubilaeum/instagram" data-toggle="tooltip" data-placement="top" title="Instagram Worthy">12</a></div>
+                                    <div class="marker" style="left:11.42%; top:16.03%;"><a href="/jubilaeum/orchester" data-toggle="tooltip" data-placement="top" title="Vignette's Popup Orchester">13</a></div>
+                                    <div class="marker" style="left:63.69%; top:58.44%;"><a href="/jubilaeum/thes" data-toggle="tooltip" data-placement="top" title="Speed-THESaktive Ideenkorb">14</a></div>
+                                    <div class="marker" style="left:48.14%; top:25.36%;"><a href="/jubilaeum/wein-und-sein" data-toggle="tooltip" data-placement="top" title="Wein und Sein">15</a></div>
+                                    <div class="marker" style="left:39.48%; top:69.92%;"><a href="/jubilaeum/geschichte" data-toggle="tooltip" data-placement="top" title="Geschichte des Effingers">16</a></div>
+                                    <div class="marker" style="left:44.84%; top:65.83%;"><a href="/jubilaeum/konzert" data-toggle="tooltip" data-placement="top" title="Konzert">17</a></div>
+                                    <div class="marker" style="left:89.55%; top:54.94%;"><a href="/jubilaeum/peotryslam" data-toggle="tooltip" data-placement="top" title="Poetry Slam">18</a></div>
+                            </div>
+</div>
+</section>
   <!-- Jubilaeum -->
   <section id="start" class="small-section-header" style="background-color: #fae300;">
     <div class="relative container">
