@@ -407,6 +407,10 @@
       placement: "top"
     });
 
+    $(".marker a").tooltip({
+      placement: "bottom"
+    });
+
   }
 
 
