@@ -5,6 +5,6 @@ startdate = 2019-03-15T18:00:00Z
 location = "Pläfe (EG)"
 time = "18:00 - 18:30 Uhr"
 author = "Hermann Flückiger"
-authorimage = ""
+authorimage = "thes-logo.png"
 image = ""
-+++ 
++++

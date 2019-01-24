@@ -8,3 +8,6 @@ author = "Alexis Giard & Claudine Etter"
 authorimage = "game.png"
 image = "big_coffee.gif"
 +++
+
+### Bemerkungen
+Offenes Kommen und Gehen
