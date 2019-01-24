@@ -5,9 +5,9 @@ startdate = 2019-03-15T10:00:00Z
 location = "Effinger im Labor (UG)"
 time = "10:00 Uhr | 13:15 Uhr | 17:00 Uhr"
 author = "Faustina Kromah"
-authorimage = "achtsamkeit.jpg"
-image = "achtsamkeit.jpg"
+authorimage = "faustina.jpg"
+image = "Achtsamkeit.gif"
 +++
 
 ### Bemerkungen
-**Max. Anzahl Personen:** 15 
+**Max. Anzahl Personen:** 15
