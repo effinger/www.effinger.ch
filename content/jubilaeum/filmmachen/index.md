@@ -6,5 +6,8 @@ location = "Effinger im Labor (UG)"
 time = "15:00 - 17:00 Uhr | 18:00 - 20:00 Uhr"
 author = "Fabian Steiner, Jonathan Hess, Jasmin Egger"
 authorimage = "filmteam.jpg"
-image = ""
+image = "labor.jpg"
 +++  
+
+### Bemerkungen
+Offenes Kommen und Gehen

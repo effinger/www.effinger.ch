@@ -11,4 +11,5 @@ image = "Werkstatt.gif"
 
 ### Bemerkungen
 **Materialkosten:** ab 5.-    
-auch für Kinder in Begleitung Erwachsener
+auch für Kinder in Begleitung Erwachsener    
+Offenes Kommen und Gehen

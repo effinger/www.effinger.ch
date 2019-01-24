@@ -10,4 +10,5 @@ image = ""
 +++
 
 ### Bemerkungen
+Offenes Kommen und Gehen    
 Für Leute in Geschäften und Organisationen ab 14 Jahren
