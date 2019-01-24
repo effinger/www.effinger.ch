@@ -5,7 +5,7 @@ startdate = 2019-03-15T15:00:00Z
 location = "Kleine Schanze (OG)"
 time = "15:00 - 15:30 Uhr | 13:15 Uhr | 17:00 Uhr"
 author = "Fredi Zumbrunn"
-authorimage = ""
+authorimage = "fredi-zumbrunn.jpg"
 image = ""
 +++
 

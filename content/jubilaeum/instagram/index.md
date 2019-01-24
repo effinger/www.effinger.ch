@@ -5,7 +5,7 @@ startdate = 2019-03-15T17:00:00Z
 location = "Rosengarten (OG)"
 time = "17:00 - 17:30 Uhr"
 author = "Damaris Berger"
-authorimage = ""
+authorimage = "damaris-berger.jpg"
 image = ""
 +++
 

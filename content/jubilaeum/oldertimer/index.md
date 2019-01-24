@@ -5,7 +5,7 @@ startdate = 2019-03-15T13:45:00Z
 location = "Effinger im Labor  (UG)"
 time = "13:45 - 18:15 Uhr | 7 Fahrten à 20-30 Minuten."
 author = "Heinz Bolliger"
-authorimage = ""
+authorimage = "heinz-bolliger.jpg"
 image = ""
 +++
 

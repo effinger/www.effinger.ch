@@ -5,7 +5,7 @@ startdate = 2019-03-15T17:30:00Z
 location = "Matte (OG)"
 time = "17:30 - 19:30 Uhr "
 author = "Anicia Kohler"
-authorimage = ""
+authorimage = "vignettes.png"
 image = "Orchester.gif"
 +++
 
@@ -21,4 +21,3 @@ Fr, 15.3.2019, 17.30-19, Bern (Effinger)
 Konzert: 15.3.2019, 19.30 im Effinger    
 
 Weitere Informationen unter [www.vignettiste.ch](www.vignettiste.ch)
-
