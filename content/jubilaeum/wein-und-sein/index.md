@@ -1,13 +1,16 @@
 +++
-title = "Achtsamkeit"
-description = "Bewegungstherapeutin Faustina hilft dir mitten im Arbeitsalltag mit gezielten Bewegungs-, Körperwahrnehmungs- und Atmungsübungen einen Moment zu entspannen. Du verbesserst damit deine Körperhaltung, beugst Rückenschmerzen und Verspannungen vor und verbesserst deine Konzentrationsfähigkeit. Die Übungen werden stehend in Alltagskleidung gemacht."
-startdate = 2019-03-15T10:00:00Z
+title = "WEIN UND SEIN – Spezialdegustation"
+description = "Degustation von drei erlesenen Weinen mit passenden Köstlichkeiten. Den Gaumen verwöhnen und geniessn."
+startdate = 2019-03-15T18:00:00Z
 location = "Effinger im Labor  (UG)"
-time = "10:00 Uhr | 13:15 Uhr | 17:00 Uhr"
-author = "Faustina Kromah"
+time = "18:00 - 18:45 Uhr"
+author = "Markus Roos"
 authorimage = ""
 image = ""
 +++
 
 ### Bemerkungen
-**Max. Anzahl Personen:** buy sandwich for 10 chf    
+**Mindestalter 18 Jahre**
+**Max. Anzahl Personen:** 8
+**Kosten:** 5-10 CHF 
+

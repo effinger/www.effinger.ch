@@ -1,13 +1,10 @@
 +++
-title = "Achtsamkeit"
-description = "Bewegungstherapeutin Faustina hilft dir mitten im Arbeitsalltag mit gezielten Bewegungs-, Körperwahrnehmungs- und Atmungsübungen einen Moment zu entspannen. Du verbesserst damit deine Körperhaltung, beugst Rückenschmerzen und Verspannungen vor und verbesserst deine Konzentrationsfähigkeit. Die Übungen werden stehend in Alltagskleidung gemacht."
-startdate = 2019-03-15T10:00:00Z
-location = "Effinger im Labor  (UG)"
-time = "10:00 Uhr | 13:15 Uhr | 17:00 Uhr"
-author = "Faustina Kromah"
+title = "Speed-THESaktiv-Ideenkorb"
+description = "Hast du ein Anliegen, eine Idee, ein Projekt, zu dem du gerne andere Interessierte hören möchtest? Bist du bereit, deine Gedanken zu einer Idee anderen zur Verfügung zu stellen? Dann nutze die Gelegenheit und bring dich ein im THESaktiv."
+startdate = 2019-03-15T18:00:00Z
+location = "Pläfe (EG)"
+time = "18:00 - 18:30 Uhr"
+author = "Hermann Flückiger"
 authorimage = ""
 image = ""
-+++
-
-### Bemerkungen
-**Max. Anzahl Personen:** buy sandwich for 10 chf    
++++ 
