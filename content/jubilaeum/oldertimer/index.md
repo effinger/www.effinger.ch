@@ -1,13 +1,14 @@
 +++
-title = "Achtsamkeit"
-description = "Bewegungstherapeutin Faustina hilft dir mitten im Arbeitsalltag mit gezielten Bewegungs-, Körperwahrnehmungs- und Atmungsübungen einen Moment zu entspannen. Du verbesserst damit deine Körperhaltung, beugst Rückenschmerzen und Verspannungen vor und verbesserst deine Konzentrationsfähigkeit. Die Übungen werden stehend in Alltagskleidung gemacht."
-startdate = 2019-03-15T10:00:00Z
+title = "Oldtimer Fahrten"
+description = "Eine Fahrt in diesem Oldtimer lassen Zeit und Raum verschmelzen – ein Fahrgefühl, das die Befindlichkeit und den Zeitgeist der 60er-Jahre ausdrückt; Aufbruch, Unbeschwertheit und Freiheit."
+startdate = 2019-03-15T13:45:00Z
 location = "Effinger im Labor  (UG)"
-time = "10:00 Uhr | 13:15 Uhr | 17:00 Uhr"
-author = "Faustina Kromah"
+time = "13:45 - 18:15 Uhr | 7 Fahrten à 20-30 Minuten."
+author = "Heinz Bolliger"
 authorimage = ""
 image = ""
 +++
 
 ### Bemerkungen
-**Max. Anzahl Personen:** buy sandwich for 10 chf    
+**Max. Anzahl Personen:** 5 pro Fahrt    
+**Nur bei schönem Wetter!**    

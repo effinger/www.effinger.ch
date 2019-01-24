@@ -10,4 +10,5 @@ image = "Achtsamkeit.gif"
 +++
 
 ### Bemerkungen
-**Max. Anzahl Personen:** 15
+**Max. Anzahl Personen:** 15    
+Die Übungen werden stehend in Alltagskleidung gemacht.
