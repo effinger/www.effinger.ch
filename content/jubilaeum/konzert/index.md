@@ -1,13 +1,14 @@
 +++
-title = "Achtsamkeit"
-description = "Bewegungstherapeutin Faustina hilft dir mitten im Arbeitsalltag mit gezielten Bewegungs-, Körperwahrnehmungs- und Atmungsübungen einen Moment zu entspannen. Du verbesserst damit deine Körperhaltung, beugst Rückenschmerzen und Verspannungen vor und verbesserst deine Konzentrationsfähigkeit. Die Übungen werden stehend in Alltagskleidung gemacht."
-startdate = 2019-03-15T10:00:00Z
-location = "Effinger im Labor  (UG)"
-time = "10:00 Uhr | 13:15 Uhr | 17:00 Uhr"
-author = "Faustina Kromah"
+title = "Konzert"
+description = "Vignette’s Orchester feat. Olan."
+startdate = 2019-03-15T19:30:00Z
+location = "Kaffeebar (EG)"
+time = "19:00 Uhr"
+author = "Anicia Kohler"
 authorimage = ""
 image = ""
 +++
 
-### Bemerkungen
-**Max. Anzahl Personen:** buy sandwich for 10 chf    
+### Bemerkungen   
+Weitere Informationen unter [www.vignettiste.ch](www.vignettiste.ch)
+

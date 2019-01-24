@@ -1,13 +1,15 @@
 +++
-title = "Achtsamkeit"
-description = "Bewegungstherapeutin Faustina hilft dir mitten im Arbeitsalltag mit gezielten Bewegungs-, Körperwahrnehmungs- und Atmungsübungen einen Moment zu entspannen. Du verbesserst damit deine Körperhaltung, beugst Rückenschmerzen und Verspannungen vor und verbesserst deine Konzentrationsfähigkeit. Die Übungen werden stehend in Alltagskleidung gemacht."
-startdate = 2019-03-15T10:00:00Z
-location = "Effinger im Labor  (UG)"
-time = "10:00 Uhr | 13:15 Uhr | 17:00 Uhr"
-author = "Faustina Kromah"
+title = "Instagram Worthy"
+description = "Damaris Berger gibt simple Tipps für bessere Fotos mit deiner HandyKamera. Ob für Instagram oder für’s Familienalbum: ready to step up your photography game? "
+startdate = 2019-03-15T17:00:00Z
+location = "Rosengarten (OG)"
+time = "17:00 - 17:30 Uhr"
+author = "Damaris Berger"
 authorimage = ""
 image = ""
 +++
 
 ### Bemerkungen
-**Max. Anzahl Personen:** buy sandwich for 10 chf    
+**Max. Anzahl Personen:** 12    
+Mitbringen: Dein Smartphone    
+[Damaris Berger](https://www.instagram.com/dmrsbrgr/)
