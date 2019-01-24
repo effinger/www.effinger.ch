@@ -5,6 +5,6 @@ startdate = 2019-03-15T15:45:00Z
 location = "Aquarium (EG)"
 time = "15:45 - 18:15 Uhr"
 author = "Alexis Giard & Claudine Etter"
-authorimage = ""
-image = ""
+authorimage = "game.png"
+image = "big_coffee.gif"
 +++
