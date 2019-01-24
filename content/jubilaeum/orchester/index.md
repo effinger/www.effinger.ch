@@ -6,7 +6,7 @@ location = "Matte (OG)"
 time = "17:30 - 19:30 Uhr "
 author = "Anicia Kohler"
 authorimage = ""
-image = ""
+image = "Orchester.gif"
 +++
 
 ### Bemerkungen

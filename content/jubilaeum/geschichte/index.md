@@ -5,8 +5,8 @@ startdate = 2019-03-15T18:00:00Z
 location = "Aquarium (EG)"
 time = "18:00 - 18:45 Uhr"
 author = "Matthias Tobler"
-authorimage = ""
-image = ""
+authorimage = "matthias-tobler.jpg"
+image = "Geschichte.gif"
 +++
 
 ### Bemerkungen

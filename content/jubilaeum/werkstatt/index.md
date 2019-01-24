@@ -6,7 +6,7 @@ location = "Effinger im Labor  (UG)"
 time = "10:00 Uhr | 13:15 Uhr | 17:00 Uhr"
 author = "Faustina Kromah"
 authorimage = ""
-image = ""
+image = "Werkstatt.gif"
 +++
 
 ### Bemerkungen

@@ -16,14 +16,20 @@
     <div class="relative container align-left pt-80">
 
       <div class="row">
-
-        <div class="col-md-8">
+        <div class="col-md-3">
+            <img class="img-responsive" src="{{ .Params.authorimage }}" alt="">
+        </div>
+        <div class="col-md-9">
           <h1 class="hs-line-11 font-alt mb-10">{{ .Title }}</h1>
           <div class="hs-line-4 font-alt black">
               <i class="fa fa-user"></i>
-                  {{.Params.author}}
+                  <strong>{{.Params.author}}</strong><br>
+                  <i class="fa fa-clock-o"></i> {{ .Params.time }}
+                  <br>
+                  <i class="fa fa-map-marker"></i> {{ .Params.location }}
           </div>
         </div>
+
         {{ if .Params.registration }}
         <div class="col-md-4 mt-30 align-right">
                 <p class="local-scroll">
@@ -45,18 +51,6 @@
       <div class="row">
         <div class="col-md-12">
           <div class="section-text">
-              <div class="row">
-                  <div class="col-md-12">
-                      <p><small><i class="fa fa-clock-o"></i> {{ .Params.time }}&nbsp;&nbsp;<i class="fa fa-map-marker"></i>
-                          {{ if .Params.address_link }}
-                          <a href="{{ .Params.address_link }}" target="_blank" title="Open in Google Maps">{{ .Params.location }}</a>
-                          {{ else }}
-                          {{ .Params.location }}
-                          {{ end }}
-                      </small></p>
-
-                  </div>
-              </div>
               <img class="img-responsive" src="{{ .Params.image }}" alt="">
 
               <div class="lead">
