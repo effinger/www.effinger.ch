@@ -2,11 +2,11 @@
 title = "Brownbag zum Thema Beruf & Berufung"
 description = "Machen Sie bloss einen Job oder leben Sie Ihre Berufung? Der Berufungs-Coach und Autor von «Out of the Box» spricht über das Glück, die eigene Berufung zu leben. Mathias Morgenthaler hat über 1000 Interviews geführt mit Menschen, die etwas Unverwechselbares tun. Er stellt anhand von 10 Thesen vor, welche Faktoren über Erfolg und Erfüllung in der Arbeit entscheiden."
 startdate = 2019-03-15T12:00:00Z
-location = "Grosse Schanze  (1. OG)"
+location = "Grosse Schanze (OG)"
 time = "12:00 – 13:00 Uhr"
 author = "Mathias Morgenthaler"
-authorimage = "mathias.morgenthaler.jpg"
-image = "mathias.morgenthaler.jpg"
+authorimage = "mathias_morgenthaler.jpg"
+image = "mathias_morgenthaler.jpg"
 +++
 
 ### Biografische Angaben Mathias Morgenthaler
