@@ -1,13 +1,15 @@
 +++
-title = "Achtsamkeit"
-description = "Bewegungstherapeutin Faustina hilft dir mitten im Arbeitsalltag mit gezielten Bewegungs-, Körperwahrnehmungs- und Atmungsübungen einen Moment zu entspannen. Du verbesserst damit deine Körperhaltung, beugst Rückenschmerzen und Verspannungen vor und verbesserst deine Konzentrationsfähigkeit. Die Übungen werden stehend in Alltagskleidung gemacht."
-startdate = 2019-03-15T10:00:00Z
-location = "Effinger im Labor  (UG)"
-time = "10:00 Uhr | 13:15 Uhr | 17:00 Uhr"
-author = "Faustina Kromah"
+title = "Offene Werkstatt"
+description = "Im Atelier und der Werkstatt werden ihr die Möglichkeit haben mit verschiedenen Materialien und Farben handwerklich tätig zu sein. Es stehen Ideen und Beispiele von Wandbildern und Ewigen Kalendern bereit, welche ihr Frei oder nach Vorlage umsetzen und gestallten könnt."
+startdate = 2019-03-15T14:00:00Z
+location = "Werkstatt / Atelier (EG)"
+time = "14:00 - 17:00 Uhr"
+author = "Timon Marmet"
 authorimage = ""
 image = "Werkstatt.gif"
 +++
 
 ### Bemerkungen
-**Max. Anzahl Personen:** buy sandwich for 10 chf    
+**Materialkosten:** ab 5.-    
+auch für Kinder in Begleitung Erwachsener
+
