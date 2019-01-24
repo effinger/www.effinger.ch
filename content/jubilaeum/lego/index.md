@@ -5,9 +5,10 @@ startdate = 2019-03-15T13:30:00Z
 location = "Bärengraben (OG)"
 time = "13:30 - 17:00 Uhr"
 author = "Urs Vögeli"
-authorimage = ""
+authorimage = "urs-voegeli.jpg"
 image = ""
 +++
 
 ### Bemerkungen
+Offenes Kommen und Gehen    
 Für Leute in Geschäften und Organisationen ab 14 Jahren

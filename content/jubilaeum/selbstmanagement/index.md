@@ -5,7 +5,6 @@ startdate = 2019-03-15T16:00:00Z
 location = "Matte (OG)"
 time = "16:00 - 16:45 Uhr"
 author = "Dr. Phil. Heinz Bolliger-Salzmann"
-authorimage = ""
+authorimage = "heinz-bolliger.jpg"
 image = ""
 +++
-  

@@ -10,7 +10,7 @@ image = "Brownbag.gif"
 +++
 
 ### Lunchbag Special
-<a style="float:right" href="http://lunchbag.ch">![lunchbag](lunchbag.jpg)</a> Für den Brownbag wird lunchbag Sandwiches mit einem Dessert für Fr. 10.- offerieren. Es wird vegan, vegetarische und fleischhaltige Varianten geben. Dieses Angebot gilt nur solange Vorrat.
+<a style="float:right" href="http://lunchbag.ch">![lunchbag](lunchbag.jpg)</a> Für den Brownbag wird lunchbag Sandwiches mit einem Dessert für Fr. 10.- offerieren. Es wird eine vegane, vegetarische und fleischhaltige Variante geben. Dieses Angebot gilt nur solange Vorrat.
 
 <br>
 <br>
