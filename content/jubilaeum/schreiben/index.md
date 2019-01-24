@@ -5,7 +5,7 @@ startdate = 2019-03-15T16:00:00Z
 location = "Pläfe (EG)"
 time = "16:00 - 17:30 Uhr"
 author = "Sandra von Siebenthal"
-authorimage = ""
+authorimage = "sandra.jpg"
 image = ""
 +++
 
@@ -13,4 +13,3 @@ image = ""
 **Max. Anzahl Personen:** 8    
 **Materialkosten:** 10 CHF    
 **Ab 18 Jahren**
-

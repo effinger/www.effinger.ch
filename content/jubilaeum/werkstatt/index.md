@@ -5,11 +5,10 @@ startdate = 2019-03-15T14:00:00Z
 location = "Werkstatt / Atelier (EG)"
 time = "14:00 - 17:00 Uhr"
 author = "Timon Marmet"
-authorimage = ""
+authorimage = "timon-marmet.jpg"
 image = "Werkstatt.gif"
 +++
 
 ### Bemerkungen
 **Materialkosten:** ab 5.-    
 auch für Kinder in Begleitung Erwachsener
-
