@@ -16,7 +16,9 @@
     <div class="relative container align-left pt-80">
 
       <div class="row">
-
+        <div class="col-md-4">
+            <img class="img-responsive" src="{{ .Params.authorimage }}" alt="">
+        </div>
         <div class="col-md-8">
           <h1 class="hs-line-11 font-alt mb-10">{{ .Title }}</h1>
           <div class="hs-line-4 font-alt black">
@@ -24,6 +26,7 @@
                   {{.Params.author}}
           </div>
         </div>
+
         {{ if .Params.registration }}
         <div class="col-md-4 mt-30 align-right">
                 <p class="local-scroll">
