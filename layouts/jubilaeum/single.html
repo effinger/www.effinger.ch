@@ -1,0 +1,256 @@
+{{ define "title" }}
+{{ .Title }} | Events | {{ .Site.Title }}
+{{ end }}
+
+
+{{ define "main" }}
+<!-- Page Wrap -->
+<div class="page" id="top">
+
+  <nav class="main-nav transparent stick-fixed">
+    {{ partial "navigation.html" . }}
+  </nav>
+
+  <!-- Header -->
+  <section class="small-section-header bg-gray-lighter">
+    <div class="relative container align-left pt-80">
+
+      <div class="row">
+        <div class="col-md-3">
+            <img class="img-responsive" src="{{ .Params.authorimage }}" alt="">
+        </div>
+        <div class="col-md-9">
+          <h1 class="hs-line-11 font-alt mb-10">{{ .Title }}</h1>
+          <div class="hs-line-4 font-alt black">
+              <i class="fa fa-user"></i>
+                  <strong>{{.Params.author}}</strong><br>
+                  <i class="fa fa-clock-o"></i> {{ .Params.time }}
+                  <br>
+                  <i class="fa fa-map-marker"></i> {{ .Params.location }}
+          </div>
+        </div>
+
+        {{ if .Params.registration }}
+        <div class="col-md-4 mt-30 align-right">
+                <p class="local-scroll">
+                    <i class="fa fa-user-plus mt-10"></i>
+                    <a href="#anmeldung" class="btn btn-mod btn-gray btn-medium btn-round">Anmeldung</a>
+                </p>
+        </div>
+        {{ end }}
+      </div>
+
+    </div>
+  </section>
+  <!-- End Header -->
+
+
+  <!-- Section Event Single View -->
+  <section class="page-section event">
+    <div class="container relative eventsingle">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-text">
+              <img class="img-responsive" src="{{ .Params.image }}" alt="">
+
+              <div class="lead">
+                {{ .Description }}
+              </div>
+
+            {{ .Content }}
+
+          </div>
+        </div>
+      </div>
+
+      {{ if .Params.registration }}
+      <!-- Event Registration -->
+      {{ $lastUrlElement := index (last 2 (split .URL "/")) 0 }}
+      <div class="row pt-60" id="anmeldung">
+        <div class="col-md-6">
+          <h3 class="uppercase mt-0 mb-0"><i class="fa fa-user-plus"></i> Anmeldung</h3>
+
+          <div class="event-manager-close">
+            {{ if .Params.registration_close }}
+              <i class="fa fa-clock-o"></i> Anmeldeschluss: {{ dateFormat "02.01.2006" .Params.registration_close }}
+              {{ $delta := (time .Params.registration_close).Sub now }}
+              {{ if gt $delta.Hours 24 }}
+              (noch {{ int (div $delta.Hours 24) }} Tage)
+              {{ else if ge (int $delta.Hours) 2 }}
+              (nur noch {{ int $delta.Hours }} Stunden!)
+              {{ else if eq (int $delta.Hours) 1 }}
+              (nur noch 1 Stunde!)
+              {{ else if gt (int $delta.Minutes) 1 }}
+              (nur noch {{ int $delta.Minutes }} Minuten!)
+              {{ else if gt $delta.Seconds 0 }}
+              (allerletzte Minute!)
+              {{ else }}
+              (geschlossen)
+              {{ end }}
+            {{ end }}
+            &nbsp;
+          </div>
+
+
+          <div class="event-manager-info alert alert-info" style="display:none;">
+          </div>
+
+          <div class="event-manager-loading">
+            <i class="fa fa-spinner fa-spin fa-2x fa-fw"></i>
+          </div>
+
+          <!-- Form -->
+          <form class="form event-manager-form" style="display:none;"
+            data-event-folder="1ThaV4A-HFSTiSZph189OiliIDQuo-Nku"
+            data-event-id="{{ $lastUrlElement }}"
+            data-event-title="{{ .Title }}"
+            {{ if .Params.registration_max }}
+            data-event-max="{{ .Params.registration_max }}"
+            {{ end }}
+            {{ if .Params.registration_close }}
+            data-event-close="{{ (time .Params.registration_close).Format "2006-01-02T15:04:05Z" }}"
+            {{ else }}
+            data-event-close="{{ (time .Params.startdate).Format "2006-01-02T15:04:05Z" }}"
+            {{ end }}
+            data-event-api="{{ .Site.Data.event_manager.apiUrl }}">
+            <div class="row">
+              <div class="col-sm-6 mb-20 mb-md-10">
+                <input type="text" name="firstname" class="input-md form-control" placeholder="Vorname" maxlength="100">
+              </div>
+
+              <div class="col-sm-6 mb-20 mb-md-10">
+                <input type="text" name="lastname" class="input-md form-control" placeholder="Ganzer Nachname" maxlength="100">
+              </div>
+            </div>
+
+            <div class="mb-20 mb-md-10">
+              <input type="email" name="_email" class="input-md form-control" placeholder="E-Mail" maxlength="100">
+            </div>
+
+            <div class="mb-20 mb-md-10">
+              <textarea name="comments" id="text" class="input-md form-control" rows="5" placeholder="Kommentar (optional, wird hier auf der Seite angezeigt)" maxlength="400"></textarea>
+            </div>
+
+            <div class="mb-20 mb-md-10">
+              <input type="submit" class="btn btn-mod btn-gray btn-round" value="Anmelden">
+            </div>
+          </form>
+          <!-- End Form -->
+
+        </div>
+        <div class="col-md-6 mt-md-60">
+          <p class="event-manager-number-of-attendees uppercase">Teilnehmende</p>
+
+          <div class="event-manager-max">
+            {{ if .Params.registration_max }}
+              <i class="fa fa-users"></i> Max:
+              {{ if gt .Params.registration_max 1 }}
+              {{ .Params.registration_max }} Plätze
+              {{ else }}
+              1 Platz
+              {{ end }}
+            {{ end }}
+            &nbsp;
+          </div>
+
+          <div class="event-manager-loading">
+            <i class="fa fa-spinner fa-spin fa-2x fa-fw"></i>
+          </div>
+          <ul class="list-unstyled event-manager-attendee-list">
+          </ul>
+        </div>
+      </div>
+      <!-- End Event Registration -->
+      {{ end }}
+
+    </div>
+  </section>
+  <section class="page-section pt-0">
+      <div class="container">
+          <div class="font-alt text-center clearfix">
+              <a class="btn btn-mod btn-medium" href="/jubilaeum"><i class="fa fa-angle-left"></i> Zurück</a>
+          </div>
+      </div>
+  </section>
+  <!-- End Section Event Single View -->
+
+  {{ if .Params.address }}
+  <!-- Google Map -->
+  <div class="google-map">
+    <div data-address="{{ .Params.address }}" id="map-canvas"></div>
+  </div>
+  <!-- End Google Map -->
+  {{ end }}
+
+
+
+<!-- End Page Wrap -->
+{{ end }}
+
+{{ define "body_includes" }}
+  {{ if .Params.address }}
+  /* ---------------------------------------------
+  Google map
+  --------------------------------------------- */
+  <script type="text/javascript" src="/js/gmap3.min.js"></script>
+  <script type="text/javascript" src="https://maps.google.com/maps/api/js?language=de"></script>
+  <script type="text/javascript">
+  $(document).ready(function(){
+
+    var gmMapDiv = $("#map-canvas");
+
+    $(".map-section").click(function(){
+      $(this).toggleClass("js-active");
+      $(this).find(".mt-open").toggle();
+      $(this).find(".mt-close").toggle();
+    });
+
+
+    if (gmMapDiv.length) {
+
+      var gmCenterAddress = gmMapDiv.attr("data-address");
+      var gmMarkerAddress = gmMapDiv.attr("data-address");
+
+
+      gmMapDiv.gmap3({
+        action: "init",
+        marker: {
+          address: gmMarkerAddress,
+          options: {
+            icon: "/images/map-marker_effinger.svg"
+            /*
+            icon: new google.maps.MarkerImage('/images/map-marker_effinger.svg',   //icon url
+                  new google.maps.Size(60, 60),    //sets the icon size
+                  new google.maps.Point(0, 0),    //sets the origin point of the icon
+                  new google.maps.Point(30, 53))    //sets the anchor point for the icon
+            */
+          }
+        },
+        map: {
+          options: {
+            zoom: 14,
+            zoomControl: true,
+            zoomControlOptions: {
+              style: google.maps.ZoomControlStyle.SMALL
+            },
+            zoomControlOptions: {
+              position: google.maps.ControlPosition.LEFT_TOP
+            },
+            mapTypeControl: false,
+            scaleControl: true,
+            scrollwheel: false,
+            streetViewControl: false,
+            draggable: true,
+            styles: [{"featureType":"water","elementType":"geometry.fill","stylers":[{"color":"#d3d3d3"}]},{"featureType":"transit","stylers":[{"color":"#808080"},{"visibility":"off"}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"visibility":"on"},{"color":"#b3b3b3"}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"road.local","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#ffffff"},{"weight":1.8}]},{"featureType":"road.local","elementType":"geometry.stroke","stylers":[{"color":"#d7d7d7"}]},{"featureType":"poi","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#ebebeb"}]},{"featureType":"administrative","elementType":"geometry","stylers":[{"color":"#a7a7a7"}]},{"featureType":"road.arterial","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"road.arterial","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"landscape","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#efefef"}]},{"featureType":"road","elementType":"labels.text.fill","stylers":[{"color":"#696969"}]},{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"visibility":"on"},{"color":"#737373"}]},{"featureType":"poi","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"poi","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"road.arterial","elementType":"geometry.stroke","stylers":[{"color":"#d6d6d6"}]},{"featureType":"road","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{},{"featureType":"poi","elementType":"geometry.fill","stylers":[{"color":"#dadada"}]}]
+          }
+        }
+      });
+    }
+  });
+  </script>
+  {{ end }}
+
+  {{ if .Params.registration }}
+  <script type="text/javascript" src="/js/event-manager.dart.js"></script>
+  {{ end }}
+{{ end }}
