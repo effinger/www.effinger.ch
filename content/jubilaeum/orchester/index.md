@@ -12,7 +12,7 @@ image = "Orchester.gif"
 ### Bemerkungen
 
 **Max. Anzahl Personen:** 20    
-**Anmeldeschluss:** 20. Februar 2019, anmelden auf [https://www.vignettiste.ch](www.vignettiste.ch)    
+**Anmeldeschluss:** 20. Februar 2019, anmelden auf [www.vignettiste.ch](https://www.vignettiste.ch)    
 **Kosten:** 30.-    
 
 **Proben:**    
@@ -20,4 +20,4 @@ Fr, 8.3.2019, 17.30-19, Bern (wird noch mitgeteilt)
 Fr, 15.3.2019, 17.30-19, Bern (Effinger)    
 Konzert: 15.3.2019, 19.30 im Effinger    
 
-Weitere Informationen unter [https://www.vignettiste.ch](www.vignettiste.ch)
+Weitere Informationen unter [www.vignettiste.ch](https://www.vignettiste.ch)

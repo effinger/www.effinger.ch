@@ -10,4 +10,4 @@ image = "Orchester.gif"
 +++
 
 ### Bemerkungen   
-Weitere Informationen unter [https://www.vignettiste.ch](www.vignettiste.ch)
+Weitere Informationen unter [www.vignettiste.ch](https://www.vignettiste.ch)
