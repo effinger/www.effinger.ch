@@ -11,4 +11,5 @@ image = ""
 
 ### Bemerkungen
 **Max. Anzahl Personen:** 5 pro Fahrt    
+**Kinder nur in Begleitung von Erwachsenen**    
 **Nur bei schönem Wetter!**    
