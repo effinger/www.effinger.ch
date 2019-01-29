@@ -27,4 +27,4 @@ Morgenthaler ist Autor der Bestseller «Out of the Box» (Zytglogge 2017), «Aus
 Morgenthaler ist ein gefragter Referent, Moderator und Interviewpartner in den Themenbereichen: Berufung finden, Berufliche Neuorientierung, Arbeitswelt der Zukunft, Motivation am Arbeitsplatz, Strategien erfolgreicher Unternehmer, Umgang mit den Medien.
 
 Für weitere Informationen    
-[www.beruf-berufung.ch](www.beruf-berufung.ch)
+[www.beruf-berufung.ch](http://www.beruf-berufung.ch)
