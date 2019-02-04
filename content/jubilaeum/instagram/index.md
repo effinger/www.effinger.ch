@@ -6,7 +6,7 @@ location = "Rosengarten (OG)"
 time = "17:00 - 17:30 Uhr"
 author = "Damaris Berger"
 authorimage = "damaris-berger.jpg"
-image = ""
+image = "instagram.jpg"
 +++
 
 ### Bemerkungen
