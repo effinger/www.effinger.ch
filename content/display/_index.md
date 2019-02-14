@@ -8,6 +8,7 @@ calendarIds = [
   "effinger.ch_3737343630303933363438@resource.calendar.google.com", # OG-Grosse Schanze
   "effinger.ch_3931343830323437383537@resource.calendar.google.com", # OG-Bärengraben
   "effinger.ch_3838383235323139363736@resource.calendar.google.com", # OG-Matte
-  "effinger.ch_31313730333433383430@resource.calendar.google.com" # OG-Rosengarten
+  "effinger.ch_31313730333433383430@resource.calendar.google.com", # OG-Rosengarten
+  "effinger.ch_3936383230343032353631@resource.calendar.google.com" # OG-Kleine Schanze
 ]
 +++
