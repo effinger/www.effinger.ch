@@ -10,7 +10,7 @@ description = "Anmeldung für ein Six-Pack-Abo zum Coworken im Effinger."
 * Zusatztage können für CHF 25 direkt an der Kaffeebar gelöst werden oder fix in das Six-Pack-Abo integriert werden.
 * 1 Kaffee pro Tag
 * Internet, Drucker, Teeküche
-* 2h Workshopraum pro Monat
+* 2h Workshopraum Pläfe pro Monat
 * Community Membership inklusive 
 
 
