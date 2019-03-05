@@ -4,14 +4,14 @@ description = "Eine Massage - Donnerstags im Effinger"
 startdate = 2019-03-21T10:00:00
 enddate = 2019-03-21T17:00:00
 categories = [ "Coworking" ]
-location = "Effinger: im Aquarium Telefonraum"
+location = "Effinger: Monbijou"
 image = "massage.jpg"
 +++
 
 ![Massage im Effinger](massage.jpg)
 
 <div class="lead">
-Verbringen Sie ihre Arbeit im Sitzen? Sind Rücken- und Kopfschmerzen öfter ein Thema? Arbeiten Sie in Bern oder kommen gelegentlich dort vorbei? Dann ist Massage im Effinger genau für Sie.
+Wünschst du dir eine kurze Entspannung mitten im Arbeitsalltag? Arbeitest Du in Bern oder kommst du gelegentlich dort vorbei? Dann ist Massage im Effinger genau für Dich. Unkompliziert und zentral.
 </div>
 
 
