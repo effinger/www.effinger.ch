@@ -23,7 +23,7 @@ Suchst du eine unverbindliche Anlaufstelle, um dich zum Preis eines Kaffees mit 
 Interessierte Privatpersonen, Paare und Familien
 
 #### Datum und Dauer
-Jeweils am letzten Samstag im Monat ab 10:00 Uhr für 60-90 min in der Kaffeebar Effinger
+Jeweils am ersten Samstag im Monat ab 10:00 Uhr für 60-90 min in der Kaffeebar Effinger
 
 #### Kosten
 Keine. Konsumation an der Bar auf eigene Kosten.
