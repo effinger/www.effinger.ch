@@ -1,5 +1,5 @@
 +++
-title = "Oldtimer Fahrten"
+title = "Oldtimer Fahrten (abgesagt)"
 description = "Eine Fahrt in diesem Oldtimer lassen Zeit und Raum verschmelzen – ein Fahrgefühl, das die Befindlichkeit und den Zeitgeist der 60er-Jahre ausdrückt; Aufbruch, Unbeschwertheit und Freiheit."
 startdate = 2019-03-15T13:45:00Z
 location = "Effinger im Labor  (UG)"
@@ -8,6 +8,8 @@ author = "Heinz Bolliger"
 authorimage = "heinz-bolliger.jpg"
 image = ""
 +++
+## Abgesagt
+Aufgrund der Witterung finden keine Oldtimer Fahrten statt.
 
 ### Bemerkungen
 **Max. Anzahl Personen:** 5 pro Fahrt    
