@@ -267,7 +267,7 @@ offers_title = "Menu"
       price = ""
 
     [[offers.section.element.subelement]]
-      text = "alle Getränke auch mit Sojamilch erhältlich"
+      text = "alle Getränke auch mit Hafer Milch erhältlich"
 
   [[offers.section]]
     title = "Tee"
@@ -401,11 +401,11 @@ offers_title = "Menu"
       price = "5.00"
 
     [[offers.section.element]]
-      text = "Heldenpause"
+      text = "Wostock"
       price = "5.00"
 
       [[offers.section.element.subelement]]
-        text = "Birnen-Traube Limonade mit Melisse, Passionsblume, Hopfen"
+        text = "Birne, Rosmarin"
 
     [[offers.section.element]]
       text = "Firefly"
@@ -685,13 +685,7 @@ offers_title = "Menu"
 
       [[offers.section.element.subelement]]
         text="roter Wermuth, Prosecco, Mineral, Orange"
-    
-    [[offers.section.element]]
-      text="Rose Gin"
-      price="14.00"
-
-      [[offers.section.element.subelement]]
-        text="Gin, Rose Limonade, Zitrone, Rosmarin"
+        
 
     [[offers.section.element]]
       text="Pimm’s No 1 Cup"
