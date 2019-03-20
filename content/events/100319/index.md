@@ -8,7 +8,7 @@ location = "Halensiedlung, Halen 26, 3037 Kirchlindach"
 image = "halen_siedlung.jpg"
 
 registration = true
-registration_max = 12
+registration_max = 20
 registration_close = 2019-03-30T10:00:00Z
 +++
 ![Halen Siedlung](halen_siedlung.jpg)
