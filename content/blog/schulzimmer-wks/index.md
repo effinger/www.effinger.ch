@@ -6,6 +6,7 @@ author = "Marco Jakob"
 image = "schulzimmer-wks.jpg"
 comments = true
 tags = [ "Gemeinsamständig", "Werkstatt" ]
+aliases = [ "/events/100269/", "/events/100270/", "/events/archive/100269/", "/events/archive/100270/" ]
 +++
 
 <div class="embed-responsive embed-responsive-16by9">
