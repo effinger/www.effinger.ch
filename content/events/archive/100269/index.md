@@ -7,6 +7,8 @@ categories = [ "Community" ]
 location = "WKS Gebäude 3, Schwarztorstrasse 61, Bern"
 image = "schulzimmer-wks.jpg"
 
+expiryDate = "2018-10-03"
+
 registration = true
 registration_max = 12
 +++
