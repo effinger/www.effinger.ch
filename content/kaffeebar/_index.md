@@ -27,20 +27,6 @@ offers_title = "Menu"
       [[offers.section.element.subelement]]
         text = "nach Tagesangebot"
     
-  [[offers.section]]
-   title = "Suppe"
-   column = "left"
-
-   [[offers.section.element]]
-     text = "Suppe nach Tagesangebot"
-     price = "9.00"
-
-     [[offers.section.element.subelement]]
-       text = "«es het solang's het»"
-
-     [[offers.section.element.subelement]]
-       text = "mit Salat"
-       price = "+3.00"
 
   [[offers.section]]
     title = "Grünzeug"
@@ -730,13 +716,7 @@ offers_title = "Menu"
       [[offers.section.element.subelement]]
         text="Amaro Meletti"
         price="8.00"
-      
-    [[offers.section.element]]
-      text="Weisser Glühwein"
-      price="7.50"
 
-      [[offers.section.element.subelement]]
-        text="Weisswein, Apfelsaft, Quittensirup, Zitrone"
 
   [[offers.section]]
     title = "Hoch&shy;pro&shy;zen&shy;ti&shy;ges"
