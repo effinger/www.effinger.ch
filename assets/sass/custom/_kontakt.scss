@@ -37,17 +37,16 @@
 .contact-private-party span {
   display: inline-block;
   vertical-align: middle;
+
   width: calc(100% - 82px);
   padding-left: 5px;
 }
 
-@media only screen and (max-width: 767px) {
-  .contact-item,
-  .contact-private-party {
-      max-width: 370px;
-      margin-left: auto;
-      margin-right: auto;
-  }
+.contact-item,
+.contact-private-party {
+    max-width: 370px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .address {
