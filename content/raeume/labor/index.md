@@ -2,18 +2,19 @@
 title = "Labor"
 weight = 6
 description = "Raum «Labor» (Zweites UG) für Events, Workshops und digitale Projekte."
-image = "raum-mieten.jpg"
+image = "raum_labor_00004.jpg"
 
 aliases = [
     "/raeume/zweites-ug/"
 ]
 
 gallery = [
-  "raum-mieten.jpg",
-  "raum-mieten-2.jpg",
-  "raum-mieten-3.jpg",
-  "raum-mieten-4.jpg",
-  "raum-mieten-5.jpg"
+  "raum_labor_00004.jpg",
+  "raum_labor_00001.jpg",
+  "raum_labor_00002.jpg",
+  "raum_labor_00003.jpg",
+  "raum_labor_00005.jpg",
+  "raum_labor_00006.jpg",
 ]
 
 square_meters = 55
