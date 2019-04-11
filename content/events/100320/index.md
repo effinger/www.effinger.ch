@@ -1,8 +1,8 @@
 +++
 title = "We Are Cinema"
 
-startdate = 2019-04-12T19:00:00Z
-enddate = 2019-04-12T22:00:00Z
+startdate = 2019-05-17T19:00:00Z
+enddate = 2019-05-17T22:00:00Z
 categories = [ "Labor" ]
 location = "Effinger Labor (UG -2)"
 image = "wearecinema.jpg"
