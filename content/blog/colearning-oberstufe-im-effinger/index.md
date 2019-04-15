@@ -4,7 +4,7 @@ date = "2019-04-15"
 description = "Jugendliche ziehen im Effinger ein. Anstatt eine Schule zu besuchen, lernen Jugendliche im Coworking Space, zu Hause und an anderen Lernorten. Damit rückt die Welt der Jugendlichen wieder näher zur Welt der Erwachsenen und das Lernen findet direkt im Leben statt."
 image = "colearning-bern.jpg"
 author = "Marco Jakob"
-comments = true
+comments = false
 tags = [ "Colearning" ]
 +++
 
