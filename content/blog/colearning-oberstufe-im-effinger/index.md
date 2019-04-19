@@ -1,7 +1,7 @@
 +++
 title = "Colearning - die Oberstufe im Effinger"
 date = "2019-04-15"
-description = "Jugendliche ziehen im Effinger ein. Anstatt eine Schule zu besuchen, lernen Jugendliche im Coworking Space und mitten in der Gesellschaft. Damit rückt die Welt der Jugendlichen näher zur Welt der Erwachsenen und das Lernen findet direkt im Leben statt."
+description = "Jugendliche ziehen im Effinger ein. Anstatt in der Schule, lernen Jugendliche im Coworking Space. Damit rückt die Welt der Jugendlichen näher zur Welt der Erwachsenen und das Lernen findet direkt im Leben und mitten in der Gesellschaft statt."
 image = "colearning-bern.jpg"
 author = "Marco Jakob"
 comments = false
@@ -14,17 +14,17 @@ tags = [ "Colearning" ]
 Bildung und Vielfalt der Generationen sind wichtige Themen im Effinger. Mit Colearning Bern schaffen wir einen Ort, wo Jugendliche in der Mitte der Gesellschaft lernen können.
 </div>
 
-Ab August 2019 werden Jugendliche im Effinger einziehen. Anstatt eine herkömmliche Oberstufe zu besuchen, lernen sie im Effinger, zu Hause und an zahlreichen anderen Lernorten. Lernen soll vor allem im Leben geschehen, denn wir sind überzeugt:
+Ab August 2019 werden Jugendliche im Effinger einziehen. Anstatt eine herkömmliche Oberstufe zu besuchen, lernen sie im Effinger, zu Hause und an anderen Lernorten. Lernen soll vor möglichst nah am Leben geschehen.
 
 > "Leben bildet. Manchmal auch Schule."
 
-Wir schaffen zusammen mit den Jugendlichen ein lebendiges Lernumfeld und helfen mit, ihre Aktivitäten zu planen. Die Jugendlichen werden aber vor allem selber Verantwortung übernehmen für ihr Lernen. 
+Wir schaffen zusammen mit den Jugendlichen ein lebendiges Lernumfeld und helfen mit, ihre Aktivitäten zu planen. Die Jugendlichen werden selber viel Verantwortung übernehmen für ihr Lernen. 
 
 ## Neue Arbeitsformen ermöglichen neue Lernformen
 
 Durch die Digitalisierung ist ortsunabhängiges Arbeiten heute in vielen Berufen möglich. So sind Coworking Spaces entstanden, in denen eine sehr grosse Anzahl von unterschiedlichsten Berufen an einem Ort zusammen kommen.
 
-Orte, wo Arbeit in dieser Vielfalt erlebt werden kann, hat es seit der Industrialisierung kaum gegeben. Die längste Zeit der Menschheitsgeschichte hat man gelernt durch Beobachten und Nachmachen. Natürlich ist die meiste Arbeit heute abstrakter als das Jagen von Tieren oder das Sammeln von Beeren. Wir machen es Kindern aber auch nicht einfacher, wenn wir sie komplett von der Erwachsenenwelt abschirmen.
+Orte, wo Arbeit in dieser Vielfalt erlebt werden kann, hat es seit der Industrialisierung kaum gegeben. Die längste Zeit der Menschheitsgeschichte haben Kinder gelernt durch Beobachten und Nachmachen. Natürlich ist die meiste Arbeit heute abstrakter als das Jagen von Tieren oder das Sammeln von Beeren. Wir machen es Kindern aber auch nicht einfacher, wenn wir sie komplett von der Erwachsenenwelt abschirmen.
 
 Wir sind überzeugt, dass ein Coworking Space wie der Effinger ein ideales Ökosystem ist für Jungendliche, um Beziehungen aufzubauen zu Erwachsenen und sie bei der Arbeit zu beobachten. Dies inspiriert und motiviert, selbst aktiv zu werden und so viel wie möglich zu lernen.
 
