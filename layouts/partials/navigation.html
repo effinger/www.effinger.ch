@@ -33,7 +33,7 @@
           <ul class="mn-sub to-left">
             {{ range .Children }}
             <li>
-              <a{{if $currentNode.IsMenuCurrent "main" . }} class="active"{{end}} href="{{.URL}}"> {{ .Name }} </a>
+              <a{{if $currentNode.IsMenuCurrent "main" . }} class="active"{{end}} href="{{ .URL }}"> {{ .Name }} </a>
             </li>
             {{ end }}
           </ul>

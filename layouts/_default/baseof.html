@@ -37,17 +37,17 @@
     {{/* Process bootstrap.scss */}}
     {{ $bootstrapOptions := (dict "targetPath" "css/bootstrap.css" "outputStyle" "compressed" "enableSourceMap" true) }}
     {{ $bootstrapCss := resources.Get "sass/bootstrap.scss" | resources.ToCSS $bootstrapOptions }}
-    <link rel="stylesheet" href="{{ $bootstrapCss.Permalink }}">
+    <link rel="stylesheet" href="{{ $bootstrapCss.RelPermalink }}">
     
     {{/* Process style.scss */}}
     {{ $styleOptions := (dict "targetPath" "css/style.css" "outputStyle" "compressed" "enableSourceMap" true) }}
     {{ $styleCss := resources.Get "sass/style.scss" | resources.ToCSS $styleOptions }}
-    <link rel="stylesheet" href="{{ $styleCss.Permalink }}">
+    <link rel="stylesheet" href="{{ $styleCss.RelPermalink }}">
     
     {{/* Process animate.scss */}}
     {{ $animateOptions := (dict "targetPath" "css/animate.css" "outputStyle" "compressed" "enableSourceMap" true) }}
     {{ $animateCss := resources.Get "sass/animate.scss" | resources.ToCSS $animateOptions }}
-    <link rel="stylesheet" href="{{ $animateCss.Permalink }}">
+    <link rel="stylesheet" href="{{ $animateCss.RelPermalink }}">
     
     <link rel="stylesheet" href="/css/owl.carousel.min.css">
     <link rel="stylesheet" href="/css/magnific-popup.min.css">

@@ -50,7 +50,7 @@
           <!-- Gallery -->
           <div class="work-full-media mt-0 white-shadow">
             <ul class="clearlist work-full-slider owl-carousel">
-              {{ $url := .URL }}
+              {{ $url := .RelPermalink }}
               {{ range .Params.gallery }}
               <li>
                 <img src="{{ $url }}{{ . }}" alt="" />
