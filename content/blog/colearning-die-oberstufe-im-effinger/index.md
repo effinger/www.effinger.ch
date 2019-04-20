@@ -24,7 +24,7 @@ Wir schaffen zusammen mit den Jugendlichen ein inspirierendes Lernumfeld und hel
 
 Die längste Zeit der Menschheitsgeschichte haben Kinder gelernt durch Beobachten und Nachmachen. Orte, wo Arbeit beobachtbar ist und in einer Vielfalt erlebt werden kann, hat es seit der Industrialisierung kaum gegeben. Natürlich ist die meiste Arbeit heute abstrakter als das Jagen von Tieren oder das Sammeln von Beeren. Wir machen es Kindern aber auch nicht einfacher, wenn wir sie komplett von der Erwachsenenwelt abschirmen.
 
-Durch die Digitalisierung ist ortsunabhängiges Arbeiten heute in vielen Berufen möglich. So sind Coworking Spaces entstanden, in denen eine sehr grosse Anzahl von unterschiedlichsten Berufen an einem Ort zusammen kommen. Wir sind überzeugt, dass ein Coworking Space wie der Effinger ein ideales Ökosystem ist für Jungendliche, um Beziehungen aufzubauen zu Erwachsenen und sie bei der Arbeit zu beobachten. Dies inspiriert und motiviert, selbst aktiv zu werden und dabei so viel wie möglich zu lernen.
+Durch die Digitalisierung ist ortsunabhängiges Arbeiten heute in vielen Berufen möglich. So sind Coworking Spaces entstanden, in denen eine sehr grosse Anzahl von unterschiedlichsten Berufen an einem Ort zusammen kommen. Wir sind überzeugt, dass ein Coworking Space wie der Effinger ein ideales Ökosystem ist für Jungendliche, um Beziehungen zu Erwachsenen aufzubauen und sie bei der Arbeit zu beobachten. Dies inspiriert und motiviert, selbst aktiv zu werden und dabei so viel wie möglich zu lernen.
 
 ## Berufswahl
 
