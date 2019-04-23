@@ -5,10 +5,10 @@ description = "Soziokratische Entscheidungen und Soziokratische Wahl."
 soziokartie_einleitung = """
 Im Effinger werden täglich viele Entscheidungen gefällt. Der Grossteil wird schlank und ohne grosse Formalitäten im Beratungsprozess entschieden (siehe [Organisation](/organisation/#beratungsprozess)) und möglichst transparent kommuniziert.
 
-Entscheidungen, bei denen ein grösserer Teil der Community involviert werden muss, fällen wir in den montatlichen Community-Treffen (siehe [Events](/events/)). In diesen Treffen entscheiden wir soziokratisch. Hier beschreiben wir den Ablauf von soziokratischen Entscheidungen und soziokratischen Wahlen.
+Entscheidungen, bei denen ein grösserer Teil der Community involviert werden muss, fällen wir in den monatlichen Community-Treffen (siehe [Events](/events/)). In diesen Treffen entscheiden wir nach soziokratischem Konsent. Hier beschreiben wir den Ablauf von soziokratischen Entscheidungen und soziokratischen Wahlen.
 """
 soziokratische_entscheidungen = """
-Dies ist der Ablauf von soziokratischen Entscheidungen. Für jeden Vorschlag werden folgende Schritte durchlaufen.
+Dies ist der Ablauf von soziokratischen Entscheidungen (Konsent). Für jeden Vorschlag werden folgende Schritte durchlaufen.
 
 
 ## 1. Vorschlag präsentieren
@@ -37,7 +37,7 @@ Dies ist der Ablauf von soziokratischen Entscheidungen. Für jeden Vorschlag wer
 
 * Der Moderator fragt: “Sehen ihr irgendeinen Grund, warum die Annahme dieses Vorschlags Schaden anrichten oder uns zurückwerfen könnte?”
 * Einwände werden ohne Diskussion benannt und begründet.
-* Wenn keine Einwände im Raum sind, wird der Vorschlag angenommen.
+* Wenn keine Einwände im Raum sind, haben wir Konsent und der Vorschlag wird angenommen.
 
 
 ## 6. (Integration)
