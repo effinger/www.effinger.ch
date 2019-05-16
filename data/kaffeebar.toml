@@ -14,17 +14,12 @@ comment = "Aues uf dr Wäut isch entweder ä Härdöpfu oder ke Härdöpfu."
 name = "Lea"
 gender = "f"
 image = "/images/kaffeebar/lea.jpg"
+comment = "When life gives you lemons, trade them for coffee."
 
 [[Person]]
 name = "Karin"
 gender = "f"
 image = "/images/kaffeebar/karin.jpg"
-
-[[Person]]
-name = "Luna"
-gender = "f"
-image = "/images/kaffeebar/luna.jpg"
-comment = "un cappuccino per favore"
 
 [[Person]]
 name = "Nico"
@@ -37,12 +32,6 @@ name = "Simone"
 gender = "f"
 image = "/images/kaffeebar/simone.jpg"
 comment = "Now is the new later."
-
-[[Person]]
-name = "David"
-gender = "m"
-image = "/images/kaffeebar/david.jpg"
-comment = "Espresso auf Espresso auf geflossenen Espresso."
 
 [[Person]]
 name = "Natascha"
@@ -60,4 +49,4 @@ comment = "Darfs eine Ingwerer-Philosophy-Schoko-Heldenpause to go sein?"
 name = "Christa"
 gender = "f"
 image = "/images/kaffeebar/christa.jpg"
-comment = "life happens, coffee helps"
+comment = "Life happens, coffee helps."
