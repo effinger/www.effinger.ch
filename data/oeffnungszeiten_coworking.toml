@@ -21,7 +21,7 @@ text = """
 display_start = 2019-06-04T00:00:00Z
 display_end = 2019-06-10T23:59:59Z
 text = """
-<p class="text-center"><em>Pfingstmontag Montag 10. Juni 2019 geschlossen.</em></p>
+<p class="text-center"><em>Pfingstmontag 10. Juni 2019 geschlossen.</em></p>
 <p>Mo-Fr <span>7-23</span></p>
 <p class="mb-0">Sa <span></span></p>
 <p class="mt-0 mb-0"><small>Jun &ndash; Sept </small><span>9-14</span></p>
