@@ -1,7 +1,6 @@
 /fairtech/*  https://datalets.ch/:splat  200
 /brownbag/*  http://brownbag.herrbuerli.ch/:splat  200
-/atelier     /atelier/  301
-/atelier/    https://startpacket.carrd.co/  200
+/atelier/*    https://atelier.effinger.ch/:splat  301
 
 # Redirect domain aliases to primary domain
 https://www.popupcoworking.ch/* https://www.effinger.ch/:splat 301!
