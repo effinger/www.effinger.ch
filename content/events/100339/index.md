@@ -2,38 +2,41 @@
 title = "Inspirationstreffen Urbane Dörfer"
 description = "Suchst du eine unverbindliche Anlaufstelle, um dich zum Preis eines Kaffees mit Interessierten über die Begeisterung von neuen Wohnformen auszutauschen?"
 startdate = 2019-06-15T10:00:00Z
-enddate = 2019-06-15T11:30:00Z
+enddate = 2019-06-15T11:00:00Z
 categories = [ "Community" ]
 location = "Effinger, Kaffeebar"
-image = "AE_Fremtidens-Gardhave_View-01_LENDAGER-BOGL-1500x900.jpg"
+image = "postit.jpg"
 
 registration = true
 registration_close = 2019-06-15T10:00:00Z
 +++
-![Inspirationstreffen Urbane Dörfer](AE_Fremtidens-Gardhave_View-01_LENDAGER-BOGL-1500x900.jpg)
-
-### Gemeinsam ganzheitliche Wohnprojekte bauen
+![Inspirationstreffen Urbane Dörfer](postit.jpg)
 
 <div class="lead">
 Suchst du eine unverbindliche Anlaufstelle, um dich zum Preis eines Kaffees mit Interessierten über die Begeisterung von neuen Wohnformen auszutauschen?
 </div>
 
 
-#### Zielpublikum
-Interessierte Privatpersonen, Paare und Familien
+*Zielpublikum*    
+Interessierte Privatpersonen, Organisationen und Projektgruppen
 
-#### Datum und Dauer
-Jeweils am ersten Samstag im Monat ab 10:00 Uhr für 60-90 min in der Kaffeebar Effinger
+*Datum und Dauer*    
+Jeweils am ersten Samstag im Monat ab 10:00 Uhr für 60 Minuten in der Kaffeebar Effinger
 
-#### Kosten
+*Kosten*    
 Keine. Konsumation an der Bar auf eigene Kosten.
 
-#### Inhalt
-Am monatlichen Inspirations Treffen werden ein oder zwei Beispielprojekte präsentiert und darüber ausgetauscht. Je nach Möglichkeit laden wir auch Bewohner, Planer oder Vertreter einer Organisation dazu ein. Mögliche Erkenntnisse und Ergebnisse werden gesammelt und festgehalten. Du erfährst mehr über die Idee von Urbanen Dörfern und wie du Teil davon werden kannst.
+*Inhalt*    
+Am monatlichen Inspirations Treffen wollen wir euch und eure Vorstellungen und Bedürfnisse kennenlernen. Je nach Möglichkeit laden wir auch Gäste, Planer oder Vertreter einer Organisation dazu ein. Erkenntnisse und Ergebnisse werden gesammelt und festgehalten. Du erfährst mehr über die Idee von den Urbanen Dörfern und wie du Teil davon werden kannst.
 
-**Anmeldung erwünscht**
+Anmeldung erwünscht.
 
-Wir freuen uns auf deine Teilname    
-Ramona, Matthias, Ismael
+Wir freuen uns auf deine Teilnahme.   
+Die Dorfpioniere
+
+Mehr Infos zu den Urbanen Dörfer erfährst du unter [www.urbanedoerfer.ch](https://www.urbanedoerfer.ch).
+
+Einen Einblick in ein vergangenes Inspirationstreffen findest du unter folgendem Blogpost [https://www.urbanedoerfer.ch](https://www.urbanedoerfer.ch/post/das-erste-inspirationstreffen-ging-%C3%BCber-die-b%C3%BChne)
+
 
 Fragen an [ismael@effinger.ch](mailto:ismael@effinger.ch)  
