@@ -32,7 +32,7 @@ We'll look back at this year's Revision demoparty and show you our favourite dem
 
 ## Location & Contact
 
-* When: **SATURDAY**, March 9, 2019
+* When: **FRIDAY**, June 21, 2019
 * Doors: **19:00** - Midnight, screen programme starting at ~19:30
 * Entrance: **CHF 10.-** (please deposit in yellow tip-jar)
 * Where: **Effingerstrasse 10**, Bern. Underground -2 (side entrance)
