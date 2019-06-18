@@ -1,14 +1,14 @@
 +++
 title = "TREFFEN THESaktiv"
 description = "Wir treffen uns als Gruppe THESaktiv einmal im Monat um Themen und Aktuelles aus dem Umfeld des Lernens anzugehen. Wer mit einer Idee aktiv werden und sich einbringen möchte, ist herzlich willkommen."
-startdate = 2019-08-26T18:00:00Z
-enddate = 2019-08-26T21:00:00Z
+startdate = 2019-06-24T18:00:00Z
+enddate = 2019-06-24T21:00:00Z
 categories = [ "THESaktiv" ]
 location = "Effinger im 1 OG - Beginn in Kaffeebar"
 image = "Bild_Thes.jpg"
 
 registration = true
-registration_close = 2019-08-26T00:00:00Z
+registration_close = 2019-06-24T00:00:00Z
 +++
 
 <div class="lead">

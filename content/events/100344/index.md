@@ -1,14 +1,14 @@
 +++
-title = "TREFFEN THESaktiv"
+title = "TREFFEN THESaktiv - am Mittag"
 description = "Wir treffen uns als Gruppe THESaktiv einmal im Monat um Themen und Aktuelles aus dem Umfeld des Lernens anzugehen. Wer mit einer Idee aktiv werden und sich einbringen möchte, ist herzlich willkommen."
-startdate = 2019-08-26T18:00:00Z
-enddate = 2019-08-26T21:00:00Z
+startdate = 2019-10-28T12:00:00Z
+enddate = 2019-10-28T13:30:00Z
 categories = [ "THESaktiv" ]
 location = "Effinger im 1 OG - Beginn in Kaffeebar"
 image = "Bild_Thes.jpg"
 
 registration = true
-registration_close = 2019-08-26T00:00:00Z
+registration_close = 2019-10-28T00:00:00Z
 +++
 
 <div class="lead">
@@ -19,22 +19,19 @@ Wir treffen uns als Gruppe THESaktiv einmal im Monat um Themen und Aktuelles aus
 
 ![THES Logo](thes_blau.png)
 
-### Ablauf  der Treffen „THESaktiv“
+### Ablauf  der Treffen „THESaktiv“ am Mittag
 
-#### Gemeinsames Ankommen in der Kaffeebar (18.00 Uhr)
-Wer kann und will, trifft sich bereits um 18 Uhr zu einer Art Stammtisch unter aktiven Bildungsinteressierten in der Kaffeebar.
-
-#### Check-In (18.30 Uhr)
+#### Check-In (12.00 Uhr)
 Das Check-In ist eine Aktivität, um richtig im 1. OG bei THESaktiv anzukommen und um uns auf das Treffen einzustimmen.
 
-#### A.) Infos & Anliegen (~30 Min.)
+#### A.) Infos & Anliegen (~10 Min.)
 In diesem Block können Informationen von THESaktiv zu aktuellen Ereignissen im Umfeld von THES im Effinger erfolgen. 
 Diese werden in der Regel durch ein Mitglied des Kernteams THESaktiv eingebracht. Hier werden auch die Anliegen für Ideen, Themen aufgenommen und zur Bearbeitung im Treffen organisiert.
 
 #### B.) Ideenkorb mit Bildungsthemen, Gesprächsrunden, Projekte (~60 Min.)
 Es werden Fragen, Themen, Impulse, Inputs, Ideen zu Projekten präsentiert, diskutiert, hinterfragt und es wird geklärt, in welcher Form eine mögliche Vertiefung geschehen kann. Dies erfolgt mittels der Struktur des Ideenkorbs, in den die Themen eingegeben werden (Vorstellen, Feedback, Notizen). Die verfügbare Zeit wird dabei anteilsmässig aufgeteilt.
 
-#### C.) Check-Out (~30 Min.)
+#### C.) Check-Out (~10 Min.)
 Das Check-Out ist die Aktivität, bei der die Erkenntnisse der Teilnehmenden festgehalten werden. 
 Gemeinsam werden die „Take aways“ ausgetauscht, um das Treffen abzuschliessen.
 
