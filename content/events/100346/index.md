@@ -8,7 +8,7 @@ location = "Effinger im 1 OG - Beginn in Kaffeebar"
 image = "Bild_Thes.jpg"
 
 registration = true
-registration_close = 2019-12-16T00:00:00Z
+registration_close = 2019-12-16T18:00:00Z
 +++
 
 <div class="lead">
