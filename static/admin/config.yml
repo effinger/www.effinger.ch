@@ -1,0 +1,29 @@
+backend:
+  name: github
+  repo: effinger/www.effinger.ch
+
+media_folder: "static/images"
+public_folder: "images"
+
+site_url: "/"
+display_url: "https://effinger.ch"
+
+collections:
+  - label: "Einstellungen"
+    name: "settings"
+    delete: false
+    editor:
+      preview: false
+    format: "toml-frontmatter"
+    files:
+      - label: "Sommeröffnungszeiten"
+        name: "general"
+        file: "content/sommer/_index.md"
+        fields:
+          - {
+              label: Seitentitel,
+              name: title,
+              widget: string,
+              hint: "Haupttitel der Website.",
+            }
+          - { label: "Inhalt", name: "body", widget: "markdown" }

@@ -1,0 +1,46 @@
+{{ define "main" }}
+<!-- Page Wrap -->
+<div class="page grundsaetze" id="top">
+
+  <nav class="main-nav dark transparent stick-fixed">
+    {{ partial "navigation.html" . }}
+  </nav>
+
+  <!-- Header -->
+  <section class="small-section-header bg-dark-lighter">
+    <div class="relative container align-left pt-80">
+
+      <div class="row">
+
+        <div class="col-md-8">
+          <h1 class="hs-line-11 font-alt mb-0">Sommer</h1>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- End Header -->
+
+  <!-- Section -->
+  <section class="page-section bg-gray-lighter">
+
+    <div class="container">
+
+      <h2 class="section-title font-alt mb-70 mb-sm-40">
+        <i class="fa fa-bullhorn fa-lg"></i> Sommeröffnungszeiten
+      </h2>
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <div class="section-text">
+            {{ .Content }}
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- End Section -->
+
+</div>
+<!-- End Page Wrap -->
+{{ end }}
