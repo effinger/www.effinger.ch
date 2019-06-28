@@ -1,4 +1,3 @@
 +++
-title = "Admin Raumverwaltung"
-description = "Raumverwaltung"
+title = "Administration"
 +++

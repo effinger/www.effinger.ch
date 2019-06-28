@@ -20,10 +20,5 @@ collections:
         name: "general"
         file: "content/sommer/_index.md"
         fields:
-          - {
-              label: Seitentitel,
-              name: title,
-              widget: string,
-              hint: "Haupttitel der Website.",
-            }
+          - { label: Titel, name: title, widget: string }
           - { label: "Inhalt", name: "body", widget: "markdown" }
