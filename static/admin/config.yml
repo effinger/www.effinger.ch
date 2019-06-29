@@ -21,4 +21,28 @@ collections:
         file: "content/sommer/_index.md"
         fields:
           - { label: Titel, name: title, widget: string }
-          - { label: "Inhalt", name: "body", widget: "markdown" }
+          - label: "Daten"
+            name: "dates"
+            hint: "Daten, an welchen die wetterabhängigen Sommeröffnungszeiten angezeigt werden."
+            widget: "list"
+            fields:
+              - {
+                  label: "Datum",
+                  name: "date",
+                  widget: "date",
+                  format: "YYYY-MM-DD",
+                  dateFormat: "DD.MM.YYYY",
+                }
+              - {
+                  label: "Wetter",
+                  name: "weather",
+                  widget: "select",
+                  options:
+                    [
+                      { label: "🌞", value: "sun" },
+                      { label: "🌧️", value: "rain" },
+                    ],
+                }
+          - { label: "Anzeige für Sonne", name: "sunDisplay", widget: "markdown" }
+          - { label: "Anzeige für Regen", name: "rainDisplay", widget: "markdown" }
+          - { label: "Zusätzlicher Inhalt", name: "body", widget: "markdown" }

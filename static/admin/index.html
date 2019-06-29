@@ -9,10 +9,37 @@
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </head>
   <body>
-    <button id="signout-button" type="button" class="btn btn-mod btn-large btn-round mt-40">
-      &rarr; zur Raumverwaltung
-    </button>
-    
+    <div
+      id="raumverwaltung"
+      style="display:none;text-align:center;margin-top:100px;margin-bottom:-100px;"
+    >
+      <h1 class="pt-100">Login für Hosts:</h1>
+      <a
+        href="/raumverwaltung/"
+        style="font-size:24px;border:1px solid black;padding:5px;border-radius:5px;"
+      >
+        &rarr; zur Raumverwaltung
+      </a>
+    </div>
+
     <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
+
+    <script>
+      // Show raumverwaltung button only if not logged in to the CMS.
+      function updateRaumverwaltung() {
+        console.log("change: " + location.hash);
+        if (location.hash.length > 2) {
+          console.log("hide");
+          document.getElementById("raumverwaltung").style.display = "none";
+        } else {
+          console.log("show");
+          document.getElementById("raumverwaltung").style.display = "block";
+        }
+      }
+
+      window.addEventListener("hashchange", updateRaumverwaltung, false);
+
+      updateRaumverwaltung();
+    </script>
   </body>
 </html>
