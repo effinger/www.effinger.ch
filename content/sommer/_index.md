@@ -1,6 +1,5 @@
 +++
 title = "Sommeröffnungszeiten"
-image = "/images/sommer.jpg"
 sunTitle = "🌞 sonnig und heiss"
 sunText = "Kaffeebar heute ab 19h geschlossen"
 rainTitle = "🌧️️️ regnerisch oder kühl"
