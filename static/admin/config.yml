@@ -43,25 +43,24 @@ collections:
                       { label: "🌧️", value: "rain" },
                     ],
                 }
-          - { label: "Header Bild", name: "image", widget: "image" }
           - {
               label: "Titel bei Sonne",
               name: "sunTitle",
-              widget: "text",
+              widget: "string",
             }
           - {
               label: "Text bei Sonne",
               name: "sunText",
-              widget: "text",
+              widget: "string",
             }
           - {
               label: "Titel bei Regen",
               name: "rainTitle",
-              widget: "text",
+              widget: "string",
             }
           - {
               label: "Text bei Regen",
               name: "rainText",
-              widget: "text",
+              widget: "string",
             }
           - { label: "Seiteninhalt", name: "body", widget: "markdown" }
