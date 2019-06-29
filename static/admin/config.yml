@@ -43,6 +43,25 @@ collections:
                       { label: "🌧️", value: "rain" },
                     ],
                 }
-          - { label: "Anzeige für Sonne", name: "sunDisplay", widget: "markdown" }
-          - { label: "Anzeige für Regen", name: "rainDisplay", widget: "markdown" }
-          - { label: "Zusätzlicher Inhalt", name: "body", widget: "markdown" }
+          - { label: "Header Bild", name: "image", widget: "image" }
+          - {
+              label: "Titel bei Sonne",
+              name: "sunTitle",
+              widget: "text",
+            }
+          - {
+              label: "Text bei Sonne",
+              name: "sunText",
+              widget: "text",
+            }
+          - {
+              label: "Titel bei Regen",
+              name: "rainTitle",
+              widget: "text",
+            }
+          - {
+              label: "Text bei Regen",
+              name: "rainText",
+              widget: "text",
+            }
+          - { label: "Seiteninhalt", name: "body", widget: "markdown" }

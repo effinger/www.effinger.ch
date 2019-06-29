@@ -7,28 +7,57 @@
   </nav>
 
   <!-- Header -->
-  <section class="small-section-header bg-dark-lighter">
-    <div class="relative container align-left pt-80">
+  <section class="home-section bg-dark-lighter fixed-height-small">
+    <div class="js-height-parent container">
 
-      <div class="row">
+      <!-- Hero Content -->
+      <div class="home-content">
+        <div class="home-text">
+          <h1 class="font-alt mb-50 mb-xs-30">Sommeröffnungszeiten</h1>
 
-        <div class="col-md-8">
-          <h1 class="hs-line-11 font-alt mb-0">Sommer</h1>
+          {{ $weather := (partial "sommer_wetter.html" .) }}
+
+          <div>
+            {{ index $.Site.Data.de.weekdays now.Weekday }}, {{ now.Format "02.01.2006" }}
+          </div>
+
+          {{ if eq $weather "sun" }}
+            <div class="contact-item contact-oeffnungszeiten mt-20 mb-20 clearfix">
+              <h4 class="uppercase">{{ .Params.suntitle | markdownify }}</h4>
+              <div class="wave-spacer"></div>
+              <div class="item" style="text-align: center; font-size: 40px;">
+                  {{ .Params.suntext | markdownify }}
+              </div>
+            </div>
+          {{ else if eq $weather "rain" }}
+            <div class="contact-item contact-oeffnungszeiten mt-20 mb-20 clearfix">
+              <h4 class="uppercase">{{ .Params.raintitle | markdownify }}</h4>
+              <div class="wave-spacer"></div>
+              <div class="item" style="text-align: center; font-size: 40px;">
+                  {{ .Params.raintext | markdownify }}
+              </div>
+            </div>
+          {{ else }}
+            <div class="contact-item contact-oeffnungszeiten mt-20 mb-20 clearfix">
+              <h4 class="uppercase">Heute Normale Öffnungszeiten</h4>
+              <div class="wave-spacer"></div>
+              <div class="item">
+                {{ partial "oeffnungszeiten_kaffeebar.html" . }}
+              </div>
+            </div>
+          {{ end }}
         </div>
       </div>
+      <!-- End Hero Content -->
 
     </div>
   </section>
   <!-- End Header -->
 
   <!-- Section -->
-  <section class="page-section bg-gray-lighter">
+  <section class="page-section bg-gray-lighter pt-70">
 
     <div class="container">
-
-      <h2 class="section-title font-alt mb-70 mb-sm-40">
-        <i class="fa fa-bullhorn fa-lg"></i> Sommeröffnungszeiten
-      </h2>
       <div class="row">
         <div class="col-md-8 col-md-offset-2">
           <div class="section-text">

@@ -1,0 +1,10 @@
+{{ $nowWithoutTime := now.Format "2006-01-02" }}
+{{ $weather := "" }}
+
+{{ range .Params.dates }}
+{{ if eq $nowWithoutTime .date }}
+    {{ $weather = .weather }}
+  {{ end }}
+{{ end }}
+
+{{ return $weather }}

@@ -16,7 +16,32 @@
       <!-- Hero Content -->
       <div class="home-content">
         <div class="home-text">
+
+          <!-- Sommeröffnungszeiten -->
+          {{ $sommerPage := .Site.GetPage "/sommer" }}
+          {{ $weather := (partial "sommer_wetter.html" $sommerPage)}}
+
+          {{ if eq $weather "sun" }}
+            <div class="contact-item contact-oeffnungszeiten contact-sommer-wetter mt-20 mb-20 clearfix">
+              <h4 class="uppercase">{{ $sommerPage.Params.suntitle | markdownify }}</h4>
+              <div class="wave-spacer"></div>
+              <div class="item" style="text-align: center; font-size: 40px;">
+                {{ $sommerPage.Params.suntext | markdownify }}
+                <a href="/sommer/" class="btn btn-mod btn-border-w btn-round btn-large">Warum?</a>
+              </div>
+            </div>
+          {{ else if eq $weather "rain" }}
+            <div class="contact-item contact-oeffnungszeiten contact-sommer-wetter mt-20 mb-20 clearfix">
+              <h4 class="uppercase">{{ $sommerPage.Params.raintitle | markdownify }}</h4>
+              <div class="wave-spacer"></div>
+              <div class="item" style="text-align: center; font-size: 40px;">
+                {{ $sommerPage.Params.raintext | markdownify }}
+                <a href="/sommer/" class="btn btn-mod btn-border-w btn-round btn-large">Warum?</a>
+              </div>
+            </div>
+          {{ else }}
           <img src="images/logo-effinger-gelb-weiss.svg" alt="Logo Effinger" class="mb-60 mb-xs-30 mt-50">
+          {{ end }}
           <h1 class="font-alt mb-10">
             Kaffeebar &amp; Coworking Space
           </h1>
@@ -347,7 +372,7 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-6">
-          <div class="contact-item contact-kaffeebar mt-20 mb-20 clearfix">
+          <div class="contact-item contact-oeffnungszeiten mt-20 mb-20 clearfix">
             <h4 class="uppercase">Kaffeebar</h4>
             <div class="wave-spacer"></div>
             <div class="item">
@@ -367,7 +392,7 @@
 
         </div>
         <div class="col-sm-6">
-          <div class="contact-item contact-kaffeebar mt-20 mb-20 clearfix">
+          <div class="contact-item contact-oeffnungszeiten mt-20 mb-20 clearfix">
             <h4 class="uppercase">Coworking Space</h4>
             <div class="wave-spacer"></div>
             <div class="item">
