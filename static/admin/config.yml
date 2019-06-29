@@ -39,8 +39,8 @@ collections:
                   widget: "select",
                   options:
                     [
-                      { label: "🌞", value: "sun" },
-                      { label: "🌧️", value: "rain" },
+                      { label: "🌞 sonnig und heiss", value: "sun" },
+                      { label: "🌧️ regen oder kühl", value: "rain" },
                     ],
                 }
           - {
