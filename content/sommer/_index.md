@@ -1,13 +1,16 @@
 +++
 title = "Sommeröffnungszeiten"
+sunDisplay = "🌞 Wir haben ab 19h geschlossen."
+rainDisplay = "🌧️ Wir haben bis 23h offen."
+
+[[dates]]
+date = "2019-06-29"
+weather = "sun"
+
+[[dates]]
+date = "2019-06-29"
+weather = "rain"
 +++
-{Datum}
-
-‚Sonne’ Wir haben ab 19h geschlossen.
-		oder
-‚Wolke mit Regen’ Wir haben bis 23h offen.
-
-
 Überall in Bern gibt’s neue und altbewährte Popups über den Sommer. Die wollen wir natürlich auch geniessen, deshalb passen wir unser Öffnungszeiten dem Wetter an. 
 
 Wenn das Wetter schön ist, schliessen wir um 19h. Ist es regnerisch und kühl, haben wir bis 23h für euch geöffnet. 
