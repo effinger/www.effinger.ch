@@ -1,13 +1,10 @@
 +++
 title = "Sommeröffnungszeiten"
+dates = []
 sunTitle = "🌞 sonnig und heiss"
 sunText = "Kaffeebar heute ab 19h geschlossen"
 rainTitle = "🌧️️️ regnerisch oder kühl"
 rainText = "Kaffeebar heute bis 23h offen"
-
-[[dates]]
-date = "2019-07-02"
-weather = "sun"
 +++
 # Warum Sommeröffnungszeiten?
 
