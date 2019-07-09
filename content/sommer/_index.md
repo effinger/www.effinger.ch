@@ -1,6 +1,6 @@
 +++
 title = "Sommeröffnungszeiten"
-sunTitle = "🌞 sonnig und heiss"
+sunTitle = "🌞 sonnig und warm"
 sunText = "Kaffeebar heute ab 19h geschlossen"
 rainTitle = "🌧️️️ regnerisch oder kühl"
 rainText = "Kaffeebar heute bis 23h offen"
