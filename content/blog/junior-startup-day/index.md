@@ -3,7 +3,7 @@ title = "Junior Startup Day"
 date = "2017-08-28"
 description = "Wir hatten am letzten Samstag den Junior Startup Day im Effinger. Es war beeindruckend, wie die Junior Teams innert 3.5 Stunden Ideen generiert, Businessideen entwickelt, auf der Strasse mit Kunden gesprochen und dann vor einer Jury präsentiert haben."
 image = "junior-startup-day.jpg"
-author = "Matthias Tobler"
+authors = [ "Matthias Tobler" ]
 comments = true
 tags = [ "Workshops" ]
 +++

@@ -3,7 +3,7 @@ title = "Ein Samstag im Effinger: 1. OG"
 date = "2017-02-17"
 description = "Wer sich in letzter Zeit an einem Samstag per Zufall ins 1.OG verirrt hätte, der hätte eine ganz emsige Werkel-Truppe antreffen können."
 image = "1og_wand.jpg"
-author = "Claudine Etter"
+authors = [ "Claudine Etter" ]
 comments = true
 tags = [ "Coworking", "Community" ]
 +++

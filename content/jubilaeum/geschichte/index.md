@@ -4,8 +4,8 @@ description = "Drei Jahre nach der Eröffnung gleicht der Effinger einem “viel
 startdate = 2019-03-15T18:00:00Z
 location = "Aquarium (EG)"
 time = "18:00 - 18:45 Uhr"
-author = "Matthias Tobler"
-authorimage = "matthias-tobler.jpg"
+organizer = "Matthias Tobler"
+organizerimage = "matthias-tobler.jpg"
 image = "Geschichte.gif"
 +++
 

@@ -2,7 +2,7 @@
 title = "Mit Javascript zum ersten Job"
 date = "2017-02-16"
 description = "Tageszeitung und Online"
-author = "Bernerzeitung"
+media = "Bernerzeitung"
 image = "bernerzeitung-mit-javascript-zum-ersten-job.jpg"
 
 pdf = "bernerzeitung-mit-javascript-zum-ersten-job.pdf"

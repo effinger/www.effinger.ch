@@ -3,7 +3,7 @@ title = "Coworking = Kollaboration"
 date = "2017-11-16"
 description = "Der Effinger ist auch ein Ort wo eben co-gewörkt wird. Der Effinger bedeutet vor allem auch Gemeinschaft und Zusammenarbeit. Es sind in den letzten eineinhalb Jahren diverse Kollaborationen entstanden. In unterschiedlicher und vielfältiger Zusammenstellung haben sich Leute für gemeinsame kleine und grosse Projekte zusammengefunden."
 image = "kollaborationen.jpg"
-author = "Urs Vögeli"
+authors = [ "Urs Vögeli" ]
 comments = true
 tags = [ "Coworking" ]
 +++

@@ -2,7 +2,7 @@
 title = "Ein Büro für alle: Coworking in Bern"
 date = "2015-08-31"
 description = "Newsletter und Online"
-author = "Ron Orp"
+media = "Ron Orp"
 image = "ron-orp-ein-buero-fuer-alle.jpg"
 
 pdf = "ron-orp-ein-buero-fuer-alle.pdf"

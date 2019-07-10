@@ -3,7 +3,7 @@ title = "Warten auf den Parkplatz"
 date = "2015-12-23"
 description = "Es wir langsam eng im ZeitRaum, unserem kleinen Coworking Space. Deshalb ist es bald Zeit, dass wir an die Effingerstrasse ziehen und uns dort auf 10 mal so viel Quadratmeter ausbreiten."
 image = "space-full.jpg"
-author = "Domenica Winkler"
+authors = [ "Domenica Winkler" ]
 comments = true
 tags = [ "Location", "Finanzen" ]
 +++

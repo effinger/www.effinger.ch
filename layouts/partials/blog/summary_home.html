@@ -8,7 +8,10 @@
 <!-- Date, Author -->
 <div class="blog-item-data mb-10">
   <a class="text-nowrap"><i class="fa fa-clock-o fa-inline"></i>&nbsp;{{ .Date.Format "02.01.2006" }}</a><span class="separator">&nbsp;</span><span class="visible-sm-inline"><br></span>
-  <a class="text-nowrap"><i class="fa fa-user fa-inline"></i>&nbsp;{{ .Params.author }}</a>
+  {{- range $i, $e := .Params.authors -}}
+  {{ if $i }}, {{ else }}<i class="fa fa-user fa-inline"></i>&nbsp;{{ end -}}
+  <a class="text-nowrap" href="/blog/authors/{{ $e | urlize }}">{{ $e }}</a>
+{{- end -}}
 </div>
 
 <!-- Post Title -->

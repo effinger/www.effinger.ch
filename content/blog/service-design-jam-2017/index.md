@@ -3,7 +3,7 @@ title = "Service Design Jam Bern"
 date = "2017-03-04"
 description = "Der Service Design Jam hat das Ziel, sich weltweit gemeinsam einer unerwarteten Herausforderung zu stellen und diese innerhalb von 48 Stunden zu erkunden, um auf diese Weise einige Prototypen zu entwickeln, mit deren Hilfe die Welt in 48 Stunden verändert werden konnte."
 image = "service-jam.jpg"
-author = "Daniel Osterwalder"
+authors = [ "Daniel Osterwalder" ]
 comments = true
 tags = [ "Coworking" ]
 +++

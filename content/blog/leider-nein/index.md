@@ -3,7 +3,7 @@ title = "Leider nein"
 date = "2015-02-19"
 description = "«Guten Tag Frau Hostettler, leider...» Ich musste das Mail, das mir Salome weiterleitete, gar nicht weiterlesen, um zu wissen, was das bedeutet: eine Absage für «unsere» Effingerstrasse. Wir hatten grosse Hoffnungen in unser Bewerbungsschreiben gesetzt und uns gute Chancen ausgerechnet."
 image = "themap.jpg"
-author = "Domenica Winkler"
+authors = [ "Domenica Winkler" ]
 comments = true
 tags = [ "Location" ]
 +++

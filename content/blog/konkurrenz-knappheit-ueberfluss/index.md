@@ -3,7 +3,7 @@ title = "Von Konkurrenz, Knappheit und Überfluss"
 date = "2016-09-05"
 description = "In den letzten Wochen wurde ich immer wieder darauf angesprochen, ob die anderen Coworking Spaces denn eine Konkurrenz für den Effinger seien. Wie gehen wir damit um? Wie kommen wir von einem Knappheits-Denken in eine Überfluss-Mentalität?"
 image = "kornfeld.jpg"
-author = "Marco Jakob"
+authors = [ "Marco Jakob" ]
 comments = true
 tags = [ "Community", "Grundsätze" ]
 +++

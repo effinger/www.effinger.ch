@@ -3,7 +3,7 @@ title = "Baugesuch eingereicht"
 date = "2015-08-03"
 description = "Nach etlichen oder besser unzählbar vielen Telefonaten mit den Behörden, nach Abklärungen mit dem Architekt, den Eigentümern und sonstigen Beteiligten, haben wir heute endlich unser Baugesuch für die Effingerstrasse 10 eingereicht."
 image = "baugesuch.jpg"
-author = "Domenica Winkler"
+authors = [ "Domenica Winkler" ]
 comments = true
 tags = [ "Location" ]
 +++

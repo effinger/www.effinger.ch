@@ -3,7 +3,7 @@ title = "Der Vielfalt-Turm"
 date = "2017-06-12"
 description = "Dieser Turm symbolisiert den ehrenamtlichen Einsatz unserer Community in den letzten zwei Monaten. Jeder, der 45 Minuten Zeit in den Betrieb, in eine Rolle oder für ein andere Community-Mitglied investiert hat, durfte einen LEGO-Stein verbauen."
 image = "legoturm-thumb.jpg"
-author = "Urs Vögeli"
+authors = [ "Urs Vögeli" ]
 comments = true
 tags = [ "Community", "Coworking" ]
 +++

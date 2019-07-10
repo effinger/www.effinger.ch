@@ -3,7 +3,7 @@ title = "Finanzen der Effinger Coworking Community"
 date = "2016-05-09"
 description = "Mit Spannung haben wir die Finanzzahlen aus dem ersten Monat im Coworking Space erwartet. Im Vorfeld hatten wir natürlich Pläne geschmiedet. Ob sich die Realität an unsere Pläne hält? Dieser Frage gehen wir nach, obwohl es nach 6 Wochen Betrieb natürlich immer noch sehr früh ist."
 image = "finanzen-april-2016.png"
-author = "Marco Jakob"
+authors = [ "Marco Jakob" ]
 comments = true
 tags = [ "Finanzen", "Coworking", "Community" ]
 +++

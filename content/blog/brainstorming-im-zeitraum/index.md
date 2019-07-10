@@ -3,7 +3,7 @@ title = "Brainstorming im ZeitRaum"
 date = "2015-06-14"
 description = "Um ein mehrjähriges Konzept für die Gestaltung einer Weihnachts- und Osterwerbung zu entwickeln, lud Matthias Leutwyler vergangene Woche alle Interessierten zu einem Brainstorming ein."
 image = "brainstorming.jpg"
-author = "Adrian Däpp"
+authors = [ "Adrian Däpp" ]
 comments = true
 tags = [ "Community" ]
 +++

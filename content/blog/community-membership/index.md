@@ -3,7 +3,7 @@ title = "Community Membership"
 date = "2016-03-08"
 description = "Was bedeutet eigentlich die Community Membership? Ehrlich gesagt war uns das auch nicht immer so klar. Erfahre, wie wir bereits vor Eröffnung des Effingers so einige Änderungen in unserer Membership-Struktur gemacht haben."
 image = "community.jpg"
-author = "Marco Jakob"
+authors = [ "Marco Jakob" ]
 comments = true
 tags = [ "Community" ]
 +++

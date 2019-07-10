@@ -3,7 +3,7 @@ title = "THES im Effinger"
 date = "2016-11-28"
 description = "Über 70 Bildungsinteressierte haben im Effinger im ersten Stock auf den Start vom TauscHaus/EduSpace und dessen Crowdfunding-Kampagne angestossen."
 image = "thes-eroeffnung.jpg"
-author = "Marco Jakob"
+authors = [ "Marco Jakob" ]
 comments = true
 tags = [ "Coworking", "Colearning" ]
 +++

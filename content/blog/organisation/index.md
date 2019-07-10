@@ -3,7 +3,7 @@ title = "Organisation"
 date = "2015-07-02"
 description = "Wie soll unser Coworkingen Space betrieben werden? Bald merkten wir, dass das übliche Modell für uns nicht passt. Wir organisieren uns mit Rollen, Beratungsprozess und Soziokratie."
 image = "organisation.jpg"
-author = "Marco Jakob"
+authors = [ "Marco Jakob" ]
 comments = true
 tags = [ "Community", "Grundsätze" ]
 +++

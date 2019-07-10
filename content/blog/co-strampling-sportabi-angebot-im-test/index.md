@@ -3,7 +3,7 @@ title = "Co-Strampling: Das neue Sportabi-Angebot im Test"
 date = "2017-10-28"
 description = "Seit einigen Wochen läuft bei uns probeweise ein übertragbares Sportabi."
 image = "effinger-fitness.jpg"
-author = "Claudine Etter"
+authors = [ "Claudine Etter" ]
 comments = true
 tags = [ "Coworking" ]
 +++

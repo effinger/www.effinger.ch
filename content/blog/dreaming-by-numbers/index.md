@@ -3,7 +3,7 @@ title = "Dreaming By Numbers - ein Vorgeschmack"
 date = "2015-02-21"
 description = "Ich kam gestern bereits in den Genuss eines Vorgeschmacks auf nächsten Freitag. 'Dreaming By Numbers' begeistern mich jedes Mal wieder aufs Neue!"
 image = "dreaming-by-numbers.jpg"
-author = "Salome Hostettler"
+authors = [ "Salome Hostettler" ]
 comments = true
 tags = [ "Unterhaltung" ]
 +++

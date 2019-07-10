@@ -2,7 +2,7 @@
 title = "Die Freidenker vom Monbijou"
 date = "2017-02-18"
 description = "Online"
-author = "Bernerzeitung"
+media = "Bernerzeitung"
 image = "bernerzeitung-die-freidenker-vom-monbijou.jpg"
 
 pdf = "bernerzeitung-die-freidenker-vom-monbijou.pdf"

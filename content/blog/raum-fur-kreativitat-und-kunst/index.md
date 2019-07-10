@@ -3,7 +3,7 @@ title = "Raum für Kreativität und Kunst"
 date = "2018-10-22"
 description = "Seit November 2017 ist der Raum Rosengarten im Effinger als Raum für Kunst und Kreativität eingerichtet. Seit Mitte August dieses Jahres wird er zum normalen Coworking-Tarif von Personen genutzt, die darin an Kunst- oder Kreativprojekten arbeiten..."
 image = "rosengarten.jpg"
-author = "Isabel Jakob"
+authors = [ "Isabel Jakob" ]
 comments = true
 tags = [ "Coworking", "Community" ]
 +++

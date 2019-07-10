@@ -3,7 +3,7 @@ title = "Ein Ruf aus dem Atelier"
 date = "2015-11-25"
 description = "Früh entstand der Wunsch nebst Kaffee, Coworker an Büroarbeitsplätzen auch Künstler und Handwerker zu vereinen. Der Austausch soll über Berufsgrenzen hinaus stattfinden und Vernetzung entstehen lassen."
 image = "atelier.jpg"
-author = "Graziella Bärtsch"
+authors = [ "Graziella Bärtsch" ]
 comments = true
 tags = [ "Coworking", "Atelier" ]
 +++

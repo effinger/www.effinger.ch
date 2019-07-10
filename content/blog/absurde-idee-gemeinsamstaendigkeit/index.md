@@ -3,7 +3,7 @@ title = "Eine absurde Idee: Gemeinsamständigkeit"
 date = "2015-03-07"
 description = "Wir hielten uns ganz an das Zitat von Albert Einstein «Wenn eine Idee zuerst nicht absurd erscheint, dann taugt sie nichts.» als wir uns zu einem Literatur- und Diskussionsabend trafen."
 image = "literaturabend.jpg"
-author = "Matthias Tobler"
+authors = [ "Matthias Tobler" ]
 comments = "popupcoworking"
 tags = [ "Inspiration", "Grundsätze" ]
 +++

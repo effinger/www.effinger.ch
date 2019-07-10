@@ -3,7 +3,7 @@ title = "Colearning - die Oberstufe im Effinger"
 date = "2019-04-19"
 description = "Jugendliche ziehen im Effinger ein. Anstatt in der Schule lernen Jugendliche im Coworking Space. Damit rückt die Welt der Jugendlichen näher zur Welt der Erwachsenen. Das Lernen findet direkt im Leben und mitten in der Gesellschaft statt."
 image = "colearning-bern.jpg"
-author = "Marco Jakob"
+authors = [ "Marco Jakob" ]
 comments = true
 tags = [ "Colearning" ]
 +++

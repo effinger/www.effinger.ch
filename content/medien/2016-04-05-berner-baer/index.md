@@ -2,7 +2,7 @@
 title = "Neue Bar für kreative Köpfe"
 date = "2016-04-05"
 description = "Wochenzeitung und Online"
-author = "BernerBär"
+media = "BernerBär"
 image = "berner-baer-neue-bar-fuer-kreative-koepfe.jpg"
 
 pdf = "berner-baer-neue-bar-fuer-kreative-koepfe.pdf"

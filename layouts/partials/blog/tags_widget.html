@@ -4,13 +4,9 @@
 
   <div class="widget-body">
     <div class="tags">
-      {{ $title := .Title }}
-      {{ range $taxonomyname, $taxonomy := .Site.Taxonomies.tags }}
-        {{ if eq $title $taxonomyname }}
-          {{ partial "blog/tag_link_active.html" $taxonomyname }}
-        {{ else }}
-          {{ partial "blog/tag_link.html" $taxonomyname }}
-        {{ end }}
+      {{ $current := . }}
+      {{ range .Site.Taxonomies.tags }}
+        <a {{ if eq $current.Permalink .Page.Permalink }}class="active"{{ end }} href="{{ .Page.Permalink }}">{{ .Page.Title }}</a>
       {{ end }}
     </div>
   </div>

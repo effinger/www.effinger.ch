@@ -2,7 +2,7 @@
 title = "Aus Einwanderern Experten machen"
 date = "2017-01-03"
 description = "Monatszeitung"
-author = "Migros Magazin"
+media = "Migros Magazin"
 image = "migros-magazin-aus-einwanderern-experten-machen.jpg"
 
 pdf = "migros-magazin-aus-einwanderern-experten-machen.pdf"

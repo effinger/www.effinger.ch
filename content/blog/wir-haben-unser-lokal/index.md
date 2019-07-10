@@ -3,7 +3,7 @@ title = "Wir haben unser Lokal!"
 date = "2015-07-13"
 description = "Wir haben eine Location für Coworking und Café/Bar! Unsere neue Heimat wird die Effingerstrasse 10 in Bern."
 image = "effingerstrasse-10.jpg"
-author = "Domenica Winkler"
+authors = [ "Domenica Winkler" ]
 comments = true
 tags = [ "Location" ]
 +++

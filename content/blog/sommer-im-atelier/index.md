@@ -3,7 +3,7 @@ title = "Sommer im Atelier"
 date = "2017-06-27"
 description = "Der Sommer hat im Effinger-Shop Einzug gehalten. Jetzt kann man seine Feriengrüsse stilvoll auf den wunderbaren Sommer-Karten von Claudine vom Atelier C verschicken."
 image = "claudine-etter-melone-1.jpg"
-author = "Damaris Berger"
+authors = [ "Damaris Berger" ]
 comments = true
 tags = [ "Atelier", "Coworking" ]
 +++

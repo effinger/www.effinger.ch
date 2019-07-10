@@ -3,7 +3,7 @@ title = "Crowdfunding erfolgreich"
 date = "2016-02-08"
 description = "Am 1. Januar sind wir mit einer Crowdfunding-Kampagne ins Jahr gestartet. Dass dann so ein Feuerwerk losging und wir Unterstützung von allen Seiten bekommen haben, hat uns überrascht und mega ermutigt."
 image = "crowdfunding.jpg"
-author = "Marco Jakob"
+authors = [ "Marco Jakob" ]
 comments = true
 tags = [ "Finanzen" ]
 +++

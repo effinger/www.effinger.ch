@@ -2,7 +2,7 @@
 title = "Effinger, Co-Working Space & Café, Bern"
 date = "2016-09-01"
 description = "Magazin und Online"
-author = "Places"
+media = "Places"
 image = "places-effinger.jpg"
 
 pdf = "places-effinger.pdf"

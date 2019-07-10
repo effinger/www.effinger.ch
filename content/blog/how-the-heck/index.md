@@ -3,7 +3,7 @@ title = "How-the-Heck Treffen"
 date = "2014-11-27"
 description = "Ziemlich gespannt und ein bisschen nervös warteten wir im Apfelgold auf die rund dreissig Nasen, die sich für den How-the-heck Abend angemeldet hatten."
 image = "how-the-heck.jpg"
-author = "Salome Hostettler"
+authors = [ "Salome Hostettler" ]
 comments = true
 tags = [ "Community" ]
 +++

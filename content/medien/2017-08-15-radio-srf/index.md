@@ -2,7 +2,7 @@
 title = "Coworking unterstützt lokales Gewerbe"
 date = "2017-08-15"
 description = "Radio und Online"
-author = "Radio SRF"
+media = "Radio SRF"
 image = "radio-srf-rendez-vous-coworking-unterstuetzt-lokales-gewerbe.jpg"
 
 mp3 = "radio-srf-rendez-vous-coworking-unterstuetzt-lokales-gewerbe.mp3"

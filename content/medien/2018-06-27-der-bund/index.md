@@ -2,7 +2,7 @@
 title = "Zupacken, wo sich die Chance bietet"
 date = "2018-06-27"
 description = "Tageszeitung und Online"
-author = "Der Bund"
+media = "Der Bund"
 image = "bund-zupacken-wo-sich-die-chance-bietet.jpg"
 
 pdf = "bund-zupacken-wo-sich-die-chance-bietet.pdf"

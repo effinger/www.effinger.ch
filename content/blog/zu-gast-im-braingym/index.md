@@ -3,7 +3,7 @@ title = "Zu Gast im BrainGym"
 date = "2015-04-10"
 description = "3 Wochen vor Einzug in unsere Base waren wir heute zu Gast im BrainGym der Swisscom. Wir entwickelten die Einrichtungsideen für die Aarbergergasse weiter, tauchten ein in die arbeitsame Atmosphäre und tranken Kaffee."
 image = "braingym.jpg"
-author = "Salome Hostettler"
+authors = [ "Salome Hostettler" ]
 comments = true
 tags = [ "Coworking" ]
 +++

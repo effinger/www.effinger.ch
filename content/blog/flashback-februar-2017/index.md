@@ -3,7 +3,7 @@ title = "Flashback-Februar"
 date = "2017-03-01"
 description = "Monatsrückblick für Eilige. Der Effinger wächst an allen Ecken und Enden, täglich ergeben sich neue Projekte und Ideen, manchmal eine Herausforderung, alles im Blick zu behalten. Daher hier auf einen Blick, den Monatsrückblick!"
 image = "Effinger_Flashback_Februar_2017_teaser.jpg"
-author = "Claudine Etter"
+authors = [ "Claudine Etter" ]
 comments = true
 tags = [ "Coworking", "Community" ]
 +++

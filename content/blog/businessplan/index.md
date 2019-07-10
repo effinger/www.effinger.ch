@@ -3,7 +3,7 @@ title = "Wie viel kostet das? – Unser Businessplan"
 date = "2015-11-12"
 description = "«Wie viel kostet das?» Genau mit dieser Frage hat sich die Community ausgiebig beschäftigt. Dies wollen wir hier mit unserem Businessplan transparent offen legen."
 image = "geplante-auslastung.png"
-author = "Christoph Höschele"
+authors = [ "Christoph Höschele" ]
 comments = true
 tags = [ "Coworking", "Finanzen" ]
 +++

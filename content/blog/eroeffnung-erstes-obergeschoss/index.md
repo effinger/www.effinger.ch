@@ -3,7 +3,7 @@ title = "Eröffnung 1. Obergeschoss"
 date = "2016-10-21"
 description = "Seit Anfang Oktober gibt es den Effinger auf drei Geschossen. In den letzten vier Wochen haben viele von uns mit viel Elan das 1. Obergeschoss mit über 220m2 eingerichtet. Nun laden wir euch zu einer Kostprobe der neuen Räume und der Workshops ein."
 image = "design-thinking-raum.jpg"
-author = "Daniel Osterwalder"
+authors = [ "Daniel Osterwalder" ]
 comments = true
 tags = [ "Location", "Workshops" ]
 +++

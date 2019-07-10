@@ -4,7 +4,7 @@ description = "Die Feder ist bekanntlich stärker als das Schwert. Und weil Glad
 startdate = 2019-03-15T20:30:00Z
 location = "Kaffeebar  (EG)"
 time = "20:30 Uhr"
-author = "Kai Wieoimmer U.A."
-authorimage = "poetry_slam.jpg"
+organizer = "Kai Wieoimmer U.A."
+organizerimage = "poetry_slam.jpg"
 image = "poetry_slam.jpg"
 +++  

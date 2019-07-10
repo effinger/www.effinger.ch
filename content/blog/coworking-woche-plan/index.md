@@ -3,7 +3,7 @@ title = "Coworking Woche - Der Plan"
 date = "2015-02-17"
 description = "In einer Privatwohnung in Wabern eröffnen wir für eine Woche einen Pop-up Coworking Space. Ob Coworker oder nicht-so-Coworker - alle sind willkommen. Entweder durch den Tag oder am Abend. Hier ist der Wochenplan."
 image = "coworking-woche.png"
-author = "Marco Jakob"
+authors = [ "Marco Jakob" ]
 comments = true
 tags = [ "Coworking" ]
 +++

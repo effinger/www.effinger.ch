@@ -3,7 +3,7 @@ title = "Einweihung gemeinsame Werkstatt Belpberg"
 date = "2017-04-30"
 description = "Wir feiern die Einweihung der gemeinsamen Werkstatt auf dem Belpberg. Schon seit Jahrzehnten wird auf diesem Bauernhof gebaut und repariert. Neu gibt es dort eine CNC-Maschine, welche computergesteuerte Arbeiten mit Holz und Alu ermöglicht."
 image = "05.jpg"
-author = "Marco Jakob"
+authors = [ "Marco Jakob" ]
 comments = true
 tags = [ "Community", "Werkstatt" ]
 +++

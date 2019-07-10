@@ -4,8 +4,8 @@ description = "Gutes Branding entsteht durch kraftvolles Design und smarter Stra
 startdate = 2019-03-15T16:00:00Z
 location = "Rosengarten (OG)"
 time = "16:00 - 16:45 Uhr "
-author = "Manuel Bürli"
-authorimage = "manuel-buerli.jpg"
+organizer = "Manuel Bürli"
+organizerimage = "manuel-buerli.jpg"
 image = ""
 +++
 

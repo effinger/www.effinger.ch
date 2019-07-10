@@ -3,7 +3,7 @@ title = "Effinger Identität und Entscheidungsfindung – Teil III"
 date = "2017-04-21"
 description = "Zu den Kernbegriffen sind hier nun ein paar Beispiel-Fragen definiert. Zur Veranschaulichung wird einerseits gefragt, ob „damit“ der gewünschte Effekt erreicht wird, anderseits aber auch darauf hingewiesen, wo mögliche Fallstricke lauern."
 image = "image3.jpeg"
-author = "Werner Schuller"
+authors = [ "Werner Schuller" ]
 comments = true
 tags = [ "Community", "Grundsätze" ]
 

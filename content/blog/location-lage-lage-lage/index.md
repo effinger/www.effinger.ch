@@ -3,7 +3,7 @@ title = "Location: Lage, Lage, Lage"
 date = "2014-12-14"
 description = "Das wichtigste Kriterium für den richtigen Standort für unseren Coworking Space mit Café/Bar ist die Lage. Es ist ein bisschen wie die Quadratur des Kreises: gute Lage, genügend Platz, zentral und bezahlbar."
 image = "feuerwehrkaserne.jpg"
-author = "Domenica Winkler"
+authors = [ "Domenica Winkler" ]
 comments = "popupcoworking"
 tags = [ "Location" ]
 +++

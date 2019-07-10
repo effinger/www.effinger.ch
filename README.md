@@ -68,7 +68,7 @@ To create a new blog post follow these steps:
     * **date**: The publish date in reverse notation.
     * **description**: A summary of the text. The summary is displayed in the blog overview and also when the post is shared in Slack or social media. Google also uses this description in search results. So this is quite important.
     * **image**: The main image of the post. This is - like the description - displayed in the overview and on social media.
-    * **author**: The full name of the author.
+    * **authors**: A list of authors (full name).
     * **comments**: If set to true, comments are enabled.
     * **tags**: The tags of the blog post. Make sure not to use too many new tags. To see an overview of all existing tags see the sidebar in the [blog overview](https://www.effinger.ch/blog/).
 5. Add blog images. All images of the blog post should be stored in the folder of the post.

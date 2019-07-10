@@ -1,11 +1,17 @@
-<a class="text-nowrap"><i class="fa fa-clock-o fa-inline"></i>&nbsp;{{ .Date.Format "02.01.2006" }}</a><span class="separator">&nbsp;</span>
-<a class="text-nowrap"><i class="fa fa-user fa-inline"></i>&nbsp;{{ .Params.author }}</a><span class="separator">&nbsp;</span>
-{{ with .Params.tags }}
-  {{ $sort := sort . }}
-  {{ $links := apply $sort "partial" "blog/tag_link.html" "." }}
-  {{ $clean := apply $links "chomp" "." }}
-  <i class="fa fa-tags fa-inline"></i>&nbsp;{{ delimit $clean ", " }}<span class="separator">&nbsp;</span>
-{{ end }}
-{{ if .Params.comments }}
+<span class="text-nowrap"><i class="fa fa-clock-o fa-inline"></i>&nbsp;{{ .Date.Format "02.01.2006" }}</span><span class="separator">&nbsp;</span>
+
+{{- range $i, $e := .Params.authors -}}
+  {{ if $i }}, {{ else }}<i class="fa fa-user fa-inline"></i>&nbsp;{{ end -}}
+  <a class="text-nowrap" href="/blog/authors/{{ $e | urlize }}">{{ $e }}</a>
+{{- end -}}
+<span class="separator">&nbsp;</span>
+
+{{- range $i, $e := .Params.tags -}}
+  {{ if $i }}, {{ else }}<i class="fa fa-tags fa-inline"></i>&nbsp;{{ end -}}
+  <a class="text-nowrap" href="/blog/tags/{{ $e | urlize }}">{{ $e }}</a>
+{{- end -}}
+<span class="separator">&nbsp;</span>
+
+{{- if .Params.comments -}}
 <i class="fa fa-comments fa-inline"></i>&nbsp;<a href="{{ .RelPermalink }}#comments" class="text-nowrap" data-disqus-identifier="{{ .RelPermalink }}">Kommentare</a>
 {{ end }}

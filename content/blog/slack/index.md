@@ -3,7 +3,7 @@ title = "Slack-Community"
 date = "2015-01-02"
 description = "Ja, wir wünschen uns einen Coworking Space mit Café/Bar. Aber es geht um weit mehr als um ein Gebäude mit Arbeitstischen und Kaffeetassen. Es geht um Menschen und Beziehungen. Slack bietet uns dazu ganz neue Möglichkeiten für den Austausch."
 image = "slack-community.jpg"
-author = "Marco Jakob"
+authors = [ "Marco Jakob" ]
 comments = "popupcoworking"
 tags = [ "Community" ]
 +++

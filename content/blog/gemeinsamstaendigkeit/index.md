@@ -3,7 +3,7 @@ title = "Gemeinsamständigkeit"
 date = "2015-02-14"
 description = "Coworking als Mieten von (trendigem) Arbeitsplatz reicht nicht. Gemeinsame Selbständigkeit ist ein Vorschlag einer attraktiven und radikal neuen Arbeitsform."
 image = "gemeinsamstaendigkeit.jpg"
-author = "Marco Jakob"
+authors = [ "Marco Jakob" ]
 comments = "popupcoworking"
 tags = [ "Inspiration", "Grundsätze" ]
 +++

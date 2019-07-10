@@ -3,7 +3,7 @@ title = "Das Salz in der Suppe oder wie wir Community leben"
 date = "2017-02-06"
 description = "Was gibt es schöneres, als – nach einem strengen und arbeitsamen Vormittag - an einen reich gedeckten Tisch sitzen zu dürfen und gemeinsam, mit wunderbaren, spannenden Coworkern zu speisen."
 image = "Zmittag_2_OG_b.jpg"
-author = "Claudine Etter"
+authors = [ "Claudine Etter" ]
 comments = true
 tags = [ "Coworking", "Community" ]
 +++

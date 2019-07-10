@@ -3,7 +3,7 @@ title = "Man lernt nie aus"
 date = "2015-01-07"
 description = "Coworking Tag im Apfelgold. Das kann ja nur gut werden. Das Schöne an Zusammenarbeit ist ja, dass man unter anderem auch Neues lernt."
 image = "coworking-1.jpg"
-author = "Domenica Winkler"
+authors = [ "Domenica Winkler" ]
 comments = true
 tags = [ "Inspiration" ]
 +++

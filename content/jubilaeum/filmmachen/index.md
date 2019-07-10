@@ -4,8 +4,8 @@ description = "Erlebe was es bedeutet, einen Film vom Konzept bis zur Umsetzung 
 startdate = 2019-03-15T15:00:00Z
 location = "Effinger im Labor (UG)"
 time = "15:00 - 17:00 Uhr | 18:00 - 20:00 Uhr"
-author = "Fabian Steiner, Jonathan Hess, Jasmin Egger"
-authorimage = "filmteam.jpg"
+organizer = "Fabian Steiner, Jonathan Hess, Jasmin Egger"
+organizerimage = "filmteam.jpg"
 image = "labor.jpg"
 +++  
 

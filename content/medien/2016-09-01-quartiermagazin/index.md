@@ -2,7 +2,7 @@
 title = "Der Konkurrenzgedanke ist uns fremd"
 date = "2016-09-01"
 description = "Quartierzeitung"
-author = "QuartierMagazin Stadtteil III Bern"
+media = "QuartierMagazin Stadtteil III Bern"
 image = "quartiermagazin-der-konkurrenzgedanke-ist-uns-fremd.jpg"
 
 pdf = "quartiermagazin-der-konkurrenzgedanke-ist-uns-fremd.pdf"

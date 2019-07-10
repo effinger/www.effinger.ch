@@ -3,7 +3,7 @@ title = "Brownbag: Inspirierender Austausch am Mittagstisch"
 date = "2018-02-13"
 description = "Als wäre der (all)tägliche Austausch im Effinger nicht schon genug anregend, gibt es seit Mitte letzen Jahres zusätzlich die Brownbags. Das sind stündige Happenings, bei denen sich Coworker und Interessierte treffen und zu einem im Voraus angekündeten Thema austauschen."
 image = "brownbag_01.jpg"
-author = "Manuel Bürli"
+authors = [ "Manuel Bürli" ]
 comments = true
 tags = [ "Coworking" ]
 +++

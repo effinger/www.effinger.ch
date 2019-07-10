@@ -2,7 +2,7 @@
 title = "Der Filmemacher arbeitet neben dem T-Shirt Designer"
 date = "2015-08-27"
 description = "Tageszeitung und Online"
-author = "Der Bund"
+media = "Der Bund"
 image = "bund-filmemacher-arbeitet-neben-tshirt-designer.jpg"
 
 pdf = "bund-filmemacher-arbeitet-neben-tshirt-designer.pdf"

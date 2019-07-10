@@ -3,7 +3,7 @@ title = "Die Community hinter dem Effinger"
 date = "2015-09-24"
 description = "Von Anfang an ging es uns darum, Menschen zusammenzubringen und eine Community aufzubauen. Deshalb haben wir uns aufgemacht, so viel Interessierte in den Aufbau zu involvieren, wie möglich."
 image = "analytics.png"
-author = "Marco Jakob"
+authors = [ "Marco Jakob" ]
 comments = true
 tags = [ "Community" ]
 +++

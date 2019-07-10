@@ -3,7 +3,7 @@ title = "Coworking Space zusammen betreiben"
 date = "2015-02-15"
 description = "Wir gingen vom Offensichtlichen aus: Es gibt einen Space. Ein oder zwei Personen tragen die Verantwortung für den Betrieb und beziehen einen Lohn. Die Coworker sind die Kunden. Doch wäre es denkbar, den Coworking Space auch als Gemeinschaft zu führen?"
 image = "coworking.jpg"
-author = "Marco Jakob"
+authors = [ "Marco Jakob" ]
 comments = "popupcoworking"
 tags = [ "Inspiration", "Grundsätze" ]
 +++

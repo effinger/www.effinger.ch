@@ -3,7 +3,7 @@ title = "Effinger Goes Underground"
 date = "2017-06-20"
 description = "Hier tut sich was, in den Tiefen des Effingers! Da verschwinden täglich, mit Holzlatten und Werkzeugkasten bepackte Effianer im Untergeschoss, und tauchen erst spät Abends wieder an der Oberfläche auf, mit farbigen Händen, Holzspänen zwischen den Schnürsenkeln und einem müden aber zufriedenen Grinsen."
 image = "effinger-ug.jpg"
-author = "Claudine Etter"
+authors = [ "Claudine Etter" ]
 comments = true
 tags = [ "Coworking", "Einrichtung" ]
 +++

@@ -2,7 +2,7 @@
 title = "IT-Lösung für Flüchtlinge"
 date = "2016-12-01"
 description = "Tageszeitung und Online"
-author = "Bernerzeitung"
+media = "Bernerzeitung"
 image = "bernerzeitung-it-loesung-fuer-fluechtlinge.jpg"
 
 pdf = "bernerzeitung-it-loesung-fuer-fluechtlinge.pdf"

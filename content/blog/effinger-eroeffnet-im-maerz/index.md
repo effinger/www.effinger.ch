@@ -3,7 +3,7 @@ title = "Der Effinger eröffnet im März!"
 date = "2016-02-16"
 description = "Das Jahr ist noch jung und rund um den Effinger ist schon so viel passiert. Auf jeden Fall könnt ihr euch den Samstag, 19. März in der Agenda eintragen. Dann feiern wir nämlich Eröffnung im Effinger."
 image = "bau-01.jpg"
-author = "Marco Jakob"
+authors = [ "Marco Jakob" ]
 comments = true
 tags = [ "Location", "Finanzen" ]
 +++

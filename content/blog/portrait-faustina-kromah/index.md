@@ -3,7 +3,7 @@ title = "Kaffeepause mit Faustina Kromah"
 date = "2017-10-08"
 description = "Der Effinger wird geprägt durch die verschiedenen Menschen, die hier ein- und ausgehen. Wir möchten euch einige von ihnen näher vorstellen. Hier  ein Einblick in den Alltag von Faustina Kromah, dipl. Masseurin und Bewegungspädagogin."
 image = "faustina-draussen.jpg"
-author = "Graziella Bärtsch"
+authors = [ "Graziella Bärtsch" ]
 comments = true
 tags = [ "Portrait" ]
 +++

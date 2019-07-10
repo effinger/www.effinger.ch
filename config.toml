@@ -7,6 +7,7 @@ removePathAccents = true
 enableRobotsTXT = true
 paginatePath = "seite"
 
+disableKinds = [ "taxonomyTerm" ]
 disableFastRender = true
 
 [params]
@@ -19,9 +20,11 @@ disableFastRender = true
   category = "categories"  # Used for events
   finanzen = "finanzen"
   tag = "tags"
+  author = "authors"
 
 [permalinks]
-  tags = "/blog/tag/:slug/"
+  tags = "/blog/tags/:slug/"
+  authors = "/blog/authors/:slug/"
 
 [[menu.main]]
   name = "Community"

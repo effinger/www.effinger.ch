@@ -3,7 +3,7 @@ title = "LEGO und Pi-Quadrat-Prozent"
 date = "2017-01-20"
 description = "Da wir unseren Coworking Space ehrenamtlich als Community betreiben und wir auch Zeit ineinander investieren wollen, haben wir die Idee von π²-% (Pi-Quadrat-Prozent) entwickelt. Jeder Effianer wendet rund 9.869604% seiner Arbeitszeit im Effinger für die Community auf."
 image = "lego-mosaik.jpg"
-author = "Urs Vögeli"
+authors = [ "Urs Vögeli" ]
 comments = true
 tags = [ "Coworking", "Community" ]
 +++

@@ -3,7 +3,7 @@ title = "Coffitivity: oder warum sichs im Café besser arbeiten lässt"
 date = "2014-12-17"
 description = "Angeblich können sich viele Menschen besser konzentrieren, wenn ein gewisser Lärmteppich vorhanden ist. Einen solchen findet man klassischer Weise in einem Café. Coffitivity bringt die Lärmkulisse eines Cafés nach Hause."
 image = "coffitivity.png"
-author = "Domenica Winkler"
+authors = [ "Domenica Winkler" ]
 comments = true
 tags = [ "Coworking" ]
 +++

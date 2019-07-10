@@ -3,7 +3,7 @@ title = "Neues aus dem Atelier"
 date = "2017-05-06"
 description = "Das Effinger-Atelier bietet verschiedenen Künstlern und Kreativen ein Zuhause. Im Atelier und in der angrenzenden Werkstatt entsteht Handgemachtes, Ausgefallenes, Individuelles, Schönes und Einzigartiges. Das Atelier ist ein Ort, an dem sich Kreativität ganz praktisch ausdrückt."
 image = "Bild1.jpg"
-author = "Damaris Berger"
+authors = [ "Damaris Berger" ]
 comments = true
 tags = [ "Atelier", "Community", "Werkstatt" ]
 +++

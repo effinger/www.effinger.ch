@@ -3,7 +3,7 @@ title = "Kaffeepause mit Claudia Schären"
 date = "2017-03-11"
 description = "Der Effinger wird geprägt durch die verschiedenen Menschen, die hier ein- und ausgehen. Wir möchten euch einige von ihnen näher vorstellen. Diesmal im Gespräch mit Claudia Schären, Office Managerin und Raumvermieterin im Effinger."
 image = "effinger_blog_claudia-draussen.jpg"
-author = "Graziella Bärtsch"
+authors = [ "Graziella Bärtsch" ]
 comments = true
 tags = [ "Portrait" ]
 +++

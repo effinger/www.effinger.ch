@@ -2,7 +2,7 @@
 title = "Die BEsten Bier-Lokale in Bern"
 date = "2016-07-23"
 description = "Wochenzeitung und Online"
-author = "BernerBär"
+media = "BernerBär"
 image = "berner-baer-besten-bier-lokale-in-bern.jpg"
 
 pdf = "berner-baer-besten-bier-lokale-in-bern.pdf"

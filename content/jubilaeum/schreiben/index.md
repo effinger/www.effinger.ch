@@ -4,8 +4,8 @@ description = "In Venezuela geboren. 17 Jahren in der Schweiz wohnhaft. Diese S√
 startdate = 2019-03-15T16:00:00Z
 location = "Pl√§fe (EG)"
 time = "16:00 - 17:30 Uhr"
-author = "Sandra von Siebenthal"
-authorimage = "sandra.jpg"
+organizer = "Sandra von Siebenthal"
+organizerimage = "sandra.jpg"
 image = ""
 +++
 

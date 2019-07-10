@@ -3,7 +3,7 @@ title = "Der Effinger wächst in den ersten Stock"
 date = "2016-09-06"
 description = "Weil der Effinger all die Leute mit ihren Ideen und der grossen Vielfalt kaum fassen kann, erweitern wir unsere Räume ab Oktober in den ersten Stock. Es sind wunderschöne und hohe Räume. Wir freuen uns darauf wie kleine Kinder."
 image = "effinger-1og.jpg"
-author = "Marco Jakob"
+authors = [ "Marco Jakob" ]
 comments = true
 tags = [ "Location" ]
 +++

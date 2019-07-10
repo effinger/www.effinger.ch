@@ -3,7 +3,7 @@ title = "Aarbergergasse - es geht los"
 date = "2015-05-13"
 description = "Der Tastenaufschlag hallt zwar noch etwas wegen der leeren Wände, aber seit der Schlüsselübergabe am 1. Mai nimmt die Einrichtung langsam Form an."
 image = "kiste.jpg"
-author = "Marco Jakob"
+authors = [ "Marco Jakob" ]
 comments = true
 tags = [ "Coworking" ]
 +++

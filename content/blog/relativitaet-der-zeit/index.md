@@ -3,7 +3,7 @@ title = "Die Relativität der Zeit"
 date = "2015-01-22"
 description = "In anderen Jahren konnte es nach Weihnachten für mich gar nicht schnell genug Frühling werden. Jeder Schneefall im Januar bis März wurde von mir mit einem 'Muss das jetzt echt noch sein?' quittiert und jeder Sonnentag mit einem Lächeln begrüsst. Dieses Jahr ist es anders."
 image = "time.jpg"
-author = "Domenica Winkler"
+authors = [ "Domenica Winkler" ]
 comments = true
 tags = [ "Coworking" ]
 +++

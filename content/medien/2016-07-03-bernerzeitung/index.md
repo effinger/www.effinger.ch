@@ -2,7 +2,7 @@
 title = "Lust auf Arbeit"
 date = "2016-07-03"
 description = "Online"
-author = "Bernerzeitung"
+media = "Bernerzeitung"
 image = "bernerzeitung-lust-auf-arbeit.jpg"
 
 pdf = "bernerzeitung-lust-auf-arbeit.pdf"

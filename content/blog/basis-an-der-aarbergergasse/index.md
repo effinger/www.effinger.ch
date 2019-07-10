@@ -3,7 +3,7 @@ title = "Unsere Basis an der Aarbergergasse"
 date = "2015-03-23"
 description = "Ab Mai wird Pop-up Coworking jeden Tag stattfinden können! Ganz zentral in Bern beziehen wir unseren eigenen, kleinen Raum. Es wird unsere Basisstation - die Suche nach einer grösseren Location geht aber gleichzeitig weiter."
 image = "aarbergergasse-terrasse.jpg"
-author = "Domenica Winkler"
+authors = [ "Domenica Winkler" ]
 comments = "popupcoworking"
 tags = [ "Location" ]
 +++

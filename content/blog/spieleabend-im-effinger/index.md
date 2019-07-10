@@ -3,7 +3,7 @@ title = "Spielabend im Effinger"
 date = "2017-02-14"
 description = "Dieser Abend hatte es in sich: Gemeinschaft, Strategie, Action und Spass!"
 image = "spielabend-am-tisch.jpg"
-author = "Urs Vögeli"
+authors = [ "Urs Vögeli" ]
 comments = true
 tags = [ "Community" ]
 +++

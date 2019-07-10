@@ -3,7 +3,7 @@ title = "Zweitausendundfünfzehn kann kommen"
 date = "2015-01-01"
 description = "Wir stehen am Start fürs 2015. Auch im neuen Jahr geben wir Vollgas mit Pop-up Coworking in Bern."
 image = "running.jpg"
-author = "Domenica Winkler"
+authors = [ "Domenica Winkler" ]
 comments = true
 tags = [ "Coworking" ]
 +++

@@ -3,7 +3,7 @@ title = "Grundsätze"
 date = "2015-07-01"
 description = "Auf diesen Moment habe ich mich gefreut: Die Grundsätze sind da. Es ist ein gemeinsam erarbeitetes Dokument der Vision und Werte, nach denen wir uns als Community ausrichten wollen."
 image = "notebook.jpg"
-author = "Marco Jakob"
+authors = [ "Marco Jakob" ]
 comments = true
 tags = [ "Community", "Grundsätze" ]
 +++

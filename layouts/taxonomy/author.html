@@ -4,7 +4,7 @@
 
 {{ define "main" }}
 <!-- Page Wrap -->
-<div class="page blog-archive" id="top">
+<div class="page" id="top">
 
   <nav class="main-nav stick-fixed">
   {{ partial "navigation.html" . }}
@@ -17,12 +17,10 @@
       <div class="row">
 
         <div class="col-md-8">
-          <h1 class="hs-line-11 font-alt mb-0">Blog - {{ .Title }}</h1>
-          <!--
-          <div class="hs-line-4 font-alt black mt-20 mt-xs-0">
-            Artikel mit Tag: {{ .Title }}
+          <h1 class="hs-line-11 font-alt mb-0"><a href="/blog/">Blog</a></h1>
+          <div class="mt-20 mt-xs-10 alert alert-info mb-0">
+            <h2 class="hs-line-11 font-alt mb-0"><i class="fa fa-user fa-inline"></i> {{ .Title }}</h2>
           </div>
-          -->
         </div>
 
         <div class="col-md-4 mt-30">
@@ -44,23 +42,11 @@
 
         <!-- Content -->
         <div class="col-sm-8">
-          {{ range (where .Site.RegularPages "Section" "blog").GroupByDate "2006" }}
-          <div id="{{ .Key }}" class="year-anchor"></div>
-          <h2 class="hs-line-11 font-alt">{{ .Key }}</h2>
-
-          <table class="blog-archive-table table table-striped table-hover table-borderless">
-            <tbody>
-              {{ range .Pages }}
-              <tr class="clickable-row" data-href="{{ .RelPermalink }}">
-                <td><a href="{{ .RelPermalink }}">{{ .Title }}</a></td>
-                <td>
-                  <span class="right text-nowrap">{{ .Date.Day }}. {{ index $.Site.Data.de.months .Date.Month }}<span class="hidden-xs"> {{ .Date.Year }}</span></span>
-                </td>
-              </tr>
-              {{ end }}
-            </tbody>
-          </table>
+          {{ range (.Paginator 7).Pages }}
+            {{ partial "blog/summary.html" . }}
           {{ end }}
+
+          {{ partial "pagination.html" . }}
         </div>
         <!-- End Content -->
 
@@ -82,11 +68,5 @@
 {{ end }}
 
 {{ define "body_includes" }}
-<script type="text/javascript">
-jQuery(document).ready(function($) {
-  $(".clickable-row").click(function() {
-    window.document.location = $(this).data("href");
-  });
-});
-</script>
+{{ partial "disqus_count.html" . }}
 {{ end }}

@@ -3,7 +3,7 @@ title = "Jubiläumsfest – zmidst in der Stadt"
 date = "2019-05-11"
 description = "Weitere Rückblicke zum Effinger's Jubiläum, eine Zeitreise durch Coworking Spaces und urbane Räume."
 image = "2019-03-15_19.50.20_C.jpg"
-author = "Oleg Lavrovsky"
+authors = [ "Oleg Lavrovsky" ]
 comments = true
 tags = [ "Community" ]
 +++

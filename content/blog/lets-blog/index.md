@@ -3,7 +3,7 @@ title = "Let's blog"
 date = "2014-12-12"
 description = "Alte Hasen sind wir noch nicht grad, aber immerhin haben wir nun schon ein paar mal pop-up gecoworked."
 image = "wartsaal.jpg"
-author = "Domenica Winkler"
+authors = [ "Domenica Winkler" ]
 comments = "popupcoworking"
 tags = [ "Coworking" ]
 +++

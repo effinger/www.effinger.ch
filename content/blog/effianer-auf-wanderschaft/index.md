@@ -3,7 +3,7 @@ title = "Effianer auf Wanderschaft"
 date = "2018-09-06"
 description = "Was soll man tun, wenn man eine längere Zeit im Effinger aktiv war, man sich aber eine Weile auf etwas anderes fokussieren möchte? Trotzdem möchte man den Effinger als Heimat behalten und vielleicht später wieder stärker aktiv sein vor Ort. Kann man weiterziehen, ohne zu gehen?"
 image = "wanderschaft.jpg"
-author = "Marco Jakob"
+authors = [ "Marco Jakob" ]
 comments = true
 tags = [ "Community", "Effianer" ]
 +++

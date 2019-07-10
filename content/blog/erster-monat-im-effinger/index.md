@@ -3,7 +3,7 @@ title = "Der erste Monat im Effinger"
 date = "2016-04-22"
 description = "Seit der Eröffnung des Effingers ist nun ein Monat vergangen. Langsam kehrt etwas Ruhe ein und ich kann mir die Zeit nehmen, auf diese erste Etappe zurückzublicken."
 image = "eroeffnung.jpg"
-author = "Marco Jakob"
+authors = [ "Marco Jakob" ]
 comments = true
 tags = [ "Coworking", "Kaffeebar", "Community" ]
 +++

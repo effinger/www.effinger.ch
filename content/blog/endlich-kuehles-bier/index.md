@@ -3,7 +3,7 @@ title = "Ein Tisch aus Meisterhand und endlich kühles Bier"
 date = "2015-06-14"
 description = "Ich hatte die Hoffnung schon fast aufgegeben, dann meldete sich plötzlich der Rolf, er hätte da evtl. was..."
 image = "bier.jpg"
-author = "Marco Jakob"
+authors = [ "Marco Jakob" ]
 comments = true
 tags = [ "Coworking", "Werkstatt" ]
 +++

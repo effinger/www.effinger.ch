@@ -4,8 +4,8 @@ description = "Degustation von drei erlesenen Weinen mit passenden Köstlichkeit
 startdate = 2019-03-15T18:00:00Z
 location = "Bärengrabe (OG)"
 time = "18:00 - 18:45 Uhr"
-author = "Markus Roos"
-authorimage = "markus-roos.jpg"
+organizer = "Markus Roos"
+organizerimage = "markus-roos.jpg"
 image = "Markus_Schenkt_ein.gif"
 +++
 

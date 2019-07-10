@@ -4,8 +4,8 @@ description = "Eine Fahrt in diesem Oldtimer lassen Zeit und Raum verschmelzen â
 startdate = 2019-03-15T13:45:00Z
 location = "Effinger im Labor  (UG)"
 time = "13:45 - 18:15 Uhr | 7 Fahrten Ã  20-30 Minuten."
-author = "Heinz Bolliger"
-authorimage = "heinz-bolliger.jpg"
+organizer = "Heinz Bolliger"
+organizerimage = "heinz-bolliger.jpg"
 image = ""
 +++
 ## Abgesagt

@@ -3,7 +3,7 @@ title = "Was lange währt heisst endlich Effinger"
 date = "2015-08-27"
 description = "Über verschiedene Kanäle sind mehr als 200 Namensvorschläge eingegangen. Endlich konnten wir uns entscheiden: Unsere Location für Kaffeebar & Coworking wir «Effinger» heissen."
 image = "effinger.jpg"
-author = "Domenica Winkler"
+authors = [ "Domenica Winkler" ]
 comments = true
 tags = [ "Location" ]
 +++

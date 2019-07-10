@@ -3,7 +3,7 @@ title = "«Kurtli» hilft uns beim Storytelling"
 date = "2018-11-30"
 description = "Wir suchten nach einem Tool, um der Welt zu erzählen, was im Effinger alles abgeht. Wir entwickelten «Kurtli», der erste typisch-schweizerische Bot, der uns beim Storytelling hilft."
 image = "kurtli.jpg"
-author = "Manuel Bürli"
+authors = [ "Manuel Bürli" ]
 comments = true
 tags = [ "Community" ]
 +++

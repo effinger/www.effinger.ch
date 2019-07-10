@@ -4,8 +4,8 @@ description = "Machen Sie bloss einen Job oder leben Sie Ihre Berufung? Der Beru
 startdate = 2019-03-15T12:00:00Z
 location = "Grosse Schanze (OG)"
 time = "12:00 – 13:00 Uhr"
-author = "Mathias Morgenthaler"
-authorimage = "mathias_morgenthaler.jpg"
+organizer = "Mathias Morgenthaler"
+organizerimage = "mathias_morgenthaler.jpg"
 image = "Brownbag.gif"
 +++
 

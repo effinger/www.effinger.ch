@@ -3,7 +3,7 @@ title = "Jubiläumsfest – der Ausbruch in Bildern"
 date = "2019-04-20"
 description = "Unser dreijähriges Jubiläum haben wir am 15. März 2019 gebührend gefeiert. Eindrücke von einem unvergesslichen Tag."
 image = "_A7_7078.jpg"
-author = "Corinne Roth"
+authors = [ "Corinne Roth" ]
 comments = true
 tags = [ "Community" ]
 +++

@@ -4,7 +4,7 @@ description = "In Zeiten der Ich-AGs gilt sich selber wirkungsvoll zu führen ni
 startdate = 2019-03-15T16:00:00Z
 location = "Matte (OG)"
 time = "16:00 - 16:45 Uhr"
-author = "Dr. Phil. Heinz Bolliger-Salzmann"
-authorimage = "heinz-bolliger.jpg"
+organizer = "Dr. Phil. Heinz Bolliger-Salzmann"
+organizerimage = "heinz-bolliger.jpg"
 image = ""
 +++

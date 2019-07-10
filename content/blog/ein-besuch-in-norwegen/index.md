@@ -3,7 +3,7 @@ title = "Ein Besuch in Norwegen"
 date = "2018-09-28"
 description = "Diesen Sommer ist eine kleine Delegation aus dem Effinger nach Norwegen gereist. Marion und Hanne, zwei Effinger-Coworkerinnen, die nun in ihre Heimat im Norden zurückgekehrt sind, hatten ein super Programm zusammengestellt."
 image = "8_Mitternachtssonne.jpg"
-author = "Isabel Jakob"
+authors = [ "Isabel Jakob" ]
 comments = true
 tags = [ "Community" ]
 +++

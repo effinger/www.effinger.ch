@@ -1,0 +1,14 @@
+<!-- Widget -->
+<div class="widget">
+  <h5 class="widget-title font-alt">Autoren</h5>
+
+  <div class="widget-body">
+    <ul class="clearlist widget-menu">
+      {{ $current := . }}
+      {{ range .Site.Taxonomies.authors }}
+        <li {{ if eq $current.Permalink .Page.Permalink }}class="strong"{{ end }}><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a></li>
+      {{ end }}
+    </ul>
+  </div>
+</div>
+<!-- End Widget -->

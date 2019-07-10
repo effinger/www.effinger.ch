@@ -3,7 +3,7 @@ title = "Der dritte Geburtstag - eine Party mit Lego, Oldtimern und Avataren"
 date = "2019-03-10"
 description = "Meimei, der Effinger wird drei - das wollen wir mit euch gebührend feiern! Am Freitag, 15.3.19 öffnen wir unsere Türen besonders weit und geben Einblick, woran im Effinger so alles gearbeitet, getüftelt und experimentiert wird. Und apropos Arbeiten: das tut man zur Feier des Tages am 15. März GRATIS im Effinger."
 image = "jubilaeum_header.jpg"
-author = "Urs Vögeli"
+authors = [ "Urs Vögeli" ]
 comments = true
 tags = [ "Community" ]
 +++

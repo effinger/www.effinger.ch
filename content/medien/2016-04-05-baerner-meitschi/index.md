@@ -2,7 +2,7 @@
 title = "Apéro in Bern: Effinger"
 date = "2016-04-25"
 description = "Online"
-author = "Bärner Meitschi Blog"
+media = "Bärner Meitschi Blog"
 image = "baerner-meitschi-apero-in-bern-effinger.jpg"
 
 pdf = "baerner-meitschi-apero-in-bern-effinger.pdf"

@@ -4,8 +4,8 @@ description = "LEGO ist nicht nur ein beliebtes Spielzeug, sondern bietet mir se
 startdate = 2019-03-15T13:30:00Z
 location = "Bärengraben (OG)"
 time = "13:30 - 17:00 Uhr"
-author = "Urs Vögeli"
-authorimage = "urs-voegeli.jpg"
+organizer = "Urs Vögeli"
+organizerimage = "urs-voegeli.jpg"
 image = ""
 +++
 

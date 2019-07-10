@@ -4,8 +4,8 @@ description = "Eine Vignette ist ein in sich abgeschlossenes Stück Kunst - klei
 startdate = 2019-03-15T17:30:00Z
 location = "Matte (OG)"
 time = "17:30 - 19:30 Uhr "
-author = "Anicia Kohler"
-authorimage = "anicia.jpg"
+organizer = "Anicia Kohler"
+organizerimage = "anicia.jpg"
 image = "Orchester.gif"
 +++
 

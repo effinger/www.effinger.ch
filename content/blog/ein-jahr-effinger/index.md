@@ -3,7 +3,7 @@ title = "Ein Jahr Effinger"
 date = "2017-05-21"
 description = "Schön war es mit euch zu feiern und in Erinnerungen schwelgen. Wunderbar war es anzusehen, wie auch unser Jubiläumsfest die Vielfalt verkörpert hat, die im Effinger im letzten Jahr entstanden ist."
 image = "thumb.jpg"
-author = "Urs Vögeli"
+authors = [ "Urs Vögeli" ]
 comments = true
 tags = [ "Location", "Community", "Unterhaltung" ]
 +++

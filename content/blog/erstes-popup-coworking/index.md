@@ -3,7 +3,7 @@ title = "Erstes Pop-up Coworking"
 date = "2014-11-14"
 description = "Die Idee war, sich einen Nachmittag Zeit zu nehmen, um für einmal nicht auf die eigenen Projekte zu fokussieren, sondern um Andere bei ihren Projekten zu unterstützen. Unsere Wohnung wurde also gleich zu einem kleinen Coworking Space umfunktioniert."
 image = "laptop-tea.jpg"
-author = "Marco Jakob"
+authors = [ "Marco Jakob" ]
 comments = true
 tags = [ "Coworking" ]
 +++

@@ -3,7 +3,7 @@ title = "Kaffeepause mit Timon Marmet"
 date = "2017-04-08"
 description = "Der Effinger wird geprägt durch die verschiedenen Menschen, die hier ein- und ausgehen. Wir möchten euch einige von ihnen näher vorstellen. Heute ein Einblick in den Alltag von Timon Marmet, Möbel- und Wohngestalter."
 image = "effinger_blog_timon-marmet-draussen.jpg"
-author = "Graziella Bärtsch"
+authors = [ "Graziella Bärtsch" ]
 comments = true
 tags = [ "Portrait", "Werkstatt" ]
 +++

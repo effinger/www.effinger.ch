@@ -3,7 +3,7 @@ title = "Unser Effinger wird mit Leben gefüllt"
 date = "2016-07-19"
 description = "Das Projekt Effinger nimmt Fahrt auf. Jeden Monat seit Eröffnung, jede Woche, fast jeden Tag kommen neue Leute dazu, finden mehr Initiativen und Events statt. Unsere Räume füllen sich. Der Space wird so mit einer wachsenden Community bereichert."
 image = "coworking.jpg"
-author = "Urs Vögeli"
+authors = [ "Urs Vögeli" ]
 comments = true
 tags = [ "Coworking", "Community" ]
 +++

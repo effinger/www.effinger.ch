@@ -3,7 +3,7 @@ title = "Verfrühte Frühlingsgefühle"
 date = "2018-03-03"
 description = "Packt schon mal eure Strandtaschen, die Sonnenbrille auf die Nase und ab auf die Terrasse im 1. OG."
 image = "terrasse-fruehlingsgefuehle.gif"
-author = "Claudine Etter"
+authors = [ "Claudine Etter" ]
 comments = true
 tags = [ "Coworking", "Urban Gardening" ]
 +++

@@ -3,7 +3,7 @@ title = "Daheim tut sich was"
 date = "2015-06-13"
 description = "Seit einer Woche geniesse ich Ferien. Nicht lassen kann ich es, mehrmals täglich die Slack-App anzutippen um zu sehen was 'back home' geschieht! Und da läuft nämlich ganz schön was..."
 image = "daenemark.jpg"
-author = "Salome Hostettler"
+authors = [ "Salome Hostettler" ]
 comments = true
 tags = [ "Community" ]
 +++

@@ -3,7 +3,7 @@ title = "Urbaner Backstein-Chic"
 date = "2015-01-12"
 description = "Seit wir uns für die Location an der schönen Effingerstrasse beworben haben, schwirren meine Gedanken rund um die Frage: Wie soll die Inneneinrichtung dieser Räume aussehen?"
 image = "wall-of-bricks.jpg"
-author = "Domenica Winkler"
+authors = [ "Domenica Winkler" ]
 comments = "popupcoworking"
 tags = [ "Einrichtung" ]
 +++
