@@ -15,7 +15,7 @@ weather = "sun"
 
 [[dates]]
 date = "2019-07-11"
-weather = "rain"
+weather = "sun"
 
 [[dates]]
 date = "2019-07-10"
