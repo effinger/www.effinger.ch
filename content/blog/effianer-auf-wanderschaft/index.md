@@ -32,7 +32,7 @@ Das Schönste wäre, wenn man weiterziehen könnte, ohne wirklich zu gehen. Wie 
 
 ## Was sind "Effianer auf Wanderschaft"?
 
-“Effianer auf Wanderschaft” sind Effianer, die etwas persönlich oder beruflich verändern und für eine bestimmte Zeit die Effianer-Rolle nicht ausüben. Für jedes Jahr als Effianer kann ein Wanderjahr angehängt werden.
+“Effianer auf Wanderschaft” sind Effianer, die etwas persönlich oder beruflich verändern und für eine bestimmte Zeit die Effianer-Rolle nicht ausüben.
 
 Spätestens nach einem Jahr berichten sie von ihren Erlebnissen und tragen so ihre Erfahrung zurück in den Effinger. Sie können jederzeit wieder in den Status als Effianer wechseln.
 
