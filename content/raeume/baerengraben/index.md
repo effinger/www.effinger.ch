@@ -36,12 +36,12 @@ text = "Beamer mit HDMI-Anschluss"
 price = "CHF 50"
 
 [[extras]]
-text = "Moderationsmaterial"
-price = "CHF 50"
-
-[[extras]]
 text = "Küchenbenutzung"
 price = "CHF 100"
+
+[[extras]]
+text = "Moderationsmaterial"
+price = "halber Tag CHF 25 / ganzer Tag CHF 50"
 
 [[extras]]
 text = "Kaffee/Tee, Mineral (1. OG)"

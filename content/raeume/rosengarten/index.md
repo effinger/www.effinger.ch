@@ -37,7 +37,7 @@ price = "CHF 50"
 
 [[extras]]
 text = "Moderationsmaterial"
-price = "CHF 50"
+price = "halber Tag CHF 25 / ganzer Tag CHF 50"
 
 [[extras]]
 text = "Kaffee/Tee, Mineral (1. OG)"

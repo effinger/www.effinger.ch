@@ -38,7 +38,7 @@ calendar_id = "effinger.ch_2d35313235363038352d333337@resource.calendar.google.c
 
 [[extras]]
 text = "Moderationsmaterial"
-price = "CHF 50"
+price = "halber Tag CHF 25 / ganzer Tag CHF 50"
 
 [[extras]]
 text = "Mineral & Obst"
