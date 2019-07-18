@@ -6,18 +6,6 @@ rainTitle = "🌧️️️ regnerisch oder kühl"
 rainText = "Kaffeebar heute bis 23h offen"
 
 [[dates]]
-date = "2019-07-15"
-weather = "sun"
-
-[[dates]]
-date = "2019-07-16"
-weather = "sun"
-
-[[dates]]
-date = "2019-07-17"
-weather = "sun"
-
-[[dates]]
 date = "2019-07-18"
 weather = "sun"
 
