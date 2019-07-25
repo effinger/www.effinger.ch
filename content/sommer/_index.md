@@ -28,6 +28,10 @@ weather = "sun"
 [[dates]]
 date = "2019-07-25"
 weather = "sun"
+
+[[dates]]
+date = "2019-07-26"
+weather = "sun"
 +++
 # Warum Sommeröffnungszeiten?
 
