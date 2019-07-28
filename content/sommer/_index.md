@@ -14,11 +14,11 @@ date = "2019-07-19"
 weather = "sun"
 
 [[dates]]
-date = "2019-07-22"
+date = "2019-07-29"
 weather = "sun"
 
 [[dates]]
-date = "2019-07-23"
+date = "2019-07-29"
 weather = "sun"
 
 [[dates]]
