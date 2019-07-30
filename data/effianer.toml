@@ -113,17 +113,6 @@ facebook = ""
 instagram = ""
 
 [[Person]]
-name = "David Brühlmeier"
-gender = "m"
-image = "/images/effianer/david-bruehlmeier.jpg"
-email = "dave@effinger.ch"
-phone = ""
-website = "http://www.villageoffice.ch/about/dave"
-twitter = "ResponsiveDave"
-facebook = ""
-instagram = ""
-
-[[Person]]
 name = "Marco Jakob"
 gender = "m"
 image = "/images/effianer/marco-jakob.jpg"
