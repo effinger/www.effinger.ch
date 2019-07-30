@@ -3,6 +3,28 @@ apiUrl = "https://script.google.com/a/effinger.ch/macros/s/AKfycbw3aGTPwR4t_UdMm
 calendarId = "effinger.ch_3736303136393637343739@resource.calendar.google.com"
 
 [[Person]]
+name = "Michael Aerni"
+gender = "m"
+image = "/images/effianer/michael-aerni.jpg"
+email = "michael@effinger.ch"
+phone = ""
+website = "https://www.michaelaerni.ch/"
+twitter = ""
+facebook = ""
+instagram = ""
+
+[[Person]]
+name = "Manuel Bürli"
+gender = "m"
+image = "/images/effianer/manuel-buerli.jpg"
+email = "manu@effinger.ch"
+phone = ""
+website = "https://herrbuerli.ch/"
+twitter = ""
+facebook = "herrbuerli"
+instagram = ""
+
+[[Person]]
 name = "Benji Ammann"
 gender = "m"
 image = "/images/effianer/benji-ammann.jpg"
