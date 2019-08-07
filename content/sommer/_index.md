@@ -6,12 +6,16 @@ rainTitle = "🌧️️️ regnerisch oder kühl"
 rainText = "Kaffeebar heute bis 23h offen"
 
 [[dates]]
-date = "2019-08-06"
+date = "2019-08-07"
+weather = "rain"
+
+[[dates]]
+date = "2019-08-08"
 weather = "sun"
 
 [[dates]]
-date = "2019-08-07"
-weather = "rain"
+date = "2019-08-09"
+weather = "sun"
 +++
 # Warum Sommeröffnungszeiten?
 
