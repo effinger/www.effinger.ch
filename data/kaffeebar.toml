@@ -17,21 +17,10 @@ image = "/images/kaffeebar/lea.jpg"
 comment = "When life gives you lemons, trade them for coffee."
 
 [[Person]]
-name = "Karin"
-gender = "f"
-image = "/images/kaffeebar/karin.jpg"
-
-[[Person]]
 name = "Nico"
 gender = "m"
 image = "/images/kaffeebar/nico.jpg"
 comment = "A goal without a plan is just a wish."
-
-[[Person]]
-name = "Simone"
-gender = "f"
-image = "/images/kaffeebar/simone.jpg"
-comment = "Now is the new later."
 
 [[Person]]
 name = "Natascha"
