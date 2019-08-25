@@ -7,7 +7,7 @@ removePathAccents = true
 enableRobotsTXT = true
 paginatePath = "seite"
 
-disableKinds = [ "taxonomyTerm" ]
+# disableKinds = [ "taxonomyTerm" ]
 disableFastRender = true
 
 [params]
