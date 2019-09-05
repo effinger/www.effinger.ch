@@ -1,5 +1,5 @@
 /fairtech/*  https://datalets.ch/:splat  200
-/brownbag/*  http://brownbag.herrbuerli.ch/:splat  200
+/brownbag/*  https://brownbag.herrbuerli.ch/:splat  200
 /atelier/*    https://atelier.effinger.ch/:splat  301
 
 # Redirect domain aliases to primary domain
