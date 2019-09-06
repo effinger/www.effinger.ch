@@ -117,13 +117,12 @@
 
         <div class="eventlist row">
           <div class="col-sm-6">
-            {{ range $index, $element := first 6 (sort (where (where .Site.Pages "Section" "events") "Params.enddate" ">=" now) "Params.startdate" "asc") }}
-            {{ if eq $index 3 }}
-          </div>
-          <div class="col-sm-6">
-            {{ end }}
-            {{ partial "events/calc_dates.html" $element }}
-            {{ partial "events/event_summary.html" $element }}
+            {{ range $index, $element := first 6 (partial "events/future_events.html" .) }}
+              {{ if eq $index 3 }}
+                </div>
+                <div class="col-sm-6">
+              {{ end }}
+              {{ $element }}
             {{ end }}
           </div>
         </div>

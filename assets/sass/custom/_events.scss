@@ -66,6 +66,10 @@
         .labor {
           background-color: #0E0010;
         }
+        .brownbag {
+          background-image: linear-gradient(135deg, #f35657 25%, #0b133c 25%, #0b133c 50%, #f35657 50%, #f35657 75%, #0b133c 75%, #0b133c 100%);
+          background-size: 22.63px 22.63px;
+        }
         .half {
           height: 50%;
           &.last-child {
