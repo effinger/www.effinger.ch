@@ -1,4 +1,16 @@
 [[Person]]
+name = "Anina"
+gender = "f"
+image = "/images/kaffeebar/anina.jpg"
+comment = ""
+
+[[Person]]
+name = "Christa"
+gender = "f"
+image = "/images/kaffeebar/christa.jpg"
+comment = "Life happens, coffee helps."
+
+[[Person]]
 name = "Dominic"
 gender = "m"
 image = "/images/kaffeebar/dominic.jpg"
@@ -17,25 +29,19 @@ image = "/images/kaffeebar/lea.jpg"
 comment = "When life gives you lemons, trade them for coffee."
 
 [[Person]]
+name = "Marina"
+gender = "f"
+image = "/images/kaffeebar/marina.jpg"
+comment = ""
+
+[[Person]]
 name = "Nico"
 gender = "m"
 image = "/images/kaffeebar/nico.jpg"
 comment = "A goal without a plan is just a wish."
 
 [[Person]]
-name = "Natascha"
+name = "Sophie"
 gender = "f"
-image = "/images/kaffeebar/natascha.jpg"
-comment = "The future is golden."
-
-[[Person]]
-name = "Silvia"
-gender = "f"
-image = "/images/kaffeebar/silvia.jpg"
-comment = "Darfs eine Ingwerer-Philosophy-Schoko-Heldenpause to go sein?"
-
-[[Person]]
-name = "Christa"
-gender = "f"
-image = "/images/kaffeebar/christa.jpg"
-comment = "Life happens, coffee helps."
+image = "/images/kaffeebar/sophie.jpg"
+comment = ""
