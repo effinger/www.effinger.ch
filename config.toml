@@ -34,4 +34,4 @@ disableFastRender = true
 
 [caches]
 [caches.getjson]
-maxAge = -1
+maxAge = 0
