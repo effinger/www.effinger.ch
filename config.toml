@@ -31,3 +31,7 @@ disableFastRender = true
   pre = "<i class='fa fa-users'></i>"
   weight = 3
   url = "/community/"
+
+[caches]
+[caches.getjson]
+maxAge = -1
