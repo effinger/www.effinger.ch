@@ -2,8 +2,8 @@ backend:
   name: github
   repo: effinger/www.effinger.ch
 
-media_folder: "static/images"
-public_folder: "images"
+media_folder: "static/upload"
+public_folder: "upload"
 
 site_url: "/"
 display_url: "https://effinger.ch"
@@ -64,3 +64,103 @@ collections:
               widget: "string",
             }
           - { label: "Seiteninhalt", name: "body", widget: "markdown" }
+  - label: "Events"
+    label_singular: "Event"
+    description: >
+      Hier können Events verfasst, editiert und gelöscht werden.
+    name: "events"
+    preview_path: "{{slug}}/"
+    editor:
+      preview: false
+    folder: "content/events"
+    create: true
+    format: toml-frontmatter
+    fields:
+      - {
+          label: "Titel",
+          name: "title",
+          widget: "string",
+        }
+      - {
+          label: "Start",
+          name: "startdate",
+          widget: "datetime",
+          format: "YYYY-MM-DDTHH:mm:ss",
+          dateFormat: "DD.MM.YYYY",
+          timeFormat: "HH:mm",
+        }
+      - {
+          label: "Ende",
+          name: "enddate",
+          widget: "datetime",
+          format: "YYYY-MM-DDTHH:mm:ss",
+          dateFormat: "DD.MM.YYYY",
+          timeFormat: "HH:mm",
+        }
+      - {
+          label: "Zusammenfassung",
+          name: "description",
+          widget: "text",
+          required: true,
+          hint: "Kurze Beschreibung für Suchmaschinen und Social Media (ca. 2 Sätze).",
+        }
+      - {
+          label: "Bild",
+          name: "image",
+          widget: "image",
+          required: true,
+          hint: "Bild für Suchmaschinen und Social Media. TIPP: Das Bild zusätzlich beim Inhalt einfügen.",
+        }
+      - {
+          label: "Kategorien",
+          name: "categories",
+          widget: "select",
+          multiple: true,
+          required: true,
+          hint: "",
+          options: [
+            "Community", 
+            "Kaffeebar", 
+            "Coworking",
+            "Atelier",
+            "Werkstatt",
+            "Labor",
+            "Brownbag",
+            "THESaktiv"
+          ]
+        }
+      - {
+          label: "Ort",
+          name: "location",
+          widget: "string",
+          required: false,
+          hint: "Optionale Beschreibung des Ortes (z.B. Effinger 1. OG).",
+        }
+      - {
+          label: "Anmeldeformular",
+          name: "registration",
+          widget: "boolean",
+          hint: "Wenn aktiviert, so wird ein Anmeldeformular für den Event angezeigt.",
+          default: false,
+        }
+      - {
+          label: "Anmeldeschluss (für Anmeldeformular)",
+          name: "registration_close",
+          widget: "datetime",
+          format: "YYYY-MM-DDTHH:mm:ss",
+          dateFormat: "DD.MM.YYYY",
+          timeFormat: "HH:mm",
+          hint: "Optionaler Anmeldeschluss für das Anmeldeformular.",
+          required: false
+        }
+      - {
+          label: "Maximale Teilnehmerzahl (für Anmeldeformular)",
+          name: "registration_max",
+          widget: "number",
+          min: 1,
+          hint: "Optionale maximale Teilnehmerzahl für das Anmeldeformular.",
+          valueType: "int",
+          required: false
+        }
+      - { label: "Inhalt", name: "body", widget: "markdown" }
+      

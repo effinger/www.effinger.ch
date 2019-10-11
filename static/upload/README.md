@@ -1,0 +1,1 @@
+This folder contains images uploaded via NetlifyCMS.
