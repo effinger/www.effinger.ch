@@ -73,6 +73,8 @@ collections:
     editor:
       preview: false
     folder: "content/events"
+    identifier_field: "event_id"
+    summary: "{{event_id}} - {{title}} ({{startdate}})"
     create: true
     format: toml-frontmatter
     fields:
@@ -80,6 +82,16 @@ collections:
           label: "Titel",
           name: "title",
           widget: "string",
+        }
+      - {
+          label: "Event ID",
+          name: "event_id",
+          widget: "number",
+          valueType: "int",
+          default: 100000,
+          min: 100001,
+          required: true,
+          hint: "Aufsteigende Zahl für die Event-URL."
         }
       - {
           label: "Start",
@@ -144,20 +156,21 @@ collections:
           default: false,
         }
       - {
-          label: "Anmeldeschluss (für Anmeldeformular)",
+          label: "Anmeldeschluss für Anmeldeformular",
           name: "registration_close",
           widget: "datetime",
           format: "YYYY-MM-DDTHH:mm:ss",
           dateFormat: "DD.MM.YYYY",
           timeFormat: "HH:mm",
+          default: "",
           hint: "Optionaler Anmeldeschluss für das Anmeldeformular.",
           required: false
         }
       - {
-          label: "Maximale Teilnehmerzahl (für Anmeldeformular)",
+          label: "Maximale Teilnehmerzahl für Anmeldeformular",
           name: "registration_max",
           widget: "number",
-          min: 1,
+          default: "",
           hint: "Optionale maximale Teilnehmerzahl für das Anmeldeformular.",
           valueType: "int",
           required: false
