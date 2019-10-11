@@ -2,5 +2,8 @@
 /brownbag/*  https://brownbag.effinger.ch/:splat  301
 /atelier/*    https://atelier.effinger.ch/:splat  301
 
+# Redirect all non-existing events to the events overview page.
+/events/* /events/
+
 # Optional: Redirect default Netlify subdomain to primary domain
 https://effinger.netlify.com/* https://www.effinger.ch/:splat 301!
