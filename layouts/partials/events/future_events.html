@@ -7,7 +7,7 @@
   {{ if ge (time .Params.enddate) now }}
     {{ if lt $brownbagEventIndex (len $brownbagEvents) }}
       {{ $nextBrownbagEvent := index $brownbagEvents $brownbagEventIndex }}
-      {{ if lt (time (print $nextBrownbagEvent.date ":00")) .Params.startdate }}
+      {{ if lt (time (print $nextBrownbagEvent.date ":00")) (time .Params.startdate) }}
         {{ $brownbagEventIndex = add $brownbagEventIndex 1 }}
         {{ $result = $result | append (partial "events/brownbag_summary.html" (dict "event" $nextBrownbagEvent "context" $)) }}
       {{ end }}
