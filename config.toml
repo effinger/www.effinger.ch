@@ -35,6 +35,7 @@ disableFastRender = true
 [caches]
 [caches.getjson]
 maxAge = 0[[menu.main]]
+[[menu.main]]
   name = "Events"
   weight = 5
   url = "/Events/"
