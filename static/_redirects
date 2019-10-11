@@ -1,9 +1,11 @@
 /fairtech/*  https://datalets.ch/:splat  200
 /brownbag/*  https://brownbag.effinger.ch/:splat  301
-/atelier/*    https://atelier.effinger.ch/:splat  301
+/atelier/*   https://atelier.effinger.ch/:splat  301
+
+/event/*     /events/:splat  301
 
 # Custom 404 for events.
-/events/* /404-events.html 404
+/events/* /events-404/ 404
 
 # Optional: Redirect default Netlify subdomain to primary domain
 https://effinger.netlify.com/* https://www.effinger.ch/:splat 301!
