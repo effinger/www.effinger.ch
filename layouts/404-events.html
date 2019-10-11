@@ -1,0 +1,46 @@
+{{ define "main" }}
+<!-- Page Wrap -->
+<div class="page" id="top">
+
+  <nav class="main-nav dark transparent stick-fixed">
+    {{ partial "navigation.html" . }}
+  </nav>
+
+  <!-- Home Section -->
+  <section class="home-section bg-dark-alfa-50 parallax-2" data-background="/error.jpg">
+    <div class="js-height-full">
+
+      <!-- Hero Content -->
+      <div class="home-content container">
+        <div class="home-text">
+          <div class="hs-cont">
+
+            <!-- Headings -->
+            <div class="hs-wrap">
+
+              <div class="hs-line-13 font-alt mb-10">
+                Event nicht gefunden
+              </div>
+
+              <div class="hs-line-4 font-alt mb-40">
+                Entweder wurde der Event archiviert oder die Event-URL ist falsch.
+              </div>
+
+              <div class="local-scroll">
+                <a href="/events/" class="btn btn-mod btn-w btn-round btn-small"><i class="fa fa-angle-left"></i> Zur Eventübersicht</a>
+              </div>
+
+            </div>
+            <!-- End Headings -->
+
+          </div>
+        </div>
+      </div>
+      <!-- End Hero Content -->
+
+    </div>
+</section>
+  <!-- End Home Section -->
+</div>
+<!-- End Page Wrap -->
+{{ end }}
