@@ -2,9 +2,5 @@
 /brownbag/*  https://brownbag.effinger.ch/:splat  301
 /atelier/*    https://atelier.effinger.ch/:splat  301
 
-# Redirect domain aliases to primary domain
-https://www.popupcoworking.ch/* https://www.effinger.ch/:splat 301!
-https://popupcoworking.ch/* https://www.effinger.ch/:splat 301!
-
 # Optional: Redirect default Netlify subdomain to primary domain
 https://effinger.netlify.com/* https://www.effinger.ch/:splat 301!
