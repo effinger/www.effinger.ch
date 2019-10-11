@@ -1,8 +1,8 @@
 +++
 title = "Lesung von Raphael Ben Nescher: Götzen - Die Autobiografie von Adolf Eichmann"
 
-startdate = 2016-07-25T17:30:00Z
-enddate = 2016-07-25T18:30:00Z
+startdate = "2016-07-25T17:30:00"
+enddate = "2016-07-25T18:30:00"
 categories = [ "Community" ]
 location = "Effingerstrasse 10, Bern"
 address = "46.945842, 7.435864"

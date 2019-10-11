@@ -1,8 +1,8 @@
 +++
 title = "SüssSauerSlam"
 description = "Der kultige Slam mit dem Mutprüfungsflair à la Pfadi zieht um."
-startdate = 2019-09-23T20:00:00
-enddate = 2019-09-23T22:00:00
+startdate = "2019-09-23T20:00:00"
+enddate = "2019-09-23T22:00:00"
 categories = [ "Kaffeebar" ]
 location = "Effinger: Kaffeebar"
 image = "SuessSauerEffinger.png"

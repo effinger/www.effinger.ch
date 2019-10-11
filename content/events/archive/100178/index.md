@@ -1,8 +1,8 @@
 +++
 title = "THES aktiv"
 description = "Wir treffen uns als Gruppe THESaktiv einmal im Monat, um Bildungsthemen und Aktuelles aus dem Umfeld des Lernens anzugehen. Wer aktiv werden und sich eingeben will, ist herzlich willkommen."
-startdate = 2018-03-06T18:00:00Z
-enddate = 2018-03-06T21:00:00Z
+startdate = "2018-03-06T18:00:00"
+enddate = "2018-03-06T21:00:00"
 categories = [ "Community" ]
 location = "Effinger 1. OG (Beginn in Kaffeebar)"
 image = "sofa.jpg"

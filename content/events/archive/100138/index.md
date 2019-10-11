@@ -1,8 +1,8 @@
 +++
 title = "Facilitation – Modul 2: Wir im Dialog in und mit Gruppen"
 
-startdate = 2017-10-05T09:00:00Z
-enddate = 2017-10-08T16:00:00Z
+startdate = "2017-10-05T09:00:00"
+enddate = "2017-10-08T16:00:00"
 categories = [ "Community" ]
 location = "Effingerstrasse 10, Bern"
 address = "46.945842, 7.435864"

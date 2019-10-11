@@ -1,8 +1,8 @@
 +++
 title = "EXKURSION SIEDLUNG HALEN"
 description = "Uns inspirieren lassen von Bestehendem. Eine Führung durch die Siedlung Halen bietet die Chance Einblick zu erhalten. Eine urbane Siedlung mitten im Wald, die durch einzigartige Architektur und clevere Vereinbarkeit von Individualität und Gemeinschaft besicht."
-startdate = 2019-03-30T10:00:00Z
-enddate = 2019-03-30T12:00:00Z
+startdate = "2019-03-30T10:00:00"
+enddate = "2019-03-30T12:00:00"
 categories = [ "Community" ]
 location = "Halensiedlung, Halen 26, 3037 Kirchlindach"
 image = "halen_siedlung.jpg"

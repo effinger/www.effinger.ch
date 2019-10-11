@@ -1,8 +1,8 @@
 +++
 title = "Lehrplan21 - Thema Hausaufgaben"
 description = "Fragerunde, Diskussion und Ideensammlung für Eltern Lehrpersonen und Schulleitungen zur konkreten Umsetzung in der Schule und der Familie."
-startdate = 2018-09-12T19:30:00
-enddate = 2018-09-12T21:00:00
+startdate = "2018-09-12T19:30:00"
+enddate = "2018-09-12T21:00:00"
 categories = [ "Community" ]
 location = "Effinger 1. OG"
 image = "hausaufgaben.jpg"

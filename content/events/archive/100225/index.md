@@ -1,8 +1,8 @@
 +++
 title = "Effinger Open Debate: Mars-Kolonisierung - Utopisch oder visionär?"
 description = "Ist die Mars-Kolonisierung eine Projektionsfläche aus Science-Fiction, Literatur und Kunst, eine Utopie für Nerds oder kann sie Impulse für neues menschliches Zusammenleben (Coworking, Coliving, agile Organisationsformen) aber auch für die wissenschaftliche Forschung und ökonomisch-technologische Entwicklungen liefern?"
-startdate = 2018-11-28T19:30:00Z
-enddate = 2018-11-28T21:30:00Z
+startdate = "2018-11-28T19:30:00"
+enddate = "2018-11-28T21:30:00"
 categories = [ "Community" ]
 location = "Effinger"
 image = "mars.jpg"

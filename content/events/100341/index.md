@@ -1,8 +1,8 @@
 +++
 title = "Demonights 009"
 description = "Experience oldschool stories and chart-topping productions with local scene legends: join us for an extraordinary evening of real-time underground computer arts."
-startdate = 2019-06-21T19:00:00Z
-enddate = 2019-06-21T23:33:33Z
+startdate = "2019-06-21T19:00:00"
+enddate = "2019-06-21T23:33:33"
 categories = [ "Labor" ]
 location = "Effinger im -2 UG"
 image = "pinball.jpg"

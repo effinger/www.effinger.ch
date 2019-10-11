@@ -1,8 +1,8 @@
 +++
 title = "Demonight 007"
 description = "Jump in to the anaglyph 3D world, vote for your favorite One Effect, join us for an evening of real-time underground computer arts."
-startdate = 2018-11-16T19:00:00Z
-enddate = 2018-11-16T23:33:33Z
+startdate = "2018-11-16T19:00:00"
+enddate = "2018-11-16T23:33:33"
 categories = [ "Labor" ]
 location = "Effinger im -2 UG"
 image = "DpoFQ2ZXgAA08sh.jpg"

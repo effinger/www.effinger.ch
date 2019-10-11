@@ -1,8 +1,8 @@
 +++
 title = "Bern-Dankt-Fest"
 description = "In Bern und seiner Umgebung passiert viel Spannendes im Bereich Unternehmertum. Nur manchmal tun wir uns schwer, zu reflektieren und dankbar zu sein, für all das, was ist. Und genau das tun wir am Bern-Dankt-Fest."
-startdate = 2018-09-08T17:00:00Z
-enddate = 2018-09-08T20:00:00Z
+startdate = "2018-09-08T17:00:00"
+enddate = "2018-09-08T20:00:00"
 categories = [ "Coworking" ]
 location = "Effinger 1. OG (Seiteneingang nutzen)"
 image = "bern-dankt-fest.png"

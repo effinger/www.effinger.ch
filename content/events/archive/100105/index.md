@@ -1,8 +1,8 @@
 +++
 title = "Filmabend: Tomorrow - Die Welt ist voller Lösungen"
 
-startdate = 2017-03-06T20:00:00Z
-enddate = 2017-03-06T22:00:00Z
+startdate = "2017-03-06T20:00:00"
+enddate = "2017-03-06T22:00:00"
 categories = [ "Community" ]
 location = "Effingerstrasse 10, Bern"
 address = "46.945842, 7.435864"

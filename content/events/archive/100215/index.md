@@ -1,8 +1,8 @@
 +++
 title = "THES-Colearning: Bewusstheit im Umgang mit persönlicher Energie"
 description = "Für die grossen Herausforderungen im digitalen Zeitalter fehlt es vielfach an Kraft und Energie. In den letzten 24 Monaten hat BE SHIRO ein tiefgreifendes Energieprogramm bestehend aus App, Workshops und Sessions entwickelt."
-startdate = 2018-06-12T18:30:00Z
-enddate = 2018-06-12T21:00:00Z
+startdate = "2018-06-12T18:30:00"
+enddate = "2018-06-12T21:00:00"
 categories = [ "Community" ]
 location = "Effinger, 1. OG"
 image = "empowerment.jpg"

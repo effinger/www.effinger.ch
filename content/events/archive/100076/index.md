@@ -1,8 +1,8 @@
 +++
 title = "Frühsozialismus, direkte Demokratie, Genossenschaftswesen und unser Effinger"
 
-startdate = 2016-10-31T17:30:00Z
-enddate = 2016-10-31T18:30:00Z
+startdate = "2016-10-31T17:30:00"
+enddate = "2016-10-31T18:30:00"
 categories = [ "Community" ]
 location = "Effingerstrasse 10, Bern"
 address = "46.945842, 7.435864"

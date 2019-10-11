@@ -1,8 +1,8 @@
 +++
 title = "Ausflug an die Landsgemeinde nach Appenzell"
 
-startdate = 2017-04-30T08:32:00Z
-enddate = 2017-04-30T19:00:00Z
+startdate = "2017-04-30T08:32:00"
+enddate = "2017-04-30T19:00:00"
 categories = [ "Community" ]
 location = "Landsgemeindeplatz, Appenzell"
 address = "47.331927, 9.407608"

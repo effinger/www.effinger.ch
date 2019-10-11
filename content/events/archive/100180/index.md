@@ -1,8 +1,8 @@
 +++
 title = "Open Data Day"
 description = "Samstag, 3. März, ist Internationaler Tag der offenen Daten, und die Berner Community von Opendata.ch trifft sich dieses Jahr im Effinger Labor."
-startdate = 2018-03-03T14:00:00Z
-enddate = 2018-03-03T18:00:00Z
+startdate = "2018-03-03T14:00:00"
+enddate = "2018-03-03T18:00:00"
 categories = [ "Community" ]
 location = "Effinger Labor (UG -2)"
 image = ""

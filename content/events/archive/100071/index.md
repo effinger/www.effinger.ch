@@ -1,8 +1,8 @@
 +++
 title = "Konzert: UZU (CH)"
 
-startdate = 2016-11-18T20:30:00Z
-enddate = 2016-11-18T20:30:00Z
+startdate = "2016-11-18T20:30:00"
+enddate = "2016-11-18T20:30:00"
 categories = [ "Kaffeebar" ]
 location = "Effingerstrasse 10, Bern"
 # address = "46.945842, 7.435864"

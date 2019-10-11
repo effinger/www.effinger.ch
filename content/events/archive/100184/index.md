@@ -1,8 +1,8 @@
 +++
 title = "8-samkeit im Effinger"
 description = "Durch die Achtsamkeitsangebote im Effinger lernst du, ungünstige Haltungsmuster des Körpers zu erkennen und im Alltag darauf zu reagieren. Damit kannst du Fehl-und Überlastung des Körpers vermeiden."
-startdate = 2018-03-15T08:15:00Z
-enddate = 2018-03-15T18:00:00Z
+startdate = "2018-03-15T08:15:00"
+enddate = "2018-03-15T18:00:00"
 categories = [ "Coworking" ]
 location = "Effinger Labor (UG -2)"
 image = "achtsamkeit.jpg"

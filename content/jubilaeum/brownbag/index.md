@@ -1,7 +1,7 @@
 +++
 title = "Traumberuf statt Berufstrauma – Jubiläums-Brownbag"
 description = "Machen Sie bloss einen Job oder leben Sie Ihre Berufung? Der Berufungs-Coach und Autor von «Out of the Box» spricht über das Glück, die eigene Berufung zu leben. Mathias Morgenthaler hat über 1000 Interviews geführt mit Menschen, die etwas Unverwechselbares tun. Er stellt anhand von 10 Thesen vor, welche Faktoren über Erfolg und Erfüllung in der Arbeit entscheiden."
-startdate = 2019-03-15T12:00:00Z
+startdate = "2019-03-15T12:00:00"
 location = "Grosse Schanze (OG)"
 time = "12:00 – 13:00 Uhr"
 organizer = "Mathias Morgenthaler"

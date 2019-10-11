@@ -111,7 +111,7 @@
             {{ if .Params.registration_close }}
             data-event-close="{{ (time .Params.registration_close).Format "2006-01-02T15:04:05Z" }}"
             {{ else }}
-            data-event-close="{{ (time .Params.startdate).Format "2006-01-02T15:04:05Z" }}"
+            data-event-close="{{ (time .Params.startdate).Format "2006-01-02T15:04:05" }}"
             {{ end }}
             data-event-api="{{ .Site.Data.event_manager.apiUrl }}">
             <div class="row">

@@ -1,8 +1,8 @@
 +++
 title = "Effinger Community-Treffen November (OPEN SPACE)"
 
-startdate = 2018-11-01T19:00:00Z
-enddate = 2018-11-01T21:00:00Z
+startdate = "2018-11-01T19:00:00"
+enddate = "2018-11-01T21:00:00"
 categories = [ "Community" ]
 location = "Effinger im 1. OG"
 image = "community-treffen.jpg"

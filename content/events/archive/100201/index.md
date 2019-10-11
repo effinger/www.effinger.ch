@@ -1,8 +1,8 @@
 +++
 title = "Guest Lecture Festival"
 description = "Einmal im Jahr planen, organisieren und moderieren Studierende des HKB / MA Design das «Guest Lecture Festival». Experten und Persönlichkeiten aus verschiedenen Fachbereichen im Kontext Design werden dazu eingeladen, einen Workshop oder eine Lecture zu halten."
-startdate = 2018-04-17T16:30:00Z
-enddate = 2018-04-17T21:00:00Z
+startdate = "2018-04-17T16:30:00"
+enddate = "2018-04-17T21:00:00"
 categories = [ "Community" ]
 location = "Effinger"
 image = "image.jpg"

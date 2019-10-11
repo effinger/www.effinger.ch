@@ -1,8 +1,8 @@
 +++
 title = "Meet. Make. Game! 0.2"
 description = "Arbeite an einem einsteigerfreundlichen Projekt, um eine preiswerte Spielkonsole mit einem Raspberry Pi zu bauen. Wir installieren Retro-, Indie- und unsere eigene Spiele darauf. Und dann spielen wir natürlich!"
-startdate = 2018-02-02T18:00:00Z
-enddate = 2018-02-02T22:00:00Z
+startdate = "2018-02-02T18:00:00"
+enddate = "2018-02-02T22:00:00"
 categories = [ "Labor" ]
 location = "Effinger im -2 UG"
 image = "game.jpg"

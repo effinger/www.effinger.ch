@@ -1,8 +1,8 @@
 +++
 title = "Unico-Schule Community-Treffen"
 
-startdate = 2018-01-12T18:30:00Z
-enddate = 2018-01-12T21:00:00Z
+startdate = "2018-01-12T18:30:00"
+enddate = "2018-01-12T21:00:00"
 categories = [ "Community" ]
 location = "Effinger im 1. OG"
 image = "unico-community.jpg"

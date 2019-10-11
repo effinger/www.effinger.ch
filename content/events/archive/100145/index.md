@@ -1,8 +1,8 @@
 +++
 title = "Demonights 003"
 description = "We hereby invite you to the third incarnation of the Demonights. As it is short notice, summertime's running short and the days are busy,  we plan to just gather up, snack and drink, hang on a sofa or a comfy chair, and watch demos."
-startdate = 2017-09-08T19:00:00Z
-enddate = 2017-09-08T22:00:00Z
+startdate = "2017-09-08T19:00:00"
+enddate = "2017-09-08T22:00:00"
 categories = [ "Labor" ]
 location = "Effingerstrasse 10, Bern"
 address_link = "https://www.google.ch/maps/place/Effinger+-+Kaffeebar+%26+Coworking+Space/@46.94604,7.4336198,17z/data=!3m1!4b1!4m2!3m1!1s0x478e39bf613a53f7:0x30f7464656fbe3b2"

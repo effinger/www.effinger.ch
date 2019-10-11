@@ -1,8 +1,8 @@
 +++
 title = "Latte Art & Schnouse"
 
-startdate = 2018-03-11T10:00:00Z
-enddate = 2018-03-11T12:30:00Z
+startdate = "2018-03-11T10:00:00"
+enddate = "2018-03-11T12:30:00"
 categories = [ "Kaffeebar" ]
 location = "Effingerstrasse 10, Bern"
 address = "46.945842, 7.435864"

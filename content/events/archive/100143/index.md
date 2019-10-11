@@ -1,8 +1,8 @@
 +++
 title = "Brush Lettering Workshop für Einsteiger"
 description = "In diesem Workshop lernst du von Grund auf die Kunst des Brush Letterings, also des Schreibens mit dem Pinsel. Wir üben die Haltung des Pinsels, die Pinselführung, sowie die Grundformen der Buchstaben. Und mit ein wenig Übung wirst du schon bald deinen eigenen Brush Lettering Stil entwickeln."
-startdate = 2017-11-03T19:00:00Z
-enddate = 2017-11-03T21:30:00Z
+startdate = "2017-11-03T19:00:00"
+enddate = "2017-11-03T21:30:00"
 categories = [ "Atelier" ]
 location = "Effingerstrasse 10, Bern"
 address_link = "https://www.google.ch/maps/place/Effinger+-+Kaffeebar+%26+Coworking+Space/@46.94604,7.4336198,17z/data=!3m1!4b1!4m2!3m1!1s0x478e39bf613a53f7:0x30f7464656fbe3b2"

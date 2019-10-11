@@ -1,8 +1,8 @@
 +++
 title = "Einweihungsfeier Gemeinsame Werkstatt Belpberg"
 
-startdate = 2017-04-30T10:00:00Z
-enddate = 2017-04-30T15:00:00Z
+startdate = "2017-04-30T10:00:00"
+enddate = "2017-04-30T15:00:00"
 categories = [ "Werkstatt" ]
 location = "Familie Staub, Hof 24, Belpberg"
 address_link = "https://www.google.ch/maps/place/Hof+24,+3124+Belp/@46.8713873,7.526429,397m/data=!3m2!1e3!4b1!4m5!3m4!1s0x478e49ed7c7b00fb:0x512f8411579c2e1d!8m2!3d46.8713873!4d7.5273549"

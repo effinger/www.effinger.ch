@@ -1,8 +1,8 @@
 +++
 title = "Meet. Make. Game!"
 description = "Paper-Prototyping in kleinen Gruppen zum Thema Grids. Während den nächsten Meetups entsteht Schritt für Schritt ein Prototyp unseres eigenen Spiels. Das Spiel können wir nach Bedarf durch digitale Mittel ergänzen (Zufalls-Karten-Generator-App oder Spielbrett am Beamer?)"
-startdate = 2018-04-19T18:00:00Z
-enddate = 2018-04-19T21:00:00Z
+startdate = "2018-04-19T18:00:00"
+enddate = "2018-04-19T21:00:00"
 categories = [ "Labor" ]
 location = "Effinger im -2 UG"
 image = "game.png"

@@ -1,8 +1,8 @@
 +++
 title = "Unico-Schule Community-Treffen"
 description = "Wir eröffnen bald im Raum Bern eine Schule, in der Kinder frei und selbstbestimmt lernen und ihren Schulalltag mitbestimmen können. An unseren Community-Treffen können alle teilnehmen, die sich von unserem Leitbild und unserer Organisationsform angesprochen fühlen."
-startdate = 2017-12-09T13:30:00Z
-enddate = 2017-12-09T16:30:00Z
+startdate = "2017-12-09T13:30:00"
+enddate = "2017-12-09T16:30:00"
 categories = [ "Community" ]
 location = "Effingerstrasse 10, Bern"
 address_link = "https://www.google.ch/maps/place/Effinger+-+Kaffeebar+%26+Coworking+Space/@46.94604,7.4336198,17z/data=!3m1!4b1!4m2!3m1!1s0x478e39bf613a53f7:0x30f7464656fbe3b2"

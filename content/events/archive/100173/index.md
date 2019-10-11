@@ -1,8 +1,8 @@
 +++
 title = "Demonight 004"
 
-startdate = 2018-02-03T19:00:00Z
-enddate = 2018-02-04T00:00:00Z
+startdate = "2018-02-03T19:00:00"
+enddate = "2018-02-04T00:00:00"
 categories = [ "Labor" ]
 location = "Effinger im -2 UG"
 image = "demonight.jpg"

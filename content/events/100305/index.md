@@ -1,8 +1,8 @@
 +++
 title = "Offener Effinger"
 description = "Der «offene Effinger» hilft dir, deine Projekte voranzutreiben. Ideal für Macher, Bastler, Ideenhungrige, Weltverbesserer, Entwickler, Visionäre und Spielliebhaber. Gemeinsam begleiten wir einander mit unseren Stärken und Erfahrungen, damit Grosses entstehen kann."
-startdate = 2019-03-21T17:30:00Z
-enddate = 2019-03-21T22:00:00Z
+startdate = "2019-03-21T17:30:00"
+enddate = "2019-03-21T22:00:00"
 categories = [ "Community" ]
 location = "Effinger"
 image = "OffenerEffingerLogo.jpg"

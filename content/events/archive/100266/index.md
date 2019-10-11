@@ -1,8 +1,8 @@
 +++
 title = "Latte Art & Schnouse"
 description = "Möchtest du mal mit einer richtig grossen Kaffeemaschine guten Cappuccino machen? Und wie bekommt man die drei Schichten bei einem Latte Macchiato hin? Und was bedeutet das Tigermuster auf dem Espresso? Im Workshop lernst du, auf was man achten muss, um einen exzellenten Espresso zu machen und wie man den perfekten Milchschaum hinbekommt, um damit Latte Art auf den Kaffee zu zaubern."
-startdate = 2018-10-21T10:00:00Z
-enddate = 2018-10-21T12:30:00Z
+startdate = "2018-10-21T10:00:00"
+enddate = "2018-10-21T12:30:00"
 categories = [ "Kaffeebar" ]
 location = "Effingerstrasse 10, Bern"
 image = "latte-art.jpg"

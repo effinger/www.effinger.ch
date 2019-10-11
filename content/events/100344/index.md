@@ -1,8 +1,8 @@
 +++
 title = "TREFFEN THESaktiv - am Mittag"
 description = "Wir treffen uns als Gruppe THESaktiv einmal im Monat um Themen und Aktuelles aus dem Umfeld des Lernens anzugehen. Wer mit einer Idee aktiv werden und sich einbringen möchte, ist herzlich willkommen."
-startdate = 2019-10-28T12:00:00Z
-enddate = 2019-10-28T13:30:00Z
+startdate = "2019-10-28T12:00:00"
+enddate = "2019-10-28T13:30:00"
 categories = [ "THESaktiv" ]
 location = "Effinger im 1 OG - Beginn in Kaffeebar"
 image = "Bild_Thes.jpg"

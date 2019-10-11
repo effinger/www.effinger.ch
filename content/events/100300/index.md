@@ -1,8 +1,8 @@
 +++
 title = "Demonight 008"
 description = "Experience a truly oldschool story told by two local scene legends: join us for an extraordinary evening of real-time underground computer arts."
-startdate = 2019-03-09T19:00:00Z
-enddate = 2019-03-09T23:33:33Z
+startdate = "2019-03-09T19:00:00"
+enddate = "2019-03-09T23:33:33"
 categories = [ "Labor" ]
 location = "Effinger im -2 UG"
 image = "lamer-01-01-01.jpg"

@@ -1,7 +1,7 @@
 +++
 title = "Konzert"
 description = "Vignette’s Orchester feat. Olan."
-startdate = 2019-03-15T19:30:00Z
+startdate = "2019-03-15T19:30:00"
 location = "Kaffeebar (EG)"
 time = "19:00 Uhr"
 organizer = "Anicia Kohler"

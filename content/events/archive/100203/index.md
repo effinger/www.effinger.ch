@@ -1,8 +1,8 @@
 +++
 title = "Kleidertausch"
 description = "Der Frühling ist da und es ist wieder Zeit, den Kleiderschrank aufzuräumen. Du bist herzlich eingeladen zu unserem Kleidertausch."
-startdate = 2018-04-28T14:00:00Z
-enddate = 2018-04-28T17:00:00Z
+startdate = "2018-04-28T14:00:00"
+enddate = "2018-04-28T17:00:00"
 categories = [ "Labor" ]
 location = "Effinger im -2 UG"
 image = "kleidertausch.jpg"

@@ -1,8 +1,8 @@
 +++
 title = "Visual Innovation: Visualisieren meets Design Thinking und Innovation"
 
-startdate = 2017-11-13T09:00:00Z
-enddate = 2017-11-13T16:00:00Z
+startdate = "2017-11-13T09:00:00"
+enddate = "2017-11-13T16:00:00"
 categories = [ "Community" ]
 location = "Effingerstrasse 10, Bern"
 address = "46.945842, 7.435864"

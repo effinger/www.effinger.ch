@@ -1,8 +1,8 @@
 +++
 title = "Eröffnung 1. Obergeschoss"
 
-startdate = 2016-10-28T15:00:00Z
-enddate = 2016-10-28T18:00:00Z
+startdate = "2016-10-28T15:00:00"
+enddate = "2016-10-28T18:00:00"
 categories = [ "Coworking" ]
 location = "Effingerstrasse 10, Bern"
 address = "46.945842, 7.435864"

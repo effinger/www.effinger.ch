@@ -1,8 +1,8 @@
 +++
 title = "Diskussionsabend THESofa – Entlehrt euch!"
 description = "Wir diskutieren in einer entspannten Sofarunde über die ersten Kapitel des neuen Buches von Rolf Arnold."
-startdate = 2018-05-02T19:00:00Z
-enddate = 2018-05-02T21:00:00Z
+startdate = "2018-05-02T19:00:00"
+enddate = "2018-05-02T21:00:00"
 categories = [ "Community" ]
 location = "Effinger, 1. OG"
 image = "thesofa.jpg"

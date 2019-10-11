@@ -1,7 +1,7 @@
 +++
 title = "WEIN UND SEIN – Spezialdegustation"
 description = "Degustation von drei erlesenen Weinen mit passenden Köstlichkeiten. Den Gaumen verwöhnen und geniessen."
-startdate = 2019-03-15T18:00:00Z
+startdate = "2019-03-15T18:00:00"
 location = "Bärengrabe (OG)"
 time = "18:00 - 18:45 Uhr"
 organizer = "Markus Roos"

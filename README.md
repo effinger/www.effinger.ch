@@ -44,7 +44,7 @@ To create a new event follow these steps:
     * **title**: The title of the event.
     * **description**: A summary of the text. The summary is displayed when the the event is shared in Slack or social media. Google also uses this description in search results. So this is quite important.
     * **image**: The main image of the event. This is - like the description - displayed in social media.
-    * **startdate**: The date and time when the event starts. The format is `2018-12-02T10:00:00Z`.
+    * **startdate**: The date and time when the event starts. The format is `2018-12-02T10:00:00`.
     * **enddate**: The end date and time.
     * **categories**: The category is displayed in the overview and is also used to determine the event color. The valid categories are specified in `assets/sass/custom/_events.scss`. Current categories: `community`, `kaffeebar`, `coworking`, `atelier`, `werkstatt`, `labor`.
     * **location**: The location of the event.

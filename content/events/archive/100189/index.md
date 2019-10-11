@@ -1,8 +1,8 @@
 +++
 title = "Treffen - Schule mutig gestalten"
 description = "An der Gestaltung von Schulen interessiert? Nach vielen Treffen als 'Schule anders denken' wollen wir nun noch vermehrt Schule mutig gestalten!"
-startdate = 2018-03-28T18:00:00Z
-enddate = 2018-03-28T21:00:00Z
+startdate = "2018-03-28T18:00:00"
+enddate = "2018-03-28T21:00:00"
 categories = [ "Community" ]
 location = "Effinger 1. OG (Beginn in Kaffeebar)"
 image = "empowerment.jpg"

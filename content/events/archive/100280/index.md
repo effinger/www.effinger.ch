@@ -1,8 +1,8 @@
 +++
 title = "Einladung - Vernissage 'Der Weinmaler' - Eine Reise in den Genuss"
 description = "Malen und Wein - Eine kreative Auseinandersetzung mit dem Genuss. Im Rahmen des 'offenen Kunstatelier' ist die Idee entstanden, diese beiden Bereiche miteinander zu verbinden. Bist du neugierig und willst deine Sinne aktivieren? Komm vorbein und lass dich inspirieren."
-startdate = 2018-12-10T17:00:00Z
-enddate = 2018-12-10T20:30:33Z
+startdate = "2018-12-10T17:00:00"
+enddate = "2018-12-10T20:30:33"
 categories = [ "Community" ]
 location = "Effinger im 1 OG - im Rosengarten"
 image = "Bild_WeinMaler.jpg"

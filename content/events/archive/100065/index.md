@@ -1,8 +1,8 @@
 +++
 title = "Effinger Backstage Führung"
 
-startdate = 2016-05-20T17:00:00Z
-enddate = 2016-05-20T18:30:00Z
+startdate = "2016-05-20T17:00:00"
+enddate = "2016-05-20T18:30:00"
 categories = [ "Coworking", "Community" ]
 location = "Effingerstrasse 10, Bern"
 address = "46.945842, 7.435864"

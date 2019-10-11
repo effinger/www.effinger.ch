@@ -1,8 +1,8 @@
 +++
 title = "Massage (jeden Donnerstag)"
 description = "Eine Massage - Donnerstags im Effinger"
-startdate = 2019-05-02T10:00:00
-enddate = 2019-05-02T17:00:00
+startdate = "2019-05-02T10:00:00"
+enddate = "2019-05-02T17:00:00"
 categories = [ "Coworking" ]
 location = "Effinger: Monbijou"
 image = "massage.jpg"

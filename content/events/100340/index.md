@@ -1,8 +1,8 @@
 +++
 title = "XING Expertendialog | Inklusion – mehr als ein Modewort?"
 description = "Der Begriff Inklusion ist bereits in vieler Munde. Nun was bedeutet dies aber für unsere Gesellschaft, den beruflichen Alltag und die Wirtschaft? Wie kann jeder/jede einen kleinen Teil dazu beitragen, damit Inklusion kein Fremdwort mehr ist sondern für Menschen mit und ohne Behinderung Alltag wird."
-startdate = 2019-06-18T18:00:00Z
-enddate = 2019-06-18T21:00:00Z
+startdate = "2019-06-18T18:00:00"
+enddate = "2019-06-18T21:00:00"
 categories = [ "Coworking" ]
 location = "Effinger, Raum Matte (1. OG)"
 image = "xing_inklusion.jpg"

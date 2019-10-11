@@ -1,8 +1,8 @@
 +++
 title = "table conversations #3 / oued (1. Durchführung)"
 description = "Zwei Tanzstücke, aufgeführt auf mehreren Stockwerken: table conversations #3 und oued. Dieser Abend findet im Rahmen des Beta Stage Festivals statt, ein Pop-up Festival der Berner Tanzszene."
-startdate = 2018-02-23T18:30:00Z
-enddate = 2018-02-23T19:45:00Z
+startdate = "2018-02-23T18:30:00"
+enddate = "2018-02-23T19:45:00"
 categories = [ "Community" ]
 location = "Effinger"
 image = "tableconversations.jpg"

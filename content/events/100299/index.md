@@ -1,8 +1,8 @@
 +++
 title = "Diskussionsabend THESofa – „Einfluss von Kunst und Kultur“"
 description = "Wir diskutieren in einer entspannten Sofarunde über die Entwicklung der Bildung und des Lernens: „Wie lassen sich aus der Begegnung mit Kunst und kulturellen Prozessen Anregungen für unsere Weiterbildungsanliegen gewinnen?“"
-startdate = 2019-01-14T18:30:00Z
-enddate = 2019-01-14T21:00:00Z
+startdate = "2019-01-14T18:30:00"
+enddate = "2019-01-14T21:00:00"
 categories = [ "THES" ]
 location = "Effinger im 1 OG - Beginn in Kaffeebar"
 image = "thes_sofa_kunst_kultur.jpg"

@@ -1,8 +1,8 @@
 +++
 title = "Spielabende - Anderswelt"
 description = "In ungezwungener Atmosphäre können spielfreudige Individuen die Mitte der Woche auf lockere Art und Weise zelebrieren."
-startdate = 2018-12-12T17:00:00
-enddate = 2018-12-12T21:00:00
+startdate = "2018-12-12T17:00:00"
+enddate = "2018-12-12T21:00:00"
 categories = [ "Community" ]
 location = "Effinger 2. UG (Raum Labor)"
 image = "image.jpg"

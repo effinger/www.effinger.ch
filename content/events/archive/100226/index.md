@@ -1,8 +1,8 @@
 +++
 title = "Demonight 006"
 description = "Experience the top hits of the summer, including the latest releases from ASSEMBLY 2018, and another edition of the One Effect Compo in an evening of the real-time underground computer arts."
-startdate = 2018-08-18T19:00:00Z
-enddate = 2018-08-18T23:33:33Z
+startdate = "2018-08-18T19:00:00"
+enddate = "2018-08-18T23:33:33"
 categories = [ "Labor" ]
 location = "Effinger im -2 UG"
 image = "demonight.jpg"

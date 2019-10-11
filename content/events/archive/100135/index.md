@@ -1,8 +1,8 @@
 +++
 title = "Anspruchsvolles Visualisieren für Coaching, Workshop und Projekt (& Graphic Recording)"
 
-startdate = 2017-09-18T09:00:00Z
-enddate = 2017-09-18T16:00:00Z
+startdate = "2017-09-18T09:00:00"
+enddate = "2017-09-18T16:00:00"
 categories = [ "Community" ]
 location = "Effingerstrasse 10, Bern"
 address = "46.945842, 7.435864"

@@ -1,8 +1,8 @@
 +++
 title = "Open Debate: Direkte Demokratie verbindet"
 description = "Open debate zum Thema 'Direkte Demokratie verbindet - Menschen, Vergangenheit und Zukunft'"
-startdate = 2018-04-25T19:30:00Z
-enddate = 2018-04-25T21:30:00Z
+startdate = "2018-04-25T19:30:00"
+enddate = "2018-04-25T21:30:00"
 categories = [ "Community" ]
 location = "Effinger 1. OG (Grosse Schanze)"
 image = "direkte-demokratie.jpg"

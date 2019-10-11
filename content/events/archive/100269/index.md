@@ -1,8 +1,8 @@
 +++
 title = "Führung neues Schulzimmer der WKS"
 description = "Die WKS Bern hat ein Konzept entwickelt für selbsorganisiertes Lernen in der kaufmännischen Bildung. Ein Team aus dem Effinger-Umfeld durfte das Innendesign entwickeln und den Umbau für dieses neuartige Schulzimmer durchführen."
-startdate = 2018-10-02T16:00:00Z
-enddate = 2018-10-02T17:30:00Z
+startdate = "2018-10-02T16:00:00"
+enddate = "2018-10-02T17:30:00"
 categories = [ "Community" ]
 location = "WKS Gebäude 3, Schwarztorstrasse 61, Bern"
 image = "schulzimmer-wks.jpg"

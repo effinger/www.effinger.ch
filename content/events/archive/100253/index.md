@@ -1,8 +1,8 @@
 +++
 title = "Massage (jeden Donnerstag)"
 description = "Eine Massage - Donnerstags im Effinger"
-startdate = 2018-10-04T10:00:00
-enddate = 2018-10-04T17:00:00
+startdate = "2018-10-04T10:00:00"
+enddate = "2018-10-04T17:00:00"
 categories = [ "Coworking" ]
 location = "Effinger: im Aquarium Telefonraum"
 image = "massage.jpg"

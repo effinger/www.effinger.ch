@@ -1,8 +1,8 @@
 +++
 title = "Demonight 005"
 description = "On April 27 we take a look back at what has been going on in the spring of the worldwide demoscene, not least of which the results of REVISION 2018! Join us for an evening of the real-time underground."
-startdate = 2018-04-27T18:00:00Z
-enddate = 2018-04-28T00:00:00Z
+startdate = "2018-04-27T18:00:00"
+enddate = "2018-04-28T00:00:00"
 categories = [ "Labor" ]
 location = "Effinger im -2 UG"
 image = "demonight.jpg"

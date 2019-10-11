@@ -1,8 +1,8 @@
 +++
 title = "Konzert: Bennie (CH)"
 
-startdate = 2017-04-21T20:30:00Z
-enddate = 2017-04-21T20:30:00Z
+startdate = "2017-04-21T20:30:00"
+enddate = "2017-04-21T20:30:00"
 categories = [ "Kaffeebar" ]
 location = "Effingerstrasse 10, Bern"
 # address = "46.945842, 7.435864"

@@ -1,7 +1,7 @@
 +++
 title = "Instagram Worthy"
 description = "Damaris Berger gibt simple Tipps für bessere Fotos mit deiner HandyKamera. Ob für Instagram oder für’s Familienalbum: ready to step up your photography game? "
-startdate = 2019-03-15T17:00:00Z
+startdate = "2019-03-15T17:00:00"
 location = "Rosengarten (OG)"
 time = "17:00 - 17:30 Uhr"
 organizer = "Damaris Berger"

@@ -1,8 +1,8 @@
 +++
 title = "Inspirationstreffen Urbane Dörfer"
 description = "Suchst du eine unverbindliche Anlaufstelle, um dich zum Preis eines Kaffees mit Interessierten über die Begeisterung von neuen Wohnformen auszutauschen?"
-startdate = 2019-05-04T10:00:00Z
-enddate = 2019-05-04T11:30:00Z
+startdate = "2019-05-04T10:00:00"
+enddate = "2019-05-04T11:30:00"
 categories = [ "Community" ]
 location = "Effinger, Kaffeebar"
 image = "AE_Fremtidens-Gardhave_View-01_LENDAGER-BOGL-1500x900.jpg"

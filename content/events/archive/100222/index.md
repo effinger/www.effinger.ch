@@ -1,8 +1,8 @@
 +++
 title = "Virtual Reality Cinema"
 
-startdate = 2018-08-24T19:00:00Z
-enddate = 2018-08-24T22:00:00Z
+startdate = "2018-08-24T19:00:00"
+enddate = "2018-08-24T22:00:00"
 categories = [ "Labor" ]
 location = "Effinger Labor (UG -2)"
 image = "wearecinema.jpg"
