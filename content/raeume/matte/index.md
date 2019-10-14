@@ -96,6 +96,7 @@ hidden = true
 * **Moderationsmaterial**: Wenn kreatives Arbeiten und die Benutzung der Wände geplant sind, muss die Moderationskiste gebucht werden (Kosten zusätzlich zur Raummiete: CHF 50). Die Kiste enthält abwischbare Stifte sowie diverse Papier-, Post-it-, Klebeutensilien und Magnete. Damit wir das Risiko von Schäden an der Infrastruktur minimieren können, bitten wir euch, keine eigenen Moderationsutensilien (Stifte usw.) mitzubringen.
 * **15 Min. Einrichten**: Der Raum darf 15 Minuten vor der gebuchten Zeit zur Vorbereitung benutzt werden.
 * **Rollstühle**: Leider sind unsere Räumlichkeiten und Toiletten nicht rollstuhlgängig.
+* **Samstage**: Buchungen am Samstag nur auf Anfrage.
 
 
 ### Annulationen
