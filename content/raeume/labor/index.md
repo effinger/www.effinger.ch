@@ -18,7 +18,7 @@ gallery = [
 ]
 
 square_meters = 55
-capacity = "20"
+capacity = "10"
 
 equipment = [
   "Stühle",
@@ -39,10 +39,14 @@ prices_excluding_vat = true
 calendar_id = "effinger.ch_34303231313530323931@resource.calendar.google.com"
 
 setup = [
-  "3 runde Tische mit je 6 Stühlen (Standard)",
-  "Konzertbestuhlung (+ CHF 30 Umbaukosten)",
-  "Seminarbestuhlung (+ CHF 30 Umbaukosten)"
+  "3 runde Tische mit je 6 Stühlen (Standard)"
 ]
+
+# setup = [
+#   "3 runde Tische mit je 6 Stühlen (Standard)",
+#   "Konzertbestuhlung (+ CHF 30 Umbaukosten)",
+#   "Seminarbestuhlung (+ CHF 30 Umbaukosten)"
+# ]
 
 [[extras]]
 text = "Beamer und Leinwand (8m2) mit HDMI-Anschluss"
