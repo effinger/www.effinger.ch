@@ -14,6 +14,8 @@ It's been the year 1983 when Commodore asked in a freshly launched TV commercial
 
 Please visit our recently launched website [DEMONIGHTS.CH](https://demonights.ch/en/blog/demonights-010) for details and background.
 
+Image from: [We Are Demo by Fairlight and Noice and Offence ](https://demozoo.org/productions/155066/)
+
 ## Location & Contact
 
 * When: **FRIDAY**, June 21, 2019
