@@ -137,6 +137,12 @@
               var eventStart = moment(event.start);
               var eventEnd = moment(event.end);
 
+              // Detect Daylight Savings Time
+              if (eventStart.isDST()) {
+                eventStart = eventStart.add(1, 'hour');
+                eventEnd = eventEnd.add(1, 'hour');
+              }
+
               if (eventEnd.isBefore()) {
                 tableContent += "<tr class='event-ended'>";
               } else {
