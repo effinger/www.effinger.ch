@@ -14,6 +14,10 @@ Already wondered how data from sensors and other low energy devices can be easil
 
 There are over [100 gateways in Bern](https://www.thethingsnetwork.org/community/Bern/), and we have recently installed an indoor gateway at Effinger, and are working on "smart building" projects to benefit the coworking community. Your DIY ideas and helping hands wanted!
 
+Please [register at Meetup.com](https://www.meetup.com/de-DE/The-Things-Network-Bern/events/265540114/) or send us a note through some other channel if you're coming, just so we can keep track of numbers.
+
+---
+
 This is one of the first meetups organized by local members of the non-profit [Open Network Infrastructure Association](https://opennetworkinfrastructure.org/), which is committed to democratizing access and spreading knowledge about the Internet of Things. Many of our members are familiar with building low cost devices, use platforms like Arduino and Raspberry Pi, make prototypes at [hackathons](https://now.makezurich.ch/) and [FabLabs](https://fablab-bern.ch/), connect their applications and share their data on open platforms.
 
 ![](https://ttnstaticfile.blob.core.windows.net/media/posts/c6962953b7a14e5492a25edee3930ac4.large.png)
