@@ -1,8 +1,8 @@
 +++
 title = "TTN Bern meetup"
 description = "On a mission to provide Bern, Switzerland with a free IoT data network."
-startdate = "2019-11-19T18:00:00"
-enddate = "2019-11-19T20:00:00"
+startdate = "2019-11-12T18:00:00"
+enddate = "2019-11-12T20:00:00"
 categories = [ "Labor" ]
 location = "Effinger im -2 UG"
 image = "ttnbern.jpg"
