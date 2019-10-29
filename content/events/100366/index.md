@@ -14,7 +14,7 @@ Already wondered how data from sensors and other low energy devices can be easil
 
 There are over [100 gateways in Bern](https://www.thethingsnetwork.org/community/Bern/), and we have recently installed an indoor gateway at Effinger, and are working on "smart building" projects to benefit the coworking community. Your DIY ideas and helping hands wanted!
 
-Please [register at Meetup.com](https://www.meetup.com/de-DE/The-Things-Network-Bern/events/265540114/) or send us a note through some other channel if you're coming, just so we can keep track of numbers.
+Please [register at Meetup.com](https://www.meetup.com/de-DE/The-Things-Network-Bern/events/265540114/) or send us a note through the [open data forum](https://forum.opendata.ch/t/12-11-ttn-effinger/596/1) or some [other channel](https://twitter.com/sodacamper/status/1189127910084501504) if you're coming, just so we can keep track of numbers.
 
 ---
 
