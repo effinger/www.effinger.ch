@@ -29,12 +29,6 @@ image = "/images/kaffeebar/lea.jpg"
 comment = "When life gives you lemons, trade them for coffee."
 
 [[Person]]
-name = "Marina"
-gender = "f"
-image = "/images/kaffeebar/marina.jpg"
-comment = ""
-
-[[Person]]
 name = "Nico"
 gender = "m"
 image = "/images/kaffeebar/nico.jpg"
