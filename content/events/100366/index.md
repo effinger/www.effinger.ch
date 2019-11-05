@@ -1,8 +1,8 @@
 +++
 title = "TTN Bern meetup"
 description = "On a mission to provide Bern, Switzerland with a free IoT data network."
-startdate = "2019-11-12T18:00:00"
-enddate = "2019-11-12T20:00:00"
+startdate = "2019-11-19T18:00:00"
+enddate = "2019-11-19T20:00:00"
 categories = [ "Labor" ]
 location = "Effinger im -2 UG"
 image = "ttnbern.jpg"
@@ -14,7 +14,11 @@ Already wondered how data from sensors and other low energy devices can be easil
 
 There are over [100 gateways in Bern](https://www.thethingsnetwork.org/community/Bern/), and we have recently installed an indoor gateway at Effinger, and are working on "smart building" projects to benefit the coworking community. Your DIY ideas and helping hands wanted!
 
-Please [register at Meetup.com](https://www.meetup.com/de-DE/The-Things-Network-Bern/events/265540114/) or send us a note through the [open data forum](https://forum.opendata.ch/t/12-11-ttn-effinger/596/1) or some [other channel](https://twitter.com/sodacamper/status/1189127910084501504) if you're coming, just so we can keep track of numbers.
+This workshop is taking place on **Tuesday, November 19**, downstairs in the Effinger [#labor](https://www.effinger.ch/raeume/labor/). Please [register at Meetup.com](https://www.meetup.com/de-DE/The-Things-Network-Bern/events/265540114/) or send us a note through the [open data forum](https://forum.opendata.ch/t/12-11-ttn-effinger/596/1) or some [other channel](https://twitter.com/sodacamper/status/1189127910084501504) if you're coming, just so we can keep track of numbers.
+
+<div style="background:yellow">
+<b>Please Note:</b> we will be having a small meetup in the back of the Kaffeebar Lounge (upstairs at the same location) one week earlier, on <u>Tuesday November 12</u>, to test the gateway and do some set up for the workshop. You do not need to sign up, just come out if you want to help.
+</div>
 
 ---
 
