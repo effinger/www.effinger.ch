@@ -91,6 +91,17 @@ facebook = ""
 instagram = ""
 
 [[Person]]
+name = "Michael Hörlimann"
+gender = "m"
+image = "/images/effianer/michael-hoernlimann.jpg"
+email = "alexis@effinger.ch"
+phone = ""
+website = "https://michaelh.ch/"
+twitter = ""
+facebook = ""
+instagram = ""
+
+[[Person]]
 name = "Claudine Etter"
 gender = "f"
 image = "/images/effianer/claudine-etter.jpg"
