@@ -14,6 +14,34 @@
   {{ end }}
 {{ end }}
 
+{{ define "head_includes" }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Event",
+  "name": {{ .Title }},
+  "startDate": {{ .Params.startdate }},
+  "endDate": {{ .Params.enddate }},
+  "location": {
+    "@type": "Place",
+    "name": "Effinger - Kaffeebar & Coworking Space",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Effingerstrasse 10",
+      "addressLocality": "Bern",
+      "postalCode": "3011",
+      "addressCountry": "CH"
+    }
+  },
+  {{- if .Params.image }}
+  "image": [
+    {{ partial `utils/image_permalink.html` . }}
+    ],
+  {{- end }}
+  "description": {{ .Description }}
+}
+</script>
+{{ end }}
 
 {{ define "main" }}
 <!-- Page Wrap -->
@@ -225,82 +253,10 @@
   </section>
   <!-- End Section Event Single View -->
 
-  {{ if .Params.address }}
-  <!-- Google Map -->
-  <div class="google-map">
-    <div data-address="{{ .Params.address }}" id="map-canvas"></div>
-  </div>
-  <!-- End Google Map -->
-  {{ end }}
-
-
-
 <!-- End Page Wrap -->
 {{ end }}
 
 {{ define "body_includes" }}
-  {{ if .Params.address }}
-  /* ---------------------------------------------
-  Google map
-  --------------------------------------------- */
-  <script type="text/javascript" src="/js/gmap3.min.js"></script>
-  <script type="text/javascript" src="https://maps.google.com/maps/api/js?language=de"></script>
-  <script type="text/javascript">
-  $(document).ready(function(){
-
-    var gmMapDiv = $("#map-canvas");
-
-    $(".map-section").click(function(){
-      $(this).toggleClass("js-active");
-      $(this).find(".mt-open").toggle();
-      $(this).find(".mt-close").toggle();
-    });
-
-
-    if (gmMapDiv.length) {
-
-      var gmCenterAddress = gmMapDiv.attr("data-address");
-      var gmMarkerAddress = gmMapDiv.attr("data-address");
-
-
-      gmMapDiv.gmap3({
-        action: "init",
-        marker: {
-          address: gmMarkerAddress,
-          options: {
-            icon: "/images/map-marker_effinger.svg"
-            /*
-            icon: new google.maps.MarkerImage('/images/map-marker_effinger.svg',   //icon url
-                  new google.maps.Size(60, 60),    //sets the icon size
-                  new google.maps.Point(0, 0),    //sets the origin point of the icon
-                  new google.maps.Point(30, 53))    //sets the anchor point for the icon
-            */
-          }
-        },
-        map: {
-          options: {
-            zoom: 14,
-            zoomControl: true,
-            zoomControlOptions: {
-              style: google.maps.ZoomControlStyle.SMALL
-            },
-            zoomControlOptions: {
-              position: google.maps.ControlPosition.LEFT_TOP
-            },
-            mapTypeControl: false,
-            scaleControl: true,
-            scrollwheel: false,
-            streetViewControl: false,
-            draggable: true,
-            styles: [{"featureType":"water","elementType":"geometry.fill","stylers":[{"color":"#d3d3d3"}]},{"featureType":"transit","stylers":[{"color":"#808080"},{"visibility":"off"}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"visibility":"on"},{"color":"#b3b3b3"}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"road.local","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#ffffff"},{"weight":1.8}]},{"featureType":"road.local","elementType":"geometry.stroke","stylers":[{"color":"#d7d7d7"}]},{"featureType":"poi","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#ebebeb"}]},{"featureType":"administrative","elementType":"geometry","stylers":[{"color":"#a7a7a7"}]},{"featureType":"road.arterial","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"road.arterial","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"landscape","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#efefef"}]},{"featureType":"road","elementType":"labels.text.fill","stylers":[{"color":"#696969"}]},{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"visibility":"on"},{"color":"#737373"}]},{"featureType":"poi","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"poi","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"road.arterial","elementType":"geometry.stroke","stylers":[{"color":"#d6d6d6"}]},{"featureType":"road","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{},{"featureType":"poi","elementType":"geometry.fill","stylers":[{"color":"#dadada"}]}]
-          }
-        }
-      });
-    }
-  });
-  </script>
-  {{ end }}
-
   {{ if .Params.registration }}
   <script type="text/javascript" src="/js/event-manager.dart.js"></script>
   {{ end }}
