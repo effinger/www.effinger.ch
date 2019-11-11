@@ -90,6 +90,6 @@ Der Rosengarten ist ein Workshopraum, welcher als Kunstatelier gestaltet ist. Di
 * **Samstage**: Buchungen am Samstag nur auf Anfrage.
 
 
-### Annulationen
+### Annullationen
 
 Wenn eine Buchung weniger als drei Arbeitstage vor Beginn der Buchung annulliert wird, verrechnen wir 50% der vereinbarten Raummiete.

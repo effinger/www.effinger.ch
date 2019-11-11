@@ -95,6 +95,6 @@ Der Raum bietet 360° beschreibbare, magnetische Wände sowie einen grossen Scre
 * **Samstage**: An Samstagen ist die Verpflegung ausschliesslich über die Kaffeebar beziehbar und es steht für technische Anliegen keine Ansprechperson zur Verfügung.
 
 
-### Annulationen
+### Annullationen
 
 Wenn eine Buchung weniger als drei Arbeitstage vor Beginn der Buchung annulliert wird, verrechnen wir 50% der vereinbarten Raummiete.

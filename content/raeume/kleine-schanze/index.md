@@ -91,6 +91,6 @@ Offener Raum mit Stehtischen.
 * **Rollstühle**: Leider sind unsere Räumlichkeiten und Toiletten nicht rollstuhlgängig.
 
 
-### Annulationen
+### Annullationen
 
 Wenn eine Buchung weniger als drei Arbeitstage vor Beginn der Buchung annulliert wird, verrechnen wir 50% der vereinbarten Raummiete.
