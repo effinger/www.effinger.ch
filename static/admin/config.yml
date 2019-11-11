@@ -91,7 +91,7 @@ collections:
           default: 100000,
           min: 100001,
           required: true,
-          hint: "Aufsteigende Zahl für die Event-URL."
+          hint: "Nummer für die Event-URL. WICHTIG: Höchste Event-Nummer nehmen und 1 addieren!"
         }
       - {
           label: "Start",
