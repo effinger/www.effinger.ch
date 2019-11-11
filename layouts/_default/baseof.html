@@ -20,7 +20,7 @@
     <meta property="og:title" content="{{ if .Title }}{{ .Title }}{{ else }}{{ .Site.Title }}{{ end }}" />
     <meta property="og:description" content="{{ .Description }}" />
     <meta property="og:url" content="{{ .Permalink }}" />
-    {{ partial "utils/image_meta.html" . }}
+    <meta property="og:image" content="{{ partial `utils/image_permalink.html` . }}" />
 
     <title>{{ block "title" . }}{{ with .Title }}{{ . }} | {{ end }}{{ .Site.Title }}{{ end }}</title>
 

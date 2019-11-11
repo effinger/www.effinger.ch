@@ -1,0 +1,18 @@
+{{ $result := "" }}
+{{ if .Params.image -}}
+  {{ if (hasPrefix .Params.image "http") -}}
+    {{/* Image is on another server  */}}
+    {{ $result = .Params.image }}
+  {{ else if (hasPrefix .Params.image "/") -}}
+    {{/* Image is relative to the root folder */}}
+    {{ $result = .Params.image | absURL }}
+  {{ else }}
+    {{/* Image is relative to the current folder */}}
+    {{ $result = (print .Permalink .Params.image) }}
+  {{ end }}
+{{- else -}}
+  {{/* No image. Use default logo image */}}
+  {{ $result = (print .Site.BaseURL "images/logo-black-tagline.png") }}
+{{- end -}}
+
+{{ return $result }}
