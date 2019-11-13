@@ -38,7 +38,18 @@
     {{ partial `utils/image_permalink.html` . }}
     ],
   {{- end }}
-  "description": {{ .Description }}
+  "description": {{ .Description }},
+  "offers": {
+    "@type": "Offer",
+    "url": {{ .Permalink }},
+    "price": "0",
+    "priceCurrency": "CHF",
+    "availability": "https://schema.org/InStock"
+  },
+  "performer": {
+    "@type": "PerformingGroup",
+    "name": "Effinger Community"
+  }
 }
 </script>
 {{ end }}
