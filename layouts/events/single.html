@@ -95,7 +95,7 @@
         <div class="col-md-3">
           <div class="row mb-md-30">
             <div class="col-md-12 col-sm-4 mb-20 mb-md-0">
-              <div class="date striped">
+              <div class="date{{ if $isPast }} striped{{ end }}">
                 <div class="weekday uppercase">{{ .Scratch.Get "start_weekday" }}</div>
                 <div class="day">{{ .Scratch.Get "start_day" }}</div>
                 <div class="monthyear uppercase">{{ .Scratch.Get "start_shortmonth" }} {{ .Scratch.Get "start_year" }}</div>
