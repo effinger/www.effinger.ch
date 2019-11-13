@@ -81,19 +81,9 @@
   <!-- Section Event Single View -->
   <section class="page-section event">
     <div class="container relative eventsingle">
-      {{ if $isArchived }}
-        <h2 class="font-alt align-center">{{ .Title }}</h2>
-        <p class="align-center"><small><i class="fa fa-calendar-o"></i> {{ .Scratch.Get "start_weekday" }}, {{ .Scratch.Get "start_day" }}. {{ .Scratch.Get "start_month" }} {{ .Scratch.Get "start_year" }}</small></p>
-        <div class="alert alert-warning text-center">
-          <i class="fa fa-ban"></i>
-          Event liegt über {{ .Site.Params.archiveEventsAfterMonths }} Monte zurück und wurde archiviert!
-        </div>
-        <div class="text-center mt-40">
-          <a href="/events/" class="btn btn-mod btn-border btn-round btn-large">Aktuelle Events anzeigen</a>
-        </div>
-      {{ else if $isPast }}
-        <h2 class="font-alt align-center mb-80">{{ .Title }}</h2>
-        <div class="alert alert-info text-center">
+      {{ if $isPast }}
+        <h2 class="font-alt align-center mb-40">{{ .Title }}</h2>
+        <div class="alert alert-info text-center mb-40">
           <i class="fa fa-ban"></i>
           Event liegt in der Vergangenheit!
         </div>
@@ -101,12 +91,11 @@
         <h2 class="font-alt align-center mb-80">{{ .Title }}</h2>
       {{ end }}
 
-      {{ if (not $isArchived) }}
       <div class="row">
         <div class="col-md-3">
           <div class="row mb-md-30">
             <div class="col-md-12 col-sm-4 mb-20 mb-md-0">
-              <div class="date">
+              <div class="date striped">
                 <div class="weekday uppercase">{{ .Scratch.Get "start_weekday" }}</div>
                 <div class="day">{{ .Scratch.Get "start_day" }}</div>
                 <div class="monthyear uppercase">{{ .Scratch.Get "start_shortmonth" }} {{ .Scratch.Get "start_year" }}</div>
@@ -147,7 +136,6 @@
           </div>
         </div>
       </div>
-      {{ end }}
 
       {{ if and .Params.registration (not $isArchived) }}
       <!-- Event Registration -->

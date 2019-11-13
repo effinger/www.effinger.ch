@@ -1,5 +1,4 @@
 .event {
-
   .eventlist {
     .event-item {
       overflow: hidden;
@@ -16,7 +15,8 @@
           font-size: 50px;
           line-height: 45px;
         }
-        .month {}
+        .month {
+        }
       }
       .event-text {
         transition: transform 0.5s;
@@ -58,19 +58,28 @@
           background-color: powderblue;
         }
         .atelier {
-          background-color: #E0E6B0;
+          background-color: #e0e6b0;
         }
         .werkstatt {
-          background-color: #FDF8B5;
+          background-color: #fdf8b5;
         }
         .labor {
-          background-color: #0E0010;
+          background-color: #0e0010;
         }
         .thesaktiv {
           background-color: #5e838d;
         }
         .brownbag {
-          background-image: linear-gradient(135deg, #f35657 25%, #0b133c 25%, #0b133c 50%, #f35657 50%, #f35657 75%, #0b133c 75%, #0b133c 100%);
+          background-image: linear-gradient(
+            135deg,
+            #f35657 25%,
+            #0b133c 25%,
+            #0b133c 50%,
+            #f35657 50%,
+            #f35657 75%,
+            #0b133c 75%,
+            #0b133c 100%
+          );
           background-size: 22.63px 22.63px;
         }
         .half {
@@ -122,14 +131,32 @@
         font-size: 70px;
         line-height: 58px;
       }
+
+      &.striped {
+        background-image: linear-gradient(
+          135deg,
+          #ffffff 25%,
+          #d9edf7 25%,
+          #d9edf7 50%,
+          #ffffff 50%,
+          #ffffff 75%,
+          #d9edf7 75%,
+          #d9edf7 100%
+        );
+        background-size: 56.57px 56.57px;
+      }
     }
+
+    .alert {
+      font-size: 16px;
+    }
+
     .event-detail {
       @media only screen and (max-width: 768px) {
         max-width: 250px;
         margin-left: auto;
         margin-right: auto;
       }
-
 
       p {
         padding-left: 30px;
@@ -139,7 +166,7 @@
 
         i {
           position: absolute;
-          left:5px;
+          left: 5px;
         }
       }
     }
@@ -165,7 +192,7 @@
       background: #f4f4f4;
       // Not sure if Triangle is necessary?
       &:after {
-        content: '';
+        content: "";
         position: absolute;
         width: 0;
         height: 0;
