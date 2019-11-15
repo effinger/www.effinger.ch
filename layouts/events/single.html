@@ -44,7 +44,8 @@
     "url": {{ .Permalink }},
     "price": "0",
     "priceCurrency": "CHF",
-    "availability": "https://schema.org/InStock"
+    "availability": "https://schema.org/InStock",
+    "validFrom": {{ (time .Params.startdate).AddDate 0 -6 0 }}
   },
   "performer": {
     "@type": "PerformingGroup",
