@@ -8,7 +8,7 @@
 /events/* /events-404/ 404
 
 # Umfrage
-/umfrage  https://forms.gle/er8JQnoUNnmhDk6e6 200
+/umfrage  https://docs.google.com/forms/d/e/1FAIpQLSeW63sfVz5IWkzwuuH4eI7DXvwQHwI3uPzUUhs36qGG-B0VSw/viewform 200
 
 # Optional: Redirect default Netlify subdomain to primary domain
 https://effinger.netlify.com/* https://www.effinger.ch/:splat 301!
