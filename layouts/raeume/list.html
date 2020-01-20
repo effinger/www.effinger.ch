@@ -135,7 +135,7 @@
 
             <div class="row raeume-eigenschaften">
               <div class="col-sm-12">
-                <div class="raeume-title">Preise{{ if .Params.prices_excluding_vat }} (exkl. MwSt.){{ end }}</div>
+                <div class="raeume-title">Preise (neu inkl. MWST)</div>
                 {{ range .Params.prices }}
                 <div class="raeume-content">
                   {{ . }}
@@ -159,8 +159,21 @@
   <section class="page-section bg-gray" id="kontakt">
     <div class="relative container">
       <!-- <h1 class="hs-line-11 font-alt mb-80 mb-sm-40">Kontakt Raumvermietung</h1> -->
+      <div class="col-md-10 col-md-offset-1">
+        <div class="section-text">
+          <h3 class="hs-line-11 font-alt text-center">Hinweise</h3>
+          <p>
+            <ul>
+              <li><strong>Moderationsmaterial</strong>: Wenn du kreativ arbeitest und die beschreibbaren Wände benutzen möchtest, bitten wir dich, das Moderationsmaterial dazu zu buchen. Es enthält abwischbare Stifte sowie diverse Papier-, Post-it-, Klebeutensilien und Magnete. Damit wir das Risiko von Schäden an der Infrastruktur minimieren können, bitten wir euch, keine eigenen Moderationsutensilien (Stifte usw.) mitzubringen.</li>
+              <li><strong>15 Min. Einrichten</strong>: Der Raum darf 15 Minuten vor der gebuchten Zeit zur Vorbereitung benutzt werden.</li>
+              <li><strong>Rollstühle</strong>: Leider sind unsere Räumlichkeiten und Toiletten nicht rollstuhlgängig.</li>
+              <li><strong>Samstage</strong>: Buchungen am Samstag nur auf Anfrage.</li>
+            </ul>
+          </p>
+        </div>
+      </div>
       <div class="row">
-        <div class="col-sm-6 mb-50">
+        <div class="col-sm-6 col-sm-offset-3 mb-50 mt-50">
           <div class="contact-item clearfix">
             <h4 class="uppercase">Kontakt Raumvermietung</h4>
             <div class="wave-spacer"></div>

@@ -29,8 +29,6 @@ prices = [
   "auf Anfrage"
 ]
 
-prices_excluding_vat = false
-
 [[extras]]
 text = "diverse Holz- und andere Maschinen in der angrenzenden Werkstatt"
 price = ""

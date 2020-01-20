@@ -104,7 +104,7 @@
 
             <div class="row raeume-eigenschaften">
               <div class="col-sm-12">
-                <div class="raeume-title">Preise{{ if .Params.prices_excluding_vat }} (exkl. MwSt.){{ end }}</div>
+                <div class="raeume-title">Preise (neu inkl. MWST)</div>
                 {{ range .Params.prices }}
                 <div class="raeume-content">
                   {{ . }}
@@ -121,33 +121,15 @@
       <div class="row">
         <div class="col-sm-10">
           <h3 class="font-alt mt-50">Details</h3>
-          {{ .Content | markdownify }}
+          {{ .Content }}
+          {{ if .Params.id }}
+          <div class="mb-50">
+
+            <a href="https://www.benjibooks.com/effinger/resources/{{.Params.id}}/" target="_blank" class="btn btn-mod btn-border btn-round btn-large">&rarr; Reservation</a>
+          </div>
+          {{ end }}
         </div>
       </div>
-
-      {{ if .Params.calendar_id }}
-      <div class="row" id="reservation">
-        <div class="col-sm-12">
-          <h3 class="font-alt mt-50">Reservation</h3>
-          <div class="mt-20" id="calendar">
-            <div id="calendar-loading">
-              <i class="fa fa-refresh fa-spin fa-3x fa-fw mb-10"></i>
-              <div>Reservationen werden geladen...</div>
-            </div>
-          </div>
-          <div id="calendar-details">
-          </div>
-
-          <!-- Button trigger calendar dialog -->
-          <button type="button" class="btn btn-mod btn-medium btn-round mt-40 center-block" data-toggle="modal" data-target="#calendar-dialog">
-            Raum reservieren
-          </button>
-
-          {{ partial "fullcalendar_dialog.html" . }}
-
-        </div>
-      </div>
-      {{ end }}
 
       <!-- Prev/Next -->
       <div class="clearfix mt-40">
@@ -168,7 +150,20 @@
     <div class="relative container">
       <!-- <h1 class="hs-line-11 font-alt mb-80 mb-sm-40">Kontakt Raumvermietung</h1> -->
       <div class="row">
-        <div class="col-sm-6 mb-50">
+        <div class="col-md-10 col-md-offset-1">
+          <div class="section-text">
+            <h3 class="hs-line-11 font-alt text-center">Hinweise</h3>
+            <p>
+              <ul>
+                <li><strong>Moderationsmaterial</strong>: Wenn du kreativ arbeitest und die beschreibbaren Wände benutzen möchtest, bitten wir dich, das Moderationsmaterial dazu zu buchen. Es enthält abwischbare Stifte sowie diverse Papier-, Post-it-, Klebeutensilien und Magnete. Damit wir das Risiko von Schäden an der Infrastruktur minimieren können, bitten wir euch, keine eigenen Moderationsutensilien (Stifte usw.) mitzubringen.</li>
+                <li><strong>15 Min. Einrichten</strong>: Der Raum darf 15 Minuten vor der gebuchten Zeit zur Vorbereitung benutzt werden.</li>
+                <li><strong>Rollstühle</strong>: Leider sind unsere Räumlichkeiten und Toiletten nicht rollstuhlgängig.</li>
+                <li><strong>Samstage</strong>: Buchungen am Samstag nur auf Anfrage.</li>
+              </ul>
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-sm-offset-3 mb-50 mt-50">
           <div class="contact-item clearfix">
             <h4 class="uppercase">Kontakt Raumvermietung</h4>
             <div class="wave-spacer"></div>
@@ -230,17 +225,4 @@
   </section>
 </div>
 <!-- End Page Wrap -->
-{{ end }}
-
-{{ define "body_includes" }}
-{{ partial "fullcalendar_includes.html" }}
-  {{ if .Params.calendar_id }}
-  <script type="text/javascript">
-  $(document).ready(function(){
-    loadCalendar({{ .Site.Data.room_manager.apiUrl }}, {{ .Params.calendar_id }}, {{ .Title }}, {{ .Params.extras }}, {{ .Params.setup }},
-      $('#calendar'), $('#calendar-loading'), $('#calendar-details'),
-      $('#calendar-dialog'));
-  });
-  </script>
-  {{ end }}
 {{ end }}
