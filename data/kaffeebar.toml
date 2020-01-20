@@ -23,6 +23,12 @@ image = "/images/kaffeebar/franzi.jpg"
 comment = "Aues uf dr Wäut isch entweder ä Härdöpfu oder ke Härdöpfu."
 
 [[Person]]
+name = "Julian"
+gender = "m"
+image = "/images/kaffeebar/julian.jpg"
+comment = ""
+
+[[Person]]
 name = "Yola"
 gender = "f"
 image = "/images/kaffeebar/yola.jpg"
