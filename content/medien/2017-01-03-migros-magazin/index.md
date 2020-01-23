@@ -1,10 +1,9 @@
 +++
 title = "Aus Einwanderern Experten machen"
 date = "2017-01-03"
-description = "Monatszeitung"
 media = "Migros Magazin"
 image = "migros-magazin-aus-einwanderern-experten-machen.jpg"
 
 pdf = "migros-magazin-aus-einwanderern-experten-machen.pdf"
-online = "https://www.migrosmagazin.ch/pdfarchiv/pdf/201701-DMAA0301-078-Aare.PDF"
 +++
+«Mit 'Powercoders' lancieren innovative Berner IT-Unternehmer die erste Programmierschule für Flüchtlinge in der Schweiz.»

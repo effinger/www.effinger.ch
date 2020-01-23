@@ -1,10 +1,9 @@
 +++
 title = "Neue Bar für kreative Köpfe"
 date = "2016-04-05"
-description = "Wochenzeitung und Online"
 media = "BernerBär"
 image = "berner-baer-neue-bar-fuer-kreative-koepfe.jpg"
 
 pdf = "berner-baer-neue-bar-fuer-kreative-koepfe.pdf"
-online = "http://www.bernerbaer.ch/2016/04/effinger-bar-caf%C3%A9-und-arbeitsplatz.html"
 +++
+«Das Gemeinschaftsbüro und die Kaffeebar sind indes nicht die einzigen Nutzungen in der ehemaligen InterdiscountFiliale: Auf den insgesamt 300 Quadratmetern gibt es auch ein Atelier, eine Werkstatt sowie ein speziellesWorkshopZimmer»

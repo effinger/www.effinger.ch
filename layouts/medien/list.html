@@ -15,7 +15,7 @@
         <div class="col-md-8">
           <h1 class="hs-line-11 font-alt mb-0">Medien</h1>
           <div class="hs-line-4 font-alt mt-20 mt-xs-0">
-            Medienberichte über Effinger
+            Medienberichte rund um den Effinger
           </div>
         </div>
       </div>
@@ -36,7 +36,7 @@
               </a>
             </div>
             <div class="col-xs-8 col-md-7 col-lg-6 mb-xs-60">
-              <p>Auf dieser Seite findest du Zeitungsartikel und andere Medienberichte über den Effinger.
+              <p>Auf dieser Seite findest du Zeitungsartikel und andere Medienberichte rund um den Effinger und die Effinger Community.
               </p>
               <div class="local-scroll">
                 <a href="#medienberichte" class="btn btn-mod btn-border btn-medium btn-round">&darr; Medienberichte</a>
@@ -75,7 +75,7 @@
         <div class="row">
           <div class="col-md-5 col-md-offset-1 col-sm-6 col-xs-10 mb-80 mb-xs-20">
             <!-- Image -->
-            <div class="blog-media mb-10 image-crop image-crop-4by3">
+            <div class="mb-10 image-crop image-crop-4by3">
               <div class="image-crop-inner"
                 style="background-image: url({{ .RelPermalink }}{{ .Params.image }})">
               </div>
@@ -83,20 +83,18 @@
           </div>
 
           <div class="col-md-5 col-sm-6 col-xs-12 mb-80">
-            <!-- Post Title -->
-            <h3 class="blog-item-title font-alt mt-0 hyphenate">{{ .Params.media }}</h3>
+            <!-- Title -->
+            <h3 class="font-alt mt-0 hyphenate">{{ .Title }}</h3>
 
-            <!-- Date, Author -->
-            <div class="blog-item-data mb-20">
-              <a><i class="fa fa-clock-o fa-newspaper-o"></i>&nbsp;{{ .Description }}</a><br>
+            <!-- Newspaper/Online, Date -->
+            <div class="media-data mb-20">
+              <a><i class="fa fa-clock-o fa-newspaper-o"></i>&nbsp;{{ .Params.media }}</a><br>
               <a><i class="fa fa-clock-o fa-inline"></i>&nbsp;{{ .Date.Format "02.01.2006" }}</a>
             </div>
 
             <!-- Text Intro -->
-            <div class="post-prev-text">
-              <p>
-                {{ .Title }}
-              </p>
+            <div class="media-content">
+              {{ .Content }}
             </div>
 
             <!-- Read More Link -->
