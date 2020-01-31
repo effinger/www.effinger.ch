@@ -100,7 +100,7 @@
               roomName: d.resource.title,
 
               title: d.title,
-              name: d.subtitle,
+              subtitle: d.subtitle,
 
               // Convert dates
               start: moment(d.start),
@@ -111,15 +111,7 @@
 
           // Sort by start time.
           events.sort(function(a, b) {
-            if (a.start > b.start) {
-              return 1;
-            } else {
-              if (b.start > a.start) {
-                return -1;
-              } else {
-                return 0;
-              }
-            }
+            return a.start - b.start;
           });
 
           // Display events in table if we have events.
@@ -145,12 +137,8 @@
 
               tableContent += "<td class='event-time'>" + eventStart.format('HH:mm') + " &ndash; " + eventEnd.format('HH:mm') + "</td>";
               tableContent += "<td>";
-              if (event.name) {
-                tableContent += "<div class='event-title'>" + event.name + "</div>";
-                tableContent += "<div class='event-subtitle'>" + event.title + "</div>";
-              } else {
                 tableContent += "<div class='event-title'>" + event.title + "</div>";
-              }
+                tableContent += "<div class='event-subtitle'>" + event.subtitle + "</div>";
               tableContent += "</td>";
               tableContent += "<td>";
               tableContent += "<div class='room-floor'>" + event.roomFloor + "</div>";
