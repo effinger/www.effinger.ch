@@ -102,6 +102,17 @@ facebook = ""
 instagram = ""
 
 [[Person]]
+name = "Corinne Roth Vock"
+gender = "m"
+image = "/images/effianer/corinne-roth-vock.jpg"
+email = "info@schlosswort.ch"
+phone = ""
+website = "https://schlosswort.ch/"
+twitter = ""
+facebook = ""
+instagram = ""
+
+[[Person]]
 name = "Claudine Etter"
 gender = "f"
 image = "/images/effianer/claudine-etter.jpg"
