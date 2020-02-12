@@ -1,0 +1,167 @@
+{{ define "main" }}
+<!-- Page Wrap -->
+<div class="page" id="right">
+
+    <nav class="main-nav transparent stick-fixed">
+        {{ partial "navigation.html" . }}
+    </nav>
+
+    <!-- Jubilaeum -->
+    <section id="start" class="small-section-header" style="background-color: #fae300;">
+        <div class="relative container">
+
+            <div class="row text-center">
+
+                <div class="col-md-6 col-md-offset-3 ">
+                    <div class="mb-10">
+                        <i class="fa fa-birthday-cake fa-5x"></i>
+                    </div>
+                    <h1 class="hs-line-11 font-alt">Jubiläum</h1>
+                    <h2 class="hs-line-15 font-alt ">13. März 2020</h2>
+                    <div class="hs-line-4 black font-alt mt-10 mt-xs-0">
+                        Der «Effinger – Kaffeebar und Coworking Space» wird 4 Jahre alt! Das wollen wir feiern!
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- End Jubilaeum -->
+
+    <!-- Alternative Services Section -->
+    <section class="page-section" id="start">
+        <div class="container relative">
+            <div class="row">
+
+                <div class="col-md-6">
+
+                    <div class="alt-services-image">
+                        <img src="flyer_4.jpg" alt="" />
+                    </div>
+
+                </div>
+
+                <div class="col-md-6">
+
+                    <div class="alt-services-image">
+                        <img src="flyer_4.2.jpg" alt="" />
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+    </section>
+    <!-- End Alternative Services Section -->
+
+    <section class="page-section bg-gray-lighter">
+        <div class="container relative">
+
+
+            <div class="row multi-columns-row alt-features-grid">
+
+
+                <div class="col-sm-12 col-md-6 col-md-offset-3 mb-sm-60">
+                    <div class="alt-features-item align-center">
+                        <img style="height:200px;width:auto" src="jubi_brownbag.png" alt="Brownbag" />
+                        <h3 class="alt-features-title font-alt">Jubiläums-Brownbag</h3>
+                        <div class="alt-features-descr">
+                            <p>
+                                <strong>Bettina und Chrigu Hirsig</strong> sind Pioniere mit Leib und Seel. Vielleicht hast du schon von
+                                Powercoders, Geile Eier, Blacknose Bier, Swisspreneur oder Bookasleeper gehört. Neben
+                                all diesen Startup-Projekten, managen die beiden nebenbei auch noch eine Familie mit
+                                zwei Kindern. So ein Unter- fangen ist verständlicherweise nicht immer nur harmonisch.
+                            </p>
+                            <p class="mb-0 lead">
+                                Bringe dein eigenes Mittagessen mit und folge dem Unternehmerehepaar in ein
+                                Streitgespräch
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row multi-columns-row alt-features-grid">
+                <div class="col-sm-6 col-md-4">
+                    <div class="alt-features-item align-center">
+                        <img style="height:50px;width:auto;margin-top:25px;margin-bottom: 25px;" src="jubi-coworking.png" alt="Gratis Coworking" />
+                        <div class="alt-features-descr">
+                            <p class="mb-0 mt-10">
+                                Gniesse an unserem Jubliläum freies Coworking. Ideal wenn du schon lange mal
+                                Effinger-Coworking-Luft schnuppern wolltest.
+                            </p>
+                            <a class="btn btn-mod btn-border btn-circle btn-large mt-20" href="/coworking">Zum Coworking</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4">
+                    <div class="alt-features-item align-center">
+                        <img style="height:80px;width:auto;margin-top:10px;margin-bottom: 10px;" src="jubi-essen.png" alt="Kulinarik STRUNK" />
+                        <div class="alt-features-descr">
+                            <p class="mb-0 mt-10">
+                                Konserviert serviert.
+                            </p>
+                            <a class="btn btn-mod btn-border btn-circle btn-large mt-20" href="/coworking">Webseite STRUNK</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-4">
+                    <div class="alt-features-item align-center">
+                        <img style="height:70px;width:auto;margin-top:15px;margin-bottom: 15px;" src="jubi-true.png" alt="Kontert TRUE" />
+                        <div class="alt-features-descr">
+                            <p class="mb-0 mt-10">Ab 20:30h Konzert mit TRUE in der Kaffeebar.</p>
+                            <a class="btn btn-mod btn-border btn-circle btn-large mt-20" href="https://www.ournameistrue.com/" target="_blank">Webseite
+                                TRUE</a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- Section Event list -->
+    <section class="page-section event" id="events">
+        <div class="container relative">
+
+            <h2 class="section-title font-alt mb-70 mb-sm-40">Programmübersicht</h2>
+            <div class="eventlist">
+                {{ range sort .Data.Pages "Params.startdate" "asc" }}
+                <a href="{{ .RelPermalink }}">
+                    <div class="event-item bg-gray clearfix">
+                        <div class="cat">
+                            <div style="background-color: #fae300;"></div>
+                        </div>
+                        <div class="event-date text" style="background-image:url({{ .RelPermalink }}/{{ .Params.organizerimage }}); background-repeat: no-repeat; background-size: cover; background-position: center; height: 100%; width: 150px; position: absolute">
+                            <span></span>
+
+                        </div>
+                        <div class="event-text text bg-white" style="margin-left: 150px;">
+                            <h4 class="uppercase">{{ .Title }}</h4>
+                            <p> <i class="fa fa-user fa-inline"></i> {{ .Params.organizer}}</p>
+                            <p>
+                                <i class="fa fa-clock-o fa-inline"></i>&nbsp{{.Params.time }}  
+                            </p>
+                            <p>
+                                <i class="fa fa-map-marker fa-inline"></i>&nbsp{{.Params.location }}
+                            </p>
+                        </div>
+                    </div>
+                </a>
+
+
+                {{ end }}
+            </div>
+        </div>
+    </section>
+    <!-- End Section Event list -->
+</div>
+<!-- End Page Wrap -->
+{{ end }}
