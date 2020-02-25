@@ -11,12 +11,6 @@ image = "/images/kaffeebar/christa.jpg"
 comment = "Life happens, coffee helps."
 
 [[Person]]
-name = "Dominic"
-gender = "m"
-image = "/images/kaffeebar/dominic.jpg"
-comment = "Life is too short to drink Latte Macchiatto."
-
-[[Person]]
 name = "Fränzi"
 gender = "f"
 image = "/images/kaffeebar/franzi.jpg"
@@ -33,12 +27,6 @@ name = "Yola"
 gender = "f"
 image = "/images/kaffeebar/yola.jpg"
 comment = ""
-
-[[Person]]
-name = "Lea"
-gender = "f"
-image = "/images/kaffeebar/lea.jpg"
-comment = "When life gives you lemons, trade them for coffee."
 
 [[Person]]
 name = "Nadia"
