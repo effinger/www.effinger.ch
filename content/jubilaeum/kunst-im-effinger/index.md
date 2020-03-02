@@ -4,7 +4,7 @@ description = "Kleine Ausstellung von Isabels im Effinger entstandenen Arbeiten:
 startdate = "2020-03-13T14:00:00"
 location = "Raum Rosengarten (1.OG)"
 time = "14:00 – 17:00 Uhr"
-organizer = "Isabelle Jakob"
+organizer = "Isabel Jakob"
 organizerimage = "kunst.jpg"
 +++
 
