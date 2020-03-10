@@ -2,7 +2,7 @@
 title = "Ein literarischer Moment"
 description = "Me gusta cuando callas porque estás como ausente y me oyes desde lejos y mi voz no te toca…"
 startdate = "2020-03-13T18:00:00"
-location = "Effinger"
+location = "Effinger, Raum Pläfe (EG)"
 time = "18:00 Uhr"
 organizer = "Sandra von Siebenthal"
 organizerimage = "sandra-vs.jpg"
