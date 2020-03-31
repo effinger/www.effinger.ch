@@ -257,3 +257,78 @@ form {
     top: 130px;
   }
 }
+
+.live__icon {
+  position: absolute;
+  width: 50px;
+  
+  .circle--outer {
+    border: 1px solid #e50040;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0 auto 5px;
+    position: relative;
+    opacity: 0.8;
+    -webkit-animation: circle 2s ease-in-out infinite;
+    animation: circle 2s ease-in-out infinite;
+  }
+  
+  .circle--inner {
+    background: #e50040;
+    left: 15px;
+    top: 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    opacity: 0.8;
+  }
+  
+  .circle--inner:after {
+    content: "";
+    display: block;
+    border: 2px solid #e50040;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    top: -4px;
+    left: -4px;
+    position: absolute;
+    opacity: 0.8;
+    -webkit-animation: circle 2s ease-in-out 0.2s infinite;
+    animation: circle 2s ease-in-out 0.2s infinite;
+  }
+  
+  p {
+    color: #e50040;
+    text-align: center;
+    font-weight: 400;
+  }
+  
+  @-webkit-keyframes circle {
+    from {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+  
+    to {
+      -webkit-transform: scale(1.5);
+      transform: scale(1.5);
+      opacity: 0;
+    }
+  }
+  
+  @keyframes circle {
+    from {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+  
+    to {
+      -webkit-transform: scale(1.5);
+      transform: scale(1.5);
+      opacity: 0;
+    }
+  }
+}
