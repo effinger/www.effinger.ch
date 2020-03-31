@@ -30,13 +30,21 @@ text = """
 # """
 
 # Winter 2019
+# [[spezial]]
+# display_start = 2019-12-01T00:00:00Z
+# display_end = 2020-01-05T23:59:59Z
+# text = """
+# <p class="text-center"><em>Betriebsferien ab Samstag 21. Dezember 2019 bis Sonntag 5. Januar 2020.</em></p>
+# <div class="wave-spacer"></div>
+# <p>Mo-Fr <span>7-23</span></p>
+# <p>Sa <span>9-17</span></p>
+# <p>So <span>Ruhetag</span></p>
+# """
+
+# Corona 2020
 [[spezial]]
-display_start = 2019-12-01T00:00:00Z
-display_end = 2020-01-05T23:59:59Z
+display_start = 2020-03-31T00:00:00Z
+display_end = 2020-06-01T23:59:59Z
 text = """
-<p class="text-center"><em>Betriebsferien ab Samstag 21. Dezember 2019 bis Sonntag 5. Januar 2020.</em></p>
-<div class="wave-spacer"></div>
-<p>Mo-Fr <span>7-23</span></p>
-<p>Sa <span>9-17</span></p>
-<p>So <span>Ruhetag</span></p>
+<p class="text-center"><em>Siehe Corona-Infos auf der Startseite.</em></p>
 """
