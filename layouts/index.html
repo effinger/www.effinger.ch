@@ -105,7 +105,7 @@
 
       <div class="row">
         <div class="col-md-6">
-          <a href="https://meet.jit.si/effinger-lounge" target="_blank" title="Lounge beitreten" class="relative block">
+          <a id="lounge-link" href="https://meet.jit.si/effinger-lounge" target="_blank" title="Lounge beitreten" class="relative block">
             <img src="lounge.jpg" alt="" id="lounge-img">
             <div id="lounge-live-icon" class="live__icon" style="position: absolute; right: -5px; top: 0px; display: none">
               <div class="circle--outer"></div>
@@ -626,7 +626,7 @@
                   };
             
               var observer = new IntersectionObserver(onChange, config);
-              observer.observe(document.querySelector("#lounge-img"));
+              observer.observe(document.querySelector("#lounge-link"));
             
               function onChange(changes, observer) {
                 changes.forEach(function (change) {
