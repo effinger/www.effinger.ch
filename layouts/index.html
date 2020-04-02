@@ -107,7 +107,7 @@
         <div class="col-md-6">
           <a href="https://meet.jit.si/effinger-lounge" target="_blank" title="Lounge beitreten" class="relative block">
             <img src="lounge.jpg" alt="" id="lounge-img">
-            <div id="lounge-live-icon" class="live__icon" style="position: absolute; right: -5px; top: 0px;">
+            <div id="lounge-live-icon" class="live__icon" style="position: absolute; right: -5px; top: 0px; display: none">
               <div class="circle--outer"></div>
               <div class="circle--inner"></div>
               <p>LIVE</p>
@@ -612,13 +612,16 @@
             diffText = "aktualisiert vor ca. 1 Stunde"; 
           } else {
             diff = diff * 60; // time in minutes
+
+            if (diff < 5) {
+              live = true;
+            }
+
             if (diff >= 2) {
               diffText = "aktualisiert vor " + Math.floor(diff) + " Minuten"; 
             } else if (diff >= 1) {
-              live = true;
               diffText = "aktualisiert vor 1 Minute"; 
             } else {
-              live = true;
               diffText = "aktualisiert vor einigen Sekunden"; 
             }
           }
