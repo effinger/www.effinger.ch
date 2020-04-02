@@ -591,11 +591,11 @@
   }
 
   function showLoungeImageSlideshow(ids) {
-    var limitReversedIds = ids.slice(0, 15).reverse();
+    var limitReversedIds = ids.slice(0, 20).reverse();
     for (var i = 0; i < limitReversedIds.length; i++) {
       setTimeout(function (id) {
         showLoungeImage(id);
-      }, i * 200, limitReversedIds[i]);
+      }, i * 300, limitReversedIds[i]);
     }
   }
 
