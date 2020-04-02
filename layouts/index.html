@@ -586,7 +586,20 @@
 </script>
 
 <script>
-  function loadLoungeImages() {
+  function showLoungeImage(id) {
+    $("#lounge-img").attr("src", "https://i.imgur.com/" + id + "l.jpg");
+  }
+
+  function showLoungeImageSlideshow(ids) {
+    var limitReversedIds = ids.slice(0, 15).reverse();
+    for (var i = 0; i < limitReversedIds.length; i++) {
+      setTimeout(function (id) {
+        showLoungeImage(id);
+      }, i * 200, limitReversedIds[i]);
+    }
+  }
+
+  function loadLoungeImages(slideshow) {
     $.ajax({
       type: "GET",
       url: "https://api.imgur.com/3/album/1zfAbLG/images",
@@ -600,7 +613,15 @@
            return b.datetime - a.datetime;  
           });
   
-          $("#lounge-img").attr("src", "https://i.imgur.com/" + result.data[0].id + "l.jpg");
+          showLoungeImage(result.data[0].id);
+
+          if (slideshow) {
+            setTimeout(function () {
+              showLoungeImageSlideshow(result.data.map(function (value) {
+                return value.id;
+              }));
+            }, 3000);
+          }
 
           // Calculate time diff in hours and minutes.
           var imgTime = new Date(result.data[0].datetime * 1000);
@@ -643,6 +664,6 @@
   }
 
   setInterval(loadLoungeImages, 30000);
-  loadLoungeImages();
+  loadLoungeImages(true);
 </script>
 {{ end }}
