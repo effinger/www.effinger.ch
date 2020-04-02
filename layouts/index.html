@@ -595,7 +595,7 @@
     for (var i = 0; i < limitReversedIds.length; i++) {
       setTimeout(function (id) {
         showLoungeImage(id);
-      }, i * 300, limitReversedIds[i]);
+      }, i * 280, limitReversedIds[i]);
     }
   }
 
@@ -616,11 +616,42 @@
           showLoungeImage(result.data[0].id);
 
           if (slideshow) {
-            setTimeout(function () {
-              showLoungeImageSlideshow(result.data.map(function (value) {
-                return value.id;
-              }));
-            }, 3000);
+            if ('IntersectionObserver' in window) {
+              // IntersectionObserver Supported
+              // Show slideshow when in view.
+              var config = {
+                    root: null,
+                    rootMargin: '0px',
+                    threshold: 0.7
+                  };
+            
+              var observer = new IntersectionObserver(onChange, config);
+              observer.observe(document.querySelector("#lounge-img"));
+            
+              function onChange(changes, observer) {
+                changes.forEach(function (change) {
+                  if (change.intersectionRatio > 0) {
+                    // Stop watching and show slideshow.
+                    showLoungeImageSlideshow(result.data.map(function (value) {
+                      return value.id;
+                    }));
+                    observer.unobserve(change.target);
+                  }
+                });
+              }
+            
+            } else {
+              // IntersectionObserver NOT Supported
+              // Show slideshow after a few seconds.
+              setTimeout(function () {
+                showLoungeImageSlideshow(result.data.map(function (value) {
+                  return value.id;
+                }));
+              }, 3000);
+            }
+
+
+            
           }
 
           // Calculate time diff in hours and minutes.
