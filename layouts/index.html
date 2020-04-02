@@ -105,48 +105,44 @@
 
       <div class="row">
         <div class="col-md-6">
-          <p>
-            <i class="fa fa-bed fa-5x"></i>
-          </p>
-          <p>
-            Im Moment ist kein Coworking-Host online. 
-            Wir sind jeweils an Werktagen von 8-12 Uhr hier live für dich da.
-          </p>
-          <!-- <a href="https://meet.jit.si/effinger-lounge" target="_blank" title="Lounge beitreten" class="relative block">
-            <img src="lounge.jpg" alt="">
-            <div class="live__icon" style="position: absolute; right: 0px; top: 3px;">
+          <a href="https://meet.jit.si/effinger-lounge" target="_blank" title="Lounge beitreten" class="relative block">
+            <img src="lounge.jpg" alt="" id="lounge-img">
+            <div id="lounge-live-icon" class="live__icon" style="position: absolute; right: -5px; top: 0px;">
               <div class="circle--outer"></div>
               <div class="circle--inner"></div>
               <p>LIVE</p>
             </div>
-          </a> -->
+          </a>
+          <div id="lounge-img-updated" class="small text-right"></div>
         </div>
         <div class="col-md-6">
-          <p>
-            Du kannst die virtuellen Räume auch ohne Host nutzen. Vielleicht triffst du per Zufall jemanden an oder sonst schicke den Link dazu an andere weiter.
+          <p class="mb-10">
+            Klicke auf den Knopf und triff uns in der virtuellen Lounge.
           </p>
-          <!-- <p>
-            Hast du eine Frage an den Host oder willst du einfach mit jemandem plaudern? Klicke auf den Knopf und triff den Host in der Lounge. 
-          </p> -->
-          <p>
+          <p class="mb-10">
             <a href="https://meet.jit.si/effinger-lounge" target="_blank" class="btn btn-mod btn-border btn-large btn-round">
               <i class="fa fa-hand-o-right"></i> Effinger Lounge beitreten
             </a>
           </p>
+          <p class="small">
+            <i class="fa fa-coffee fa-fw"></i> Von 8-12 Uhr ist meist ein Effinger Host hier<br>
+            <i class="fa fa-coffee fa-fw"></i> Um 10 Uhr gibt es die legendäre Kaffeepause<br>
+            <em>Falls du niemanden siehst (nur das Effinger-Logo), so lade am besten jemanden ein.</em>
+          </p>
           <p class="mb-10">
-            Falls du etwas mehr Ruhe suchst oder ein privates Gespräch führen möchtest, so findest du hier weitere Räume <i class="fa fa-hand-o-down" aria-hidden="true"></i>.
+            Weitere Räume für private Gespräche
           </p>
     
-          <div class="mb-10">
-            <a href="https://meet.jit.si/effinger-fokus" target="_blank" class="btn btn-mod btn-border btn-small btn-round pb-1">Fokusraum</a>
+          <div class="mb-0">
+            <a href="https://meet.jit.si/effinger-fokus" target="_blank">Fokusraum</a>
             <small>konzentriertes Arbeiten</small>
           </div>
-          <div class="mb-10">
-            <a href="https://meet.jit.si/effinger-besprechung" target="_blank" class="btn btn-mod btn-border btn-small btn-round">Besprechung</a>
+          <div class="mb-0">
+            <a href="https://meet.jit.si/effinger-besprechung" target="_blank">Besprechung</a>
             <small>spontane Besprechung</small><br>
           </div>
-          <div class="mb-10">
-            <a href="https://meet.jit.si/" target="_blank" class="btn btn-mod btn-border btn-small btn-round">Eigenen Raum erstellen</a>
+          <div class="mb-0">
+            <a href="https://meet.jit.si/" target="_blank">Eigenen Raum erstellen</a>
             <small>Namen wählen und Link teilen</small>
           </div>
         </div>
@@ -583,5 +579,62 @@
     s.setAttribute('data-timestamp', +new Date());
     (d.head || d.body).appendChild(s);
   })();
+</script>
+
+<script>
+  function loadLoungeImages() {
+    $.ajax({
+      type: "GET",
+      url: "https://api.imgur.com/3/album/1zfAbLG/images",
+      dataType: 'json',
+      headers: {
+        "Authorization": "Client-ID 23dcbdb52b4fadc"
+      },
+      success: function (result){
+        if (result.data) {
+          result.data.sort(function (a, b) {
+           return b.datetime - a.datetime;  
+          });
+  
+          $("#lounge-img").attr("src", "https://i.imgur.com/" + result.data[0].id + "l.png");
+
+          // Calculate time diff in hours and minutes.
+          var imgTime = new Date(result.data[0].datetime * 1000);
+          var now = new Date();
+          
+          var diff = (now.getTime() - imgTime.getTime()) / 3600000; // this is a time in hours
+
+          var diffText = "";
+          var live = false;
+          if (diff >= 2) {
+            diffText = "aktualisiert vor ca. " + Math.floor(diff) + " Stunden"; 
+          } else if (diff >= 1) {
+            diffText = "aktualisiert vor ca. 1 Stunde"; 
+          } else {
+            live = true;
+            diff = diff * 60; // time in minutes
+            if (diff >= 2) {
+              diffText = "aktualisiert vor " + Math.floor(diff) + " Minuten"; 
+            } else if (diff >= 1) {
+              diffText = "aktualisiert vor 1 Minute"; 
+            } else {
+              diffText = "aktualisiert vor einigen Sekunden"; 
+            }
+          }
+
+          if (live) {
+            $("#lounge-live-icon").show();
+          } else {
+            $("#lounge-live-icon").hide();
+          }
+
+          $("#lounge-img-updated").text(diffText);
+        }
+      }
+    });
+  }
+
+  setInterval(loadLoungeImages, 30000);
+  loadLoungeImages();
 </script>
 {{ end }}
