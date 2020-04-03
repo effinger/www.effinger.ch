@@ -3,6 +3,17 @@ apiUrl = "https://script.google.com/a/effinger.ch/macros/s/AKfycbw3aGTPwR4t_UdMm
 calendarId = "effinger.ch_3736303136393637343739@resource.calendar.google.com"
 
 [[Person]]
+name = "Tavi Venzin"
+gender = "m"
+image = "/images/effianer/tavi-venzin.jpg"
+email = "tavi@effinger.ch"
+phone = ""
+website = "https://dropoutjourney.com/"
+twitter = ""
+facebook = ""
+instagram = "tavivenzin"
+
+[[Person]]
 name = "Michael Aerni"
 gender = "m"
 image = "/images/effianer/michael-aerni.jpg"
