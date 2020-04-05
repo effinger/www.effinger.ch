@@ -586,16 +586,56 @@
 </script>
 
 <script>
-  function showLoungeImage(id) {
-    $("#lounge-img").attr("src", "https://i.imgur.com/" + id + "l.jpg");
+  function showLoungeImage(image) {
+    $("#lounge-img").attr("src", "https://i.imgur.com/" + image.id + "l.jpg");
+
+    // Calculate time diff in hours and minutes.
+    var imgTime = new Date(image.datetime * 1000);
+    var now = new Date();
+    
+    var diff = (now.getTime() - imgTime.getTime()) / 3600000; // this is a time in hours
+
+    var diffText = "";
+    var live = false;
+    if (diff > 48) {
+      diffText = "vor " + Math.floor(diff / 24) + " Tagen"; 
+    } else if (diff > 24) {
+      diffText = "vor 1 Tag"; 
+    } else if (diff >= 2) {
+      diffText = "vor " + Math.floor(diff) + " Stunden"; 
+    } else if (diff >= 1) {
+      diffText = "vor 1 Stunde"; 
+    } else {
+      diff = diff * 60; // time in minutes
+
+      if (diff < 5) {
+        live = true;
+      }
+
+      if (diff >= 2) {
+        diffText = "vor " + Math.floor(diff) + " Minuten"; 
+      } else if (diff >= 1) {
+        diffText = "vor 1 Minute"; 
+      } else {
+        diffText = "vor einigen Sekunden"; 
+      }
+    }
+
+    if (live) {
+      $("#lounge-live-icon").show();
+    } else {
+      $("#lounge-live-icon").hide();
+    }
+
+    $("#lounge-img-updated").text(diffText);
   }
 
-  function showLoungeImageSlideshow(ids) {
-    var limitReversedIds = ids.slice(0, 20).reverse();
-    for (var i = 0; i < limitReversedIds.length; i++) {
-      setTimeout(function (id) {
-        showLoungeImage(id);
-      }, i * 320, limitReversedIds[i]);
+  function showLoungeImageSlideshow(images) {
+    var limitedReversedImages = images.slice(0, 20).reverse();
+    for (var i = 0; i < limitedReversedImages.length; i++) {
+      setTimeout(function (image) {
+        showLoungeImage(image);
+      }, i * 320, limitedReversedImages[i]);
     }
   }
 
@@ -607,14 +647,12 @@
       headers: {
         "Authorization": "Client-ID 23dcbdb52b4fadc"
       },
-      success: function (result){
+      success: function (result) {
         if (result.data) {
           result.data.sort(function (a, b) {
            return b.datetime - a.datetime;  
           });
   
-          showLoungeImage(result.data[0].id);
-
           if (slideshow) {
             if ('IntersectionObserver' in window) {
               // IntersectionObserver Supported
@@ -632,9 +670,7 @@
                 changes.forEach(function (change) {
                   if (change.intersectionRatio > 0) {
                     // Stop watching and show slideshow.
-                    showLoungeImageSlideshow(result.data.map(function (value) {
-                      return value.id;
-                    }));
+                    showLoungeImageSlideshow(result.data);
                     observer.unobserve(change.target);
                   }
                 });
@@ -644,51 +680,13 @@
               // IntersectionObserver NOT Supported
               // Show slideshow after a few seconds.
               setTimeout(function () {
-                showLoungeImageSlideshow(result.data.map(function (value) {
-                  return value.id;
-                }));
+                showLoungeImageSlideshow(result.data);
               }, 3000);
             }
-
-
-            
-          }
-
-          // Calculate time diff in hours and minutes.
-          var imgTime = new Date(result.data[0].datetime * 1000);
-          var now = new Date();
-          
-          var diff = (now.getTime() - imgTime.getTime()) / 3600000; // this is a time in hours
-
-          var diffText = "";
-          var live = false;
-          if (diff >= 2) {
-            diffText = "aktualisiert vor ca. " + Math.floor(diff) + " Stunden"; 
-          } else if (diff >= 1) {
-            diffText = "aktualisiert vor ca. 1 Stunde"; 
           } else {
-            diff = diff * 60; // time in minutes
-
-            if (diff < 5) {
-              live = true;
-            }
-
-            if (diff >= 2) {
-              diffText = "aktualisiert vor " + Math.floor(diff) + " Minuten"; 
-            } else if (diff >= 1) {
-              diffText = "aktualisiert vor 1 Minute"; 
-            } else {
-              diffText = "aktualisiert vor einigen Sekunden"; 
-            }
+            // No slide show. Just show the latest image.
+            showLoungeImage(result.data[0]);
           }
-
-          if (live) {
-            $("#lounge-live-icon").show();
-          } else {
-            $("#lounge-live-icon").hide();
-          }
-
-          $("#lounge-img-updated").text(diffText);
         }
       }
     });
