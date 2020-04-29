@@ -4,15 +4,15 @@
 
 * Generator: [Hugo](https://gohugo.io/)
 * SASS Precompiler: Hugo takes SASS files in the `assets` folder and generates CSS under `static/css`.
-* Source Code: Stored on [GitHub](https://github.com/makery/www.effinger.ch)
+* Source Code: Stored on [GitHub](https://github.com/effinger/www.effinger.ch/)
 * Hosting: [Netlify](https://www.netlify.com/)
-* Domain Registrar: [Cyon](https://www.cyon.ch/) (Marco's Account)
+* Domain Registrar: [Infomaniak](https://www.infomaniak.ch/) (Marco's Account)
 
 
 ### Rebuilds on Netlify
 
 * Whenever something is pushed to GitHub, Netlify rebuilds the site.
-* Every night at 3am [IFTTT](https://ifttt.com/) calls a Netlify webhook to trigger a rebuild.
+* Every night at 2 or 3am [IFTTT](https://ifttt.com/) calls a Netlify webhook to trigger a rebuild.
 * Daily rebuilds are necessary for:
   * Hiding past events.
   * Showing the current coworking host based on the Google Calendar entry.
@@ -35,7 +35,7 @@ This section describes how to add and edit content of the website.
 
 ### Events
 
-To create a new event follow these steps:
+Events can be created via NetlifyCMS on [Effinger Admin](https://www.effinger.ch/admin/). An alternative is via the following steps:
 
 1. Go to the website and find one of the later events that looks similar to what you want. Take note of the event number in the url.
 2. Find the event under `content/events/...` and make a copy of it.
