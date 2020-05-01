@@ -41,12 +41,12 @@ Der Zyklus von Build-Measure-Learn, wie er in «Lean Startups» eingesetzt wird,
 
 ![Build-Measure-Learn](build-measure-learn.png)
 
-Schnell und dezentral als Community Entscheidungen zu fällen ist nicht neu für uns. Unser **Beratungsprozess** hat sich dazu bewährt:
+Schnell und dezentral als Community Entscheidungen zu fällen ist nicht neu für uns. Unser **Beratungsprozess** hat sich dafür bewährt:
 
 > Beim Beratungsprozess muss die Person, welche eine Entscheidung fällen will, betroffene Kollegen sowie Experten um Rat fragen. So lernt er/sie Einwände, Fragen und Ideen von Kollegen kennen. Nachdem die Person sich offen die Ratschläge angehört hat, fällt diese selbständig eine Entscheidung. Schliesslich wird transparent kommuniziert, was entschieden wurde und welche Personen um Rat gefragt wurden.
 > <small>[Effinger Organisation](https://www.effinger.ch/organisation/)</small>
 
-Grosse Entscheide werden normalerweise ins Community-Treffen gebracht. Das ist in hoher Dynamik und in Krisen jedoch zu langsam. Deshalb schlage ich vor, dass wir möglichst viele Entscheide durch den Beratungsprozess laufen lassen. Wenn die Entscheide in der Community transparent kommuniziert werden, so haben auch die Leute noch die Möglichkeit, sich zu melden, die auch betroffen sind, aber die man vielleicht vergessen hat, um Rat zu fragen. Wenn sich nach einem Tag niemand meldet mit einem [«schwerwiegenden Einwand»](https://www.effinger.ch/organisation/soziokratie/), dann kann man davon ausgehen, dass man es umsetzen kann (Build). Wichtig ist, dass die Auswirkungen beobachtet werden (Measure). Dann sollte mindestens alle 2 Wochen berichtet, ausgewertet und angepasst werden (Learn). Falls nötig kann ein Experiment durch die Community so auch wieder gestoppt werden.
+Grosse Entscheide werden normalerweise ins Community-Treffen gebracht. Das ist in hoher Dynamik und in Krisen jedoch zu langsam. Deshalb schlage ich vor, dass wir möglichst viele Entscheide durch den Beratungsprozess laufen lassen. Wenn die Entscheide in der Community transparent kommuniziert werden, so haben auch die Leute noch die Möglichkeit, sich zu melden, die auch betroffen sind, aber die man vielleicht vergessen hat, um Rat zu fragen. Wenn sich nach einem Tag niemand meldet mit einem [«schwerwiegenden Einwand»](https://www.effinger.ch/organisation/soziokratie/), dann kann man davon ausgehen, dass man es umsetzen kann (Build). Wichtig ist, dass die Auswirkungen beobachtet werden (Measure). Dann sollte mindestens **alle zwei Wochen** berichtet, ausgewertet und angepasst werden (Learn). Falls nötig kann ein Experiment durch die Community so auch wieder gestoppt werden.
 
 ## Ressourcen-Pool nutzen
 
@@ -62,15 +62,15 @@ Was es braucht, um die wertvollen Ressourcen zu nutzen, sind neue Ideen und unte
 
 ![Schutzraum für Experimente](schutzraum.png)
 
-Man darf nicht erwarten, dass jemand in kürzester Zeit ein komplett ausgeklügeltes Geschäftsmodell entwickelt. Das würde Monate dauern. So viel Zeit haben wir nicht, um die Gelegenheiten zu nutzen, die genau jetzt funktionieren, in zwei Wochen aber vielleicht schon nicht mehr. Es bedeutet aber auch, dass einige Fragen nicht im Vornherein geklärt werden können und Fehler passieren werden. Wir werden einander auf die Füsse treten. Ohne geht es gar nicht.
+Man darf nicht erwarten, dass jemand in kürzester Zeit ein komplett ausgeklügeltes Geschäftsmodell entwickelt. Das würde Monate dauern. So viel Zeit haben wir nicht, um Gelegenheiten zu nutzen, die genau jetzt funktionieren, in zwei Wochen aber vielleicht schon nicht mehr. Es bedeutet aber auch, dass einige Fragen nicht im Vornherein geklärt werden können und Fehler passieren werden. Wir werden einander auf die Füsse treten. Ohne geht es gar nicht.
 
-Dabei ist besonders wichtig, dass wir die Personen unterstützen und ermutigen, die etwas wagen. Dafür braucht es einen Schutzraum. Es braucht Grosszügigkeit, Einheit und Vertrauen (siehe auch [unsere Grundsätze](https://www.effinger.ch/grundsaetze/)). Ohne diesen Schutzraum wird niemand bereit sein, sich einzusetzen und etwas zu riskieren. Gleichzeitig muss nach Build-Measure die Learn-Phase genutzt werden, um Dinge in Ordnung zu bringen und Beziehungen wieder zu klären.
+Dabei ist besonders wichtig, dass wir die Personen unterstützen und ermutigen, die etwas wagen. Dafür braucht es einen Schutzraum. Es braucht Grosszügigkeit, Einheit und Vertrauen (siehe auch [unsere Grundsätze](https://www.effinger.ch/grundsaetze/)). Ohne diesen Schutzraum wird niemand bereit sein, sich einzusetzen und etwas zu riskieren. Gleichzeitig muss nach Build und Measure die Learn-Phase genutzt werden, um Dinge wieder in Ordnung zu bringen und Beziehungen zu klären.
 
 ## Entschädigung
 
 ![Entschädigung](entschaedigung.png)
 
-Im Effinger haben wir eine 10%-Schenkzeit, die wir ineinander und in den gemeinsamen Betrieb investieren. Wenn die eingesetzte Zeit diese 10%-Schenkzeit übersteigt, kann man sich und andere bezahlen. Dafür braucht es ein Geschäftsmodell. Das kann in dieser Geschwindigkeit nicht komplett durchdacht sein. Erst in der Umsetzung wird man feststellen können, ob etwas funktioniert oder nicht.
+Im Effinger haben wir eine [10%-Schenkzeit](https://www.corelated.ch/#merkmale), die wir ineinander und in den gemeinsamen Betrieb investieren. Wenn die eingesetzte Zeit diese 10%-Schenkzeit übersteigt, kann man sich und andere bezahlen. Dafür braucht es ein Geschäftsmodell. Das kann in dieser Geschwindigkeit nicht komplett durchdacht sein. Erst in der Umsetzung wird man feststellen können, ob etwas funktioniert oder nicht.
 
 ## Woher kommen die Ideen?
 
