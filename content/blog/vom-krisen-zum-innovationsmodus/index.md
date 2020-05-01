@@ -8,6 +8,11 @@ comments = true
 tags = [ "Gemeinsamständig", "Community", "Coworking" ]
 +++
 
+<div class="alert alert-info">
+AKTUELL: Einladung zum Community-Treffen am 4. Mai 2020, 12 Uhr. Es findet online statt. Gäste sind herzlich willkommen! <i class="fa fa-hand-o-right"></i> <a target="_blank" href="/events/100371/">Weitere Infos</a>
+</div>
+<br>
+
 Ein Virus fegt über die Welt und plötzlich funktionieren ganz viele Geschäftsmodelle nicht mehr. Wir hatten schon einige Wochen Zeit, um dem nachzutrauern, was vorher so gut eingespielt war. Jetzt gilt es wieder aufzustehen, dankbar zu sein für das viele, was immer noch da ist und die Lust am Kreativen und Unternehmerischen wieder zu entdecken.
 
 ## Neue Ideen
