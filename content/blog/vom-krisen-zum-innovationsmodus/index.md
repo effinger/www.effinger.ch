@@ -9,7 +9,7 @@ tags = [ "Gemeinsamständig", "Community", "Coworking" ]
 +++
 
 <div class="alert alert-info">
-AKTUELL: Einladung zum Community-Treffen am 4. Mai 2020, 12 Uhr. Es findet online statt. Gäste sind herzlich willkommen! <i class="fa fa-hand-o-right"></i> <a target="_blank" href="/events/100371/">Weitere Infos</a>
+AKTUELL: Virtuelles Community-Treffen am 4. Mai 2020, 12 Uhr. Geht genau um dieses Thema. Gäste sind herzlich willkommen! <i class="fa fa-hand-o-right"></i> <a href="/events/100371/">Weitere Infos</a>
 </div>
 <br>
 
@@ -97,3 +97,7 @@ Um das auch formell klar auszudrücken gibt es eine schöne Lizenz, die wir an a
 
 *Marco*   
 (Icons by [Darius Dan](https://www.flaticon.com/authors/darius-dan))
+
+<div class="alert alert-info">
+AKTUELL: Virtuelles Community-Treffen am 4. Mai 2020, 12 Uhr. Geht genau um dieses Thema. Gäste sind herzlich willkommen! <i class="fa fa-hand-o-right"></i> <a href="/events/100371/">Weitere Infos</a>
+</div>
