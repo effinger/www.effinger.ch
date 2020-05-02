@@ -82,7 +82,7 @@ Kreative Unternehmer\*innen werden durch Probleme und freie Ressourcen provozier
 
 Aber für neue Lösungen braucht es Inspiration. In den letzten Wochen ist eine Initiative gestartet, die genau für diese Inspiration sorgen könnte: «Effinger Services». Das sind interdisziplinäre Teams, die speziell für knifflige Probleme zusammengestellt werden. Diese Querdenker und Problemlöser helfen, dass man aus gewohnten Bahnen ausbrechen kann und so unerwartete Ideen entstehen.
 
-> It's not an accident that a great flowering of innovation happened as England switched to tea and coffee. [...] Something about that environment where you have lots of different ideas that are together, different backgrounds, different interests, jostling with each other, bouncing off each other -- that environment is, in fact, the environment that leads to innovation.  
+> Something about that environment where you have lots of different ideas that are together, different backgrounds, different interests, jostling with each other, bouncing off each other -- that environment is, in fact, the environment that leads to innovation.  
 > <small>[Steven Johnson, «Where good ideas come from», TED 2010](https://www.ted.com/talks/steven_johnson_where_good_ideas_come_from)</small>
 
 Aus den Effinger Services werden ungewohnte Gedankenanstösse kommen. Dann können wir dort, wo wir uns begegnen diese Gedanken einander zuspielen bis jemand aufsteht und sagt: «Das setzen wir jetzt um.»
