@@ -12,7 +12,7 @@ tags = [ "Community", "Werkstatt" ]
 
 Auf dem Bauernhof von Marina und Roger Staub auf dem Belpberg ist eine gemeinsame Werkstatt entstanden. Schon seit Jahrzehnten wird auf diesem Hof gebaut mit Holz, Metall und Elektrik. Auch Timon Marmet, Effianer und Schreiner, benutzt die Maschinen und den Platz auf dem Belpberg, wenn er grössere Möbel anfertigt und es in der Effinger-Werkstatt zu eng wird.
 
-Nun wurde die Werkstatt erweitert durch eine [CNC-Maschine](http://sudar.ch/cnc/shg1212/). Als erstes Produkt werden 5 Tische für das Effinger-OG dort hergestellt. Dass es dazu kam, war eine echte Gemeinschaftsleistung: Tische hat Matthias ausgesucht. Die CNC-Maschine und viel CNC-Know-How ist von Lukacs, seinem Schwager. Roger und Marina bieten den Platz für die Maschine und stellen Werkzeuge zur Verfügung. Nachbar Philipp bedient als gelernter Mechaniker die Maschine und Timon gibt Tipps für die Holzverarbeitung.
+Nun wurde die Werkstatt erweitert durch eine [CNC-Maschine](http://sudar.ch/cnc/shg1212/). Als erstes Produkt werden 5 Tische für das Effinger-OG dort hergestellt. Dass es dazu kam, war eine echte Gemeinschaftsleistung: Tische hat Matthias ausgesucht. Die CNC-Maschine und viel CNC-Know-how ist von Lukacs, seinem Schwager. Roger und Marina bieten den Platz für die Maschine und stellen Werkzeuge zur Verfügung. Nachbar Philipp bedient als gelernter Mechaniker die Maschine und Timon gibt Tipps für die Holzverarbeitung.
 
 
 ### Einweihungsfeier

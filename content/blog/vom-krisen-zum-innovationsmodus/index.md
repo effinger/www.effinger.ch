@@ -47,7 +47,7 @@ Grosse Entscheide werden normalerweise ins Community-Treffen gebracht. Das ist i
 
 ![Ressourcen](ressourcen.png)
 
-Im Effinger und im Umfeld der Community steckt ein reicher Schatz an Ressourcen. Viel davon liegt im Moment brach (Räume, Terrasse, Mobiliar, digitale Tools, Know-How, Arbeitskräfte, Netzwerk, Vertrauen,Geld, Social Media, Reichweite, etc.).
+Im Effinger und im Umfeld der Community steckt ein reicher Schatz an Ressourcen. Viel davon liegt im Moment brach (Räume, Terrasse, Mobiliar, digitale Tools, Know-how, Arbeitskräfte, Netzwerk, Vertrauen,Geld, Social Media, Reichweite, etc.).
 
 In der aktuellen Krise haben Unternehmer\*innen und Selbständige sehr schnell nach Staatshilfe gerufen. Formulare ausfüllen und abwarten ist natürlich sehr lähmend.
 

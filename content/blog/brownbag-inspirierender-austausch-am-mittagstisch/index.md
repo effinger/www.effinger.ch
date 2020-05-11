@@ -17,7 +17,7 @@ Als wäre der (all)tägliche Austausch im Effinger nicht schon genug anregend, g
 
 ‚Wie vermarkte ich mich selber’, ‚Wie funktioniert Politwerbung‘ oder ‚Was ist ein Static Site Generator‘ – alles Themen zu denen in den vergangenen Monaten im Effinger ein Brownbag statt gefunden hat. Während die Teilnehmer ihr z’Mittag zu sich nehmen, hält eine Person zu einem bestimmten Thema einen Input. Anschliessend wird darüber diskutiert. Das gemeinsame Essen sorgt für eine lockere Atmosphäre, was gute Fragen hervorbringt.
 
-Im Effinger geht viel ‚Know-How‘ ein und aus. Der Brownbag bietet die Möglichkeit Wissen weiterzugeben und andere daran teilhaben zu lassen. Dabei kommen oft auch unerwartete Themen und spannendes Hintergrundwissen zum Vorschein. Der Wert des Erfahrungsaustausches und die Verknüpfung von Themen und Menschen ist unbezahlbar.
+Im Effinger geht viel ‚Know-how‘ ein und aus. Der Brownbag bietet die Möglichkeit Wissen weiterzugeben und andere daran teilhaben zu lassen. Dabei kommen oft auch unerwartete Themen und spannendes Hintergrundwissen zum Vorschein. Der Wert des Erfahrungsaustausches und die Verknüpfung von Themen und Menschen ist unbezahlbar.
 
 ![Brownbag](brownbag_01.jpg)
 
