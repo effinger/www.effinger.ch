@@ -136,7 +136,7 @@
           <p class="mb-10">
             Weitere Räume für private Gespräche
           </p>
-    
+
           <div class="mb-0">
             <a href="https://meet.jit.si/effinger-besprechung" target="_blank">Besprechungsraum</a>
             <small>für eigene Meetings</small><br>
@@ -168,11 +168,11 @@
           <h3 class="hs-line-15 font-alt mb-10"><i class="fa fa-coffee"></i> Kaffeebar geöffnet</h3>
 
           <p class="text-left mb-10">
-            Ab dem 11. Mai öffnen wir süüferli die Kaffeebar. Selbstverständlich halten wir uns an die 
-            Vorgaben vom Bund, damit unsere Gäste und unser Team geschützt sind. 
+            Ab dem 11. Mai öffnen wir süüferli die Kaffeebar. Selbstverständlich halten wir uns an die
+            Vorgaben vom Bund, damit unsere Gäste und unser Team geschützt sind.
           </p>
           <p class="text-left mb-0">
-            Momentan können wir nur Gästegruppen bis maximal 4 Personen willkommen heissen. 
+            Momentan können wir nur Gästegruppen bis maximal 4 Personen willkommen heissen.
           </p>
         </div>
       </div>
@@ -195,7 +195,7 @@
           <h4 class="hs-line-4 black font-alt mb-20">08.05.2020</h4>
 
           <p class="text-left mb-0">
-            <strong>Kaffeebar</strong>: 
+            <strong>Kaffeebar</strong>:
           </p>
           <ul class="text-left mb-10">
             <li>Kaffeebar ist geöffnet (Mo-Fr 7-21.30 Uhr, Sa 9-14 Uhr).</li>
@@ -472,13 +472,56 @@
   </section>
   <!-- End CTA Community Section -->
 
+  <!-- Effinger Serivces -->
+  <section class="page-section pt-80 pb-80 bg-gray-lighter">
+    <div class="container relative">
+      <div class="row">
+        <div class="col-md-7 col-md-push-5 mb-sm-40">
+
+          <!-- Gallery -->
+          <div class="work-full-media mt-0 white-shadow">
+            <ul class="clearlist work-full-slider owl-carousel">
+              <li>
+                <img src="services_01.jpg" alt="" />
+              </li>
+            </ul>
+          </div>
+          <!-- End Gallery -->
+
+        </div>
+        <div class="col-md-5 col-md-pull-7 col-lg-4">
+
+          <!-- Intro -->
+          <div class="text">
+
+            <h3 class="font-alt mb-30 mb-md-10"><a href="/services/">Effinger Services</a></h3>
+
+            <p>
+              Neu bietet der Effinger sein kraftvolles Know-&#8288;how in interdisziplinären Teams an.
+              <br />
+              Der perfekte Motor für kreative Kollaboration und Innovation.
+            </p>
+
+            <div class="mt-40">
+              <a href="/services/" class="btn btn-mod btn-border btn-round btn-medium">Mehr</a>
+            </div>
+
+          </div>
+          <!-- End Intro -->
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Effinger Serivces -->
+
   <!-- CTA Coworking Section -->
   <section class="page-section">
     <div class="container relative">
 
       <div class="row">
 
-        <div class="col-md-7 col-md-push-5 mb-sm-40">
+        <div class="col-md-7 mb-sm-40">
 
           <!-- Gallery -->
           <div class="work-full-media mt-0 white-shadow">
@@ -492,7 +535,7 @@
 
         </div>
 
-        <div class="col-md-5 col-md-pull-7 col-lg-4">
+        <div class="col-md-5 col-lg-4 col-lg-offset-1">
 
           <!-- About Project -->
           <div class="text">
@@ -584,19 +627,19 @@
     // Calculate time diff in hours and minutes.
     var imgTime = new Date(image.datetime * 1000);
     var now = new Date();
-    
+
     var diff = (now.getTime() - imgTime.getTime()) / 3600000; // this is a time in hours
 
     var diffText = "";
     var live = false;
     if (diff > 48) {
-      diffText = "vor " + Math.floor(diff / 24) + " Tagen"; 
+      diffText = "vor " + Math.floor(diff / 24) + " Tagen";
     } else if (diff > 24) {
-      diffText = "vor 1 Tag"; 
+      diffText = "vor 1 Tag";
     } else if (diff >= 2) {
-      diffText = "vor " + Math.floor(diff) + " Stunden"; 
+      diffText = "vor " + Math.floor(diff) + " Stunden";
     } else if (diff >= 1) {
-      diffText = "vor 1 Stunde"; 
+      diffText = "vor 1 Stunde";
     } else {
       diff = diff * 60; // time in minutes
 
@@ -605,11 +648,11 @@
       }
 
       if (diff >= 2) {
-        diffText = "vor " + Math.floor(diff) + " Minuten"; 
+        diffText = "vor " + Math.floor(diff) + " Minuten";
       } else if (diff >= 1) {
-        diffText = "vor 1 Minute"; 
+        diffText = "vor 1 Minute";
       } else {
-        diffText = "vor einigen Sekunden"; 
+        diffText = "vor einigen Sekunden";
       }
     }
 
@@ -642,9 +685,9 @@
       success: function (result) {
         if (result.data) {
           result.data.sort(function (a, b) {
-           return b.datetime - a.datetime;  
+           return b.datetime - a.datetime;
           });
-  
+
           if (slideshow) {
             if ('IntersectionObserver' in window) {
               // IntersectionObserver Supported
@@ -654,10 +697,10 @@
                     rootMargin: '0px',
                     threshold: 0.7
                   };
-            
+
               var observer = new IntersectionObserver(onChange, config);
               observer.observe(document.querySelector("#lounge-link"));
-            
+
               function onChange(changes, observer) {
                 changes.forEach(function (change) {
                   if (change.intersectionRatio > 0) {
@@ -667,7 +710,7 @@
                   }
                 });
               }
-            
+
             } else {
               // IntersectionObserver NOT Supported
               // Show slideshow after a few seconds.
