@@ -1,6 +1,6 @@
 +++
 title = "Build, Measure, Learn im Praxistest"
-date = "2020-05-11"
+date = "2020-05-10"
 description = "Salome und Sunita aus unserer Community haben in Rekordzeit eine Idee für Kurzzeit-Coworking zur Experiment-Reife gebracht. Dieser Artikel berichtet über die Umsetzung unseres 'Build, Measure, Learn'-Zyklus."
 image = "messband.jpg"
 authors = [ "David Eggimann" ]
