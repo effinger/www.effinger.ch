@@ -6,5 +6,5 @@ draft = true
 
 [menu.main]
 pre = "<i class='fa fa-birthday-cake'></i>"
-weight = 10
+weight = 199
 +++

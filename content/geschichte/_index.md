@@ -145,5 +145,5 @@ Jetzt geht's erst richtig los. Komm vorbei und erfahre, wie die Geschichte weite
 
 [menu.main]
   parent = "Community"
-  weight = 2
+  weight = 102
 +++

@@ -9,5 +9,5 @@ aliases = [
 
 [menu.main]
   parent = "Community"
-  weight = 1
+  weight = 101
 +++

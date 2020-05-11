@@ -32,12 +32,12 @@ disableFastRender = true
 [[menu.main]]
   name = "Community"
   pre = "<i class='fa fa-users'></i>"
-  weight = 3
+  weight = 103
   url = "/community/"
 
 [[menu.main]]
   name = "Events"
-  weight = 5
+  weight = 105
   url = "/Events/"
 
 [caches]

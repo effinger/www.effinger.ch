@@ -1,7 +1,7 @@
 +++
 id = "rosengarten"
 title = "Rosengarten"
-weight = 3
+weight = 203
 description = "Sitzungsraum im Kunstatelier"
 image = "rosengarten-1.jpg"
 

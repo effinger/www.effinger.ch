@@ -1,6 +1,6 @@
 +++
 title = "Grosse Schanze"
-weight = 4
+weight = 204
 description = "Ein grosser, hoher und heller Raum für Events."
 image = "eventraum-01.jpg"
 draft = true
