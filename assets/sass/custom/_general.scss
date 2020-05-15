@@ -10,7 +10,7 @@ strong {
 .bg-white {
   background-color: #fff;
 }
-
+.bg-effingergelb,
 .bg-primary {
   background-color: $primary-color;
 }
@@ -30,6 +30,11 @@ h3 a,
 h3 a:hover,
 h3 a:focus {
   text-decoration: none;
+}
+
+hr.effingergelb {
+  background-color: #fae300;
+  border-color: #fae300;
 }
 
 .hs-line-6 {
@@ -261,7 +266,7 @@ form {
 .live__icon {
   position: absolute;
   width: 50px;
-  
+
   .circle--outer {
     border: 1px solid #e50040;
     width: 40px;
@@ -273,7 +278,7 @@ form {
     -webkit-animation: circle 2s ease-in-out infinite;
     animation: circle 2s ease-in-out infinite;
   }
-  
+
   .circle--inner {
     background: #e50040;
     left: 15px;
@@ -284,7 +289,7 @@ form {
     position: absolute;
     opacity: 0.8;
   }
-  
+
   .circle--inner:after {
     content: "";
     display: block;
@@ -299,32 +304,32 @@ form {
     -webkit-animation: circle 2s ease-in-out 0.2s infinite;
     animation: circle 2s ease-in-out 0.2s infinite;
   }
-  
+
   p {
     color: #e50040;
     text-align: center;
     font-weight: 400;
   }
-  
+
   @-webkit-keyframes circle {
     from {
       -webkit-transform: scale(1);
       transform: scale(1);
     }
-  
+
     to {
       -webkit-transform: scale(1.5);
       transform: scale(1.5);
       opacity: 0;
     }
   }
-  
+
   @keyframes circle {
     from {
       -webkit-transform: scale(1);
       transform: scale(1);
     }
-  
+
     to {
       -webkit-transform: scale(1.5);
       transform: scale(1.5);

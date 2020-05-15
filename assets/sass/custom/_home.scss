@@ -2,13 +2,62 @@
 .font-tagline {
   font-weight: 400;
   text-transform: none;
-  color: black;
   font-size: 14px;
   letter-spacing: 0;
   color: white;
 }
 
 .page-home {
+  .angebote {
+    .list {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+
+      .angebot {
+        display: flex;
+        flex-flow: column nowrap;
+        width: 255px;
+        margin: 0 15px 60px;
+
+        .picture {
+          position: relative;
+          width: 100%;
+          height: 164px;
+          background-color: #888;
+          background-size: cover;
+          background-blend-mode: multiply;
+          overflow: hidden;
+
+          img {
+            position: absolute;
+          }
+
+          .neu {
+            position: absolute;
+            top: 0;
+            right: 0;
+            transform: rotate(45deg) translate(3em, -2em);
+            padding: 0.4em 0 0.2em;
+            width: 10em;
+            background-color: $primary-color;
+            text-align: center;
+            font-weight: bold;
+          }
+        }
+
+        .title {
+          height: 50px;
+        }
+
+        .teaser {
+          flex-grow: 1;
+        }
+      }
+
+    }
+  }
+
   .blog-item-title {
     font-size: 18px;
     letter-spacing: 1px;

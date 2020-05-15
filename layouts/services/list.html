@@ -1,5 +1,5 @@
 {{ define "main" }}
-<div class="page" id="top">
+<div class="page services" id="top">
 
   <nav class="main-nav dark transparent stick-fixed">
     {{ partial "navigation.html" . }}
@@ -36,12 +36,12 @@
 
   <!-- Fähigkeiten -->
   <section id="skills" class="small-section-header bg-gray-lighter">
-    <div class="container relative">
+    <div class="container">
       <div class="row">
-        <div class="col-sm-8 col-sm-offset-2 mb-40 text-center">
+        <div class="col-sm-8 col-sm-offset-2 text-center">
           <div class="text">
             <h2 class="hs-line-11 font-alt mb-60">Fähigkeiten</h2>
-            <p>
+            <p class="mb-60">
               Der Effinger ist ein Universum aus unterschiedlichen Disziplinen – von Achtsamkeit
               über agile Organisationsentwicklung bis hin zu zukünftigen Arbeitsformen.
               Greife auf unsere Fähigkeiten zu – für dein Projekt, deinen Event oder dein Unternehmen.
@@ -50,129 +50,123 @@
           </div>
         </div>
       </div>
-      <div class="row text-center">
-        <div class="col-sm-6 col-md-4" style="max-width: 440px; margin: 0 auto 60px;">
-          <div class="skill bg-white text-left" style="padding: 1em;">
-            <h3 class="text-center">Embodiment</h3>
-            <hr style="height: 2px; background-color: #fae300; border-color: #fae300;"/>
-            <p class="teaser">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad autem, commodi cumque deserunt dicta eius fugit harum in laborum libero non porro quia repellendus repudiandae sint sunt temporibus velit, vitae.
-            </p>
-            <hr style="height: 2px;"/>
-            <h4>Expert*innen</h4>
-            <div class="experts" style="display: flex; flex-flow: row wrap; justify-content: space-evenly; margin: 0 -10px;">
-              <div class="expert" style="width: 70px; margin: 8px;">
-                <div class="avatar" style="background: url('/images/effianer/sunita-asnani.jpg'); background-size: cover; border-radius: 50%; padding-bottom: 100%;"></div>
-                <div class="name text-center small" style="line-height: 1; padding: 0.5em 0;">Sunita Asnani</div>
-              </div>
-              <div class="expert" style="width: 70px; margin: 8px;">
-                <div class="avatar" style="background: url('/images/effianer/alexis-giard.jpg'); background-size: cover; border-radius: 50%; padding-bottom: 100%;"></div>
-                <div class="name text-center small" style="line-height: 1; padding: 0.5em 0;">Alexis Giard</div>
-              </div>
-              <div class="expert" style="width: 70px; margin: 8px;">
-                <div class="avatar" style="background: url('/images/effianer/damaris-berger.jpg'); background-size: cover; border-radius: 50%; padding-bottom: 100%;"></div>
-                <div class="name text-center small" style="line-height: 1; padding: 0.5em 0;">Damaris Berger</div>
-              </div>
-              <div class="expert" style="width: 70px; margin: 8px;">
-                <div class="avatar" style="background: url('/images/effianer/corinne-roth-vock.jpg'); background-size: cover; border-radius: 50%; padding-bottom: 100%;"></div>
-                <div class="name text-center small" style="line-height: 1; padding: 0.5em 0;">Corinne Roth Vock</div>
-              </div>
-              <div class="expert" style="width: 70px; margin: 8px;">
-                <div class="avatar" style="background: url('/images/effianer/christa-maria-tobler.jpg'); background-size: cover; border-radius: 50%; padding-bottom: 100%;"></div>
-                <div class="name text-center small" style="line-height: 1; padding: 0.5em 0;">Christa Maria Tobler</div>
-              </div>
-              <div class="expert" style="width: 70px; margin: 8px;">
-                <div class="avatar" style="background: url('/images/effianer/fredi-zumbrunn.jpg'); background-size: cover; border-radius: 50%; padding-bottom: 100%;"></div>
-                <div class="name text-center small" style="line-height: 1; padding: 0.5em 0;">Fredi Zumbrunn</div>
-              </div>
-              <div class="expert" style="width: 70px; margin: 8px;">
-                <div class="avatar" style="background: url('/images/effianer/michael-hoernlimann.jpg'); background-size: cover; border-radius: 50%; padding-bottom: 100%;"></div>
-                <div class="name text-center small" style="line-height: 1; padding: 0.5em 0;">Michael Hörnlimann</div>
-              </div>
-              <div class="expert" style="width: 70px; margin: 8px;">
-                <div class="avatar" style="background: url('/images/effianer/timon-marmet.jpg'); background-size: cover; border-radius: 50%; padding-bottom: 100%;"></div>
-                <div class="name text-center small" style="line-height: 1; padding: 0.5em 0;">Timon Marmet</div>
-              </div>
-              <div class="expert" style="width: 70px; margin: 8px;">
-                <div class="avatar" style="background: url('/images/effianer/benji-ammann.jpg'); background-size: cover; border-radius: 50%; padding-bottom: 100%;"></div>
-                <div class="name text-center small" style="line-height: 1; padding: 0.5em 0;">Benji Ammann</div>
-              </div>
-              <div class="expert" style="width: 70px; margin: 8px;">
-                <div class="avatar" style="background: url('/images/effianer/kim-eggimann.jpg'); background-size: cover; border-radius: 50%; padding-bottom: 100%;"></div>
-                <div class="name text-center small" style="line-height: 1; padding: 0.5em 0;">Kim Eggimann</div>
-              </div>
+      <div class="list">
+        <div class="skill">
+          <h3 class="text-center">Embodiment</h3>
+          <hr class="effingergelb" />
+          <p class="intro">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad autem, commodi cumque deserunt dicta eius fugit harum in laborum libero non porro quia repellendus repudiandae sint sunt temporibus velit, vitae.
+          </p>
+          <hr />
+          <h4>Expert*innen</h4>
+          <div class="experts">
+            <div class="expert">
+              <div class="avatar" style="background-image: url('/images/effianer/sunita-asnani.jpg'); "></div>
+              <div class="name">Sunita Asnani</div>
             </div>
-            <hr style="height: 2px;"/>
-            <p class="call-to-action mt-30 mb-20 text-center">
-              <a href="#contact" class="btn btn-mod btn-border btn-round btn-medium">Kontakt Aufnehmen</a>
-            </p>
+            <div class="expert">
+              <div class="avatar" style="background-image: url('/images/effianer/alexis-giard.jpg');"></div>
+              <div class="name">Alexis Giard</div>
+            </div>
+            <div class="expert">
+              <div class="avatar" style="background-image: url('/images/effianer/damaris-berger.jpg');"></div>
+              <div class="name">Damaris Berger</div>
+            </div>
+            <div class="expert">
+              <div class="avatar" style="background-image: url('/images/effianer/corinne-roth-vock.jpg');"></div>
+              <div class="name">Corinne Roth Vock</div>
+            </div>
+            <div class="expert">
+              <div class="avatar" style="background-image: url('/images/effianer/christa-maria-tobler.jpg');"></div>
+              <div class="name">Christa Maria Tobler</div>
+            </div>
+            <div class="expert">
+              <div class="avatar" style="background-image: url('/images/effianer/fredi-zumbrunn.jpg');"></div>
+              <div class="name">Fredi Zumbrunn</div>
+            </div>
+            <div class="expert">
+              <div class="avatar" style="background-image: url('/images/effianer/michael-hoernlimann.jpg');"></div>
+              <div class="name">Michael Hörnlimann</div>
+            </div>
+            <div class="expert">
+              <div class="avatar" style="background-image: url('/images/effianer/timon-marmet.jpg');"></div>
+              <div class="name">Timon Marmet</div>
+            </div>
+            <div class="expert">
+              <div class="avatar" style="background-image: url('/images/effianer/benji-ammann.jpg');"></div>
+              <div class="name">Benji Ammann</div>
+            </div>
+            <div class="expert">
+              <div class="avatar" style="background-image: url('/images/effianer/kim-eggimann.jpg');"></div>
+              <div class="name">Kim Eggimann</div>
+            </div>
           </div>
+          <hr />
+          <p class="call-to-action mt-30 mb-20 text-center">
+            <a href="#contact" class="btn btn-mod btn-border btn-round btn-medium">Kontakt Aufnehmen</a>
+          </p>
         </div>
-        <div class="col-sm-6 col-md-4" style="max-width: 440px; margin: 0 auto 60px;">
-          <div class="skill bg-white text-left" style="padding: 1em;">
-            <h3 class="text-center">Organisations&shy;entwicklung</h3>
-            <hr style="height: 2px; background-color: #fae300; border-color: #fae300;"/>
-            <p class="teaser">
-              Lorem ipsum dolor sit amet, consectetur elit. Ad autem, commodi non porro quia repellendus repudiandae sunt temporibus.
-            </p>
-            <hr style="height: 2px;"/>
-            <h4>Expert*innen</h4>
-            <div class="experts" style="display: flex; flex-flow: row wrap; justify-content: space-evenly; margin: 0 -10px;">
-              <div class="expert" style="width: 70px; margin: 8px;">
-                <div class="avatar" style="background: url('/images/effianer/michael-hoernlimann.jpg'); background-size: cover; border-radius: 50%; padding-bottom: 100%;"></div>
-                <div class="name text-center small" style="line-height: 1; padding: 0.5em 0;">Michael Hörnlimann</div>
-              </div>
-              <div class="expert" style="width: 70px; margin: 8px;">
-                <div class="avatar" style="background: url('/images/effianer/fredi-zumbrunn.jpg'); background-size: cover; border-radius: 50%; padding-bottom: 100%;"></div>
-                <div class="name text-center small" style="line-height: 1; padding: 0.5em 0;">Fredi Zumbrunn</div>
-              </div>
-              <div class="expert" style="width: 70px; margin: 8px;">
-                <div class="avatar" style="background: url('/images/effianer/sunita-asnani.jpg'); background-size: cover; border-radius: 50%; padding-bottom: 100%;"></div>
-                <div class="name text-center small" style="line-height: 1; padding: 0.5em 0;">Sunita Asnani</div>
-              </div>
-              <div class="expert" style="width: 70px; margin: 8px;">
-                <div class="avatar" style="background: url('/images/effianer/timon-marmet.jpg'); background-size: cover; border-radius: 50%; padding-bottom: 100%;"></div>
-                <div class="name text-center small" style="line-height: 1; padding: 0.5em 0;">Timon Marmet</div>
-              </div>
-              <div class="expert" style="width: 70px; margin: 8px;">
-                <div class="avatar" style="background: url('/images/effianer/christa-maria-tobler.jpg'); background-size: cover; border-radius: 50%; padding-bottom: 100%;"></div>
-                <div class="name text-center small" style="line-height: 1; padding: 0.5em 0;">Christa Maria Tobler</div>
-              </div>
+        <div class="skill">
+          <h3 class="text-center">Organisations&shy;entwicklung</h3>
+          <hr class="effingergelb" />
+          <p class="intro">
+            Lorem ipsum dolor sit amet, consectetur elit. Ad autem, commodi non porro quia repellendus repudiandae sunt temporibus.
+          </p>
+          <hr />
+          <h4>Expert*innen</h4>
+          <div class="experts">
+            <div class="expert">
+              <div class="avatar" style="background-image: url('/images/effianer/michael-hoernlimann.jpg');"></div>
+              <div class="name">Michael Hörnlimann</div>
             </div>
-            <hr style="height: 2px;"/>
-            <p class="call-to-action mt-30 mb-20 text-center">
-              <a href="#contact" class="btn btn-mod btn-border btn-round btn-medium">Kontakt Aufnehmen</a>
-            </p>
+            <div class="expert">
+              <div class="avatar" style="background-image: url('/images/effianer/fredi-zumbrunn.jpg');"></div>
+              <div class="name">Fredi Zumbrunn</div>
+            </div>
+            <div class="expert">
+              <div class="avatar" style="background-image: url('/images/effianer/sunita-asnani.jpg');"></div>
+              <div class="name">Sunita Asnani</div>
+            </div>
+            <div class="expert">
+              <div class="avatar" style="background-image: url('/images/effianer/timon-marmet.jpg');"></div>
+              <div class="name">Timon Marmet</div>
+            </div>
+            <div class="expert">
+              <div class="avatar" style="background-image: url('/images/effianer/christa-maria-tobler.jpg');"></div>
+              <div class="name">Christa Maria Tobler</div>
+            </div>
           </div>
+          <hr />
+          <p class="call-to-action mt-30 mb-20 text-center">
+            <a href="#contact" class="btn btn-mod btn-border btn-round btn-medium">Kontakt Aufnehmen</a>
+          </p>
         </div>
-        <div class="col-sm-6 col-md-4" style="max-width: 440px; margin: 0 auto 60px;">
-          <div class="skill bg-white text-left" style="padding: 1em;">
-            <h3 class="text-center">Design & Handwerk</h3>
-            <hr style="height: 2px; background-color: #fae300; border-color: #fae300;"/>
-            <p class="teaser">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad autem, commodi cumque deserunt dicta eius fugit harum in laborum libero non porro quia repellendus repudiandae sint sunt temporibus velit, vitae. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-            <hr style="height: 2px;"/>
-            <h4>Expert*innen</h4>
-            <div class="experts" style="display: flex; flex-flow: row wrap; justify-content: space-evenly; margin: 0 -10px;">
-              <div class="expert" style="width: 70px; margin: 8px;">
-                <div class="avatar" style="background: url('/images/effianer/damaris-berger.jpg'); background-size: cover; border-radius: 50%; padding-bottom: 100%;"></div>
-                <div class="name text-center small" style="line-height: 1; padding: 0.5em 0;">Damaris Berger</div>
-              </div>
-              <div class="expert" style="width: 70px; margin: 8px;">
-                <div class="avatar" style="background: url('/images/effianer/claudine-etter.jpg'); background-size: cover; border-radius: 50%; padding-bottom: 100%;"></div>
-                <div class="name text-center small" style="line-height: 1; padding: 0.5em 0;">Claudine Etter</div>
-              </div>
-              <div class="expert" style="width: 70px; margin: 8px;">
-                <div class="avatar" style="background: url('/images/avatar-generisch.png'); background-size: cover; border-radius: 50%; padding-bottom: 100%;"></div>
-                <div class="name text-center small" style="line-height: 1; padding: 0.5em 0;">Ich habe noch kein Bild</div>
-              </div>
+        <div class="skill">
+          <h3 class="text-center">Design & Handwerk</h3>
+          <hr class="effingergelb" />
+          <p class="intro">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad autem, commodi cumque deserunt dicta eius fugit harum in laborum libero non porro quia repellendus repudiandae sint sunt temporibus velit, vitae. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <hr />
+          <h4>Expert*innen</h4>
+          <div class="experts">
+            <div class="expert">
+              <div class="avatar" style="background-image: url('/images/effianer/damaris-berger.jpg');"></div>
+              <div class="name">Damaris Berger</div>
             </div>
-            <hr style="height: 2px;"/>
-            <p class="call-to-action mt-30 mb-20 text-center">
-              <a href="#contact" class="btn btn-mod btn-border btn-round btn-medium">Kontakt Aufnehmen</a>
-            </p>
+            <div class="expert">
+              <div class="avatar" style="background-image: url('/images/effianer/claudine-etter.jpg');"></div>
+              <div class="name">Claudine Etter</div>
+            </div>
+            <div class="expert">
+              <div class="avatar" style="background-image: url('/images/avatar-generisch.png');"></div>
+              <div class="name">Ich habe noch kein Bild</div>
+            </div>
           </div>
+          <hr />
+          <p class="call-to-action mt-30 mb-20 text-center">
+            <a href="#contact" class="btn btn-mod btn-border btn-round btn-medium">Kontakt Aufnehmen</a>
+          </p>
         </div>
       </div>
     </div>
@@ -181,12 +175,12 @@
 
   <!-- Kostproben -->
   <section id="trials" class="small-section-header">
-    <div class="container relative">
+    <div class="container">
       <div class="row">
-        <div class="col-sm-8 col-sm-offset-2 mb-40 text-center">
+        <div class="col-sm-8 col-sm-offset-2 text-center">
           <div class="text">
             <h2 class="hs-line-11 font-alt mb-60">Kostproben</h2>
-            <p>
+            <p class="mb-60">
               Kleine Kostprobe gefällig?
               In einer stündigen Session können Sie in den Genuss von unseren Fähigkeiten kommen.
               Ideal als Bereicherung für Ihren Workshop, Ihren Event oder die Retraite.
@@ -194,152 +188,140 @@
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col col-sm-6 col-md-4 mb-20" style="margin: 0 auto 60px;">
-          <div class="trial" style="border: 3px solid #fae300; padding: 0.5em 1.5em; background-color: white;">
-            <h2>Quer – Sehen</h2>
-            <p style="white-space: pre-line;">
-              Möchtest du innovative Lösungswege für betriebliche Probleme und Herausforderungen finden? Anstatt uns in das Problem zu verbeissen, lustwandeln wir mit dir und deinem Team in den ungeahnten Möglichkeiten und Perspektiven, die zum Vorschein kommen.
-            </p>
-            <div class="quick-facts" style="display: flex; flex-flow: row nowrap; align-items: center;">
-              <div class="expert" style="width: 70px; margin: 8px;">
-                <div class="avatar" style="background: url('/images/effianer/sunita-asnani.jpg'); background-size: cover; border-radius: 50%; padding-bottom: 100%;"></div>
-              </div>
-              <div style="margin: 8px;">
-                <b>Dauer: 1 h</b><br />
-                mit Sunita Asnani<br />
-              </div>
+      <div class="list">
+        <div class="trial">
+          <h2>Quer – Sehen</h2>
+          <p class="intro">
+            Möchtest du innovative Lösungswege für betriebliche Probleme und Herausforderungen finden? Anstatt uns in das Problem zu verbeissen, lustwandeln wir mit dir und deinem Team in den ungeahnten Möglichkeiten und Perspektiven, die zum Vorschein kommen.
+          </p>
+          <div class="quick-facts">
+            <div class="expert">
+              <div class="avatar" style="background-image: url('/images/effianer/sunita-asnani.jpg');"></div>
             </div>
-            <p style="margin: 1em 0;">
-              <b>CHF 200.-</b>
-            </p>
-            <p>
-              <a href="#contact" class="btn btn-mod btn-border btn-round btn-medium">Jetzt anfragen</a>
-            </p>
-          </div>
-        </div>
-        <div class="col col-sm-6 col-md-4 mb-20" style="margin: 0 auto 60px;">
-          <div class="trial" style="border: 3px solid #fae300; padding: 0.5em 1.5em; background-color: white;">
-            <h2>Branding-Therapie</h2>
-            <p style="white-space: pre-line;">
-              In einer Stunde nehmen wir deinen Brand unter die Lupe. Wie können wir brachliegendes Potenzial wecken und wie kannst du nächste Schritte in Angriff nehmen.
-            </p>
-            <div class="quick-facts" style="display: flex; flex-flow: row nowrap; align-items: center;">
-              <div class="expert" style="width: 70px; margin: 8px;">
-                <div class="avatar" style="background: url('/images/effianer/manuel-buerli.jpg'); background-size: cover; border-radius: 50%; padding-bottom: 100%;"></div>
-              </div>
-              <div style="margin: 8px;">
-                <b>Dauer: 1 h</b><br />
-                mit Herr Bürli<br />
-              </div>
+            <div style="margin: 8px;">
+              <b>Dauer: 1 h</b><br />
+              mit Sunita Asnani<br />
             </div>
-            <p style="margin: 1em 0;">
-              <b>CHF 200.-</b>
-            </p>
-            <p>
-              <a href="#contact" class="btn btn-mod btn-border btn-round btn-medium">Jetzt anfragen</a>
-            </p>
           </div>
+          <p style="margin: 1em 0;">
+            <b>CHF 200.-</b>
+          </p>
+          <p>
+            <a href="#contact" class="btn btn-mod btn-border btn-round btn-medium">Jetzt anfragen</a>
+          </p>
         </div>
-        <div class="col col-sm-6 col-md-4 mb-20" style="margin: 0 auto 60px;">
-          <div class="trial" style="border: 3px solid #fae300; padding: 0.5em 1.5em; background-color: white;">
-            <h2>Neue Webseite</h2>
-            <p style="white-space: pre-line;">
-              Eine Website erstellen in unter 1 Stunde. Warum ein einfacher (aber professioneller) Webauftritt für viele Projekte ausreicht und was man mit der freigewordenen Zeit und dem gesparten Geld anfangen kann.
-            </p>
-            <div class="quick-facts" style="display: flex; flex-flow: row nowrap; align-items: center;">
-              <div class="expert" style="width: 70px; margin: 8px;">
-                <div class="avatar" style="background: url('/images/effianer/marco-jakob.jpg'); background-size: cover; border-radius: 50%; padding-bottom: 100%;"></div>
-              </div>
-              <div style="margin: 8px;">
-                <b>Dauer: 1 h</b><br />
-                mit Marco Jakob<br />
-              </div>
+        <div class="trial">
+          <h2>Branding-Therapie</h2>
+          <p class="intro">
+            In einer Stunde nehmen wir deinen Brand unter die Lupe. Wie können wir brachliegendes Potenzial wecken und wie kannst du nächste Schritte in Angriff nehmen.
+          </p>
+          <div class="quick-facts">
+            <div class="expert">
+              <div class="avatar" style="background-image: url('/images/effianer/manuel-buerli.jpg');"></div>
             </div>
-            <p style="margin: 1em 0;">
-              <b>CHF 200.-</b>
-            </p>
-            <p>
-              <a href="#contact" class="btn btn-mod btn-border btn-round btn-medium">Jetzt anfragen</a>
-            </p>
-          </div>
-        </div>
-        <div class="col col-sm-6 col-md-4 mb-20" style="margin: 0 auto 60px;">
-          <div class="trial" style="border: 3px solid #fae300; padding: 0.5em 1.5em; background-color: white;">
-            <h2>Chinas Geheimnisse</h2>
-            <p style="white-space: pre-line;">
-              Und was wir dabei für unser strategisches und unternehmerisches Denken und Handeln lernen können. Ein Vortrag.
-            </p>
-            <div class="quick-facts" style="display: flex; flex-flow: row nowrap; align-items: center;">
-              <div class="expert" style="width: 70px; margin: 8px;">
-                <div class="avatar" style="background: url('/images/effianer/urs-voegeli.jpg'); background-size: cover; border-radius: 50%; padding-bottom: 100%;"></div>
-              </div>
-              <div style="margin: 8px;">
-                <b>Dauer: 1 h</b><br />
-                mit Urs Vögeli<br />
-              </div>
+            <div style="margin: 8px;">
+              <b>Dauer: 1 h</b><br />
+              mit Herr Bürli<br />
             </div>
-            <p style="margin: 1em 0;">
-              <b>CHF 200.-</b>
-            </p>
-            <p>
-              <a href="#contact" class="btn btn-mod btn-border btn-round btn-medium">Jetzt anfragen</a>
-            </p>
           </div>
+          <p style="margin: 1em 0;">
+            <b>CHF 200.-</b>
+          </p>
+          <p>
+            <a href="#contact" class="btn btn-mod btn-border btn-round btn-medium">Jetzt anfragen</a>
+          </p>
         </div>
-        <div class="col col-sm-6 col-md-4 mb-20" style="margin: 0 auto 60px;">
-          <div class="trial" style="border: 3px solid #fae300; padding: 0.5em 1.5em; background-color: white;">
-            <h2>Lernen in die Berufung</h2>
-            <p style="white-space: pre-line;">
-              Zusammenwirken von Berufsfachleuten mit jungen Menschen für den Uebergang vom Lernen in die Berufung
+        <div class="trial">
+          <h2>Neue Webseite</h2>
+          <p class="intro">
+            Eine Website erstellen in unter 1 Stunde. Warum ein einfacher (aber professioneller) Webauftritt für viele Projekte ausreicht und was man mit der freigewordenen Zeit und dem gesparten Geld anfangen kann.
+          </p>
+          <div class="quick-facts">
+            <div class="expert">
+              <div class="avatar" style="background-image: url('/images/effianer/marco-jakob.jpg');"></div>
+            </div>
+            <div style="margin: 8px;">
+              <b>Dauer: 1 h</b><br />
+              mit Marco Jakob<br />
+            </div>
+          </div>
+          <p style="margin: 1em 0;">
+            <b>CHF 200.-</b>
+          </p>
+          <p>
+            <a href="#contact" class="btn btn-mod btn-border btn-round btn-medium">Jetzt anfragen</a>
+          </p>
+        </div>
+        <div class="trial">
+          <h2>Chinas Geheimnisse</h2>
+          <p class="intro">
+            Und was wir dabei für unser strategisches und unternehmerisches Denken und Handeln lernen können. Ein Vortrag.
+          </p>
+          <div class="quick-facts">
+            <div class="expert">
+              <div class="avatar" style="background-image: url('/images/effianer/urs-voegeli.jpg');"></div>
+            </div>
+            <div style="margin: 8px;">
+              <b>Dauer: 1 h</b><br />
+              mit Urs Vögeli<br />
+            </div>
+          </div>
+          <p style="margin: 1em 0;">
+            <b>CHF 200.-</b>
+          </p>
+          <p>
+            <a href="#contact" class="btn btn-mod btn-border btn-round btn-medium">Jetzt anfragen</a>
+          </p>
+        </div>
+        <div class="trial">
+          <h2>Lernen in die Berufung</h2>
+          <p class="intro">
+            Zusammenwirken von Berufsfachleuten mit jungen Menschen für den Uebergang vom Lernen in die Berufung
 
-              Einbringen von Erfahrung aus komplexen Kunden- und Entwicklungsprojekten
+            Einbringen von Erfahrung aus komplexen Kunden- und Entwicklungsprojekten
 
-              Zugang und Vernetzung von Kompetenzen kreativ ermöglichen
-            </p>
-            <div class="quick-facts" style="display: flex; flex-flow: row nowrap; align-items: center;">
-              <div class="expert" style="width: 70px; margin: 8px;">
-                <div class="avatar" style="background: url('/images/effianer/markus-roos.jpg'); background-size: cover; border-radius: 50%; padding-bottom: 100%;"></div>
-              </div>
-              <div style="margin: 8px;">
-                <b>Dauer: 1 h</b><br />
-                mit Markus Roos<br />
-              </div>
+            Zugang und Vernetzung von Kompetenzen kreativ ermöglichen
+          </p>
+          <div class="quick-facts">
+            <div class="expert">
+              <div class="avatar" style="background-image: url('/images/effianer/markus-roos.jpg');"></div>
             </div>
-            <p style="margin: 1em 0;">
-              <b>CHF 200.-</b>
-            </p>
-            <p>
-              <a href="#contact" class="btn btn-mod btn-border btn-round btn-medium">Jetzt anfragen</a>
-            </p>
+            <div style="margin: 8px;">
+              <b>Dauer: 1 h</b><br />
+              mit Markus Roos<br />
+            </div>
           </div>
+          <p style="margin: 1em 0;">
+            <b>CHF 200.-</b>
+          </p>
+          <p>
+            <a href="#contact" class="btn btn-mod btn-border btn-round btn-medium">Jetzt anfragen</a>
+          </p>
         </div>
-        <div class="col col-sm-6 col-md-4 mb-20" style="margin: 0 auto 60px;">
-          <div class="trial" style="border: 3px solid #fae300; padding: 0.5em 1.5em; background-color: white;">
-            <h2>Turbo Buchhaltung</h2>
-            <p style="white-space: pre-line;">
-              In einer Stunde schauen wir über deine Buchhaltung und geben dir Tipps und Tricks, wie du deine Finanz-Prozesse effizienter und produktiver gestalten kannst.
-            </p>
-            <div class="quick-facts" style="display: flex; flex-flow: row nowrap; align-items: center;">
-              <div class="expert" style="width: 70px; margin: 8px;">
-                <div class="avatar" style="background: url('/images/effianer/benji-ammann.jpg'); background-size: cover; border-radius: 50%; padding-bottom: 100%;"></div>
-              </div>
-              <div class="expert" style="width: 70px; margin: 8px; margin-left: -20px;">
-                <div class="avatar" style="background: url('/images/effianer/tom-bucher.jpg'); background-size: cover; border-radius: 50%; padding-bottom: 100%;"></div>
-              </div>
-              <div style="margin: 8px;">
-                <b>Dauer: 1 h</b><br />
-                mit Thomas Bucher<br />
-                und Benjamin Ammann<br />
-              </div>
+        <div class="trial">
+          <h2>Turbo Buchhaltung</h2>
+          <p class="intro">
+            In einer Stunde schauen wir über deine Buchhaltung und geben dir Tipps und Tricks, wie du deine Finanz-Prozesse effizienter und produktiver gestalten kannst.
+          </p>
+          <div class="quick-facts">
+            <div class="expert">
+              <div class="avatar" style="background-image: url('/images/effianer/benji-ammann.jpg');"></div>
             </div>
-            <p style="margin: 1em 0;">
-              <b>CHF 200.-</b>
-            </p>
-            <p>
-              <a href="#contact" class="btn btn-mod btn-border btn-round btn-medium">Jetzt anfragen</a>
-            </p>
+            <div class="expert">
+              <div class="avatar" style="background-image: url('/images/effianer/tom-bucher.jpg');"></div>
+            </div>
+            <div style="margin: 8px;">
+              <b>Dauer: 1 h</b><br />
+              mit Thomas Bucher<br />
+              und Benjamin Ammann<br />
+            </div>
           </div>
+          <p style="margin: 1em 0;">
+            <b>CHF 200.-</b>
+          </p>
+          <p>
+            <a href="#contact" class="btn btn-mod btn-border btn-round btn-medium">Jetzt anfragen</a>
+          </p>
         </div>
       </div>
     </div>

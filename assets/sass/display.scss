@@ -30,7 +30,7 @@ body {
 }
 
 .container {
-  background-color: #fae300;
+  background-color: $primary-color;
   width: 100%;
   height: 100%;
   padding: 15px;
@@ -78,11 +78,11 @@ body {
       background-color: inherit;
     }
   }
-  
+
   tr.event-ended {
     opacity: 0.5;
   }
-  
+
   tr > td {
     padding: 8px;
     line-height: 1.42857143;
@@ -90,11 +90,11 @@ body {
 
     border-width: 3px;
     border-top-style: solid;
-    border-color: #fae300; 
-    
+    border-color: $primary-color;
+
     .theme-black & {
       border-width: 1px;
-      border-bottom-style: solid; 
+      border-bottom-style: solid;
     }
   }
 
@@ -127,7 +127,7 @@ body {
     background-size: 100%;
     background-repeat: no-repeat;
     background-image: url('/images/logo-effinger-weiss-schwarz.svg');
-    
+
     .theme-black & {
       background-image: url('/images/logo-effinger-gelb-weiss.svg');
     }

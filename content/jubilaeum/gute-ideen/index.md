@@ -11,7 +11,7 @@ organizerimage = "fabienne.jpg"
 
 Wir stellen die Frage auf den Kopf – und schon sprudeln die Einfälle. Workshop mit Kopfstandmethode inkl. Einführung in Design Thinking und Kreativitätstechniken. 
 
-<div style="background-color: #fae300;padding:20px">
+<div class="bg-effingergelb" style="padding:20px;">
 <h3>
 Abgesagt
 </h3>
