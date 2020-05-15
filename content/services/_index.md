@@ -4,7 +4,6 @@ description = "Der Effinger bietet kraftvolles Know-how in interdisziplinären T
 image = "flyer_4.jpg"
 draft = false
 
-#[menu.main]
-#pre = "<i class='fa fa-tasks'></i>"
-#weight = 106
+[menu.main]
+weight = 106
 +++
