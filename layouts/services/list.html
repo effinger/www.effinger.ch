@@ -370,15 +370,15 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-sm-4 mb-20 card text-center">
-          BLOGEINTRAG
-        </div>
-        <div class="col-sm-4 mb-20 card text-center">
-          BLOGEINTRAG
-        </div>
-        <div class="col-sm-4 mb-20 card text-center">
-          BLOGEINTRAG
-        </div>
+        {{ range first 3 (where .Site.RegularPages "Params.tags" "intersect" (slice "Gemeinsamständig")) }}
+          <div class="col-sm-4">
+            {{ partial "blog/summary_home.html" . }}
+          </div>
+        {{ end }}
+      </div>
+      <div class="mt-40 text-center">
+        <a href="/blog/tags/gemeinsamstandig/" class="btn btn-mod btn-border btn-round btn-medium">Alle Blogeinträge zu Effinger Services</a>
+      </div>
     </div>
   </section>
   <!-- End Geschichten -->
