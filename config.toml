@@ -40,6 +40,6 @@ disableFastRender = true
   weight = 105
   url = "/Events/"
 
-[caches]
-[caches.getjson]
-maxAge = 0
+# [caches]
+# [caches.getjson]
+# maxAge = 0
