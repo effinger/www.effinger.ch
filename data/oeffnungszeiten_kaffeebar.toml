@@ -16,6 +16,17 @@ text = """
 # 
 # Falls mehrere Spezial-Zeiten zutreffen, kommt der unterste zur Anwendung.
 
+# May 2020 + Corona
+[[spezial]]
+display_start = 2020-05-20T00:00:00Z
+display_end = 2020-05-21T23:59:59Z
+text = """
+<p class="mb-0">Mo-Fr <span>7-21.30</span></p>
+<p class="mt-0">&nbsp;<span><small>bei grosser Nachfrage länger geöffnet</small></span></p>
+<p>Sa <span>9-14</span></p>
+<p>So <span>Ruhetag</span></p>
+"""
+
 # # june 2019
 # [[spezial]]
 # display_start = 2019-06-04T00:00:00Z
