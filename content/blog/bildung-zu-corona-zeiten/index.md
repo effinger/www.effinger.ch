@@ -134,7 +134,7 @@ Und wie erlebt das bwd die Zusammenarbeit mit dem Livestream Team? Es habe natü
 
 Ich trete aus dem Gebäude hinaus. Die Sonne scheint, die Menschen schlendern über den Wankdorf Center Platz, Skaters zeigen sich ihre neusten Tricks.
 
-Mit einer feinen Quiche in der Effinger Kaffeebar beende ich meine Expedition. Ich schaue optimistisch aus dem Fenster. Unternehmenskulturen, die geprägt sind von gegenseitiger Wertschätzung, exzellenter Teamarbeit, Lösungsorientierung und Mut zum Experiment gehören zu den Siegern dieser Zeit. Sie sind die Grundzutaten für Resilienz.
+Mit einer feinen Quiche in der Effinger Kaffeebar beende ich meine Expedition. Ich schaue optimistisch aus dem Fenster. Unternehmenskulturen, die geprägt sind von gegenseitiger Wertschätzung, exzellenter Teamarbeit, Lösungsorientierung und Mut zum Experiment gehören zu den Siegern dieser Zeit. Sie sind die Grundzutaten für [Resilienz](/blog/resilient-durch-die-krise/).
 
 ---
 
