@@ -4,6 +4,7 @@ title = "Labor"
 weight = 206
 description = "Raum «Labor» für Events, Workshops und digitale Projekte."
 image = "raum_labor_00004.jpg"
+draft = true
 
 aliases = [
     "/raeume/zweites-ug/"

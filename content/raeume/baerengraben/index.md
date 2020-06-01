@@ -4,6 +4,7 @@ title = "Bärengraben"
 weight = 204
 description = "Sitzungsraum, wahlweise mit Küche."
 image = "sitzungs-raum.jpg"
+draft = true
 
 gallery = [
   "sitzungs-raum.jpg",

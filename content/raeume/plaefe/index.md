@@ -4,6 +4,7 @@ title = "Pläfe"
 weight = 201
 description = "Der abgetrennte Raum oberhalb des Kaffeebar-Bereichs eignet sich als Sitzungszimmer und Workshopraum."
 image = "raum-mieten.jpg"
+draft = true
 
 gallery = [
   "raum-mieten.jpg",

@@ -4,6 +4,7 @@ title = "Rosengarten"
 weight = 203
 description = "Sitzungsraum im Kunstatelier"
 image = "rosengarten-1.jpg"
+draft = true
 
 gallery = [
   "rosengarten-1.jpg",
