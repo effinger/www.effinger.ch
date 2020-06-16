@@ -40,7 +40,7 @@ Diese Grafik zeigt die Besucher auf [effinger.ch](/) im letzten Monat. Die erste
 
 ### Newsletter und Social Media
 
-Aktuell haben 222 Personen unseren [Newsletter](http://eepurl.com/bw3j3H) abonniert.
+Aktuell haben 222 Personen unseren [Newsletter](https://eepurl.com/bw3j3H) abonniert.
 
 ![Besuche Internetseite](newsletter.png)
 

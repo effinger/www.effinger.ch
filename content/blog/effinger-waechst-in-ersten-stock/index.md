@@ -60,4 +60,4 @@ Je nach Einrichtung werden auch Events durchgeführt werden können.
 
 ## Start im Oktober
 
-Im Oktober geht es los! Wir halten dich auf dem Laufenden über Feste, Projekte und Events im ersten Stock per [Newsletter](http://eepurl.com/bw3j3H), [Facebook](https://www.facebook.com/effingerbern) oder [Instagram](https://www.instagram.com/effingerbern/). Wenn du näher dran sein, uns unterstützen oder irgendwo mitmachen möchtest, dann wirst du am besten [Community Member](/community/). Oder du löst im Oktober einfach mal einen [Tagespass](/coworking/#preise) und arbeitest einen Tag im ersten Stock. Wir würden uns freuen!
+Im Oktober geht es los! Wir halten dich auf dem Laufenden über Feste, Projekte und Events im ersten Stock per [Newsletter](https://eepurl.com/bw3j3H), [Facebook](https://www.facebook.com/effingerbern) oder [Instagram](https://www.instagram.com/effingerbern/). Wenn du näher dran sein, uns unterstützen oder irgendwo mitmachen möchtest, dann wirst du am besten [Community Member](/community/). Oder du löst im Oktober einfach mal einen [Tagespass](/coworking/#preise) und arbeitest einen Tag im ersten Stock. Wir würden uns freuen!
