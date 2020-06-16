@@ -15,8 +15,7 @@
 # display_end = 2020-12-31T23:59:59Z
 text = """
 <p class="mb-0">Mo-Fr <span>7-21.30</span></p>
-<p class="mt-0">&nbsp;<span><small>Bei Gruppen ab 5 Personen muss zwingend jemand seine Personalien abgeben.</small></span></p>
-<p class="mt-0">&nbsp;<span><small>Möchtest du mit deinen Laptop bei uns arbeiten? Kaufe dir einen Coworking Pass, neu gibts Kurzzeit-Möglichkeiten.</small></span></p>
+<p class="mt-0">&nbsp;<span><small>bei grosser Nachfrage länger geöffnet</small></span></p>
 <p>Sa <span>9-14</span></p>
 <p>So <span>Ruhetag</span></p>
 """
