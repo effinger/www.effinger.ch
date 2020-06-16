@@ -1,22 +1,4 @@
 [[Person]]
-name = "Anina"
-gender = "f"
-image = "/images/kaffeebar/anina.jpg"
-comment = ""
-
-[[Person]]
-name = "Christa"
-gender = "f"
-image = "/images/kaffeebar/christa.jpg"
-comment = "Life happens, coffee helps."
-
-[[Person]]
-name = "Fränzi"
-gender = "f"
-image = "/images/kaffeebar/franzi.jpg"
-comment = "Aues uf dr Wäut isch entweder ä Härdöpfu oder ke Härdöpfu."
-
-[[Person]]
 name = "Julian"
 gender = "m"
 image = "/images/kaffeebar/julian.jpg"
