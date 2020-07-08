@@ -35,17 +35,6 @@ twitter = ""
 facebook = ""
 instagram = ""
 
-# [[Person]]
-# name = "Claudia Schären"
-# gender = "f"
-# image = "/images/effianer/claudia-schaeren.jpg"
-# email = "claudia@effinger.ch"
-# phone = "+41 78 789 63 77"
-# website = "http://www.a-und-o.ch"
-# twitter = ""
-# facebook = ""
-# instagram = ""
-
 [[Person]]
 name = "Claudine Etter"
 gender = "f"
