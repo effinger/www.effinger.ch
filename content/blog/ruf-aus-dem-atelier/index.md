@@ -37,4 +37,4 @@ Die angrenzende Werkstatt bietet die Möglichkeit auch sofort Hand anzulegen.
 Es entsteht Neues und Altes wird aufgefrischt oder verändert.
 Wir mögen den Austausch über Krimskrams, gute Ausstellungen und schöne Bücher. Und das beste kommt noch: Wir haben noch Platz frei!
 
-Melde dich bei [graziella@effinger.ch](mailto:graziella@effinger.ch) oder sag es weiter.
+Melde dich bei [coworking@effinger.ch](mailto:coworking@effinger.ch) oder sag es weiter.

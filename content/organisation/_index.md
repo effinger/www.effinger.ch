@@ -4,7 +4,7 @@ description = "Alle Details, wie unsere Community und der Betrieb des Coworking 
 
 [menu.main]
   parent = "Community"
-  weight = 4
+  weight = 104
 +++
 
 

@@ -78,6 +78,6 @@ Da nun die Frage wegen dem Parkplatz geklärt ist, können wir den Termin für d
   </div>
 </p>
 
-Das **Eröffnungsfest wird am Samstag, 19. März 2016** stattfinden. Schon ab dem 16. März sind wir für euch da. Details zur Eröffung und zum Fest werden noch folgen. Wenn ihr die Infos nicht verpassen wollt, schreibt ihr euch am besten für den [Newsletter](http://eepurl.com/bw3j3H) ein.
+Das **Eröffnungsfest wird am Samstag, 19. März 2016** stattfinden. Schon ab dem 16. März sind wir für euch da. Details zur Eröffung und zum Fest werden noch folgen. Wenn ihr die Infos nicht verpassen wollt, schreibt ihr euch am besten für den [Newsletter](https://eepurl.com/bw3j3H) ein.
 
 Wow, sind wir aufgeregt. Wir freuen uns enorm, bald mit euch zu feiern, zu trinken, speisen und coworken.

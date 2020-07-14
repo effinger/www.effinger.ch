@@ -1,0 +1,90 @@
+.page.services {
+
+  .list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-bottom: 45px;
+
+    > * {
+      width: 350px;
+      margin: 15px;
+    }
+  }
+
+  #skills {
+    .skill {
+      display: flex;
+      flex-flow: column nowrap;
+      padding: 1em;
+      background: white;
+      text-align: left;
+
+      hr {
+        height: 2px;
+      }
+    }
+
+    .intro {
+      //flex-grow: 1;
+    }
+
+    .experts {
+      display: flex;
+      flex-flow: row wrap;
+      align-content: flex-start;
+      justify-content: space-evenly;
+      flex-grow: 1;
+      margin: 0 -10px;
+
+      .expert {
+        .name {
+          padding: 0.5em 0;
+          line-height: 1.15;
+          text-align: center;
+          font-size: 0.8em;
+        }
+      }
+    }
+  }
+
+  #trials {
+    .list {
+      //margin: 0 auto 60px;
+    }
+
+    .trial {
+      display: flex;
+      flex-flow: column nowrap;
+      border: 3px solid #fae300;
+      padding: 0.5em 1.5em;
+      background-color: white;
+
+      .intro {
+        flex-grow: 1;
+        white-space: pre-line;
+      }
+
+      .quick-facts {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+
+        .expert ~ .expert {
+          margin-left: -20px;
+        }
+      }
+    }
+  }
+
+  .expert {
+    width: 70px;
+    margin: 4px 6px;
+
+    .avatar {
+      background-size: cover;
+      border-radius: 50%;
+      padding-bottom: 100%;
+    }
+  }
+}

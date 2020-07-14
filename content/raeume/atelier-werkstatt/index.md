@@ -1,8 +1,9 @@
 +++
 title = "Atelier und Werkstatt"
-weight = 7
+weight = 207
 description = "Das Atelier und die Werkstatt im Effinger bieten verschiedenen Künstlern und Kreativen ein Zuhause."
 image = "atelier-1.jpg"
+draft = true
 
 gallery = [
   "atelier-1.jpg",

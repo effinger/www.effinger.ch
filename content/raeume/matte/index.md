@@ -1,9 +1,10 @@
 +++
 id = "matte"
 title = "Matte"
-weight = 2
+weight = 202
 description = "Raum für innovative Workshops und kreative Sitzungen."
 image = "workshop-raum.jpg"
+draft = true
 
 gallery = [
   "workshop-raum.jpg",

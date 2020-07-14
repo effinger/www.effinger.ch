@@ -1,9 +1,10 @@
 +++
 id = "baerengraben"
 title = "Bärengraben"
-weight = 4
+weight = 204
 description = "Sitzungsraum, wahlweise mit Küche."
 image = "sitzungs-raum.jpg"
+draft = true
 
 gallery = [
   "sitzungs-raum.jpg",

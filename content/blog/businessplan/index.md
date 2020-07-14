@@ -140,7 +140,7 @@ Workshop-Räume werden extern vermietet. Der Preis liegt bei CHF 200 für einen 
 
 ### Atelier
 
-Neben den klassischen Bürotisch-Arbeitsplätzen bieten wir in einem Atelier Raum für Kreative und Handwerker. Die Preise sind gleich wie beim Coworking. Falls du dich für das Atelier interessierst, melde dich am besten bei [graziella@effinger.ch](mailto:graziella@effinger.ch).
+Neben den klassischen Bürotisch-Arbeitsplätzen bieten wir in einem Atelier Raum für Kreative und Handwerker. Die Preise sind gleich wie beim Coworking. Falls du dich für das Atelier interessierst, melde dich am besten bei [coworking@effinger.ch](mailto:coworking@effinger.ch).
 
 
 ## Finanzbedarf
