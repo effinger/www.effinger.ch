@@ -296,9 +296,9 @@ gender = "m"
 image = "/images/effianer/timon-marmet.jpg"
 email = "timon.m@effinger.ch"
 phone = ""
-website = ""
+website = "https://timonmarmet.ch"
 twitter = ""
-facebook = "timon.marmet"
+facebook = ""
 instagram = ""
 
 [[Person]]
