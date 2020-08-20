@@ -3,12 +3,12 @@ apiUrl = "https://script.google.com/a/effinger.ch/macros/s/AKfycbw3aGTPwR4t_UdMm
 calendarId = "effinger.ch_3736303136393637343739@resource.calendar.google.com"
 
 [[Person]]
-name = "Alexis Giard"
+name = "Jonathan Bucher"
 gender = "m"
-image = "/images/effianer/alexis-giard.jpg"
-email = "alexis@effinger.ch"
+image = "/images/effianer/jonathan-bucher.jpg"
+email = "mail@jonathanbucher.ch"
 phone = ""
-website = "https://www.alexisgiard.com/"
+website = "https://www.jonathanbucher.ch/"
 twitter = ""
 facebook = ""
 instagram = ""
@@ -58,17 +58,6 @@ facebook = ""
 instagram = ""
 
 [[Person]]
-name = "Damaris Berger"
-gender = "f"
-image = "/images/effianer/damaris-berger.jpg"
-email = "damaris@effinger.ch"
-phone = ""
-website = "http://www.dmrsbrgr.com"
-twitter = ""
-facebook = ""
-instagram = "dmrsbrgr"
-
-[[Person]]
 name = "David Eggimann"
 gender = "m"
 image = "/images/effianer/david-eggimann.jpg"
@@ -90,6 +79,17 @@ website = ""
 twitter = ""
 facebook = ""
 instagram = "effingerbern"
+
+[[Person]]
+name = "Alexis Giard"
+gender = "m"
+image = "/images/effianer/alexis-giard.jpg"
+email = "alexis@effinger.ch"
+phone = ""
+website = "https://www.alexisgiard.com/"
+twitter = ""
+facebook = ""
+instagram = ""
 
 [[Person]]
 name = "Fabian Steiner"
@@ -224,17 +224,6 @@ facebook = ""
 instagram = ""
 
 [[Person]]
-name = "Michael Hörnlimann"
-gender = "m"
-image = "/images/effianer/michael-hoernlimann.jpg"
-email = "michael@michaelh.ch"
-phone = ""
-website = "https://michaelh.ch/"
-twitter = ""
-facebook = ""
-instagram = ""
-
-[[Person]]
 name = "Oleg Lavrovsky"
 gender = "m"
 image = "/images/effianer/oleg-lavrovsky.jpg"
@@ -258,23 +247,12 @@ facebook = "salome.hostettler"
 instagram = ""
 
 [[Person]]
-name = "Sandra von Siebenthal"
-gender = "f"
-image = "/images/effianer/sandra-vs.jpg"
-email = "sandra@effinger.ch"
-phone = "+41 31 508 08 79 "
-website = "https://www.gifted-lab.ch"
-twitter = ""
-facebook = ""
-instagram = ""
-
-[[Person]]
 name = "Tavi Venzin"
 gender = "m"
 image = "/images/effianer/tavi-venzin.jpg"
 email = "tavi@effinger.ch"
 phone = ""
-website = "https://dropoutjourney.com/"
+website = "https://tavivenzin.com/"
 twitter = ""
 facebook = ""
 instagram = "tavivenzin"
