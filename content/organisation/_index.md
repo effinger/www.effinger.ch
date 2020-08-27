@@ -9,7 +9,7 @@ description = "Alle Details, wie unsere Community und der Betrieb des Coworking 
 
 ## Einleitung
 
-In diesem Dokument beschreiben wir, wie unsere Community und der Betrieb des Coworking Spaces organisiert sind. Dieses Dokument basiert auf unserem Dokument der Grundsätze.
+In diesem Dokument beschreiben wir, wie unsere Community und der Betrieb des Coworking Spaces organisiert sind. Dieses Dokument basiert auf unserem Dokument der [Grundsätze](/grundsaetze/).
 Wir verstehen “Effianer” als die Gruppe der Personen beiden Geschlechts, die sich persönlich und verbindlich für die Belange des Effinger Coworking Space einsetzen.
 
 ### Übersicht
@@ -27,7 +27,7 @@ Wir verstehen “Effianer” als die Gruppe der Personen beiden Geschlechts, die
     <tbody>
         <tr>
             <td>Wer</td>
-            <td>Alle Personen und Mitglieder von  Gruppierungen, die sich mit uns und unseren Grundsätzen identifizieren
+            <td>Alle Personen und Mitglieder von  Gruppierungen, die sich mit uns und unseren [Grundsätzen](/grundsaetze/) identifizieren
                 und den Effinger für Treffen und Veranstaltungen nutzen.</td>
             <td>Personen mit einer Community Membership.</td>
             <td>Personen mit einer Community Membership und einem Zeit-Abo (1-5 Tage pro Woche) im Coworking Space,
@@ -101,7 +101,7 @@ Eine Community Membership kostet:
 Community Member setzen sich ein für eine florierende Community mit einer Kombination aus persönlichem und finanziellem Engagement. Jedes Jahr entscheiden sie, was sie beitragen möchten. Der Geldbetrag soll sich „richtig“ anfühlen.
 Community Member dürfen gerne auch Verantwortung mit einer Rolle übernehmen (siehe Rollen weiter unten) oder sich im Hosting (Gastgeberrolle) engagieren.
 Gruppierungen, die regelmässig Räumlichkeiten für Treffen zum Gelben Tarif nutzen, sind mit mindestens einem Mitglied in der Community vertreten. Diese sind Vertreter der Gruppierung und verantworten gegenüber der Community die Einhaltung der Bestimmungen “Treffen zum Gelben Tarif”.
-Community Member sind gleichzeitig auch Vereinsmitglieder vom „Verein Coworking Community Bern“ und können an den Community-Treffen mitentscheiden.
+Community Member sind gleichzeitig auch Vereinsmitglieder vom „Verein Coworking Community Bern“ und können an den Community-Treffen mitentscheiden ([Statuten](statuten-coworking-community-bern.pdf)).
 
 ### Effianer
 
@@ -127,7 +127,10 @@ Der Raumvermietungshost ist Community- Member und hat pro Schicht Anrecht auf ei
 ## Fällen von Entscheidungen
 
 Grundsätzlich sollen die Personen Entscheidungen fällen, welche Verantwortung übernehmen. Bei uns sind dies die Personen, welche Community Member sind und eine Rolle ausfüllen.
-Entscheidungen werden entweder im Beratungsprozess oder mittels Soziokratie gefällt. Alle Entscheidungen sollen für die Community transparent kommuniziert werden.
+Entscheidungen werden entweder im Beratungsprozess oder mittels [Soziokratie](/organisation/soziokratie/) gefällt. Alle Entscheidungen sollen für die Community transparent kommuniziert werden.
+
+Auf folgender Seite findest du den Ablauf des soziokratischen Entscheidungsprozesses:
+<a href="/organisation/soziokratie/" class="btn btn-mod btn-border btn-medium btn-round">Soziokratische Entscheidungen</a>
 
 ### Beratungsprozess
 
