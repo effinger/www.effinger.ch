@@ -10,7 +10,7 @@ description = "Alle Details, wie unsere Community und der Betrieb des Coworking 
 ## Einleitung
 
 In diesem Dokument beschreiben wir, wie unsere Community und der Betrieb des Coworking Spaces organisiert sind. Dieses Dokument basiert auf unserem Dokument der [Grundsätze](/grundsaetze/).
-Wir verstehen “Effianer” als die Gruppe der Personen beiden Geschlechts, die sich persönlich und verbindlich für die Belange des Effinger Coworking Space einsetzen.
+Wir verstehen “[Effianer](/community/#effianer)” als die Gruppe der Personen beiden Geschlechts, die sich persönlich und verbindlich für die Belange des Effinger Coworking Space einsetzen.
 
 ### Übersicht
 
@@ -19,15 +19,15 @@ Wir verstehen “Effianer” als die Gruppe der Personen beiden Geschlechts, die
     <thead>
       <tr>
         <th></th>
-        <th style="vertical-align:top">Erweiterte Community</th>
-        <th style="vertical-align:top">Community Member<br>=&nbsp;Vereinsmitglied</th>
-        <th style="vertical-align:top">Effianer<br>=&nbsp;Vereinsmitglied<br>+&nbsp;Effianer-Rolle</th>
+        <th style="vertical-align:top; width:33%">Erweiterte Community</th>
+        <th style="vertical-align:top; width:33%">Community Member<br>=&nbsp;Vereinsmitglied</th>
+        <th style="vertical-align:top; width:33%">Effianer<br>=&nbsp;Vereinsmitglied<br>+&nbsp;Effianer-Rolle</th>
       </tr>
     </thead>
     <tbody>
         <tr>
             <td>Wer</td>
-            <td>Alle Personen und Mitglieder von  Gruppierungen, die sich mit uns und unseren [Grundsätzen](/grundsaetze/) identifizieren
+            <td>Alle Personen und Mitglieder von  Gruppierungen, die sich mit uns und unseren <a href="/grundsaetze/">Grundsätzen</a> identifizieren
                 und den Effinger für Treffen und Veranstaltungen nutzen.</td>
             <td>Personen mit einer Community Membership.</td>
             <td>Personen mit einer Community Membership und einem Zeit-Abo (1-5 Tage pro Woche) im Coworking Space,
@@ -44,7 +44,7 @@ Wir verstehen “Effianer” als die Gruppe der Personen beiden Geschlechts, die
             <td>kein Entscheidungsrecht</td>
             <td>Im Rahmen ihrer Rolle(n) mittels Beratungsprozess; dürfen mitbestimmen bei soziokratischen
                 Entscheidungen.</td>
-            <td>Im Rahmen ihrer Rolle(n) mittels Beratungsprozess; bestimmen mit bei soziokratischen Entscheidungen.
+            <td>Im Rahmen ihrer Rolle(n) mittels Beratungsprozess; bestimmen mit bei <a href="/organisation/soziokratie/">soziokratischen Entscheidungen</a>.
             </td>
         </tr>
         <tr>
@@ -129,9 +129,6 @@ Der Raumvermietungshost ist Community- Member und hat pro Schicht Anrecht auf ei
 Grundsätzlich sollen die Personen Entscheidungen fällen, welche Verantwortung übernehmen. Bei uns sind dies die Personen, welche Community Member sind und eine Rolle ausfüllen.
 Entscheidungen werden entweder im Beratungsprozess oder mittels [Soziokratie](/organisation/soziokratie/) gefällt. Alle Entscheidungen sollen für die Community transparent kommuniziert werden.
 
-Auf folgender Seite findest du den Ablauf des soziokratischen Entscheidungsprozesses:
-<a href="/organisation/soziokratie/" class="btn btn-mod btn-border btn-medium btn-round">Soziokratische Entscheidungen</a>
-
 ### Beratungsprozess
 
 Beim Beratungsprozess muss die Person, welche eine Entscheidung fällen will, betroffene Kollegen sowie Experten um Rat fragen. So lernt er/sie Einwände, Fragen und Ideen von Kollegen kennen. Nachdem die Person sich offen die Ratschläge angehört hat, fällt diese selbstständig eine Entscheidung und kommuniziert transparent.
@@ -140,6 +137,10 @@ Beim Beratungsprozess muss die Person, welche eine Entscheidung fällen will, be
 
 Bei grösseren Entscheidungen wird mittels Soziokratie entschieden. In der Soziokratie geht es nicht darum, zu etwas „Ja“ zu sagen, sondern „nicht Nein“ zu sagen. Ein Vorschlag muss persönlich eingebracht oder durch eine kompetente Person aus einem Circle vertreten werden.  Er wird dann angenommen, wenn niemand einen schwerwiegenden Einwand dagegen vorbringt.
 Bei soziokratischen Entscheiden sind ausschliesslich die Community Member berechtigt, einen schwerwiegenden Einwand zu erheben. Bleibt ein Einwand bestehen, beteiligt sich der/die Einwandgeber*in an der Erarbeitung eines Lösungsvorschlags.
+
+Auf folgender Seite findest du den Ablauf des soziokratischen Entscheidungsprozesses:
+
+<a href="/organisation/soziokratie/" class="btn btn-mod btn-border btn-medium btn-round">Soziokratische Entscheidungen</a>
 
 ## Rollen
 
@@ -248,7 +249,7 @@ Als Umsetzung des Wertes “Ganzheit” werden die Community-Treffen mit einem C
 - Wer ist zum ersten Mal da?
 - Andere Einstiege
 
-### Abschluss
+**Abschluss**
 
 - Wie habt ihr das Treffen erlebt: Emotionen Ausdruck geben. Dankbarkeit, Begeisterung, Ehrgeiz, Frust, Sorgen, die das Meeting ausgelöst haben.
 - Was nehmen wir mit? Was erzählen wir heute oder morgen einer 3. Person über das heutige Treffen.
