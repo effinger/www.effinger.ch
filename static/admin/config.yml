@@ -9,61 +9,86 @@ site_url: "/"
 display_url: "https://effinger.ch"
 
 collections:
-  - label: "Einstellungen"
-    name: "settings"
-    delete: false
+  - name: "blog"
+    label: "Blogeinträge"
+    label_singular: "Blogeintrag"
+    description: >
+      Hier können Blogeinträge verfasst, editiert und gelöscht werden.
+    preview_path: "/blog/"
     editor:
       preview: false
+    folder: "content/blog"
+    path: "{{slug}}/index"
+    media_folder: "" # Stores media relative to content.
+    public_folder: ""
+    create: true
     format: "toml-frontmatter"
-    files:
-      - label: "Sommeröffnungszeiten"
-        name: "general"
-        file: "content/sommer/_index.md"
-        fields:
-          - { label: Titel, name: title, widget: string }
-          - label: "Daten"
-            name: "dates"
-            hint: "Daten, an welchen die wetterabhängigen Sommeröffnungszeiten angezeigt werden."
-            widget: "list"
-            fields:
-              - {
-                  label: "Datum",
-                  name: "date",
-                  widget: "date",
-                  format: "YYYY-MM-DD",
-                  dateFormat: "DD.MM.YYYY",
-                }
-              - {
-                  label: "Wetter",
-                  name: "weather",
-                  widget: "select",
-                  options:
-                    [
-                      { label: "🌞 sonnig und heiss", value: "sun" },
-                      { label: "🌧️ regen oder kühl", value: "rain" },
-                    ],
-                }
-          - {
-              label: "Titel bei Sonne",
-              name: "sunTitle",
-              widget: "string",
-            }
-          - {
-              label: "Text bei Sonne",
-              name: "sunText",
-              widget: "string",
-            }
-          - {
-              label: "Titel bei Regen",
-              name: "rainTitle",
-              widget: "string",
-            }
-          - {
-              label: "Text bei Regen",
-              name: "rainText",
-              widget: "string",
-            }
-          - { label: "Seiteninhalt", name: "body", widget: "markdown" }
+    fields:
+      - {
+          name: "title",
+          label: "Titel",
+          widget: "string",
+          hint: "Beim ersten Speichern wird der Titel zur URL des Blogartikels.",
+        }
+      - {
+          name: "date",
+          label: "Datum",
+          widget: "date",
+          format: "YYYY-MM-DD",
+          dateFormat: "DD.MM.YYYY",
+        }
+      - {
+          name: "draft",
+          label: "Entwurfsmodus",
+          widget: "boolean",
+          hint: "Einträge im Entwurfsmodus werden nicht angezeigt.",
+          default: false,
+        }
+      - {
+          name: "tags",
+          label: "Tags",
+          widget: "list",
+          required: false,
+          pattern:
+            [
+              "^[^\\s#]+$",
+              "Darf keine Leerschläge oder # enthalten. Mehrere Tags durch Komma trennen",
+            ],
+          hint: "Tags sind hilfreich, damit Besucher nach diesen filtern können. Mehrere Tags durch Komma trennen. Achtung: Darf keine Leerschläge oder # enthalten!",
+        }
+      - {
+          name: "image",
+          label: "Bild",
+          widget: "image",
+          hint: "Bild für Blogübersicht, Suchmaschinen und Social Media.",
+          media_library: { config: { max_file_size: 256000 } },
+        }
+      - {
+          name: "description",
+          label: "Zusammenfassung",
+          widget: "text",
+          required: false,
+          hint: "Kurze Beschreibung für Blogübersicht, Suchmaschinen und Social Media (ca. 2 Sätze).",
+        }
+      - {
+          name: "authors",
+          label: "Autoren",
+          widget: "list",
+        }
+      - {
+          name: "comments",
+          label: "Kommentare",
+          widget: "boolean",
+          hint: "Kommentarmöglichkeit anzeigen.",
+          default: true,
+        }
+      - {
+          name: "body",
+          label: "Inhalt",
+          widget: "markdown",
+          media_library: { config: { max_file_size: 512000 } },
+        }
+
   - label: "Events"
     label_singular: "Event"
     description: >
@@ -78,11 +103,7 @@ collections:
     create: true
     format: toml-frontmatter
     fields:
-      - {
-          label: "Titel",
-          name: "title",
-          widget: "string",
-        }
+      - { label: "Titel", name: "title", widget: "string" }
       - {
           label: "Event ID",
           name: "event_id",
@@ -91,7 +112,7 @@ collections:
           default: 100000,
           min: 100001,
           required: true,
-          hint: "Nummer für die Event-URL. WICHTIG: Höchste Event-Nummer nehmen und 1 addieren!"
+          hint: "Nummer für die Event-URL. WICHTIG: Höchste Event-Nummer nehmen und 1 addieren!",
         }
       - {
           label: "Start",
@@ -130,16 +151,17 @@ collections:
           multiple: true,
           required: true,
           hint: "",
-          options: [
-            "Community", 
-            "Kaffeebar", 
-            "Coworking",
-            "Atelier",
-            "Werkstatt",
-            "Labor",
-            "Brownbag",
-            "THESaktiv"
-          ]
+          options:
+            [
+              "Community",
+              "Kaffeebar",
+              "Coworking",
+              "Atelier",
+              "Werkstatt",
+              "Labor",
+              "Brownbag",
+              "THESaktiv",
+            ],
         }
       - {
           label: "Ort",
@@ -164,7 +186,7 @@ collections:
           timeFormat: "HH:mm",
           default: "",
           hint: "Optionaler Anmeldeschluss für das Anmeldeformular.",
-          required: false
+          required: false,
         }
       - {
           label: "Maximale Teilnehmerzahl für Anmeldeformular",
@@ -173,7 +195,46 @@ collections:
           default: "",
           hint: "Optionale maximale Teilnehmerzahl für das Anmeldeformular.",
           valueType: "int",
-          required: false
+          required: false,
         }
       - { label: "Inhalt", name: "body", widget: "markdown" }
-      
+
+  - label: "Einstellungen"
+    name: "settings"
+    delete: false
+    editor:
+      preview: false
+    format: "toml-frontmatter"
+    files:
+      - label: "Sommeröffnungszeiten"
+        name: "general"
+        file: "content/sommer/_index.md"
+        fields:
+          - { label: Titel, name: title, widget: string }
+          - label: "Daten"
+            name: "dates"
+            hint: "Daten, an welchen die wetterabhängigen Sommeröffnungszeiten angezeigt werden."
+            widget: "list"
+            fields:
+              - {
+                  label: "Datum",
+                  name: "date",
+                  widget: "date",
+                  format: "YYYY-MM-DD",
+                  dateFormat: "DD.MM.YYYY",
+                }
+              - {
+                  label: "Wetter",
+                  name: "weather",
+                  widget: "select",
+                  options:
+                    [
+                      { label: "🌞 sonnig und heiss", value: "sun" },
+                      { label: "🌧️ regen oder kühl", value: "rain" },
+                    ],
+                }
+          - { label: "Titel bei Sonne", name: "sunTitle", widget: "string" }
+          - { label: "Text bei Sonne", name: "sunText", widget: "string" }
+          - { label: "Titel bei Regen", name: "rainTitle", widget: "string" }
+          - { label: "Text bei Regen", name: "rainText", widget: "string" }
+          - { label: "Seiteninhalt", name: "body", widget: "markdown" }
