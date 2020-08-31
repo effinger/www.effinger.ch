@@ -4,6 +4,7 @@ date = "2020-08-29"
 draft = false
 tags = ["Community", "Coworking", "Effianer"]
 image = "mein-ding-unser-ding.jpg"
+description = "Unsere Vision begleitet uns nun über 5 Jahre. Im Zukunftsworkshop fragen wir uns, ob sich sich das, was wir tun, noch richtig anfühlt und wie wir selbst zum Effinger und seiner Community stehen."
 authors = ["Fredi Zumbrunn", "Marco Jakob"]
 comments = true
 +++
@@ -11,7 +12,7 @@ comments = true
 
 > «Wir sind eine innovative, kreative Community mit einem gemeinsamen Coworking Space und Kaffeebar in Bern. Wir sind eine Heimat für Jungunternehmer, Kreative und andere Weltveränderer, die einander helfen, ihre Ideen in Firmen, Innovationen und soziale Aktionen umzusetzen.»
 
-Diese Vision begleitet uns nun über fast 5 Jahre. Manchmal bewusster, manchmal weniger. Der Effinger und seine Community haben sich entwickelt. Leute kommen und gehen. Mit ihnen die vielfältigsten Ideen, Angebote, Projekte. Der Effinger hat sich als Coworking Space mit einer kultigen Kaffeebar etabliert. In gemeinschaftlicher Verantwortung steuert die Community das Schiff in innovativer, soziokratischer Form. Rund ums Coworking ist mit Coliving, Colearning, Cocreating eine lebendige **CoKultur** entstanden.
+Diese Vision begleitet uns nun über 5 Jahre. Manchmal bewusster, manchmal weniger. Der Effinger und seine Community haben sich entwickelt. Leute kommen und gehen. Mit ihnen die vielfältigsten Ideen, Angebote, Projekte. Der Effinger hat sich als Coworking Space mit einer kultigen Kaffeebar etabliert. In gemeinschaftlicher Verantwortung steuert die Community das Schiff in innovativer, soziokratischer Form. Rund ums Coworking ist mit Coliving, Colearning, Cocreating eine lebendige **CoKultur** entstanden.
 
 ## Alles bestens! Bleib wie du bist!
 
