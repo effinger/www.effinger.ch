@@ -45,6 +45,6 @@ Nach einem Kaffee haben wir uns als ganze Gruppe ausgetauscht über die Vision, 
 
 ## Themen, die uns beschäftigen
 
-Dann gab es in wechselnden Gruppen (World-Café) Diskussionen zu Themen, die uns aktuell beschäftigen. Es ging vor allem darum, miteinander ins Gespräch zu kommen und nicht gerade konkrete Entscheidungen zu treffen. Konkrete Aktionen sparen wir uns für die nächsten [Community-Treffen](/events/).
+Dann gab es in wechselnden Gruppen (World-Café) Diskussionen zu Themen, die uns aktuell beschäftigen. Es ging vor allem darum, miteinander ins Gespräch zu kommen und nicht gerade konkrete Entscheidungen zu treffen. Konkrete Aktionen sparen wir uns für die nächsten [Community-Treffen](/events/). Hier sind ein paar Eindrücke.
 
-Hier sind ein paar Eindrücke:
+#### Thema: Zusammenarbeit & gemeinsame Projekte
