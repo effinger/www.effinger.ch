@@ -30,9 +30,9 @@ Bei der gemeinsamen Bewältigung dieser Herausforderung und dem Erkennen der sic
 
 Eigentlich war ja unser jährliches Effinger-Weekend geplant. Wir wollten uns mit Fragen wie diesen beschäftigen. Wir haben es abgesagt, weil die organisatorischen Auflagen mit der Beachtung aller Schutzmassnahmen vieles verunmöglicht hätten.
 
-Mit dem Zukunftsworkshop vom Samstag, 29. August haben wir eine Möglichkeit gefunden, uns in gewohnter und sicherer Umgebung zu treffen.
+Mit dem Zukunftsworkshop vom Samstag, 29. August haben wir eine Möglichkeit gefunden, uns in gewohnter und sicherer Umgebung zu treffen. Es kamen ca. 20 Personen.
 
-![Effinger Zukunftsworkshop mit ca. 20 Personen.](zukunftsworkshop.jpg)
+![](zukunftsworkshop.jpg)
 
 ## Einstieg mit GedankenGang
 
@@ -42,19 +42,27 @@ Am Morgen sind wir im Osten, Westen, Norden und Süden der Stadt in kleinen Grup
 
 Nach einem Kaffee haben wir uns als ganze Gruppe ausgetauscht über die Vision, ob sie eingetroffen ist, ob sie noch passt und wie stark unser Commitment ist dazu.
 
-![Fredi moderiert die Diskussion, wie wir selbst Gesund bleiben können während wir gemeinsame Dinge verfolgen.](geben-empfangen.jpg)
+![](geben-empfangen.jpg)
 
 ## Themen, die uns beschäftigen
 
 Dann gab es in wechselnden Gruppen (World-Café) Diskussionen zu Themen, die uns aktuell beschäftigen. Es ging vor allem darum, miteinander ins Gespräch zu kommen und nicht gerade konkrete Entscheidungen zu treffen. Konkrete Aktionen sparen wir uns für die nächsten [Community-Treffen](/events/). Hier sind ein paar Eindrücke.
 
-![Thema: Zusammenarbeit & gemeinsame Projekte](world-cafe-1.jpg)
+#### Thema: Zusammenarbeit & gemeinsame Projekte
 
-![Thema: Effianer & Gesundheit](world-cafe-2.jpg)
+![](world-cafe-1.jpg)
 
-![Thema: Organisation & Betrieb](world-cafe-3.jpg)
+#### Thema: Effianer & Gesundheit
 
-![Thema: Vielfalt & offene Kultur](world-cafe-4.jpg)
+![](world-cafe-2.jpg)
+
+#### Thema: Organisation & Betrieb
+
+![](world-cafe-3.jpg)
+
+#### Thema: Vielfalt & offene Kultur
+
+![](world-cafe-4.jpg)
 
 ## Unsere Positionierung im Effinger
 
