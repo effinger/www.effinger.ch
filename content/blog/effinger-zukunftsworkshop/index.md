@@ -21,7 +21,7 @@ Vieles hat gut funktioniert. Gleichwohl war uns schon gegen Ende des letzten Jah
 
 Bei der gemeinsamen Bewältigung dieser Herausforderung und dem Erkennen der sich bietenden Chancen wurden in der Community viel Kraft, Energie und Zuversicht wach. Der mit dieser Entwicklung angestossene Veränderungsprozess nahm Fahrt auf: Neue Projekte sind im Entstehen, aus den Ressourcen der Gemeinschaft schält sich ein angepasstes Betriebsmodell heraus, Angebote und Rollen werden neu definiert.
 
-***Doch*: *Fühlt sich das, was wir tun, noch richtig an? Was wollen wir beibehalten? Was sollte verstärkt beachtet werden? Was weniger?***
+**Doch: Fühlt sich das, was wir tun, noch richtig an? Was wollen wir beibehalten? Was sollte verstärkt beachtet werden? Was weniger?**
 
 **Und: Stehe ich noch zum Effinger und zu seiner Community? In welcher Form werde ich mich engagieren** (**können)?**
 
@@ -29,12 +29,22 @@ Bei der gemeinsamen Bewältigung dieser Herausforderung und dem Erkennen der sic
 
 Eigentlich war ja unser jährliches Effinger-Weekend geplant. Wir wollten uns mit Fragen wie diesen beschäftigen. Wir haben es abgesagt, weil die organisatorischen Auflagen mit der Beachtung aller Schutzmassnahmen vieles verunmöglicht hätten.
 
-Mit dem Zukunftsworkshop vom Samstag, 29. August haben wir eine Möglichkeit gefunden, uns in gewohnter und sicherer Umgebung zu treffen. Es sind ca. 20 Personen erschienen.
+Mit dem Zukunftsworkshop vom Samstag, 29. August haben wir eine Möglichkeit gefunden, uns in gewohnter und sicherer Umgebung zu treffen.
+
+![Effinger Zukunftsworkshop mit ca. 20 Personen.](zukunftsworkshop.jpg)
 
 ## Einstieg mit GedankenGang
 
 Am Morgen sind wir im Osten, Westen, Norden und Süden der Stadt in kleinen Gruppen gestartet und sind auf einer selbst gewählten Route zum Effinger spaziert. Dabei haben wir uns Gedanken zur Vision und zu den oben aufgeführten Fragen gemacht.
 
-## Commitment zur Vision
+## Gespräche über unsere Vision
 
-Nach einem Kaffee haben wir uns als ganze Gruppe ausgetauscht über die Vision und wie stark unser Commitment ist dazu.
+Nach einem Kaffee haben wir uns als ganze Gruppe ausgetauscht über die Vision, ob sie eingetroffen ist, ob sie noch passt und wie stark unser Commitment ist dazu.
+
+![Fredi moderiert die Diskussion, wie wir selbst Gesund bleiben können während wir gemeinsame Dinge verfolgen.](geben-empfangen.jpg)
+
+## Themen, die uns beschäftigen
+
+Dann gab es in wechselnden Gruppen (World-Café) Diskussionen zu Themen, die uns aktuell beschäftigen. Es ging vor allem darum, miteinander ins Gespräch zu kommen und nicht gerade konkrete Entscheidungen zu treffen. Konkrete Aktionen sparen wir uns für die nächsten [Community-Treffen](/events/).
+
+Hier sind ein paar Eindrücke:
