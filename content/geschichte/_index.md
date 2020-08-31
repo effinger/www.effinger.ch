@@ -142,8 +142,4 @@ image = "17-weiter.jpg"
 text = """
 Jetzt geht's erst richtig los. Komm vorbei und erfahre, wie die Geschichte weiter geht oder hilf gleich mit, sie zu schreiben.
 """
-
-[menu.main]
-  parent = "Community"
-  weight = 102
 +++

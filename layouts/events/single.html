@@ -1,5 +1,5 @@
-{{ define "title" }}
-{{ .Title }} | Events | {{ .Site.Title }}
+{{ define "variables" }}
+{{ .Scratch.Set "title" (print .Title " | Events | " .Site.Title) -}}
 {{ end }}
 
 {{ define "twitter_card" }}

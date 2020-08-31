@@ -1,3 +1,8 @@
+{{ define "variables" }}
+{{ .Scratch.Set "title" (print "Events | " .Site.Title) -}}
+{{ .Scratch.Set "description" "Events der Effinger Community." -}}
+{{ end }}
+
 {{ define "main" }}
 <!-- Page Wrap -->
 <div class="page" id="top">

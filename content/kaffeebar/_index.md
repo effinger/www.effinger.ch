@@ -762,8 +762,4 @@ offers_title = "Menu"
       [[offers.section.element.subelement]]
         text="* mit Softgetränk"
         price="+ 3.00"
-
-[menu.main]
-  pre = "<i class='fa fa-coffee'></i>"
-  weight = 101
 +++
