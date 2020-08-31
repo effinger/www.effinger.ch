@@ -1,7 +1,7 @@
 +++
 title = "Effinger Zukunftsworkshop"
 date = "2020-08-29"
-draft = true
+draft = false
 tags = ["Community", "Coworking", "Effianer"]
 image = "mein-ding-unser-ding.jpg"
 authors = ["Fredi Zumbrunn", "Marco Jakob"]
@@ -47,4 +47,18 @@ Nach einem Kaffee haben wir uns als ganze Gruppe ausgetauscht über die Vision, 
 
 Dann gab es in wechselnden Gruppen (World-Café) Diskussionen zu Themen, die uns aktuell beschäftigen. Es ging vor allem darum, miteinander ins Gespräch zu kommen und nicht gerade konkrete Entscheidungen zu treffen. Konkrete Aktionen sparen wir uns für die nächsten [Community-Treffen](/events/). Hier sind ein paar Eindrücke.
 
-#### Thema: Zusammenarbeit & gemeinsame Projekte
+![Thema: Zusammenarbeit & gemeinsame Projekte](world-cafe-1.jpg)
+
+![Thema: Effianer & Gesundheit](world-cafe-2.jpg)
+
+![Thema: Organisation & Betrieb](world-cafe-3.jpg)
+
+![Thema: Vielfalt & offene Kultur](world-cafe-4.jpg)
+
+## Unsere Positionierung im Effinger
+
+Zum Schluss ging es vor allem um uns selbst und wie wir uns im Effinger positionieren möchten. Dazu stellten wir uns im Raum auf - entweder näher oder weiter weg vom Effinger-Zentrum. Dann haben wir uns zu unserer Position ausgetauscht. Es war sehr hilfreich, voneinander zu hören, in welcher Position es uns in der aktuellen Lebens- und Arbeitsphase wohl ist. Dies hilft, einige Spannungen zu lösen, indem wir die Erwartungen aneinander angleichen können. Einige haben gesagt, dass sie sich eher in äussere Kreise oder auf Wanderschaft begeben möchten. Andere möchten bald näher zum Zentrum und Effianer werden.
+
+## Wunderbares Essen
+
+Etwas vom Wichtigsten an so einem Tag ist das Essen. Wir wurden so richtig verwöhnt von Béatrice und Thomas Eggimann. Sie haben das Essen rund um das Thema "Vision" gestaltet und es war einfach grossartig! Herzlichen Dank.
