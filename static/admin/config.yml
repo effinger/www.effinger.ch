@@ -67,7 +67,7 @@ collections:
           name: "description",
           label: "Zusammenfassung",
           widget: "text",
-          required: false,
+          required: true,
           hint: "Kurze Beschreibung für Blogübersicht, Suchmaschinen und Social Media (ca. 2 Sätze).",
         }
       - {
