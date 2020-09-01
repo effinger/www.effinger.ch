@@ -70,4 +70,4 @@ Zum Schluss ging es vor allem um uns selbst und wie wir uns im Effinger position
 
 ## Wunderbares Essen
 
-Etwas vom Wichtigsten an so einem Tag ist das Essen. Wir wurden so richtig verwöhnt von Béatrice und Thomas Eggimann. Sie haben das Essen rund um das Thema "Vision" gestaltet und es war einfach grossartig! Herzlichen Dank.
+Etwas vom Wichtigsten an so einem Tag ist das Essen. Wir wurden so richtig verwöhnt von Béatrice und Thomas Eggimann von [](https://www.munderlebnis.ch/)[Munderlebnis](https://www.munderlebnis.ch/). Sie haben das Essen rund um das Thema "Vision" gestaltet und es war einfach grossartig! Herzlichen Dank.
