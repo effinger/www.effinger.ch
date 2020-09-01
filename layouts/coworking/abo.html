@@ -13,7 +13,7 @@
       <div class="row">
 
         <div class="col-md-8">
-          <h1 class="hs-line-11 font-alt mb-0">Six-Pack-Abo</h1>
+          <h1 class="hs-line-11 font-alt mb-0">Coworking-Abo</h1>
           <!--
           <div class="hs-line-4 font-alt mt-20 mt-xs-0">
           Grundsätze
@@ -33,30 +33,6 @@
   <!-- End Header -->
 
   <!-- Section -->
-  <section class="page-section bg-gray">
-    <div class="container relative">
-
-      <div class="row">
-
-        <!-- Content -->
-        <div class="col-sm-10 col-sm-offset-1">
-
-          <!-- Text -->
-          <div class="section-text">
-            {{ .Content }}
-
-          </div>
-          <!-- End Text -->
-
-        </div>
-        <!-- End Content -->
-      </div>
-
-    </div>
-  </section>
-  <!-- End Section -->
-
-  <!-- Section -->
   <section class="page-section">
     <div class="container relative">
 
@@ -69,34 +45,28 @@
           <div class="section-text">
             <h1 class="mt-0 font-alt">{{ .Title }}</h1>
 
-            <form name="Six-Pack-Abo" action="" class="form" netlify>
-              <input type="hidden" name="form-name" value="Six-Pack-Abo" />
+            <form name="Coworking-Abo" action="" class="form" netlify>
+              <input type="hidden" name="form-name" value="Coworking-Abo" />
 
               <!-- Wird zur Identifikation vom Formular beim Formularroboterli
                     verwendet und als Betreff des E-Mails. -->
-              <input type="hidden" name="subject" value="Six-Pack-Abo" />
+              <input type="hidden" name="subject" value="Coworking-Abo" />
               
               <div class="row">
                 <div class="col-sm-6 mb-20 mb-md-10">
                   <label for="anzahl-tage">Anzahl Tage*</label>
                   <select name="anzahl-tage" class="input-md form-control">
-                    <option selected="selected">6 Tage (CHF 160) - Six-Pack</option>
-                    <option>7 Tage (CHF 185)</option>
-                    <option>8 Tage (CHF 210)</option>
-                    <option>9 Tage (CHF 235)</option>
-                    <option>10 Tage (CHF 260)</option>
-                    <option>11 Tage (CHF 285)</option>
-                    <option>12 Tage (CHF 310)</option>
-                    <option>13 Tage (CHF 335)</option>
-                    <option>14 Tage (CHF 360)</option>
-                    <option>15 Tage (CHF 385)</option>
-                    <option>16 Tage (CHF 410)</option>
-                    <option>17 Tage (CHF 435)</option>
-                    <option>18 Tage (CHF 460)</option>
-                    <option>19 Tage (CHF 485)</option>
-                    <option>20 Tage (CHF 510)</option>
+                    <option>1 Tag pro Woche (CHF 120)</option>
+                    <option selected="selected">2 Tage pro Woche (CHF 210)</option>
+                    <option>3 Tage pro Woche (CHF 310)</option>
+                    <option>4 Tage pro Woche (CHF 410)</option>
+                    <option>5 Tage pro Woche (CHF 510)</option>
                   </select>
-                  <br><small>Das Six-Pack beinhaltet 6 Tage pro Monat. Wer regelmässig mehr als 6 Tage im Effinger ist, kann die Zusatztage auch gleich fix in das Six-Pack Monatsabo einbauen.</small>
+                  <br>
+                  <small>
+                    Mindestlaufzeit 3 Monate. Kündigungs- und Änderungsfrist 1 Monat.<br>
+                    Leistungen können nicht auf Folgemonate übertragen werden.
+                  </small>
                 </div>
                 <div class="col-sm-6 mb-20 mb-md-10">
                   <label for="startmonat">Startmonat*</label>
@@ -114,7 +84,7 @@
                     <option>November</option>
                     <option>Dezember</option>
                   </select>
-                  <br><small>Ab welchem Monat soll der Vertrag gültig sein?</small>
+                  <br><small>Ab welchem Monat soll das Abo gültig sein?</small>
                 </div>
               </div>
 
@@ -196,7 +166,7 @@
                 <h3 class="modal-title" id="calendar-dialog-title"><i class="fa fa-heart"></i> Danke!</h3>
               </div>
               <div class="modal-body">
-                <h4>Deine Anmeldung für das Six-Pack wurde abgeschickt</h4>
+                <h4>Deine Anmeldung für das Coworking-Abo wurde abgeschickt</h4>
                 <p>
                   Wir überprüfen nun die Anfrage und werden uns mit weiteren Details bei dir melden.
                 </p>
