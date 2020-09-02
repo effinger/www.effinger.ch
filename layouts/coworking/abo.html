@@ -201,8 +201,9 @@ $(document).ready(function() {
   var $form = $('form');
 
   // On loading: Select number of days according to query parameter ?tage=
+  // First test if we have a valid option.
   var aboOption = getUrlVars()["option"];
-  if (aboOption) {
+  if ($('[name="abo-option"] option[value=' + aboOption + ']').length > 0) {
     $('[name="abo-option"]').val(aboOption);
   }
 
