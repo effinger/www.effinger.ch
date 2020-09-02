@@ -23,7 +23,7 @@
 
         <div class="col-md-4 mt-30">
           <div class="mod-breadcrumbs font-alt align-right">
-            <a href="/coworking/#preise"><i class="fa fa-angle-left"></i> Zurück zu Coworking</a>
+            <a href="/coworking/"><i class="fa fa-angle-left"></i> Zurück zu Coworking</a>
           </div>
         </div>
       </div>
@@ -54,13 +54,14 @@
               
               <div class="row">
                 <div class="col-sm-6 mb-20 mb-md-10">
-                  <label for="anzahl-tage">Anzahl Tage*</label>
-                  <select name="anzahl-tage" class="input-md form-control">
-                    <option>1 Tag pro Woche (CHF 120)</option>
-                    <option selected="selected">2 Tage pro Woche (CHF 210)</option>
-                    <option>3 Tage pro Woche (CHF 310)</option>
-                    <option>4 Tage pro Woche (CHF 410)</option>
-                    <option>5 Tage pro Woche (CHF 510)</option>
+                  <label for="abo-option">Abo*</label>
+                  <select name="abo-option" class="input-md form-control">
+                    <option value="1">1 Tag pro Woche (CHF 120)</option>
+                    <option value="2" selected="selected">2 Tage pro Woche (CHF 210)</option>
+                    <option value="3">3 Tage pro Woche (CHF 310)</option>
+                    <option value="4">4 Tage pro Woche (CHF 410)</option>
+                    <option value="5">5 Tage pro Woche (CHF 510)</option>
+                    <option value="firma">Firmenabo (CHF 700)</option>
                   </select>
                   <br>
                   <small>
@@ -199,6 +200,24 @@ $(document).ready(function() {
 
   var $form = $('form');
 
+  // On loading: Select number of days according to query parameter ?tage=
+  var aboOption = getUrlVars()["option"];
+  if (aboOption) {
+    $('[name="abo-option"]').val(aboOption);
+  }
+
+  // Read a page's GET URL variables and return them as an associative array.
+  function getUrlVars() {
+    var vars = [], hash;
+    var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+    for(var i = 0; i < hashes.length; i++) {
+      hash = hashes[i].split('=');
+      vars.push(hash[0]);
+      vars[hash[0]] = hash[1];
+    }
+    return vars;
+  }
+
   function reset() {
     $form.find('.invalid').removeClass('invalid');
     $form.find('#validation-error-message').hide();
@@ -238,6 +257,12 @@ $(document).ready(function() {
 
     // Submit when valid.
     if (!error) {
+
+      // Replace selected value with text to have more info than just the number.
+      $('[name="abo-option"] option').val(function(){
+        return $(this).text();
+      });
+
       // Submit.
       $.post($form.attr("action"), $form.serialize()).then(function() {
         // Show the success message.
@@ -247,7 +272,7 @@ $(document).ready(function() {
 
     } else {
       // Show validation error message.
-      // $form.find('#validation-error-message .error-details').html(error);
+      $form.find('#validation-error-message .error-details').html(error);
       $form.find('#validation-error-message').show();
     }
   });
