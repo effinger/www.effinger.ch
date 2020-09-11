@@ -3,27 +3,26 @@ title = "Sicher mit Abstand"
 date = "2020-09-11"
 description = "Wir senken zusammen die Infektionsgefahr im Coworking Space auf ein Minimum und folgen Empfehlungen von Public Health"
 image = "headline.png"
-authors = [ "Oleg Lavrovsky" ]
+authors = [ "Circle Space" ]
 comments = true
-tags = [ "Gesundheit" ]
+tags = [ "Coworking", "Gesundheit" ]
 +++
 
-Seit Februar haben wir besorgt für die Gesundheit unseren Coworkers und Tagesgäste eine Reihe von Massnahmen entwickelt. Unseres COVID-19 Konzept, erstellt im Circle Space, erklärt wie sicheres Arbeiten im Effinger Coworking Space unterstützt wird. Mit diesem Konzept bieten wir den Rahmen, innerhalb dessen wir zusammen die Infektionsgefahr im Coworking Space auf ein Minimum senken. Wir folgen eng dabei den [Empfehlungen des BAG](https://bag-coronavirus.ch/).
+Seit Februar haben wir besorgt für die Gesundheit unserer Coworker und Tagesgäste eine Reihe von Massnahmen entwickelt. Unser Covid-19 Konzept, welches im Circle Space erstellt wurde, erklärt, wie sicheres Arbeiten im Effinger Coworking Space sicherstellt. Mit diesem Konzept bieten wir eine Struktur an, mit welcher wir zusammen die Infektionsgefahr im Coworking Space auf ein Minimum senken. Wir folgen dabei eng den [Empfehlungen des BAG](https://bag-coronavirus.ch/).
 
-<center><img src="keep-distance.png" height="100"><img src="mask.png" height="100"><img src="ventilation.png" height="100"></center>
+### [Herunterladen](Schutzkonzept_Effinger.pdf) (PDF)
+<a href="Schutzkonzept_Effinger.pdf"><img alt="Vorschau" src="screenshot.png" width="200"></a>
 
-In diesem Covid-19 Konzept unterscheiden wir drei Maßnahmen-Kategorien:
+Im Schutzkonzept unterscheiden wir drei Maßnahmen-Kategorien:
 
-1. **Design**-Maßnahmen,
-2. **Prozess**-Maßnahmen,
-3. **Verhaltens**-Maßnahmen
+1. **Design**-Massnahmen,
+2. **Prozess**-Massnahmen, und
+3. **Verhaltens**-Massnahmen
 
-Am Ende des Dokuments gibt es noch einige Tipps für den Tageshost. Eine gedrückte Kopie ist immer vorhanden bei Fragen, und wir haben diverse ausgedrückte Hinweise im Haus und in unsere Prozesse eingebaut.
+Am Ende dieses Dokuments gibt es noch einige Tipps für den Tageshost. Eine ausgedruckte Kopie ist immer vorhanden für allfällige Fragen, zudem haben wir diverse Hygiene-Hinweise im Haus angebracht und neues Material in unsere Prozesse eingebaut.
 
-Bei Fragen oder Kommentaren, wendet euch bitte auf uns in der Kanal #Gesundheit auf Slack oder einfach per [Kontaktformular](/kontakt).
+Bei Fragen oder Kommentaren, könnt ihr uns im Kanal `#gesundheit` auf Slack oder einfach per [Kontaktformular](/kontakt) erreichen.
 
-[![Vorschau](screenshot.jpg)](Schutzkonzept_Effinger_V3.pdf)
+##### _Danke für ihre Aufmerksamkeit_ 🌼
 
-### [Herunterladen](Schutzkonzept_Effinger_V3.pdf) (PDF)
-
-Icons by <a href="https://www.flaticon.com/authors/darius-dan" title="Darius Dan">Darius Dan</a> from <a href="https://www.flaticon.com/">Flaticon</a>.
+![](IMG_20200519_143706_1024.jpg)
