@@ -1,4 +1,6 @@
-{{ define "title" }}Effinger Display{{ end }}
+{{ define "variables" }}
+{{ .Scratch.Set "title" "Effinger Display" -}}
+{{ end }}
 
 {{ define "main" }}
 
@@ -79,53 +81,39 @@
       var calendarApiPath = '{{ .Site.Data.room_manager.apiUrl }}';
       var xhr = $.ajax({
         url: calendarApiPath,
+        /*
         data: {
           calendarId: '{{ delimit .Params.calendarIds "," }}',
           start: startOfDay.toISOString(),
           end: endOfDay.toISOString()
         },
         dataType: "jsonp",
+        */
         success: function(data) {
           var events = [];
 
-          for (var calendarName in data.results) {
+          // Iterate through benjibooks API events
+          data.forEach(function(d) {
 
-            var calendarEvents = data.results[calendarName];
+            events.push({
+              // TODO: validity tests ?
 
-            var roomFloor = "";
-            var roomName = "";
+              roomFloor: d.resource.floor,
+              roomName: d.resource.title,
 
-            var calendarNameElements = calendarName.split("-");
-            if (calendarNameElements.length === 3) {
-              roomFloor = calendarNameElements[1];
-              roomName = calendarNameElements[2];
-            }
+              title: d.title,
+              subtitle: d.subtitle,
 
-            for (var i = 0; i < calendarEvents.length; i++) {
-              var value = calendarEvents[i];
+              // Convert dates
+              start: moment(d.start),
+              end: moment(d.end),
+            });
 
-              events.push({
-                roomFloor: roomFloor,
-                roomName: roomName,
-                title: value.title,
-                name: value.name,
-                start: value.start,
-                end: value.end,
-              });
-            }
-          }
+          });
 
           // Sort by start time.
           events.sort(function(a, b) {
-            if (a.start > b.start) {
-              return 1;
-            } else {
-              if (b.start > a.start) {
-                return -1;
-              } else {
-                return 0;
-              }
-            }
+            return a.start - b.start;
           });
 
           // Display events in table if we have events.
@@ -134,8 +122,8 @@
             for (var i = 0; i < events.length; i++) {
               var event = events[i];
 
-              var eventStart = moment(event.start);
-              var eventEnd = moment(event.end);
+              var eventStart = event.start;
+              var eventEnd = event.end;
 
               // Detect Daylight Savings Time
               if (eventStart.isDST()) {
@@ -151,12 +139,8 @@
 
               tableContent += "<td class='event-time'>" + eventStart.format('HH:mm') + " &ndash; " + eventEnd.format('HH:mm') + "</td>";
               tableContent += "<td>";
-              if (event.name) {
-                tableContent += "<div class='event-title'>" + event.name + "</div>";
-                tableContent += "<div class='event-subtitle'>" + event.title + "</div>";
-              } else {
                 tableContent += "<div class='event-title'>" + event.title + "</div>";
-              }
+                tableContent += "<div class='event-subtitle'>" + event.subtitle + "</div>";
               tableContent += "</td>";
               tableContent += "<td>";
               tableContent += "<div class='room-floor'>" + event.roomFloor + "</div>";

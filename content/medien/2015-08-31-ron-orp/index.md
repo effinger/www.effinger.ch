@@ -1,10 +1,9 @@
 +++
 title = "Ein Büro für alle: Coworking in Bern"
 date = "2015-08-31"
-description = "Newsletter und Online"
 media = "Ron Orp"
 image = "ron-orp-ein-buero-fuer-alle.jpg"
 
 pdf = "ron-orp-ein-buero-fuer-alle.pdf"
-online = "https://www.ronorp.net/bern/rons-tipps/stadtleben.1357/guideline-fuer-die-stadt-bern.1365/ein-buero-fuer-alle.595213"
 +++
+«Unter dem Namen Effinger betreibt eine Gruppe von Visionären den Zeit Raum an der Aarbergergasse 41, einen Raum für Entfaltung, Innovation, Arbeit und Leben auf Zeit. In Kürze werden sie expandieren und hierfür umziehen.»

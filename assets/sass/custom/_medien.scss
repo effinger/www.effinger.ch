@@ -3,4 +3,22 @@
     max-width: 370px;
     margin: 0 auto;
   }
+
+  .media-data {
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: #777;
+
+    a {
+      color: #777;
+      text-decoration: none;
+    }
+  }
+
+  .media-content {
+    margin-bottom: 22px;
+    color: #777;
+    font-size: 15px;
+    font-weight: 300;
+  }
 }

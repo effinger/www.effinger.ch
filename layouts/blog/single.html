@@ -1,5 +1,5 @@
-{{ define "title" }}
-{{ .Title }} | Blog | {{ .Site.Title }}
+{{ define "variables" }}
+{{ .Scratch.Set "title" (print .Title " | Blog | " .Site.Title) -}}
 {{ end }}
 
 {{ define "main" }}

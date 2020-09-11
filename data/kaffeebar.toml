@@ -1,38 +1,14 @@
 [[Person]]
-name = "Anina"
-gender = "f"
-image = "/images/kaffeebar/anina.jpg"
-comment = ""
-
-[[Person]]
-name = "Christa"
-gender = "f"
-image = "/images/kaffeebar/christa.jpg"
-comment = "Life happens, coffee helps."
-
-[[Person]]
-name = "Dominic"
+name = "Julian"
 gender = "m"
-image = "/images/kaffeebar/dominic.jpg"
-comment = "Life is too short to drink Latte Macchiatto."
-
-[[Person]]
-name = "Fränzi"
-gender = "f"
-image = "/images/kaffeebar/franzi.jpg"
-comment = "Aues uf dr Wäut isch entweder ä Härdöpfu oder ke Härdöpfu."
+image = "/images/kaffeebar/julian.jpg"
+comment = ""
 
 [[Person]]
 name = "Yola"
 gender = "f"
 image = "/images/kaffeebar/yola.jpg"
 comment = ""
-
-[[Person]]
-name = "Lea"
-gender = "f"
-image = "/images/kaffeebar/lea.jpg"
-comment = "When life gives you lemons, trade them for coffee."
 
 [[Person]]
 name = "Nadia"
@@ -50,4 +26,10 @@ comment = "A goal without a plan is just a wish."
 name = "Sophie"
 gender = "f"
 image = "/images/kaffeebar/sophie.jpg"
+comment = ""
+
+[[Person]]
+name = "Jasmin"
+gender = "f"
+image = "/images/kaffeebar/jasmin.jpg"
 comment = ""

@@ -1,0 +1,20 @@
+[[community]]
+name = "Hirschengraben"
+location = "Luzern"
+image = "/images/corelated/hirschengraben.png"
+websiteTitle = "hirschengraben.org"
+websiteUrl = "https://www.hirschengraben.org"
+
+[[community]]
+name = "Hyve"
+location = "Basel"
+image = "/images/corelated/hyve.png"
+websiteTitle = "hyve.ch"
+websiteUrl = "https://www.hyve.ch"
+
+[[community]]
+name = "Tessinerplatz"
+location = "Zürich"
+image = "/images/corelated/tessinerplatz.png"
+websiteTitle = "tessinerplatz.ch"
+websiteUrl = "https://www.tessinerplatz.ch"

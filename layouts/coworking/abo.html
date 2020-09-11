@@ -1,0 +1,285 @@
+{{ define "main" }}
+<!-- Page Wrap -->
+<div class="page organisation" id="top">
+
+  <nav class="main-nav dark transparent stick-fixed">
+    {{ partial "navigation.html" . }}
+  </nav>
+
+  <!-- Header -->
+  <section class="small-section-header bg-dark-lighter">
+    <div class="relative container align-left pt-80">
+
+      <div class="row">
+
+        <div class="col-md-8">
+          <h1 class="hs-line-11 font-alt mb-0">Coworking-Abo</h1>
+          <!--
+          <div class="hs-line-4 font-alt mt-20 mt-xs-0">
+          Grundsätze
+          </div>
+          -->
+        </div>
+
+        <div class="col-md-4 mt-30">
+          <div class="mod-breadcrumbs font-alt align-right">
+            <a href="/coworking/"><i class="fa fa-angle-left"></i> Zurück zu Coworking</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- End Header -->
+
+  <!-- Section -->
+  <section class="page-section">
+    <div class="container relative">
+
+      <div class="row">
+
+        <!-- Content -->
+        <div class="col-sm-10 col-sm-offset-1">
+
+          <!-- Text -->
+          <div class="section-text">
+            <h1 class="mt-0 font-alt">Monatsabo lösen</h1>
+
+            <form name="Coworking-Abo" action="" class="form" netlify>
+              <input type="hidden" name="form-name" value="Coworking-Abo" />
+
+              <!-- Wird zur Identifikation vom Formular beim Formularroboterli
+                    verwendet und als Betreff des E-Mails. -->
+              <input type="hidden" name="subject" value="Coworking-Abo" />
+              
+              <div class="row">
+                <div class="col-sm-6 mb-20 mb-md-10">
+                  <label for="abo-option">Abo*</label>
+                  <select name="abo-option" class="input-md form-control">
+                    <option value="1">1 Tag pro Woche (CHF 120)</option>
+                    <option value="2" selected="selected">2 Tage pro Woche (CHF 210)</option>
+                    <option value="3">3 Tage pro Woche (CHF 310)</option>
+                    <option value="4">4 Tage pro Woche (CHF 410)</option>
+                    <option value="5">5 Tage pro Woche (CHF 510)</option>
+                    <option value="firma">Firmenabo (CHF 700)</option>
+                  </select>
+                  <br>
+                  <small>
+                    Mindestlaufzeit 3 Monate. Kündigungs- und Änderungsfrist 1 Monat.<br>
+                    Leistungen können nicht auf Folgemonate übertragen werden.
+                  </small>
+                </div>
+                <div class="col-sm-6 mb-20 mb-md-10">
+                  <label for="startmonat">Startmonat*</label>
+                  <select name="startmonat" class="input-md form-control">
+                    <option selected="selected">Januar</option>
+                    <option>Februar</option>
+                    <option>März</option>
+                    <option>April</option>
+                    <option>Mai</option>
+                    <option>Juni</option>
+                    <option>Juli</option>
+                    <option>August</option>
+                    <option>September</option>
+                    <option>Oktober</option>
+                    <option>November</option>
+                    <option>Dezember</option>
+                  </select>
+                  <br><small>Ab welchem Monat soll das Abo gültig sein?</small>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="row">
+                <div class="col-sm-6 mb-20 mb-md-10">
+                  <label for="firma">Firma</label>
+                  <input type="text" name="firma" class="input-md form-control" placeholder="" maxlength="100">
+                </div>
+              </div>
+
+              <div class="row">
+
+                <div class="col-sm-6 mb-20 mb-md-10">
+                  <label for="vorname">Vorname*</label>
+                  <input type="text" name="vorname" class="input-md form-control" placeholder="" maxlength="100" validate="notEmpty">
+                </div>
+
+                <div class="col-sm-6 mb-20 mb-md-10">
+                  <label for="nachname">Nachname*</label>
+                  <input type="text" name="nachname" class="input-md form-control" placeholder="" maxlength="100" validate="notEmpty">
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-sm-4 mb-20 mb-md-10">
+                  <label for="geburtsdatum">Geburtsdatum*</label>
+                  <input type="text" name="geburtsdatum" class="input-md form-control" placeholder="tt.mm.jjjj" maxlength="10" validate="notEmpty">
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-sm-6 mb-20 mb-md-10">
+                  <label for="strasse">Strasse*</label>
+                  <input type="text" name="strasse" class="input-md form-control" placeholder="" maxlength="100" validate="notEmpty">
+                </div>
+
+                <div class="col-sm-2 mb-20 mb-md-10">
+                  <label for="plz">PLZ*</label>
+                  <input type="text" name="plz" class="input-md form-control" placeholder="" maxlength="5"  validate="notEmpty">
+                </div>
+
+                <div class="col-sm-4 mb-20 mb-md-10">
+                  <label for="ort">Ort*</label>
+                  <input type="text" name="ort" class="input-md form-control" placeholder="" maxlength="50"  validate="notEmpty">
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-sm-6 mb-20 mb-md-10">
+                  <label for="email">E-Mail-Adresse*</label>
+                  <input type="email" name="email" class="input-md form-control" placeholder="" maxlength="100" validate="email">
+                </div>
+
+
+                <div class="col-sm-6 mb-20 mb-md-10">
+                  <label for="telefon">Telefon*</label>
+                  <input type="text" name="telefon" class="input-md form-control" placeholder="" maxlength="100" validate="notEmpty">
+                </div>
+              </div>
+
+              <div class="mb-20 mb-md-10">
+                <label for="bemerkungen">Bemerkungen</label>
+                <textarea name="bemerkungen" class="input-md form-control" rows="3" placeholder="" maxlength="400"></textarea>
+              </div>
+
+              <div id="validation-error-message" class="alert error" style="display: none;">
+                <button class="alert-close" type="button" data-dismiss="alert" aria-label="Close"><i class="fa fa-lg  fa-times-circle"></i></button>
+                Hoppla Schorsch! Bitte die markierten Felder überprüfen.
+                <ul class="error-details list-unstyled small"></ul>
+              </div>
+
+              <button type="submit" class="btn btn-mod btn-large btn-round">Abschicken <i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
+            </form>
+
+            <div class="modal-content" id="form-success-content" style="display:none">
+              <div class="modal-header">
+                <h3 class="modal-title" id="calendar-dialog-title"><i class="fa fa-heart"></i> Danke!</h3>
+              </div>
+              <div class="modal-body">
+                <h4>Deine Anmeldung für das Coworking-Abo wurde abgeschickt</h4>
+                <p>
+                  Wir überprüfen nun die Anfrage und werden uns mit weiteren Details bei dir melden.
+                </p>
+                <p>
+                  Wenn du noch Fragen hast, schreibe bitte ein Mail an <a href="mailto:community@effinger.ch">community@effinger.ch</a>
+                </p>
+              </div>
+            </div>
+
+          </div>
+          <!-- End Text -->
+
+        </div>
+        <!-- End Content -->
+      </div>
+
+    </div>
+  </section>
+  <!-- End Section -->
+</div>
+<!-- End Page Wrap -->
+{{ end }}
+
+{{ define "body_includes" }}
+<script>
+// *******************************
+// Handle the form.
+// *******************************
+$(document).ready(function() {
+
+  var $form = $('form');
+
+  // On loading: Select number of days according to query parameter ?tage=
+  // First test if we have a valid option.
+  var aboOption = getUrlVars()["option"];
+  if ($('[name="abo-option"] option[value=' + aboOption + ']').length > 0) {
+    $('[name="abo-option"]').val(aboOption);
+  }
+
+  // Read a page's GET URL variables and return them as an associative array.
+  function getUrlVars() {
+    var vars = [], hash;
+    var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+    for(var i = 0; i < hashes.length; i++) {
+      hash = hashes[i].split('=');
+      vars.push(hash[0]);
+      vars[hash[0]] = hash[1];
+    }
+    return vars;
+  }
+
+  function reset() {
+    $form.find('.invalid').removeClass('invalid');
+    $form.find('#validation-error-message').hide();
+  }
+
+  function isEmail(email) {
+    var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    return regex.test(email);
+  }
+
+  $form.on('click', 'button', function (e) {
+    e.preventDefault();
+
+    // Clear invalid markers.
+    reset();
+
+    // Get input field values and validate
+    // We simply change border color to red if empty field using .css()
+    var error = false;
+
+    $form.find(':input').each(function () {
+      var validate = $(this).attr('validate');
+      if (validate) {
+        if (validate == 'notEmpty') {
+          if (!$(this).val().trim()) {
+            $(this).addClass('invalid');
+            error = true;
+          }
+        } else if (validate == 'email') {
+          if (!$(this).val().trim() || !isEmail($(this).val())) {
+            $(this).addClass('invalid');
+            error = true;
+          }
+        }
+      }
+    });
+
+    // Submit when valid.
+    if (!error) {
+
+      // Replace selected value with text to have more info than just the number.
+      $('[name="abo-option"] option').val(function(){
+        return $(this).text();
+      });
+
+      // Submit.
+      $.post($form.attr("action"), $form.serialize()).then(function() {
+        // Show the success message.
+        $form.hide();
+        $('#form-success-content').show();
+      });
+
+    } else {
+      // Show validation error message.
+      $form.find('#validation-error-message .error-details').html(error);
+      $form.find('#validation-error-message').show();
+    }
+  });
+});
+
+</script>
+
+
+{{ end }}

@@ -1,7 +1,6 @@
-{{ define "title" }}
-{{ .Title }} | Events | {{ .Site.Title }}
+{{ define "variables" }}
+{{ .Scratch.Set "title" (print .Title " | Events | " .Site.Title) -}}
 {{ end }}
-
 
 {{ define "main" }}
 <!-- Page Wrap -->
@@ -14,7 +13,7 @@
   <!-- Header -->
   <section class="small-section-header bg-gray-lighter">
     <div class="relative container align-left pt-80">
-      <h2 class="hs-line-15 font-alt text-center mb-80">15. März 2019</h2>
+      <h2 class="hs-line-15 font-alt text-center mb-80">13. März 2020</h2>
 
       <div class="row">
         <div class="col-md-3">

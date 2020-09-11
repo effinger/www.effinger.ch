@@ -1,3 +1,13 @@
+{{/* Prefill variables that can be overridden in the "variables" block with .Scratch.Set */}}
+{{ if .Title -}}
+{{ .Scratch.Set "title" (print .Title " | " .Site.Title) -}}
+{{ else -}}
+{{ .Scratch.Set "title" .Site.Title -}}
+{{ end -}}
+{{ .Scratch.Set "description" .Description -}}
+
+{{ block "variables" . -}}{{ end -}}
+
 <!DOCTYPE html>
 <html lang="de">
   <head>
@@ -7,7 +17,7 @@
     <meta name="robots" content="all" >
     <meta name="keywords" content="{{ .Site.Params.keywords }}">
 
-    <meta name="description" content="{{ .Description }}">
+    <meta name="description" content="{{ .Scratch.Get "description" }}">
     <meta name="author" content="{{ .Site.Params.author }}" >
 
     <!-- Twitter Card data -->
@@ -17,12 +27,12 @@
 
     <!-- Open Graph data -->
     <meta property="og:type" content="article" />
-    <meta property="og:title" content="{{ if .Title }}{{ .Title }}{{ else }}{{ .Site.Title }}{{ end }}" />
-    <meta property="og:description" content="{{ .Description }}" />
+    <meta property="og:title" content="{{ .Scratch.Get "title" }}" />
+    <meta property="og:description" content="{{ .Scratch.Get "description" }}" />
     <meta property="og:url" content="{{ .Permalink }}" />
     <meta property="og:image" content="{{ partial `utils/image_permalink.html` . }}" />
 
-    <title>{{ block "title" . }}{{ with .Title }}{{ . }} | {{ end }}{{ .Site.Title }}{{ end }}</title>
+    <title>{{ .Scratch.Get "title" }}</title>
 
     <!-- Favicons -->
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">

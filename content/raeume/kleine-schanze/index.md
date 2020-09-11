@@ -1,6 +1,6 @@
 +++
 title = "Kleine Schanze"
-weight = 5
+weight = 205
 description = "Sitzungsraum mit Stehtischen."
 image = "sitzungsraum-01.jpg"
 draft = true

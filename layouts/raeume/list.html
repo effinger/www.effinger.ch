@@ -27,7 +27,7 @@
   <!-- End Header -->
 
   <!-- Gesucht-Feld -->
-  <section class="container">
+  <!--  <section class="container">
     <dl class="toggle mb-80 mt-80">
       <dt style="border: 3px solid #fae300;">
           <a href="" class="text-center black"><i class="fa fa-bullhorn fa-lg"></i> Gesucht: Raumvermietungs-Host</a>
@@ -66,7 +66,7 @@
         </p>
       </dd>
     </dl>
-  </section>
+  </section>  -->
 
   {{ range .Data.Pages }}
   <hr class="mt-0 mb-0">
@@ -120,11 +120,12 @@
               </div>
             </div>
 
+            {{ with .Params.extras }}
             <div class="row raeume-eigenschaften">
               <div class="col-sm-12">
                 <div class="raeume-title">Zusätzliche Infrastruktur</div>
                 <div class="raeume-content">
-                  {{ range $index, $element := .Params.extras }}
+                  {{ range $index, $element := . }}
                     {{- if not $element.hidden -}}
                     {{- if gt $index 0 }},{{ end }} {{ $element.text -}}
                     {{- end -}}
@@ -132,10 +133,11 @@
                 </div>
               </div>
             </div>
+            {{ end }}
 
             <div class="row raeume-eigenschaften">
               <div class="col-sm-12">
-                <div class="raeume-title">Preise{{ if .Params.prices_excluding_vat }} (exkl. MwSt.){{ end }}</div>
+                <div class="raeume-title">Preise (inkl. MWST)</div>
                 {{ range .Params.prices }}
                 <div class="raeume-content">
                   {{ . }}
@@ -155,64 +157,71 @@
   </section>
   {{ end }}
 
+  <!-- Andere Anbieter -->
+  <section class="small-section-header bg-effingergelb">
+    <div class="relative container">
+
+      <div class="row text-center">
+        <div class="col-md-8 col-md-offset-2">
+          <!-- <p class="font-alt">Info:</p> -->
+
+          <h3 class="hs-line-15 font-alt mb-10">
+            Unsere Nachbarn
+          </h3>
+
+
+          <p class="mt-20">
+            Falls unsere Räume zu klein oder schon besetzt sind, empfehlen wir unsere Nachbarn vis-à-vis.
+          </p>
+          <div class="mb-20">
+            <a href="https://suedland.ch/angebot/forum/" target="_blank">
+              <img src="suedland.jpg" alt="" style="max-width: 450px;">
+            </a>
+          </div>
+          <p class="mb-10">
+            <a href="https://suedland.ch/angebot/forum/" class="btn btn-mod btn-border btn-round btn-medium" target="_blank">
+              Südland Forum
+            </a>
+          </p>
+          <p>
+            <small>
+              100m<sup>2</sup>, 25-40 Personen
+            </small>
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- End Andere Anbieter -->
+
 
   <section class="page-section bg-gray" id="kontakt">
     <div class="relative container">
-      <!-- <h1 class="hs-line-11 font-alt mb-80 mb-sm-40">Kontakt Raumvermietung</h1> -->
       <div class="row">
-        <div class="col-sm-6 mb-50">
+        <div class="col-sm-6 col-sm-offset-3 mb-50">
           <div class="contact-item clearfix">
             <h4 class="uppercase">Kontakt Raumvermietung</h4>
             <div class="wave-spacer"></div>
             <div class="item">
-              <p>Telefon<span><a href="tel:+41313982021">031 398 20 21</a></span></p>
+              <!-- <p>Telefon<span><a href="tel:+41313982021">031 398 20 21</a></span></p> -->
               <p>E-Mail<span><a href="mailto:raumvermietung@effinger.ch">raumvermietung@effinger.ch</a></span></p>
             </div>
           </div>
         </div>
       </div>
       <div class="row">
-        <div class="col-sm-4 mb-sm-100">
+        <div class="col-sm-offset-4 col-sm-4 mb-sm-100">
           <div class="team-item">
             <div class="team-item-image">
-              <img src="/images/effianer/claudia-schaeren.jpg" alt="" />
+              <img src="/images/effianer/markus-roos.jpg" alt="" />
               <div class="team-item-detail">
                 <p class="font-alt normal">Raumvermietung</p>
               </div>
             </div>
             <div class="team-item-descr font-alt">
               <div class="team-item-name">
-                Claudia Schären
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-4 mb-sm-100">
-          <div class="team-item">
-            <div class="team-item-image">
-              <img src="/images/effianer/sunita-asnani.jpg" alt="" />
-              <div class="team-item-detail">
-                <p class="font-alt normal">Raumvermietung</p>
-              </div>
-            </div>
-            <div class="team-item-descr font-alt">
-              <div class="team-item-name">
-                Sunita Asnani
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-4 mb-sm-40">
-          <div class="team-item">
-            <div class="team-item-image">
-              <img src="/images/effianer/benji-ammann.jpg" alt="" />
-              <div class="team-item-detail">
-                <p class="font-alt normal">Raumvermietung</p>
-              </div>
-            </div>
-            <div class="team-item-descr font-alt">
-              <div class="team-item-name">
-                Benji Ammann
+                Markus Roos
               </div>
             </div>
           </div>

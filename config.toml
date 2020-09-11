@@ -10,6 +10,9 @@ paginatePath = "seite"
 # disableKinds = [ "taxonomyTerm" ]
 disableFastRender = true
 
+[markup.goldmark.renderer]
+  unsafe = true
+
 [params]
   author = "Coworking Community Bern"
   analyticsId = "UA-56906982-1"
@@ -26,17 +29,87 @@ disableFastRender = true
   tags = "/blog/tags/:slug/"
   authors = "/blog/authors/:slug/"
 
+[menu]
+[[menu.main]]
+  name = "Kaffeebar"
+  pre = "<i class='fa fa-coffee'></i>"
+  weight = 101
+  url = "/kaffeebar/"
+
+[[menu.main]]
+  name = "Coworking"
+  pre = "<i class='fa fa-building'></i>"
+  weight = 102
+  url = "/coworking/"
+
 [[menu.main]]
   name = "Community"
   pre = "<i class='fa fa-users'></i>"
-  weight = 3
+  weight = 103
   url = "/community/"
+
+  [[menu.main]]
+    name = "Über uns"
+    parent = "Community"
+    weight = 1
+    url = "/community/"
+
+  [[menu.main]]
+    name = "Geschichte"
+    parent = "Community"
+    weight = 2
+    url = "/geschichte/"
+
+  [[menu.main]]
+    name = "Grundsätze"
+    parent = "Community"
+    weight = 3
+    url = "/grundsaetze/"
+
+  [[menu.main]]
+    name = "Organisation"
+    parent = "Community"
+    weight = 4
+    url = "/organisation/"
+
+  [[menu.main]]
+    name = "Finanzen"
+    parent = "Community"
+    weight = 5
+    url = "/finanzen/"
+
+[[menu.main]]
+  name = "Räume"
+  pre = "<i class='fa fa-calendar-check-o'></i>"
+  weight = 104
+  url = "/raeume/"
 
 [[menu.main]]
   name = "Events"
-  weight = 5
+  weight = 105
   url = "/Events/"
+
+[[menu.main]]
+  name = "Services"
+  weight = 106
+  url = "/services/"
+
+[[menu.main]]
+  name = "Blog"
+  weight = 107
+  url = "/blog/"
+
+[[menu.main]]
+  name = "Kontakt"
+  weight = 108
+  url = "/kontakt/"
+
+# [[menu.main]]
+#   name = "Jubiläum"
+#   pre = "<i class='fa fa-birthday-cake'></i>"
+#   weight = 199
+#   url = "/jubilaeum/"
 
 [caches]
 [caches.getjson]
-maxAge = 0
+# maxAge = 0
