@@ -19,6 +19,22 @@ Im Schutzkonzept unterscheiden wir drei Maßnahmen-Kategorien:
 2. **Prozess**-Massnahmen, und
 3. **Verhaltens**-Massnahmen
 
+Besonders zu beachten sind aktuelle empfohlene Begrenzungen in die Räume:
+
+| Raum | Maximale Personenbelegung |
+|------|---------------------------|
+| Aquarium | 6-7 Arbeits/Sitzplätze * |
+| Atelier | 4-5 Arbeitsplätze * |
+| Monbijou | 2 Arbeits/Sitzplätze |
+| Pläfe | 6 Arbeits/Sitzplätze |
+| Matte | 8 Arbeits/Sitzplätze |
+| Rosengarten | 6 Arbeits/Sitzplätze |
+| Gr. Schanze | 4 Fixarbeitsplätze <br> 8-10 Arbeits/Sitzplätze * |
+| Kl. Schanze | 10-15 Sitz-& Stehplätze |
+| Labor | 4 Fixarbeitsplätze |
+
+_* je nach Platzierung_
+
 Am Ende dieses Dokuments gibt es noch einige Tipps für den Tageshost. Eine ausgedruckte Kopie ist immer vorhanden für allfällige Fragen, zudem haben wir diverse Hygiene-Hinweise im Haus angebracht und neues Material in unsere Prozesse eingebaut.
 
 Bei Fragen oder Kommentaren, könnt ihr uns im Kanal `#gesundheit` auf Slack oder einfach per [Kontaktformular](/kontakt) erreichen.
