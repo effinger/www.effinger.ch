@@ -19,7 +19,7 @@ Im Schutzkonzept unterscheiden wir drei Maßnahmen-Kategorien:
 2. **Prozess**-Massnahmen, und
 3. **Verhaltens**-Massnahmen
 
-Besonders zu beachten sind aktuelle empfohlene Begrenzungen in die Räume:
+Besonders zu beachten sind aktuelle empfohlene Begrenzungen in die Räumen (* je nach Platzierung)
 
 | Raum | Maximale Personenbelegung |
 |------|---------------------------|
@@ -32,8 +32,6 @@ Besonders zu beachten sind aktuelle empfohlene Begrenzungen in die Räume:
 | Gr. Schanze | 4 Fixarbeitsplätze <br> 8-10 Arbeits/Sitzplätze * |
 | Kl. Schanze | 10-15 Sitz-& Stehplätze |
 | Labor | 4 Fixarbeitsplätze |
-
-_* je nach Platzierung_
 
 Am Ende dieses Dokuments gibt es noch einige Tipps für den Tageshost. Eine ausgedruckte Kopie ist immer vorhanden für allfällige Fragen, zudem haben wir diverse Hygiene-Hinweise im Haus angebracht und neues Material in unsere Prozesse eingebaut.
 
