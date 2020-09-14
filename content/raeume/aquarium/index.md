@@ -14,7 +14,7 @@ gallery = [
 ]
 
 square_meters = 47
-capacity = "20"
+capacity = "15"
 
 equipment = [
   "Beschreibbare und magnetische Wände",
