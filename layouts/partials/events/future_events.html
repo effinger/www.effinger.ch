@@ -3,18 +3,20 @@
 {{ $brownbagEvents := getJSON "https://brownbag.effinger.ch/events.json" }}
 {{ $brownbagEventIndex := 0 }}
 
-{{ range sort (where .Site.Pages "Section" "events") "Params.startdate" "asc" }}
-  {{ if ge (time .Params.enddate) now }}
-    {{ if lt $brownbagEventIndex (len $brownbagEvents) }}
-      {{ $nextBrownbagEvent := index $brownbagEvents $brownbagEventIndex }}
-      {{ if lt (time (print $nextBrownbagEvent.date ":00")) (time .Params.startdate) }}
-        {{ $brownbagEventIndex = add $brownbagEventIndex 1 }}
-        {{ $result = $result | append (partial "events/brownbag_summary.html" (dict "event" $nextBrownbagEvent "context" $)) }}
+{{ if $brownbagEvents }}
+  {{ range sort (where .Site.Pages "Section" "events") "Params.startdate" "asc" }}
+    {{ if ge (time .Params.enddate) now }}
+      {{ if lt $brownbagEventIndex (len $brownbagEvents) }}
+        {{ $nextBrownbagEvent := index $brownbagEvents $brownbagEventIndex }}
+        {{ if lt (time (print $nextBrownbagEvent.date ":00")) (time .Params.startdate) }}
+          {{ $brownbagEventIndex = add $brownbagEventIndex 1 }}
+          {{ $result = $result | append (partial "events/brownbag_summary.html" (dict "event" $nextBrownbagEvent "context" $)) }}
+        {{ end }}
       {{ end }}
-    {{ end }}
 
-    {{ partial "events/calc_dates.html" . }}
-    {{ $result = $result | append (partial "events/event_summary.html" .) }}
+      {{ partial "events/calc_dates.html" . }}
+      {{ $result = $result | append (partial "events/event_summary.html" .) }}
+    {{ end }}
   {{ end }}
 {{ end }}
 

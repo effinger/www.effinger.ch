@@ -16,8 +16,8 @@
 text = """
 <p class="mb-0">Mo-Fr <span>7-21.30</span></p>
 <p class="mt-0">&nbsp;<span><small>bei grosser Nachfrage länger geöffnet</small></span></p>
-<p>Sa <span>9-14</span></p>
-<p>So <span>Ruhetag</span></p>
+<p>Sa <span>geschlossen</span></p>
+<p>So <span>8-17</span></p>
 """
 
 # Spezial-Öffnungszeiten.
@@ -26,6 +26,17 @@ text = """
 # normale Öffnungszeit damit ersetzt.
 # 
 # Falls mehrere Spezial-Zeiten zutreffen, kommt der unterste zur Anwendung.
+
+# Oktober time switch 2020
+[[spezial]]
+display_start = 2020-09-16T00:00:00Z
+display_end = 2020-09-27T23:59:59Z
+text = """
+<p class="mb-0">Mo-Fr <span>7-21.30</span></p>
+<p class="mt-0">&nbsp;<span><small>bei grosser Nachfrage länger geöffnet</small></span></p>
+<p>Sa <span>9-14</span></p>
+<p>So <span>Ruhetag</span></p>
+"""
 
 # Sommer 2020 + Corona
 [[spezial]]
@@ -37,7 +48,6 @@ text = """
 <p class="mt-0">&nbsp;<span><small>bei grosser Nachfrage länger geöffnet</small></span></p>
 <p>Sa <span>geschlossen</span></p>
 <p>So <span>Ruhetag</span></p>
-
 """
 
 # # june 2019

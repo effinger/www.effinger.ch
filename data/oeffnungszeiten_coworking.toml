@@ -13,8 +13,8 @@
 [normal]
 text = """
 <p class="mb-0">Mo-Fr <span>7-21.30</span></p>
-<p>Sa <span>9-14</span></p>
-<p>So <span>Ruhetag</span></p>
+<p>Sa <span>geschlossen</span></p>
+<p>So <span>geschlossen</span></p>
 """
 
 # Spezial-Öffnungszeiten.
@@ -48,6 +48,16 @@ text = """
 # <p>Sa <span>9-17</span></p>
 # <p>So <span>Ruhetag</span></p>
 # """
+
+# Oktober time switch 2020
+[[spezial]]
+display_start = 2020-09-16T00:00:00Z
+display_end = 2020-09-27T23:59:59Z
+text = """
+<p class="mb-0">Mo-Fr <span>7-21.30</span></p>
+<p>Sa <span>9-14</span></p>
+<p>So <span>Ruhetag</span></p>
+"""
 
 # Corona 2020 + sommer
 [[spezial]]
