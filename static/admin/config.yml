@@ -3,7 +3,7 @@ backend:
   repo: effinger/www.effinger.ch
 
 media_folder: "static/upload"
-public_folder: "upload"
+public_folder: "/upload"
 
 site_url: "/"
 display_url: "https://effinger.ch"
