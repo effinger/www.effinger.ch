@@ -110,6 +110,6 @@ disableFastRender = true
 #   weight = 199
 #   url = "/jubilaeum/"
 
-[caches]
+# Do not cache the getJSON files as they might change (e.g. for Brownbags).
 [caches.getjson]
-# maxAge = 0
+maxAge = 0
