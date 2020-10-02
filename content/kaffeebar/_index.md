@@ -151,56 +151,55 @@ offers_title = "Menu"
         text="Brot, 1 Gipfeli, Konfi, Honig, Butter"
 
 [[offers]]
-  title = "Zmorge am Samstag"
+  title = "Zmorge am Sonntag"
   icon = "<img src='icons/breakfast.svg'>"
 
   [[offers.section]]
-    title = "Zmorge am Samstag"
+    title = "Zmorge am Sonntag"
     column = "left"
 
     [[offers.section.element]]
       text = "Grundstock"
-      price = "19.00"
+      price = "26.00"
 
       [[offers.section.element.subelement]]
-        text = "Brot, Zopf, Konfitüre, Honig, Butter bis gnueg"
+        text = "Brot Buffet, Müesli Ecke zum Selbernehmen,"
 
       [[offers.section.element.subelement]]
-        text = "Heissgetränk bis gnueg und 1 Glas Orangensaft"
+        text = "Getränke Station zur Selbstbedienung,"
+      
+      [[offers.section.element.subelement]]
+        text = "Kaffee und Tee à discretion"
 
     [[offers.section.element]]
-      text = "Grundstock mit Feinem us dr Chäsi"
-      price = "24.00"
+      text = "Darfs chly meh si?"
+      price = "38.00"
+
+      [[offers.section.element.subelement]]
+        text = "Zusätzlich zum Grundstock"
+
+      [[offers.section.element.subelement]]
+        text = "2 kleine und 2 grosse Weckgläser"
+
+      [[offers.section.element.subelement]]
+        text = "nach aktuellem Angebot"
 
     [[offers.section.element]]
-      text = "Grundstock mit Feinem us dr Metzg"
-      price = "27.00"
+      text = "1 kleines Weckglas"
+      price = "2.50"
 
     [[offers.section.element]]
-      text = "Grundstock mit Feinem us dr Chäsi und Metzg"
-      price = "31.00"
+      text = "1 grosses Weckglas "
+      price = "6.50"
 
     [[offers.section.element]]
       text = "---"
 
       [[offers.section.element.subelement]]
-        text = "Jeden Samstag von 9 – 13h"
+        text = "Jeden Sonntag von 9 – 14h"
 
       [[offers.section.element.subelement]]
         text = "Reservation erwünscht, auch spontane Besuche sind willkommen"
-
-
-  [[offers.section]]
-    title = "Darfs no öpis meh sy?"
-    column = "right"
-
-    [[offers.section.element]]
-      text = "Müesli mit Beeri"
-      price = "5.50"
-
-    [[offers.section.element]]
-      text = "Ei usem Ofe"
-      price = "4.50"
 
 
 [[offers]]
