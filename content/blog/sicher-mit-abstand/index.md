@@ -10,8 +10,10 @@ tags = [ "Coworking", "Gesundheit" ]
 
 Seit Februar haben wir besorgt für die Gesundheit unserer Coworker und Tagesgäste eine Reihe von Massnahmen entwickelt. Unser Covid-19 Konzept, welches im Circle Space erstellt wurde, erklärt, wie Arbeiten im Effinger Coworking Space ist sicherstellt. Mit diesem Konzept bieten wir eine Struktur an, mit welcher wir zusammen die Infektionsgefahr im Coworking Space auf ein Minimum senken. Wir folgen dabei eng den [Empfehlungen des BAG](https://bag-coronavirus.ch/).
 
-### [Herunterladen](Schutzkonzept_Effinger.pdf) (PDF)
-<a href="Schutzkonzept_Effinger.pdf"><img alt="Vorschau" src="screenshot.png" width="200"></a>
+Das Konzept ist beim Tageshost einsehbar.
+
+<!-- ### [Herunterladen](Schutzkonzept_Effinger.pdf) (PDF) -->
+<!-- <a href="Schutzkonzept_Effinger.pdf"><img alt="Vorschau" src="screenshot.png" width="200"></a> -->
 
 Im Schutzkonzept unterscheiden wir drei Maßnahmen-Kategorien:
 
