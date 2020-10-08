@@ -110,6 +110,10 @@ offers_title = "Menu"
       [[offers.section.element.subelement]]
         text="Einzelportion jeweils serviert mit Brot"
 
+    [[offers.section.element]]
+      text="Peschäs Nussmischung"
+      price="5.50"
+
   [[offers.section]]
     title = "Vom Bäcker"
     column = "right"
@@ -199,10 +203,7 @@ offers_title = "Menu"
         text = "Jeden Sonntag von 9 – 14h"
 
       [[offers.section.element.subelement]]
-        text = "Reservation erwünscht und bis Freitag-Abend möglich,"
-
-      [[offers.section.element.subelement]]
-        text = "auch spontane Besuche sind danach aber noch willkommen"
+        text = "Reservation erwünscht und bis Freitag-Abend möglich, auch spontane Besuche sind danach aber noch willkommen"
 
 
 [[offers]]
@@ -219,6 +220,10 @@ offers_title = "Menu"
       price = "4.00"
 
     [[offers.section.element]]
+      text = "Espresso Macchiato"
+      price = "4.50"
+
+    [[offers.section.element]]
       text = "Doppio"
       price = "5.00"
 
@@ -231,8 +236,12 @@ offers_title = "Menu"
       price = "4.80/5.80"
 
     [[offers.section.element]]
-      text = "Cappucino"
+      text = "Cappuccino"
       price = "4.80/5.80"
+
+    [[offers.section.element]]
+      text = "Cappuccino Doppio/Flat White"
+      price = "5.20"
 
     [[offers.section.element]]
       text = "Latte Macchiato"
@@ -248,7 +257,7 @@ offers_title = "Menu"
 
     [[offers.section.element]]
       text = "Ovomaltine"
-      price = "4.50"
+      price = "5.00"
 
     [[offers.section.element]]
       text = ""
@@ -263,7 +272,7 @@ offers_title = "Menu"
     column = "right"
 
     [[offers.section.element]]
-      text = "Assam Finest Tippey"
+      text = "Darjeeling"
       price = "4.80"
 
       [[offers.section.element.subelement]]
@@ -312,7 +321,7 @@ offers_title = "Menu"
         text = "(Kräutertee)"
 
     [[offers.section.element]]
-      text = "Orange-Ingwer"
+      text = "Trois Pommes"
       price = "4.80"
 
       [[offers.section.element.subelement]]
@@ -326,7 +335,7 @@ offers_title = "Menu"
         text = "(Früchtetee)"
 
     [[offers.section.element]]
-      text = "Chai Latte"
+      text = "Chai Latte/Iced Chai Latte"
       price = "5.20"
     
     [[offers.section.element]]
@@ -357,14 +366,14 @@ offers_title = "Menu"
       price = "5.00"
 
       [[offers.section.element.subelement]]
-        text = "Zitrone, Mandarine, Rosa Grapefruit"
+        text = "Zitrone, Rosa Grapefruit"
 
     [[offers.section.element]]
-      text = "Chinotto Lurisia"
+      text = "Chinotto"
       price = "5.00"
 
     [[offers.section.element]]
-      text = "ChariTea Mate"
+      text = "El Toni Mate"
       price = "5.00"
 
       [[offers.section.element.subelement]]
@@ -378,45 +387,43 @@ offers_title = "Menu"
         text = "Limonade auf Gurkensaftbasis"
 
     [[offers.section.element]]
-      text = "Rose Lemonade"
-      price = "5.50"
-
-      [[offers.section.element.subelement]]
-        text = "Limonade mit Rosenessenzen"
+      text = "Rhabarber Limonade"
+      price = "5.00"
 
     [[offers.section.element]]
-      text = "Quittenschorle"
+      text = "Mandarino Verde"
       price = "5.00"
 
     [[offers.section.element]]
       text = "Wostock"
+      price = "5.50"
+
+      [[offers.section.element.subelement]]
+        text = "- Birne, Rosmarin"
+      
+      [[offers.section.element.subelement]]
+        text = "- Dattel, Granatapfel"
+
+    [[offers.section.element]]
+      text = "Lemonaid"
       price = "5.00"
 
       [[offers.section.element.subelement]]
-        text = "Birne, Rosmarin"
-
-    [[offers.section.element]]
-      text = "Firefly"
-      price = "6.00"
+        text = "- Ingwer"
 
       [[offers.section.element.subelement]]
-        text = "- Lemon, Lime, Ginger"
-
-      [[offers.section.element.subelement]]
-        text = "- Peach, Greentea"
-
-      [[offers.section.element.subelement]]
-        text = "- Kiwi, Lime, Mint"
+        text = "- Maracuja"
 
   [[offers.section]]
     column = "right"
 
     [[offers.section.element]]
-      text = "Zobo Sorrel"
+      text = "Mandel&Gretchen"
       price = "5.50"
 
-      [[offers.section.element.subelement]]
-        text = "Hibiskus-Ingwer Limonade"
+    [[offers.section.element]]
+      text = "Festivo Portofino"
+      price = "5.50"
 
     [[offers.section.element]]
       text = "Fever Tree"
@@ -437,11 +444,11 @@ offers_title = "Menu"
       price = "3.50/4.50"
 
       [[offers.section.element.subelement]]
-        text = "Besser als Ystee, Holunder, Blüemli, Elfen, Rhabarber, Quitten"
+        text = "Besser als Ystee, Holunder, Blüemli, Elfen, Zwetschgen, Quitten"
 
     [[offers.section.element]]
-      text = "Gletscher Eistee"
-      price = "4.50/6.50"
+      text = "hausgemachter Eistee"
+      price = "4.80/6.80"
 
     [[offers.section.element]]
       text = "Apfelsaft/Schorle"
@@ -511,15 +518,15 @@ offers_title = "Menu"
         text="Schwarzbier, Pfeffer, Kaffee, bittersüss"
 
     [[offers.section.element]]
-      text="Appenzeller Leermond"
-      price="5.50"
+      text="Lola IPA alkoholfrei"
+      price="7.00"
 
       [[offers.section.element.subelement]]
-        text="alkoholfreies, dunkelblondes Bier"
+        text="fein-fruchtig, angenehme Bitternote"
 
     [[offers.section.element]]
       text="Zobo Cider"
-      price="7.00"
+      price="7.50"
 
       [[offers.section.element.subelement]]
         text="Bio Apfelwein nach englischer Art"
@@ -683,8 +690,15 @@ offers_title = "Menu"
         text="Pimm’s No 1, Ginger Beer, Gurke, Zitrone, Orangen, Minzen"
 
     [[offers.section.element]]
-      text="Amaretto sour"
+      text="Moscow Mule"
       price="14.00"
+
+      [[offers.section.element.subelement]]
+        text="Vodka, Ginger Beer, Limette"
+
+    [[offers.section.element]]
+      text="Amaretto sour"
+      price="15.00"
 
       [[offers.section.element.subelement]]
         text="Amaretto, Limettensaft, Orangensaft"
