@@ -199,7 +199,10 @@ offers_title = "Menu"
         text = "Jeden Sonntag von 9 – 14h"
 
       [[offers.section.element.subelement]]
-        text = "Reservation erwünscht, auch spontane Besuche sind willkommen"
+        text = "Reservation erwünscht und bis Freitag-Abend möglich,"
+
+      [[offers.section.element.subelement]]
+        text = "auch spontane Besuche sind danach aber noch willkommen"
 
 
 [[offers]]
