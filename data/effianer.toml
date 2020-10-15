@@ -3,6 +3,30 @@ apiUrl = "https://script.google.com/a/effinger.ch/macros/s/AKfycbw3aGTPwR4t_UdMm
 calendarId = "effinger.ch_3736303136393637343739@resource.calendar.google.com"
 
 [[Person]]
+name = "Benjamin Bracher"
+gender = "m"
+image = "/images/effianer/benjamin-bracher.jpg"
+email = "beni@effinger.ch"
+phone = ""
+website = ""
+twitter = ""
+facebook = ""
+instagram = ""
+linkedin = ""
+
+[[Person]]
+name = "Raffael Krebs"
+gender = "m"
+image = "/images/effianer/raffael-krebs.jpg"
+email = "raffael.krebs@effinger.ch"
+phone = ""
+website = ""
+twitter = ""
+facebook = ""
+instagram = ""
+linkedin = "raffaelkrebs"
+
+[[Person]]
 name = "Jonathan Bucher"
 gender = "m"
 image = "/images/effianer/jonathan-bucher.jpg"
@@ -12,6 +36,7 @@ website = "https://www.jonathanbucher.ch/"
 twitter = ""
 facebook = ""
 instagram = ""
+linkedin = ""
 
 [[Person]]
 name = "Benji Ammann"
@@ -23,6 +48,7 @@ website = ""
 twitter = ""
 facebook = ""
 instagram = ""
+linkedin = ""
 
 [[Person]]
 name = "Christa-Maria Tobler"
@@ -34,6 +60,7 @@ website = ""
 twitter = ""
 facebook = ""
 instagram = ""
+linkedin = ""
 
 [[Person]]
 name = "Claudine Etter"
@@ -45,6 +72,7 @@ website = "http://www.atelier-c.ch/"
 twitter = ""
 facebook = ""
 instagram = "atelier.c"
+linkedin = "atelier.c"
 
 [[Person]]
 name = "Corinne Roth Vock"
@@ -56,6 +84,7 @@ website = "https://schlosswort.ch/"
 twitter = ""
 facebook = ""
 instagram = ""
+linkedin = ""
 
 [[Person]]
 name = "David Eggimann"
@@ -67,6 +96,7 @@ website = ""
 twitter = ""
 facebook = ""
 instagram = ""
+linkedin = ""
 
 [[Person]]
 name = "Domenica Hitz"
@@ -79,6 +109,7 @@ website = ""
 twitter = ""
 facebook = ""
 instagram = "effingerbern"
+linkedin = "effingerbern"
 
 [[Person]]
 name = "Alexis Giard"
@@ -90,6 +121,7 @@ website = "https://www.alexisgiard.com/"
 twitter = ""
 facebook = ""
 instagram = ""
+linkedin = ""
 
 [[Person]]
 name = "Fabian Steiner"
@@ -101,6 +133,7 @@ website = "https://www.fabust.ch/"
 twitter = ""
 facebook = ""
 instagram = "fabust.film"
+linkedin = "fabust.film"
 
 [[Person]]
 name = "Fredi Zumbrunn"
@@ -112,6 +145,7 @@ website = ""
 twitter = ""
 facebook = ""
 instagram = ""
+linkedin = ""
 
 [[Person]]
 name = "Heinz Bolliger"
@@ -123,6 +157,7 @@ website = ""
 twitter = ""
 facebook = ""
 instagram = ""
+linkedin = ""
 
 [[Person]]
 name = "Ismael Basler"
@@ -134,6 +169,7 @@ website = "http://www.umbaulokal.ch"
 twitter = ""
 facebook = ""
 instagram = ""
+linkedin = ""
 
 [[Person]]
 name = "Jonathan Hess"
@@ -145,6 +181,7 @@ website = "http://www.movingwater.ch"
 twitter = ""
 facebook = ""
 instagram = ""
+linkedin = ""
 
 [[Person]]
 name = "Kim Eggimann"
@@ -156,6 +193,7 @@ website = ""
 twitter = ""
 facebook = ""
 instagram = ""
+linkedin = ""
 
 [[Person]]
 name = "Manuel Bürli"
@@ -167,6 +205,7 @@ website = "https://herrbuerli.ch/"
 twitter = ""
 facebook = "herrbuerli"
 instagram = ""
+linkedin = ""
 
 [[Person]]
 name = "Marco Jakob"
@@ -178,6 +217,7 @@ website = "https://www.makery.ch"
 twitter = ""
 facebook = ""
 instagram = ""
+linkedin = ""
 
 [[Person]]
 name = "Markus Roos"
@@ -189,6 +229,7 @@ website = ""
 twitter = ""
 facebook = ""
 instagram = ""
+linkedin = ""
 
 [[Person]]
 name = "Matthias Tobler"
@@ -200,6 +241,7 @@ website = "https://www.matthiastobler.ch/"
 twitter = ""
 facebook = ""
 instagram = ""
+linkedin = ""
 
 [[Person]]
 name = "Michael Aerni"
@@ -211,6 +253,7 @@ website = "https://www.michaelaerni.ch/"
 twitter = ""
 facebook = ""
 instagram = ""
+linkedin = ""
 
 [[Person]]
 name = "Michael Friedrich"
@@ -222,6 +265,7 @@ website = ""
 twitter = ""
 facebook = ""
 instagram = ""
+linkedin = ""
 
 [[Person]]
 name = "Oleg Lavrovsky"
@@ -233,6 +277,7 @@ website = "https://datalets.ch/"
 twitter = "loleg"
 facebook = "lavrovsky"
 instagram = ""
+linkedin = ""
 
 [[Person]]
 name = "Salome Hostettler"
@@ -245,6 +290,7 @@ website = ""
 twitter = ""
 facebook = "salome.hostettler"
 instagram = ""
+linkedin = ""
 
 [[Person]]
 name = "Tavi Venzin"
@@ -256,6 +302,7 @@ website = "https://tavivenzin.com/"
 twitter = ""
 facebook = ""
 instagram = "tavivenzin"
+linkedin = "tavivenzin"
 
 [[Person]]
 name = "Thomas Bucher"
@@ -267,6 +314,7 @@ website = "https://www.co-wing.ch"
 twitter = ""
 facebook = ""
 instagram = ""
+linkedin = ""
 
 [[Person]]
 name = "Timon Marmet"
@@ -278,6 +326,7 @@ website = "https://timonmarmet.ch"
 twitter = ""
 facebook = ""
 instagram = ""
+linkedin = ""
 
 [[Person]]
 name = "Urs Vögeli"
@@ -289,3 +338,4 @@ website = ""
 twitter = ""
 facebook = "urs.vogeli.3"
 instagram = ""
+linkedin = ""
