@@ -62,6 +62,9 @@
       $('.container-outer').css('height', (100-keystone/10) + '%');
     }
 
+    // Time zone correction
+    var tzdelta = urlVars['timezone'];
+
     // Periodically update events.
     setInterval(function() {
       loadEvents();
@@ -129,6 +132,13 @@
               if (eventStart.isDST()) {
                 eventStart = eventStart.add(1, 'hour');
                 eventEnd = eventEnd.add(1, 'hour');
+              }
+
+              // Adjust manually
+              if (typeof tzdelta !== 'undefined' && tzdelta) {
+                tzdelta = parseInt(tzdelta);
+                eventStart = eventStart.add(tzdelta, 'hour');
+                eventEnd = eventEnd.add(tzdelta, 'hour');
               }
 
               if (eventEnd.isBefore()) {
