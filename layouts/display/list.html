@@ -128,17 +128,16 @@
               var eventStart = event.start;
               var eventEnd = event.end;
 
-              // Detect Daylight Savings Time
-              if (eventStart.isDST()) {
-                eventStart = eventStart.add(1, 'hour');
-                eventEnd = eventEnd.add(1, 'hour');
-              }
-
               // Adjust manually
               if (typeof tzdelta !== 'undefined' && tzdelta) {
                 tzdelta = parseInt(tzdelta);
                 eventStart = eventStart.add(tzdelta, 'hour');
                 eventEnd = eventEnd.add(tzdelta, 'hour');
+
+              // Detect Daylight Savings Time
+              } else if (eventStart.isDST()) {
+                eventStart = eventStart.add(1, 'hour');
+                eventEnd = eventEnd.add(1, 'hour');
               }
 
               if (eventEnd.isBefore()) {
