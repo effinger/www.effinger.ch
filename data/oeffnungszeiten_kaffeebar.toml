@@ -29,7 +29,7 @@ text = """
 
 # Oktober time switch 2020
 [[spezial]]
-display_start = 2020-11-07T00:00:00Z
+display_start = 2020-11-09T00:00:00Z
 display_end = 2020-12-31T23:59:59Z
 text = """
 <p class="mb-0">Mo-Fr <span>8:00-21:00</span></p>
