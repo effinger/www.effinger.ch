@@ -12,7 +12,7 @@
 # Corona 2020
 [normal]
 text = """
-<p class="mb-0">Mo-Fr <span>7-21.30</span></p>
+<p class="mb-0">Mo-Fr <span>8:00-21:00</span></p>
 <p>Sa <span>geschlossen</span></p>
 <p>So <span>geschlossen</span></p>
 """

@@ -29,13 +29,12 @@ text = """
 
 # Oktober time switch 2020
 [[spezial]]
-display_start = 2020-09-16T00:00:00Z
-display_end = 2020-09-27T23:59:59Z
+display_start = 2020-11-07T00:00:00Z
+display_end = 2020-12-31T23:59:59Z
 text = """
-<p class="mb-0">Mo-Fr <span>7-21.30</span></p>
-<p class="mt-0">&nbsp;<span><small>bei grosser Nachfrage länger geöffnet</small></span></p>
-<p>Sa <span>9-14</span></p>
-<p>So <span>Ruhetag</span></p>
+<p class="mb-0">Mo-Fr <span>8:00-21:00</span></p>
+<p>Sa <span>geschlossen</span></p>
+<p>So <span>geschlossen</span></p>
 """
 
 # Sommer 2020 + Corona
