@@ -126,9 +126,22 @@
           {{ .Content }}
           {{ if .Params.id }}
           <div class="mb-50">
-
             <a href="https://www.benjibooks.com/resources/effinger/{{.Params.id}}/" target="_blank" class="btn btn-mod btn-border btn-round btn-large">&rarr; Reservation</a>
           </div>
+          <hr>
+          <div class="small">
+            <h4>Annullationsbedingungen</h4>
+            
+            <ul>
+              <li>
+                Wenn eine Buchung weniger als 5 Arbeitstage vor Beginn annulliert wird, verrechnen wir 50% des Gesamtpreises.
+              </li>
+              <li>
+                Wenn eine Buchung weniger als 24 Stunden vor Beginn annulliert wird, verrechnen wir 100% des Gesamtpreises.
+              </li>
+            </ul>
+          </div>
+          <hr>
           {{ end }}
         </div>
       </div>
