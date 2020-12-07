@@ -33,7 +33,7 @@ Zwei Beispiele dafür:
 Ganz unkompliziert haben Sunita und Joana in den letzten Wochen ein ebenso unkompliziert entstandenes Stück Musik von mir für eine Bewegungsstudie verwendet:
 
 <iframe src="https://player.vimeo.com/video/478719654" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-<p><a href="https://vimeo.com/478719654">stripes</a> from <a href="https://vimeo.com/sunitaasnani">Sunita Asnani</a> on <a href=„https://vimeo.com">Vimeo</a>.</p>
+<p><a href="https://vimeo.com/478719654">stripes</a> von <a href="https://vimeo.com/sunitaasnani">Sunita Asnani</a></p>
 
 Und Isabel und ich haben nach einem kurzen Gesprächsexkurs über Schmetterlinge ein paar Wochen später erstaunt festgestellt, dass er sich bei beiden irgendwie festgekrallt hat: 
 
