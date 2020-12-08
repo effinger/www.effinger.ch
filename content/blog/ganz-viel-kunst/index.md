@@ -1,7 +1,7 @@
 +++
 title = "Ganz viel Kunst im Effinger"
 date = "2020-12-07"
-draft = true
+draft = false
 tags = ["Atelier", "Kunst"]
 image = "malen.jpg"
 description = "Seit Oktober vernetzen sich die Kunstschaffenden im Effinger. Ob Tanz, Musik oder Bild – die Funken der Inspiration sprühten sofort!"
