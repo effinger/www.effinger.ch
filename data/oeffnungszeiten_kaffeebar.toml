@@ -14,10 +14,9 @@
 # display_start = 2020-04-10T00:00:00Z
 # display_end = 2020-12-31T23:59:59Z
 text = """
-<p class="mb-0">Mo-Fr <span>7-21.30</span></p>
-<p class="mt-0">&nbsp;<span><small>bei grosser Nachfrage länger geöffnet</small></span></p>
+<p class="mb-0">Mo-Fr <span>8:00-21:00</span></p>
 <p>Sa <span>geschlossen</span></p>
-<p>So <span>8-17</span></p>
+<p>So <span>geschlossen</span></p>
 """
 
 # Spezial-Öffnungszeiten.
@@ -27,27 +26,45 @@ text = """
 # 
 # Falls mehrere Spezial-Zeiten zutreffen, kommt der unterste zur Anwendung.
 
-# Oktober time switch 2020
+# Betriebsferen 2020/2021
 [[spezial]]
-display_start = 2020-11-09T00:00:00Z
-display_end = 2020-12-31T23:59:59Z
+display_start = 2020-12-11T00:00:00Z
+display_end = 2021-01-04T23:59:59Z
 text = """
 <p class="mb-0">Mo-Fr <span>8:00-21:00</span></p>
 <p>Sa <span>geschlossen</span></p>
 <p>So <span>geschlossen</span></p>
+<p>
+    <strong>Betriebsferien</strong> Samstag 19. Dezember 2020 bis Sonntag 3. Januar 2021<br>
+    Wir wünschen allen einen friedlichen Jahreswechsel!
+</p>
+"""
+
+# Corona 2021
+[[spezial]]
+display_start = 2021-01-05T00:00:00Z
+display_end = 2021-01-12T23:59:59Z
+text = """
+<p class="mb-0">Mo-Fr <span>8:00-19:00</span></p>
+<p>Sa <span>geschlossen</span></p>
+<p>So <span>geschlossen</span></p>
+<p>
+    <strong>Betriebsferien</strong> Samstag 19. Dezember 2020 bis Sonntag 3. Januar 2021<br>
+    Wir wünschen allen einen friedlichen Jahreswechsel!
+</p>
 """
 
 # Sommer 2020 + Corona
-[[spezial]]
-display_start = 2020-07-01T00:00:00Z
-display_end = 2020-08-08T23:59:59Z
-text = """
-<p class="text-center"><em>Von Montag 6. Juli bis Sonntag 9. August</em></p>
-<p class="mb-0">Mo-Fr <span>7-20</span></p>
-<p class="mt-0">&nbsp;<span><small>bei grosser Nachfrage länger geöffnet</small></span></p>
-<p>Sa <span>geschlossen</span></p>
-<p>So <span>Ruhetag</span></p>
-"""
+# [[spezial]]
+# display_start = 2020-07-01T00:00:00Z
+# display_end = 2020-08-08T23:59:59Z
+# text = """
+# <p class="text-center"><em>Von Montag 6. Juli bis Sonntag 9. August</em></p>
+# <p class="mb-0">Mo-Fr <span>7-20</span></p>
+# <p class="mt-0">&nbsp;<span><small>bei grosser Nachfrage länger geöffnet</small></span></p>
+# <p>Sa <span>geschlossen</span></p>
+# <p>So <span>Ruhetag</span></p>
+# """
 
 # # june 2019
 # [[spezial]]
