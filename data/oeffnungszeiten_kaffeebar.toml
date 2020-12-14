@@ -31,7 +31,7 @@ text = """
 display_start = 2020-12-11T00:00:00Z
 display_end = 2021-01-04T23:59:59Z
 text = """
-<p class="mb-0">Mo-Fr <span>8:00-21:00</span></p>
+<p class="mb-0">Mo-Fr <span>8:00-19:00</span></p>
 <p>Sa <span>geschlossen</span></p>
 <p>So <span>geschlossen</span></p>
 <p>
