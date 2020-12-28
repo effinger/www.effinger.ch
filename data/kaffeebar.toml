@@ -1,19 +1,7 @@
 [[Person]]
-name = "Julian"
-gender = "m"
-image = "/images/kaffeebar/julian.jpg"
-comment = ""
-
-[[Person]]
 name = "Yola"
 gender = "f"
 image = "/images/kaffeebar/yola.jpg"
-comment = ""
-
-[[Person]]
-name = "Nadia"
-gender = "f"
-image = "/images/kaffeebar/nadia.jpg"
 comment = ""
 
 [[Person]]
