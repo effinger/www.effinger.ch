@@ -26,32 +26,14 @@ text = """
 # 
 # Falls mehrere Spezial-Zeiten zutreffen, kommt der unterste zur Anwendung.
 
-# Betriebsferen 2020/2021
-[[spezial]]
-display_start = 2020-12-11T00:00:00Z
-display_end = 2021-01-04T23:59:59Z
-text = """
-<p class="mb-0">Mo-Fr <span>8:00-19:00</span></p>
-<p>Sa <span>geschlossen</span></p>
-<p>So <span>geschlossen</span></p>
-<p>
-    <strong>Betriebsferien</strong> Samstag 19. Dezember 2020 bis Sonntag 3. Januar 2021<br>
-    Wir wünschen allen einen friedlichen Jahreswechsel!
-</p>
-"""
-
 # Corona 2021
 [[spezial]]
-display_start = 2021-01-05T00:00:00Z
-display_end = 2021-01-12T23:59:59Z
+display_start = 2021-01-04T00:00:00Z
+display_end = 2021-01-22T23:59:59Z
 text = """
-<p class="mb-0">Mo-Fr <span>8:00-19:00</span></p>
+<p class="mb-0">Mo-Fr <span>10:00-14:00</span></p>
 <p>Sa <span>geschlossen</span></p>
 <p>So <span>geschlossen</span></p>
-<p>
-    <strong>Betriebsferien</strong> Samstag 19. Dezember 2020 bis Sonntag 3. Januar 2021<br>
-    Wir wünschen allen einen friedlichen Jahreswechsel!
-</p>
 """
 
 # Sommer 2020 + Corona

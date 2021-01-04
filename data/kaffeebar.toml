@@ -1,15 +1,8 @@
 [[Person]]
-name = "Salome Hostettler"
+name = "Christa"
 gender = "f"
-image = "/images/effianer/salome-hostettler.jpg"
-description = ""
-email = "salome@effinger.ch"
-phone = ""
-website = ""
-twitter = ""
-facebook = "salome.hostettler"
-instagram = ""
-linkedin = ""
+image = "/images/kaffeebar/christa.jpg"
+comment = ""
 
 [[Person]]
 name = "Yola"
