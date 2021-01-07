@@ -3,6 +3,18 @@ apiUrl = "https://script.google.com/a/effinger.ch/macros/s/AKfycbw3aGTPwR4t_UdMm
 calendarId = "effinger.ch_3736303136393637343739@resource.calendar.google.com"
 
 [[Person]]
+name = "Faustina Kromah"
+gender = "f"
+image = "/images/effianer/faustina-kromah.jpg"
+email = "faustina@effinger.ch"
+phone = ""
+website = "https://www.3-bewegt.ch/"
+twitter = ""
+facebook = ""
+instagram = ""
+linkedin = ""
+
+[[Person]]
 name = "Benjamin Bracher"
 gender = "m"
 image = "/images/effianer/benjamin-bracher.jpg"
