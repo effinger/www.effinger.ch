@@ -35,7 +35,7 @@ Dies ist der Ablauf von soziokratischen Entscheidungen (Konsent). Für jeden Vor
 
 ## 5. Einwandrunde
 
-* Der Moderator fragt: “Sehen ihr irgendeinen Grund, warum die Annahme dieses Vorschlags Schaden anrichten oder uns zurückwerfen könnte?”
+* Der Moderator fragt: “Seht ihr irgendeinen Grund, warum die Annahme dieses Vorschlags Schaden anrichten oder uns zurückwerfen könnte?”
 * Einwände werden ohne Diskussion benannt und begründet.
 * Wenn keine Einwände im Raum sind, haben wir Konsent und der Vorschlag wird angenommen.
 
