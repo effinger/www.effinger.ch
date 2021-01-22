@@ -8,10 +8,10 @@ text = """
 """
 
 # Spezial-Öffnungszeiten.
-# 
-# Wenn ein Zeitraum (display_start, display_end) Zutrifft, dann wird die 
+#
+# Wenn ein Zeitraum (display_start, display_end) Zutrifft, dann wird die
 # normale Öffnungszeit damit ersetzt.
-# 
+#
 # Falls mehrere Spezial-Zeiten zutreffen, kommt der unterste zur Anwendung.
 
 # Corona 2021
@@ -19,7 +19,7 @@ text = """
 display_start = 2021-01-04T00:00:00Z
 display_end = 2021-01-22T23:59:59Z
 text = """
-<p class="mb-0">Mo-Fr <span>10:00-14:00</span></p>
+<p class="mb-0">Mo-Fr <span>09:00-13:00</span></p>
 <p>Sa <span>geschlossen</span></p>
 <p>So <span>geschlossen</span></p>
 """
