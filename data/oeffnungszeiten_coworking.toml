@@ -7,65 +7,30 @@ text = """
 <p>So <span>geschlossen</span></p>
 """
 
+# Spezial-Öffnungszeiten.
+#
+# Wenn ein Zeitraum (display_start, display_end) Zutrifft, dann wird die
+# normale Öffnungszeit damit ersetzt.
+#
+# Falls mehrere Spezial-Zeiten zutreffen, kommt der unterste zur Anwendung.
+
 # Corona 2021
 [[spezial]]
-display_start = 2021-01-04T00:00:00Z
-display_end = 2021-01-22T23:59:59Z
+display_start = 2021-01-18T00:00:00Z
+display_end = 2021-02-28T23:59:59Z
 text = """
-<p class="mb-0">Mo-Fr <span>08:00-18:00</span></p>
+<p class="mb-0">Mo-Fr <span>8-18 Uhr</span></p>
 <p>Sa <span>geschlossen</span></p>
 <p>So <span>geschlossen</span></p>
 """
 
-# Spezial-Öffnungszeiten.
-# 
-# Wenn ein Zeitraum (display_start, display_end) Zutrifft, dann wird die 
-# normale Öffnungszeit damit ersetzt.
-# 
-# Falls mehrere Spezial-Zeiten zutreffen, kommt der unterste zur Anwendung.
-
-# # june 2019
-# [[spezial]]
-# display_start = 2019-06-04T00:00:00Z
-# display_end = 2019-06-10T23:59:59Z
-# text = """
-# <p class="text-center"><em>Pfingstmontag 10. Juni 2019 geschlossen.</em></p>
-# <p>Mo-Fr <span>7-23</span></p>
-# <p class="mb-0">Sa <span></span></p>
-# <p class="mt-0 mb-0"><small>Jun &ndash; Sept </small><span>9-14</span></p>
-# <p class="mt-0"><small>Okt &ndash; Mai </small><span>9-17</span></p>
-# <p>So <span>Ruhetag</span></p>
-# """
-
-# Winter 2019
-# [[spezial]]
-# display_start = 2019-12-01T00:00:00Z
-# display_end = 2020-01-05T23:59:59Z
-# text = """
-# <p class="text-center"><em>Betriebsferien ab Samstag 21. Dezember 2019 bis Sonntag 5. Januar 2020.</em></p>
-# <div class="wave-spacer"></div>
-# <p>Mo-Fr <span>7-23</span></p>
-# <p>Sa <span>9-17</span></p>
-# <p>So <span>Ruhetag</span></p>
-# """
-
-# Oktober time switch 2020
-[[spezial]]
-display_start = 2020-09-16T00:00:00Z
-display_end = 2020-09-27T23:59:59Z
-text = """
-<p class="mb-0">Mo-Fr <span>7-21.30</span></p>
-<p>Sa <span>9-14</span></p>
-<p>So <span>Ruhetag</span></p>
-"""
-
 # Corona 2020 + sommer
-[[spezial]]
-display_start = 2020-07-01T00:00:00Z
-display_end = 2020-08-08T23:59:59Z
-text = """
-<p class="text-center"><em>Von Montag 6. Juli bis Sonntag 9. August</em></p>
-<p class="mb-0">Mo-Fr <span>7-20</span></p>
-<p>Sa <span>9-14</span></p>
-<p>So <span>Ruhetag</span></p>
-"""
+#[[spezial]]
+#display_start = 2020-07-01T00:00:00Z
+#display_end = 2020-08-08T23:59:59Z
+#text = """
+#<p class="text-center"><em>Von Montag 6. Juli bis Sonntag 9. August</em></p>
+#<p class="mb-0">Mo-Fr <span>7-20 Uhr</span></p>
+#<p>Sa <span>9-14</span></p>
+#<p>So <span>Ruhetag</span></p>
+#"""
