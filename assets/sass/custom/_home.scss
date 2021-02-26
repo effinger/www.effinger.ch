@@ -8,6 +8,16 @@
 }
 
 .page-home {
+  #corona {
+    a.section-link {
+      text-decoration: none;
+
+      &:hover {
+        color: inherit;
+      }
+    }
+  }
+
   .angebote {
     .list {
       display: flex;
