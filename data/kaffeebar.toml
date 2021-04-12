@@ -11,12 +11,6 @@ image = "/images/kaffeebar/yola.jpg"
 comment = ""
 
 [[Person]]
-name = "Nico"
-gender = "m"
-image = "/images/kaffeebar/nico.jpg"
-comment = "A goal without a plan is just a wish."
-
-[[Person]]
 name = "Sophie"
 gender = "f"
 image = "/images/kaffeebar/sophie.jpg"
