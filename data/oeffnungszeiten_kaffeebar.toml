@@ -24,4 +24,24 @@ text = """
 <p>So <span>geschlossen</span></p>
 """
 
+[[spezial]]
+display_start = 2021-05-10T00:00:00Z
+display_end = 2021-05-16T23:59:59Z
+text = """
+<p class="mb-0">Mo-Fr <span>9-18 Uhr, bei Bedarf auch länger</span></p>
+<p>Sa <span>geschlossen</span></p>
+<p>So <span>geschlossen</span></p>
+<p>13.5. Auffahrt <span>geschlossen</span></p>
+<p>14.5. Freitag <span>geschlossen</span></p>
+<p>24.5. Pfingstmontag <span>geschlossen</span></p>
+"""
 
+[[spezial]]
+display_start = 2021-05-17T00:00:00Z
+display_end = 2021-05-24T23:59:59Z
+text = """
+<p class="mb-0">Mo-Fr <span>9-18 Uhr, bei Bedarf auch länger</span></p>
+<p>Sa <span>geschlossen</span></p>
+<p>So <span>geschlossen</span></p>
+<p>24.5. Pfingstmontag <span>geschlossen</span></p>
+"""
