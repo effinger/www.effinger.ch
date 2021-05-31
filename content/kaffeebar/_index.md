@@ -10,18 +10,25 @@ offers_title = "Menu"
   icon = "<img src='icons/eat.svg'>"
 
   [[offers.section]]
-    title = "Ein Stück vom Glück"
+    title = "Bärner Pie"
     column = "left"
 
     [[offers.section.element]]
-      text = "Fleischquiche mit Salat"
+      text = "Pie mit Fleisch & Salat"
       price = "18.50"
 
       [[offers.section.element.subelement]]
         text = "nach Tagesangebot"
 
     [[offers.section.element]]
-      text = "Vegiquiche mit Salat"
+      text = "Pie vegetarisch & Salat"
+      price = "17.00"
+
+      [[offers.section.element.subelement]]
+        text = "nach Tagesangebot"
+    
+    [[offers.section.element]]
+      text = "Pie vegan & Salat"
       price = "17.00"
 
       [[offers.section.element.subelement]]
@@ -56,7 +63,7 @@ offers_title = "Menu"
 
     [[offers.section.element]]
       text="Apéroteller mediterran"
-      price="22.00"
+      price="23.00"
 
       [[offers.section.element.subelement]]
         text="Parmesan, Fetawürfel, Rohschinken, Chorizo-Perlen, Oliven, serviert mit Brot"
@@ -81,7 +88,7 @@ offers_title = "Menu"
       price="6.00"
 
     [[offers.section.element]]
-      text="Chorizo-Perlen"
+      text="Aare-Chnebu"
       price="5.50"
 
     [[offers.section.element]]
