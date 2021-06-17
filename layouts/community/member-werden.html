@@ -72,11 +72,14 @@
             <form name="Community Membership" action="" class="form" netlify>
               <input type="hidden" name="form-name" value="Community Membership" />
 
-              <!-- Wird zur Identifikation vom Formular beim Formularroboterli
-                    verwendet und als Betreff des E-Mails. -->
-              <input type="hidden" name="subject" value="Community Membership" />
-
               <div class="row">
+                <div class="col-sm-6 mb-20 mb-md-10">
+                  <label for="einstieg">Einstieg*</label>
+                  <select name="einstieg" class="input-md form-control">
+                    <option value="Einstieg mit 10er-Abo" selected="selected">MIT 10er-Abo (1. Jahr Membership inklusive)</option>
+                    <option value="Einstieg ohne 10er-Abo">OHNE 10er-Abo (CHF 250)</option>
+                  </select>
+                </div>
 
                 <div class="col-sm-6 mb-20 mb-md-10">
                   <label for="firma">Firma</label>
