@@ -10,10 +10,25 @@
 .page-home {
   #corona {
     a.section-link {
+      display: flex;
+      flex-flow: row nowrap;
       text-decoration: none;
 
       &:hover {
         color: inherit;
+      }
+
+      .section-icon {
+        flex: 0 0 max-content;
+        margin: 0 3vw;
+
+        img {
+          mix-blend-mode: difference;
+        }
+      }
+
+      .section-teaser {
+        flex: 1;
       }
     }
   }
