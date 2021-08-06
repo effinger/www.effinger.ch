@@ -39,7 +39,7 @@ Events can be created via NetlifyCMS on [Effinger Admin](https://www.effinger.ch
 
 1. Go to the website and find one of the later events that looks similar to what you want. Take note of the event number in the url.
 2. Find the event under `content/events/...` and make a copy of it.
-3. Change the folder name to match the latest event number + 1.
+3. Change the file name to match the latest event number + 1.
 4. Change the metadata which is in the [toml](https://github.com/toml-lang/toml) format:
     * **title**: The title of the event.
     * **description**: A summary of the text. The summary is displayed when the the event is shared in Slack or social media. Google also uses this description in search results. So this is quite important.
@@ -51,7 +51,7 @@ Events can be created via NetlifyCMS on [Effinger Admin](https://www.effinger.ch
     * **registration** (optional): If set to true, a form is displayed for registration. This creates a Google Sheet where the registered users are saved. To see the Google Sheet click on the link called "Teilnehmende".
     * **registration_max** (optional): Limits the registration to the specified number of people.
     * **registration_close** (optional): Date and time when the registration should be closed.
-5. Add blog images. All images of the event should be stored in the folder of the event.
+5. Add event images. Images of the event can be stored in the /static/images/ folder.
 6. Add the content: Below the metadata add the [markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) content.
 
 
