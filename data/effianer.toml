@@ -15,6 +15,18 @@ instagram = ""
 linkedin = ""
 
 [[Person]]
+name = "Stefan Niederhauser"
+gender = "m"
+image = "/images/effianer/stefan-niederhauser.jpg"
+email = "stefan@effinger.ch"
+phone = ""
+website = ""
+twitter = ""
+facebook = ""
+instagram = ""
+linkedin = "sniederhauser"
+
+[[Person]]
 name = "Benjamin Bracher"
 gender = "m"
 image = "/images/effianer/benjamin-bracher.jpg"
