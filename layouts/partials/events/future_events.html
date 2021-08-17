@@ -4,7 +4,7 @@
 {{ $brownbagEventIndex := 0 }}
 
 {{ range sort (where .Site.Pages "Section" "events") "Params.startdate" "asc" }}
-  {{ if ge (time .Params.enddate) now }}
+  {{ if gt (time (default now (default .Params.startdate .Params.enddate))) now }}
     {{ if $brownbagEvents }}
       {{ if lt $brownbagEventIndex (len $brownbagEvents) }}
         {{ $nextBrownbagEvent := index $brownbagEvents $brownbagEventIndex }}
