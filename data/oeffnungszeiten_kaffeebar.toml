@@ -2,7 +2,7 @@
 # den Zeiten her zutrifft.
 [normal]
 text = """
-<p class="mb-0">Mo-Fr <span>7-23 Uhr</span></p>
+<p>Mo-Fr <span>7-23 Uhr</span></p>
 <p>Sa <span>geschlossen</span></p>
 <p>So <span>geschlossen</span></p>
 """
@@ -16,19 +16,11 @@ text = """
 
 # Corona 2021
 [[spezial]]
-display_start = 2021-02-21T00:00:00Z
-display_end = 2021-05-30T23:59:59Z
-text = """
-<p class="mb-0">Mo-Fr <span>9-18 Uhr, bei Bedarf auch länger</span></p>
-<p>Sa <span>geschlossen</span></p>
-<p>So <span>geschlossen</span></p>
-"""
-[[spezial]]
-display_start = 2021-05-31T00:00:00Z
+display_start = 2021-08-16T00:00:00Z
 display_end = 2021-12-31T23:59:59Z
 text = """
-<p class="mb-0">Mo<span>7-20 Uhr</span></p>
-<p class="mb-0">Di-Fr<span>7-22 Uhr</span></p>
+<p>Mo <span>7-20 Uhr</span></p>
+<p>Di-Fr <span>7-22 Uhr</span></p>
 <p>Sa <span>geschlossen</span></p>
 <p>So <span>8-17 Uhr</span></p>
 """
@@ -37,7 +29,7 @@ text = """
 #display_start = 2021-05-10T00:00:00Z
 #display_end = 2021-05-16T23:59:59Z
 #text = """
-#<p class="mb-0">Mo-Fr <span>9-18 Uhr, bei Bedarf auch länger</span></p>
+#<p>Mo-Fr <span>9-18 Uhr, bei Bedarf auch länger</span></p>
 #<p>Sa <span>geschlossen</span></p>
 #<p>So <span>geschlossen</span></p>
 #<p>13.5. Auffahrt <span>geschlossen</span></p>
@@ -49,7 +41,7 @@ text = """
 #display_start = 2021-05-17T00:00:00Z
 #display_end = 2021-05-24T23:59:59Z
 #text = """
-#<p class="mb-0">Mo-Fr <span>9-18 Uhr, bei Bedarf auch länger</span></p>
+#<p>Mo-Fr <span>9-18 Uhr, bei Bedarf auch länger</span></p>
 #<p>Sa <span>geschlossen</span></p>
 #<p>So <span>geschlossen</span></p>
 #<p>24.5. Pfingstmontag <span>geschlossen</span></p>
