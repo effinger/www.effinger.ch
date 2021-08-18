@@ -56,6 +56,10 @@ offers_title = "Menu"
       [[offers.section.element.subelement]]
         text = "Rohschinken, Parmesan"
         price = "+6.00"
+        
+      [[offers.section.element.subelement]]
+        text = "Hummus, Oliven"
+        price = "+4.00"
 
   [[offers.section]]
     title = "Apero"
@@ -117,10 +121,6 @@ offers_title = "Menu"
       [[offers.section.element.subelement]]
         text="Einzelportion jeweils serviert mit Brot"
 
-    [[offers.section.element]]
-      text="Peschäs Nussmischung"
-      price="5.50"
-
   [[offers.section]]
     title = "Vom Bäcker"
     column = "right"
@@ -144,7 +144,7 @@ offers_title = "Menu"
       price="5.00"
 
       [[offers.section.element.subelement]]
-        text="Praliné, Florentiner"
+        text="Praliné, Pistazien"
 
 
     [[offers.section.element]]
@@ -232,7 +232,7 @@ offers_title = "Menu"
 
     [[offers.section.element]]
       text = "Doppio"
-      price = "5.00"
+      price = "5.50"
 
     [[offers.section.element]]
       text = "Kaffee"
@@ -248,19 +248,19 @@ offers_title = "Menu"
 
     [[offers.section.element]]
       text = "Cappuccino Doppio/Flat White"
-      price = "5.20"
+      price = "5.50"
 
     [[offers.section.element]]
       text = "Latte Macchiato"
-      price = "5.20"
+      price = "5.50"
 
     [[offers.section.element]]
       text = "Caffè freddo"
-      price = "5.20"
+      price = "5.50"
 
     [[offers.section.element]]
       text = "Trinkschokolade"
-      price = "5.00"
+      price = "5.50"
 
     [[offers.section.element]]
       text = "Ovomaltine"
@@ -280,70 +280,70 @@ offers_title = "Menu"
 
     [[offers.section.element]]
       text = "Darjeeling"
-      price = "4.80"
+      price = "5.00"
 
       [[offers.section.element.subelement]]
         text = "(Indien)"
 
     [[offers.section.element]]
       text = "Special Earl Grey"
-      price = "4.80"
+      price = "5.00"
 
       [[offers.section.element.subelement]]
         text = "(Indien, Java)"
 
     [[offers.section.element]]
       text = "Rooibos Vanille"
-      price = "4.80"
+      price = "5.00"
 
       [[offers.section.element.subelement]]
         text = "(Südafrika)"
 
     [[offers.section.element]]
       text = "Pfefferminze"
-      price = "4.80"
+      price = "5.00"
 
       [[offers.section.element.subelement]]
         text = "(Europa)"
 
     [[offers.section.element]]
       text = "Verveine"
-      price = "4.80"
+      price = "5.00"
 
       [[offers.section.element.subelement]]
         text = "(Sardinien)"
 
     [[offers.section.element]]
       text = "Grüner Tee Lon Cui Lu"
-      price = "4.80"
+      price = "5.00"
 
       [[offers.section.element.subelement]]
         text = "(China)"
 
     [[offers.section.element]]
       text = "Bella Vita"
-      price = "4.80"
+      price = "5.00"
 
       [[offers.section.element.subelement]]
         text = "(Kräutertee)"
 
     [[offers.section.element]]
       text = "Trois Pommes"
-      price = "4.80"
+      price = "5.00"
 
       [[offers.section.element.subelement]]
         text = "(Früchtetee)"
 
     [[offers.section.element]]
       text = "Wilde Hilde"
-      price = "4.80"
+      price = "5.00"
 
       [[offers.section.element.subelement]]
         text = "(Früchtetee)"
 
     [[offers.section.element]]
       text = "Chai Latte/Iced Chai Latte"
-      price = "5.20"
+      price = "5.50"
     
     [[offers.section.element]]
       text = "Heisser Ingwer"
@@ -362,7 +362,7 @@ offers_title = "Menu"
 
     [[offers.section.element]]
       text = "Goba Mineral"
-      price = "2.50/3.50"
+      price = "3.50/4.50"
 
     [[offers.section.element]]
       text = "Coca Cola / Zero"
@@ -401,10 +401,6 @@ offers_title = "Menu"
       text = "Mandarino Verde"
       price = "5.00"
 
-    [[offers.section.element]]
-      text = "Wostock"
-      price = "5.50"
-
       [[offers.section.element.subelement]]
         text = "- Birne, Rosmarin"
       
@@ -416,16 +412,13 @@ offers_title = "Menu"
       price = "5.00"
 
       [[offers.section.element.subelement]]
-        text = "- Ingwer"
-
-      [[offers.section.element.subelement]]
         text = "- Maracuja"
 
   [[offers.section]]
     column = "right"
 
     [[offers.section.element]]
-      text = "Mandel&Gretchen"
+      text = "Rosenstilzchen"
       price = "5.50"
 
     [[offers.section.element]]
@@ -433,7 +426,7 @@ offers_title = "Menu"
       price = "5.50"
 
     [[offers.section.element]]
-      text = "Fever Tree"
+      text = "Thomas Henry Tonic"
       price = "5.00"
 
       [[offers.section.element.subelement]]
@@ -448,7 +441,7 @@ offers_title = "Menu"
 
     [[offers.section.element]]
       text = "Sirup"
-      price = "3.50/4.50"
+      price = "4.50/5.50"
 
       [[offers.section.element.subelement]]
         text = "Besser als Ystee, Holunder, Blüemli, Elfen, Zwetschgen, Quitten"
@@ -459,18 +452,14 @@ offers_title = "Menu"
 
     [[offers.section.element]]
       text = "Apfelsaft/Schorle"
-      price = "4.00/5.50"
+      price = "4.50/6.00"
 
       [[offers.section.element.subelement]]
         text = "sortenrein"
 
     [[offers.section.element]]
-      text = "Orangensaft"
-      price = "4.50"
-
-    [[offers.section.element]]
-      text = "Pfirsichsaft"
-      price = "4.50"
+      text = "Opaline"
+      price = "5.50"
 
 
 [[offers]]
