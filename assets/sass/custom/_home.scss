@@ -33,7 +33,7 @@
     }
   }
 
-  .angebote {
+  #angebote {
     .list {
       display: flex;
       flex-flow: row wrap;
@@ -45,39 +45,23 @@
         width: 255px;
         margin: 0 15px 60px;
 
-        .picture {
-          position: relative;
-          width: 100%;
-          height: 164px;
-          background-color: #888;
-          background-size: cover;
-          background-blend-mode: multiply;
-          overflow: hidden;
-
-          img {
-            position: absolute;
-          }
-
-          .neu {
-            position: absolute;
-            top: 0;
-            right: 0;
-            transform: rotate(45deg) translate(3em, -2em);
-            padding: 0.4em 0 0.2em;
-            width: 10em;
-            background-color: $primary-color;
-            text-align: center;
-            font-weight: bold;
-          }
+        .icon {
+          height: 60px;
+          width: min-content;
         }
 
         .title {
-          height: 50px;
+          font-size: 2rem;
           text-decoration: none;
         }
 
         .teaser {
           flex-grow: 1;
+          margin-top: 1rem;
+        }
+
+        .call-to-action {
+          margin-top: 1rem;
         }
       }
 
