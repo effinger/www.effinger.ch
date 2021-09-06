@@ -70,18 +70,10 @@
                 </div>
               </div>
             </div> -->
-            <div class="col-sm-6 mb-sm-40">
+            <div class="mb-sm-40">
               <div class="team-item">
-                <div class="team-item-image">
-                  <img src="/images/effianer/domenica-hitz.jpg" alt="" />
-                  <div class="team-item-detail">
-                    <p class="font-alt normal">Kaffeebar</p>
-                  </div>
-                </div>
-                <div class="team-item-descr font-alt">
-                  <div class="team-item-name">
-                    Domenica Hitz
-                  </div>
+                <div class="">
+                  <img src="kontakt_kaffeebar.jpg" alt="" />
                 </div>
               </div>
             </div>
@@ -95,16 +87,12 @@
   <!-- Section coworking -->
   <section class="page-section bg-gray-lighter">
     <div class="relative container">
-      <h1 class="hs-line-11 font-alt mb-80 mb-sm-40">Coworking Space</h1>
+      <h1 class="hs-line-11 font-alt mb-80 mb-sm-40">Coworking</h1>
 
       {{ partial "effianer/get_host.html" . }}
 
       <div class="row">
-        {{ if $.Scratch.Get "host" }}
         <div class="col-md-4 col-md-push-8 col-sm-6 mb-md-50">
-        {{ else }}
-        <div class="col-md-4 col-sm-6 mb-50">
-        {{ end }}
           <div class="contact-item clearfix">
             <h4 class="uppercase">Kontakt Coworking</h4>
             <div class="wave-spacer"></div>
@@ -119,38 +107,50 @@
           </div>
         </div>
 
-        {{ with $.Scratch.Get "host" }}
-          <div class="col-md-8 col-md-pull-4 col-sm-12">
-            <div class="row">
+        {{ if $.Scratch.Get "host" }}
 
-              <div class="col-sm-6 mb-100">
-                <div class="team-item">
-                  <div class="team-item-image">
-                    <img src="{{ .image }}" alt="{{ .name }}" />
-                    <div class="team-item-detail">
-                      <p class="font-alt normal">Coworking</p>
+          {{ with $.Scratch.Get "host" }}
+            <div class="col-md-8 col-md-pull-4 col-sm-12">
+              <div class="row">
+
+                <div class="col-sm-6 mb-100">
+                  <div class="team-item">
+                    <div class="team-item-image">
+                      <img src="{{ .image }}" alt="{{ .name }}" />
+                      <div class="team-item-detail">
+                        <p class="font-alt normal">Coworking</p>
+                      </div>
                     </div>
-                  </div>
-                  <div class="team-item-descr font-alt">
-                    <div class="team-item-name">
-                      {{ .name }}
-                    </div>
-                    <div class="team-item-role">
-                      <span class="active-day"><i class="fa fa-chevron-right"></i>Heute {{ if eq .gender "m" }}Gastgeber{{ else }}Gastgeberin{{ end }}<i class="fa fa-chevron-left"></i>
-                       </span>
+                    <div class="team-item-descr font-alt">
+                      <div class="team-item-name">
+                        {{ .name }}
+                      </div>
+                      <div class="team-item-role">
+                        <span class="active-day"><i class="fa fa-chevron-right"></i>Heute {{ if eq .gender "m" }}Gastgeber{{ else }}Gastgeberin{{ end }}<i class="fa fa-chevron-left"></i>
+                        </span>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        {{ end }}
-
-        </div>
-
         <div class="team-item">
           <a href="/community/#effianer" class="btn btn-mod btn-border btn-medium btn-round">&rarr; Alle Gastgeber anzeigen</a>
         </div>
+          {{ end }}
+        {{ else }}
+
+            <div class="col-md-8 col-md-pull-4 col-sm-12">
+              <div class="team-item">
+                <div class="">
+                  <img src="kontakt_coworking.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        {{ end }}
+        </div>
+
       </div>
     </div>
   </section>
