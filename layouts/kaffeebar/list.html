@@ -18,7 +18,7 @@
           </h1>
 
           <div class="local-scroll">
-            <a href="#angebote" class="btn btn-mod btn-border-w btn-medium btn-round">Angebot</a>
+            <a href="#angebot" class="btn btn-mod btn-border-w btn-medium btn-round">Angebot</a>
             <span class="hidden-xs">&nbsp;</span>
             <a href="#team" class="btn btn-mod btn-border-w btn-medium btn-round">Team</a>
           </div>
@@ -32,7 +32,7 @@
   <!-- End Header -->
 
   <!-- Section -->
-  <section class="page-section">
+  <section class="page-section" id="angebot">
     <div class="container relative">
 
 
@@ -43,20 +43,21 @@
         <div class="col-sm-8 mb-40">
 
           <div class="text">
-            <h2 class="hs-line-11 font-alt mb-60">Effinger Kaffeebar</h2>
-            <p>
-              Bei uns gibt es guten Kaffee für Tanten, Espresso für Eilige und Tee für Abwartende. Und auch Apéros für Prostende, Bier für Feierabende und Wein für alle. </p>
-            <p>
-              Perfekt zum Feierabendbier: Hummus, Oliven, Fetawürfeli und andere Köstlichkeiten.
+            <h2 class="hs-line-11 font-alt mb-60">Für Pause, Feierabend und Sonntagsbrunch</h2>
+            <p>  
+              Bei uns gibt’s guten Kaffee zum Znüni und Berner Pies fürs schnelle Zmittag – und alles, was es abends fürs Apéro braucht! 
             </p>
             <p>
-              Und was bestellst du?
+              <i class="fa fa-bullhorn"></i> Sonntags servieren wir dir, deinen Freunden oder deiner Familie einen Sonntagsbrunch mit lauter lokalen Leckereien. 
             </p>
             <p>
-              <i class="fa fa-bullhorn"></i> Jeden Sonntag laden wir zudem auch zum Zmorge.
+              Besonders willkommen sind bei uns auch die kleinsten Gäste: ihnen ist unsere gemütliche Kinderecke gewidmet. 
             </p>
             <p>
               Wir freuen uns auf deinen Besuch!
+            </p>
+            <p>
+              <a href="https://drive.google.com/uc?id=1IgOZ0xkHDpUOOkAeml8UmNemHalvxf2q" target="_blank" class="btn btn-mod btn-medium btn-round">Unsere Karte (PDF)</a>
             </p>
           </div>
 
@@ -192,57 +193,6 @@
   </section>
   <!-- End Section -->
 
-  <!-- Section -->
-  <section id="angebote" class="page-section pt-80 pb-80 bg-gray-lighter">
-    <div class="container relative">
-
-      <h2 class="hs-line-11 font-alt mb-60 text-center">{{ .Params.offers_title }}</h2>
-
-      <!-- Accordion -->
-      <dl class="toggle offers">
-
-        {{ range .Params.offers }}
-        <dt>
-          <a href="" class="offers-title">
-            {{ if .icon }}
-              {{ .icon | safeHTML }}
-            {{ end }}
-            <span>
-              {{ .title }}
-            </span>
-          </a>
-        </dt>
-        <dd>
-          <div>
-            <!-- Two columns for medium and large screens with defined left/right ordering -->
-            <div class="row hidden-xs">
-              <div class="col-sm-6 left">
-                {{ range where .section "column" "left" }}
-                  {{ partial "kaffeebar/menu_item.html" . }}
-                {{end }}
-              </div>
-              <div class="col-sm-6 right">
-                {{ range where .section "column" "right" }}
-                  {{ partial "kaffeebar/menu_item.html" . }}
-                {{end }}
-              </div>
-            </div>
-            <!-- One column for small screens -->
-            <div class="visible-xs-block">
-            {{ range .section }}
-              {{ partial "kaffeebar/menu_item.html" . }}
-            {{end }}
-            </div>
-          </div>
-        </dd>
-        {{ end }}
-      </dl>
-      <!-- End Accordion -->
-
-    </div>
-  </section>
-  <!-- End Section -->
-
   <!-- Team Section -->
   <section class="page-section pb-40" id="team">
     <div class="container relative">
@@ -302,7 +252,7 @@
   </section>
   <!-- End Team Section -->
 
-  <section class="page-section bg-dark-lighter">
+  <section class="page-section bg-dark-lighter" id="kontakt">
     <div class="container">
       <div class="contact-item contact-oeffnungszeiten mt-20 mb-20 clearfix">
         <h4 class="uppercase">Kontakt</h4>
