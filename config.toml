@@ -43,38 +43,38 @@ disableFastRender = true
   url = "/coworking/"
 
 [[menu.main]]
-  name = "Community"
+  name = "Über uns"
   pre = "<i class='fa fa-users'></i>"
   weight = 103
   url = "/community/"
 
   [[menu.main]]
-    name = "Über uns"
-    parent = "Community"
+    name = "Community"
+    parent = "Über uns"
     weight = 1
     url = "/community/"
 
   [[menu.main]]
     name = "Geschichte"
-    parent = "Community"
+    parent = "Über uns"
     weight = 2
     url = "/geschichte/"
 
   [[menu.main]]
     name = "Grundsätze"
-    parent = "Community"
+    parent = "Über uns"
     weight = 3
     url = "/grundsaetze/"
 
   [[menu.main]]
     name = "Organisation"
-    parent = "Community"
+    parent = "Über uns"
     weight = 4
     url = "/organisation/"
 
   [[menu.main]]
     name = "Finanzen"
-    parent = "Community"
+    parent = "Über uns"
     weight = 5
     url = "/finanzen/"
 
