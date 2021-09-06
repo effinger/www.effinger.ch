@@ -18,3 +18,10 @@ location = "Zürich"
 image = "/images/corelated/tessinerplatz.png"
 websiteTitle = "tessinerplatz.ch"
 websiteUrl = "https://www.tessinerplatz.ch"
+
+[[community]]
+name = "Zoffice"
+location = "Zofingen"
+image = "/images/corelated/zoffice.png"
+websiteTitle = "zoffice.ch"
+websiteUrl = "https://www.zoffice.ch"
