@@ -40,3 +40,18 @@
     }
   }
 }
+
+#facilities {
+  ul {
+    list-style: none;
+
+    li {
+      padding: 1em;
+      white-space: pre;
+
+      i {
+        padding-right: 1rem;
+      }
+    }
+  }
+}
