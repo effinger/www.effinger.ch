@@ -1,6 +1,7 @@
 # API for accessing the host calendar information.
 apiUrl = "https://script.google.com/a/effinger.ch/macros/s/AKfycbw3aGTPwR4t_UdMmcwjQEERrMN_pbx5Dl6NYXVf8zGlzKU5_Y8/exec"
 calendarId = "effinger.ch_3736303136393637343739@resource.calendar.google.com"
+about = ""
 
 [[Person]]
 name = "Faustina Kromah"
@@ -13,6 +14,7 @@ twitter = ""
 facebook = ""
 instagram = ""
 linkedin = ""
+about = "Embodiment"
 
 [[Person]]
 name = "Stefan Niederhauser"
@@ -25,6 +27,7 @@ twitter = ""
 facebook = ""
 instagram = ""
 linkedin = "sniederhauser"
+about = "Edu-Tech"
 
 [[Person]]
 name = "Benjamin Bracher"
@@ -37,6 +40,7 @@ twitter = ""
 facebook = ""
 instagram = ""
 linkedin = ""
+about = "Fonio"
 
 [[Person]]
 name = "Raffael Krebs"
@@ -49,6 +53,7 @@ twitter = ""
 facebook = ""
 instagram = ""
 linkedin = "raffaelkrebs"
+about = "Webapps"
 
 [[Person]]
 name = "Jonathan Bucher"
@@ -61,6 +66,7 @@ twitter = ""
 facebook = ""
 instagram = ""
 linkedin = ""
+about = "Colearner"
 
 [[Person]]
 name = "Benji Ammann"
@@ -73,6 +79,7 @@ twitter = ""
 facebook = ""
 instagram = ""
 linkedin = ""
+about = "Finanzen"
 
 [[Person]]
 name = "Christa-Maria Tobler"
@@ -85,6 +92,7 @@ twitter = ""
 facebook = ""
 instagram = ""
 linkedin = ""
+about = "Coliving"
 
 [[Person]]
 name = "Claudine Etter"
@@ -97,6 +105,7 @@ twitter = ""
 facebook = ""
 instagram = "atelier.c"
 linkedin = "atelier.c"
+about = "Illustratorin"
 
 [[Person]]
 name = "Corinne Roth Vock"
@@ -109,6 +118,7 @@ twitter = ""
 facebook = ""
 instagram = ""
 linkedin = ""
+about = "Kommunikation"
 
 [[Person]]
 name = "David Eggimann"
@@ -121,6 +131,7 @@ twitter = ""
 facebook = ""
 instagram = ""
 linkedin = ""
+about = "Webdesign"
 
 [[Person]]
 name = "Domenica Hitz"
@@ -134,6 +145,7 @@ twitter = ""
 facebook = ""
 instagram = "effingerbern"
 linkedin = "effingerbern"
+about = "Kaffee"
 
 [[Person]]
 name = "Alexis Giard"
@@ -146,6 +158,7 @@ twitter = ""
 facebook = ""
 instagram = ""
 linkedin = ""
+about = "Mars-Game"
 
 [[Person]]
 name = "Fabian Steiner"
@@ -158,6 +171,7 @@ twitter = ""
 facebook = ""
 instagram = "fabust.film"
 linkedin = "fabust.film"
+about = "Film"
 
 [[Person]]
 name = "Fredi Zumbrunn"
@@ -170,18 +184,7 @@ twitter = ""
 facebook = ""
 instagram = ""
 linkedin = ""
-
-[[Person]]
-name = "Heinz Bolliger"
-gender = "m"
-image = "/images/effianer/heinz-bolliger.jpg"
-email = "heinz@effinger.ch"
-phone = ""
-website = ""
-twitter = ""
-facebook = ""
-instagram = ""
-linkedin = ""
+about = "Salutogenese"
 
 [[Person]]
 name = "Ismael Basler"
@@ -194,6 +197,7 @@ twitter = ""
 facebook = ""
 instagram = ""
 linkedin = ""
+about = "Architekt"
 
 [[Person]]
 name = "Jonathan Hess"
@@ -206,18 +210,8 @@ twitter = ""
 facebook = ""
 instagram = ""
 linkedin = ""
+about = "Live-Streaming"
 
-[[Person]]
-name = "Kim Eggimann"
-gender = "f"
-image = "/images/effianer/kim-eggimann.jpg"
-email = "kim@effinger.ch"
-phone = ""
-website = ""
-twitter = ""
-facebook = ""
-instagram = ""
-linkedin = ""
 
 [[Person]]
 name = "Manuel Bürli"
@@ -230,6 +224,7 @@ twitter = ""
 facebook = "herrbuerli"
 instagram = ""
 linkedin = ""
+about = "Branding"
 
 [[Person]]
 name = "Marco Jakob"
@@ -242,6 +237,7 @@ twitter = ""
 facebook = ""
 instagram = ""
 linkedin = ""
+about = "Vordenker"
 
 [[Person]]
 name = "Markus Roos"
@@ -254,6 +250,7 @@ twitter = ""
 facebook = ""
 instagram = ""
 linkedin = ""
+about = "Raumvermietung"
 
 [[Person]]
 name = "Matthias Tobler"
@@ -266,30 +263,7 @@ twitter = ""
 facebook = ""
 instagram = ""
 linkedin = ""
-
-[[Person]]
-name = "Michael Aerni"
-gender = "m"
-image = "/images/effianer/michael-aerni.jpg"
-email = "michael@effinger.ch"
-phone = ""
-website = "https://www.michaelaerni.ch/"
-twitter = ""
-facebook = ""
-instagram = ""
-linkedin = ""
-
-[[Person]]
-name = "Michael Friedrich"
-gender = "m"
-image = "/images/effianer/michael-friedrich.jpg"
-email = "michu@effinger.ch"
-phone = ""
-website = ""
-twitter = ""
-facebook = ""
-instagram = ""
-linkedin = ""
+about = "Urbane Dörfer"
 
 [[Person]]
 name = "Oleg Lavrovsky"
@@ -302,6 +276,7 @@ twitter = "loleg"
 facebook = "lavrovsky"
 instagram = ""
 linkedin = ""
+about = "Hacker"
 
 [[Person]]
 name = "Tavi Venzin"
@@ -314,6 +289,7 @@ twitter = ""
 facebook = ""
 instagram = "tavivenzin"
 linkedin = "tavivenzin"
+about = "Social Media"
 
 [[Person]]
 name = "Thomas Bucher"
@@ -326,6 +302,7 @@ twitter = ""
 facebook = ""
 instagram = ""
 linkedin = ""
+about = "Buchhalter"
 
 [[Person]]
 name = "Timon Marmet"
@@ -338,6 +315,7 @@ twitter = ""
 facebook = ""
 instagram = ""
 linkedin = ""
+about = "Schreiner"
 
 [[Person]]
 name = "Urs Vögeli"
@@ -345,8 +323,49 @@ gender = "m"
 image = "/images/effianer/urs-voegeli.jpg"
 email = "urs@effinger.ch"
 phone = ""
-website = ""
-twitter = ""
+website = "www.globalaffairs.ch"
+twitter = "uvoegeli"
 facebook = "urs.vogeli.3"
+instagram = "urs_legocreations"
+linkedin = "urs-vögeli-70647a44"
+about = "Politik"
+
+[[Person]]
+name = "Hermann Flückiger"
+gender = "m"
+image = "/images/effianer/hermann-flueckiger.jpg"
+email = "hermann.f@bluemail.ch"
+phone = ""
+website = "https://hermann.netlify.app/"
+twitter = ""
+facebook = ""
 instagram = ""
 linkedin = ""
+about = "Allrounder"
+
+[[Person]]
+name = "Oliver Schären"
+gender = "m"
+image = "/images/effianer/oliver-schaeren.jpg"
+email = "hermann.f@bluemail.ch"
+phone = ""
+website = "https://hermann.netlify.app/"
+twitter = ""
+facebook = ""
+instagram = ""
+linkedin = ""
+about = "Regisseur"
+
+
+[[Person]]
+name = "Colearner"
+gender = ""
+image = "/images/effianer/verein-colearning.jpg"
+email = "info@colearningbern.ch"
+phone = ""
+website = "https://www.colearningbern.ch/"
+twitter = "colearningbern"
+facebook = "colearningbern"
+instagram = ""
+linkedin = ""
+about = "Bildung"
