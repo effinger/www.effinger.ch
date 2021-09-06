@@ -44,6 +44,86 @@
   </section>
   <!-- End Section Vision -->
 
+  <section class="page-section bg-gray pb-60" id="effianer">
+    <div class="container relative">
+
+      <h2 class="hs-line-11 font-alt mb-60 text-center">Die Effianer</h2>
+
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2 mb-70 mb-xs-40">
+          <div class="section-text">
+            <p>
+              Die Effianer*innen kümmern sich gemeinsam um den Betrieb des Effingers und reservieren sich Zeit füreinander und für die Community. 
+              Ihre Arbeit ist ehrenamtlich. Dafür erhalten sie einen günstigeren Arbeitsplatz und dazu Vieles, das man nicht mit Geld kaufen könnte.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row multi-columns-row">
+        {{ range $.Site.Data.effianer.Person }}
+        <!-- Effianer Item -->
+        <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 mb-140">
+          <div class="team-item">
+            <div class="team-item-image">
+              <img src="{{ .image }}" alt="" />
+            </div>
+            <div class="team-item-descr font-alt">
+              <div class="team-item-name">
+                {{ .name }}
+
+                {{ if .about }}
+                  , {{ .about }}
+                {{ end }}
+
+                <div class="team-social-links">
+                  {{ if .email }}
+                    <a href="mailto:{{ .email }}" target="_blank"><i class="fa fa-envelope"></i></a>
+                  {{ end }}
+                  {{ if .phone }}
+                    <a href="tel:{{ .phone }}" target="_blank"><i class="fa fa-phone"></i></a>
+                  {{ end }}
+                  {{ if .website }}
+                    <a href="{{ .website }}" target="_blank"><i class="fa fa-globe"></i></a>
+                  {{ end }}
+                  {{ if .twitter }}
+                    <a href="https://twitter.com/{{ .twitter }}" target="_blank"><i class="fa fa-twitter"></i></a>
+                  {{ end }}
+                  {{ if .facebook }}
+                    <a href="https://www.facebook.com/{{ .facebook }}" target="_blank"><i class="fa fa-facebook"></i></a>
+                  {{ end }}
+                  {{ if .instagram }}
+                    <a href="https://www.instagram.com/{{ .instagram }}" target="_blank"><i class="fa fa-instagram"></i></a>
+                  {{ end }}
+                  {{ if .linkedin }}
+                    <a href="https://www.linkedin.com/in/{{ .linkedin }}/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                  {{ end }}
+                </div>
+
+              </div>
+              <!-- Was used for fixed Host-Days.
+              {{ $today := index $.Site.Data.de.weekdays now.Weekday }}
+              <div class="team-item-role">
+                {{ .description }}
+                {{ if .host }}
+                  {{ if eq .gender "m" }}Gastgeber{{ else }}Gastgeberin{{ end }}
+                   am
+                  {{ $num_days := len .host }}
+                  {{ range $i, $day := .host }}{{ if gt $i 0 }}{{ if eq (add $i 1) $num_days }} und {{ else }}, {{ end }}{{ end }}
+                  {{ if eq $day $today }}<span class="active-day text-nowrap"><i class="fa fa-chevron-right"></i>{{ end }}{{ $day }}{{ if eq $day $today }}<i class="fa fa-chevron-left"></i></span>{{ end }}{{ end }}
+                {{ end }}
+              </div>
+              -->
+            </div>
+          </div>
+        </div>
+        <!-- End Effianer Item -->
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  <!-- End Effianer Section -->
+
   <!-- Effianer Section -->
   <section class="page-section" id="community">
     <div class="container relative">
@@ -99,82 +179,6 @@
       </div>
     </div>
   </section>
-
-  <section class="page-section bg-gray pb-60" id="effianer">
-    <div class="container relative">
-
-      <h2 class="hs-line-11 font-alt mb-60 text-center">Die Effianer</h2>
-
-      <div class="row">
-        <div class="col-md-8 col-md-offset-2 mb-70 mb-xs-40">
-          <div class="section-text">
-            <p>
-              Die Effianer*innen kümmern sich gemeinsam um den Betrieb des Effingers und reservieren sich Zeit füreinander und für die Community. 
-              Ihre Arbeit ist ehrenamtlich. Dafür erhalten sie einen günstigeren Arbeitsplatz und dazu Vieles, das man nicht mit Geld kaufen könnte.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="row multi-columns-row">
-        {{ range $.Site.Data.effianer.Person }}
-        <!-- Effianer Item -->
-        <div class="col-sm-6 col-md-3 col-lg-3 mb-140">
-          <div class="team-item">
-            <div class="team-item-image">
-              <img src="{{ .image }}" alt="" />
-              <div class="team-item-detail">
-                <div class="team-social-links">
-                  {{ if .email }}
-                    <a href="mailto:{{ .email }}" target="_blank"><i class="fa fa-envelope"></i></a>
-                  {{ end }}
-                  {{ if .phone }}
-                    <a href="tel:{{ .phone }}" target="_blank"><i class="fa fa-phone"></i></a>
-                  {{ end }}
-                  {{ if .website }}
-                    <a href="{{ .website }}" target="_blank"><i class="fa fa-globe"></i></a>
-                  {{ end }}
-                  {{ if .twitter }}
-                    <a href="https://twitter.com/{{ .twitter }}" target="_blank"><i class="fa fa-twitter"></i></a>
-                  {{ end }}
-                  {{ if .facebook }}
-                    <a href="https://www.facebook.com/{{ .facebook }}" target="_blank"><i class="fa fa-facebook"></i></a>
-                  {{ end }}
-                  {{ if .instagram }}
-                    <a href="https://www.instagram.com/{{ .instagram }}" target="_blank"><i class="fa fa-instagram"></i></a>
-                  {{ end }}
-                  {{ if .linkedin }}
-                    <a href="https://www.linkedin.com/in/{{ .linkedin }}/" target="_blank"><i class="fa fa-linkedin"></i></a>
-                  {{ end }}
-                </div>
-              </div>
-            </div>
-            <div class="team-item-descr font-alt">
-              <div class="team-item-name">
-                {{ .name }}
-              </div>
-              <!-- Was used for fixed Host-Days.
-              {{ $today := index $.Site.Data.de.weekdays now.Weekday }}
-              <div class="team-item-role">
-                {{ .description }}
-                {{ if .host }}
-                  {{ if eq .gender "m" }}Gastgeber{{ else }}Gastgeberin{{ end }}
-                   am
-                  {{ $num_days := len .host }}
-                  {{ range $i, $day := .host }}{{ if gt $i 0 }}{{ if eq (add $i 1) $num_days }} und {{ else }}, {{ end }}{{ end }}
-                  {{ if eq $day $today }}<span class="active-day text-nowrap"><i class="fa fa-chevron-right"></i>{{ end }}{{ $day }}{{ if eq $day $today }}<i class="fa fa-chevron-left"></i></span>{{ end }}{{ end }}
-                {{ end }}
-              </div>
-              -->
-            </div>
-          </div>
-        </div>
-        <!-- End Effianer Item -->
-        {{ end }}
-      </div>
-    </div>
-  </section>
-  <!-- End Effianer Section -->
 
   <!-- Section Medien -->
   <section class="page-section">

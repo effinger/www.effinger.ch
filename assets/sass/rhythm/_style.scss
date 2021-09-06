@@ -3075,7 +3075,7 @@ Team
   margin-top: 23px;
   font-size: 15px;
   text-transform: uppercase;
-  letter-spacing: 0.4em;
+  letter-spacing: 0.1em;
 }
 .team-item-role {
   margin-top: 4px;
@@ -3087,10 +3087,11 @@ Team
 .team-social-links {
   font-size: 14px;
   cursor: pointer;
+  display: inline-block;
 }
 .team-social-links a {
   display: inline-block;
-  padding: 3px 7px;
+  padding: 0px 0px;
   color: rgba(0, 0, 0, 0.4);
 
   -webkit-transition: all 0.27s cubic-bezier(0, 0, 0.58, 1);
