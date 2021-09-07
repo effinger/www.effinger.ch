@@ -5,15 +5,9 @@ image = "/images/kaffeebar/christa.jpg"
 comment = ""
 
 [[Person]]
-name = "Yola"
-gender = "f"
-image = "/images/kaffeebar/yola.jpg"
-comment = ""
-
-[[Person]]
-name = "Sophie"
-gender = "f"
-image = "/images/kaffeebar/sophie.jpg"
+name = "Nico"
+gender = "m"
+image = "/images/kaffeebar/nico.jpg"
 comment = ""
 
 [[Person]]
