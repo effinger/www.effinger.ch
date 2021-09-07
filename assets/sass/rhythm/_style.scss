@@ -4154,7 +4154,7 @@ Footer
 
 .footer {
   text-align: center;
-  font-size: 12px;
+  font-size: 14px;
 }
 .footer a {
   color: #888;
@@ -4175,11 +4175,6 @@ Footer
   text-transform: uppercase;
   letter-spacing: 0.5em;
 }
-.footer-made {
-  font-size: 11px;
-  color: #999;
-}
-
 .footer-social-links {
   font-size: 14px;
 }
@@ -4213,7 +4208,9 @@ Footer
   position: absolute;
   top: 0;
   left: 0;
-  border: 1px solid #111;
+  border: 1px solid #fff;
+  background-color: #fff;
+  color: #111;
 
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
@@ -4236,6 +4233,17 @@ Footer
 }
 .footer-social-links a:hover:before {
   background: #111;
+}
+.footer h2 {
+  font-size: 1.7rem;
+  text-transform: uppercase;
+}
+@media (max-width: 768px) {
+  .footer .reverse-xs {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
 }
 
 a.link-to-top {

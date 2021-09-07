@@ -1,68 +1,99 @@
 <!-- Divider -->
-<hr class="mt-0 mb-0"/>
+<hr class="mt-0 mb-0"  id="kontakt"><!-- this is for some internal links... -->
 <!-- End Divider -->
 
-<footer class="page-section bg-gray-lighter footer pb-60">
-  <div class="container">
+<footer class="page-section bg-dark-lighter footer pb-60 pt-80">
+    <div class="container">
+      <div class="row reverse-xs">
+        <div class="col-sm-4 text-left" style="padding: 0px 20px">
+          <!-- Logo -->
+          <div class="mt-20">
+            <a href="#top"><img src="/images/logo-effinger-gelb-weiss.svg" width="160" height="97" alt="" /></a>
+          </div>
+          <h2>Effinger Kaffeebar & Coworking</h2>
+          <p>Wir sind ein selbstorganisierter Verein mit lebendiger Community. Erfahre <a href="/community/">hier</a> mehr über uns.</p>
+          <div class="wave-spacer"></div>
 
-    <!-- Footer Logo -->
-    <div class="local-scroll mb-30 wow fadeInUp" data-wow-duration="1.5s">
-      <a href="#top"><img src="/images/logo-footer.png" width="78" height="36" alt="" /></a>
-    </div>
-    <!-- End Footer Logo -->
+          <!-- Social Links -->
+          <h2>Besuche uns auf Social Media</h2>
+          <div class="footer-social-links mb-40 mt-20">
+            <a href="https://www.facebook.com/effingerbern" title="EffingerBern auf Facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+            <a href="https://twitter.com/EffingerBern" title="EffingerBern auf Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.instagram.com/effingerbern/" title="EffingerBern auf Instagram" target="_blank"><i class="fa fa-instagram"></i></a>
+            <a href="https://eepurl.com/bw3j3H" title="Effinger Newsletter" target="_blank"><i class="fa fa-envelope"></i></a>
+          </div>
+          <div class="wave-spacer mt-20 mb-20"></div>
 
-    <!-- Social Links -->
-    <div class="footer-social-links mb-xs-40">
-      <a href="https://www.facebook.com/effingerbern" title="EffingerBern auf Facebook" target="_blank"><i class="fa fa-facebook"></i></a>
-      <a href="https://twitter.com/EffingerBern" title="EffingerBern auf Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
-      <a href="https://www.instagram.com/effingerbern/" title="EffingerBern auf Instagram" target="_blank"><i class="fa fa-instagram"></i></a>
-      <a href="https://eepurl.com/bw3j3H" title="Effinger Newsletter" target="_blank"><i class="fa fa-envelope"></i></a>
-    </div>
-    <!-- End Social Links -->
+          <!-- Newsletter -->
+          <h2 class="mb-20">Abonniere unseren Newsletter</h2>
+          <form action="//effinger.us7.list-manage.com/subscribe/post?u=5a0d49e0bb2a74f7699a6be85&amp;id=cceb9fd731" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="form-inline form mb-20" target="_blank" novalidate="">
+            <div class="form-group row">
+              <div class="col-sm-6"><input type="email" class="form-control input-md mb-10 " placeholder="E-MAIL ADRESSE" name="EMAIL" id="mce-EMAIL" style="text-transform: none; background-color: transparent; border-color: white; color: white;"></div>
+              <div class="col-sm-6"><input type="submit" class="form-control btn btn-mod btn-w btn-medium btn-round" value="Abonnieren" name="subscribe" id="mc-embedded-subscribe" style="padding: 8px 10px;"></div>
+              <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+              <div style="position: absolute; left: -5000px;"><input type="text" name="b_5a0d49e0bb2a74f7699a6be85_cceb9fd731" tabindex="-1" value=""></div>
+            </div>
+          </form>
+          <div class="wave-spacer mb-20"></div>
 
-    <div class="newsletter-arrow-container mb-xs-10">
-      <a href="https://eepurl.com/bw3j3H" target="_blank">
-        <img src="/images/newsletter-arrow.png" alt="Pfeil" class="newsletter-arrow"></a>
-    </div>
+          <p>
+            Diese Website mit Inhalten, Entwicklung, Design und Bildern stammt von der Effinger Community. Es wären schlicht zu viele Namen, um alle einzeln aufzuzählen.
+            
+            <a class="" href="https://sites.google.com/effinger.ch/intranet">
+              <i class="fa fa-arrow-right"></i> Zum Effinger Intranet
+            </a>
+          </p>
+        </div>
+        <!-- End Logo & Newsletter-->
 
-    <form action="//effinger.us7.list-manage.com/subscribe/post?u=5a0d49e0bb2a74f7699a6be85&amp;id=cceb9fd731" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="form-inline form mb-40" target="_blank" novalidate="">
-      <div class="form-group">
-        <input type="email" class="form-control input-md mb-xs-10" placeholder="E-MAIL ADRESSE" name="EMAIL" id="mce-EMAIL" style="text-transform: none;">
-        <input type="submit" class="form-control btn btn-mod btn-border btn-medium btn-round" value="Abonnieren" name="subscribe" id="mc-embedded-subscribe">
-        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-        <div style="position: absolute; left: -5000px;"><input type="text" name="b_5a0d49e0bb2a74f7699a6be85_cceb9fd731" tabindex="-1" value=""></div>
+        <!-- Contact -->
+        <div class="col-sm-4">
+          <div class="contact-item contact-oeffnungszeiten mt-20 mb-20 clearfix">
+            <h4 class="uppercase">Kaffeebar</h4>
+            <div class="wave-spacer"></div>
+            <div class="item">
+              {{ partial "oeffnungszeiten_kaffeebar.html" . }}
+            </div>
+            <div class="item mt-20">
+              <p>Telefon<span><a href="tel:+41313982020">031 398 20 20</a></span></p>
+              <p>Email<span><a href="mailto:kaffeebar@effinger.ch">kaffeebar@effinger.ch</a></span></p>
+              <p>Adresse<span><a href="https://www.google.ch/maps/place/Effinger+-+Kaffeebar+%26+Coworking+Space/@46.94604,7.4336198,17z/data=!3m1!4b1!4m2!3m1!1s0x478e39bf613a53f7:0x30f7464656fbe3b2">Effingerstrasse
+                    10, Bern</a></span></p>
+            </div>
+            <div class="wave-spacer"></div>
+            <div class="item mt-20">
+              <p><strong>Reservationen</strong> für den selben Tag nehmen wir gerne per Telefon entgegen, alle anderen auch per Mail. <span style="text-decoration: line-through; font-weight: 300; text-align:left; display:none;">Fürs Sonn&shy;tags&shy;zmorge ist am Frei&shy;tag&shy;abend Re&shy;ser&shy;vations&shy;schluss.</span></p>
+            </div>
+          </div>
+          <div class="contact-private-party text-left">
+            <img src="/images/partybutton.png" alt="Privatanlass">
+            <span>
+              Der Sams­tag steht für Ge­burts­tags­fes­te, Bude-­Zmor­ge oder Pen­sion­ierungs­apé­ros zur Ver­fü­gung.
+            </span>
+          </div>
+
+        </div>
+        <div class="col-sm-4">
+          <div class="contact-item contact-oeffnungszeiten mt-20 mb-20 clearfix">
+            <h4 class="uppercase">Coworking</h4>
+            <div class="wave-spacer"></div>
+            <div class="item">
+              {{ partial "oeffnungszeiten_coworking.html" . }}
+            </div>
+            <div class="item mt-20">
+              <p>Telefon<span><a href="tel:+41313982021">031 398 20 21</a></span></p>
+              <p>Email<span><a href="mailto:coworking@effinger.ch">coworking@effinger.ch</a></span></p>
+              <p>Adresse<span><a href="https://www.google.ch/maps/place/Effinger+-+Kaffeebar+%26+Coworking+Space/@46.94604,7.4336198,17z/data=!3m1!4b1!4m2!3m1!1s0x478e39bf613a53f7:0x30f7464656fbe3b2">Effingerstrasse
+                    10, Bern</a></span></p>
+            </div>
+            <div class="wave-spacer"></div>
+            <div class="item mt-20">
+              <p><strong>Tagespass: </strong> Melde dich spontan bei unseren Tageshosts in der Lounge.</span></p>
+            </div>
+          </div>
+        </div>
+        <!-- End Contact -->
       </div>
-    </form>
-
-    <div class="mb-20">
-      <a class="btn btn-mod btn-gray btn-round" href="https://sites.google.com/effinger.ch/intranet">
-        <i class="fa fa-diamond"></i> Zum Intranet
-      </a>
     </div>
-
-    <!-- Footer Text -->
-    <div class="footer-text">
-
-      <!-- Copyright -->
-      <div class="footer-copy font-alt">
-        <a href="/organisation/">&copy; Verein Coworking Community Bern</a>
-      </div>
-      <!-- End Copyright -->
-
-      <div class="footer-made">
-        Webdesign by <a href="https://movingwater.ch/" target="_blank">Joni Hess</a> and <a href="https://www.jakob.services" target="_blank">Marco Jakob</a>, Fotos by <a href="http://rolandjuker.ch" target="_blank">Roland Juker</a>
-      </div>
-
-    </div>
-    <!-- End Footer Text -->
-
-  </div>
-
-
-  <!-- Top Link -->
-  <div class="local-scroll">
-    <a href="#top" class="link-to-top"><i class="fa fa-caret-up"></i></a>
-  </div>
-  <!-- End Top Link -->
-
+  </section>
 </footer>
