@@ -4258,6 +4258,30 @@ a.link-to-top {
   font-size: 48px;
 }
 
+
+.intro-video {
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 0px 16px;
+}
+.intro-video .text {
+  margin-left: 40px;
+}
+
+@media (max-width: 768px) {
+  .intro-video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .intro-video .text {
+    margin-left: 0;
+  }
+  .intro-video iframe {
+    max-width: 100% !important;
+  }
+}
+
 /* ==============================
 Blog
 ============================== */
