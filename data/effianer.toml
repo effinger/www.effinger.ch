@@ -331,9 +331,9 @@ linkedin = "urs-vögeli-70647a44"
 about = "Politik"
 
 [[Person]]
-name = "Hermann Flückiger"
+name = "Hermann Flükiger"
 gender = "m"
-image = "/images/effianer/hermann-flueckiger.jpg"
+image = "/images/effianer/hermann-fluekiger.jpg"
 email = "hermann.f@bluemail.ch"
 phone = ""
 website = "https://hermann.netlify.app/"
