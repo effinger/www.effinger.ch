@@ -108,7 +108,11 @@
               {{ $url := .RelPermalink }}
               {{ range .Params.gallery }}
               <li>
-                <img src="{{ $url }}{{ . }}" alt="" />
+                {{ if or (strings.HasSuffix . "mp4") (strings.HasSuffix . "mov") }}
+                  <video src="{{ $url }}{{ . }}" width="555" height="312" controls/>
+                {{ else }}
+                  <img src="{{ $url }}{{ . }}" alt="" />
+                {{ end }}
               </li>
               {{ end }}
             </ul>
