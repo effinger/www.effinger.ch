@@ -8,8 +8,8 @@ draft = false
 reservation_link = "https://studio.effinger.ch/"
 
 aliases = [
-    "/raeume/labor/"
-    "/raeume/zweites-ug/"
+    "/raeume/labor/",
+    "/raeume/zweites-ug/",
 ]
 
 gallery = [
