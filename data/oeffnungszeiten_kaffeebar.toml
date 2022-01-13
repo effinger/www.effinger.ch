@@ -2,9 +2,10 @@
 # den Zeiten her zutrifft.
 [normal]
 text = """
-<p>Mo-Fr <span>7-23 Uhr</span></p>
+<p>Mo <span>7-20 Uhr</span></p>
+<p>Di-Fr <span>7-22 Uhr</span></p>
 <p>Sa <span>geschlossen</span></p>
-<p>So <span>geschlossen</span></p>
+<p>So <span>9-17 Uhr</span></p>
 """
 
 # Spezial-Öffnungszeiten.
@@ -14,16 +15,6 @@ text = """
 #
 # Falls mehrere Spezial-Zeiten zutreffen, kommt der unterste zur Anwendung.
 
-# Corona 2021
-[[spezial]]
-display_start = 2021-08-16T00:00:00Z
-display_end = 2021-12-31T23:59:59Z
-text = """
-<p>Mo <span>7-20 Uhr</span></p>
-<p>Di-Fr <span>7-22 Uhr</span></p>
-<p>Sa <span>geschlossen</span></p>
-<p>So <span>8-17 Uhr</span></p>
-"""
 
 #[[spezial]]
 #display_start = 2021-05-10T00:00:00Z
