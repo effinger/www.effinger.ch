@@ -13,7 +13,6 @@ aliases = [
 ]
 
 gallery = [
-  "raum_labor_film.mp4",
   "raum_labor_1.jpg",
   "raum_labor_2.jpg",
   "raum_labor_3.jpg",
@@ -21,6 +20,7 @@ gallery = [
   "raum_labor_5.jpg",
   "raum_labor_6.jpg",
   "raum_labor_plan.png",
+  "raum_labor_film.mp4",
 ]
 
 square_meters = 60
@@ -36,8 +36,10 @@ equipment = [
 
 
 prices = [
-  "CHF 980.-* ganzer Tag",
-  "CHF 650.-* halber Tag",
+  "CHF 950.-* ganzer Tag, inkl. MwSt",
+  "CHF 690.-* halber Tag, inkl. MwSt",
+  "------",
+  "*50% Kennenlernen-Rabatt für dein erstes Projekt bei uns! Bei Benutzung von mehreren Tagen oder Anfrage für Kulturrabatt: Melde dich bei uns!"
 ]
 
 [[extras]]
@@ -53,4 +55,4 @@ text = "Mobil: 2x Bi-Color LED (Aputure LS 300X) inklusive Softbox und Fresnel A
 text = "Diverse Lichtstative und Grip"
 
 +++
-*50% Kennenlernen-Rabatt für dein erstes Projekt bei uns! Bei Benutzung von mehreren Tagen oder Anfrage für Kulturrabatt: Melde dich bei uns!
+
