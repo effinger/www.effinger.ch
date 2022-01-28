@@ -1,10 +1,4 @@
 [[Person]]
-name = "Christa"
-gender = "f"
-image = "/images/kaffeebar/christa.jpg"
-comment = ""
-
-[[Person]]
 name = "Nico"
 gender = "m"
 image = "/images/kaffeebar/nico.jpg"
