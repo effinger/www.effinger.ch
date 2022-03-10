@@ -17,12 +17,6 @@ image = "/images/kaffeebar/daria.jpg"
 comment = ""
 
 [[Person]]
-name = "Ada"
-gender = "f"
-image = "/images/kaffeebar/ada.jpg"
-comment = ""
-
-[[Person]]
 name = "Laura"
 gender = "f"
 image = "/images/kaffeebar/laura.jpg"
