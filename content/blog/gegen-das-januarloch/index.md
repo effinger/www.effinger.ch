@@ -3,7 +3,7 @@ title = "Ich bin gegen das Januarloch"
 date = "2015-01-04"
 description = "Jedes Jahr im Januar überkommt mich so eine grosse dunkle Wolke. Doch dieses Jahr wird alles anders."
 image = "hole-punch.jpg"
-authors = [ "Domenica Winkler" ]
+authors = [ "Domenica Hitz" ]
 comments = true
 tags = [ "Inspiration" ]
 +++

@@ -3,7 +3,7 @@ title = "Namensvorschläge"
 date = "2015-07-13"
 description = "Langsam aber sicher kann man nicht mehr vom «Projekt», «Café» oder sonstigem reden. Wir brauchen endlich den definitiven Namen für das Baby."
 image = "lampe.jpg"
-authors = [ "Domenica Winkler" ]
+authors = [ "Domenica Hitz" ]
 comments = "popupcoworking"
 tags = [ "Location" ]
 +++

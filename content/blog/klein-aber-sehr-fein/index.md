@@ -3,7 +3,7 @@ title = "Klein aber sehr fein"
 date = "2015-01-30"
 description = "Knapp zwei Monate nach unserem ersten «How-the-heck»-Abend luden wir zur zweiten Ausgabe ein. Nachdem im November 2014 über dreissig Personen kamen, hatten sich dieses Mal nur zwei angemeldet. Wir waren etwas enttäuscht und erstaunt, aber auch gespannt, wie der Abend im kleinen Kreise werden würde. Als dann noch zwei Gäste spontan vorbei schauten, waren wir mit dem  Organisationsteam insgesamt acht Personen."
 image = "klein-aber-sehr-fein.jpg"
-authors = [ "Domenica Winkler" ]
+authors = [ "Domenica Hitz" ]
 comments = "popupcoworking"
 tags = [ "Community" ]
 +++

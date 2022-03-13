@@ -3,7 +3,7 @@ title = "Jingle Bells: nächstes Jahr wird alles einfacher"
 date = "2014-12-20"
 description = "Der Countdown läuft: noch 4 Tage bis Heilig Abend. Ich kann nicht anders sagen: Bern ist überfüllt mit total gestressten, kopf- und planlosen Menschen."
 image = "mandarin.jpg"
-authors = [ "Domenica Winkler" ]
+authors = [ "Domenica Hitz" ]
 comments = true
 tags = [ "Unterhaltung" ]
 +++

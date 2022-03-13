@@ -3,7 +3,7 @@ title = "Super-Combo"
 date = "2015-01-16"
 description = "Wieder haben wir einen tollen Coworking Freitag erlebt. Dieser Tag war ein kleiner Vorgeschmack auf das, was wir in Zukunft im Coworking Space mit Café/Bar erreichen möchten: Die gute Kombination zwischen konzentriertem Arbeiten und gemütlichem, gemeinsamen Mittagessen."
 image = "mittagessen.jpg"
-authors = [ "Domenica Winkler" ]
+authors = [ "Domenica Hitz" ]
 comments = "popupcoworking"
 tags = [ "Coworking" ]
 +++

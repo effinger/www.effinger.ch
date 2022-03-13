@@ -3,7 +3,7 @@ title = "Kanban"
 date = "2015-02-27"
 description = "Die Coworking Woche spuckt ihre ersten konkreten Ergebnisse aus, Freude herrscht. Am gestrigen «How-the-heck»-Abend diskutierten wir die Frage, welche konkreten Schritte und Umsetzungsmöglichkeiten anstehen."
 image = "kanban.jpg"
-authors = [ "Domenica Winkler" ]
+authors = [ "Domenica Hitz" ]
 comments = true
 tags = [ "Coworking" ]
 +++

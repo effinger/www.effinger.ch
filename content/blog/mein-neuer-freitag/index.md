@@ -3,7 +3,7 @@ title = "Mein neuer Freitag"
 date = "2017-02-07"
 description = "Nachdem das letzte Jahr ziemlich anstrengend und vollgepackt mit Arbeit war, muss sich nun im neuen Jahr etwas ändern. Ich möchte neben meiner Arbeit für die Kaffeebar Zeit finden, um mich für den Effinger und meine Community einzusetzen."
 image = "mein-neuer-freitag.jpg"
-authors = [ "Domenica Winkler" ]
+authors = [ "Domenica Hitz" ]
 comments = true
 tags = [ "Community", "Coworking" ]
 +++

@@ -3,7 +3,7 @@ title = "Rooftop Day 2015 - Lotto und Klamauk"
 date = "2015-06-18"
 description = "Schon zum zweiten mal wird der Rooftop Day (zu deutsch: Dachterrassen Tag) in Bern veranstaltet, aber zum ersten Mal ist der ZeitRaum mit dabei. Yeah!"
 image = "rooftop-day.jpg"
-authors = [ "Domenica Winkler" ]
+authors = [ "Domenica Hitz" ]
 comments = true
 tags = [ "Unterhaltung" ]
 +++

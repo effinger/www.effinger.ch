@@ -3,7 +3,7 @@ title = "Wann können wir denn eröffnen?"
 date = "2015-09-22"
 description = "«Wenn isch jetzt ändlich Eröffnig vom Effinger?» Diese Frage verfolgt uns auf Schritt und Tritt. Ein grosses Dankeschön an dieser Stelle an alle, die mit uns mitfiebern. Leider können wir noch immer nicht sagen, wann wir genau eröffnen. Dies hängt von vielen Faktoren ab, die wir nicht selber in der Hand haben."
 image = "table.jpg"
-authors = [ "Domenica Winkler" ]
+authors = [ "Domenica Hitz" ]
 comments = true
 tags = [ "Location", "Einrichtung" ]
 +++

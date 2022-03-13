@@ -3,7 +3,7 @@ title = "Warum?"
 date = "2014-12-22"
 description = "Seit wir angefangen haben an der Idee eines Coworking Spaces mit Café/Bar zu arbeiten, haben wir gemerkt, dass es nicht reicht, den Leuten zu erklären, was wir machen oder wie wirs machen, sondern vor allem WARUM."
 image = "notepad.jpg"
-authors = [ "Domenica Winkler" ]
+authors = [ "Domenica Hitz" ]
 comments = true
 tags = [ "Community" ]
 +++
