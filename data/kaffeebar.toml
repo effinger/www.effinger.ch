@@ -35,7 +35,14 @@ image = "/images/kaffeebar/andrea.jpg"
 comment = ""
 
 [[Person]]
+name = "Sophie"
+gender = "f"
+image = "/images/kaffeebar/sophie2.jpg"
+comment = ""
+
+[[Person]]
 name = "Noe"
 gender = "m"
 image = "/images/kaffeebar/noe.jpg"
 comment = ""
+
