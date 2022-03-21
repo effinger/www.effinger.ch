@@ -1,7 +1,7 @@
 +++
 title = "Effinger Upgrade 2022"
-date = "2022-03-21"
-draft = false
+date = "2022-03-24"
+draft = true
 tags = [ "Coworking", "Location", "Einrichtung" ]
 image = "upgrade-team.jpg"
 description = "Wir erweitern den Effinger um eine zusätzliche Etage mit Teams, Events und mehr Kunst."
