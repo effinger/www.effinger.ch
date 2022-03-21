@@ -9,13 +9,11 @@ authors = ["Domenica Hitz", "Graziella Bärtsch", "Fredi Zumbrunn", "Marco Jakob
 comments = true
 +++
 
-![Community Treffen](community-treffen.jpg)
-
 <div class="lead">
 Nach 2 Jahren Pandemie sind viele erschöpft. Und doch finden sich einige in unserer Community, die gerade jetzt ein paar Dinge im Effinger anpacken wollen. Es ist uns wichtig, dass wir aus dem Krisenmodus rausfinden und uns vorbereiten auf neue Abenteuer.
 </div>
 
-
+![Community Treffen](community-treffen.jpg)
 
 Inspiriert durch den Systemtheoretiker [Gerhard Wohland](https://dynamikrobust.com/) haben wir im Community-Treffen vom Januar folgende Aktivität durchgeführt:
 
