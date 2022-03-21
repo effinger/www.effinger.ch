@@ -3,15 +3,15 @@ title = "Ein Effinger-Tag im 2022"
 date = "2022-03-21"
 draft = false
 tags = [ "Coworking", "Community", "Colearning", "Kaffeebar", "Kunst" ]
-image = "effinger-visualisierung.png"
-description = "...Einleitung..."
+image = "effinger-visualisierung.jpg"
+description = "Ein ganz normaler Tag im Effinger."
 authors = ["Fabian Steiner", "Domenica Hitz" ]
 comments = true
 +++
 
-<div class="lead">...Einleitung...</div>
+<div class="lead">Ein ganz normaler Tag im Effinger.</div>
 
-![Effinger Visualisierung](effinger-visualisierung.png)
+![Effinger Visualisierung](effinger-visualisierung.jpg)
 
 Donnerstag Morgen, 7.15h
 
