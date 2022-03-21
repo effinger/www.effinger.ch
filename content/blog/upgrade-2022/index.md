@@ -1,6 +1,6 @@
 +++
 title = "Effinger Upgrade 2022"
-date = "2022-03-24"
+date = "2022-03-21"
 draft = false
 tags = [ "Coworking", "Location", "Einrichtung" ]
 image = "upgrade-team.jpg"
