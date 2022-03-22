@@ -4,12 +4,12 @@ date = "2022-03-21"
 draft = false
 tags = [ "Coworking", "Community", "Colearning", "Kaffeebar", "Kunst" ]
 image = "effinger-visualisierung.jpg"
-description = "Ein ganz normaler Tag im Effinger."
+description = "Wie sieht eigentlich ein normaler Tag im Effinger aus? Tauch mit uns ein und erleb einen ganz normalen Effinger Tag."
 authors = ["Fabian Steiner", "Domenica Hitz" ]
 comments = true
 +++
 
-<div class="lead">Ein ganz normaler Tag im Effinger.</div>
+<div class="lead">Wie sieht eigentlich ein normaler Tag im Effinger aus? Wie viele Leute sind vor Ort, wo arbeiten sie und an was? Tauch mit uns ein und erleb einen ganz normalen Effinger Tag.</div>
 
 ![Effinger Visualisierung](effinger-visualisierung.jpg)
 
