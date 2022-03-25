@@ -4,7 +4,7 @@ date = "2022-03-25"
 draft = false
 tags = [ "Coworking", "Community", "Kunst" ]
 image = "effinger-skizze-1og.png"
-description = "Dank der Expansion in ein Der Effinger erhält ein Upgrade: wir können das 2. OG neu zum Coworking Space dazumieten und nach unseren Vorstellungen bespielen. Durch die zusätzliche Fläche gibts Raum für neue Ideen und Konzepte."
+description = "Dank der Expansion in ein weiteres Stockwerk können wir im Effinger neu Team-Arbeitsplätze anbieten."
 authors = ["Fabian Steiner", "Domenica Hitz", "Marco Jakob", "Reto Eberhard" ]
 comments = true
 +++
