@@ -17,14 +17,14 @@ comments = true
 
 Nach 6 Jahren werden wir zum 1. Mal **Team-Arbeitsplätze** anbieten. Hast du ein kleines Startup, das wächst und deshalb brauchst du mehr Platz? Willst du mit deinem Team aus deinen jetzigen Büroräumlichkeiten raus? Oder sind alle deine Mitarbeiter*innen im Homeoffice aber einmal pro Woche möchtet ihr euch als ganzes Team für einen Tag treffen?
 
-Da haben wir für dich spannende Angebote. Ganz Effinger-like ist vieles bei uns möglich. Wir haben nun Platz für 2 Teams mit 3-10 Personen, die gerne in den Effinger ziehen möchten.
+Da haben wir für dich spannende Angebote. Ganz Effinger-like ist vieles bei uns möglich. Wir haben nun Platz für 2 Teams mit 2-8 Personen, die gerne in den Effinger ziehen möchten.
 
 ![Effinger Skizze 1. OG](effinger-skizze-1og.png)
 
-Hier die hard facts, für alles weitere melde dich bei uns, wir können vieles diskutieren.
+Hier ein paar Aspekte, für alles weitere melde dich bei uns, wir können vieles diskutieren.
 
-- Ein **fixer Arbeitsplatz in deinem Teambereich** kostet pro Person CHF 600 im Monat.
-- Ein **flexibler, übertragbarer Arbeitsplatz** im Coworking Space für dein Team kostet pro Person und Wochentag CHF 120 im Monat.
+- Ein **fixer Bereich für dein Team** von 4-8 Mitarbeitenden gibt es ab ca. CHF 2'000 im Monat.
+- **Übertragbare Arbeitsplätze** im Coworking Space können für Teamtage flexibel gebucht werden.
 - Fix und Flex können kombiniert werden.
 - Meetingräume in verschiedenen Grössen können stundenweise oder in einem Meeting-Paket dazugebucht werden.
 - Im neuen 2. OG gibt's eine grosse Küche mit Esszimmer, das frei genutzt werden kann.
