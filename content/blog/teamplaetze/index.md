@@ -40,5 +40,5 @@ Hier ein paar Aspekte, für alles weitere melde dich bei uns, wir können vieles
 
 👉 Bist du interessiert? Dann melde dich bei Marco, [marco@effinger.ch](mailto:marco@effinger.ch) und vereinbare einen Besichtigungs- und Besprechungstermin.
 
-**Bewerbungsfrist**: 8. April 2022 für fixe Teamplätze\
+**Bewerbungsfrist**: 14. April 2022 für fixe Teamplätze\
 **Einzugstermin**: 1. Juni 2022 für fixe Teamplätze, Flex ab sofort
