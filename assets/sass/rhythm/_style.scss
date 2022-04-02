@@ -4238,11 +4238,16 @@ Footer
   font-size: 1.7rem;
   text-transform: uppercase;
 }
-@media (max-width: 768px) {
-  .footer .reverse-xs {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
+@media (max-width: 991px) {
+  .footer {
+    .reverse-sm {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+    .text-left-sm {
+      text-align: left;
+    }
   }
 }
 
