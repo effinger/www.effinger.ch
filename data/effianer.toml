@@ -17,6 +17,19 @@ linkedin = ""
 about = "Embodiment"
 
 [[Person]]
+name = "Isabel Jakob"
+gender = "f"
+image = "/images/effianer/isabel.jpg"
+email = "isabel@effinger.ch"
+phone = ""
+website = "https://isabeljakob.ch/"
+twitter = ""
+facebook = ""
+instagram = "isabel_jakob_"
+linkedin = ""
+about = "Kunst"
+
+[[Person]]
 name = "Stefan Niederhauser"
 gender = "m"
 image = "/images/effianer/stefan-niederhauser.jpg"
