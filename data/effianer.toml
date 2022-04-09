@@ -4,6 +4,19 @@ calendarId = "effinger.ch_3736303136393637343739@resource.calendar.google.com"
 about = ""
 
 [[Person]]
+name = "Carolina Steiner"
+gender = "f"
+image = "/images/effianer/caro.jpg"
+email = "carolina@effinger.ch"
+phone = ""
+website = ""
+twitter = ""
+facebook = ""
+instagram = ""
+linkedin = ""
+about = "Sozialarbeiterin"
+
+[[Person]]
 name = "Faustina Kromah"
 gender = "f"
 image = "/images/effianer/faustina-kromah.jpg"
