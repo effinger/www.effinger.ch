@@ -1,0 +1,77 @@
+{{ define "main" }}
+<!-- Page Wrap -->
+<div class="page circles" id="top">
+
+  <nav class="main-nav dark transparent stick-fixed">
+    {{ partial "navigation.html" . }}
+  </nav>
+
+  <!-- Header -->
+  <section class="small-section-header bg-dark-lighter">
+    <div class="relative container align-left pt-80">
+
+      <div class="row">
+
+        <div class="col-md-8">
+          <h1 class="hs-line-11 font-alt mb-0">Circles</h1>
+        </div>
+
+        <div class="col-md-4 mt-30">
+          <div class="mod-breadcrumbs font-alt align-right">
+            <a href="/community/">Community</a>&nbsp;/&nbsp;<span>Circles</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- End Header -->
+
+  <!-- Section -->
+  <section class="page-section bg-gray-lighter">
+    <div class="container relative align-center">
+
+    <div class="row section-text">
+      <div class="col-md-offset-2 col-md-8">
+        <p>
+          Die Community des Effinger Coworking Spaces organisiert sich in Circles angelehnt an 
+          Soziokratie 3.0. Hier erhältst du einen Überblick, welche Personen in welchen Circles 
+          aktuell aktiv sind.
+        </p>
+      </div>
+    </div>
+
+    <div class="row section-text">
+      <div class="col-md-12">
+        <iframe width="940" height="1265" src="https://miro.com/app/live-embed/uXjVOLOdutA=/?moveToViewport=-524,-319,5329,6875&embedAutoplay=true" frameBorder="0" scrolling="no" allowFullScreen></iframe>
+      </div>
+    </div>
+  </section>
+  <!-- End Section -->
+
+  <!-- Section -->
+  <section class="page-section">
+    <div class="container relative">
+
+      <div class="row">
+
+        <!-- Content -->
+        <div class="col-sm-10 col-sm-offset-1">
+
+          <!-- Text -->
+          <div class="long-text-body">
+
+            {{ .Content }}
+          </div>
+          <!-- End Text -->
+
+        </div>
+        <!-- End Content -->
+      </div>
+
+    </div>
+  </section>
+  <!-- End Section -->
+</div>
+<!-- End Page Wrap -->
+{{ end }}

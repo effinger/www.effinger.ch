@@ -73,9 +73,15 @@ disableFastRender = true
     url = "/organisation/"
 
   [[menu.main]]
-    name = "Finanzen"
+    name = "Circles"
     parent = "Über uns"
     weight = 5
+    url = "/circles/"
+
+  [[menu.main]]
+    name = "Finanzen"
+    parent = "Über uns"
+    weight = 6
     url = "/finanzen/"
 
 [[menu.main]]
