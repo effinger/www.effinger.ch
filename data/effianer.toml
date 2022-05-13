@@ -4,6 +4,19 @@ calendarId = "effinger.ch_3736303136393637343739@resource.calendar.google.com"
 about = ""
 
 [[Person]]
+name = "Reto Eberhard"
+gender = "f"
+image = "/images/effianer/reto.jpg"
+email = "reto@effinger.ch"
+phone = ""
+website = "wildbacharchitektur.ch"
+twitter = ""
+facebook = ""
+instagram = ""
+linkedin = ""
+about = "Architektur"
+
+[[Person]]
 name = "Carolina Steiner"
 gender = "f"
 image = "/images/effianer/caro.jpg"
