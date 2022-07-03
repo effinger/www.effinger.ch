@@ -2,7 +2,7 @@
 # den Zeiten her zutrifft.
 [normal]
 text = """
-<p class="mb-0">Mo-Fr <span>8-18 Uhr</span></p>
+<p>Mo-Fr <span>8-18 Uhr</span></p>
 <p>Sa <span>geschlossen</span></p>
 <p>So <span>geschlossen</span></p>
 
@@ -29,11 +29,11 @@ text = """
 
 # Sommer
 #[[spezial]]
-#display_start = 2020-07-01T00:00:00Z
-#display_end = 2020-08-08T23:59:59Z
+#display_start = 2022-07-01T00:00:00Z
+#display_end = 2022-08-14T23:59:59Z
 #text = """
-#<p class="text-center"><em>Von Montag 6. Juli bis Sonntag 9. August</em></p>
-#<p class="mb-0">Mo-Fr <span>7-20 Uhr</span></p>
-#<p>Sa <span>9-14</span></p>
-#<p>So <span>Ruhetag</span></p>
+#<p class="text-center"><em>Von Montag 10. Juli bis Sonntag 14. August</em></p>
+#<p>Mo-Fr <span>8-19 Uhr</span></p>
+#<p>Sa <span>geschlossen</span></p>
+#<p>So <span>geschlossen</span></p>
 #"""

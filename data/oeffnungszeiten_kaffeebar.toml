@@ -15,7 +15,7 @@ text = """
 #
 # Falls mehrere Spezial-Zeiten zutreffen, kommt der unterste zur Anwendung.
 
-
+# Auffahrt
 #[[spezial]]
 #display_start = 2021-05-10T00:00:00Z
 #display_end = 2021-05-16T23:59:59Z
@@ -27,13 +27,14 @@ text = """
 #<p>14.5. Freitag <span>geschlossen</span></p>
 #<p>24.5. Pfingstmontag <span>geschlossen</span></p>
 #"""
-#
-#[[spezial]]
-#display_start = 2021-05-17T00:00:00Z
-#display_end = 2021-05-24T23:59:59Z
-#text = """
-#<p>Mo-Fr <span>9-18 Uhr, bei Bedarf auch länger</span></p>
-#<p>Sa <span>geschlossen</span></p>
-#<p>So <span>geschlossen</span></p>
-#<p>24.5. Pfingstmontag <span>geschlossen</span></p>
-#"""
+
+# Sommer
+[[spezial]]
+display_start = 2022-07-01T00:00:00Z
+display_end = 2022-08-14T23:59:59Z
+text = """
+<p class="text-center"><em>Von Montag 10. Juli bis Sonntag 14. August</em></p>
+<p>Mo-Fr <span>8-19 Uhr</span></p>
+<p>Sa <span>geschlossen</span></p>
+<p>So <span>geschlossen</span></p>
+"""
