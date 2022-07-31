@@ -37,4 +37,6 @@ text = """
 <p>Mo-Fr <span>8-19 Uhr</span></p>
 <p>Sa <span>geschlossen</span></p>
 <p>So <span>geschlossen</span></p>
+&nbsp;
+<p>Montag 1. August <span>geschlossen</span></span>
 """
