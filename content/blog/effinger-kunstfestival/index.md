@@ -8,7 +8,7 @@ description = "Ein kleiner Rückblick auf das Kunstfestival"
 authors = ["Isabel Jakob"]
 comments = true
 +++
-<iframe width="560" height="315" src="<https://www.youtube.com/embed/mLQUtMsx7b0>" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/mLQUtMsx7b0" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Kunst ist im Effinger überall zu finden. Manchmal ist sie ganz offensichtlich sichtbar – im "Freiraum für Kunst" zum Beispiel, wo an verschiedenen Wochentagen gemalt, gezeichnet und collagiert wird. Aber sie versteckt sich auch unter Kopfhörern, zwischen Nullen und Einsen, zwischen Legosteinen und Tanzbeinen.
 
