@@ -2,7 +2,8 @@
 title = "Effinger Kunstfestival"
 date = "2022-06-24"
 draft = false
-image = "effinger-kunstfestival.png"
+tags = ["kunst"]
+image = "effinger-kunstfestival-32.png"
 description = "Ein kleiner Rückblick auf das Kunstfestival"
 authors = ["Isabel Jakob"]
 comments = true
