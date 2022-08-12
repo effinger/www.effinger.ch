@@ -4,7 +4,7 @@ date = "2022-06-24"
 draft = false
 tags = ["kunst"]
 image = "effinger-kunstfestival-32.png"
-description = "Ein kleiner Rückblick auf das Kunstfestival"
+description = "Ein kleiner Rückblick auf das Kunstfestival vom 6. Mai 2022. Nach zwei ruhigeren Jahren war es eine grosse Freude, wieder ein volles Haus zu haben!"
 authors = ["Anicia Kohler", "Isabel Jakob"]
 comments = true
 +++
