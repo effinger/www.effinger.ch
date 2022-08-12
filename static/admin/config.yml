@@ -157,10 +157,11 @@ collections:
               "Kaffeebar",
               "Coworking",
               "Atelier",
-              "Werkstatt",
-              "Labor",
               "Brownbag",
+              "Colearning",
+              "Labor",
               "THESaktiv",
+              "Werkstatt",
             ],
         }
       - {
