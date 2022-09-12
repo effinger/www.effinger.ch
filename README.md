@@ -46,7 +46,7 @@ Events can be created via NetlifyCMS on [Effinger Admin](https://www.effinger.ch
     * **image**: The main image of the event. This is - like the description - displayed in social media.
     * **startdate**: The date and time when the event starts. The format is `2018-12-02T10:00:00`.
     * **enddate**: The end date and time.
-    * **categories**: The category is displayed in the overview and is also used to determine the event color. The valid categories are specified in `assets/sass/custom/_events.scss`. Current categories: `community`, `kaffeebar`, `coworking`, `atelier`, `werkstatt`, `labor`.
+    * **categories**: The category is displayed in the overview and is also used to determine the event color. The valid categories are specified in `assets/sass/custom/_events.scss`. Current categories: `community`, `kaffeebar`, `coworking` and more.
     * **location**: The location of the event.
     * **registration** (optional): If set to true, a form is displayed for registration. This creates a Google Sheet where the registered users are saved. To see the Google Sheet click on the link called "Teilnehmende".
     * **registration_max** (optional): Limits the registration to the specified number of people.
