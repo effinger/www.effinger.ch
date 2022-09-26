@@ -1,10 +1,10 @@
 +++
-id = "baerengraben"
 title = "Bärengraben"
 weight = 204
 description = "Sitzungsraum, wahlweise mit Küche."
 image = "sitzungs-raum.jpg"
 draft = true
+reservation_link = "https://www.benjibooks.com/resources/effinger/baerengraben/"
 
 gallery = [
   "sitzungs-raum.jpg",

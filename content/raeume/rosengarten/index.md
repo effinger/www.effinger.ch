@@ -1,10 +1,10 @@
 +++
-id = "rosengarten"
 title = "Rosengarten"
 weight = 203
 description = "Sitzungsraum im Kunstatelier"
 image = "rosengarten-1.jpg"
 draft = true
+reservation_link = "https://www.benjibooks.com/resources/effinger/rosengarten/"
 
 gallery = [
   "rosengarten-1.jpg",

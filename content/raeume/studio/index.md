@@ -1,5 +1,4 @@
 +++
-id = "studio"
 title = "Studio Effinger"
 weight = 206
 description = "Raum «Studio Effinger» für Events, Workshops und digitale Projekte."

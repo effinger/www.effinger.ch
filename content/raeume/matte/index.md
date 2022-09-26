@@ -1,10 +1,10 @@
 +++
-id = "matte"
 title = "Matte"
 weight = 202
 description = "Raum für innovative Workshops und kreative Sitzungen."
 image = "workshop-raum.jpg"
 draft = true
+reservation_link = "https://www.benjibooks.com/resources/effinger/matte/"
 
 gallery = [
   "workshop-raum.jpg",

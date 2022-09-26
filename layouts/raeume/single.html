@@ -119,14 +119,10 @@
         <div class="col-sm-10">
           <h3 class="font-alt mt-50">Details</h3>
           {{ .Content }}
-          {{ if .Params.id }}
+          {{ if .Params.reservation_link }}
           <div class="mb-50">
-            {{ if .Params.reservation_link }}
-              <a href="{{.Params.reservation_link}}" target="_blank" class="btn btn-mod btn-border btn-round btn-large">
-            {{else}} 
-              <a href="https://www.benjibooks.com/resources/effinger/{{.Params.id}}/" target="_blank" class="btn btn-mod btn-border btn-round btn-large">
-            {{ end }} 
-            &rarr; Reservation</a>
+            <a href="{{.Params.reservation_link}}" target="_blank" class="btn btn-mod btn-border btn-round btn-large">
+              &rarr; Reservation</a>
           </div>
           <hr>
           <div class="small">

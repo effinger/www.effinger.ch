@@ -1,10 +1,10 @@
 +++
-id = "aquarium"
 title = "Aquarium"
 weight = 202
 description = "Raum für innovative Workshops und kreative Sitzungen."
 image = "workshop-raum.jpg"
 draft = false
+reservation_link = "https://www.benjibooks.com/resources/effinger/aquarium/"
 
 gallery = [
   "workshop-raum.jpg",
