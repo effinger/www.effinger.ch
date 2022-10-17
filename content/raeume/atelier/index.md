@@ -12,7 +12,7 @@ gallery = [
 ]
 
 square_meters = 27
-capacity = 10
+capacity = 8
 
 equipment = [
   "Tische",
