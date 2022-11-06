@@ -395,6 +395,45 @@ instagram = ""
 linkedin = ""
 about = "Regisseur"
 
+[[Person]]
+name = "Joris Schwarzenbach"
+gender = "m"
+image = "/images/effianer/joris-schwarzenbach.jpg"
+email = ""
+phone = ""
+website = "https://jorisschwarzenbach.ch/"
+twitter = ""
+facebook = ""
+instagram = ""
+linkedin = "https://www.linkedin.com/in/jorisschwarzenbach/"
+about = "IT & Bildung"
+
+[[Person]]
+name = "Levyn Schneider"
+gender = "m"
+image = "/images/effianer/levyn-schneider.jpg"
+email = ""
+phone = ""
+website = "https://lyschneider.netlify.app/"
+twitter = ""
+facebook = ""
+instagram = "https://www.instagram.com/ly.schneider/"
+linkedin = ""
+about = "Fotografie"
+
+[[Person]]
+name = "Joscha Tschanz"
+gender = "m"
+image = "/images/effianer/joscha-tschanz.jpg"
+email = ""
+phone = ""
+website = "https://www.joschatschanz.ch/"
+twitter = ""
+facebook = ""
+instagram = "https://www.instagram.com/joschatschanz/"
+linkedin = ""
+about = "Mediamatiker"
+
 
 [[Person]]
 name = "Colearner"
