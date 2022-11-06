@@ -179,16 +179,16 @@
 var ctxErtrag = document.getElementById("ertrag-chart").getContext("2d");
 var dataErtrag = [
   {{ range $i, $e := .Params.ertrag }}
-  {{ $color_index := mod $i (len $.Site.Data.finanzen_colors.blue) }}
-  {
-      value: {{ $e.betrag }},
-      color: {{ index $.Site.Data.finanzen_colors.blue $color_index }},
-      highlight: "#5f5f5f",
-      label: {{ $e.name }}
-  },
+    {{ $color_index := mod $i (len $.Site.Data.finanzen_colors.blue) }}
+    {
+        value: {{ $e.betrag }},
+        color: {{ index $.Site.Data.finanzen_colors.blue $color_index }},
+        highlight: "#5f5f5f",
+        label: {{ $e.name }}
+    },
   {{ end }}
 ];
-var chartErtrag = new Chart(ctxErtrag).Doughnut(dataErtrag, {
+var chartErtrag = new Chart(ctxErtrag).Doughnut(dataErtrag.filter(function(e){ return e.value > 0 }), {
   tooltipTemplate: function(label){return label.label + ": CHF " + label.value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, "'");},
 
   //Number - Amount of animation steps
@@ -202,16 +202,16 @@ var chartErtrag = new Chart(ctxErtrag).Doughnut(dataErtrag, {
 var ctxAufwand = document.getElementById("aufwand-chart").getContext("2d");
 var dataAufwand = [
   {{ range $i, $e := .Params.aufwand }}
-  {{ $color_index := mod $i (len $.Site.Data.finanzen_colors.red) }}
-  {
-      value: {{ $e.betrag }},
-      color: {{ index $.Site.Data.finanzen_colors.red $color_index }},
-      highlight: "#5f5f5f",
-      label: {{ $e.name }}
-  },
+    {{ $color_index := mod $i (len $.Site.Data.finanzen_colors.red) }}
+    {
+        value: {{ $e.betrag }},
+        color: {{ index $.Site.Data.finanzen_colors.red $color_index }},
+        highlight: "#5f5f5f",
+        label: {{ $e.name }}
+    },
   {{ end }}
 ];
-var chartErtrag = new Chart(ctxAufwand).Doughnut(dataAufwand, {
+var chartErtrag = new Chart(ctxAufwand).Doughnut(dataAufwand.filter(function(e){ return e.value > 0 }), {
   tooltipTemplate: function(label){return label.label + ": CHF " + label.value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, "'");},
 
   //Number - Amount of animation steps
