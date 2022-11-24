@@ -4,8 +4,21 @@ calendarId = "effinger.ch_3736303136393637343739@resource.calendar.google.com"
 about = ""
 
 [[Person]]
-name = "Reto Eberhard"
+name = "Christine Wieland-Trachsel"
 gender = "f"
+image = "/images/effianer/christine.jpg"
+email = "christine@effinger.ch"
+phone = ""
+website = "entwickeln.me"
+twitter = ""
+facebook = ""
+instagram = "entwickeln.me"
+linkedin = ""
+about = ""
+
+[[Person]]
+name = "Reto Eberhard"
+gender = "m"
 image = "/images/effianer/reto.jpg"
 email = "reto@effinger.ch"
 phone = ""
