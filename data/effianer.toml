@@ -396,19 +396,6 @@ linkedin = ""
 about = "Allrounder"
 
 [[Person]]
-name = "Oliver Schären"
-gender = "m"
-image = "/images/effianer/oliver-schaeren.jpg"
-email = "oliver@effinger.ch"
-phone = ""
-website = "https://www.winnetwostudio.com/"
-twitter = ""
-facebook = ""
-instagram = ""
-linkedin = ""
-about = "Regisseur"
-
-[[Person]]
 name = "Joris Schwarzenbach"
 gender = "m"
 image = "/images/effianer/joris-schwarzenbach.jpg"
