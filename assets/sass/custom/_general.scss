@@ -169,6 +169,8 @@ form {
   height: 4px;
   width: 100%;
   background-image: url(/images/wave.svg);
+  background-repeat: round;
+  background-size: contain;
   margin: 20px 0;
   clear: both;
 }
