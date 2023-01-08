@@ -43,9 +43,15 @@ disableFastRender = true
   url = "/coworking/"
 
 [[menu.main]]
+  name = "Räume"
+  pre = "<i class='fa fa-calendar-check-o'></i>"
+  weight = 103
+  url = "/raeume/"
+
+[[menu.main]]
   name = "Über uns"
   pre = "<i class='fa fa-users'></i>"
-  weight = 103
+  weight = 104
   url = "/community/"
 
   [[menu.main]]
@@ -83,12 +89,6 @@ disableFastRender = true
     parent = "Über uns"
     weight = 6
     url = "/finanzen/"
-
-[[menu.main]]
-  name = "Räume"
-  pre = "<i class='fa fa-calendar-check-o'></i>"
-  weight = 104
-  url = "/raeume/"
 
 [[menu.main]]
   name = "Events"
