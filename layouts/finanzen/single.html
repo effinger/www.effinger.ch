@@ -94,18 +94,13 @@
           </div>
           <!-- End Counter Item -->
         </div>
-      </div>
 
-      {{ with .Params.kommentar }}
-      <dl class="toggle">
-        <dt>
-          <a href="" class="">Kommentar</a>
-        </dt>
-        <dd style="display: none;">
-          {{ . }}
-        </dd>
-      </dl>
-      {{ end }}
+        {{ with .Params.kommentar }}
+          <p class="mt-40 mb-0">
+            {{ . }}
+          </p>
+        {{ end }}
+      </div>
 
       <div class="row erfolg">
         <div class="col-sm-6 item left-sm mt-40">
