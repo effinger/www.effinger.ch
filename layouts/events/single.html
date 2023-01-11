@@ -91,7 +91,7 @@
   {{ $isArchived := (time .Params.enddate).Before $archiveDate }}
 
   <!-- Section Event Single View -->
-  <section class="page-section event">
+  <section class="page-section events">
     <div class="container relative eventsingle">
       {{ if $isPast }}
         <h2 class="font-alt align-center mb-40">{{ .Title }}</h2>

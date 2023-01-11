@@ -41,6 +41,32 @@
   }
 }
 
+.zusatzangebote {
+  .angebote-list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
+    .angebot {
+      margin: 1em;
+      border: 1px solid black;
+      border-radius: 50%;
+      overflow: hidden;
+      height: 250px;
+
+      img {
+        height: 100%;
+      }
+
+      &:hover {
+        scale: 1.02;
+        box-shadow: 0 0 5px grey;
+      }
+    }
+  }
+}
+
+
 #facilities {
   ul {
     list-style: none;
