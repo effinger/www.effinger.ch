@@ -17,9 +17,10 @@ capacity = 8
 equipment = [
   "Tische",
   "Stühle",
-  "High-Speed Internet",
-  "beschreibbare Wand",
-  "Werkzeugwand",
+  "Internet",
+  "Screen mit HDMI-Anschluss",
+  "beschreibbare Wände",
+  "Moderationsmaterial",
   "Spülbecken"
 ]
 
