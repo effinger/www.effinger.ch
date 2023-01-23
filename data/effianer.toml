@@ -108,19 +108,6 @@ linkedin = "raffaelkrebs"
 about = "Webapps"
 
 [[Person]]
-name = "Jonathan Bucher"
-gender = "m"
-image = "/images/effianer/jonathan-bucher.jpg"
-email = "mail@jonathanbucher.ch"
-phone = ""
-website = "https://www.jonathanbucher.ch/"
-twitter = ""
-facebook = ""
-instagram = ""
-linkedin = ""
-about = "Colearner"
-
-[[Person]]
 name = "Benji Ammann"
 gender = "m"
 image = "/images/effianer/benji-ammann.jpg"
