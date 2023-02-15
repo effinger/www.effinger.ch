@@ -7,9 +7,11 @@ description = "Anmeldung für eine Effinger Community Membership."
 ### Folgendes gehört zur Membership
 
 * ½ Tag Coworking pro Monat
-* Zugang zur Community auf unserer Online-Plattform (Slack)
-* Monatliches Community Treffen
-* Heimatgefühl im Effinger: Du wirst Teil der "Effinger Community"
+* Online-Community auf Slack
+* 2\. OG für öffentliche Veranstaltungen nutzen
+* Teilnahme am monatlichen Community-Treffen
+* Community-Events besuchen (Filmabende, Konzerte, Apéros …)
+* Mehr Mitgestaltungsmöglichkeiten
 * Vereinsmitgliedschaft
 
 ### Preis
