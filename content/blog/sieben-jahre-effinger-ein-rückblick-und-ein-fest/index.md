@@ -1,11 +1,12 @@
 +++
 title = "Sieben Jahre Effinger - Ein Rückblick und ein Fest"
-date = "2023-02-13"
-draft = true
+date = "2023-02-20"
+draft = false
 image = "effinger-eroeffnung.jpg"
 description = "Menschen wie dir haben wir zu verdanken, dass es uns in Kürze bereits seit sieben Jahren gibt und wir zusammen einen Ort geschaffen haben, der mittlerweile so viel mehr ist als nur ein Arbeitsort ausserhalb der üblichen Büroräume."
-authors = []
+authors = ["Jrene Rolli", "Stefan Niederhauser"]
 comments = true
+aliases = ["/7-jahre"]
 +++
 Menschen wie dir haben wir zu verdanken, dass es uns in Kürze bereits seit sieben Jahren gibt und wir zusammen einen Ort geschaffen haben, der mittlerweile so viel mehr ist als nur ein Arbeitsort ausserhalb der üblichen Büroräume.
 
