@@ -25,3 +25,5 @@ Hinter alledem stecken viele Stunden, die Community-Member ehrenamtlich leisten.
 Wir sind unendlich dankbar und stolz auf all das, was in den vergangenen sieben Jahren zusammen entstanden ist. Das wollen wir feiern und laden auch dich dazu ein: 
 
 **[Jubiläumsfest am Freitag, 24. März 2023 im Effinger, 14:00 – 23:00](https://effinger.ch/fest)**
+
+![](effinger-eroeffnung.jpg)
