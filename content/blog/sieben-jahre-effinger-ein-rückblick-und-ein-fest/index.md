@@ -1,6 +1,6 @@
 +++
 title = "Sieben Jahre Effinger – Ein Rückblick und ein Fest"
-date = "2023-02-12"
+date = "2023-02-20"
 draft = false
 image = "effinger-eroeffnung.jpg"
 description = "In Kürze gibt es uns bereits seit 7 Jahren. Wir blicken zurück auf die Höhepunkte des vergangenen Jahres und voraus auf unser Jubiläumsfest am 24. März 2023."
