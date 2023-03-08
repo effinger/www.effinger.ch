@@ -11,7 +11,7 @@
 
   <!-- Home Section -->
   <section class="home-section bg-dark-alfa-80 parallax-2 fixed-height-small" data-background="effinger_header.jpg">
-    <div class="js-height-parent container">
+    <div class="container" style="height: auto; min-height: 600px;">
 
       <!-- Hero Content -->
       <div class="home-content">
@@ -40,14 +40,19 @@
               </div>
             </div>
           {{ else }}
-            <img src="images/logo-effinger-gelb-weiss.svg" alt="Logo Effinger" class="mb-60 mb-xs-30 mt-50">
+            <div class="mt-60 mb-60 mb-xs-30" style="display: flex; justify-content: center; flex-flow: row wrap;">
+              <img src="images/logo-effinger-gelb-weiss.svg" alt="Logo Effinger" style="flex: none; margin: 2em;">
+              <a href="/fest" style="flex: none; margin: 2em 1.3em 2em 2.2em;">
+                <img src="/upload/2023-03-24_effinger_jubilaeum_button.png" alt="Wir feiern!">
+              </a>
+            </div>
           {{ end }}
 
           <h1 class="font-alt mb-10">
             Kaffeebar &amp; Coworking Space
           </h1>
 
-          <div class="row">
+          <div class="row mb-60">
             <div class="col-md-offset-2 col-md-8">
               <div>
                 Für Jungunternehmer, Kreative, Handwerkerinnen, Weltveränderer, Bernerinnen, Zugereiste,
