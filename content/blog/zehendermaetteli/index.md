@@ -7,11 +7,11 @@ description = ""
 authors = ["Simon Tauber"]
 comments = false
 +++
-Schon vor der Effinger-Eröffnung im 2015 hatte Simon Tauber unsere Community eingeladen für ein Popup-Coworking und hat uns bekocht. Seitdem stehen wir im Kontakt mit ihm und der Crew vom [Zehendermätteli](https://www.zehendermaetteli-imglueck.ch/) (siehe z.B. [diesen Brownbag](https://brownbag.effinger.ch/wagen-zum-glueck)).
+Schon vor der Effinger-Eröffnung im 2015 hat Simon Tauber unsere Community eingeladen für ein Popup-Coworking und hat uns fein bekocht. Seitdem stehen wir im Kontakt mit ihm und der Crew vom [Zehendermätteli](https://www.zehendermaetteli-imglueck.ch/) (siehe z.B. [diesen Brownbag](https://brownbag.effinger.ch/wagen-zum-glueck)).
 
 Grossartig, was in dieser Zeit entstanden ist. Nun geht ihre Geschichte weiter und sie sind gestartet mit einer Kampagne «es Stück vom Glück», bei der man Anteile des Zehendi erwerben kann.
 
-&rarr; [zum Kampagne «es Stück vom Glück»](https://www.zehendermaetteli-imglueck.ch/stueck-vom-glueck/)
+&rarr; [zur Kampagne «es Stück vom Glück»](https://www.zehendermaetteli-imglueck.ch/stueck-vom-glueck/)
 
 *Hier der Brief vom Zehendi:*
 
