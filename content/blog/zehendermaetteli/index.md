@@ -1,6 +1,6 @@
 +++
 title = "Zehendermätteli – Bsitz es Stück vom Glück"
-date = "2023-03-16"
+date = "2023-03-25"
 draft = false
 image = "zehendi.jpg"
 description = ""
