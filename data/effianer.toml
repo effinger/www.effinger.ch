@@ -82,19 +82,6 @@ linkedin = "sniederhauser"
 about = "Edu-Tech"
 
 [[Person]]
-name = "Benjamin Bracher"
-gender = "m"
-image = "/images/effianer/benjamin-bracher.jpg"
-email = "beni@effinger.ch"
-phone = ""
-website = ""
-twitter = ""
-facebook = ""
-instagram = ""
-linkedin = ""
-about = "Fonio"
-
-[[Person]]
 name = "Raffael Krebs"
 gender = "m"
 image = "/images/effianer/raffael-krebs.jpg"
