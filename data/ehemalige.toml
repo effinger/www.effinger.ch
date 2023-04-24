@@ -31,6 +31,12 @@ image = "/images/effianer/ehemalige/damaris-berger.jpg"
 about = ""
 
 [[Person]]
+name = "Daniel Osterwalder"
+gender = "m"
+image = "/images/effianer/ehemalige/daniel-osterwalder.jpg"
+about = ""
+
+[[Person]]
 name = "David Bruehlmeier"
 gender = "m"
 image = "/images/effianer/ehemalige/david-bruehlmeier.jpg"
