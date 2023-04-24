@@ -119,25 +119,38 @@
         <div class="col-sm-10">
           <h3 class="font-alt mt-50">Details</h3>
           {{ .Content }}
-          {{ if .Params.reservation_link }}
-          <div class="mb-50">
-            <a href="{{.Params.reservation_link}}" target="_blank" class="btn btn-mod btn-border btn-round btn-large">
-              &rarr; Reservation</a>
-          </div>
-          <hr>
-          <div class="small">
-            <h4>Annullationsbedingungen</h4>
 
-            <ul>
-              <li>
-                Wenn eine Buchung weniger als 5 Arbeitstage vor Beginn annulliert wird, verrechnen wir 50% des Gesamtpreises.
-              </li>
-              <li>
-                Wenn eine Buchung weniger als 24 Stunden vor Beginn annulliert wird, verrechnen wir 100% des Gesamtpreises.
-              </li>
-            </ul>
-          </div>
-          <hr>
+          {{ if .Params.reservation_link }}
+            <div class="mb-50">
+              <a href="{{.Params.reservation_link}}" target="_blank" class="btn btn-mod btn-border btn-round btn-large">
+                &rarr; Reservation</a>
+            </div>
+
+            <hr>
+            <div class="small">
+              <h4>Hinweise</h4>
+              <ul>
+                <li>
+                  <strong>15 Min. Einrichten</strong>: Der Raum darf 15 Minuten vor der gebuchten Zeit zur Vorbereitung benutzt werden.
+                </li>
+                <li>
+                  <strong>Rollstühle</strong>: Leider sind unsere Räumlichkeiten und Toiletten nicht rollstuhlgängig.
+                </li>
+              </ul>
+            </div>
+
+            <hr>
+            <div class="small">
+              <h4>Annullationsbedingungen</h4>
+              <ul>
+                <li>
+                  Wenn eine Buchung weniger als 5 Arbeitstage vor Beginn annulliert wird, verrechnen wir 50% des Gesamtpreises.
+                </li>
+                <li>
+                  Wenn eine Buchung weniger als 24 Stunden vor Beginn annulliert wird, verrechnen wir 100% des Gesamtpreises.
+                </li>
+              </ul>
+            </div>
           {{ end }}
         </div>
       </div>
@@ -154,54 +167,9 @@
       <!-- End Prev/Next Post -->
     </div>
   </section>
-  <!-- End About Section Workshopraum -->
+  <!-- End About Section -->
 
-
-  <section class="page-section bg-gray" id="kontakt">
-    <div class="relative container">
-      <!-- <h1 class="hs-line-11 font-alt mb-80 mb-sm-40">Kontakt Raumvermietung</h1> -->
-      <div class="row">
-        <div class="col-md-10 col-md-offset-1">
-          <div class="section-text">
-            <h3 class="hs-line-11 font-alt text-center">Hinweise</h3>
-            <p>
-              <ul>
-                <li><strong>15 Min. Einrichten</strong>: Der Raum darf 15 Minuten vor der gebuchten Zeit zur Vorbereitung benutzt werden.</li>
-                <li><strong>Rollstühle</strong>: Leider sind unsere Räumlichkeiten und Toiletten nicht rollstuhlgängig.</li>
-              </ul>
-            </p>
-          </div>
-        </div>
-        <div class="col-sm-6 col-sm-offset-3 mb-50 mt-50">
-          <div class="contact-item clearfix">
-            <h4 class="uppercase">Kontakt Raumvermietung</h4>
-            <div class="wave-spacer"></div>
-            <div class="item">
-              <!-- <p>Telefon<span><a href="tel:+41313982021">031 398 20 21</a></span></p> -->
-              <p>E-Mail<span><a href="mailto:raumvermietung@effinger.ch">raumvermietung@effinger.ch</a></span></p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-offset-4 col-sm-4 mb-sm-100">
-          <div class="team-item">
-            <div class="team-item-image">
-              <img src="/images/effianer/markus-roos.jpg" alt="" />
-              <div class="team-item-detail">
-                <p class="font-alt normal">Raumvermietung</p>
-              </div>
-            </div>
-            <div class="team-item-descr font-alt">
-              <div class="team-item-name">
-                Markus Roos
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  {{ partial "raeume/section-kontakt.html" . }}
 </div>
 <!-- End Page Wrap -->
 {{ end }}
