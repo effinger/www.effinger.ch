@@ -54,13 +54,14 @@
       overflow: hidden;
       height: 250px;
 
+      transition: all 0.17s cubic-bezier(0, 0, 0.58, 1);
+
       img {
         height: 100%;
       }
 
       &:hover {
-        scale: 1.02;
-        box-shadow: 0 0 5px grey;
+        transform: scale(1.04);
       }
     }
   }
