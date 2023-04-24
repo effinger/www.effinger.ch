@@ -3007,27 +3007,15 @@ Team
 .team-item-image {
   position: relative;
   overflow: hidden;
-}
-.team-item-image img {
-  width: 100%;
-}
-.team-item-image:after {
-  content: " ";
-  display: block;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: transparent;
-
-  z-index: 1;
 
   -webkit-transition: all 0.27s cubic-bezier(0, 0, 0.58, 1);
   -moz-transition: all 0.27s cubic-bezier(0, 0, 0.58, 1);
   -o-transition: all 0.27s cubic-bezier(0, 0, 0.58, 1);
   -ms-transition: all 0.27s cubic-bezier(0, 0, 0.58, 1);
   transition: all 0.27s cubic-bezier(0, 0, 0.58, 1);
+}
+.team-item-image img {
+  width: 100%;
 }
 
 .team-item-detail {
@@ -3118,8 +3106,8 @@ Team
 }
 
 /* Hover state */
-.no-mobile .team-item:hover .team-item-image:after {
-  background: rgba(255, 255, 255, 0.93);
+.no-mobile .team-item:hover .team-item-image {
+  transform: scale(1.075);
 }
 .no-mobile .team-item:hover .team-item-detail {
   opacity: 1;
