@@ -140,16 +140,11 @@
                 eventEnd = eventEnd.add(1, 'hour');
               }
 
-
-              const trClasses = [];
-              if (event.title.toLocaleLowerCase().includes("brownbag")) {
-                trClasses.push("event-brownbag");
-              }
               if (eventEnd.isBefore()) {
-                trClasses.push("event-ended");
+                tableContent += "<tr class='event-ended'>";
+              } else {
+                tableContent += "<tr>";
               }
-              tableContent += '<tr class="' + trClasses.join(" ") +'">';
-                console.log('<tr class="' + trClasses.join(" ") +'">')
 
               tableContent += "<td class='event-time'>" + eventStart.format('HH:mm') + " &ndash; " + eventEnd.format('HH:mm') + "</td>";
               tableContent += "<td>";

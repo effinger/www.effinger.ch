@@ -70,7 +70,7 @@ body {
   max-width: 100%;
   border-collapse: collapse;
   border-spacing: 0;
-  
+
   tr {
     background-color: #fff;
 
@@ -81,14 +81,6 @@ body {
 
   tr.event-ended {
     opacity: 0.5;
-  }
-
-  tr.event-brownbag {
-    height: 8rem;
-    .event-subtitle {
-      color: #F35657;
-      font-size: 1rem;
-    }
   }
 
   tr > td {
@@ -224,4 +216,3 @@ body {
     opacity: 0.5;
   }
 }
-
