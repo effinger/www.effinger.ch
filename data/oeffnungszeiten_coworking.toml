@@ -3,8 +3,7 @@
 [normal]
 text = """
 <p>Mo-Fr <span>8-18 Uhr</span></p>
-<p>Sa <span>geschlossen</span></p>
-<p>So <span>geschlossen</span></p>
+<p>Sa-So <span>geschlossen</span></p>
 
 """
 
@@ -15,17 +14,16 @@ text = """
 #
 # Falls mehrere Spezial-Zeiten zutreffen, kommt der unterste zur Anwendung.
 
-#[[spezial]]
-#display_start = 2021-05-10T00:00:00Z
-#display_end = 2021-05-16T23:59:59Z
-#text = """
-#<p class="mb-0">Mo-Fr <span>8-18 Uhr</span></p>
-#<p>Sa <span>geschlossen</span></p>
-#<p>So <span>geschlossen</span></p>
-#<p>13.5. Auffahrt <span>geschlossen</span></p>
-#<p>14.5. Freitag <span>geschlossen</span></p>
-#<p>24.5. Pfingstmontag <span>geschlossen</span></p>
-#"""
+[[spezial]]
+display_start = 2023-05-15T00:00:00Z
+display_end = 2023-05-29T23:59:59Z
+text = """
+<p class="mb-0">Mo-Fr <span>8-18 Uhr</span></p>
+<p>Sa-So <span>geschlossen</span></p>
+<p>18.5. Auffahrt <span>geschlossen</span></p>
+<p>19.5. Freitag <span>geschlossen</span></p>
+<p>29.5. Pfingstmontag <span>geschlossen</span></p>
+"""
 
 # Sommer
 #[[spezial]]
