@@ -21,19 +21,26 @@
             </h2>
             <div class="">
               <a href="https://www.google.ch/maps/place/Effinger+-+Kaffeebar+%26+Coworking+Space/@46.94604,7.4336198,17z/data=!3m1!4b1!4m2!3m1!1s0x478e39bf613a53f7:0x30f7464656fbe3b2"
-                 class="inline-block pt-10 text-nowrap" style="text-decoration: none;">
+                class="inline-block pt-10 text-nowrap" style="text-decoration: none;">
                 <span class="icon-map-pin"></span>&nbsp;
                 Effingerstrasse 10, Bern
               </a>
             </div>
           </div>
           <div>
-          <a href="https://www.eventlokale.ch/site/_redaktionell/52/eventmagazin/5029/swiss_location_award_2021_die_schoensten_meetinglocations_und_sitzungszimmer_der_schweiz.html"
-             rel="nofollow noopener noreferrer" class="inline-block"
-             style="margin: 100px; border-radius: 50%; transform: translateY(-65px);">
-            <img src="../images/raeume/Swiss-Location-Award-Empfohlen.png" alt="Swiss Location Award: Empfohlen"
-                 style="width: 150px; border-radius: inherit;">
-          </a></div>
+            <a href="https://www.eventlokale.ch/site/_eventlokale/1/Schweiz/41472/effinger_kaffeebar_coworking_space.html?slarating=1"
+              rel="nofollow noopener noreferrer" class="inline-block"
+              style="margin: 100px; margin-right: 25px; border-radius: 50%; transform: translateY(-65px);">
+              <img src="../images/raeume/Swiss-Location-Award-Voting.png" alt="Swiss Location Award: Empfohlen"
+                style="width: 150px; border-radius: inherit;">
+            </a>
+            <a href="https://www.eventlokale.ch/site/_eventlokale/1/Schweiz/41472/effinger_kaffeebar_coworking_space.html?slarating=1"
+              rel="nofollow noopener noreferrer" class="inline-block"
+              style="margin: 100px; margin-left: 25px; transform: translateY(-65px);">
+              <img src="../images/raeume/QR-Swiss-Location-Award-Voting.png" alt="Swiss Location Award: Empfohlen"
+                style="width: 150px; border-radius: inherit;">
+            </a>
+          </div>
         </div>
       </div>
       <!-- End Hero Content -->
@@ -104,7 +111,8 @@
 
   <section class="page-section">
     <div class="container relative">
-      <h2 class="mt-0 font-alt mb-30 mb-xs-10"><a href="{{ .RelPermalink }}">Raum &laquo;<strong>{{ .Title }}</strong>&raquo;</a></h2>
+      <h2 class="mt-0 font-alt mb-30 mb-xs-10"><a href="{{ .RelPermalink }}">Raum &laquo;<strong>{{ .Title
+            }}</strong>&raquo;</a></h2>
 
       <div class="row">
         <div class="col-sm-6 mb-sm-40">
@@ -116,9 +124,9 @@
               {{ range .Params.gallery }}
               <li>
                 {{ if or (strings.HasSuffix . "mp4") (strings.HasSuffix . "mov") }}
-                  <video src="{{ $url }}{{ . }}" width="555" height="312" controls/>
+                <video src="{{ $url }}{{ . }}" width="555" height="312" controls />
                 {{ else }}
-                  <img src="{{ $url }}{{ . }}" alt="" />
+                <img src="{{ $url }}{{ . }}" alt="" />
                 {{ end }}
               </li>
               {{ end }}
@@ -161,9 +169,9 @@
                 <div class="raeume-title">Zusätzliche Infrastruktur</div>
                 <div class="raeume-content">
                   {{ range $index, $element := . }}
-                    {{- if not $element.hidden -}}
-                    {{- if gt $index 0 }},{{ end }} {{ $element.text -}}
-                    {{- end -}}
+                  {{- if not $element.hidden -}}
+                  {{- if gt $index 0 }},{{ end }} {{ $element.text -}}
+                  {{- end -}}
                   {{ end }}
                 </div>
               </div>
@@ -182,7 +190,8 @@
             </div>
 
             <div class="mt-40">
-              <a href="{{ .RelPermalink }}" class="btn btn-mod btn-border btn-round btn-medium">Details und Reservation</a>
+              <a href="{{ .RelPermalink }}" class="btn btn-mod btn-border btn-round btn-medium">Details und
+                Reservation</a>
             </div>
           </div>
 
