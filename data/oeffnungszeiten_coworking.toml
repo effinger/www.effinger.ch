@@ -15,7 +15,7 @@ text = """
 # Falls mehrere Spezial-Zeiten zutreffen, kommt der unterste zur Anwendung.
 
 [[spezial]]
-display_start = 2023-05-15T00:00:00Z
+display_start = 2023-05-10T00:00:00Z
 display_end = 2023-05-29T23:59:59Z
 text = """
 <p class="mb-0">Mo-Fr <span>8-18 Uhr</span></p>
