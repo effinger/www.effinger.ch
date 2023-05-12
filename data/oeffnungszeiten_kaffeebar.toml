@@ -20,20 +20,22 @@ text = """
 display_start = 2023-05-10T00:00:00Z
 display_end = 2023-05-29T23:59:59Z
 text = """
-<p class="mb-0">Mo-Fr <span>8-18 Uhr</span></p>
-<p>Sa-So <span>geschlossen</span></p>
+<p class="mb-0">Mo <span>7-20 Uhr</span></p>
+<p>Di-Fr <span>7-22 Uhr</span></p>
+<p>Sa <span>geschlossen</span></p>
+<p>So <span>9-17 Uhr</span></p>
 <p>18.5. Auffahrt <span>geschlossen</span></p>
 <p>19.5. Freitag <span>geschlossen</span></p>
 <p>29.5. Pfingstmontag <span>geschlossen</span></p>
 """
 
 # Sommer
-[[spezial]]
-display_start = 2022-07-01T00:00:00Z
-display_end = 2022-08-14T23:59:59Z
-text = """
-<p class="text-center"><em>Von Montag 10. Juli bis Sonntag 14. August</em></p>
-<p>Mo-Fr <span>8-19 Uhr</span></p>
-<p>Sa <span>geschlossen</span></p>
-<p>So <span>geschlossen</span></p>
-"""
+# [[spezial]]
+# display_start = 2022-07-01T00:00:00Z
+# display_end = 2022-08-14T23:59:59Z
+# text = """
+# <p class="text-center"><em>Von Montag 10. Juli bis Sonntag 14. August</em></p>
+# <p>Mo-Fr <span>8-19 Uhr</span></p>
+# <p>Sa <span>geschlossen</span></p>
+# <p>So <span>geschlossen</span></p>
+# """
