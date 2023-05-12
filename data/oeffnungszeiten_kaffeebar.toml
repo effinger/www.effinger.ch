@@ -24,9 +24,11 @@ text = """
 <p>Di-Fr <span>7-22 Uhr</span></p>
 <p>Sa <span>geschlossen</span></p>
 <p>So <span>9-17 Uhr</span></p>
+
+<div class="separator mt-20"></div>
 <p>Do 18.5. Auffahrt <span>geschlossen</span></p>
 <p>Brücke bis So 21.5. <span>geschlossen</span></p>
-<p>29.5. Pfingstmontag <span>geschlossen</span></p>
+<p>So 28. + Mo 29. Pfingsten <span>geschlossen</span></p>
 """
 
 # Sommer
