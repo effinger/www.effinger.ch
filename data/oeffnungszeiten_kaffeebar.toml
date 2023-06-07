@@ -26,16 +26,17 @@ text = """
 # <p>So <span>9-17 Uhr</span></p>
 
 # <div class="separator mt-20"></div>
+# <p>Do 18.5. Auffahrt <span>geschlossen</span></p>
+# <p>Brücke bis So 21.5. <span>geschlossen</span></p>
 # <p>So 28. + Mo 29. Pfingsten <span>geschlossen</span></p>
 # """
 
 # Sommer
-# [[spezial]]
-# display_start = 2022-07-01T00:00:00Z
-# display_end = 2022-08-14T23:59:59Z
-# text = """
-# <p class="text-center"><em>Von Montag 10. Juli bis Sonntag 14. August</em></p>
-# <p>Mo-Fr <span>8-19 Uhr</span></p>
-# <p>Sa <span>geschlossen</span></p>
-# <p>So <span>geschlossen</span></p>
-# """
+[[spezial]]
+display_start = 2023-07-07T00:00:00Z
+display_end = 2023-08-13T18:00:00Z
+text = """
+<p class="text-center"><em>Von Samstag 8. Juli bis Sonntag 13. August</em></p>
+<p>Mo-Fr <span>8-18 Uhr</span></p>
+<p>Sa-So <span>geschlossen</span></p>
+"""
