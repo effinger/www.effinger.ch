@@ -34,4 +34,4 @@ prices = [
 +++
 Der abgetrennte Raum oberhalb des Kaffeebar-Bereichs eignet sich als Sitzungszimmer und Workshopraum. Hier werden neue Ideen geboren und Bestehendes hinterfragt. Es kann ohne Grenzen “gebrainstormed” und auf den Wänden visualisiert werden.
 
-**Spezialität vom Raum Pläfe:** In diesem Raum bieten wir eine *Reduktion von CHF 50 für NPOs.* Rabatte können nicht kumuliert werden.
+**Spezialität vom Raum Pläfe:**  In diesem Raum bieten wir eine Reduktion von CHF 50 für NPOs (Vereine, Startups) *mit beschränkten finanziellen Mitteln*. Rabatte können nicht kumuliert werden.
