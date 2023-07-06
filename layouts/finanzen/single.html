@@ -47,15 +47,15 @@
   <!-- End Header -->
 
   <!-- Section -->
-  <section class="page-section">
+  <section class="page-section" id="report">
     <div class="container relative long-text-body">
       <!-- Prev/Next Post -->
       <div class="clearfix prev-next mb-10">
         {{ if .PrevInSection }}
-        <a href="{{ .PrevInSection.RelPermalink }}" class="blog-item-more left"><i class="fa fa-angle-left"></i>&nbsp;{{ index $.Site.Data.de.months .PrevInSection.Date.Month }}</a>
+        <a href="{{ .PrevInSection.RelPermalink }}#report" class="blog-item-more left"><i class="fa fa-angle-left"></i>&nbsp;{{ index $.Site.Data.de.months .PrevInSection.Date.Month }}</a>
         {{ end }}
         {{ if .NextInSection }}
-        <a href="{{ .NextInSection.RelPermalink }}" class="blog-item-more right"><i class="fa fa-angle-right"></i>{{ index $.Site.Data.de.months .NextInSection.Date.Month }}</a>
+        <a href="{{ .NextInSection.RelPermalink }}#report" class="blog-item-more right"><i class="fa fa-angle-right"></i>{{ index $.Site.Data.de.months .NextInSection.Date.Month }}</a>
         {{ end }}
       </div>
       <!-- End Prev/Next Post -->

@@ -61,7 +61,7 @@
             {{/* Collecting the month names in German. */}}
             {{ index $.Site.Data.de.months .Date.Month | $.Scratch.SetInMap "monate" (print $i) }}
 
-            <a href="{{ .RelPermalink }}" class="col-md-4 col-sm-6 monats-box">
+            <a href="{{ .RelPermalink }}#report" class="col-md-4 col-sm-6 monats-box">
               <div class="inner mt-20 mb-20 clearfix">
                 <h4 class="title">{{ index $.Site.Data.de.months .Date.Month }}</h4>
                 <div class="wave-spacer"></div>
