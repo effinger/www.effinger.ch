@@ -1,0 +1,25 @@
+{{ define "main" }}
+<div class="page" id="top">
+
+  <nav class="main-nav transparent stick-fixed">
+    {{ partial "navigation.html" . }}
+  </nav>
+
+  <div style="display: flex;">
+    <img src="/upload/café-philou.png" alt="Café Philo(u)" style="margin-bottom: 100px;">
+    <img src="/upload/café-philou-right.png" alt="" style="align-self: flex-end; margin-left: auto;">
+  </div>
+
+  <section class="page-section pt-0 pb-0">
+    <div class="container relative">
+      <div class="section-text">
+        {{ .Content }}
+      </div>
+    </div>
+  </section>
+
+  <div style="text-align: right;">
+    <img src="/upload/café-philou-bottom.png" alt="" style="margin: 3vw;">
+  </div>
+</div>
+{{ end }}
