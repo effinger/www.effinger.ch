@@ -3,14 +3,6 @@ title = "Café Philo(u)"
 description = "Geistreiche Wortwechsel zum Stirnschmunzeln"
 +++
 
-### Themen
-   
-<table>
-<tr><th>8. September 2023 &emsp;</th><td><a href="/events/100468/">BILDUNGSKRISE? AUA! (Anzeichen, Ursachen, Auswege)</a></td></tr>
-</table>
-
-<hr style="margin: 2em 0;"/>
-
 # CAFÉ PHILO(U): 1x1
 
 ### Wie läuft ein Café Philo(u) ab?
