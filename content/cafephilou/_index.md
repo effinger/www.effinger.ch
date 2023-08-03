@@ -26,7 +26,7 @@ Es ist keine Plattform, um für diese oder jene Ideologie oder Partei zu werben.
 Es ist kein Forum für politische Entscheidungsfindung.
 Es geht nicht um einen blossen Austausch von Meinungen, da wir deren Hintergründe kritisch in Frage stellen.
 Es ist keine Selbsthilfegruppe, der man sein Herz ausschüttet.
-Zu guter Letzt: Obschon davon inspiriert ist das Café Philo(u) kein Café philosophique im engsten Sinn (https://www.cafesphilo.org/qu-est-ce/les-grands-principes), da die Themen nicht basisdemokratisch erkoren, sondern in Rücksprache mit der Effinger Coworking Community durch den Gastgeber festgelegt werden.
+Zu guter Letzt: Obschon davon inspiriert ist das Café Philo(u) kein Café philosophique im engsten Sinn (siehe [www.cafesphilo.org](https://www.cafesphilo.org/qu-est-ce/les-grands-principes)), da die Themen nicht basisdemokratisch erkoren, sondern in Rücksprache mit der Effinger Coworking Community durch den Gastgeber festgelegt werden.
 
 <div style="text-align: right; color: gray; font-size: 0.8em;">
   © Café Philo(u), Effinger Coworking Community Bern, 2023-06-26
