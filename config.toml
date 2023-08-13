@@ -13,11 +13,19 @@ disableFastRender = true
 [markup.goldmark.renderer]
   unsafe = true
 
-[params]
+[Params]
   author = "Coworking Community Bern"
   analyticsId = "UA-56906982-1"
   disqusShortname = "effinger"
   archiveEventsAfterMonths = 6
+
+[Params.holidays.sommer]
+  from = "2023-07-05 00:00:00"
+  upto = "2023-08-13 18:00:00"
+
+[Params.holidays.winter]
+  from = "2022-12-05 00:00:00"
+  upto = "2023-01-08 18:00:00"
 
 [taxonomies]
   category = "categories"  # Used for events
