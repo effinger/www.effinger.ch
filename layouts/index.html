@@ -3,11 +3,11 @@
 
 {{ define "main" }}
 {{ $sommerferien := and
-    (ge now (time .Site.Params.holidays.sommer.from "Europe/Zurich"))
-    (le now (time .Site.Params.holidays.sommer.upto "Europe/Zurich")) }}
+    (ge now $.Site.Data.oeffnungszeiten_ferien.sommer.from)
+    (le now $.Site.Data.oeffnungszeiten_ferien.sommer.upto) }}
 {{ $winterferien := and
-    (ge now (time .Site.Params.holidays.winter.from "Europe/Zurich"))
-    (le now (time .Site.Params.holidays.winter.upto "Europe/Zurich")) }}
+    (ge now $.Site.Data.oeffnungszeiten_ferien.winter.from)
+    (le now $.Site.Data.oeffnungszeiten_ferien.winter.upto) }}
 <!-- Page Wrap -->
 <div class="page page-home" id="top">
 

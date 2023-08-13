@@ -17,8 +17,8 @@ text = """
 
 # Auffahrt & Pfingsten
 # [[spezial]]
-# display_start = 2023-05-10T00:00:00Z
-# display_end = 2023-05-29T23:59:59Z
+# display_start = 2023-05-10T00:00:00+02:00
+# display_end = 2023-05-29T23:59:59+02:00
 # text = """
 # <p>Mo <span>7-20 Uhr</span></p>
 # <p>Di-Fr <span>7-22 Uhr</span></p>
@@ -33,8 +33,8 @@ text = """
 
 # Sommer
 [[spezial]]
-display_start = 2023-07-06T00:00:00Z
-display_end = 2023-08-13T18:00:00Z
+display_start = 2023-07-06T00:00:00+02:00
+display_end = 2023-08-13T11:30:00+02:00
 text = """
 <p class="text-center"><em>Von Samstag 8. Juli bis Sonntag 13. August</em></p>
 <p>Mo-Fr <span>8-18 Uhr</span></p>
