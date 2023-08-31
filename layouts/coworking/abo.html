@@ -405,91 +405,89 @@
 
 {{ define "body_includes" }}
 <script>
-// *******************************
-// Handle the form.
-// *******************************
-$(document).ready(function() {
+  // *******************************
+  // Handle the form.
+  // *******************************
+  $(document).ready(function() {
+    const $form = $('form');
 
-  var $form = $('form');
-
-  // On loading: Select number of days according to query parameter ?tage=
-  // First test if we have a valid option.
-  var aboOption = getUrlVars()["option"];
-  if ($('[name="abo-option"] option[value=' + aboOption + ']').length > 0) {
-    $('[name="abo-option"]').val(aboOption);
-  }
-
-  // Read a page's GET URL variables and return them as an associative array.
-  function getUrlVars() {
-    var vars = [], hash;
-    var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
-    for(var i = 0; i < hashes.length; i++) {
-      hash = hashes[i].split('=');
-      vars.push(hash[0]);
-      vars[hash[0]] = hash[1];
+    // On loading: Select number of days according to query parameter ?tage=
+    // First test if we have a valid option.
+    const aboOption = getUrlVars()["option"];
+    if ($('[name="abo-option"] option[value=' + aboOption + ']').length > 0) {
+      $('[name="abo-option"]').val(aboOption);
     }
-    return vars;
-  }
 
-  function reset() {
-    $form.find('.invalid').removeClass('invalid');
-    $form.find('#validation-error-message').hide();
-  }
+    // Read a page's GET URL variables and return them as an associative array.
+    function getUrlVars() {
+      const vars = [];
+      let hash;
+      const hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+      for(let i = 0; i < hashes.length; i++) {
+        hash = hashes[i].split('=');
+        vars.push(hash[0]);
+        vars[hash[0]] = hash[1];
+      }
+      return vars;
+    }
 
-  function isEmail(email) {
-    var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-    return regex.test(email);
-  }
+    function reset() {
+      $form.find('.invalid').removeClass('invalid');
+      $form.find('#validation-error-message').hide();
+    }
 
-  $form.on('click', 'button', function (e) {
-    e.preventDefault();
+    function isEmail(email) {
+      const regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+      return regex.test(email);
+    }
 
-    // Clear invalid markers.
-    reset();
+    $form.on('click', 'button', function (e) {
+      e.preventDefault();
 
-    // Get input field values and validate
-    // We simply change border color to red if empty field using .css()
-    var error = false;
+      // Clear invalid markers.
+      reset();
 
-    $form.find(':input').each(function () {
-      var validate = $(this).attr('validate');
-      if (validate) {
-        if (validate == 'notEmpty') {
+      // Get input field values and validate
+      // We simply change border color to red if empty field using .css()
+      let error = false;
+
+      $form.find(':input').each(function () {
+        const validate = $(this).attr('validate');
+        if (validate === 'notEmpty') {
           if (!$(this).val().trim()) {
             $(this).addClass('invalid');
             error = true;
           }
-        } else if (validate == 'email') {
+        } else if (validate === 'email') {
           if (!$(this).val().trim() || !isEmail($(this).val())) {
             $(this).addClass('invalid');
             error = true;
           }
         }
+      });
+
+      // Submit when valid.
+      if (!error) {
+
+        // Replace selected value with text to have more info than just the number.
+        $('[name="abo-option"] option').val(function(){
+          return $(this).text();
+        });
+
+        // Submit.
+        $.post($form.attr("action"), $form.serialize()).then(function() {
+          // Show the success message.
+          $form.hide();
+          $('#form-success-content').show();
+        });
+
+      } else {
+        // Show validation error message.
+        $form.find('#validation-error-message .error-details').html(error);
+        $form.find('#validation-error-message').show();
       }
     });
-
-    // Submit when valid.
-    if (!error) {
-
-      // Replace selected value with text to have more info than just the number.
-      $('[name="abo-option"] option').val(function(){
-        return $(this).text();
-      });
-
-      // Submit.
-      $.post($form.attr("action"), $form.serialize()).then(function() {
-        // Show the success message.
-        $form.hide();
-        $('#form-success-content').show();
-      });
-
-    } else {
-      // Show validation error message.
-      $form.find('#validation-error-message .error-details').html(error);
-      $form.find('#validation-error-message').show();
-    }
   });
-});
 
 </script>
 

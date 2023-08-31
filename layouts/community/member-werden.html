@@ -187,7 +187,7 @@
 // *******************************
 $(document).ready(function() {
 
-  var $form = $('form');
+  const $form = $('form');
 
   function reset() {
     $form.find('.invalid').removeClass('invalid');
@@ -195,7 +195,7 @@ $(document).ready(function() {
   }
 
   function isEmail(email) {
-    var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    const regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
     return regex.test(email);
   }
 
@@ -207,10 +207,10 @@ $(document).ready(function() {
 
     // Get input field values and validate
     // We simply change border color to red if empty field using .css()
-    var error = false;
+    let error = false;
 
     $form.find(':input').each(function () {
-      var validate = $(this).attr('validate');
+      const validate = $(this).attr('validate');
       if (validate) {
         if (validate == 'notEmpty') {
           if (!$(this).val().trim()) {

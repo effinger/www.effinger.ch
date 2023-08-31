@@ -1,30 +1,30 @@
 <div id="disqus_thread"></div>
 <script type="text/javascript">
   /* * * CONFIGURATION VARIABLES * * */
-  
-  {{ if eq .Params.comments true }} 
-  var disqus_shortname = '{{ .Site.Params.disqusShortname }}'; 
+
+  {{ if eq .Params.comments true }}
+  const disqus_shortname = '{{ .Site.Params.disqusShortname }}';
   {{ else }}
-  var disqus_shortname = '{{ .Params.comments }}';
+  const disqus_shortname = '{{ .Params.comments }}';
   {{ end }}
 
-  var disqus_config = function () {
-      this.page.identifier = '{{ .RelPermalink }}';
-      this.page.url = '{{ .Permalink }}';
-      this.page.title = '{{ .Title }}';
+  const disqus_config = function () {
+    this.page.identifier = '{{ .RelPermalink }}';
+    this.page.url = '{{ .Permalink }}';
+    this.page.title = '{{ .Title }}';
   };
 
   (function() {
-    var d = document, s = d.createElement('script');
+    const d = document, s = d.createElement('script');
 
-    s.src = '//' + disqus_shortname + '.disqus.com/embed.js'; 
+    s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
 
     s.setAttribute('data-timestamp', +new Date());
     (d.head || d.body).appendChild(s);
   })();
 </script>
 
-{{ if eq .Params.comments true }} 
+{{ if eq .Params.comments true }}
 <script id="dsq-count-scr" src="//{{ .Site.Params.disqusShortname }}.disqus.com/count.js" async></script>
 {{ else }}
 <script id="dsq-count-scr" src="//{{ .Params.comments }}.disqus.com/count.js" async></script>

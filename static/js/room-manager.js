@@ -1,7 +1,7 @@
-var loadCalendar = function(calendarApiPath, calendarId, roomTitle, roomExtras, roomSetup,
-    calendarElement, loadingElement, detailsElement, dialogElement) {
-  var createDetailsContent = function(event) {
-    var result = '';
+const loadCalendar = function(calendarApiPath, calendarId, roomTitle, roomExtras, roomSetup,
+                              calendarElement, loadingElement, detailsElement, dialogElement) {
+  const createDetailsContent = function(event) {
+    let result = '';
     if (event['title']) {
       result += '\
       <div class="calendar-details-title">Reservationsdetails</div> \
@@ -26,12 +26,12 @@ var loadCalendar = function(calendarApiPath, calendarId, roomTitle, roomExtras, 
     allDaySlot: false,
     businessHours: [
       {
-        dow: [ 1, 2, 3, 4, 5 ], // Monday, Tuesday,...
+        dow: [1, 2, 3, 4, 5], // Monday, Tuesday,...
         start: '08:00',
         end: '22:00'
       },
       {
-        dow: [ 6 ], // Saturday
+        dow: [6], // Saturday
         start: '09:00',
         end: '17:00'
       }
@@ -47,7 +47,7 @@ var loadCalendar = function(calendarApiPath, calendarId, roomTitle, roomExtras, 
       right: 'month,agendaWeek'
     },
     events: function(start, end, timezone, callback) {
-      var xhr = $.ajax({
+      const xhr = $.ajax({
         url: calendarApiPath,
         data: {
           calendarId: calendarId,
@@ -59,22 +59,22 @@ var loadCalendar = function(calendarApiPath, calendarId, roomTitle, roomExtras, 
           //console.log(this.url);
           //callback(data.results);
 
-          var events = [];
+          const events = [];
 
-          for (var calendarName in data.results) {
-          
-            var calendarEvents = data.results[calendarName];
-            for (var i = 0; i < calendarEvents.length; i++) {
-              var value = calendarEvents[i];
+          for (let calendarName in data.results) {
+
+            const calendarEvents = data.results[calendarName];
+            for (let i = 0; i < calendarEvents.length; i++) {
+              const value = calendarEvents[i];
 
               // Use "Besetzt".
-              var title = "Besetzt";
-    
+              let title = "Besetzt";
+
               // Add hours.
               // var hours = Math.round(moment.duration(moment(value.end).diff(moment(value.start))).asHours());
               // title = hours + ' Std. ' + title;
-    
-              var classes = [];
+
+              const classes = [];
               if (value.provisional) {
                 classes.push("provisional");
                 title = "(Prov) " + title;
@@ -97,18 +97,18 @@ var loadCalendar = function(calendarApiPath, calendarId, roomTitle, roomExtras, 
         }
       });
     },
-    eventClick: function( event, jsEvent, view ) {
+    eventClick: function(event, jsEvent, view) {
       detailsElement.stop(true, true);
       detailsElement.html(createDetailsContent(event)).show();
     },
-    eventMouseover: function( event, jsEvent, view ) {
+    eventMouseover: function(event, jsEvent, view) {
       // Don't show for selection helper.
       if (event.className.indexOf('fc-helper') == -1) {
         detailsElement.stop(true, true);
         detailsElement.html(createDetailsContent(event)).show();
       }
     },
-    eventMouseout: function( event, jsEvent, view ) {
+    eventMouseout: function(event, jsEvent, view) {
       detailsElement.stop(true, true);
       detailsElement.delay(700).fadeOut(300);
     },
@@ -165,14 +165,14 @@ var loadCalendar = function(calendarApiPath, calendarId, roomTitle, roomExtras, 
       }
 
       // Set the room extras.
-      var extrasElement = dialogElement.find('#res-extras');
+      const extrasElement = dialogElement.find('#res-extras');
       extrasElement.empty();
-      for (var i = 0; i < roomExtras.length; i++) {
+      for (let i = 0; i < roomExtras.length; i++) {
         if (i === 0) {
           extrasElement.append('<label>Extras</label>');
         }
-        var priceString = roomExtras[i].price ? ' - ' + roomExtras[i].price : '';
-        var textAndPrice = roomExtras[i].text + priceString;
+        const priceString = roomExtras[i].price ? ' - ' + roomExtras[i].price : '';
+        const textAndPrice = roomExtras[i].text + priceString;
         extrasElement.append(
           '<div class="checkbox">\
             <label>\
@@ -184,9 +184,9 @@ var loadCalendar = function(calendarApiPath, calendarId, roomTitle, roomExtras, 
 
       // Set the room setup.
       if (roomSetup) {
-        var setupElement = dialogElement.find('#res-setup');
+        const setupElement = dialogElement.find('#res-setup');
         setupElement.empty();
-        for (var i = 0; i < roomSetup.length; i++) {
+        for (let i = 0; i < roomSetup.length; i++) {
           if (i === 0) {
             setupElement.append('<option selected="selected">' + roomSetup[i] + '</option>');
           } else {
@@ -217,14 +217,14 @@ var loadCalendar = function(calendarApiPath, calendarId, roomTitle, roomExtras, 
     // Clear invalid markers.
     reset();
 
-    var eventData = {};
+    const eventData = {};
 
     // Get input field values and validate
     // We simply change border color to red if empty field using .css()
-    var error = '';
+    let error = '';
 
     // Title.
-    var resTitle = dialogElement.find('#res-title').val();
+    const resTitle = dialogElement.find('#res-title').val();
     if (!resTitle.trim()) {
       dialogElement.find('#res-title').addClass('invalid');
       error += '<li>Name des Anlasses fehlt</li>';
@@ -232,8 +232,8 @@ var loadCalendar = function(calendarApiPath, calendarId, roomTitle, roomExtras, 
     eventData.title = resTitle;
 
     // Start and end dates.
-    var resDate = dialogElement.find('#res-date').val();
-    var parsedDate = moment(resDate, 'DD.MM.YYYY');
+    const resDate = dialogElement.find('#res-date').val();
+    const parsedDate = moment(resDate, 'DD.MM.YYYY');
     // Must be valid and not in the past.
     if (parsedDate == null || !parsedDate.isValid() || parsedDate.isBefore(moment().subtract(1, 'day'))) {
       dialogElement.find('#res-date').addClass('invalid');
@@ -245,15 +245,15 @@ var loadCalendar = function(calendarApiPath, calendarId, roomTitle, roomExtras, 
       error += '<li>Sonntag ist unser Ruhetag und steht deshalb im Moment nicht zur Verfügung.</li>';
     }
 
-    var resStartTime = dialogElement.find('#res-start-time').val();
-    var start = moment(resDate + ' ' + resStartTime, 'DD.MM.YYYY HH:mm');
+    const resStartTime = dialogElement.find('#res-start-time').val();
+    let start = moment(resDate + ' ' + resStartTime, 'DD.MM.YYYY HH:mm');
 
-    var resEndTime = dialogElement.find('#res-end-time').val();
-    var end = moment(resDate + ' ' + resEndTime, 'DD.MM.YYYY HH:mm');
+    const resEndTime = dialogElement.find('#res-end-time').val();
+    let end = moment(resDate + ' ' + resEndTime, 'DD.MM.YYYY HH:mm');
 
     // Silently swap if start is after end date.
     if (start.isAfter(end)) {
-      var tmpStart = start;
+      const tmpStart = start;
       start = end;
       end = tmpStart;
     }
@@ -267,14 +267,14 @@ var loadCalendar = function(calendarApiPath, calendarId, roomTitle, roomExtras, 
     eventData.end = end;
 
     // Extras.
-    var extras = [];
-    dialogElement.find('#res-extras input:checked').each(function() {
+    const extras = [];
+    dialogElement.find('#res-extras input:checked').each(function () {
       extras.push($(this).val());
     });
     eventData.extras = extras.join(', ');
 
     // Room setup.
-    var resSetup = dialogElement.find('#res-setup').val();
+    const resSetup = dialogElement.find('#res-setup').val();
     eventData.setup = resSetup;
 
     // Visibility (default, private, public).
@@ -282,7 +282,7 @@ var loadCalendar = function(calendarApiPath, calendarId, roomTitle, roomExtras, 
     eventData.visibility = 'default';
 
     // Contact Name.
-    var resPersons = dialogElement.find('#res-persons').val();
+    const resPersons = dialogElement.find('#res-persons').val();
     if (!resPersons.trim()) {
       dialogElement.find('#res-persons').addClass('invalid');
       error += '<li>Anzahl Personen fehlt</li>';
@@ -290,7 +290,7 @@ var loadCalendar = function(calendarApiPath, calendarId, roomTitle, roomExtras, 
     eventData.persons = resPersons;
 
     // Contact Name.
-    var resContactName = dialogElement.find('#res-contact-name').val();
+    const resContactName = dialogElement.find('#res-contact-name').val();
     if (!resContactName.trim()) {
       dialogElement.find('#res-contact-name').addClass('invalid');
       error += '<li>Name der Kontaktperson fehlt</li>';
@@ -298,27 +298,27 @@ var loadCalendar = function(calendarApiPath, calendarId, roomTitle, roomExtras, 
     eventData.contactName = resContactName;
 
     // Company (optional).
-    var resContactCompany = dialogElement.find('#res-contact-company').val();
+    const resContactCompany = dialogElement.find('#res-contact-company').val();
     eventData.contactCompany = resContactCompany;
 
     // Email.
-    var resContactEmail = dialogElement.find('#res-contact-email').val();
+    const resContactEmail = dialogElement.find('#res-contact-email').val();
     if (!resContactEmail.trim() || !isEmail(resContactEmail)) {
       dialogElement.find('#res-contact-email').addClass('invalid');
       error += '<li>E-Mail fehlt</li>';
     }
     eventData.contactEmail = resContactEmail;
-    
+
     // Phone.
-    var resContactPhone = dialogElement.find('#res-contact-phone').val();
+    const resContactPhone = dialogElement.find('#res-contact-phone').val();
     if (!resContactPhone.trim()) {
       dialogElement.find('#res-contact-phone').addClass('invalid');
       error += '<li>Telefon fehlt</li>';
     }
     eventData.contactPhone = resContactPhone;
-    
+
     // Billing Address.
-    var resBillingAddress = dialogElement.find('#res-billing-address').val();
+    const resBillingAddress = dialogElement.find('#res-billing-address').val();
     if (!resBillingAddress.trim()) {
       dialogElement.find('#res-billing-address').addClass('invalid');
       error += '<li>Rechnungsadresse fehlt</li>';
@@ -326,7 +326,7 @@ var loadCalendar = function(calendarApiPath, calendarId, roomTitle, roomExtras, 
     eventData.billingAddress = resBillingAddress;
 
     // Comments (optional).
-    var resComments = dialogElement.find('#res-comments').val();
+    const resComments = dialogElement.find('#res-comments').val();
     eventData.comments = resComments;
 
     // Submit when valid.
@@ -362,7 +362,7 @@ var loadCalendar = function(calendarApiPath, calendarId, roomTitle, roomExtras, 
   }
 
   function isEmail(email) {
-    var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    const regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
     return regex.test(email);
   }
 
@@ -373,7 +373,7 @@ var loadCalendar = function(calendarApiPath, calendarId, roomTitle, roomExtras, 
 
     // POST-like request from GET via "_method" parameter,
     // to be cross-origin friendly.
-    var xhr = $.ajax({
+    const xhr = $.ajax({
       method: "GET",
       url: calendarApiPath,
       data: {

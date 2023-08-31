@@ -323,7 +323,7 @@
 {{ define "body_includes" }}
 <script>
   (function () {
-    var d = document, s = d.createElement('script');
+    const d = document, s = d.createElement('script');
     s.src = 'https://www.kurtli.com/feed/embed.js';
     s.setAttribute('data-timestamp', +new Date());
     (d.head || d.body).appendChild(s);

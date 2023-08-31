@@ -197,7 +197,7 @@
   <script type="text/javascript">
   $(document).ready(function(){
 
-    var gmMapDiv = $("#map-canvas");
+    const gmMapDiv = $("#map-canvas");
 
     $(".map-section").click(function(){
       $(this).toggleClass("js-active");
@@ -208,8 +208,8 @@
 
     if (gmMapDiv.length) {
 
-      var gmCenterAddress = gmMapDiv.attr("data-address");
-      var gmMarkerAddress = gmMapDiv.attr("data-address");
+      const gmCenterAddress = gmMapDiv.attr("data-address");
+      const gmMarkerAddress = gmMapDiv.attr("data-address");
 
 
       gmMapDiv.gmap3({

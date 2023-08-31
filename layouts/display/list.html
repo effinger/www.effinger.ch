@@ -26,10 +26,10 @@
 <script>
   $(document).ready(function() {
     moment.locale("de");
-    var urlVars = getUrlVars();
+    const urlVars = getUrlVars();
 
     // Color theme
-    var theme = urlVars['theme'];
+    const theme = urlVars['theme'];
     if (theme) {
       if (theme === "black") {
         $('body').addClass('theme-black');
@@ -37,7 +37,7 @@
     }
 
     // Vertical alignment.
-    var align = urlVars['align'];
+    const align = urlVars['align'];
     if (align) {
       $('.container').css('height', 'auto');
       if (align === "bottom") {
@@ -46,7 +46,7 @@
     }
 
     // Size.
-    var size = urlVars['size'];
+    const size = urlVars['size'];
     if (size) {
       if (size === "large") {
         $('body').addClass('size-large');
@@ -54,7 +54,7 @@
     }
 
     // Keystone correction.
-    var keystone = urlVars['keystone'];
+    const keystone = urlVars['keystone'];
     if (keystone) {
       $('.container-outer').css('left', Math.abs(keystone) + 'px');
       $('.container-outer').css('right', Math.abs(keystone) + 'px');
@@ -63,7 +63,7 @@
     }
 
     // Time zone correction
-    var tzdelta = urlVars['timezone'];
+    const tzdelta = urlVars['timezone'];
 
     // Periodically update events.
     setInterval(function() {
@@ -75,14 +75,14 @@
       // Show loading indicator.
       $('.logo-container').addClass('loading');
 
-      var startOfDay = moment().startOf('day');
-      var endOfDay = moment().endOf('day');
+      const startOfDay = moment().startOf('day');
+      const endOfDay = moment().endOf('day');
 
       // Set title date of today.
       $('.title').html("Gäste Heute &mdash; " + startOfDay.format('dd DD.MM.YYYY'));
 
-      var calendarApiPath = '{{ .Site.Data.room_manager.apiUrl }}';
-      var xhr = $.ajax({
+      const calendarApiPath = '{{ .Site.Data.room_manager.apiUrl }}';
+      const xhr = $.ajax({
         url: calendarApiPath,
         /*
         data: {
@@ -92,11 +92,11 @@
         },
         dataType: "jsonp",
         */
-        success: function(data) {
-          var events = [];
+        success: function (data) {
+          const events = [];
 
           // Iterate through benjibooks API events
-          data.forEach(function(d) {
+          data.forEach(function (d) {
 
             events.push({
               // TODO: validity tests ?
@@ -115,18 +115,18 @@
           });
 
           // Sort by start time.
-          events.sort(function(a, b) {
+          events.sort(function (a, b) {
             return a.start - b.start;
           });
 
           // Display events in table if we have events.
           if (events.length > 0) {
-            var tableContent = "<table class='table room-table'><tbody>";
-            for (var i = 0; i < events.length; i++) {
-              var event = events[i];
+            const tableContent = "<table class='table room-table'><tbody>";
+            for (const i = 0; i < events.length; i++) {
+              const event = events[i];
 
-              var eventStart = event.start;
-              var eventEnd = event.end;
+              const eventStart = event.start;
+              const eventEnd = event.end;
 
               // Adjust manually
               if (typeof tzdelta !== 'undefined' && tzdelta) {
@@ -179,9 +179,10 @@
 
     // Read a page's GET URL variables and return them as an associative array.
     function getUrlVars() {
-      var vars = [], hash;
-      var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
-      for(var i = 0; i < hashes.length; i++) {
+      const vars = [];
+      let hash;
+      const hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+      for(let i = 0; i < hashes.length; i++) {
         hash = hashes[i].split('=');
         vars.push(hash[0]);
         vars[hash[0]] = hash[1];

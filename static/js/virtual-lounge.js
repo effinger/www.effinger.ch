@@ -1,5 +1,5 @@
 // Virtual Coworking Lounge script (used during Corona).
-// 
+//
 // It loads the last 20 images from an imgur album and displays
 // them in a slide show.
 
@@ -38,7 +38,7 @@
 //     <p class="mb-10">
 //       Weitere Räume für private Gespräche
 //     </p>
-//     
+//
 //     <div class="mb-0">
 //       <a href="https://meet.jit.si/effinger-besprechung" target="_blank">Besprechungsraum</a>
 //       <small>für eigene Meetings</small><br>
@@ -58,13 +58,13 @@ function showLoungeImage(image) {
   $("#lounge-img").attr("src", "https://i.imgur.com/" + image.id + "l.jpg");
 
   // Calculate time diff in hours and minutes.
-  var imgTime = new Date(image.datetime * 1000);
-  var now = new Date();
+  const imgTime = new Date(image.datetime * 1000);
+  const now = new Date();
 
-  var diff = (now.getTime() - imgTime.getTime()) / 3600000; // this is a time in hours
+  let diff = (now.getTime() - imgTime.getTime()) / 3600000; // this is a time in hours
 
-  var diffText = "";
-  var live = false;
+  let diffText = "";
+  let live = false;
   if (diff > 48) {
     diffText = "vor " + Math.floor(diff / 24) + " Tagen";
   } else if (diff > 24) {
@@ -99,8 +99,8 @@ function showLoungeImage(image) {
 }
 
 function showLoungeImageSlideshow(images) {
-  var limitedReversedImages = images.slice(0, 20).reverse();
-  for (var i = 0; i < limitedReversedImages.length; i++) {
+  const limitedReversedImages = images.slice(0, 20).reverse();
+  for (let i = 0; i < limitedReversedImages.length; i++) {
     setTimeout(function (image) {
       showLoungeImage(image);
     }, i * 320, limitedReversedImages[i]);
@@ -125,13 +125,13 @@ function loadLoungeImages(slideshow) {
           if ('IntersectionObserver' in window) {
             // IntersectionObserver Supported
             // Show slideshow when in view.
-            var config = {
-                  root: null,
-                  rootMargin: '0px',
-                  threshold: 0.7
-                };
+            const config = {
+              root: null,
+              rootMargin: '0px',
+              threshold: 0.7
+            };
 
-            var observer = new IntersectionObserver(onChange, config);
+            const observer = new IntersectionObserver(onChange, config);
             observer.observe(document.querySelector("#lounge-link"));
 
             function onChange(changes, observer) {
