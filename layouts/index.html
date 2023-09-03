@@ -278,11 +278,11 @@
         <h2 class="hs-line-11 font-alt mb-60 text-center"><a href="/events/">Nächste Events</a></h2>
 
         <div class="eventlist row">
-          <div class="col-sm-6">
+          <div class="col-sm-12 col-lg-6">
             {{ range $index, $element := first 6 (partial "events/future_events.html" .) }}
               {{ if eq $index 3 }}
                 </div>
-                <div class="col-sm-6">
+                <div class="col-sm-12 col-lg-6">
               {{ end }}
               {{ $element }}
             {{ end }}

@@ -142,17 +142,12 @@
                         </div>
                         <div class="event-date text" style="background-image:url({{ .RelPermalink }}/{{ .Params.organizerimage }}); background-repeat: no-repeat; background-size: cover; background-position: center; height: 100%; width: 150px; position: absolute">
                             <span></span>
-
                         </div>
                         <div class="event-text text bg-white" style="margin-left: 150px;">
-                            <h4 class="uppercase">{{ .Title }}</h4>
-                            <p> <i class="fa fa-user fa-inline"></i> {{ .Params.organizer}}</p>
-                            <p>
-                                <i class="fa fa-clock-o fa-inline"></i>&nbsp{{.Params.time }}  
-                            </p>
-                            <p>
-                                <i class="fa fa-map-marker fa-inline"></i>&nbsp{{.Params.location }}
-                            </p>
+                            <h5 class="uppercase">{{ .Title }}</h5>
+                            <p> <i class="fa fa-user fa-inline"></i> {{ .Params.organizer }}</p>
+                            <p> <i class="fa fa-clock-o fa-inline"></i> {{.Params.time }} </p>
+                            <p> <i class="fa fa-map-marker fa-inline"></i> {{.Params.location }}</p>
                         </div>
                     </div>
                 </a>
