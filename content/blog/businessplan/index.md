@@ -25,19 +25,16 @@ Wir betonen immer wieder, dass unser zentrales Element die Menschen und unsere B
 
 Jede Person, welche sich mit uns und unseren Grundsätzen identifiziert oder uns einfach unterstützen möchte, darf Teil dieser Community sein. Dies ist möglich, auch wenn du keinen Arbeitsplatz bei uns hast. Dazu haben wir die [Community Membership](/community/) eingeführt.
 
-
-<div class="row">
-  <div class="col-md-12">
-    <div class="panel panel-default">
-      <div class="panel-heading"><h4 class="panel-title">Community Membership</h4></div>
-      <div class="list-group">
-        <div class="list-group-item">Du erhältst Zugang zum <b>Effinger-Slack</b> (Online Chatraum und Forum). Hier erfährst du alles, was gerade läuft, kannst Fragen stellen, dich inspirieren lassen, Ideen teilen, tolle Leute treffen und direkt mit ihnen Kontakt aufnehmen (<a href="/blog/slack/">mehr Infos zu Slack</a>).</div>
-        <div class="list-group-item">Du wirst eingeladen, als Member an Events zu kommen.</div>
-        <div class="list-group-item">Im Effinger wird dir ein Member-Kaffee pro Monat offeriert.</div>
-        <div class="list-group-item">Anders gesagt: Du bist Teil der "Effinger Community", bist jederzeit willkommen und erhältst ein Stück Heimat im Effinger.</div>
-        <div class="list-group-item list-group-item-warning"><strong style="color:#333">CHF 250 im ersten Jahr.<br>Ab dem zweiten Jahr zwischen CHF 0 und CHF 500 (kann selber gewählt werden).</strong></div>
-      </div>
-    </div>
+<div class="card mb-10">
+  <div class="card-header">
+    <h4 class="card-title">Community Membership</h4>
+  </div>
+  <div class="list-group list-group-flush">
+    <div class="list-group-item">Du erhältst Zugang zum <b>Effinger-Slack</b> (Online Chatraum und Forum). Hier erfährst du alles, was gerade läuft, kannst Fragen stellen, dich inspirieren lassen, Ideen teilen, tolle Leute treffen und direkt mit ihnen Kontakt aufnehmen (<a href="/blog/slack/">mehr Infos zu Slack</a>).</div>
+    <div class="list-group-item">Du wirst eingeladen, als Member an Events zu kommen.</div>
+    <div class="list-group-item">Im Effinger wird dir ein Member-Kaffee pro Monat offeriert.</div>
+    <div class="list-group-item">Anders gesagt: Du bist Teil der "Effinger Community", bist jederzeit willkommen und erhältst ein Stück Heimat im Effinger.</div>
+    <div class="list-group-item list-group-item-warning"><strong style="color:#333">CHF 250 im ersten Jahr.<br>Ab dem zweiten Jahr zwischen CHF 0 und CHF 500 (kann selber gewählt werden).</strong></div>
   </div>
 </div>
 
@@ -108,7 +105,7 @@ Für spontane Coworker bieten wir *Tagespässe* und *10er-Abos* an. Wer regelmä
       <td>Inklusive</td>
       <td>Inklusive</td>
     </tr>
-    <tr class="warning">
+    <tr class="table-warning">
       <th scope="row">Preis</th>
       <td><strong>CHF 30</strong></td>
       <td><strong>CHF 270</strong></td>

@@ -250,7 +250,7 @@ form {
     position: absolute;
     z-index: 100;
     left: 500px;
-    right: 0px;
+    right: 0;
     top: 150px;
     margin: auto;
   }
@@ -312,12 +312,10 @@ form {
 
   @-webkit-keyframes circle {
     from {
-      -webkit-transform: scale(1);
       transform: scale(1);
     }
 
     to {
-      -webkit-transform: scale(1.5);
       transform: scale(1.5);
       opacity: 0;
     }
@@ -325,12 +323,10 @@ form {
 
   @keyframes circle {
     from {
-      -webkit-transform: scale(1);
       transform: scale(1);
     }
 
     to {
-      -webkit-transform: scale(1.5);
       transform: scale(1.5);
       opacity: 0;
     }

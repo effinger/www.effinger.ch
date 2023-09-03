@@ -18,10 +18,10 @@ Das grosse und offensichtliche Projekt ist der Aufbau der physischen Heimat vom 
 
 "Schöne Dinge" tönt recht allgemein, doch es geht um die Momente, wo sich etwas einfach schön und gut anfühlt: Lust und Freude an der Arbeit, ein Handwerk, das mit Leidenschaft ausgeübt wird, bei der Entstehung von Kunst dabei sein, die Gemeinschaft unter Freunden geniessen, eine verknortzte Beziehung klären, ein Funkeln in den Augen eines Kunden zu sehen, vom Kunden grosszügig bezahlt zu werden, auf etwas Unnötiges zu verzichten, die Schönheit der Natur geniessen, diese Schönheit zu erhalten und zu fördern, einen Menschen zu sehen, der wirklich sich selbst ist, usw.
 
-<blockquote>
+<div class="blockquote">
   <p>[…] wir werden in eine Trennung hineingeboren und lernen, uns von unserem tieferen Wesen, von anderen Menschen und dem Leben um uns herum getrennt zu fühlen. Die Traditionen sagen uns, dass unsere tiefste Bestimmung im Leben darin besteht, unsere Ganzheit wiederzufinden, in uns und unserer Verbundenheit mit der äusseren Welt. Aussergewöhnliche Dinge werden möglich, wenn wir es wagen, unser ganzes Selbst in unserer Arbeit zum Ausdruck zu bringen. Jedes Mal, wenn wir einen Teil von uns zurücklassen, dann schneiden wir uns von einem Teil unseres Potenzials, unserer Kreativität und Energie ab.</p>
   <footer>Frederic Laloux in <cite title="Reinventing Organizations, Deutsche Ausgabe, S. 144">Reinventing Organizations</cite></footer>
-</blockquote>
+</div>
 
 
 ## Erweiterte Community

@@ -3,8 +3,8 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content" id="calendar-dialog-form-content">
       <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h3 class="modal-title" id="calendar-dialog-title">Reservation</h3>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h3 class="modal-title calendar-dialog-title">Reservation</h3>
       </div>
       <div class="modal-body">
         <form method="post" action="#" id="calendar-dialog-form" role="form" class="form">
@@ -12,21 +12,21 @@
 
           <!-- Anlassname -->
           <div class="mb-20 mb-md-10">
-            <label for="res-title">Name des Anlasses* <span>(wird am Eingang angezeigt)</span></label>
-            <input type="text" name="res-title" id="res-title" class="input-md form-control" placeholder="z.B. Kreativworkshop von Max, Startup-Event für Aareschwimmer" maxlength="40">
+            <label for="res-title" class="form-label">Name des Anlasses* <span>(wird am Eingang angezeigt)</span></label>
+            <input type="text" name="res-title" id="res-title" class="form-control" placeholder="z.B. Kreativworkshop von Max, Startup-Event für Aareschwimmer" maxlength="40">
           </div>
 
           <div class="row">
             <!-- Date -->
             <div class="col-sm-4 mb-20 mb-md-10">
-              <label for="res-date">Datum*</label>
-              <input type="text" name="res-date" id="res-date" class="input-md form-control" placeholder="tt.mm.jjjj" maxlength="10">
+              <label for="res-date" class="form-label">Datum*</label>
+              <input type="text" name="res-date" id="res-date" class="form-control" placeholder="tt.mm.jjjj" maxlength="10">
             </div>
 
             <!-- Start time -->
             <div class="col-sm-4 mb-20 mb-md-10">
-              <label for="res-start-time">Zeit von*</label>
-              <select name="res-start-time" id="res-start-time" class="input-md form-control">
+              <label for="res-start-time" class="form-label">Zeit von*</label>
+              <select name="res-start-time" id="res-start-time" class="form-control">
                 <option selected="selected">08:00</option>
                 <option>08:30</option>
                 <option>09:00</option>
@@ -63,8 +63,8 @@
 
             <!-- End time -->
             <div class="col-sm-4 mb-20 mb-md-10">
-              <label for="res-end-time">Zeit bis*</label>
-              <select name="res-end-time" id="res-end-time" class="input-md form-control">
+              <label for="res-end-time" class="form-label">Zeit bis*</label>
+              <select name="res-end-time" id="res-end-time" class="form-control">
                 <option>08:00</option>
                 <option>08:30</option>
                 <option>09:00</option>
@@ -107,16 +107,16 @@
           <div class="row">
             <!-- Room Setup -->
             <div class="col-sm-8 mb-20 mb-md-10" id="res-setup-container">
-              <label for="res-setup">Bestuhlung*</label>
-              <select name="res-setup" id="res-setup" class="input-md form-control">
+              <label for="res-setup" class="form-label">Bestuhlung*</label>
+              <select name="res-setup" id="res-setup" class="form-control">
                   <option selected="selected"></option>
               </select>
             </div>
 
             <!-- Number of people -->
             <div class="col-sm-4 mb-20 mb-md-10">
-              <label for="res-persons">Anzahl Personen*</label>
-              <input type="number" name="res-persons" id="res-persons" class="input-md form-control" value="5" min="1" max="500">
+              <label for="res-persons" class="form-label">Anzahl Personen*</label>
+              <input type="number" name="res-persons" id="res-persons" class="form-control" value="5" min="1" max="500">
             </div>
           </div>
 
@@ -128,33 +128,33 @@
           <div class="row">
             <!-- Name -->
             <div class="col-sm-6 mb-20 mb-md-10">
-              <label for="res-contact-name">Name (Kontaktperson)*</label>
-              <input type="text" name="res-contact-name" id="res-contact-name" class="input-md form-control" placeholder="" maxlength="100">
+              <label for="res-contact-name" class="form-label">Name (Kontaktperson)*</label>
+              <input type="text" name="res-contact-name" id="res-contact-name" class="form-control" placeholder="" maxlength="100">
             </div>
             <!-- Firma -->
             <div class="col-sm-6 mb-20 mb-md-10">
-              <label for="res-contact-company">Firma / Organisation</label>
-              <input type="text" name="res-contact-company" id="res-contact-company" class="input-md form-control" placeholder="" maxlength="40">
+              <label for="res-contact-company" class="form-label">Firma / Organisation</label>
+              <input type="text" name="res-contact-company" id="res-contact-company" class="form-control" placeholder="" maxlength="40">
             </div>
           </div>
 
           <div class="row">
             <!-- E-Mail -->
             <div class="col-sm-6 mb-20 mb-md-10">
-              <label for="res-contact-email">E-Mail*</label>
-              <input type="email" name="res-contact-email" id="res-contact-email" class="input-md form-control" placeholder="" maxlength="100">
+              <label for="res-contact-email" class="form-label">E-Mail*</label>
+              <input type="email" name="res-contact-email" id="res-contact-email" class="form-control" placeholder="" maxlength="100">
             </div>
 
             <!-- Phone -->
             <div class="col-sm-6 mb-20 mb-md-10">
-              <label for="res-contact-phone">Telefon*</label>
-              <input type="text" name="res-contact-phone" id="res-contact-phone" class="input-md form-control" placeholder="" maxlength="100">
+              <label for="res-contact-phone" class="form-label">Telefon*</label>
+              <input type="text" name="res-contact-phone" id="res-contact-phone" class="form-control" placeholder="" maxlength="100">
             </div>
           </div>
 
           <div class="mb-20 mb-md-10">
-            <label for="res-billing-address">Vollständige Rechnungsadresse*</label>
-            <textarea name="res-billing-address" id="res-billing-address" class="input-md form-control" 
+            <label for="res-billing-address" class="form-label">Vollständige Rechnungsadresse*</label>
+            <textarea name="res-billing-address" id="res-billing-address" class="form-control"
                   rows="5" placeholder="" maxlength="400"></textarea>
           </div>
 
@@ -163,27 +163,27 @@
           <h4>Bemerkungen</h4>
 
           <div class="mb-20 mb-md-10">
-            <textarea name="res-comments" id="res-comments" class="input-md form-control" rows="3" placeholder="" maxlength="400"></textarea>
+            <textarea name="res-comments" id="res-comments" class="form-control" rows="3" placeholder="" maxlength="400"></textarea>
           </div>
 
         </form>
 
         <div id="validation-error-message" class="alert error" style="display: none;">
-          <button class="alert-close" type="button" data-dismiss="alert" aria-label="Close"><i class="fa fa-lg  fa-times-circle"></i></button>
+          <button class="alert-close" type="button" data-bs-dismiss="alert" aria-label="Close"><i class="fa fa-lg  fa-times-circle"></i></button>
 					 Hoppla Schorsch! Bitte die markierten Felder überprüfen.
            <ul class="error-details list-unstyled small"></ul>
 				</div>
       </div>
       <div class="modal-footer">
-        <button class="btn btn-mod btn-gray btn-medium btn-round" data-dismiss="modal">Abbrechen</button>
+        <button class="btn btn-mod btn-gray btn-medium btn-round" data-bs-dismiss="modal">Abbrechen</button>
         <button id="res-save-button" class="btn btn-mod btn-medium btn-round">Reservieren</button>
       </div>
     </div>
 
     <div class="modal-content" id="calendar-dialog-success-content" style="display:none">
       <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h3 class="modal-title" id="calendar-dialog-title"><i class="fa fa-heart"></i> Danke!</h3>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h3 class="modal-title calendar-dialog-title"><i class="fa fa-heart"></i> Danke!</h3>
       </div>
       <div class="modal-body">
         <h4>Ihre Reservationsanfrage wurde abgeschickt</h4>
@@ -195,7 +195,8 @@
         </p>
       </div>
       <div class="modal-footer">
-        <button class="btn btn-mod btn-gray btn-medium btn-round" data-dismiss="modal">Schliessen</button>
+        <button class="btn btn-mod btn-gray btn-medium btn-round" data-bs-dismiss="modal">Schliessen</button>
+      </div>
     </div>
   </div>
 </div>

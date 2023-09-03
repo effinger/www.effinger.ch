@@ -12,7 +12,7 @@
 
   <!-- Header -->
   <section class="small-section-header bg-gray-lighter">
-    <div class="relative container align-left pt-80">
+    <div class="relative container text-start pt-80">
 
       <div class="row">
 
@@ -54,7 +54,7 @@
               <tr class="clickable-row" data-href="{{ .RelPermalink }}">
                 <td><a href="{{ .RelPermalink }}">{{ .Title }}</a></td>
                 <td>
-                  <span class="right text-nowrap">{{ .Date.Day }}. {{ index $.Site.Data.de.months .Date.Month }}<span class="hidden-xs"> {{ .Date.Year }}</span></span>
+                  <span class="right text-nowrap">{{ .Date.Day }}. {{ index $.Site.Data.de.months .Date.Month }}<span class="d-xs-none"> {{ .Date.Year }}</span></span>
                 </td>
               </tr>
               {{ end }}

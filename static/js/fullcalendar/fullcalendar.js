@@ -14813,7 +14813,7 @@ BootstrapTheme.prototype.classes = {
     tableGrid: 'table-bordered',
     tableList: 'table table-striped',
     buttonGroup: 'btn-group',
-    button: 'btn btn-default',
+    button: 'btn btn-secondary',
     stateActive: 'active',
     stateDisabled: 'disabled',
     today: 'alert alert-info',

@@ -14,10 +14,10 @@ tags = [ "Inspiration", "Grundsätze" ]
 
 ![Gemeinsamständigkeit](gemeinsamstaendigkeit-slim.jpg)
 
-<blockquote>
+<div class="blockquote">
   <p>Wir wollen Arbeitnehmern, die an Strukturen verzweifeln, und Freiberuflern, die sich im täglichen, einsamen Arbeitskampf aufreiben, den Enthusiasmus zurückgeben, mit dem sie in ihren Beruf gestartet sind. Wir wollen jungen Menschen zeigen, dass sie ihre Ambitionen im Berufsleben nicht aufgeben, sondern ausleben können.</p>
   <footer><cite>Dark Horse in <a href="http://ullstein.de/thankgoditsmonday/">Thank God It's Monday</a></cite></footer>
-</blockquote>
+</div>
 
 
 ## Zahnrad oder Einsamkeit

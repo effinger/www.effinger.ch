@@ -20,7 +20,7 @@ Diese Arbeiten für ein neues Regal sind nun die Grundlage für die Effinger-Gem
 
 <div class="row">
   <div class="col-md-6 mb-30">
-    <img class="img-responsive" src="Bild2.jpg">
+    <img class="img-fluid" src="Bild2.jpg">
   </div>
   <div class="col-md-6">
     <div class="contact-item" style="text-align:left;">

@@ -143,7 +143,7 @@ const loadCalendar = function(calendarApiPath, calendarId, roomTitle, roomExtras
       }
 
       // Set the dialog title.
-      dialogElement.find('#calendar-dialog-title').html('Reservation für ' + roomTitle);
+      dialogElement.find('.calendar-dialog-title').html('Reservation für ' + roomTitle);
 
       // Set the date and time from the selection.
       dialogElement.find('#res-date').val(start.format('DD.MM.YYYY'));
@@ -169,16 +169,16 @@ const loadCalendar = function(calendarApiPath, calendarId, roomTitle, roomExtras
       extrasElement.empty();
       for (let i = 0; i < roomExtras.length; i++) {
         if (i === 0) {
-          extrasElement.append('<label>Extras</label>');
+          extrasElement.append('<label class="form-label">Extras</label>');
         }
+        const id = 'extra-' + (i + 1)
         const priceString = roomExtras[i].price ? ' - ' + roomExtras[i].price : '';
         const textAndPrice = roomExtras[i].text + priceString;
         extrasElement.append(
-          '<div class="checkbox">\
-            <label>\
-              <input type="checkbox" value="' + textAndPrice + '">' + textAndPrice + '\
-            </label>\
-          </div>'
+          '<div class="form-check">' +
+            '<input class="form-check-input" type="checkbox" id="' + id + '" value="' + textAndPrice + '">' +
+            '<label class="form-check-label" for="' + id + '">' + textAndPrice + '</label>' +
+          '</div>'
         );
       }
 

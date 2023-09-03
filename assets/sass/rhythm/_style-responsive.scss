@@ -466,11 +466,11 @@ Primary use:    MultiPurpose Template
         margin-top: 50px;
     }
 
-    blockquote p {
+    .blockquote p {
         font-size: 20px;
     }
 
-    blockquote footer {
+    .blockquote footer {
         margin-top: 0;
         font-size: 12px;
     }
@@ -592,16 +592,16 @@ Primary use:    MultiPurpose Template
         padding: 8px 15px;
         font-size: 13px;
     }
-    .form input[type="text"].input-lg,
-    .form input[type="email"].input-lg,
-    .form input[type="number"].input-lg,
-    .form input[type="url"].input-lg,
-    .form input[type="search"].input-lg,
-    .form input[type="tel"].input-lg,
-    .form input[type="password"].input-lg,
-    .form input[type="date"].input-lg,
-    .form input[type="color"].input-lg,
-    .form select.input-lg{
+    .form input[type="text"].form-control-lg,
+    .form input[type="email"].form-control-lg,
+    .form input[type="number"].form-control-lg,
+    .form input[type="url"].form-control-lg,
+    .form input[type="search"].form-control-lg,
+    .form input[type="tel"].form-control-lg,
+    .form input[type="password"].form-control-lg,
+    .form input[type="date"].form-control-lg,
+    .form input[type="color"].form-control-lg,
+    .form select.form-control-lg {
         height: 38px;
     }
 	.hs-line-1 {
