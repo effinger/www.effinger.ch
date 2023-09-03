@@ -103,7 +103,7 @@ const loadCalendar = function(calendarApiPath, calendarId, roomTitle, roomExtras
     },
     eventMouseover: function(event, jsEvent, view) {
       // Don't show for selection helper.
-      if (event.className.indexOf('fc-helper') == -1) {
+      if (event.className.indexOf('fc-helper') === -1) {
         detailsElement.stop(true, true);
         detailsElement.html(createDetailsContent(event)).show();
       }
@@ -137,7 +137,7 @@ const loadCalendar = function(calendarApiPath, calendarId, roomTitle, roomExtras
     select: function(start, end) {
 
       // Do nothing when sunday is clicked.
-      if (start.isoWeekday() == 7) {
+      if (start.isoWeekday() === 7) {
         alert('Sonntag ist unser Ruhetag und steht deshalb im Moment nicht zur Verfügung.')
         return;
       }

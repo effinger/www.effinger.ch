@@ -78,10 +78,10 @@
         mit Geld kaufen könnte.
       </p>
 
-      <div class="row multi-columns-row">
+      <div class="row">
         {{ range $.Site.Data.effianer.Person }}
         <!-- Effianer Item -->
-        <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 mb-140">
+        <div class="effianer-item | col-sm-6 col-md-3 col-lg-3 mb-140">
           <div class="team-item">
             <div class="team-item-image">
               <img src="{{ .image }}" alt="" />
@@ -139,12 +139,12 @@
     </div>
   </section>
   <section class="page-section pb-60" id="mitmachen">
-    <div class="container relative" id="mitmachen">
-      <div class="row multi-columns-row">
+    <div class="container relative">
+      <div class="row">
         <h2 class="hs-line-11 font-alt">Wie kann ich mitmachen?</h2>
 
         <!-- Pricing Item -->
-        <div class="col-xs-12 col-sm-6">
+        <div class="col-sm-6">
           <div class="pricing-item">
             <div class="pricing-item-inner">
               <div class="pricing-wrap">
@@ -180,7 +180,7 @@
         <!-- End Pricing Item -->
 
         <!-- Pricing Item -->
-        <div class="col-xs-12 col-sm-6">
+        <div class="col-sm-6">
           <div class="pricing-item">
             <div class="pricing-item-inner">
               <div class="pricing-wrap">
@@ -220,6 +220,7 @@
       </div>
     </div>
   </section>
+
   <section class="page-section bg-gray pb-60" id="ehemalige">
     <div class="container relative">
       <h2 class="hs-line-11 font-alt">Ehemalige & Weitergezogenen</h2>
@@ -229,10 +230,10 @@
         Ohne Ihr Engagement wäre der Effinger nicht das, was er heute ist – ein fettes Merci!
       </p>
 
-      <div class="row multi-columns-row">
+      <div class="row">
         {{ range $.Site.Data.ehemalige.Person }}
         <!-- Effianer Item -->
-        <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 mb-140">
+        <div class="col-sm-6 col-md-3 col-lg-3 mb-140">
           <div class="team-item">
             <div class="team-item-image">
               <img src="{{ .image }}" alt="" />
@@ -297,7 +298,7 @@
       <h2 class="hs-line-11 font-alt mb-60 text-center mb-70 mb-sm-40">Unsere Community</h2>
 
       <div class="row">
-        <div class="col-md-8 col-md-offset-2">
+        <div class="col-md-8 offset-md-2">
           <div class="section-text local-scroll">
             <p>
               Unsere Community besteht aktuell aus rund 150 Mitgliedern. Diese engagieren sich in ganz unterschiedlicher

@@ -30,12 +30,12 @@
       <div class="row">
         <div class="col-sm-7 col-md-8 mb-40">
           <div class="row">
-            <div class="col-xs-4 col-md-3 mb-xs-40">
+            <div class="col-sm-10 col-md-4 mb-xs-40">
               <a href="/medien/">
                 <span class="icon-newspaper" style="font-size: 80px;"></span>
               </a>
             </div>
-            <div class="col-xs-8 col-md-7 col-lg-6 mb-xs-60">
+            <div class="col-sm-10 col-md-7 col-lg-6 mb-xs-60">
               <p>Auf dieser Seite findest du Zeitungsartikel und andere Medienberichte rund um den Effinger und die Effinger Community.
               </p>
               <div class="local-scroll">
@@ -67,13 +67,13 @@
     <section class="page-section pb-40 {{ if not (modBool $i 2) }}bg-gray{{ end }}">
       <div class="container relative">
         <div class="row">
-          <div class="col-md-5 col-md-offset-1 col-sm-6 col-xs-4">
-            <h2 class="hs-line-11 font-alt">{{ $e.Key }}</h2>
+          <div class=" col-sm-6 col-md-5 offset-md-1">
+            <h2 class="hs-line-11 font-alt"> {{ $e.Key }}</h2>
           </div>
         </div>
         {{ range $e.Pages }}
         <div class="row">
-          <div class="col-md-5 col-md-offset-1 col-sm-6 col-xs-10 mb-80 mb-xs-20">
+          <div class="col-sm-6 col-md-5 offset-md-1 mb-80 mb-xs-20">
             <!-- Image -->
             <div class="mb-10 image-crop image-crop-4by3">
               <div class="image-crop-inner"
@@ -82,7 +82,7 @@
             </div>
           </div>
 
-          <div class="col-md-5 col-sm-6 col-xs-12 mb-80">
+          <div class="col-md-5 col-sm-6 mb-80">
             <!-- Title -->
             <h3 class="font-alt mt-0 hyphenate">{{ .Title }}</h3>
 

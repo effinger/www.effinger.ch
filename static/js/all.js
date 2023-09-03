@@ -6,7 +6,7 @@
      Scripts initialization
      --------------------------------------------- */
 
-  $(window).load(function(){
+  $(window).on("load", function(){
 
     init_scroll_navigate();
 
@@ -50,29 +50,14 @@
   /* --------------------------------------------
      Platform detect
      --------------------------------------------- */
-  let mobileTest;
+  let mobileDevice;
   if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
-    mobileTest = true;
+    mobileDevice = true;
     $("html").addClass("mobile");
   }
   else {
-    mobileTest = false;
+    mobileDevice = false;
     $("html").addClass("no-mobile");
-  }
-
-  var mozillaTest;
-  if (/mozilla/.test(navigator.userAgent)) {
-    mozillaTest = true;
-  }
-  else {
-    mozillaTest = false;
-  }
-  var safariTest;
-  if (/safari/.test(navigator.userAgent)) {
-    safariTest = true;
-  }
-  else {
-    safariTest = false;
   }
 
   // Detect touch devices
@@ -315,7 +300,7 @@
   function init_parallax(){
 
     // Parallax
-    if (($(window).width() >= 1024) && (mobileTest == false)) {
+    if ($(window).width() >= 1024 && !mobileDevice) {
       $(".parallax-1").parallax("50%", 0.1);
       $(".parallax-2").parallax("50%", 0.2);
       $(".parallax-3").parallax("50%", 0.3);
@@ -651,7 +636,7 @@ function initPageSliders(){
           found = true;
         }
       }
-      if (found === false) {
+      if (!found) {
         if (num > sync2visible[sync2visible.length - 1]) {
           sync2.trigger("owl.goTo", num - sync2visible.length + 2)
         }
@@ -727,7 +712,7 @@ function initWorkFilter(){
 
     if (window.location.hash) {
       $(".filter").each(function(){
-        if ($(this).attr("data-filter") == "." + window.location.hash.replace("#", "")) {
+        if ($(this).attr("data-filter") === "." + window.location.hash.replace("#", "")) {
           $(this).trigger('click');
 
           $("html, body").animate({

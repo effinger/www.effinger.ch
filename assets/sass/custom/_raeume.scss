@@ -1,6 +1,7 @@
 .raeume {
 
   .raeume-eigenschaften {
+    display: flex;
     margin-top: 10px;
 
     .raeume-title {
@@ -83,7 +84,7 @@
         font-weight: 300;
       }
     }
-    
+
     .alert-close {
       padding: 0;
       cursor: pointer;

@@ -142,18 +142,18 @@
           <!-- End Gallery -->
         </div>
 
-        <div class="col-sm-6 col-lg-5 col-lg-offset-1">
+        <div class="col-sm-6 col-lg-5 offset-lg-1">
           <div class="text">
 
-            <div class="row raeume-eigenschaften">
-              <div class="col-xs-6">
+            <div class="raeume-eigenschaften">
+              <div class="w-50">
                 <div class="raeume-title">Kapazität</div>
-                <div class="raeume-content">
+                <div class="raeume-content text-nowrap">
                   {{ .Params.capacity }} Personen
                 </div>
               </div>
 
-              <div class="col-xs-6">
+              <div class="w-50">
                 <div class="raeume-title">Grösse</div>
                 <div class="raeume-content">
                   {{ .Params.square_meters }}m<sup>2</sup>
@@ -161,8 +161,8 @@
               </div>
             </div>
 
-            <div class="row raeume-eigenschaften">
-              <div class="col-sm-12">
+            <div class="raeume-eigenschaften">
+              <div class="">
                 <div class="raeume-title">Ausrüstung</div>
                 <div class="raeume-content">
                   {{ delimit .Params.equipment ", " }}
@@ -171,8 +171,8 @@
             </div>
 
             {{ with .Params.extras }}
-            <div class="row raeume-eigenschaften">
-              <div class="col-sm-12">
+            <div class="raeume-eigenschaften">
+              <div class="">
                 <div class="raeume-title">Zusätzliche Infrastruktur</div>
                 <div class="raeume-content">
                   {{ range $index, $element := . }}
@@ -185,8 +185,8 @@
             </div>
             {{ end }}
 
-            <div class="row raeume-eigenschaften">
-              <div class="col-sm-12">
+            <div class="raeume-eigenschaften">
+              <div class="">
                 <div class="raeume-title">Preise (inkl. MWST)</div>
                 {{ range .Params.prices }}
                 <div class="raeume-content">
@@ -197,8 +197,9 @@
             </div>
 
             <div class="mt-40">
-              <a href="{{ .RelPermalink }}" class="btn btn-mod btn-border btn-round btn-medium">Details und
-                Reservation</a>
+              <a href="{{ .RelPermalink }}" class="btn btn-mod btn-border btn-round btn-medium">
+                Details und Reservation
+              </a>
             </div>
           </div>
 
@@ -214,7 +215,7 @@
     <div class="relative container">
 
       <div class="row text-center">
-        <div class="col-md-8 col-md-offset-2">
+        <div class="col-md-8 offset-md-2">
           <!-- <p class="font-alt">Info:</p> -->
 
           <h3 class="hs-line-15 font-alt mb-10">
