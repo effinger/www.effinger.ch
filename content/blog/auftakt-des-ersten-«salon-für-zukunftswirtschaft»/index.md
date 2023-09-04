@@ -32,8 +32,9 @@ Als Organisationskomitee sind wir begeistert von der Resonanz auf den ersten «S
 
 Möchtest du den nächsten Salon nicht verpassen? Dann abonniere unseren Newsletter:
 
-Newsletter
+[Newsletter](#mc-embedded-subscribe-form)
 
-Für Beiträge, Kooperationen oder Spronsoring kannst du mit uns in Kontakt treten: manuel@effinger.ch
+Für Beiträge, Kooperationen oder Spronsoring kannst du mit uns in Kontakt treten: \
+manuel@effinger.ch
 
 ![](salon_fuer_zukunftswirtschaft_effinger_2.jpg "Die Lightning Talks visualisiert vom unglaublichen Bruno Jost")
