@@ -10,8 +10,7 @@ comments = true
 +++
 ### Leichtfüssig und erfrischend – das ist unser Fazit vom ersten «Salon für Zukunftswirtschaft», den wir als Effinger Community mit Begeisterung organisiert haben. Unter einem klaren Himmel und auf zwei Terrassen trafen sich Unternehmer:innen aus Mode, IT, Gesundheit, Landwirtschaft, Bildung, Gastronomie, Beratung und weiteren Branchen, um zu erfahren, wie die Wirtschaft von morgen heute schon gestaltet wird.
 
-
-
+\
 Der Höhepunkt des Abends waren die inspirierenden «Lightning Talks». Insgesamt neun Unternehmer:innen zeigten in jeweils 5 Minuten auf, wie sie die Zukunft der Wirtschaft mitprägen. Beispielsweise präsentierte uns Lucy Jager von «FutureCoders», wie wir Jugendliche mit geringem Budget in digitalen Fähigkeiten fördern können. Marco Jakob von Yolu erklärte, wie Weiterbildung selbst organisiert werden kann, ohne auf einen akademischen Abschluss zu verzichten. Fabienne Mässerli von «Petit Couteau» hinterfragte, ob Unternehmen wirklich ein:e Chef:in brauchen. Daniel Flach von «Südland» wagte den Blick in ein neues Gesundheitswesen, in dem Patient:innen mitbestimmen. Debora Alder-Gasser von «Teil» teilte ihre Vision, wie Kleidung vom Wegwerfprodukt zu einem Service werden kann. Und viele weitere Beiträge.
 
 ![](salon_fuer_zukunftswirtschaft_effinger_3.jpg "Fabienne Mässerli von «Petit Couteau» sprach über: Braucht ein Unternehmen ein:e Chef:in?")
