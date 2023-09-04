@@ -8,6 +8,8 @@ description = "Leichtfüssig und erfrischend – das ist unser Fazit vom ersten 
 authors = ["Manuel Bürli"]
 comments = true
 +++
+![Auftakt des ersten «Salon für Zukunftswirtschaft»](salon_fuer_zukunftswirtschaft_effinger_1.jpg)
+
 ### Leichtfüssig und erfrischend – das ist unser Fazit vom ersten «Salon für Zukunftswirtschaft», den wir als Effinger Community mit Begeisterung organisiert haben. Unter einem klaren Himmel und auf zwei Terrassen trafen sich Unternehmer:innen aus Mode, IT, Gesundheit, Landwirtschaft, Bildung, Gastronomie, Beratung und weiteren Branchen, um zu erfahren, wie die Wirtschaft von morgen heute schon gestaltet wird.
 
 \
