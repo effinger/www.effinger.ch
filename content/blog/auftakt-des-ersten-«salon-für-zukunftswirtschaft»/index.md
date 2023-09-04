@@ -30,8 +30,7 @@ Als Organisationskomitee sind wir begeistert von der Resonanz auf den ersten «S
 
 ## Mehr Infos zum Salon?
 
-Möchtest du den nächsten Salon nicht verpassen? Dann abonniere unseren Newsletter:
-
+Möchtest du den nächsten Salon nicht verpassen? Dann abonniere unseren Newsletter:\
 [Newsletter](#mc-embedded-subscribe-form)
 
 Für Beiträge, Kooperationen oder Spronsoring kannst du mit uns in Kontakt treten: \
