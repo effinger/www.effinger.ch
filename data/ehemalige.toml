@@ -1,145 +1,117 @@
 [[Person]]
+name = "Alexis Giard"
+image = "/images/effianer/alexis-giard.jpg"
+
+[[Person]]
 name = "Benjamin Bracher"
-gender = "m"
 image = "/images/effianer/ehemalige/benjamin-bracher.jpg"
-about = ""
+
+[[Person]]
+name = "Benji Ammann"
+image = "/images/effianer/benji-ammann.jpg"
+
+[[Person]]
+name = "Carolina Steiner"
+image = "/images/effianer/carolina-steiner.jpg"
 
 [[Person]]
 name = "Christa-Maria Tobler"
-gender = "f"
 image = "/images/effianer/ehemalige/christa-maria-tobler.jpg"
-about = ""
 
 [[Person]]
 name = "Claudia Schaeren"
-gender = "f"
 image = "/images/effianer/ehemalige/claudia-schaeren.jpg"
-about = ""
 
 [[Person]]
 name = "Corinne Roth Vock"
-gender = "f"
 image = "/images/effianer/ehemalige/corinne-roth-vock.jpg"
 email = "info@schlosswort.ch"
 website = "https://schlosswort.ch/"
-about = ""
 
 [[Person]]
 name = "Damaris Berger"
-gender = "f"
 image = "/images/effianer/ehemalige/damaris-berger.jpg"
-about = ""
 
 [[Person]]
 name = "Daniel Osterwalder"
-gender = "m"
 image = "/images/effianer/ehemalige/daniel-osterwalder.jpg"
-about = ""
 
 [[Person]]
 name = "David Bruehlmeier"
-gender = "m"
 image = "/images/effianer/ehemalige/david-bruehlmeier.jpg"
-about = ""
 
 [[Person]]
 name = "Graziella Bärtsch"
-gender = "f"
 image = "/images/effianer/ehemalige/graziella-baertsch.jpg"
-about = ""
 
 [[Person]]
 name = "Hanne Vie"
-gender = "f"
 image = "/images/effianer/ehemalige/hanne-vie.jpg"
-about = ""
 
 [[Person]]
 name = "Heinz Bolliger"
-gender = "m"
 image = "/images/effianer/ehemalige/heinz-bolliger.jpg"
-about = ""
 
 [[Person]]
 name = "Ismael Basler"
-gender = "m"
 image = "/images/effianer/ehemalige/ismael-basler.jpg"
-about = ""
 
 [[Person]]
 name = "Jonathan Bucher"
-gender = "m"
 image = "/images/effianer/ehemalige/jonathan-bucher.jpg"
-about = ""
 
 [[Person]]
 name = "Kim Eggimann"
-gender = "f"
 image = "/images/effianer/ehemalige/kim-eggimann.jpg"
-about = ""
+
+[[Person]]
+name = "Levyn Schneider"
+image = "/images/effianer/levyn-schneider.jpg"
 
 [[Person]]
 name = "Matthias Tobler"
-gender = "m"
 image = "/images/effianer/ehemalige/matthias-tobler.jpg"
-about = ""
 
 [[Person]]
 name = "Michael Aerni"
-gender = "m"
 image = "/images/effianer/ehemalige/michael-aerni.jpg"
-about = ""
 
 [[Person]]
 name = "Michael Friedrich"
-gender = "m"
 image = "/images/effianer/ehemalige/michael-friedrich.jpg"
-about = ""
 
 [[Person]]
 name = "Michael Hörnlimann"
-gender = "m"
 image = "/images/effianer/ehemalige/michael-hoernlimann.jpg"
-about = ""
 
 [[Person]]
 name = "Nadia Meier"
-gender = "f"
 image = "/images/effianer/ehemalige/nadia-meier.jpg"
-about = ""
 
 [[Person]]
 name = "Oliver Schären"
-gender = "m"
 image = "/images/effianer/ehemalige/oliver-schaeren.jpg"
-about = ""
 
 [[Person]]
 name = "Roland Studer"
-gender = "m"
 image = "/images/effianer/ehemalige/roland-studer.jpg"
-about = ""
 
 [[Person]]
 name = "Salome Hostettler"
-gender = "f"
 image = "/images/effianer/ehemalige/salome-hostettler.jpg"
-about = ""
 
 [[Person]]
 name = "Sandra von Siebenthal"
-gender = "f"
 image = "/images/effianer/ehemalige/sandra-von-siebenthal.jpg"
-about = ""
 
 [[Person]]
 name = "Sunita Asnani"
-gender = "f"
 image = "/images/effianer/ehemalige/sunita-asnani.jpg"
-about = ""
 
 [[Person]]
 name = "Timon Andeer"
-gender = "m"
 image = "/images/effianer/ehemalige/timon-andeer.jpg"
-about = ""
+
+[[Person]]
+name = "Urs Vögeli"
+image = "/images/effianer/urs-voegeli.jpg"

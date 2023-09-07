@@ -30,19 +30,6 @@ linkedin = ""
 about = "Architektur"
 
 [[Person]]
-name = "Carolina Steiner"
-gender = "f"
-image = "/images/effianer/carolina-steiner.jpg"
-email = "carolina@effinger.ch"
-phone = ""
-website = ""
-twitter = ""
-facebook = ""
-instagram = ""
-linkedin = ""
-about = "Sozialarbeiterin"
-
-[[Person]]
 name = "Faustina Kromah"
 gender = "f"
 image = "/images/effianer/faustina-kromah.jpg"
@@ -95,19 +82,6 @@ linkedin = "raffaelkrebs"
 about = "Webapps"
 
 [[Person]]
-name = "Benji Ammann"
-gender = "m"
-image = "/images/effianer/benji-ammann.jpg"
-email = "benji@effinger.ch"
-phone = ""
-website = ""
-twitter = ""
-facebook = ""
-instagram = ""
-linkedin = ""
-about = "Finanzen"
-
-[[Person]]
 name = "Claudine Etter"
 gender = "f"
 image = "/images/effianer/claudine-etter.jpg"
@@ -146,19 +120,6 @@ facebook = ""
 instagram = "effingerbern"
 linkedin = "effingerbern"
 about = "Kaffee"
-
-[[Person]]
-name = "Alexis Giard"
-gender = "m"
-image = "/images/effianer/alexis-giard.jpg"
-email = "alexis@effinger.ch"
-phone = ""
-website = "https://www.alexisgiard.com/"
-twitter = ""
-facebook = ""
-instagram = ""
-linkedin = ""
-about = "Mars-Game"
 
 [[Person]]
 name = "Fabian Steiner"
@@ -291,19 +252,6 @@ linkedin = ""
 about = "Schreiner"
 
 [[Person]]
-name = "Urs Vögeli"
-gender = "m"
-image = "/images/effianer/urs-voegeli.jpg"
-email = "urs@effinger.ch"
-phone = ""
-website = "www.globalaffairs.ch"
-twitter = "uvoegeli"
-facebook = "urs.vogeli.3"
-instagram = "urs_legocreations"
-linkedin = "urs-vögeli-70647a44"
-about = "Politik"
-
-[[Person]]
 name = "Hermann Flükiger"
 gender = "m"
 image = "/images/effianer/hermann-fluekiger.jpg"
@@ -328,19 +276,6 @@ facebook = ""
 instagram = ""
 linkedin = "https://www.linkedin.com/in/jorisschwarzenbach/"
 about = "IT & Bildung"
-
-[[Person]]
-name = "Levyn Schneider"
-gender = "m"
-image = "/images/effianer/levyn-schneider.jpg"
-email = "levyn@lyschneider.ch"
-phone = ""
-website = "https://lyschneider.ch/"
-twitter = ""
-facebook = ""
-instagram = "https://www.instagram.com/ly.schneider/"
-linkedin = ""
-about = "Film & Foto"
 
 [[Person]]
 name = "Joscha Tschanz"
