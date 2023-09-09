@@ -106,20 +106,20 @@
       <div class="row">
         <div class="col-md-3">
           <div class="row mb-md-30">
-            <div class="col-md-12 col-sm-4 mb-20 mb-md-0">
+            <div class="col-md-12 col-sm-4 mb-10 mb-md-20">
               <div class="date{{ if $isPast }} striped{{ end }}">
                 <div class="weekday uppercase">{{ .Scratch.Get "start_weekday" }}</div>
                 <div class="day">{{ .Scratch.Get "start_day" }}</div>
                 <div class="monthyear uppercase">{{ .Scratch.Get "start_shortmonth" }} {{ .Scratch.Get "start_year" }}</div>
               </div>
             </div>
-            <div class="col-md-12 col-sm-8 mt-xs-20">
+            <div class="col-md-12 col-sm-8">
               <div class="event-detail text">
                 <p><small><i class="fa fa-calendar-o"></i> {{ .Scratch.Get "start_weekday" }}, {{ .Scratch.Get "start_day" }}. {{ .Scratch.Get "start_month" }} {{ .Scratch.Get "start_year" }}</small></p>
                 {{ if eq (.Scratch.Get "end_date") (.Scratch.Get "start_date") }}
                   <p><small><i class="fa fa-clock-o"></i> {{ .Scratch.Get "start_time" }} Uhr</small></p>
                 {{ else }}
-                  <p><small><i class="fa fa-clock-o"></i> {{ .Scratch.Get "start_time" }} bis {{ .Scratch.Get "end_time" }} Uhr</small></p>
+                  <p><small><i class="fa fa-clock-o"></i> {{ .Scratch.Get "start_time" }} – {{ .Scratch.Get "end_time" }} Uhr</small></p>
                 {{ end }}
                 <p><small><i class="fa fa-map-marker"></i>
                   {{ if .Params.address_link }}
