@@ -12641,7 +12641,7 @@ var Toolbar = /** @class */ (function () {
                                     }
                                 }
                             })
-                                .mousedown(function () {
+                                .on("mousedown", function () {
                                 // the *down* effect (mouse pressed in).
                                 // only on buttons that are not the "active" tab, or disabled
                                 buttonEl
@@ -12649,18 +12649,19 @@ var Toolbar = /** @class */ (function () {
                                     .not('.' + theme.getClass('stateDisabled'))
                                     .addClass(theme.getClass('stateDown'));
                             })
-                                .mouseup(function () {
+                                .on("mouseup", function () {
                                 // undo the *down* effect
                                 buttonEl.removeClass(theme.getClass('stateDown'));
                             })
-                                .on("hover", function () {
+                                .on("mouseenter", function () {
                                 // the *hover* effect.
                                 // only on buttons that are not the "active" tab, or disabled
                                 buttonEl
                                     .not('.' + theme.getClass('stateActive'))
                                     .not('.' + theme.getClass('stateDisabled'))
                                     .addClass(theme.getClass('stateHover'));
-                            }, function () {
+                            })
+                                .on("mouseleave", function () {
                                 // undo the *hover* effect
                                 buttonEl
                                     .removeClass(theme.getClass('stateHover'))

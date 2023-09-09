@@ -153,15 +153,13 @@
 
     // Mobile menu toggle
     mobile_nav.on("click", function(){
-
       if (desktop_nav.hasClass("js-opened")) {
         desktop_nav.slideUp(400, "easeOutExpo", function() {
           desktop_nav.removeClass("js-opened");
           desktop_nav.css('display', '');
         });
         $(this).removeClass("active");
-      }
-      else {
+      } else {
         desktop_nav.slideDown(400, "easeOutQuart").addClass("js-opened");
         $(this).addClass("active");
 
@@ -188,7 +186,6 @@
     $(".mobile-on .mn-has-sub").find(".fa-angle-right:first").removeClass("fa-angle-right").addClass("fa-angle-down");
 
     mnHasSub.on("click", function(){
-
       if ($(".main-nav").hasClass("mobile-on")) {
         mnThisLi = $(this).parent("li:first");
         if (mnThisLi.hasClass("js-opened")) {
@@ -196,8 +193,7 @@
             mnThisLi.removeClass("js-opened");
             mnThisLi.find(".mn-has-sub").find(".fa-angle-up:first").removeClass("fa-angle-up").addClass("fa-angle-down");
           });
-        }
-        else {
+        } else {
           $(this).find(".fa-angle-down:first").removeClass("fa-angle-down").addClass("fa-angle-up");
           mnThisLi.addClass("js-opened");
           mnThisLi.find(".mn-sub:first").slideDown();
@@ -207,18 +203,17 @@
       }
     });
 
-    mnThisLi = mnHasSub.parent("li");
-    mnThisLi.on("hover", function(){
-
-      if (!($(".main-nav").hasClass("mobile-on"))) {
-        $(this).find(".mn-sub:first").stop(true, true).fadeIn("fast");
-      }
-
-    }, function(){
-      if (!($(".main-nav").hasClass("mobile-on"))) {
-        $(this).find(".mn-sub:first").stop(true, true).delay(100).fadeOut("fast");
-      }
-    });
+    mnHasSub.parent("li")
+      .on("mouseenter", function(){
+        if (!($(".main-nav").hasClass("mobile-on"))) {
+          $(this).find(".mn-sub:first").stop(true, true).fadeIn("fast");
+        }
+      })
+      .on("mouseleave", function(){
+        if (!($(".main-nav").hasClass("mobile-on"))) {
+          $(this).find(".mn-sub:first").stop(true, true).delay(100).fadeOut("fast");
+        }
+      });
 
   }
 
