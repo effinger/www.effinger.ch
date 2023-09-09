@@ -94,13 +94,13 @@
   <section class="page-section events">
     <div class="container relative eventsingle">
       {{ if $isPast }}
-        <h2 class="font-alt align-center mb-40">{{ .Title }}</h2>
+        <h2 class="font-alt text-center mb-40">{{ .Title }}</h2>
         <div class="alert alert-info text-center mb-40">
           <i class="fa fa-ban"></i>
           Event liegt in der Vergangenheit!
         </div>
       {{ else }}
-        <h2 class="font-alt align-center mb-80">{{ .Title }}</h2>
+        <h2 class="font-alt text-center mb-80">{{ .Title }}</h2>
       {{ end }}
 
       <div class="row">
