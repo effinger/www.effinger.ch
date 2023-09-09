@@ -39,7 +39,7 @@
     //init_masonry();
   });
 
-  $(window).resize(function(){
+  $(window).on("resize", function(){
 
     init_classic_menu_resize();
     js_height_init();
@@ -140,7 +140,7 @@
       $(".main-nav").addClass("js-transparent");
     }
 
-    $(window).scroll(function(){
+    $(window).on("scroll", function(){
       if ($(window).scrollTop() > 10) {
         $(".js-transparent").removeClass("transparent");
         $(".main-nav").addClass("small-height");
@@ -152,7 +152,7 @@
     });
 
     // Mobile menu toggle
-    mobile_nav.click(function(){
+    mobile_nav.on("click", function(){
 
       if (desktop_nav.hasClass("js-opened")) {
         desktop_nav.slideUp(400, "easeOutExpo", function() {
@@ -172,7 +172,7 @@
       }
     });
 
-    desktop_nav.find("a:not(.mn-has-sub)").click(function(){
+    desktop_nav.find("a:not(.mn-has-sub)").on("click", function(){
       if (mobile_nav.hasClass("active")) {
         desktop_nav.slideUp("slow", "easeOutExpo").removeClass("js-opened");
         mobile_nav.removeClass("active");
@@ -187,7 +187,7 @@
 
     $(".mobile-on .mn-has-sub").find(".fa-angle-right:first").removeClass("fa-angle-right").addClass("fa-angle-down");
 
-    mnHasSub.click(function(){
+    mnHasSub.on("click", function(){
 
       if ($(".main-nav").hasClass("mobile-on")) {
         mnThisLi = $(this).parent("li:first");
@@ -208,7 +208,7 @@
     });
 
     mnThisLi = mnHasSub.parent("li");
-    mnThisLi.hover(function(){
+    mnThisLi.on("hover", function(){
 
       if (!($(".main-nav").hasClass("mobile-on"))) {
         $(this).find(".mn-sub:first").stop(true, true).fadeIn("fast");
@@ -240,7 +240,7 @@
     const sections = $(".home-section, .split-section, .page-section");
     const menu_links = $(".scroll-nav li a");
 
-    $(window).scroll(function(){
+    $(window).on("scroll", function(){
 
       sections.filter(":in-viewport:first").each(function(){
         const active_section = $(this);
@@ -324,7 +324,7 @@
   function init_shortcodes(){
 
     let tpl_tab_height;
-    $(".tpl-minimal-tabs > li > a").click(function(){
+    $(".tpl-minimal-tabs > li > a").on("click", function(){
 
       if (!($(this).parent("li").hasClass("active"))) {
         tpl_tab_height = $(".tpl-minimal-tabs-cont > .tab-pane").filter($(this).attr("href")).height();
@@ -343,7 +343,7 @@
     allPanels.first().slideDown("easeOutExpo");
     $(".accordion > dt > a").first().addClass("active");
 
-    $(".accordion > dt > a").click(function(){
+    $(".accordion > dt > a").on("click", function(){
 
       const current = $(this).parent().next("dd");
       $(".accordion > dt > a").removeClass("active");
@@ -358,7 +358,7 @@
     // Toggle
     const allToggles = $(".toggle > dd").hide();
 
-    $(".toggle > dt > a").click(function(){
+    $(".toggle > dt > a").on("click", function(){
 
       if ($(this).hasClass("active")) {
 
@@ -429,7 +429,7 @@
   function init_team(){
 
     // Hover
-    $(".team-item").click(function(){
+    $(".team-item").on("click", function(){
       if ($("html").hasClass("mobile")) {
         $(this).toggleClass("js-active");
       }
@@ -659,7 +659,7 @@ function initPageSliders(){
 
     let owl = $(".fullwidth-slideshow").data("owlCarousel");
 
-    $(document.documentElement).keyup(function(event){
+    $(document.documentElement).on("keyup", function(event){
       // handle cursor keys
       if (event.keyCode == 37) {
         owl.prev();
@@ -697,7 +697,7 @@ function initWorkFilter(){
       isotope_mode = "fitRows"
     }
 
-    $(".filter").click(function(){
+    $(".filter").on("click", function(){
       $(".filter").removeClass("active");
       $(this).addClass("active");
       fselector = $(this).attr('data-filter');

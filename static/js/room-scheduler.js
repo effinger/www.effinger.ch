@@ -68,7 +68,7 @@ const loadScheduler = function(resources, events, calendarElement, loadingElemen
   });
 
   // For touch devices - hide on click.
-  detailsElement.click(function (event) {
+  detailsElement.on("click", function (event) {
     detailsElement.stop(true, true);
     detailsElement.fadeOut(300);
   });

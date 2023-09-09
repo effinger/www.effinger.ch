@@ -199,7 +199,7 @@
 
     const gmMapDiv = $("#map-canvas");
 
-    $(".map-section").click(function(){
+    $(".map-section").on("click", function(){
       $(this).toggleClass("js-active");
       $(this).find(".mt-open").toggle();
       $(this).find(".mt-close").toggle();

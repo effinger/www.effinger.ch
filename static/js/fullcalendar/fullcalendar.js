@@ -12629,7 +12629,7 @@ var Toolbar = /** @class */ (function () {
                             '<button type="button" class="' + buttonClasses.join(' ') + '"' +
                                 buttonAriaAttr +
                                 '>' + buttonInnerHtml + '</button>')
-                                .click(function (ev) {
+                                .on("click", function (ev) {
                                 // don't process clicks for disabled buttons
                                 if (!buttonEl.hasClass(theme.getClass('stateDisabled'))) {
                                     buttonClick(ev);
@@ -12653,7 +12653,7 @@ var Toolbar = /** @class */ (function () {
                                 // undo the *down* effect
                                 buttonEl.removeClass(theme.getClass('stateDown'));
                             })
-                                .hover(function () {
+                                .on("hover", function () {
                                 // the *hover* effect.
                                 // only on buttons that are not the "active" tab, or disabled
                                 buttonEl
