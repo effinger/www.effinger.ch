@@ -119,11 +119,12 @@
 
   <section class="page-section">
     <div class="container relative">
-      <h2 class="mt-0 font-alt mb-30 mb-xs-10"><a href="{{ .RelPermalink }}">Raum &laquo;<strong>{{ .Title }}</strong>&raquo;</a></h2>
+      <h2 class="mt-0 font-alt mb-30 mb-xs-10">
+        <a href="{{ .RelPermalink }}">Raum &laquo;<strong>{{ .Title }}</strong>&raquo;</a>
+      </h2>
 
       <div class="row">
         <div class="col-sm-6 mb-sm-40">
-
           <!-- Gallery -->
           <div class="work-full-media mt-0 white-shadow">
             <ul class="clearlist work-full-slider owl-carousel">
@@ -142,67 +143,63 @@
           <!-- End Gallery -->
         </div>
 
-        <div class="col-sm-6 col-lg-5 offset-lg-1">
-          <div class="text">
-
-            <div class="raeume-eigenschaften">
-              <div class="w-50">
-                <div class="raeume-title">Kapazität</div>
-                <div class="raeume-content text-nowrap">
-                  {{ .Params.capacity }} Personen
-                </div>
-              </div>
-
-              <div class="w-50">
-                <div class="raeume-title">Grösse</div>
-                <div class="raeume-content">
-                  {{ .Params.square_meters }}m<sup>2</sup>
-                </div>
+        <div class="col-sm-6 col-lg-5 offset-lg-1 text">
+          <div class="raeume-eigenschaften">
+            <div class="w-50">
+              <div class="raeume-title">Kapazität</div>
+              <div class="raeume-content text-nowrap">
+                {{ .Params.capacity }} Personen
               </div>
             </div>
 
-            <div class="raeume-eigenschaften">
-              <div class="">
-                <div class="raeume-title">Ausrüstung</div>
-                <div class="raeume-content">
-                  {{ delimit .Params.equipment ", " }}
-                </div>
+            <div class="w-50">
+              <div class="raeume-title">Grösse</div>
+              <div class="raeume-content">
+                {{ .Params.square_meters }}m<sup>2</sup>
               </div>
-            </div>
-
-            {{ with .Params.extras }}
-            <div class="raeume-eigenschaften">
-              <div class="">
-                <div class="raeume-title">Zusätzliche Infrastruktur</div>
-                <div class="raeume-content">
-                  {{ range $index, $element := . }}
-                  {{- if not $element.hidden -}}
-                  {{- if gt $index 0 }},{{ end }} {{ $element.text -}}
-                  {{- end -}}
-                  {{ end }}
-                </div>
-              </div>
-            </div>
-            {{ end }}
-
-            <div class="raeume-eigenschaften">
-              <div class="">
-                <div class="raeume-title">Preise (inkl. MWST)</div>
-                {{ range .Params.prices }}
-                <div class="raeume-content">
-                  {{ . }}
-                </div>
-                {{ end }}
-              </div>
-            </div>
-
-            <div class="mt-40">
-              <a href="{{ .RelPermalink }}" class="btn btn-mod btn-border btn-round btn-medium">
-                Details und Reservation
-              </a>
             </div>
           </div>
 
+          <div class="raeume-eigenschaften">
+            <div class="">
+              <div class="raeume-title">Ausrüstung</div>
+              <div class="raeume-content">
+                {{ delimit .Params.equipment ", " }}
+              </div>
+            </div>
+          </div>
+
+          {{ with .Params.extras }}
+          <div class="raeume-eigenschaften">
+            <div class="">
+              <div class="raeume-title">Zusätzliche Infrastruktur</div>
+              <div class="raeume-content">
+                {{ range $index, $element := . }}
+                {{- if not $element.hidden -}}
+                {{- if gt $index 0 }},{{ end }} {{ $element.text -}}
+                {{- end -}}
+                {{ end }}
+              </div>
+            </div>
+          </div>
+          {{ end }}
+
+          <div class="raeume-eigenschaften">
+            <div class="">
+              <div class="raeume-title">Preise (inkl. MWST)</div>
+              {{ range .Params.prices }}
+              <div class="raeume-content">
+                {{ . }}
+              </div>
+              {{ end }}
+            </div>
+          </div>
+
+          <div class="mt-40">
+            <a href="{{ .RelPermalink }}" class="btn btn-mod btn-border btn-round btn-medium">
+              Details und Reservation
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -212,35 +209,46 @@
   <!-- Andere Anbieter -->
   <hr class="mt-0 mb-0">
   <section class="page-section">
-    <div class="relative container">
+    <div class="container relative">
+      <h2 class="mt-0 font-alt mb-30 mb-xs-10">
+        Unsere Nachbarn
+      </h2>
 
-      <div class="row text-center">
-        <div class="col-md-8 offset-md-2">
-          <!-- <p class="font-alt">Info:</p> -->
-
-          <h3 class="hs-line-15 font-alt mb-10">
-            Unsere Nachbarn
-          </h3>
-
-
-          <p class="mt-20">
-            Falls unsere Räume zu klein oder schon besetzt sind, empfehlen wir unsere Nachbarn vis-à-vis.
-          </p>
-          <div class="mb-20">
-            <a href="https://suedland.ch/forum/" target="_blank">
-              <img src="suedland.jpg" alt="" style="max-width: 450px;">
-            </a>
+      <div class="row">
+        <div class="col-sm-6 mb-sm-40">
+          <!-- Gallery -->
+          <div class="work-full-media mt-0 white-shadow">
+            <ul class="clearlist work-full-slider owl-carousel">
+              <li>
+                <img src="suedland.jpg" alt="">
+              </li>
+            </ul>
           </div>
-          <p class="mb-10">
+        </div>
+        <div class="col-sm-6 col-lg-5 offset-lg-1 text">
+          <div class="raeume-eigenschaften">
+            Falls unsere Räume zu klein oder schon besetzt sind, empfehlen wir unsere Nachbarn vis-à-vis.
+          </div>
+          <div class="raeume-eigenschaften">
+            <div style="width: 60%;">
+              <div class="raeume-title">Kapazität</div>
+              <div class="raeume-content text-nowrap">
+                25-40 Personen
+              </div>
+            </div>
+
+            <div style="width: 40%;">
+              <div class="raeume-title">Grösse</div>
+              <div class="raeume-content">
+                100m<sup>2</sup>
+              </div>
+            </div>
+          </div>
+          <div class="mt-40">
             <a href="https://suedland.ch/forum/" class="btn btn-mod btn-border btn-round btn-medium" target="_blank">
               Südland Forum
             </a>
-          </p>
-          <p>
-            <small>
-              100m<sup>2</sup>, 25-40 Personen
-            </small>
-          </p>
+          </div>
         </div>
       </div>
 
