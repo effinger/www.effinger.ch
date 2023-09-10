@@ -67,22 +67,22 @@
     <section class="page-section pb-40 {{ if not (modBool $i 2) }}bg-gray{{ end }}">
       <div class="container relative">
         <div class="row">
-          <div class=" col-sm-6 col-md-5 offset-md-1">
+          <div class="col-md-6 col-lg-5 offset-lg-1">
             <h2 class="hs-line-11 font-alt"> {{ $e.Key }}</h2>
           </div>
         </div>
         {{ range $e.Pages }}
         <div class="row">
-          <div class="col-sm-6 col-md-5 offset-md-1 mb-80 mb-xs-20">
+          <div class="col-sm-9 col-md-6 col-lg-5 offset-lg-1 mb-80 mb-xs-20">
             <!-- Image -->
             <div class="mb-10 image-crop image-crop-4by3">
               <div class="image-crop-inner"
-                style="background-image: url({{ .RelPermalink }}{{ .Params.image }})">
+                style="background-image: url({{ .RelPermalink }}{{ .Params.image }});">
               </div>
             </div>
           </div>
 
-          <div class="col-md-5 col-sm-6 mb-80">
+          <div class="col-md-6 col-lg-5 mb-80">
             <!-- Title -->
             <h3 class="font-alt mt-0 hyphenate">{{ .Title }}</h3>
 
