@@ -14,8 +14,9 @@
 
     <h1 class="title">Gäste Heute</h1>
 
-    <div class="content">
-    </div>
+    <div class="center-content"></div>
+
+    <div class="bottom-content">YOYO</div>
   </div>
 </div>
 {{ end }}
@@ -30,10 +31,8 @@
 
     // Color theme
     const theme = urlVars['theme'];
-    if (theme) {
-      if (theme === "black") {
-        $('body').addClass('theme-black');
-      }
+    if (theme === "black") {
+      $('body').addClass('theme-black');
     }
 
     // Vertical alignment.
@@ -47,14 +46,12 @@
 
     // Size.
     const size = urlVars['size'];
-    if (size) {
-      if (size === "large") {
-        $('body').addClass('size-large');
-      }
+    if (size === "large") {
+      $('body').addClass('size-large');
     }
 
     // Keystone correction.
-    const keystone = urlVars['keystone'];
+    const keystone = Number.parseFloat(urlVars['keystone']);
     if (keystone) {
       $('.container-outer').css('left', Math.abs(keystone) + 'px');
       $('.container-outer').css('right', Math.abs(keystone) + 'px');
@@ -66,9 +63,7 @@
     let tzdelta = urlVars['timezone'];
 
     // Periodically update events.
-    setInterval(function() {
-      loadEvents();
-    }, 20000);
+    setInterval(loadEvents, 20000);
     loadEvents();
 
     function loadEvents() {
@@ -94,6 +89,8 @@
         */
         success: function (data) {
           const events = [];
+
+          data = [data[0], data[0], data[0], data[0], data[0], data[0], data[0], data[0], data[0]]
 
           // Iterate through benjibooks API events
           data.forEach(function (d) {
@@ -173,7 +170,7 @@
           console.log(this.url);
           console.log("AJAX error in request: " + JSON.stringify(err, null, 2));
         },
-        timeout: 12000 // Set timeout.
+        timeout: 12000
       });
     }
 

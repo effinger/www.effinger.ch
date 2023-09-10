@@ -30,12 +30,13 @@ body {
 }
 
 .container {
-  background-color: $primary-color;
+  display: flex;
+  flex-flow: column nowrap;
   width: 100%;
   height: 100%;
   padding: 15px;
-  position: absolute;
   overflow: hidden;
+  background-color: $primary-color;
 
   .theme-black & {
     color: #fff;
@@ -44,7 +45,8 @@ body {
 }
 
 .title {
-  margin-top: 0px;
+  flex: 0;
+  margin-top: 0;
   padding-top: 25px;
   margin-bottom: 10px;
   font-weight: 400;
@@ -56,13 +58,18 @@ body {
   }
 }
 
-.content {
+.center-content {
+  flex: 1;
   margin-top: 40px;
   font-size: 28px;
 
   .size-large & {
     font-size: 38px;
   }
+}
+
+.bottom-content {
+  flex: 0;
 }
 
 .room-table {
@@ -117,10 +124,12 @@ body {
 }
 
 .logo-container {
-  float: right;
-  position: relative;
+  position: absolute;
+  top: 0;
+  right: 0;
 
   .logo {
+    margin: 15px;
     width: 150px;
     height: 110px;
 
