@@ -21,6 +21,7 @@
 {{ end }}
 
 {{ define "body_includes" }}
+<script type="text/javascript" src="/js/jquery-3.7.1.min.js"></script>
 <script type="text/javascript" src="/js/moment-with-locales.min.js"></script>
 <script>
   $(document).ready(function() {
@@ -62,7 +63,7 @@
     }
 
     // Time zone correction
-    const tzdelta = urlVars['timezone'];
+    let tzdelta = urlVars['timezone'];
 
     // Periodically update events.
     setInterval(function() {
@@ -120,12 +121,12 @@
 
           // Display events in table if we have events.
           if (events.length > 0) {
-            const tableContent = "<table class='table room-table'><tbody>";
-            for (const i = 0; i < events.length; i++) {
+            let tableContent = "<table class='table room-table'><tbody>";
+            for (let i = 0; i < events.length; i++) {
               const event = events[i];
 
-              const eventStart = event.start;
-              const eventEnd = event.end;
+              let eventStart = event.start;
+              let eventEnd = event.end;
 
               // Adjust manually
               if (typeof tzdelta !== 'undefined' && tzdelta) {
