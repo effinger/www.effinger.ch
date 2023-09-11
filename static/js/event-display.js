@@ -36,10 +36,10 @@ function initializeDisplay() {
 
   // Keystone correction.
   if (keystone) {
-    $('.container-outer').css('left', Math.abs(keystone) + 'px');
-    $('.container-outer').css('right', Math.abs(keystone) + 'px');
-    $('.container-outer').css('transform', 'perspective(5000px) rotateX(' + keystone + 'deg)');
-    $('.container-outer').css('height', (100 - keystone / 10) + '%');
+    $('.container-outer').css('left', `${Math.abs(keystone)}px'`);
+    $('.container-outer').css('right', `${Math.abs(keystone)}px'`);
+    $('.container-outer').css('transform', `perspective(5000px) rotateX(${keystone}deg)`);
+    $('.container-outer').css('height', `${100 - keystone / 10}%`);
   }
 }
 
@@ -51,7 +51,7 @@ function loadEvents() {
   const endOfDay = moment().endOf('day');
 
   // Set title date of today.
-  $('.title').html('Gäste Heute &mdash; ' + startOfDay.format('dd DD.MM.YYYY'));
+  $('.title').html(`Gäste Heute &mdash; ${startOfDay.format('dd DD.MM.YYYY')}`);
 
   $.ajax({
     url: window.BENJIBOOKS_API_URL,
@@ -76,7 +76,7 @@ function loadEvents() {
     },
     error: function(err) {
       console.log(this.url);
-      console.log('AJAX error in request: ' + JSON.stringify(err, null, 2));
+      console.log(`AJAX error in request: ${JSON.stringify(err, null, 2)}`);
     },
     timeout: 12000,
   });
@@ -112,33 +112,35 @@ function parseEvent(eventData) {
 }
 
 function eventsTable(events) {
-  let html = ''
-  html += '<table class="table room-table"><tbody>';
-  html +=   events.map(eventRow).join();
-  html += '</tbody></table>';
-  return html;
+  return `
+    <table class="table room-table">
+    <tbody>
+      ${events.map(eventRow).join()}
+    </tbody>
+    </table>
+  `;
 }
 
 function eventRow(event) {
-  let html = '';
 
   const rowClasses = []
   if (event.end.isBefore()) rowClasses.push('event-ended');
   if (isBrownbag(event)) rowClasses.push('brownbag');
-  html += '<tr class="' + rowClasses.join(' ') + '">';
-  html +=   '<td class="event-time">';
-  html +=     event.start.format('HH:mm') + ' &ndash; ' + event.end.format('HH:mm');
-  html +=   '</td>';
-  html +=   '<td>';
-  html +=     '<div class="event-title">' + event.title + '</div>';
-  html +=     '<div class="event-subtitle">' + event.subtitle + '</div>';
-  html +=   '</td>';
-  html +=   '<td>';
-  html +=     '<div class="room-floor">' + event.roomFloor + '</div>';
-  html +=     '<div class="room-name">' + event.roomName + '</div>';
-  html +=   '</td>';
-  html += '</tr>';
-  return html;
+  return `
+   <tr class="${rowClasses.join(' ')}">
+     <td class="event-time">
+       ${event.start.format('HH:mm')} &ndash; ${event.end.format('HH:mm')}
+     </td>
+     <td>
+       <div class="event-title">${event.title}</div>
+       <div class="event-subtitle">${event.subtitle}</div>
+     </td>
+     <td>
+       <div class="room-floor">${event.roomFloor}</div>
+       <div class="room-name">${event.roomName}</div>
+     </td>
+   </tr>
+  `;
 }
 
 function isBrownbag(event) {
