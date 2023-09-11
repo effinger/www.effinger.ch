@@ -86,9 +86,17 @@ body {
     }
   }
 
-  tr.event-ended {
+  tr.event.ended {
     opacity: 0.5;
   }
+
+  //tr.event.brownbag {
+  //  height: 8rem;
+  //  .event-subtitle {
+  //    color: #F35657;
+  //    font-size: 1rem;
+  //  }
+  //}
 
   tr > td {
     padding: 8px;
