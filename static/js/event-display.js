@@ -1,4 +1,9 @@
-const urlVars = getUrlParams();
+const urlParams = getUrlParams();
+const theme = urlParams['theme'];
+const align = urlParams['align'];
+const size = urlParams['size'];
+const keystone = parseFloat(urlParams['keystone']);
+const tzdelta = parseInt(urlParams['timezone']);
 
 $(document).ready(function () {
   initializeDisplay();
@@ -12,13 +17,11 @@ function initializeDisplay() {
   moment.locale('de');
 
   // Color theme
-  const theme = urlVars['theme'];
   if (theme === 'black') {
     $('body').addClass('theme-black');
   }
 
   // Vertical alignment.
-  const align = urlVars['align'];
   if (align) {
     $('.container').css('height', 'auto');
     if (align === 'bottom') {
@@ -27,13 +30,11 @@ function initializeDisplay() {
   }
 
   // Size.
-  const size = urlVars['size'];
   if (size === 'large') {
     $('body').addClass('size-large');
   }
 
   // Keystone correction.
-    const keystone = parseFloat(urlVars['keystone']);
   if (keystone) {
     $('.container-outer').css('left', Math.abs(keystone) + 'px');
     $('.container-outer').css('right', Math.abs(keystone) + 'px');
@@ -48,7 +49,6 @@ function loadEvents() {
 
   const startOfDay = moment().startOf('day');
   const endOfDay = moment().endOf('day');
-  const tzdelta = parseInt(urlVars['timezone']);
 
   // Set title date of today.
   $('.title').html('Gäste Heute &mdash; ' + startOfDay.format('dd DD.MM.YYYY'));
@@ -56,21 +56,7 @@ function loadEvents() {
   $.ajax({
     url: window.BENJIBOOKS_API_URL,
     success: function(data) {
-      const events = data.map(function(d) {
-        return {
-          // TODO: validity tests ?
-
-          roomFloor: d.resource.floor,
-          roomName: d.resource.title,
-
-          title: d.title,
-          subtitle: d.subtitle,
-
-          // Convert dates
-          start: moment(d.start),
-          end: moment(d.end),
-        };
-      });
+      const events = data.map(parseEvent);
 
       // Sort by start time.
       events.sort(function(a, b) {
@@ -79,45 +65,7 @@ function loadEvents() {
 
       // Display events in table if we have events.
       if (events.length > 0) {
-        let tableContent = '<table class="table room-table"><tbody>';
-        events.forEach(function(event) {
-          let eventStart = event.start;
-          let eventEnd = event.end;
-
-          // Adjust timezone
-          if (typeof tzdelta !== 'undefined' && tzdelta) {
-            eventStart = eventStart.add(tzdelta, 'hour');
-            eventEnd = eventEnd.add(tzdelta, 'hour');
-
-            // Detect Daylight Savings Time
-          } else if (eventStart.isDST()) {
-            eventStart = eventStart.add(1, 'hour');
-            eventEnd = eventEnd.add(1, 'hour');
-          }
-
-          if (eventEnd.isBefore()) {
-            tableContent += '<tr class="event-ended">';
-          } else {
-            tableContent += '<tr>';
-          }
-
-          tableContent += '<td class="event-time">';
-          tableContent +=   eventStart.format('HH:mm') + ' &ndash; ' + eventEnd.format('HH:mm');
-          tableContent += '</td>';
-          tableContent += '<td>';
-          tableContent +=   '<div class="event-title">' + event.title + '</div>';
-          tableContent +=   '<div class="event-subtitle">' + event.subtitle + '</div>';
-          tableContent += '</td>';
-          tableContent += '<td>';
-          tableContent +=   '<div class="room-floor">' + event.roomFloor + '</div>';
-          tableContent +=   '<div class="room-name">' + event.roomName + '</div>';
-          tableContent += '</td>';
-
-          tableContent += '</tr>';
-        })
-        tableContent += '</tbody></table>';
-
-        $('.center-content').html(tableContent);
+        $('.center-content').html(eventsTable(events));
       } else {
         // Empty table.
         $('.center-content').html('Extra Raum gewünscht? Gastgeber fragen oder spontan reservieren unter effinger.ch/raeume');
@@ -132,6 +80,69 @@ function loadEvents() {
     },
     timeout: 12000,
   });
+}
+
+function parseEvent(eventData) {
+  const event = {
+    // TODO: validity tests ?
+
+    roomFloor: eventData.resource.floor,
+    roomName: eventData.resource.title,
+
+    title: eventData.title,
+    subtitle: eventData.subtitle,
+
+    // Convert dates
+    start: moment(eventData.start),
+    end: moment(eventData.end),
+  };
+
+  // Adjust timezone
+  if (typeof tzdelta !== 'undefined' && tzdelta) {
+    event.start = event.start.add(tzdelta, 'hour');
+    event.end = event.end.add(tzdelta, 'hour');
+
+    // Detect Daylight Savings Time
+  } else if (event.start.isDST()) {
+    event.start = event.start.add(1, 'hour');
+    event.end = event.end.add(1, 'hour');
+  }
+
+  return event;
+}
+
+function eventsTable(events) {
+  let html = ''
+  html += '<table class="table room-table"><tbody>';
+  html +=   events.map(eventRow).join();
+  html += '</tbody></table>';
+  return html;
+}
+
+function eventRow(event) {
+  let html = '';
+
+  const rowClasses = []
+  if (event.end.isBefore()) rowClasses.push('event-ended');
+  if (isBrownbag(event)) rowClasses.push('brownbag');
+  html += '<tr class="' + rowClasses.join(' ') + '">';
+  html +=   '<td class="event-time">';
+  html +=     event.start.format('HH:mm') + ' &ndash; ' + event.end.format('HH:mm');
+  html +=   '</td>';
+  html +=   '<td>';
+  html +=     '<div class="event-title">' + event.title + '</div>';
+  html +=     '<div class="event-subtitle">' + event.subtitle + '</div>';
+  html +=   '</td>';
+  html +=   '<td>';
+  html +=     '<div class="room-floor">' + event.roomFloor + '</div>';
+  html +=     '<div class="room-name">' + event.roomName + '</div>';
+  html +=   '</td>';
+  html += '</tr>';
+  return html;
+}
+
+function isBrownbag(event) {
+  return event.title.toLocaleLowerCase().includes('brownbag')
 }
 
 // Read a page's GET URL variables and return them as a map.
