@@ -60,7 +60,7 @@ body {
 
 .center-content {
   flex: 1;
-  margin-top: 40px;
+  margin-top: 30px;
   font-size: 28px;
 
   .size-large & {
@@ -72,13 +72,13 @@ body {
   flex: 0;
 }
 
-.room-table {
+.events-table {
   width: 100%;
   max-width: 100%;
   border-collapse: collapse;
   border-spacing: 0;
 
-  tr {
+  tr.event {
     background-color: #fff;
 
     .theme-black & {
@@ -87,7 +87,15 @@ body {
   }
 
   tr.event.ended {
-    opacity: 0.5;
+    background-color: rgba(#fff, 0.5);
+
+    .theme-black & {
+      background-color: inherit;
+    }
+
+    & > td > * {
+      opacity: 0.5;
+    }
   }
 
   //tr.event.brownbag {
@@ -98,7 +106,7 @@ body {
   //  }
   //}
 
-  tr > td {
+  tr.event > td {
     padding: 8px;
     line-height: 1.42857143;
     vertical-align: top;
@@ -111,23 +119,23 @@ body {
       border-width: 1px;
       border-bottom-style: solid;
     }
-  }
 
-  .event-time {
-    white-space: nowrap;
-  }
-  .event-title {
-    font-weight: 400;
-  }
-  .event-subtitle {
-    font-size: 90%;
-  }
-  .room-floor {
-    font-weight: 400;
-  }
-  .room-name {
-    font-size: 90%;
-    white-space: nowrap;
+    .event-time {
+      white-space: nowrap;
+    }
+    .event-title {
+      font-weight: 400;
+    }
+    .event-subtitle {
+      font-size: 90%;
+    }
+    .room-floor {
+      font-weight: 400;
+    }
+    .room-name {
+      font-size: 90%;
+      white-space: nowrap;
+    }
   }
 }
 

@@ -115,7 +115,7 @@ function parseEvent(eventData) {
 
 function eventsTable(events) {
   return `
-    <table class="table room-table">
+    <table class="table events-table">
     <tbody>
       ${events.map(eventRow).join("")}
     </tbody>
@@ -130,8 +130,8 @@ function eventRow(event) {
 
   return `
    <tr class="${rowClasses.join(' ')}">
-     <td class="event-time">
-       ${event.start.format('HH:mm')} &ndash; ${event.end.format('HH:mm')}
+     <td>
+       <div class="event-time">${event.start.format('HH:mm')}&nbsp;&ndash; ${event.end.format('HH:mm')}</div>
      </td>
      <td>
        <div class="event-title">${event.title}</div>
@@ -149,7 +149,7 @@ function isBrownbag(event) {
   return event.title.toLocaleLowerCase().includes('brownbag')
 }
 
-// Read a page's GET URL variables and return them as a map.
+// Read a page's URL search params and return them as a map.
 function getUrlParams() {
   const params = {}
   const urlParams = window.location.search.slice(1).split('&')
