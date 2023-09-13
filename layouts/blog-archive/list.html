@@ -54,7 +54,7 @@
               <tr class="clickable-row" data-href="{{ .RelPermalink }}">
                 <td><a href="{{ .RelPermalink }}">{{ .Title }}</a></td>
                 <td>
-                  <span class="right text-nowrap">{{ .Date.Day }}. {{ index $.Site.Data.de.months .Date.Month }}<span class="d-xs-none"> {{ .Date.Year }}</span></span>
+                  <span class="right text-nowrap">{{ .Date.Day }}. {{ index $.Site.Data.de.months .Date.Month }}<span class="d-none d-sm-inline"> {{ .Date.Year }}</span></span>
                 </td>
               </tr>
               {{ end }}

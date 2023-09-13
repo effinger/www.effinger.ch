@@ -7,7 +7,7 @@
 
 <!-- Date, Author -->
 <div class="blog-item-data mb-10">
-  <a class="text-nowrap"><i class="fa fa-clock-o fa-inline"></i>&nbsp;{{ .Date.Format "02.01.2006" }}</a><span class="separator">&nbsp;</span><span class="visible-sm-inline"><br></span>
+  <a class="text-nowrap"><i class="fa fa-clock-o fa-inline"></i>&nbsp;{{ .Date.Format "02.01.2006" }}</a><span class="separator">&nbsp;</span><span class="d-none d-sm-inline d-lg-none"><br></span>
   {{- range $i, $e := .Params.authors -}}
   {{ if $i }}, {{ else }}<i class="fa fa-user fa-inline"></i>&nbsp;{{ end -}}
   <a class="text-nowrap" href="/blog/authors/{{ $e | urlize }}">{{ $e }}</a>
@@ -19,14 +19,14 @@
 
 <!-- Text Intro -->
 <div class="blog-item-body">
-  <p class="hidden-xs">
+  <p class="d-none d-sm-block">
     {{ if gt (len .Description) 140 }}
     {{ substr .Description 0 140 }}…
     {{ else }}
     {{ .Description }}
     {{ end }}
   </p>
-  <p class="visible-xs-block">
+  <p class="d-block d-sm-none">
     {{ .Description }}
   </p>
 </div>
