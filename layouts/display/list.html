@@ -43,7 +43,7 @@
 {{ define "body_includes" }}
 <script type="text/javascript">
   // For debugging purposes, because reloading by restarting the Screenly displays require a looong time.
-  setTimeout(function() { window.location = window.location }, 30000);
+  setTimeout(window.location.reload, 30000);
 
   window.BENJIBOOKS_API_URL = "{{ .Site.Data.room_manager.apiUrl }}";
 </script>
