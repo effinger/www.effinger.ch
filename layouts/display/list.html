@@ -1,12 +1,15 @@
 {{ define "head_includes" }}
 <script type="text/javascript">
-  window.BENJIBOOKS_API_URL = "{{ .Site.Data.room_manager.apiUrl }}";
-
   window.onerror = function(msg, url, linenumber) {
     var elBottomContent = document.getElementsByClassName("bottom-content")[0];
     elBottomContent.innerHTML = "<code>" + msg + "<br>" + url + ":" + linenumber + "</code>";
     return true;
   }
+
+  // For debugging purposes, because the Screenly displays require a looong time to restart.
+  setTimeout(function() { window.location = window.location }, 19000);
+
+  window.BENJIBOOKS_API_URL = "{{ .Site.Data.room_manager.apiUrl }}";
 </script>
 {{ end }}
 
