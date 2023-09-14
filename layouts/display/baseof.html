@@ -7,7 +7,7 @@
 
     <meta name="description" content="{{ .Description }}">
 
-    <title>{{ block "title" . }}{{ with .Title }}{{ . }} | {{ end }}{{ .Site.Title }}{{ end }}</title>
+    <title>Effinger Events Display</title>
 
     <!-- Favicons -->
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
@@ -27,9 +27,7 @@
     {{ block "head_includes" . }}{{ end }}
   </head>
   <body>
-
     {{ block "main" . }}{{ end }}
-
     {{ block "body_includes" . }}{{ end }}
   </body>
 </html>
