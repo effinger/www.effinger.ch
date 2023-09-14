@@ -12,7 +12,7 @@
 
   <!-- Header -->
   <section class="small-section-header bg-dark-lighter">
-    <div class="relative container align-left pt-80">
+    <div class="relative container text-start pt-80">
 
       <div class="row">
 
@@ -83,18 +83,18 @@
 
 <script type="text/javascript">
   // Client ID and API key from the Developer Console
-  var CLIENT_ID = '438668020249-b7b6sepdi5kgk1kdhng4usv8j58uona1.apps.googleusercontent.com';
-  var API_KEY = 'AIzaSyDQVL6ICInwYCZj4gJlh6fz2_6SOU0mvHg';
+  const CLIENT_ID = '438668020249-b7b6sepdi5kgk1kdhng4usv8j58uona1.apps.googleusercontent.com';
+  const API_KEY = 'AIzaSyDQVL6ICInwYCZj4gJlh6fz2_6SOU0mvHg';
 
   // Array of API discovery doc URLs for APIs used by the quickstart
-  var DISCOVERY_DOCS = ["https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest"];
+  const DISCOVERY_DOCS = ["https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest"];
 
   // Authorization scopes required by the API; multiple scopes can be
   // included, separated by spaces.
-  var SCOPES = "https://www.googleapis.com/auth/calendar.readonly";
+  const SCOPES = "https://www.googleapis.com/auth/calendar.readonly";
 
-  var authorizeButton = document.getElementById('authorize-button');
-  var signoutButton = document.getElementById('signout-button');
+  const authorizeButton = document.getElementById('authorize-button');
+  const signoutButton = document.getElementById('signout-button');
 
   /**
    *  On load, called to load the auth2 library and API client library.
@@ -162,7 +162,7 @@
     // var resources = [
     //   { id: 'effinger.ch_3736303136393637343739@resource.calendar.google.com', title: 'Tagesverantwortung' }
     // ];
-    var resources = [
+    const resources = [
       { id: 'effinger.ch_3931343830323437383537@resource.calendar.google.com', title: '1OG Bärengraben', eventColor: '#9E69AF' },
       { id: 'effinger.ch_31313730333433383430@resource.calendar.google.com', title: '1OG Rosengarten', eventColor: '#F4511E' },
       { id: 'effinger.ch_3838383235323139363736@resource.calendar.google.com', title: '1OG Matte', eventColor: '#D81B60' },
@@ -176,17 +176,17 @@
       { id: 'effinger.ch_3736303136393637343739@resource.calendar.google.com', title: 'Tagesverantwortung', eventColor: '#616161' }
     ];
 
-    var events = [];
-    
-    var timeMin = new Date();
+    const events = [];
+
+    const timeMin = new Date();
     timeMin.setMonth(timeMin.getMonth() - 1);
-    
-    var timeMax = new Date();
+
+    const timeMax = new Date();
     timeMax.setMonth(timeMax.getMonth() + 12);
-    
+
     // Run requests for calendar events in parallel.
-    var promises = [];
-    for (var i = 0; i < resources.length; i++) {
+    const promises = [];
+    for (let i = 0; i < resources.length; i++) {
       promises.push(fetchEvents(resources[i].id, timeMin, timeMax));
     }
     $.when.apply($, promises).then(function() {
@@ -194,20 +194,20 @@
         // "responseData" will contain an array of response information for each specific request
         events = events.concat(responseData);
       });
-        
-      loadScheduler(resources, events, 
+
+      loadScheduler(resources, events,
         $('#calendar'), $('#calendar-loading'), $('#calendar-details'));
     }, function() {
-      alert('Sorry, es hat ein Fehler gegeben beim Abrufen der Kalender.' +            
+      alert('Sorry, es hat ein Fehler gegeben beim Abrufen der Kalender.' +
             '\nBitte wende dich an den Administrator deines Vertrauens.');
     });
   }
-  
+
   // Fetches the events of the specified calendar.
   // Returns a promise.
   function fetchEvents(calendarId, timeMin, timeMax) {
-    var deferred = $.Deferred()
-    
+    const deferred = $.Deferred();
+
     gapi.client.calendar.events.list({
       'calendarId': calendarId,
       'timeMin': timeMin.toISOString(),
@@ -216,10 +216,10 @@
       'singleEvents': true,
       'orderBy': 'startTime'
     }).then(function(response) {
-      var events = [];
+      const events = [];
       $.each(response.result.items, function(index, value) {
-        var start;
-        var end;
+        let start;
+        let end;
         if (value.start.date) {
           // All-day-event.
           start = value.start.date;

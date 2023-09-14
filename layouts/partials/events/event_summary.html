@@ -11,12 +11,12 @@
       <div class="month font-alt">{{ .Scratch.Get "start_shortmonth" }}</div>
     </div>
     <div class="event-text text bg-white">
-      <h4 class="uppercase">{{ .Title }}</h4>
+      <h5 class="uppercase">{{ .Title }}</h5>
       <p>
         {{ if eq (.Scratch.Get "end_date") (.Scratch.Get "start_date") }}
           <i class="fa fa-clock-o fa-inline"></i>&nbsp;{{ .Scratch.Get "start_time" }} Uhr<span class="separator">&nbsp;</span>
         {{ else }}
-          <i class="fa fa-clock-o fa-inline"></i>&nbsp;{{ .Scratch.Get "start_time" }} bis {{ .Scratch.Get "end_time" }} Uhr<span class="separator">&nbsp;</span>
+          <i class="fa fa-clock-o fa-inline"></i>&nbsp;{{ .Scratch.Get "start_time" }} – {{ .Scratch.Get "end_time" }} Uhr<span class="separator">&nbsp;</span>
         {{ end }}
         <i class="fa fa-tags fa-inline"></i>&nbsp;{{ delimit .Params.categories ", " }}
       </p>

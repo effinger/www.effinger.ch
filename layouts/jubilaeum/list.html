@@ -12,7 +12,7 @@
 
             <div class="row text-center">
 
-                <div class="col-md-6 col-md-offset-3 ">
+                <div class="col-md-6 offset-md-3 ">
                     <div class="mb-10">
                         <i class="fa fa-birthday-cake fa-5x"></i>
                     </div>
@@ -29,7 +29,7 @@
     <!-- End Jubilaeum -->
 
     <!-- Alternative Services Section -->
-    <section class="page-section" id="start">
+    <section class="page-section">
         <div class="container relative">
             <div class="row">
 
@@ -60,11 +60,11 @@
         <div class="container relative">
 
 
-            <div class="row multi-columns-row alt-features-grid">
+            <div class="row alt-features-grid">
 
 
-                <div class="col-sm-12 col-md-6 col-md-offset-3 mb-sm-60">
-                    <div class="alt-features-item align-center">
+                <div class="col-sm-12 col-md-6 offset-md-3 mb-sm-60">
+                    <div class="alt-features-item text-center">
                         <img style="height:200px;width:auto" src="jubi_brownbag.png" alt="Brownbag" />
                         <h3 class="alt-features-title font-alt">Jubiläums-Brownbag</h3>
                         <div class="alt-features-descr">
@@ -83,9 +83,9 @@
                 </div>
 
             </div>
-            <div class="row multi-columns-row alt-features-grid">
+            <div class="row alt-features-grid">
                 <div class="col-sm-6 col-md-4">
-                    <div class="alt-features-item align-center">
+                    <div class="alt-features-item text-center">
                         <img style="height:50px;width:auto;margin-top:25px;margin-bottom: 25px;" src="jubi-coworking.png" alt="Gratis Coworking" />
                         <div class="alt-features-descr">
                             <p class="mb-0 mt-10">
@@ -98,7 +98,7 @@
                 </div>
 
                 <div class="col-sm-6 col-md-4">
-                    <div class="alt-features-item align-center">
+                    <div class="alt-features-item text-center">
                         <img style="height:80px;width:auto;margin-top:10px;margin-bottom: 10px;" src="jubi-essen.png" alt="Kulinarik STRUNK" />
                         <div class="alt-features-descr">
                             <p class="mb-0 mt-10">
@@ -111,7 +111,7 @@
                 </div>
 
                 <div class="col-sm-12 col-md-4">
-                    <div class="alt-features-item align-center">
+                    <div class="alt-features-item text-center">
                         <img style="height:70px;width:auto;margin-top:15px;margin-bottom: 15px;" src="jubi-true.png" alt="Kontert TRUE" />
                         <div class="alt-features-descr">
                             <p class="mb-0 mt-10">Ab 20:30h Konzert mit TRUE in der Kaffeebar.</p>
@@ -142,17 +142,12 @@
                         </div>
                         <div class="event-date text" style="background-image:url({{ .RelPermalink }}/{{ .Params.organizerimage }}); background-repeat: no-repeat; background-size: cover; background-position: center; height: 100%; width: 150px; position: absolute">
                             <span></span>
-
                         </div>
                         <div class="event-text text bg-white" style="margin-left: 150px;">
-                            <h4 class="uppercase">{{ .Title }}</h4>
-                            <p> <i class="fa fa-user fa-inline"></i> {{ .Params.organizer}}</p>
-                            <p>
-                                <i class="fa fa-clock-o fa-inline"></i>&nbsp{{.Params.time }}  
-                            </p>
-                            <p>
-                                <i class="fa fa-map-marker fa-inline"></i>&nbsp{{.Params.location }}
-                            </p>
+                            <h5 class="uppercase">{{ .Title }}</h5>
+                            <p> <i class="fa fa-user fa-inline"></i> {{ .Params.organizer }}</p>
+                            <p> <i class="fa fa-clock-o fa-inline"></i> {{.Params.time }} </p>
+                            <p> <i class="fa fa-map-marker fa-inline"></i> {{.Params.location }}</p>
                         </div>
                     </div>
                 </a>

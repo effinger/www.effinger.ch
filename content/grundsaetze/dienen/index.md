@@ -4,29 +4,29 @@ date = "2015-01-09"
 description = "Wir betrachten Dienen als den Wesenszug echten Unternehmertums. Wir wollen als Unternehmer mit unserer Person und unserem Potenzial einen positiven Unterschied für die Gesellschaft bewirken und aus diesem Unterschied ein Business erschaffen."
 +++
 
-## Leitsätze
+### Leitsätze
 
 * Wir betrachten Dienen als den Wesenszug echten Unternehmertums
 * Wir wollen als Unternehmer mit unserer Person und unserem Potenzial einen positiven Unterschied für die Gesellschaft bewirken und aus diesem Unterschied ein Business erschaffen.
 * Wir wollen Mehrwert schaffen und unsere Welten (spheres of influence) verändern.
 
 
-## Erklärung
+### Erklärung
 
 
-### „Brot teilen“
+#### „Brot teilen“
 
 Das englische Wort für Unternehmen „company“ verdeutlicht Sinn und Zweck einer Unternehmung. Das Wort „company“ hat die Wurzeln in den zwei lateinische Begriffen „cum“ (zusammen, mit) und „panis“ (Brot) und kann mit „Brot teilen“ übersetzt werden. In die gleiche Wortfamilie gehört „companio“ (einer der Brot mit dir isst). Das „Brot teilen“ wurde im Orient gleich gesetzt mit Gemeinschaft, Versorgung und Gastfreundschaft. Gastfreundschaft bedeutet einer Person ohne deren Verdienst Anteil an der Versorgung zu geben und ihr damit zu dienen.
 
 
-### Dienst an der Gesellschaft
+#### Dienst an der Gesellschaft
 
 Ein Unternehmen steht nie alleine da. Es ist in verschiedene Sphären (ökonomische, technologische, soziale, ökologische und rechtliche) eingebettet und mit vielen Anspruchsgruppen verbunden. Die Beziehungen sind wechselseitig und die verschiedenen Sphären und Anspruchsgruppen können sich widersprechen. Die Kunst des Unternehmens ist es, das Unternehmen im Spannungsfeld aller möglichen Konflikte zu manövrieren. Die Aufgabe in den Wechselbeziehungen ist es, einander zu dienen. So dienen z.b. Mitarbeiter den Zielen der Unternehmungen. Die Unternehmung wiederum dient den Mitarbeitern aber auch der Gesellschaft. Ein Unternehmer ist in erster Linie ein Diener. Der nicht mit einer Sklavenmentalität sondern mit einem starken Bewusstsein über die eigenen Stärken und Möglichkeiten diese in den Dienst der verschiedenen Anspruchsgruppen stellt.
 
 Der verstorbene Papst Johannes Paul II umschrieb die Aufgabe eines Unternehmens wie folgt: “The purpose of a business firm is not simply to make a profit, but is to be found in its very existence as a community of persons who in various ways are endeavouring to satisfy their basic needs, and who form a particular group at the service of the whole of society.”
 
 
-### Finde Deine Bestimmung
+#### Finde Deine Bestimmung
 
 Im vielbeachteten Buch “From Good to Great” stellt Jim Collins das “Hedgehog Concept” vor. Dabei geht es um die Suche der Schnittmenge von Passion, Skills und Profit. Innere Erfüllung findet man unserer Meinung nach erst wenn noch ein vierter Kreis dazu kommt und Passion, Skills und Profit in den Dienst der Gesellschaft gestellt werden (siehe auch Artikel „Its your „Calling“ calling. Are you free“). Um der Person ganzheitlich gerecht zu werden, wird sie/er in unserer Darstellung nicht auf die Passion reduziert und Skills mit Fähigkeiten und Ressourcen weiter gefasst.
 
@@ -42,16 +42,16 @@ Der „Sweet Spot“ der Bestimmung und Erfüllung liegt in der Schnittmenge der
 „The biggest lesson I’ve learned about following our passions, is that it doesn’t mean anything to follow our passions, if it isn’t in the service of others.  And so, we need to spend just as much time discovering what our passions are, as we spend understanding the needs of the community we live in – that’s where the true potential lies. There’s a quote by a theologian named Friedrich Brunner, who said that ‘your vocation is where your passion meets the world’s greatest need’.” (Eunice Hii, Don't Just Follow Your Passion: A Talk for Generation Y)
 
 
-### Werte schaffen
+#### Werte schaffen
 
 Eine Unternehmung soll einen Mehrwert erschaffen (Creating Shared value). Im Gegensatz zur „Corporate Social Responsibility“ will man mit der Geschäftstätigkeit selber einen ökologischen, ökonomischen und sozialen Impact haben:
 
 “CSR is fundamentally about taking resources from the business, and investing those resources in being a good corporate citizen: recycling, giving money to social causes, reporting on social and environmental impacts, and engaging employees in community works. Shared Value is aimed at changing how the core business operates—strategy, structure, people, processes and rewards—in order to deliver triple bottom line returns. The fundamental distinction is that CSR is about doing something separate from the business and CSV is about integrating social and environmental impact into the business, using that integration to drive economic value.”
 
 
-## Umsetzungsbeispiele zur Inspiration
+### Umsetzungsbeispiele zur Inspiration
 
-### TOMS Shoes
+#### TOMS Shoes
 
 Es war im Jahr 2006 als Toms’ Gründer Blake Mycoskie in Argentinien auf die vielen Kinder ohne Schuhe aufmerksam wurde. Anstelle einer Hilfsorganisation zu gründen, um den Kindern zu helfen, gründete er Toms Shoes. Eine For-Profit Unternehmung welche aber pro verkauftes Paar Schuhe ein Paar Schuhe an benachteiligte Kinder abgibt. Dieses „One for One®“ Geschäftsmodell...
 
@@ -60,14 +60,14 @@ Es war im Jahr 2006 als Toms’ Gründer Blake Mycoskie in Argentinien auf die v
 Seit 2006 wurden 35 Millionen Schuhe verkauft und ebenso viele verschenkt. Bald folgten weitere Produkte wie z.B. Sonnenbrillen. Das Prinzip was das gleiche. Dank den verkauften Sonnenbrillen konnte bereits 275’000 Menschen ..... Blake wurde nicht nur mit Preisen überhäuft sondern die Firma hat laut Wallstreet Journal einen Wert von 625 Mio USD - der Treiber hinter der Gründung und dem Wachstum war und ist es immer noch, bedürftigen Menschen zu dienen.
 
 
-### Nachlese
+#### Nachlese
 
 Das Prinzip der Nachlese ist bis auf mehrere Hundert Jahre vor Christus dokumentiert. Bauern durften die Ränder ihrer Felder nicht ganz abernten und auch nicht die restlichen Trauben oder Oliven pflücken.
 
 Die Nachlese erfolgte durch Menschen sozial schwächeren Schichten und ermöglichte ihnen, durch harte Arbeit ihre Versorgung sicherzustellen und nicht betteln zu müssen. Wie viel ein Bauer zurückliess war ihm selber überlassen. Hier zeigte sich seine Dankbarkeit für die Ernte und die Grosszügigkeit gegenüber sozial schwachen Personen. Im Gegensatz zu einer Charity-Aktion gab es den Menschen auch die Würde zurück, sich durch Arbeit selber zu ernähren. Das Nachleserecht ist z.B. in Frankreich immer noch geltendes Recht.
 
 
-## Quelle
+### Quelle
 
 * Blake Mycoskie, Start Something That Matters, 2012.
 * Shawn Anchor, It’s Your 'Calling' Calling. Are You Free?, abgerufen am 01.06.2015, http://goodthinkinc.com/success-its-your-calling-calling-are-you-free/

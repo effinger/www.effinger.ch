@@ -10,7 +10,7 @@
       <div class="month font-alt">{{ slicestr (index .context.Site.Data.de.months $date.Month) 0 3 }}</div>
     </div>
     <div class="event-text text bg-white">
-      <h4 class="uppercase">Brownbag &ndash; {{ .event.title }}</h4>
+      <h5 class="uppercase">Brownbag &ndash; {{ .event.title }}</h5>
       <p>
         <i class="fa fa-clock-o fa-inline"></i>&nbsp;{{ printf "%02d:%02d" $date.Hour $date.Minute }} Uhr<span class="separator">&nbsp;</span>
         <i class="fa fa-tags fa-inline"></i>&nbsp;Brownbag

@@ -8,7 +8,7 @@
 
   <!-- Header -->
   <section class="small-section-header bg-dark-lighter">
-    <div class="relative container align-left pt-80">
+    <div class="relative container text-start pt-80">
 
       <div class="row">
 
@@ -80,7 +80,7 @@
                 <p><small>Kontostand Ende Monat</small><span class="amount">{{ partial "utils/format_thousands" .Params.kontostand }}</span></p>
               </div>
               <div class="item">
-                <p class="align-center">
+                <p class="text-center">
                   <span class="btn btn-mod btn-gray btn-round"><i class="fa fa-angle-right"></i> Details</span>
                 </p>
               </div>
@@ -91,8 +91,11 @@
         {{ end }}
       </div>
 
-      <div class="row text-center">
-        <a href="/finanzen/verein-coworking-community-bern/" class="btn btn-mod btn-border btn-medium btn-round">&rarr; weitere Monate anzeigen</a>
+      <div class="row justify-content-center">
+        <a href="/finanzen/verein-coworking-community-bern/" class="btn btn-mod btn-border btn-medium btn-round"
+          style="max-width: 330px;">
+          &rarr; weitere Monate anzeigen
+        </a>
       </div>
     </div>
   </section>

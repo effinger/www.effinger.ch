@@ -12629,7 +12629,7 @@ var Toolbar = /** @class */ (function () {
                             '<button type="button" class="' + buttonClasses.join(' ') + '"' +
                                 buttonAriaAttr +
                                 '>' + buttonInnerHtml + '</button>')
-                                .click(function (ev) {
+                                .on("click", function (ev) {
                                 // don't process clicks for disabled buttons
                                 if (!buttonEl.hasClass(theme.getClass('stateDisabled'))) {
                                     buttonClick(ev);
@@ -12641,7 +12641,7 @@ var Toolbar = /** @class */ (function () {
                                     }
                                 }
                             })
-                                .mousedown(function () {
+                                .on("mousedown", function () {
                                 // the *down* effect (mouse pressed in).
                                 // only on buttons that are not the "active" tab, or disabled
                                 buttonEl
@@ -12649,18 +12649,19 @@ var Toolbar = /** @class */ (function () {
                                     .not('.' + theme.getClass('stateDisabled'))
                                     .addClass(theme.getClass('stateDown'));
                             })
-                                .mouseup(function () {
+                                .on("mouseup", function () {
                                 // undo the *down* effect
                                 buttonEl.removeClass(theme.getClass('stateDown'));
                             })
-                                .hover(function () {
+                                .on("mouseenter", function () {
                                 // the *hover* effect.
                                 // only on buttons that are not the "active" tab, or disabled
                                 buttonEl
                                     .not('.' + theme.getClass('stateActive'))
                                     .not('.' + theme.getClass('stateDisabled'))
                                     .addClass(theme.getClass('stateHover'));
-                            }, function () {
+                            })
+                                .on("mouseleave", function () {
                                 // undo the *hover* effect
                                 buttonEl
                                     .removeClass(theme.getClass('stateHover'))
@@ -14813,7 +14814,7 @@ BootstrapTheme.prototype.classes = {
     tableGrid: 'table-bordered',
     tableList: 'table table-striped',
     buttonGroup: 'btn-group',
-    button: 'btn btn-default',
+    button: 'btn btn-secondary',
     stateActive: 'active',
     stateDisabled: 'disabled',
     today: 'alert alert-info',

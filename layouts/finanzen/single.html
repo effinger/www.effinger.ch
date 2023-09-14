@@ -24,7 +24,7 @@
 
   <!-- Header -->
   <section class="small-section-header bg-dark-lighter">
-    <div class="relative container align-left pt-80">
+    <div class="relative container text-start pt-80">
 
       <div class="row">
 
@@ -60,7 +60,7 @@
       </div>
       <!-- End Prev/Next Post -->
 
-      <h1 class="hs-line-11 font-alt mt-0 align-center">{{ print (index $.Site.Data.de.months .Date.Month ) " " .Date.Year }}</h1>
+      <h1 class="hs-line-11 font-alt mt-0 text-center">{{ print (index $.Site.Data.de.months .Date.Month ) " " .Date.Year }}</h1>
 
       <div class="count-wrapper mb-20 mt-30">
         <div class="row">
@@ -103,7 +103,7 @@
       </div>
 
       <div class="row erfolg">
-        <div class="col-sm-6 item left-sm mt-40">
+        <div class="item | col-sm-6 mt-40">
           <div class="mb-40">
             <canvas id="ertrag-chart"></canvas>
           </div>
@@ -132,7 +132,7 @@
           {{ end }}
         </div>
 
-        <div class="col-sm-6 item right-sm mt-40 mt-xs-70">
+        <div class="item | col-sm-6 mt-40 mt-xs-70">
           <div class="mb-40">
             <canvas id="aufwand-chart"></canvas>
           </div>
@@ -171,8 +171,8 @@
 {{ define "body_includes" }}
 <script type="text/javascript" src="/js/Chart.min.js"></script>
 <script type="text/javascript">
-var ctxErtrag = document.getElementById("ertrag-chart").getContext("2d");
-var dataErtrag = [
+  const ctxErtrag = document.getElementById("ertrag-chart").getContext("2d");
+  const dataErtrag = [
   {{ range $i, $e := .Params.ertrag }}
     {{ $color_index := mod $i (len $.Site.Data.finanzen_colors.blue) }}
     {
@@ -182,20 +182,25 @@ var dataErtrag = [
         label: {{ $e.name }}
     },
   {{ end }}
-];
-var chartErtrag = new Chart(ctxErtrag).Doughnut(dataErtrag.filter(function(e){ return e.value > 0 }), {
-  tooltipTemplate: function(label){return label.label + ": CHF " + label.value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, "'");},
+  ]
+  const chartErtrag = new Chart(ctxErtrag).Doughnut(
+    dataErtrag.filter(function(e) { return e.value > 0 }),
+    {
+      tooltipTemplate: function(label) {
+        return label.label + ": CHF " + label.value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, "'");
+      },
 
-  //Number - Amount of animation steps
-  animationSteps : 50,
+      //Number - Amount of animation steps
+      animationSteps: 50,
 
-  //String - Animation easing effect
-  animationEasing : "easeOutQuart",
-  responsive: true
-});
+      //String - Animation easing effect
+      animationEasing: "easeOutQuart",
+      responsive: true
+    }
+  )
 
-var ctxAufwand = document.getElementById("aufwand-chart").getContext("2d");
-var dataAufwand = [
+  const ctxAufwand = document.getElementById("aufwand-chart").getContext("2d");
+  const dataAufwand = [
   {{ range $i, $e := .Params.aufwand }}
     {{ $color_index := mod $i (len $.Site.Data.finanzen_colors.red) }}
     {
@@ -205,16 +210,21 @@ var dataAufwand = [
         label: {{ $e.name }}
     },
   {{ end }}
-];
-var chartErtrag = new Chart(ctxAufwand).Doughnut(dataAufwand.filter(function(e){ return e.value > 0 }), {
-  tooltipTemplate: function(label){return label.label + ": CHF " + label.value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, "'");},
+  ]
+  const chartAufwand = new Chart(ctxAufwand).Doughnut(
+    dataAufwand.filter(function(e) { return e.value > 0 }),
+    {
+      tooltipTemplate: function(label) {
+        return label.label + ": CHF " + label.value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, "'");
+      },
 
-  //Number - Amount of animation steps
-  animationSteps : 50,
+      //Number - Amount of animation steps
+      animationSteps: 50,
 
-  //String - Animation easing effect
-  animationEasing : "easeOutQuart",
-  responsive: true
-});
+      //String - Animation easing effect
+      animationEasing: "easeOutQuart",
+      responsive: true,
+    }
+  )
 </script>
 {{ end }}

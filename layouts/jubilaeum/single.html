@@ -12,12 +12,12 @@
 
   <!-- Header -->
   <section class="small-section-header bg-gray-lighter">
-    <div class="relative container align-left pt-80">
+    <div class="relative container text-start pt-80">
       <h2 class="hs-line-15 font-alt text-center mb-80">13. März 2020</h2>
 
       <div class="row">
         <div class="col-md-3">
-            <img class="img-responsive" src="{{ .Params.organizerimage }}" alt="">
+            <img class="img-fluid" src="{{ .Params.organizerimage }}" alt="">
         </div>
         <div class="col-md-9">
           <h1 class="hs-line-11 font-alt mb-10">{{ .Title }}</h1>
@@ -32,10 +32,10 @@
 
         {{ if .Params.registration }}
         <div class="col-md-4 mt-30 align-right">
-                <p class="local-scroll">
-                    <i class="fa fa-user-plus mt-10"></i>
-                    <a href="#anmeldung" class="btn btn-mod btn-gray btn-medium btn-round">Anmeldung</a>
-                </p>
+          <p class="local-scroll">
+            <i class="fa fa-user-plus mt-10"></i>
+            <a href="#anmeldung" class="btn btn-mod btn-gray btn-medium btn-round">Anmeldung</a>
+          </p>
         </div>
         {{ end }}
       </div>
@@ -51,7 +51,7 @@
       <div class="row">
         <div class="col-md-12">
           <div class="section-text">
-              <img style="margin: 0 auto 70px;" class="img-responsive" src="{{ .Params.image }}" alt="">
+              <img style="margin: 0 auto 70px;" class="img-fluid" src="{{ .Params.image }}" alt="">
 
               <div class="lead">
                 {{ .Description }}
@@ -115,20 +115,20 @@
             data-event-api="{{ .Site.Data.event_manager.apiUrl }}">
             <div class="row">
               <div class="col-sm-6 mb-20 mb-md-10">
-                <input type="text" name="firstname" class="input-md form-control" placeholder="Vorname" maxlength="100">
+                <input type="text" name="firstname" class="form-control" placeholder="Vorname" maxlength="100">
               </div>
 
               <div class="col-sm-6 mb-20 mb-md-10">
-                <input type="text" name="lastname" class="input-md form-control" placeholder="Ganzer Nachname" maxlength="100">
+                <input type="text" name="lastname" class="form-control" placeholder="Ganzer Nachname" maxlength="100">
               </div>
             </div>
 
             <div class="mb-20 mb-md-10">
-              <input type="email" name="_email" class="input-md form-control" placeholder="E-Mail" maxlength="100">
+              <input type="email" name="_email" class="form-control" placeholder="E-Mail" maxlength="100">
             </div>
 
             <div class="mb-20 mb-md-10">
-              <textarea name="comments" id="text" class="input-md form-control" rows="5" placeholder="Kommentar (optional, wird hier auf der Seite angezeigt)" maxlength="400"></textarea>
+              <textarea name="comments" id="text" class="form-control" rows="5" placeholder="Kommentar (optional, wird hier auf der Seite angezeigt)" maxlength="400"></textarea>
             </div>
 
             <div class="mb-20 mb-md-10">
@@ -197,9 +197,9 @@
   <script type="text/javascript">
   $(document).ready(function(){
 
-    var gmMapDiv = $("#map-canvas");
+    const gmMapDiv = $("#map-canvas");
 
-    $(".map-section").click(function(){
+    $(".map-section").on("click", function(){
       $(this).toggleClass("js-active");
       $(this).find(".mt-open").toggle();
       $(this).find(".mt-close").toggle();
@@ -208,8 +208,8 @@
 
     if (gmMapDiv.length) {
 
-      var gmCenterAddress = gmMapDiv.attr("data-address");
-      var gmMarkerAddress = gmMapDiv.attr("data-address");
+      const gmCenterAddress = gmMapDiv.attr("data-address");
+      const gmMarkerAddress = gmMapDiv.attr("data-address");
 
 
       gmMapDiv.gmap3({

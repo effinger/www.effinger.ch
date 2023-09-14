@@ -6,7 +6,7 @@
      Scripts initialization
      --------------------------------------------- */
 
-  $(window).load(function(){
+  $(window).on("load", function(){
 
     init_scroll_navigate();
 
@@ -15,7 +15,7 @@
 
     // Hash menu forwarding
     if ((window.location.hash) && ($(window.location.hash).length)){
-      var hash_offset = $(window.location.hash).offset().top;
+      const hash_offset = $(window.location.hash).offset().top;
       $("html, body").animate({
         scrollTop: hash_offset
       });
@@ -39,7 +39,7 @@
     //init_masonry();
   });
 
-  $(window).resize(function(){
+  $(window).on("resize", function(){
 
     init_classic_menu_resize();
     js_height_init();
@@ -50,29 +50,14 @@
   /* --------------------------------------------
      Platform detect
      --------------------------------------------- */
-  var mobileTest;
+  let mobileDevice;
   if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
-    mobileTest = true;
+    mobileDevice = true;
     $("html").addClass("mobile");
   }
   else {
-    mobileTest = false;
+    mobileDevice = false;
     $("html").addClass("no-mobile");
-  }
-
-  var mozillaTest;
-  if (/mozilla/.test(navigator.userAgent)) {
-    mozillaTest = true;
-  }
-  else {
-    mozillaTest = false;
-  }
-  var safariTest;
-  if (/safari/.test(navigator.userAgent)) {
-    safariTest = true;
-  }
-  else {
-    safariTest = false;
   }
 
   // Detect touch devices
@@ -87,8 +72,8 @@
 
   // Sections backgrounds
 
-  var pageSection = $(".home-section, .page-section, .small-section, .split-section");
-  pageSection.each(function(indx){
+  const pageSection = $(".home-section, .page-section, .small-section, .split-section");
+  pageSection.each(function(_index){
 
     if ($(this).attr("data-background")){
       $(this).css("background-image", "url(" + $(this).data("background") + ")");
@@ -106,20 +91,21 @@
   // Function equal height
   !function(a){
     a.fn.equalHeights = function(){
-      var b = 0, c = a(this);
+      let b = 0;
+      const c = a(this);
       return c.each(function(){
-        var c = a(this).innerHeight();
+        const c = a(this).innerHeight();
         c > b && (b = c)
       }), c.css("height", b)
     }, a("[data-equal]").each(function(){
-      var b = a(this), c = b.data("equal");
+      const b = a(this), c = b.data("equal");
       b.find(c).equalHeights()
     })
   }(jQuery);
 
 
   // Progress bars
-  var progressBar = $(".progress-bar");
+  const progressBar = $(".progress-bar");
   progressBar.each(function(indx){
     $(this).css("width", $(this).attr("aria-valuenow") + "%");
   });
@@ -130,8 +116,8 @@
      Nav panel classic
      --------------------------------------------- */
 
-  var mobile_nav = $(".mobile-nav");
-  var desktop_nav = $(".desktop-nav");
+  const mobile_nav = $(".mobile-nav");
+  const desktop_nav = $(".desktop-nav");
 
   function init_classic_menu_resize(){
 
@@ -154,7 +140,7 @@
       $(".main-nav").addClass("js-transparent");
     }
 
-    $(window).scroll(function(){
+    $(window).on("scroll", function(){
       if ($(window).scrollTop() > 10) {
         $(".js-transparent").removeClass("transparent");
         $(".main-nav").addClass("small-height");
@@ -166,16 +152,14 @@
     });
 
     // Mobile menu toggle
-    mobile_nav.click(function(){
-
+    mobile_nav.on("click", function(){
       if (desktop_nav.hasClass("js-opened")) {
         desktop_nav.slideUp(400, "easeOutExpo", function() {
           desktop_nav.removeClass("js-opened");
           desktop_nav.css('display', '');
         });
         $(this).removeClass("active");
-      }
-      else {
+      } else {
         desktop_nav.slideDown(400, "easeOutQuart").addClass("js-opened");
         $(this).addClass("active");
 
@@ -186,7 +170,7 @@
       }
     });
 
-    desktop_nav.find("a:not(.mn-has-sub)").click(function(){
+    desktop_nav.find("a:not(.mn-has-sub)").on("click", function(){
       if (mobile_nav.hasClass("active")) {
         desktop_nav.slideUp("slow", "easeOutExpo").removeClass("js-opened");
         mobile_nav.removeClass("active");
@@ -196,13 +180,12 @@
 
     // Sub menu
 
-    var mnHasSub = $(".mn-has-sub");
-    var mnThisLi;
+    const mnHasSub = $(".mn-has-sub");
+    let mnThisLi;
 
     $(".mobile-on .mn-has-sub").find(".fa-angle-right:first").removeClass("fa-angle-right").addClass("fa-angle-down");
 
-    mnHasSub.click(function(){
-
+    mnHasSub.on("click", function(){
       if ($(".main-nav").hasClass("mobile-on")) {
         mnThisLi = $(this).parent("li:first");
         if (mnThisLi.hasClass("js-opened")) {
@@ -210,8 +193,7 @@
             mnThisLi.removeClass("js-opened");
             mnThisLi.find(".mn-has-sub").find(".fa-angle-up:first").removeClass("fa-angle-up").addClass("fa-angle-down");
           });
-        }
-        else {
+        } else {
           $(this).find(".fa-angle-down:first").removeClass("fa-angle-down").addClass("fa-angle-up");
           mnThisLi.addClass("js-opened");
           mnThisLi.find(".mn-sub:first").slideDown();
@@ -221,18 +203,17 @@
       }
     });
 
-    mnThisLi = mnHasSub.parent("li");
-    mnThisLi.hover(function(){
-
-      if (!($(".main-nav").hasClass("mobile-on"))) {
-        $(this).find(".mn-sub:first").stop(true, true).fadeIn("fast");
-      }
-
-    }, function(){
-      if (!($(".main-nav").hasClass("mobile-on"))) {
-        $(this).find(".mn-sub:first").stop(true, true).delay(100).fadeOut("fast");
-      }
-    });
+    mnHasSub.parent("li")
+      .on("mouseenter", function(){
+        if (!($(".main-nav").hasClass("mobile-on"))) {
+          $(this).find(".mn-sub:first").stop(true, true).fadeIn("fast");
+        }
+      })
+      .on("mouseleave", function(){
+        if (!($(".main-nav").hasClass("mobile-on"))) {
+          $(this).find(".mn-sub:first").stop(true, true).delay(100).fadeOut("fast");
+        }
+      });
 
   }
 
@@ -251,14 +232,14 @@
       easing: "easeInOutExpo"
     });
 
-    var sections = $(".home-section, .split-section, .page-section");
-    var menu_links = $(".scroll-nav li a");
+    const sections = $(".home-section, .split-section, .page-section");
+    const menu_links = $(".scroll-nav li a");
 
-    $(window).scroll(function(){
+    $(window).on("scroll", function(){
 
       sections.filter(":in-viewport:first").each(function(){
-        var active_section = $(this);
-        var active_link = $('.scroll-nav li a[href="#' + active_section.attr("id") + '"]');
+        const active_section = $(this);
+        const active_link = $('.scroll-nav li a[href="#' + active_section.attr("id") + '"]');
         menu_links.removeClass("active");
         active_link.addClass("active");
       });
@@ -314,7 +295,7 @@
   function init_parallax(){
 
     // Parallax
-    if (($(window).width() >= 1024) && (mobileTest == false)) {
+    if ($(window).width() >= 1024 && !mobileDevice) {
       $(".parallax-1").parallax("50%", 0.1);
       $(".parallax-2").parallax("50%", 0.2);
       $(".parallax-3").parallax("50%", 0.3);
@@ -337,8 +318,8 @@
   // Tabs minimal
   function init_shortcodes(){
 
-    var tpl_tab_height;
-    $(".tpl-minimal-tabs > li > a").click(function(){
+    let tpl_tab_height;
+    $(".tpl-minimal-tabs > li > a").on("click", function(){
 
       if (!($(this).parent("li").hasClass("active"))) {
         tpl_tab_height = $(".tpl-minimal-tabs-cont > .tab-pane").filter($(this).attr("href")).height();
@@ -353,13 +334,13 @@
     });
 
     // Accordion
-    var allPanels = $(".accordion > dd").hide();
+    const allPanels = $(".accordion > dd").hide();
     allPanels.first().slideDown("easeOutExpo");
     $(".accordion > dt > a").first().addClass("active");
 
-    $(".accordion > dt > a").click(function(){
+    $(".accordion > dt > a").on("click", function(){
 
-      var current = $(this).parent().next("dd");
+      const current = $(this).parent().next("dd");
       $(".accordion > dt > a").removeClass("active");
       $(this).addClass("active");
       allPanels.not(current).slideUp("easeInExpo");
@@ -370,9 +351,9 @@
     });
 
     // Toggle
-    var allToggles = $(".toggle > dd").hide();
+    const allToggles = $(".toggle > dd").hide();
 
-    $(".toggle > dt > a").click(function(){
+    $(".toggle > dt > a").on("click", function(){
 
       if ($(this).hasClass("active")) {
 
@@ -381,7 +362,7 @@
 
       }
       else {
-        var current = $(this).parent().next("dd");
+        const current = $(this).parent().next("dd");
         $(this).addClass("active");
         $(this).parent().next().slideDown("easeOutExpo");
       }
@@ -421,7 +402,7 @@
 
   function init_counters(){
     $(".count-number").appear(function(){
-      var count = $(this);
+      const count = $(this);
       count.countTo({
         from: 0,
         to: count.html(),
@@ -443,7 +424,7 @@
   function init_team(){
 
     // Hover
-    $(".team-item").click(function(){
+    $(".team-item").on("click", function(){
       if ($("html").hasClass("mobile")) {
         $(this).toggleClass("js-active");
       }
@@ -594,8 +575,8 @@ function initPageSliders(){
 
     // Fullwidth slideshow
 
-    var sync1 = $(".fullwidth-slideshow");
-    var sync2 = $(".fullwidth-slideshow-pager");
+    const sync1 = $(".fullwidth-slideshow");
+    const sync2 = $(".fullwidth-slideshow-pager");
 
     $(".fullwidth-slideshow").owlCarousel({
       autoPlay: 5000,
@@ -628,7 +609,7 @@ function initPageSliders(){
     });
 
     function syncPosition(el){
-      var current = this.currentItem;
+      const current = this.currentItem;
       $(".fullwidth-slideshow-pager").find(".owl-item").removeClass("synced").eq(current).addClass("synced")
       if ($(".fullwidth-slideshow-pager").data("owlCarousel") !== undefined) {
         center(current)
@@ -637,20 +618,20 @@ function initPageSliders(){
 
     $(".fullwidth-slideshow-pager").on("click", ".owl-item", function(e){
       e.preventDefault();
-      var number = $(this).data("owlItem");
+      const number = $(this).data("owlItem");
       sync1.trigger("owl.goTo", number);
     });
 
     function center(number){
-      var sync2visible = sync2.data("owlCarousel").owl.visibleItems;
-      var num = number;
-      var found = false;
-      for (var i in sync2visible) {
+      const sync2visible = sync2.data("owlCarousel").owl.visibleItems;
+      let num = number;
+      let found = false;
+      for (let i in sync2visible) {
         if (num === sync2visible[i]) {
-          var found = true;
+          found = true;
         }
       }
-      if (found === false) {
+      if (!found) {
         if (num > sync2visible[sync2visible.length - 1]) {
           sync2.trigger("owl.goTo", num - sync2visible.length + 2)
         }
@@ -671,9 +652,9 @@ function initPageSliders(){
         }
     }
 
-    var owl = $(".fullwidth-slideshow").data("owlCarousel");
+    let owl = $(".fullwidth-slideshow").data("owlCarousel");
 
-    $(document.documentElement).keyup(function(event){
+    $(document.documentElement).on("keyup", function(event){
       // handle cursor keys
       if (event.keyCode == 37) {
         owl.prev();
@@ -685,7 +666,7 @@ function initPageSliders(){
     });
 
     if ($(".owl-carousel").length) {
-      var owl = $(".owl-carousel").data('owlCarousel');
+      owl = $(".owl-carousel").data('owlCarousel');
       owl.reinit();
     }
 
@@ -698,20 +679,20 @@ function initPageSliders(){
  --------------------------------------------- */
 
 // Projects filtering
-var fselector = 0;
-var work_grid = $("#work-grid, #isotope");
+let fselector = 0;
+const work_grid = $("#work-grid, #isotope");
 
 function initWorkFilter(){
   (function($){
     "use strict";
-    var isotope_mode;
+    let isotope_mode;
     if (work_grid.hasClass("masonry")){
       isotope_mode = "masonry";
     } else{
       isotope_mode = "fitRows"
     }
 
-    $(".filter").click(function(){
+    $(".filter").on("click", function(){
       $(".filter").removeClass("active");
       $(this).addClass("active");
       fselector = $(this).attr('data-filter');
@@ -726,7 +707,7 @@ function initWorkFilter(){
 
     if (window.location.hash) {
       $(".filter").each(function(){
-        if ($(this).attr("data-filter") == "." + window.location.hash.replace("#", "")) {
+        if ($(this).attr("data-filter") === "." + window.location.hash.replace("#", "")) {
           $(this).trigger('click');
 
           $("html, body").animate({
@@ -770,7 +751,7 @@ function js_height_init(){
 function init_wow(){
   (function($){
 
-    var wow = new WOW({
+    const wow = new WOW({
       boxClass: 'wow',
       animateClass: 'animated',
       offset: 90,

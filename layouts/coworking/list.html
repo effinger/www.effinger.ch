@@ -26,9 +26,9 @@
           </div>
 
           <div class="local-scroll">
-            <a href="#preise" class="btn btn-mod btn-border-w btn-medium btn-round hidden-xs">Preise</a>
-            <span class="hidden-xs">&nbsp;</span>
-            <a href="#kontakt" class="btn btn-mod btn-border-w btn-medium btn-round hidden-xs">Anfrage</a>
+            <a href="#preise" class="btn btn-mod btn-border-w btn-medium btn-round d-none d-sm-inline">Preise</a>
+            <span class="d-none d-sm-inline">&nbsp;</span>
+            <a href="#kontakt" class="btn btn-mod btn-border-w btn-medium btn-round d-none d-sm-inline">Anfrage</a>
           </div>
 
         </div>
@@ -58,13 +58,13 @@
   <section id="facilities" class="page-section">
     <div class="container relative">
 
-      <h2 class="hs-line-11 font-alt mb-40 text-center">Spontan oder im Abo</h2>
+      <h2 class="hs-line-11 mb-40 font-alt fs-5 text-center">Spontan oder im Abo</h2>
       <div class="row">
         <div class="col-md-6 mt-20">
           <img src="effinger-coworking-1.jpg" alt=""/>
         </div>
-        <div class="col-md-6 mt-20" style="font-size: 2rem;">
-          <p class="mt-10 mb-20">
+        <div class="col-md-6 mt-20">
+          <p class="mb-20">
             Geniesse Coworking auf <strong>4 Stockwerken</strong> im Herzen von Bern. Unser Coworking ist von Mo-Fr von 8–18 Uhr geöffnet. Bei uns sind täglich Plätze frei, mit schnellem Wifi und gemeinsamer Kaffeepause um 10h.
           </p>
           <p class="mb-20">
@@ -81,19 +81,19 @@
     </div>
     <div class="container relative">
       <h2 class="hs-line-11 font-alt mt-120 mb-60 text-center">Was dich bei uns erwartet</h2>
-      <ul class="list-unstyled row" style="font-size: 2rem;">
-        <li class="col-xs-12 col-sm-6 col-md-4"><i class="fa fa-check"></i>täglich freie Arbeitsplätze</li>
-        <li class="col-xs-12 col-sm-6 col-md-4"><i class="fa fa-check"></i>Wifi und Drucker</li>
-        <li class="col-xs-12 col-sm-6 col-md-4"><i class="fa fa-check"></i>4x Telefonkabinen</li>
-        <li class="col-xs-12 col-sm-6 col-md-4"><i class="fa fa-check"></i>Austauschen & Netzwerken</li>
-        <li class="col-xs-12 col-sm-6 col-md-4"><i class="fa fa-check"></i>Besprechungsecke</li>
-        <li class="col-xs-12 col-sm-6 col-md-4"><i class="fa fa-check"></i>Sitzungsräume (optional)</li>
-        <li class="col-xs-12 col-sm-6 col-md-4"><i class="fa fa-check"></i>Kaffeebar vor Ort</li>
-        <li class="col-xs-12 col-sm-6 col-md-4"><i class="fa fa-check"></i>2x sonnige Terrassen</li>
-        <li class="col-xs-12 col-sm-6 col-md-4"><i class="fa fa-check"></i>gemeinsame Kaffeepause</li>
-        <li class="col-xs-12 col-sm-6 col-md-4"><i class="fa fa-check"></i>Küche und Mikrowelle</li>
-        <li class="col-xs-12 col-sm-6 col-md-4"><i class="fa fa-check"></i>Kunstatelier</li>
-        <li class="col-xs-12 col-sm-6 col-md-4"><i class="fa fa-check"></i>Stadtwohnungs-Charme</li>
+      <ul class="list-unstyled row fs-5">
+        <li class="col-md-6 col-lg-4 col-xxl-3"><i class="fa fa-check"></i>täglich freie Arbeitsplätze</li>
+        <li class="col-md-6 col-lg-4 col-xxl-3"><i class="fa fa-check"></i>Wifi und Drucker</li>
+        <li class="col-md-6 col-lg-4 col-xxl-3"><i class="fa fa-check"></i>4x Telefonkabinen</li>
+        <li class="col-md-6 col-lg-4 col-xxl-3"><i class="fa fa-check"></i>Austauschen & Netzwerken</li>
+        <li class="col-md-6 col-lg-4 col-xxl-3"><i class="fa fa-check"></i>Besprechungsecke</li>
+        <li class="col-md-6 col-lg-4 col-xxl-3"><i class="fa fa-check"></i>Sitzungsräume (optional)</li>
+        <li class="col-md-6 col-lg-4 col-xxl-3"><i class="fa fa-check"></i>Kaffeebar vor Ort</li>
+        <li class="col-md-6 col-lg-4 col-xxl-3"><i class="fa fa-check"></i>2x sonnige Terrassen</li>
+        <li class="col-md-6 col-lg-4 col-xxl-3"><i class="fa fa-check"></i>gemeinsame Kaffeepause</li>
+        <li class="col-md-6 col-lg-4 col-xxl-3"><i class="fa fa-check"></i>Küche und Mikrowelle</li>
+        <li class="col-md-6 col-lg-4 col-xxl-3"><i class="fa fa-check"></i>Kunstatelier</li>
+        <li class="col-md-6 col-lg-4 col-xxl-3"><i class="fa fa-check"></i>Stadtwohnungs-Charme</li>
       </ul>
     </div>
   </section>
@@ -102,10 +102,10 @@
   <!-- Impressions Section Coworking -->
   <section id="impressions" class="page-section pb-20 pt-40">
     <!-- Photo Grid -->
-    <div class="row multi-columns-row" style="margin: 0 1em;">
+    <div class="row" style="margin: 0 1em;">
       {{ range $num := (seq 8) }}
       <!-- Photo Item -->
-      <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3 mb-md-10">
+      <div class="col-sm-4 col-md-3 col-lg-3 mb-md-10">
         <div class="post-prev-img">
           <a href="effinger-coworking-{{ $num }}.jpg" class="lightbox-gallery-2 mfp-image">
             <img src="effinger-coworking-{{ $num }}.jpg" alt="" />
@@ -122,30 +122,24 @@
   <section class="page-section bg-gray-lighter" id="community">
     <div class="container relative">
       <div class="row">
-        <div class="col-md-7 col-md-push-5 mb-sm-40">
-
+        <div class="col-lg-8 col-xl-7 col-xxl-6 order-last order-lg-first mb-40">
           <div class="video work-full-media mt-0 white-shadow">
             <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/fMXqGOOurVY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
-
         </div>
-        <div class="col-md-5 col-md-pull-7 col-lg-4">
-
-          <div class="text">
-
-            <h3 class="font-alt mb-30 mb-md-10"><a href="/community/">Über uns</a></h3>
-
+        <div class="col-lg-4 col-xl-5 col-xxl-6 mb-40 text">
+            <h3 class="font-alt mb-30 mb-md-10">
+              <a href="/community/">Über uns</a>
+            </h3>
             <p>
               Wir sind eine innovative, kreative Community mit einer gemeinsamen Kaffeebar und Coworking Space in Bern.
               Wir sind eine Heimat für Jungunternehmer, Kreative und andere Weltveränderer, die einander helfen, ihre
               Ideen in Firmen, Innovationen und soziale Aktionen umzusetzen.
             </p>
-
             <div class="mt-40">
               <a href="/community/" class="btn btn-mod btn-border btn-round btn-medium">Mehr</a>
             </div>
           </div>
-
         </div>
       </div>
     </div>
@@ -162,7 +156,7 @@
       <div class="row">
 
         <!-- Pricing Item -->
-        <div class="col-xs-12 col-sm-3 col-sm-3">
+        <div class="col-sm-6 col-md-3">
           <div class="pricing-item">
             <div class="pricing-item-inner">
               <div class="pricing-wrap">
@@ -198,7 +192,7 @@
         <!-- End Pricing Item -->
 
         <!-- Pricing Item -->
-        <div class="col-xs-12 col-sm-3 col-sm-3">
+        <div class="col-sm-6 col-md-3">
           <div class="pricing-item">
             <div class="pricing-item-inner">
               <div class="pricing-wrap">
@@ -222,10 +216,9 @@
                   </ul>
                 </div>
 
-                <div class="pricing-features mb-20 mt-0">
+                <div class="pricing-features font-alt pr-list mb-40 mt-0">
                   Melde dich vormittags spontan bei unserem Tageshost in der Lounge.
                 </div>
-
 
                 <div class="pricing-num">
                   <sup>CHF</sup>35
@@ -237,7 +230,7 @@
         <!-- End Pricing Item -->
 
         <!-- Pricing Item -->
-        <div class="col-xs-12 col-sm-3 col-sm-3">
+        <div class="col-sm-6 col-md-3">
           <div class="pricing-item">
             <div class="pricing-item-inner">
               <div class="pricing-wrap">
@@ -273,7 +266,7 @@
         <!-- End Pricing Item -->
 
         <!-- Pricing Item -->
-        <div class="col-xs-12 col-sm-3 col-sm-3">
+        <div class="col-sm-6 col-md-3">
           <div class="pricing-item">
             <div class="pricing-item-inner">
               <div class="pricing-wrap">
@@ -306,9 +299,11 @@
               </div>
             </div>
 
-            <a href="/coworking/abo" class="btn btn-mod btn-border btn-medium btn-round btn-block mt-20">
+            <a href="/coworking/abo" class="btn btn-mod btn-border btn-medium btn-round d-block mt-20">
               <i class="fa fa-info-circle" aria-hidden="true"></i>
-              Mehr <span class="hidden-sm">Infos</span> <span class="hidden-sm hidden-md">zum Abo</span>
+              Mehr
+              <span class="d-md-none d-lg-inline">Infos</span>
+              <span class="d-sm-none d-xxl-inline">zum Abo</span>
             </a>
           </div>
         </div>
@@ -329,9 +324,6 @@
       <div class="angebote-list">
         <a class="angebot" href="https://3-bewegt.youcanbook.me/">
           <img alt="Massage" src="fausti_achtsamkeit_im_effinger_4.jpg">
-        </a>
-        <a class="angebot" href="https://meditationimeffinger.youcanbook.me/">
-          <img alt="Yoga" src="fausti_achtsamkeit_im_effinger_1.jpg">
         </a>
       </div>
     </div>
@@ -354,7 +346,7 @@
 
       <div class="row">
         {{ if $.Scratch.Get "host" }}
-        <div class="col-md-4 col-md-push-8 col-sm-6 mb-md-50">
+        <div class="col-md-4 col-sm-6 mb-md-50">
         {{ else }}
         <div class="col-md-4 col-sm-6 mb-50">
         {{ end }}
@@ -373,7 +365,7 @@
         </div>
 
         {{ with $.Scratch.Get "host" }}
-          <div class="col-md-8 col-md-pull-4 col-sm-12">
+          <div class="col-md-8 col-sm-12">
             <div class="row">
 
               <div class="col-sm-6 mb-100">

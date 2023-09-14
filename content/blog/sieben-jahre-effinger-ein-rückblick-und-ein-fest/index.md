@@ -38,8 +38,8 @@ Wir sind unendlich dankbar und stolz auf all das, was in den vergangenen sieben 
 
 Ehrenamtliches Engagement und die Membership-Beiträge sind wichtige Säulen für unser stabiles Bestehen. Mit einer Membership setzt du ein Zeichen, dass es einen Ort wie den Effinger in Bern auch zukünftig braucht. Und du kannst ihn mitgestalten. Zum Beispiel kannst du als Community-Member im 2. OG öffentliche Events veranstalten und vieles mehr. Aber schau selbst:
 
-<div class="row multi-columns-row">
-  <div class="col-xs-12 col-sm-6">
+<div class="row">
+  <div class="col-sm-6">
     <div class="pricing-item">
       <div class="pricing-item-inner">
         <div class="pricing-wrap">

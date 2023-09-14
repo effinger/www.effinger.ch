@@ -1,6 +1,7 @@
 .raeume {
 
   .raeume-eigenschaften {
+    display: flex;
     margin-top: 10px;
 
     .raeume-title {
@@ -71,19 +72,18 @@
       text-transform: none !important;
     }
 
-    input[type="radio"], input[type="checkbox"] {
+    .form-check {
       margin-top: 8px;
-    }
 
-    .radio, .checkbox {
-      margin-top: 0px;
-      margin-bottom: 0px;
-
-      label {
+      .form-check-input {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+      .form-check-label {
         font-weight: 300;
       }
     }
-    
+
     .alert-close {
       padding: 0;
       cursor: pointer;

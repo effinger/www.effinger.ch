@@ -8,7 +8,7 @@
 
   <!-- Section -->
   <section class="page-section bg-dark-alfa-70 bg-scroll" data-background="{{ .Params.image }}">
-    <div class="relative container align-left pt-140 pb-60">
+    <div class="relative container text-start pt-140 pb-60">
 
       <div class="row">
 
@@ -38,7 +38,7 @@
     <div class="container">
 
       <div class="row">
-        <div class="col-md-8 col-md-offset-2">
+        <div class="col-md-8 offset-md-2">
           <div class="section-text">
             <h3 class="hs-line-11 font-alt mb-30 text-center">{{ .Params.block_1_title }}</h3>
             <p>
@@ -49,7 +49,7 @@
       </div>
 
       <div class="row">
-        <div class="col-md-8 col-md-offset-2">
+        <div class="col-md-8 offset-md-2">
           <div class="section-text">
             <h3 class="hs-line-11 font-alt mb-30 mt-30 text-center">{{ .Params.block_2_title }}</h3>
             <p>
@@ -73,17 +73,17 @@
       <!-- End Intro Text -->
 
       <!-- Story Grid -->
-      <div class="row multi-columns-row alt-features-grid">
+      <div class="row alt-features-grid">
 
         {{ range .Params.story_items }}
         <!-- Story Item -->
-        <div class="col-sm-6 col-md-4 col-lg-4">
-          <div class="alt-features-item align-left">
+        <div class="col-sm-6 col-lg-4 col-xxl-3">
+          <div class="alt-features-item text-start">
             <div class="alt-features-icon">
               <img src="{{ .image }}" alt="">
             </div>
             <h3 class="alt-features-title font-alt">{{ .title }}</h3>
-            <div class="alt-features-descr align-left">
+            <div class="alt-features-descr text-start">
               {{ .text | markdownify }}
             </div>
           </div>
@@ -104,13 +104,13 @@
       <h1 class="hs-line-11 font-alt mb-60"><a href="/medien/">Medien</a></h1>
       <div class="row">
 
-        <div class="col-sm-4 col-md-3 mb-xs-40">
+        <div class="col-md-4 col-lg-3 mb-xs-40">
           <a href="/medien/">
             <span class="icon-newspaper" style="font-size: 150px;"></span>
           </a>
         </div>
 
-        <div class="col-sm-8 col-md-7 col-lg-6">
+        <div class="col-md-8 col-lg-7">
           <p>Unter folgendem Link findest du Zeitungsartikel und andere Medienberichte über den Effinger. Dort gibt es
             ausserdem ein Medienkit mit hochaufgelöste Bilder von der Kaffeebar und vom Coworking Space.</p>
           <a href="/medien/" class="btn btn-mod btn-border btn-medium btn-round">&rarr; Medienberichte und Medienkit</a>

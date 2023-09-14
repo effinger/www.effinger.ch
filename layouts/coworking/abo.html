@@ -1,6 +1,6 @@
 {{ define "main" }}
 <!-- Page Wrap -->
-<div class="page organisation" id="top">
+<div class="page coworking-abo" id="top">
 
   <nav class="main-nav dark transparent stick-fixed">
     {{ partial "navigation.html" . }}
@@ -8,17 +8,12 @@
 
   <!-- Header -->
   <section class="small-section-header bg-dark-lighter">
-    <div class="relative container align-left pt-80">
+    <div class="relative container text-start pt-80">
 
       <div class="row">
 
         <div class="col-md-8">
           <h1 class="hs-line-11 font-alt mb-0">Coworking-Abo</h1>
-          <!--
-          <div class="hs-line-4 font-alt mt-20 mt-xs-0">
-          Grundsätze
-          </div>
-          -->
         </div>
 
         <div class="col-md-4 mt-30">
@@ -41,10 +36,10 @@
       <p>Du bist jünger als 18? Dann profitierst du von 50 % Jugendrabatt auf unsere Monatsabos.</p>
 
       <!-- Pricing row -->
-      <div class="row multi-columns-row">
+      <div class="row">
 
         <!-- Pricing Item -->
-        <div class="col-xs-6 col-sm-4 col-md-3">
+        <div class="col-sm-6 col-md-3">
           <div class="pricing-item">
             <div class="pricing-item-inner">
               <div class="pricing-wrap">
@@ -75,7 +70,7 @@
                   <sup>CHF</sup>120<br><small>pro Monat</small>
                 </div>
 
-                <a href="/coworking/abo/?option=1#aboform" class="btn btn-mod btn-border btn-medium btn-round btn-block mt-20 pricing-btn">Abo lösen</a>
+                <a href="/coworking/abo/?option=1#aboform" class="btn btn-mod btn-border btn-medium btn-round d-block mt-20 pricing-btn">Abo lösen</a>
               </div>
             </div>
           </div>
@@ -83,7 +78,7 @@
         <!-- End Pricing Item -->
 
         <!-- Pricing Item -->
-        <div class="col-xs-6 col-sm-4 col-md-3">
+        <div class="col-sm-6 col-md-3">
           <div class="pricing-item">
             <div class="pricing-item-inner">
               <div class="pricing-wrap">
@@ -114,7 +109,7 @@
                   <sup>CHF</sup>240<br><small>pro Monat</small>
                 </div>
 
-                <a href="/coworking/abo/?option=2#aboform" class="btn btn-mod btn-border btn-medium btn-round btn-block mt-20 pricing-btn">Abo lösen</a>
+                <a href="/coworking/abo/?option=2#aboform" class="btn btn-mod btn-border btn-medium btn-round d-block mt-20 pricing-btn">Abo lösen</a>
               </div>
             </div>
           </div>
@@ -122,7 +117,7 @@
         <!-- End Pricing Item -->
 
         <!-- Pricing Item -->
-        <div class="col-xs-6 col-sm-4 col-md-3">
+        <div class="col-sm-6 col-md-3">
           <div class="pricing-item">
             <div class="pricing-item-inner">
               <div class="pricing-wrap">
@@ -153,7 +148,7 @@
                   <sup>CHF</sup>360<br><small>pro Monat</small>
                 </div>
 
-                <a href="/coworking/abo/?option=3#aboform" class="btn btn-mod btn-border btn-medium btn-round btn-block mt-20 pricing-btn">Abo lösen</a>
+                <a href="/coworking/abo/?option=3#aboform" class="btn btn-mod btn-border btn-medium btn-round d-block mt-20 pricing-btn">Abo lösen</a>
               </div>
             </div>
           </div>
@@ -162,7 +157,7 @@
 
 
         <!-- Pricing Item -->
-        <div class="col-xs-6 col-sm-4 col-md-3">
+        <div class="col-sm-6 col-md-3">
           <div class="pricing-item">
             <div class="pricing-item-inner">
               <div class="pricing-wrap">
@@ -192,7 +187,7 @@
                   <sup>CHF</sup>480<br><small>pro Monat</small>
                 </div>
 
-                <a href="/coworking/abo/?option=5#aboform" class="btn btn-mod btn-border btn-medium btn-round btn-block mt-20 pricing-btn">Abo lösen</a>
+                <a href="/coworking/abo/?option=5#aboform" class="btn btn-mod btn-border btn-medium btn-round d-block mt-20 pricing-btn">Abo lösen</a>
               </div>
             </div>
           </div>
@@ -200,8 +195,7 @@
         <!-- End Pricing Item -->
 
         <!-- Pricing Item -->
-        <div class="col-md-3 col-sm-3"></div>
-        <div class="col-xs-12 col-sm-6 col-md-6">
+        <div class="col-sm-6 offset-sm-3">
           <div class="pricing-item">
             <div class="pricing-item-inner">
               <div class="pricing-wrap">
@@ -232,7 +226,7 @@
                   <small><strong>Sprich mit uns!</strong></small>
                 </div>
 
-                <a href="/coworking/abo/?option=firma#aboform" class="btn btn-mod btn-border btn-medium btn-round btn-block mt-20 pricing-btn">Kontakt</a>
+                <a href="/coworking/abo/?option=firma#aboform" class="btn btn-mod btn-border btn-medium btn-round d-block mt-20 pricing-btn">Kontakt</a>
               </div>
             </div>
           </div>
@@ -255,7 +249,7 @@
       <div class="row">
 
         <!-- Content -->
-        <div class="col-sm-10 col-sm-offset-1">
+        <div class="col-sm-10 offset-sm-1">
 
           <!-- Text -->
           <div class="section-text">
@@ -266,8 +260,8 @@
 
               <div class="row">
                 <div class="col-sm-6 mb-20 mb-md-10">
-                  <label for="abo-option">Abo*</label>
-                  <select name="abo-option" class="input-md form-control">
+                  <label for="abo-option" class="form-label">Abo*</label>
+                  <select name="abo-option" class="form-control">
                     <option value="1">1 Tag pro Woche (CHF 120)</option>
                     <option value="2" selected="selected">2 Tage pro Woche (CHF 240)</option>
                     <option value="3">3 Tage pro Woche (CHF 360)</option>
@@ -282,8 +276,8 @@
                   </small>
                 </div>
                 <div class="col-sm-6 mb-20 mb-md-10">
-                  <label for="startmonat">Startmonat*</label>
-                  <select name="startmonat" class="input-md form-control">
+                  <label for="startmonat" class="form-label">Startmonat*</label>
+                  <select name="startmonat" class="form-control">
                     <option selected="selected">Januar</option>
                     <option>Februar</option>
                     <option>März</option>
@@ -305,68 +299,68 @@
 
               <div class="row">
                 <div class="col-sm-6 mb-20 mb-md-10">
-                  <label for="firma">Firma</label>
-                  <input type="text" name="firma" class="input-md form-control" placeholder="" maxlength="100">
+                  <label for="firma" class="form-label">Firma</label>
+                  <input type="text" name="firma" class="form-control" placeholder="" maxlength="100">
                 </div>
               </div>
 
               <div class="row">
 
                 <div class="col-sm-6 mb-20 mb-md-10">
-                  <label for="vorname">Vorname*</label>
-                  <input type="text" name="vorname" class="input-md form-control" placeholder="" maxlength="100" validate="notEmpty">
+                  <label for="vorname" class="form-label">Vorname*</label>
+                  <input type="text" name="vorname" class="form-control" placeholder="" maxlength="100" validate="notEmpty">
                 </div>
 
                 <div class="col-sm-6 mb-20 mb-md-10">
-                  <label for="nachname">Nachname*</label>
-                  <input type="text" name="nachname" class="input-md form-control" placeholder="" maxlength="100" validate="notEmpty">
+                  <label for="nachname" class="form-label">Nachname*</label>
+                  <input type="text" name="nachname" class="form-control" placeholder="" maxlength="100" validate="notEmpty">
                 </div>
               </div>
 
               <div class="row">
                 <div class="col-sm-4 mb-20 mb-md-10">
-                  <label for="geburtsdatum">Geburtsdatum*</label>
-                  <input type="text" name="geburtsdatum" class="input-md form-control" placeholder="tt.mm.jjjj" maxlength="10" validate="notEmpty">
+                  <label for="geburtsdatum" class="form-label">Geburtsdatum*</label>
+                  <input type="text" name="geburtsdatum" class="form-control" placeholder="tt.mm.jjjj" maxlength="10" validate="notEmpty">
                 </div>
               </div>
 
               <div class="row">
                 <div class="col-sm-6 mb-20 mb-md-10">
-                  <label for="strasse">Strasse*</label>
-                  <input type="text" name="strasse" class="input-md form-control" placeholder="" maxlength="100" validate="notEmpty">
+                  <label for="strasse" class="form-label">Strasse*</label>
+                  <input type="text" name="strasse" class="form-control" placeholder="" maxlength="100" validate="notEmpty">
                 </div>
 
                 <div class="col-sm-2 mb-20 mb-md-10">
-                  <label for="plz">PLZ*</label>
-                  <input type="text" name="plz" class="input-md form-control" placeholder="" maxlength="5"  validate="notEmpty">
+                  <label for="plz" class="form-label">PLZ*</label>
+                  <input type="text" name="plz" class="form-control" placeholder="" maxlength="5"  validate="notEmpty">
                 </div>
 
                 <div class="col-sm-4 mb-20 mb-md-10">
-                  <label for="ort">Ort*</label>
-                  <input type="text" name="ort" class="input-md form-control" placeholder="" maxlength="50"  validate="notEmpty">
+                  <label for="ort" class="form-label">Ort*</label>
+                  <input type="text" name="ort" class="form-control" placeholder="" maxlength="50"  validate="notEmpty">
                 </div>
               </div>
 
               <div class="row">
                 <div class="col-sm-6 mb-20 mb-md-10">
-                  <label for="email">E-Mail-Adresse*</label>
-                  <input type="email" name="email" class="input-md form-control" placeholder="" maxlength="100" validate="email">
+                  <label for="email" class="form-label">E-Mail-Adresse*</label>
+                  <input type="email" name="email" class="form-control" placeholder="" maxlength="100" validate="email">
                 </div>
 
 
                 <div class="col-sm-6 mb-20 mb-md-10">
-                  <label for="telefon">Telefon*</label>
-                  <input type="text" name="telefon" class="input-md form-control" placeholder="" maxlength="100" validate="notEmpty">
+                  <label for="telefon" class="form-label">Telefon*</label>
+                  <input type="text" name="telefon" class="form-control" placeholder="" maxlength="100" validate="notEmpty">
                 </div>
               </div>
 
               <div class="mb-20 mb-md-10">
-                <label for="bemerkungen">Bemerkungen</label>
-                <textarea name="bemerkungen" class="input-md form-control" rows="3" placeholder="" maxlength="400"></textarea>
+                <label for="bemerkungen" class="form-label">Bemerkungen</label>
+                <textarea name="bemerkungen" class="form-control" rows="3" placeholder="" maxlength="400"></textarea>
               </div>
 
               <div id="validation-error-message" class="alert error" style="display: none;">
-                <button class="alert-close" type="button" data-dismiss="alert" aria-label="Close"><i class="fa fa-lg  fa-times-circle"></i></button>
+                <button class="alert-close" type="button" data-bs-dismiss="alert" aria-label="Close"><i class="fa fa-lg  fa-times-circle"></i></button>
                 Hoppla Schorsch! Bitte die markierten Felder überprüfen.
                 <ul class="error-details list-unstyled small"></ul>
               </div>
@@ -376,7 +370,7 @@
 
             <div class="modal-content" id="form-success-content" style="display:none">
               <div class="modal-header">
-                <h3 class="modal-title" id="calendar-dialog-title"><i class="fa fa-heart"></i> Danke!</h3>
+                <h3 class="modal-title calendar-dialog-title"><i class="fa fa-heart"></i> Danke!</h3>
               </div>
               <div class="modal-body">
                 <h4>Deine Anmeldung für das Coworking-Abo wurde abgeschickt</h4>
@@ -405,91 +399,89 @@
 
 {{ define "body_includes" }}
 <script>
-// *******************************
-// Handle the form.
-// *******************************
-$(document).ready(function() {
+  // *******************************
+  // Handle the form.
+  // *******************************
+  $(document).ready(function() {
+    const $form = $('form');
 
-  var $form = $('form');
-
-  // On loading: Select number of days according to query parameter ?tage=
-  // First test if we have a valid option.
-  var aboOption = getUrlVars()["option"];
-  if ($('[name="abo-option"] option[value=' + aboOption + ']').length > 0) {
-    $('[name="abo-option"]').val(aboOption);
-  }
-
-  // Read a page's GET URL variables and return them as an associative array.
-  function getUrlVars() {
-    var vars = [], hash;
-    var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
-    for(var i = 0; i < hashes.length; i++) {
-      hash = hashes[i].split('=');
-      vars.push(hash[0]);
-      vars[hash[0]] = hash[1];
+    // On loading: Select number of days according to query parameter ?tage=
+    // First test if we have a valid option.
+    const aboOption = getUrlVars()["option"];
+    if ($('[name="abo-option"] option[value=' + aboOption + ']').length > 0) {
+      $('[name="abo-option"]').val(aboOption);
     }
-    return vars;
-  }
 
-  function reset() {
-    $form.find('.invalid').removeClass('invalid');
-    $form.find('#validation-error-message').hide();
-  }
+    // Read a page's GET URL variables and return them as an associative array.
+    function getUrlVars() {
+      const vars = [];
+      let hash;
+      const hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+      for(let i = 0; i < hashes.length; i++) {
+        hash = hashes[i].split('=');
+        vars.push(hash[0]);
+        vars[hash[0]] = hash[1];
+      }
+      return vars;
+    }
 
-  function isEmail(email) {
-    var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-    return regex.test(email);
-  }
+    function reset() {
+      $form.find('.invalid').removeClass('invalid');
+      $form.find('#validation-error-message').hide();
+    }
 
-  $form.on('click', 'button', function (e) {
-    e.preventDefault();
+    function isEmail(email) {
+      const regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+      return regex.test(email);
+    }
 
-    // Clear invalid markers.
-    reset();
+    $form.on('click', 'button', function (e) {
+      e.preventDefault();
 
-    // Get input field values and validate
-    // We simply change border color to red if empty field using .css()
-    var error = false;
+      // Clear invalid markers.
+      reset();
 
-    $form.find(':input').each(function () {
-      var validate = $(this).attr('validate');
-      if (validate) {
-        if (validate == 'notEmpty') {
+      // Get input field values and validate
+      // We simply change border color to red if empty field using .css()
+      let error = false;
+
+      $form.find(':input').each(function () {
+        const validate = $(this).attr('validate');
+        if (validate === 'notEmpty') {
           if (!$(this).val().trim()) {
             $(this).addClass('invalid');
             error = true;
           }
-        } else if (validate == 'email') {
+        } else if (validate === 'email') {
           if (!$(this).val().trim() || !isEmail($(this).val())) {
             $(this).addClass('invalid');
             error = true;
           }
         }
+      });
+
+      // Submit when valid.
+      if (!error) {
+
+        // Replace selected value with text to have more info than just the number.
+        $('[name="abo-option"] option').val(function(){
+          return $(this).text();
+        });
+
+        // Submit.
+        $.post($form.attr("action"), $form.serialize()).then(function() {
+          // Show the success message.
+          $form.hide();
+          $('#form-success-content').show();
+        });
+
+      } else {
+        // Show validation error message.
+        $form.find('#validation-error-message .error-details').html(error);
+        $form.find('#validation-error-message').show();
       }
     });
-
-    // Submit when valid.
-    if (!error) {
-
-      // Replace selected value with text to have more info than just the number.
-      $('[name="abo-option"] option').val(function(){
-        return $(this).text();
-      });
-
-      // Submit.
-      $.post($form.attr("action"), $form.serialize()).then(function() {
-        // Show the success message.
-        $form.hide();
-        $('#form-success-content').show();
-      });
-
-    } else {
-      // Show validation error message.
-      $form.find('#validation-error-message .error-details').html(error);
-      $form.find('#validation-error-message').show();
-    }
   });
-});
 
 </script>
 

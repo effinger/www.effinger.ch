@@ -19,9 +19,9 @@
 {
   "@context": "https://schema.org",
   "@type": "Event",
-  "name": {{ .Title }},
-  "startDate": {{ .Params.startdate }},
-  "endDate": {{ .Params.enddate }},
+  "name": "{{ .Title }}",
+  "startDate": "{{ .Params.startdate }}",
+  "endDate": "{{ .Params.enddate }}",
   "location": {
     "@type": "Place",
     "name": "Effinger - Kaffeebar & Coworking Space",
@@ -41,11 +41,11 @@
   "description": {{ .Description }},
   "offers": {
     "@type": "Offer",
-    "url": {{ .Permalink }},
+    "url": "{{ .Permalink }}",
     "price": "0",
     "priceCurrency": "CHF",
     "availability": "https://schema.org/InStock",
-    "validFrom": {{ (time .Params.startdate).AddDate 0 -6 0 }}
+    "validFrom": "{{ (time .Params.startdate).AddDate 0 -6 0 }}"
   },
   "performer": {
     "@type": "PerformingGroup",
@@ -65,7 +65,7 @@
 
   <!-- Header -->
   <section class="small-section-header bg-gray-lighter">
-    <div class="relative container align-left pt-80">
+    <div class="relative container text-start pt-80">
 
       <div class="row">
 
@@ -94,32 +94,32 @@
   <section class="page-section events">
     <div class="container relative eventsingle">
       {{ if $isPast }}
-        <h2 class="font-alt align-center mb-40">{{ .Title }}</h2>
+        <h2 class="font-alt text-center mb-40">{{ .Title }}</h2>
         <div class="alert alert-info text-center mb-40">
           <i class="fa fa-ban"></i>
           Event liegt in der Vergangenheit!
         </div>
       {{ else }}
-        <h2 class="font-alt align-center mb-80">{{ .Title }}</h2>
+        <h2 class="font-alt text-center mb-80">{{ .Title }}</h2>
       {{ end }}
 
       <div class="row">
         <div class="col-md-3">
           <div class="row mb-md-30">
-            <div class="col-md-12 col-sm-4 mb-20 mb-md-0">
+            <div class="col-md-12 col-sm-4 mb-10 mb-md-20">
               <div class="date{{ if $isPast }} striped{{ end }}">
                 <div class="weekday uppercase">{{ .Scratch.Get "start_weekday" }}</div>
                 <div class="day">{{ .Scratch.Get "start_day" }}</div>
                 <div class="monthyear uppercase">{{ .Scratch.Get "start_shortmonth" }} {{ .Scratch.Get "start_year" }}</div>
               </div>
             </div>
-            <div class="col-md-12 col-sm-8 mt-xs-20">
+            <div class="col-md-12 col-sm-8">
               <div class="event-detail text">
                 <p><small><i class="fa fa-calendar-o"></i> {{ .Scratch.Get "start_weekday" }}, {{ .Scratch.Get "start_day" }}. {{ .Scratch.Get "start_month" }} {{ .Scratch.Get "start_year" }}</small></p>
                 {{ if eq (.Scratch.Get "end_date") (.Scratch.Get "start_date") }}
                   <p><small><i class="fa fa-clock-o"></i> {{ .Scratch.Get "start_time" }} Uhr</small></p>
                 {{ else }}
-                  <p><small><i class="fa fa-clock-o"></i> {{ .Scratch.Get "start_time" }} bis {{ .Scratch.Get "end_time" }} Uhr</small></p>
+                  <p><small><i class="fa fa-clock-o"></i> {{ .Scratch.Get "start_time" }} – {{ .Scratch.Get "end_time" }} Uhr</small></p>
                 {{ end }}
                 <p><small><i class="fa fa-map-marker"></i>
                   {{ if .Params.address_link }}
@@ -201,20 +201,20 @@
             data-event-api="{{ .Site.Data.event_manager.apiUrl }}">
             <div class="row">
               <div class="col-sm-6 mb-20 mb-md-10">
-                <input type="text" name="firstname" class="input-md form-control" placeholder="Vorname" maxlength="100">
+                <input type="text" name="firstname" class="form-control" placeholder="Vorname" maxlength="100">
               </div>
 
               <div class="col-sm-6 mb-20 mb-md-10">
-                <input type="text" name="lastname" class="input-md form-control" placeholder="Ganzer Nachname" maxlength="100">
+                <input type="text" name="lastname" class="form-control" placeholder="Ganzer Nachname" maxlength="100">
               </div>
             </div>
 
             <div class="mb-20 mb-md-10">
-              <input type="email" name="_email" class="input-md form-control" placeholder="E-Mail" maxlength="100">
+              <input type="email" name="_email" class="form-control" placeholder="E-Mail" maxlength="100">
             </div>
 
             <div class="mb-20 mb-md-10">
-              <textarea name="comments" id="text" class="input-md form-control" rows="5" placeholder="Kommentar (optional, wird hier auf der Seite angezeigt)" maxlength="400"></textarea>
+              <textarea name="comments" id="text" class="form-control" rows="5" placeholder="Kommentar (optional, wird hier auf der Seite angezeigt)" maxlength="400"></textarea>
             </div>
 
             <div class="mb-20 mb-md-10">

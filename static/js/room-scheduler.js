@@ -1,19 +1,18 @@
-var loadScheduler = function(resources, events,
-    calendarElement, loadingElement, detailsElement) {
-      
-  var createDetailsContent = function(event) {
+const loadScheduler = function(resources, events, calendarElement, loadingElement, detailsElement) {
+
+  const createDetailsContent = function(event) {
 
     // Remove leading and trailing line breaks from description.
-    var description = '-';
+    let description = '-';
     if (event['description']) {
-      var regex = /^\s*(?:<br\s*\/?\s*>)+|(?:<br\s*\/?\s*>)+\s*$/gi;
+      const regex = /^\s*(?:<br\s*\/?\s*>)+|(?:<br\s*\/?\s*>)+\s*$/gi;
       description = event['description'].replace(regex, '');
     }
-    
-    var resource = calendarElement.fullCalendar('getEventResource', event);
-    var resourceTitle = resource.title;
-    
-    var result = '\
+
+    const resource = calendarElement.fullCalendar('getEventResource', event);
+    const resourceTitle = resource.title;
+
+    const result = '\
     <div class="calendar-details-title">Titel</div> \
     <div class="calendar-details-content"> \
     ' + event['title'] + ' \
@@ -49,7 +48,7 @@ var loadScheduler = function(resources, events,
     },
     resources: resources,
     events: events,
-    eventClick: function( event, jsEvent, view ) {
+    eventClick: function(event, jsEvent, view) {
       detailsElement.stop(true, true);
       detailsElement.html(createDetailsContent(event)).show();
     },
@@ -69,7 +68,7 @@ var loadScheduler = function(resources, events,
   });
 
   // For touch devices - hide on click.
-  detailsElement.click(function (event) {
+  detailsElement.on("click", function (event) {
     detailsElement.stop(true, true);
     detailsElement.fadeOut(300);
   });

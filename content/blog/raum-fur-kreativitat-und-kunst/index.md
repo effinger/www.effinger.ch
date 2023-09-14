@@ -24,4 +24,3 @@ Der Versuch mit der Nutzung des Raumes in dieser Form läuft bis Ende November. 
 Am 13. November besuchen Diane und ich zudem [den Rundgang «Schöne Kunst?» mit Philosoph und Kunstkritiker Jörg Scheller im Alpinen Museum]( https://kunsthalle-bern.ch/veranstaltungen/2018-11-20-_schoene-kunst_rundgang-mit-joerg-scheller-philosoph-und-kunstkritiker-durch-die-ausstellung/). Wir freuen uns, wenn sich uns weitere Interessierte anschliessen!
 
 Bei Fragen: Mail an [isabel@aufzurkunst.ch](mailto:isabel@aufzurkunst.ch)
-

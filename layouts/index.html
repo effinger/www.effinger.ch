@@ -53,7 +53,7 @@
           </h1>
 
           <div class="row mb-60">
-            <div class="col-md-offset-2 col-md-8">
+            <div class="offset-md-2 col-md-8">
               <div>
                 Für Jungunternehmer, Kreative, Handwerkerinnen, Weltveränderer, Bernerinnen, Zugereiste,
                 Kaffeeliebhaberinnen, Biertrinker, Kulturschaffende, junge Kunst und für Dich an der
@@ -83,7 +83,7 @@
 
         <a href="/events/100415/"><img
           src="https://d33wubrfki0l68.cloudfront.net/3a1dd5f7a319942952201b4b5b3774cd1f7fffa4/58580/upload/effinger_jubilaeum_6_print_a3_72dpi.jpg"
-          class="col-md-4 col-md-offset-1 mb-20"
+          class="col-md-4 offset-md-1 mb-20"
         /></a>
         <div class="col-md-6">
           <h2 class="mb-20">
@@ -278,11 +278,11 @@
         <h2 class="hs-line-11 font-alt mb-60 text-center"><a href="/events/">Nächste Events</a></h2>
 
         <div class="eventlist row">
-          <div class="col-sm-6">
+          <div class="col-sm-12 col-lg-6">
             {{ range $index, $element := first 6 (partial "events/future_events.html" .) }}
               {{ if eq $index 3 }}
                 </div>
-                <div class="col-sm-6">
+                <div class="col-sm-12 col-lg-6">
               {{ end }}
               {{ $element }}
             {{ end }}
@@ -323,7 +323,7 @@
 {{ define "body_includes" }}
 <script>
   (function () {
-    var d = document, s = d.createElement('script');
+    const d = document, s = d.createElement('script');
     s.src = 'https://www.kurtli.com/feed/embed.js';
     s.setAttribute('data-timestamp', +new Date());
     (d.head || d.body).appendChild(s);

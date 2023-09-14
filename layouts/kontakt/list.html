@@ -8,7 +8,7 @@
 
   <!-- Header -->
   <section class="small-section-header bg-gray-lighter">
-    <div class="relative container align-left pt-80">
+    <div class="relative container text-start pt-80">
 
       <div class="row">
 
@@ -29,7 +29,7 @@
     <div class="relative container">
       <h1 class="hs-line-11 font-alt mb-80 mb-sm-40">Kaffeebar</h1>
       <div class="row">
-        <div class="col-md-4 col-md-push-8 col-sm-6 mb-md-50">
+        <div class="col-12 col-lg-4 order-lg-last mb-50 mb-lg-0">
           <div class="contact-item mb-20 clearfix">
             <h4 class="uppercase">Kontakt Kaffeebar</h4>
             <div class="wave-spacer"></div>
@@ -46,32 +46,9 @@
               <p><strong>Reservationen</strong> nehmen wir nur per Telefon entgegen. <span style="text-decoration: line-through; font-weight: 300; text-align:left; display:none;">Fürs Sonn&shy;tags&shy;zmorge ist am Frei&shy;tag&shy;abend Re&shy;ser&shy;vations&shy;schluss.</span></p>
             </div>
           </div>
-          <!--
-            <div class="contact-private-party">
-              <img src="partybutton.png" alt="Privatanlass">
-              <span>
-                Der Sams&shy;tag steht für Ge&shy;burts&shy;tags&shy;fes&shy;te, Bude-&shy;Zmor&shy;ge oder Pen&shy;sion&shy;ierungs&shy;apé&shy;ros zur Ver&shy;fü&shy;gung.
-              </span>
-            </div>
-          -->
         </div>
-        <div class="col-md-8 col-md-pull-4 col-sm-12">
+        <div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-0">
           <div class="row">
-            <!-- <div class="col-sm-6 mb-sm-100">
-              <div class="team-item">
-                <div class="team-item-image">
-                  <img src="/images/effianer/ehemalige/salome-hostettler.jpg" alt="" />
-                  <div class="team-item-detail">
-                    <p class="font-alt normal">Kaffeebar</p>
-                  </div>
-                </div>
-                <div class="team-item-descr font-alt">
-                  <div class="team-item-name">
-                    Salome Hostettler
-                  </div>
-                </div>
-              </div>
-            </div> -->
             <div class="mb-sm-40">
               <div class="team-item">
                 <div class="">
@@ -91,13 +68,13 @@
     <div class="relative container">
       <h1 class="hs-line-11 font-alt mb-10">Coworking</h1>
       <p class="mb-80 mb-md-40">
-        Wir freuen uns sehr auf deinen Besuch. Komm’ spontant vorbei.<br/> Falls du eine Frage hast, kannst du uns auch anrufen oder schreiben.
+        Wir freuen uns sehr auf deinen Besuch. Komm spontan vorbei.<br/> Falls du eine Frage hast, kannst du uns auch anrufen oder schreiben.
       </p>
 
       {{/* partial "effianer/get_host.html" . */}}
 
       <div class="row">
-        <div class="col-md-4 col-md-push-8 col-sm-6 mb-md-50">
+        <div class="col-12 col-lg-4 order-lg-last mb-50 mb-lg-0">
           <div class="contact-item clearfix">
             <h4 class="uppercase">Kontakt Coworking</h4>
             <div class="wave-spacer"></div>
@@ -114,11 +91,9 @@
         </div>
 
         {{ if $.Scratch.Get "host" }}
-
           {{ with $.Scratch.Get "host" }}
-            <div class="col-md-8 col-md-pull-4 col-sm-12">
+            <div class="col-12 col-lg-8">
               <div class="row">
-
                 <div class="col-sm-6 mb-100">
                   <div class="team-item">
                     <div class="team-item-image">
@@ -140,13 +115,17 @@
                 </div>
               </div>
             </div>
-        <div class="team-item">
-          <a href="/community/#effianer" class="btn btn-mod btn-border btn-medium btn-round">&rarr; Alle Gastgeber anzeigen</a>
-        </div>
+            <div class="team-item">
+              <a href="/community/#effianer" class="btn btn-mod btn-border btn-medium btn-round">&rarr; Alle Gastgeber anzeigen</a>
+            </div>
           {{ end }}
         {{ else }}
 
-            <div class="col-md-8 col-md-pull-4 col-sm-12">
+            <div class="col-12 col-lg-8">
+              <p class="mb-20">
+                <strong>Wie funktioniert das bei euch?</strong><br/>
+                Immer morgens ist jemand von uns am Empfang und erklärt dir gerne alles. Du kannst ohne Voranmeldung kommen.
+              </p>
               <p class="mb-20">
                 <strong>Hat der Effinger Platz zum Telefonieren?</strong><br/>
                 Wir haben vier Telefonkabinen und einige Nischen im «Fair Use» zu benutzen.
@@ -184,13 +163,13 @@
       <h1 class="hs-line-11 font-alt mb-60"><a href="/medien/">Medien</a></h1>
       <div class="row">
 
-        <div class="col-sm-4 col-md-3 mb-xs-40">
+        <div class="col-md-4 col-lg-3 mb-xs-40">
           <a href="/medien/">
             <span class="icon-newspaper" style="font-size: 150px;"></span>
           </a>
         </div>
 
-        <div class="col-sm-8 col-md-7 col-lg-6">
+        <div class="col-md-8 col-lg-7">
           <p>Unter folgendem Link findest du Zeitungsartikel und andere Medienberichte über den Effinger. Dort gibt es
             ausserdem ein Medienkit mit hochaufgelöste Bilder von der Kaffeebar und vom Coworking Space.</p>
           <a href="/medien/" class="btn btn-mod btn-border btn-medium btn-round">&rarr; Medienberichte und Medienkit</a>

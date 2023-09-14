@@ -7,7 +7,7 @@
       margin-bottom: 20px;
       .event-date {
         transition: transform 0.5s;
-        padding: 20px 30px;
+        padding: 24px;
         text-align: center;
         float: left;
         width: 110px;
@@ -23,16 +23,15 @@
         padding: 20px;
         margin-left: 110px;
         min-height: 113px;
-        h4 {
+        h5 {
           margin: 0;
           font-weight: 300;
         }
         p {
-          margin-bottom: 30px;
+          margin: 0;
           font-size: 14px;
           letter-spacing: 1px;
           color: #aaa;
-          margin: 0;
         }
       }
       .cat {

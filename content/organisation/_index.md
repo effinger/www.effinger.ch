@@ -3,12 +3,12 @@ title = "Organisation"
 description = "Alle Details, wie unsere Community und der Betrieb des Coworking Spaces organisiert sind."
 +++
 
-## Einleitung
+### Einleitung
 
 In diesem Dokument beschreiben wir, wie unsere Community und der Betrieb des Coworking Spaces organisiert sind. Dieses Dokument basiert auf unserem Dokument der [Grundsätze](/grundsaetze/).
 Wir verstehen “[Effianer](/community/#effianer)” als die Gruppe der Personen beiden Geschlechts, die sich persönlich und verbindlich für die Belange des Effinger Coworking Space einsetzen.
 
-### Übersicht
+#### Übersicht
 
 <div class="table-responsive">
   <table class="table table-bordered table-striped">
@@ -81,13 +81,13 @@ Wir verstehen “[Effianer](/community/#effianer)” als die Gruppe der Personen
 </table>
 </div>
 
-## Formen der Mitgliedschaft
+### Formen der Mitgliedschaft
 
-### Erweiterte Community
+#### Erweiterte Community
 
 Generell gibt es keine klare Abgrenzung, wer zur „erweiterten Community“ zählt und wer nicht. Die gemeinsamen Grundsätze sind unser zentraler Kern. Jede Person und jede Gruppierung, die sich mit uns und unseren Grundsätzen identifiziert, zählt zu unserer „erweiterten Community“ dazu.
 
-### Community Member
+#### Community Member
 Die Community (im engeren Sinn) umfasst alle Personen, welche sich persönlich für die Community engagieren und einen finanziellen Beitrag leisten.
 Eine Community Membership kostet:
 
@@ -99,12 +99,12 @@ Community Member dürfen gerne auch Verantwortung mit einer Rolle übernehmen (s
 Gruppierungen, die regelmässig Räumlichkeiten für Treffen zum Gelben Tarif nutzen, sind mit mindestens einem Mitglied in der Community vertreten. Diese sind Vertreter der Gruppierung und verantworten gegenüber der Community die Einhaltung der Bestimmungen “Treffen zum Gelben Tarif”.
 Community Member sind gleichzeitig auch Vereinsmitglieder vom „Verein Coworking Community Bern“ und können an den Community-Treffen mitentscheiden ([Statuten](statuten-coworking-community-bern.pdf)).
 
-### Effianer
+#### Effianer
 
 Effianer sind Community Member mit einer Effianer-Rolle. Die Effianer-Rolle wird wie folgt beschrieben:
 Wir gehören zum Stamm des Effingers. Als JungunternehmerInnen, kreativ Tätige, Selbstständige, Bildungsinteressierte, Weltveränderer, Kulturschaffende nutzen wir an mindestens einem Tag in der Woche den Effinger als unseren Arbeitsort. Via Rollen und Vereinsmitgliedschaft tragen wir die Verantwortung für eine florierende Community und betreiben gemeinsam unseren Space. Wir investieren Geld (zinslose Darlehen von 1'000 CHF bis 2'000 CHF) und rund 10 Prozent unserer Zeit in die Community, ineinander und in den Betrieb des Spaces. 
 
-### Effianer auf Wanderschaft
+#### Effianer auf Wanderschaft
 
 “Effianer auf Wanderschaft” sind Effianer, die etwas persönlich oder beruflich verändern und eine bestimmte Zeit die Effianer-Rolle nicht ausüben. Als Wanderschaft gilt auch Vaterschaft oder Mutterschaft eines Effianers. 
 Die Wanderschaft dauert mindestens 1 Monat, maximal 12 Monate.
@@ -115,21 +115,21 @@ Die Rollen werden im jeweiligen Circle übergeben/geregelt.
 Vom Zeitinvestment (~10%) in Community, ineinander und den Betrieb sind sie frei. Wenn es aber drauf ankommt, können sie im Effinger beigezogen werden (z.B. bei grösseren Schwierigkeiten oder Krisen).
 Mit dem Status “Effianer auf Wanderschaft” drücken sie die Verbundenheit mit dem Effinger und den Grundsätzen aus. Wo sie auch immer hinkommen auf ihrer Wanderschaft, berichten sie Gutes aus dem Effinger und über die Effianer.
 
-### Raumvermietungshost
+#### Raumvermietungshost
 
 Der Raumvermietungshost engagiert sich während 1-2 Schichten pro Woche. Pro 3 Schichten entsteht ein Arbeitsplatz-Guthaben von 4 Tagen. Dieses wird in einem 10-er-Abo als Guthaben ausgewiesen. Das Guthaben kann in Form von ½ oder ganzen Tagen im Coworking oder für Raumnutzung im für den entsprechenden Raum und die Mietdauer angebrachten Kostenverhältnis bezogen werden. Der Tag der Raumvermietungsschicht (vor und/oder nach der Schicht) kann zusätzlich für Coworking genutzt werden. 
 Der Raumvermietungshost ist Community- Member und hat pro Schicht Anrecht auf ein Getränk der Kaffeebar.
 
-## Fällen von Entscheidungen
+### Fällen von Entscheidungen
 
 Grundsätzlich sollen die Personen Entscheidungen fällen, welche Verantwortung übernehmen. Bei uns sind dies die Personen, welche Community Member sind und eine Rolle ausfüllen.
 Entscheidungen werden entweder im Beratungsprozess oder mittels [Soziokratie](/organisation/soziokratie/) gefällt. Alle Entscheidungen sollen für die Community transparent kommuniziert werden.
 
-### Beratungsprozess
+#### Beratungsprozess
 
 Beim Beratungsprozess muss die Person, welche eine Entscheidung fällen will, betroffene Kollegen sowie Experten um Rat fragen. So lernt er/sie Einwände, Fragen und Ideen von Kollegen kennen. Nachdem die Person sich offen die Ratschläge angehört hat, fällt diese selbstständig eine Entscheidung und kommuniziert transparent.
 
-### Soziokratie
+#### Soziokratie
 
 Bei grösseren Entscheidungen wird mittels Soziokratie entschieden. In der Soziokratie geht es nicht darum, zu etwas „Ja“ zu sagen, sondern „nicht Nein“ zu sagen. Ein Vorschlag muss persönlich eingebracht oder durch eine kompetente Person aus einem Circle vertreten werden.  Er wird dann angenommen, wenn niemand einen schwerwiegenden Einwand dagegen vorbringt.
 Bei soziokratischen Entscheiden sind ausschliesslich die Community Member berechtigt, einen schwerwiegenden Einwand zu erheben. Bleibt ein Einwand bestehen, beteiligt sich der/die Einwandgeber*in an der Erarbeitung eines Lösungsvorschlags.
@@ -138,9 +138,9 @@ Auf folgender Seite findest du den Ablauf des soziokratischen Entscheidungsproze
 
 <a href="/organisation/soziokratie/" class="btn btn-mod btn-border btn-medium btn-round">Soziokratische Entscheidungen</a>
 
-## Rollen
+### Rollen
 
-### Entstehung von Rollen
+#### Entstehung von Rollen
 
 Eine neue Rolle entsteht wie folgt:
 
@@ -149,50 +149,50 @@ Eine neue Rolle entsteht wie folgt:
 3. Beim Community-Treffen wird über die Vergabe der Rolle informiert.
 4. Die Rolle, eine kurze Beschreibung in welchen Circle sie gehört und die dafür verantwortliche Person werden transparent kommuniziert.
 
-### Tauschen von Rollen
+#### Tauschen von Rollen
 
 Wer eine Rolle tauschen möchte, soll dies ankündigen. Im entsprechenden Circle wird darüber entschieden.
 
-### Abschaffen von Rollen
+#### Abschaffen von Rollen
 
 Rollen können bei jedem Circle-Treffen abgeschafft werden. Darüber entscheidet die Person, welche die Rolle wahrnimmt in Absprache mit dem Circle. Beim nächsten Community-Treffen wird darüber informiert.
 
-### Sicherstellen von Rollen
+#### Sicherstellen von Rollen
 
 Der Circle steht in der Pflicht, die Besetzung wichtiger Rollen für eine funktionierende Community und das Betreiben des Space sicherzustellen.
 
-### Springerrollen
+#### Springerrollen
 In unserem Rollenkonzept bestehen Springerrollen. Sie dienen als Sprungbrett in eine andere Effianerrolle und erleichtern das Onboarding. Die Springer haben noch keine zugeordnete Rolle, sondern können zur Unterstützung oder zum Einspringen angefragt werden. Möchten Neuankömmlinge Springerrollen übernehmen, werden aktuelle Springer angefragt, ob sie in eine bestimmte Rolle und in einen Circle wechseln wollen.
 
-## Circles
+### Circles
 
 Die Community setzt sich aus Circles zusammen. Mehrere Rollen werden in einem Circle zusammengefasst. Jeder Circle verfolgt einen Zweck und kümmert sich um einen Themenbereich.
 Die Circles und aktuellen Rollen sind in diesem Dokument abgebildet.
 
-### Themenbereich
+#### Themenbereich
 
 Ein Themenbereich beschreibt den Aufgabenbereich eines Circles. 
 
-### Autonomie
+#### Autonomie
 
 Die Rollen des Circles können alle Entscheidungen autonom treffen, die ihren Themenbereich betreffen und der Erreichung ihres Zwecks dienen. Grosse Entscheide, die andere Circles oder grosse Teile der Community betreffen, werden an einem Community-Treffen zur Entscheidung vorgelegt.
 
-### Entstehung von Circles
+#### Entstehung von Circles
 
 Neue Circles entstehen im Community-Treffen.
 
-### Abschaffen von Circles
+#### Abschaffen von Circles
 
 Circles können im Community-Treffen abgeschafft werden. 
 
-## Ein- und Austritt
+### Ein- und Austritt
 
-### Community Member werden
+#### Community Member werden
 
 Zuerst soll man die Community und ihre Grundsätze kennen lernen. Dabei geht es darum, zu merken, ob man zu dieser Community passt und sich hinter die Grundsätze stellen kann.
 Im Rahmen eines regelmässig stattfindenden Willkommensanlasses im informellen Rahmen werden Neumitglieder mit dem Coworking Space und der Community bekannt gemacht. 
 
-### Effianer werden
+#### Effianer werden
 
 Durch das Kennenlernen des Effingers während der Community-Mitgliedschaft und eines Coworking-Abos hat man herausgefunden, ob der Space und die Community einem entsprechen, was in der Community noch fehlt und wie man sich einbringen könnte. Dies kann etwas Konkretes sein oder auch, dass man sich für einen Aspekt der Grundsätze einsetzen möchte, der zu kurz gekommen ist. 
 Die Wahl von einem neuen Effianer läuft nicht nach der soziokratischen Wahl, aber nach dem soziokratischen Entscheidungsprozess ab. Die zu wählende Person kann sich dabei nicht selber vorschlagen, sondern wird von einem Götti/einer Gotte vorgeschlagen. Das ist eine Person, welche den potenziellen Effianer
@@ -205,19 +205,19 @@ Die Wahl von einem neuen Effianer läuft nicht nach der soziokratischen Wahl, ab
 Die mit der neuen Rolle verbundenen Rechte und Pflichten sind Neu-Effianern klar. Die Konditionen und das gewählte Abo-Preismodell Effinger Community sind in einem Vertrag festgehalten. Das Abo-Preismodell kann halbjährlich geändert werden. 
 Mit Cohosting kann in die Rolle des Hostings hineingewachsen werden.
 
-### Austritt als Effianer
+#### Austritt als Effianer
 
 Effianer bekleiden tragende Rollen im Effinger. Ein Austritt hat eine menschliche und eine organisatorische Komponente. Austretende entscheiden (selber, mit einem Circle), in welcher Form sie sich verabschieden wollen. Es muss transparent sein, welche Rollen übergeben worden sind und welche nach dem Weggang nicht mehr besetzt sind. Die entsprechenden Circles verantworten die Fortführung oder die Abschaffung der Rolle.
 Mit dem Beenden des Zeit-Abos erlischt auch die Effianer-Rolle. 
 Die Personen sind eingeladen, weiterhin als Community-Mitglieder oder mit Coworking-Abos Teil des Effingers zu bleiben. 
 
-### Austritt als Community-Mitglied
+#### Austritt als Community-Mitglied
 
 Mit dem Beenden der jährlichen Community-Membership endet die Vereinsmitgliedschaft.
 
-## Community-Treffen
+### Community-Treffen
 
-### Beteiligte Personen
+#### Beteiligte Personen
 
 In regelmässigen Abständen finden Community-Treffen statt. Jedes Community-Mitglied kann Traktanden vorschlagen. Diese werden vorgängig kommuniziert. 
 Wenn eine Person nicht dabei ist, kann sie
@@ -229,13 +229,13 @@ Die während dem Treffen gefällten Entscheide werden der Community anschliessen
 Zu diesen Treffen automatisch eingeladen sind alle Community-Member. Auch weitere Interessierte dürfen gerne bei Community-Treffen dabei sein, sei dies in Form eines ‚Reinschnupperns’, als Fachpersonen zu Traktanden oder aus sonstigen Gründen. Diese Personen dürfen zwar mitreden und mitberaten, aber nur Community-Member sind berechtigt, im soziokratischen Prozess die Entscheidung durch Konsent (Zustimmung) zu stützen oder durch einen „schwerwiegenden Einwand“ (Einspruch) zu stoppen. 
 
 
-### Rollen im Community-Treffen
+#### Rollen im Community-Treffen
 
 Moderation: Hat die Challenge, elegant durch das Treffen zu führen und darauf zu achten, dass es maximal 2 Stunden dauert.
 Protokoll: Wichtig für die Kommunikation und Transparenz. Wenn Vorschläge sauber formuliert sind, reicht es, wenn etwas zur Reaktionsrunde und zum Entscheid vermerkt wird.
 Fotograf/-gräfin: Nicht vergessen, bei jedem Community-Treffen ein paar Fotos zu machen.
 
-### Check-In und Check-Out
+#### Check-In und Check-Out
 
 Als Umsetzung des Wertes “Ganzheit” werden die Community-Treffen mit einem Check-In gestartet und einem Check-Out beendet. Sie laden ein, bewusst anzukommen, sich aufeinander und die Themen einzulassen, sich zu investieren und das Treffen am Schluss auch wieder zu reflektieren. 
 
@@ -251,18 +251,18 @@ Als Umsetzung des Wertes “Ganzheit” werden die Community-Treffen mit einem C
 - Was nehmen wir mit? Was erzählen wir heute oder morgen einer 3. Person über das heutige Treffen.
 - Andere Abschlüsse
 
-### Ablauf einer soziokratischen Entscheidung
+#### Ablauf einer soziokratischen Entscheidung
 
 Eine soziokratische Entscheidung an einem Community Treffen findet in folgenden Runden statt. Der Moderator führt durch den Prozess. Im Fall, dass er einen eigenen Vorschlag präsentiert, muss er die Moderatoren-Rolle für diesen Entscheid abgeben. 
 
-1. Vorschlag präsentieren
+1.  Vorschlag präsentieren
 Der Vorschlagende beschreibt seinen Vorschlag und das Problem, das durch den Vorschlag gelöst werden soll.
-2.     Klärungsfragen
+2.  Klärungsfragen
 Jeder kann Verständnisfragen stellen, um Informationen zu erhalten oder den Vorschlag besser zu verstehen.
 Zu diesem Zeitpunkt sollte es noch keine Reaktionen auf den Vorschlag geben. Der Moderator unterbricht jede Frage, die eine verborgene Reaktion auf den Vorschlag enthält.
 3. 	Reaktionsrunde
 Jeder Beteiligte erhält den Raum, auf den Vorschlag zu reagieren. Es sollten zu diesem Zeitpunkt keine Diskussion entstehen.
-4.     Verbessern/Ergänzen
+4.  Verbessern/Ergänzen
 Der Vorschlagende kann die Absicht seines Vorschlags weiter erklären oder den Vorschlag basierend auf den Reaktionen verändern.
 5. 	Einwandrunde
 Der Moderator fragt: “Sehen sie irgendeinen Grund, warum die Annahme dieses Vorschlags Schaden anrichten oder uns zurückwerfen könnte?”
@@ -272,5 +272,3 @@ Einwände werden ohne Diskussion benannt und begründet. Wenn keine Einwände im
 Bei der Aussicht auf eine rasche Integration des Einwandes kann der Moderator unter Einhaltung des zeitlichen Ablaufs des Abends eine offene Diskussionsrunde einleiten. 
 Ziel davon ist es, einen veränderten Vorschlag zu finden, der den Einwand ausräumt, aber gleichzeitig das Anliegen des Vorschlagenden berücksichtigt. Werden mehrere Einwände formuliert, werden sie nacheinander in dieser Weise angesprochen, bis sie alle berücksichtigt wurden.
 Ist diese Diskussionsrunde nicht möglich oder wird ohne Resultat beendet, beteiligt sich der Einsprucherhebende an der Ausarbeitung eines Lösungsvorschlags.
-
-

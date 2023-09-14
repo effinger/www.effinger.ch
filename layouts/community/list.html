@@ -25,7 +25,7 @@
                padding-bottom: 0.25em;
                transform: rotate(15deg);
                color: black;
-               font-size: 3rem;
+               font-size: 2rem;
                text-decoration: none;
              ">
             <span>
@@ -38,11 +38,11 @@
 
           <div>
             <a href="/geschichte/" class="btn btn-mod btn-border-w btn-medium btn-round mb-md-10">Geschichte</a>
-            <span class="hidden-xs">&nbsp;</span>
+            <span class="d-none d-sm-inline">&nbsp;</span>
             <a href="/grundsaetze/" class="btn btn-mod btn-border-w btn-medium btn-round mb-md-10">Grundsätze</a>
-            <span class="hidden-xs">&nbsp;</span>
+            <span class="d-none d-sm-inline">&nbsp;</span>
             <a href="/organisation/" class="btn btn-mod btn-border-w btn-medium btn-round mb-md-10">Organisation</a>
-            <span class="hidden-xs">&nbsp;</span>
+            <span class="d-none d-sm-inline">&nbsp;</span>
             <a href="/finanzen/" class="btn btn-mod btn-border-w btn-medium btn-round mb-md-10">Finanzen</a>
           </div>
 
@@ -55,14 +55,16 @@
   <!-- End Header -->
 
   <!-- Section Vision -->
-  <section class="page-section bg-gray">
+  <section class="page-section bg-gray pb-0">
     <div class="container relative">
-      <blockquote class="align-center mb-0 mt-0">
-        <p>Wir sind eine innovative, kreative Community mit einem gemeinsamen Coworking Space und Kaffeebar in Bern. Wir
-          sind eine Heimat für Jungunternehmer, Kreative und andere Weltveränderer, die einander helfen, ihre Ideen in
-          Firmen, Innovationen und soziale Aktionen umzusetzen.</p>
-        <footer>Vision</footer>
-      </blockquote>
+      <figure class="text-center">
+        <blockquote class="blockquote">
+          <p>Wir sind eine innovative, kreative Community mit einem gemeinsamen Coworking Space und Kaffeebar in Bern.
+            Wir sind eine Heimat für Jungunternehmer, Kreative und andere Weltveränderer, die einander helfen, ihre
+            Ideen in Firmen, Innovationen und soziale Aktionen umzusetzen.</p>
+        </blockquote>
+        <figcaption class="blockquote-footer">Vision</figcaption>
+      </figure>
     </div>
   </section>
   <!-- End Section Vision -->
@@ -78,10 +80,10 @@
         mit Geld kaufen könnte.
       </p>
 
-      <div class="row multi-columns-row">
+      <div class="row">
         {{ range $.Site.Data.effianer.Person }}
         <!-- Effianer Item -->
-        <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 mb-140">
+        <div class="effianer-item | col-sm-6 col-md-3 col-lg-3 mb-140">
           <div class="team-item">
             <div class="team-item-image">
               <img src="{{ .image }}" alt="" />
@@ -139,12 +141,12 @@
     </div>
   </section>
   <section class="page-section pb-60" id="mitmachen">
-    <div class="container relative" id="mitmachen">
-      <div class="row multi-columns-row">
+    <div class="container relative">
+      <div class="row">
         <h2 class="hs-line-11 font-alt">Wie kann ich mitmachen?</h2>
 
         <!-- Pricing Item -->
-        <div class="col-xs-12 col-sm-6">
+        <div class="col-sm-6">
           <div class="pricing-item">
             <div class="pricing-item-inner">
               <div class="pricing-wrap">
@@ -169,7 +171,7 @@
                   <sup>CHF</sup>variabel<br>
                 </div>
 
-                <a href="/community/member-werden/" class="btn btn-mod btn-border btn-medium btn-round btn-block mt-10">
+                <a href="/community/member-werden/" class="btn btn-mod btn-border btn-medium btn-round d-block mt-10">
                   <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
                   Member werden
                 </a>
@@ -180,7 +182,7 @@
         <!-- End Pricing Item -->
 
         <!-- Pricing Item -->
-        <div class="col-xs-12 col-sm-6">
+        <div class="col-sm-6">
           <div class="pricing-item">
             <div class="pricing-item-inner">
               <div class="pricing-wrap">
@@ -220,6 +222,7 @@
       </div>
     </div>
   </section>
+
   <section class="page-section bg-gray pb-60" id="ehemalige">
     <div class="container relative">
       <h2 class="hs-line-11 font-alt">Ehemalige & Weitergezogenen</h2>
@@ -229,10 +232,10 @@
         Ohne Ihr Engagement wäre der Effinger nicht das, was er heute ist – ein fettes Merci!
       </p>
 
-      <div class="row multi-columns-row">
+      <div class="row">
         {{ range $.Site.Data.ehemalige.Person }}
         <!-- Effianer Item -->
-        <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 mb-140">
+        <div class="col-sm-6 col-md-3 col-lg-3 mb-140">
           <div class="team-item">
             <div class="team-item-image">
               <img src="{{ .image }}" alt="" />
@@ -297,7 +300,7 @@
       <h2 class="hs-line-11 font-alt mb-60 text-center mb-70 mb-sm-40">Unsere Community</h2>
 
       <div class="row">
-        <div class="col-md-8 col-md-offset-2">
+        <div class="col-md-8 offset-md-2">
           <div class="section-text local-scroll">
             <p>
               Unsere Community besteht aktuell aus rund 150 Mitgliedern. Diese engagieren sich in ganz unterschiedlicher
@@ -352,11 +355,11 @@
             </p>
 
             <a href="/geschichte/" class="btn btn-mod btn-border btn-medium btn-round mb-10">Geschichte</a>
-            <span class="hidden-xs">&nbsp;</span>
+            <span class="d-none d-sm-inline">&nbsp;</span>
             <a href="/grundsaetze/" class="btn btn-mod btn-border btn-medium btn-round mb-10">Grundsätze</a>
-            <span class="hidden-xs">&nbsp;</span>
+            <span class="d-none d-sm-inline">&nbsp;</span>
             <a href="/organisation/" class="btn btn-mod btn-border btn-medium btn-round mb-10">Organisation</a>
-            <span class="hidden-xs">&nbsp;</span>
+            <span class="d-none d-sm-inline">&nbsp;</span>
             <a href="/finanzen/" class="btn btn-mod btn-border btn-medium btn-round mb-10">Finanzen</a>
           </div>
         </div>
@@ -367,16 +370,16 @@
   <!-- Section Medien -->
   <section class="page-section">
     <div class="relative container">
-      <h2 class="hs-line-11 font-alt mb-60"><a href="/medien/">Medien</a></h2>
+      <h1 class="hs-line-11 font-alt mb-60"><a href="/medien/">Medien</a></h1>
       <div class="row">
 
-        <div class="col-sm-4 col-md-3 mb-xs-40">
+        <div class="col-md-4 col-lg-3 mb-xs-40">
           <a href="/medien/">
             <span class="icon-newspaper" style="font-size: 150px;"></span>
           </a>
         </div>
 
-        <div class="col-sm-8 col-md-7 col-lg-6">
+        <div class="col-md-8 col-lg-7">
           <p>Unter folgendem Link findest du Zeitungsartikel und andere Medienberichte über den Effinger. Dort gibt es
             ausserdem ein Medienkit mit hochaufgelöste Bilder von der Kaffeebar und vom Coworking Space.</p>
           <a href="/medien/" class="btn btn-mod btn-border btn-medium btn-round">&rarr; Medienberichte und Medienkit</a>
