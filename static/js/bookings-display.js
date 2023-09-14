@@ -8,7 +8,7 @@ const tzdelta = parseInt(urlParams['timezone'])
 $(document).ready(function () {
   initializeDisplay()
 
-  $('.bottom-content').html('<code>' + window.BENJIBOOKS_API_URL + '</code>')
+  // $('.bottom-content').html('<code>' + window.BENJIBOOKS_API_URL + '</code>')
 
   // Load and periodically update bookings.
   loadBookings()
