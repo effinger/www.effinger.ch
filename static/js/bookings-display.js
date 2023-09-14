@@ -1,12 +1,12 @@
 (function($){
   "use strict"; // Start of use strict
 
-  const urlParams = getUrlParams()
-  const theme = urlParams['theme']
-  const align = urlParams['align']
-  const size = urlParams['size']
-  const keystone = parseFloat(urlParams['keystone'])
-  const tzdelta = parseInt(urlParams['timezone'])
+  var urlParams = getUrlParams()
+  var theme = urlParams['theme']
+  var align = urlParams['align']
+  var size = urlParams['size']
+  var keystone = parseFloat(urlParams['keystone'])
+  var tzdelta = parseInt(urlParams['timezone'])
 
   $(document).ready(function () {
     initializeDisplay()
@@ -20,7 +20,7 @@
 
     // Load and periodically update bookings.
     loadBookings()
-    setInterval(loadBookings, 20000)
+    setInterval(loadBookings, 33000)
   })
 
   function initializeDisplay() {
@@ -58,8 +58,8 @@
     // Show a subtle loading indicator.
     $('.logo-container').addClass('loading')
 
-    const startOfDay = moment().startOf('day')
-    const endOfDay = moment().endOf('day')
+    var startOfDay = moment().startOf('day')
+    var endOfDay = moment().endOf('day')
 
     // Update the on-page title to show today's date.
     $('.title #date-today').html(startOfDay.format('dd DD.MM.YYYY'))
@@ -67,7 +67,7 @@
     $.ajax({
       url: window.BENJIBOOKS_API_URL,
       success: function(data) {
-        const bookings = data.map(parseBooking)
+        var bookings = data.map(parseBooking)
 
         bookings.sort(function(a, b) {
           return a.start - b.start
@@ -95,7 +95,7 @@
   }
 
   function parseBooking(bookingData) {
-    const booking = {
+    var booking = {
       // TODO: validity tests ?
 
       roomFloor: bookingData.resource.floor,
@@ -136,7 +136,7 @@
   function bookingRow(booking) {
     var html = ''
 
-    const rowClasses = ['booking']
+    var rowClasses = ['booking']
     if (booking.end.isBefore()) rowClasses.push('ended')
     if (isBrownbag(booking)) rowClasses.push('brownbag')
 
@@ -163,8 +163,8 @@
 
   // Read a page's URL search params and return them as a map.
   function getUrlParams() {
-    const params = {}
-    const urlParams = window.location.search.slice(1).split('&')
+    var params = {}
+    var urlParams = window.location.search.slice(1).split('&')
     for (var i = 0, kv; i < urlParams.length; i++) {
       kv = urlParams[i].split('=')
       params[kv[0]] = kv[1]
