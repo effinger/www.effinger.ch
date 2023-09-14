@@ -140,8 +140,8 @@ Mozilla/5.0 (X11; Linux armv6l) AppleWebKit/538.15 (KHTML, like Gecko) Version/8
     if (isBrownbag(booking)) rowClasses.push('brownbag')
 
     html += '<tr class="' + rowClasses.join(' ') + '">'
-    html +=   '<td class="booking-time">'
-    html +=     booking.start.format('HH:mm') + ' &ndash; ' + booking.end.format('HH:mm')
+    html +=   '<td>'
+    html +=     '<div class="booking-time">' + booking.start.format('HH:mm') + ' &ndash; ' + booking.end.format('HH:mm') + '</div>'
     html +=   '</td>'
     html +=   '<td>'
     html +=     '<div class="booking-title">' + booking.title + '</div>'
