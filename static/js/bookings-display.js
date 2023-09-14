@@ -57,10 +57,8 @@ Mozilla/5.0 (X11; Linux armv6l) AppleWebKit/538.15 (KHTML, like Gecko) Version/8
     // Show a subtle loading indicator.
     $('.logo-container').addClass('loading')
 
-    var startOfDay = moment().startOf('day')
-    var endOfDay = moment().endOf('day')
-
     // Update the on-page title to show today's date.
+    var startOfDay = moment().startOf('day')
     $('.title #date-today').html(startOfDay.format('dd DD.MM.YYYY'))
 
     $.ajax({
