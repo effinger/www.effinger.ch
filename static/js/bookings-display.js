@@ -11,13 +11,6 @@
   $(document).ready(function () {
     initializeDisplay()
 
-    $('.bottom-content').html(
-      '<div style="color: grey;">' +
-      '<code>' + window.BENJIBOOKS_API_URL  + '</code><br>' +
-      '<code>' + window.navigator.userAgent + '</code><br>' +
-      '</div>'
-    )
-
     // Load and periodically update bookings.
     loadBookings()
     setInterval(loadBookings, 33000)
