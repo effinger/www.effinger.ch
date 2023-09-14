@@ -8,9 +8,9 @@ const tzdelta = parseInt(urlParams['timezone'])
 $(document).ready(function () {
   initializeDisplay()
 
-  // Load and periodically update events.
-  loadEvents()
-  setInterval(loadEvents, 20000)
+  // Load and periodically update bookings.
+  loadBookings()
+  setInterval(loadBookings, 20000)
 })
 
 function initializeDisplay() {
@@ -44,28 +44,28 @@ function initializeDisplay() {
   }
 }
 
-function loadEvents() {
-  // Show loading indicator.
+function loadBookings() {
+  // Show a subtle loading indicator.
   $('.logo-container').addClass('loading')
 
   const startOfDay = moment().startOf('day')
   const endOfDay = moment().endOf('day')
 
-  // Set title date of today.
+  // Update the on-page title to show today's date.
   $('.title').html('Gäste Heute &mdash; ' + startOfDay.format('dd DD.MM.YYYY'))
 
   $.ajax({
     url: window.BENJIBOOKS_API_URL,
     success: function(data) {
-      const events = data.map(parseEvent)
+      const bookings = data.map(parseBooking)
 
-      events.sort(function(a, b) {
+      bookings.sort(function(a, b) {
         return a.start - b.start
       })
 
-      // Display events in table if we have events.
-      if (events.length > 0) {
-        $('.center-content').html(eventsTable(events))
+      // Display bookings in table if we have any.
+      if (bookings.length > 0) {
+        $('.center-content').html(bookingsTable(bookings))
       } else {
         // Empty table.
         $('.center-content').html(
@@ -84,71 +84,71 @@ function loadEvents() {
   })
 }
 
-function parseEvent(eventData) {
-  const event = {
+function parseBooking(bookingData) {
+  const booking = {
     // TODO: validity tests ?
 
-    roomFloor: eventData.resource.floor,
-    roomName: eventData.resource.title,
+    roomFloor: bookingData.resource.floor,
+    roomName: bookingData.resource.title,
 
-    title: eventData.title,
-    subtitle: eventData.subtitle,
+    title: bookingData.title,
+    subtitle: bookingData.subtitle,
 
     // Convert dates
-    start: moment(eventData.start),
-    end: moment(eventData.end),
+    start: moment(bookingData.start),
+    end: moment(bookingData.end),
   }
 
   // Adjust timezone
   if (typeof tzdelta !== 'undefined' && tzdelta) {
-    event.start = event.start.add(tzdelta, 'hour')
-    event.end = event.end.add(tzdelta, 'hour')
+    booking.start = booking.start.add(tzdelta, 'hour')
+    booking.end = booking.end.add(tzdelta, 'hour')
 
     // Detect Daylight Savings Time
-  } else if (event.start.isDST()) {
-    event.start = event.start.add(1, 'hour')
-    event.end = event.end.add(1, 'hour')
+  } else if (booking.start.isDST()) {
+    booking.start = booking.start.add(1, 'hour')
+    booking.end = booking.end.add(1, 'hour')
   }
 
-  return event
+  return booking
 }
 
-function eventsTable(events) {
+function bookingsTable(bookings) {
   let html = ''
-  html += '<table class="table events-table">'
+  html += '<table class="table bookings-table">'
   html += '<tbody>'
-  html +=   events.map(eventRow).join('')
+  html +=   bookings.map(bookingRow).join('')
   html += '</tbody>'
   html += '</table>'
   return html;
 }
 
-function eventRow(event) {
+function bookingRow(booking) {
   let html = ''
 
-  const rowClasses = ['event']
-  if (event.end.isBefore()) rowClasses.push('ended')
-  if (isBrownbag(event)) rowClasses.push('brownbag')
+  const rowClasses = ['booking']
+  if (booking.end.isBefore()) rowClasses.push('ended')
+  if (isBrownbag(booking)) rowClasses.push('brownbag')
 
   html += '<tr class="' + rowClasses.join(' ') + '">'
-  html +=   '<td class="event-time">'
-  html +=     event.start.format('HH:mm') + ' &ndash; ' + event.end.format('HH:mm')
+  html +=   '<td class="booking-time">'
+  html +=     booking.start.format('HH:mm') + ' &ndash; ' + booking.end.format('HH:mm')
   html +=   '</td>'
   html +=   '<td>'
-  html +=     '<div class="event-title">' + event.title + '</div>'
-  html +=     '<div class="event-subtitle">' + event.subtitle + '</div>'
+  html +=     '<div class="booking-title">' + booking.title + '</div>'
+  html +=     '<div class="booking-subtitle">' + booking.subtitle + '</div>'
   html +=   '</td>'
   html +=   '<td>'
-  html +=     '<div class="room-floor">' + event.roomFloor + '</div>'
-  html +=     '<div class="room-name">' + event.roomName + '</div>'
+  html +=     '<div class="room-floor">' + booking.roomFloor + '</div>'
+  html +=     '<div class="room-name">' + booking.roomName + '</div>'
   html +=   '</td>'
   html += '</tr>'
 
   return html
 }
 
-function isBrownbag(event) {
-  return event.title.toLocaleLowerCase().includes('brownbag')
+function isBrownbag(booking) {
+  return booking.title.toLocaleLowerCase().includes('brownbag')
 }
 
 // Read a page's URL search params and return them as a map.

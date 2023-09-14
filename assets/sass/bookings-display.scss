@@ -72,13 +72,13 @@ body {
   flex: 0;
 }
 
-.events-table {
+.bookings-table {
   width: 100%;
   max-width: 100%;
   border-collapse: collapse;
   border-spacing: 0;
 
-  tr.event {
+  tr.booking {
     background-color: #fff;
 
     .theme-black & {
@@ -86,7 +86,7 @@ body {
     }
   }
 
-  tr.event.ended {
+  tr.booking.ended {
     background-color: rgba(#fff, 0.5);
 
     .theme-black & {
@@ -98,15 +98,15 @@ body {
     }
   }
 
-  //tr.event.brownbag {
+  //tr.booking.brownbag {
   //  height: 8rem;
-  //  .event-subtitle {
+  //  .booking-subtitle {
   //    color: #F35657;
   //    font-size: 1rem;
   //  }
   //}
 
-  tr.event > td {
+  tr.booking > td {
     padding: 8px;
     line-height: 1.42857143;
     vertical-align: top;
@@ -120,13 +120,13 @@ body {
       border-bottom-style: solid;
     }
 
-    .event-time {
+    .booking-time {
       white-space: nowrap;
     }
-    .event-title {
+    .booking-title {
       font-weight: 400;
     }
-    .event-subtitle {
+    .booking-subtitle {
       font-size: 90%;
     }
     .room-floor {

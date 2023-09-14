@@ -19,9 +19,9 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
 
     <!-- Stylesheets -->
-    {{/* Process event-display.scss */}}
-    {{ $displayOptions := (dict "targetPath" "css/event-display.css" "outputStyle" "compressed" "enableSourceMap" true) }}
-    {{ $displayCss := resources.Get "sass/event-display.scss" | resources.ToCSS $displayOptions }}
+    {{/* Process bookings-display.scss */}}
+    {{ $displayOptions := (dict "targetPath" "css/bookings-display.css" "outputStyle" "compressed" "enableSourceMap" true) }}
+    {{ $displayCss := resources.Get "sass/bookings-display.scss" | resources.ToCSS $displayOptions }}
     <link rel="stylesheet" href="{{ $displayCss.RelPermalink }}">
 
     {{ block "head_includes" . }}{{ end }}
