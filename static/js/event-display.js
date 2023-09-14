@@ -37,10 +37,10 @@ function initializeDisplay() {
   // Keystone correction.
   if (keystone) {
     $('.container-outer')
-        .css('left', `${Math.abs(keystone)}px'`)
-        .css('right', `${Math.abs(keystone)}px'`)
-        .css('transform', `perspective(5000px) rotateX(${keystone}deg)`)
-        .css('height', `${100 - keystone / 10}%`)
+        .css('left', Math.abs(keystone) + 'px')
+        .css('right', Math.abs(keystone) + 'px')
+        .css('transform', 'perspective(5000px) rotateX(' + keystone + 'deg)')
+        .css('height', '' + (100 - keystone / 10) + '%')
   }
 }
 
@@ -52,7 +52,7 @@ function loadEvents() {
   const endOfDay = moment().endOf('day')
 
   // Set title date of today.
-  $('.title').html(`Gäste Heute &mdash; ${startOfDay.format('dd DD.MM.YYYY')}`)
+  $('.title').html('Gäste Heute &mdash; ' + startOfDay.format('dd DD.MM.YYYY'))
 
   $.ajax({
     url: window.BENJIBOOKS_API_URL,
@@ -78,7 +78,7 @@ function loadEvents() {
     },
     error: function(err) {
       console.log(this.url)
-      console.log(`AJAX error in request: ${JSON.stringify(err, null, 2)}`)
+      console.log('AJAX error in request: ' + JSON.stringify(err, null, 2))
     },
     timeout: 12000,
   })
@@ -114,35 +114,37 @@ function parseEvent(eventData) {
 }
 
 function eventsTable(events) {
-  return `
-    <table class="table events-table">
-    <tbody>
-      ${events.map(eventRow).join("")}
-    </tbody>
-    </table>
-  `
+  let html = ''
+  html += '<table class="table events-table">'
+  html += '<tbody>'
+  html +=   events.map(eventRow).join('')
+  html += '</tbody>'
+  html += '</table>'
+  return html;
 }
 
 function eventRow(event) {
+  let html = ''
+
   const rowClasses = ['event']
   if (event.end.isBefore()) rowClasses.push('ended')
   if (isBrownbag(event)) rowClasses.push('brownbag')
 
-  return `
-   <tr class="${rowClasses.join(' ')}">
-     <td>
-       <div class="event-time">${event.start.format('HH:mm')}&nbsp;&ndash; ${event.end.format('HH:mm')}</div>
-     </td>
-     <td>
-       <div class="event-title">${event.title}</div>
-       <div class="event-subtitle">${event.subtitle}</div>
-     </td>
-     <td>
-       <div class="room-floor">${event.roomFloor}</div>
-       <div class="room-name">${event.roomName}</div>
-     </td>
-   </tr>
-  `
+  html += '<tr class="' + rowClasses.join(' ') + '">'
+  html +=   '<td class="event-time">'
+  html +=     event.start.format('HH:mm') + ' &ndash; ' + event.end.format('HH:mm')
+  html +=   '</td>'
+  html +=   '<td>'
+  html +=     '<div class="event-title">' + event.title + '</div>'
+  html +=     '<div class="event-subtitle">' + event.subtitle + '</div>'
+  html +=   '</td>'
+  html +=   '<td>'
+  html +=     '<div class="room-floor">' + event.roomFloor + '</div>'
+  html +=     '<div class="room-name">' + event.roomName + '</div>'
+  html +=   '</td>'
+  html += '</tr>'
+
+  return html
 }
 
 function isBrownbag(event) {
