@@ -1,4 +1,8 @@
 {{ define "head_includes" }}
+
+{{/* For debugging purposes, because reloading by restarting the Screenly displays require a looong time. */}}
+<meta http-equiv="refresh" content="60">
+
 <script type="text/javascript">
   var firstErrorMessage = true;
   window.onerror = function(msg, url, linenumber) {
@@ -42,9 +46,6 @@
 
 {{ define "body_includes" }}
 <script type="text/javascript">
-  // For debugging purposes, because reloading by restarting the Screenly displays require a looong time.
-  setTimeout(window.location.reload, 30000);
-
   window.BENJIBOOKS_API_URL = "{{ .Site.Data.room_manager.apiUrl }}";
 </script>
 <script type="text/javascript" src="/js/moment-with-locales.min.js"></script>
