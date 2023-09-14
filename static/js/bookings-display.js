@@ -151,7 +151,8 @@
   }
 
   function isBrownbag(booking) {
-    return booking.title.toLocaleLowerCase().includes('brownbag')
+    var title = booking.title || ""
+    return title.match(/brownbag/i)
   }
 
   // Read a page's URL search params and return them as a map.
