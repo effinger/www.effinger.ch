@@ -114,17 +114,17 @@ function parseBooking(bookingData) {
 }
 
 function bookingsTable(bookings) {
-  let html = ''
+  var html = ''
   html += '<table class="table bookings-table">'
   html += '<tbody>'
   html +=   bookings.map(bookingRow).join('')
   html += '</tbody>'
   html += '</table>'
-  return html;
+  return html
 }
 
 function bookingRow(booking) {
-  let html = ''
+  var html = ''
 
   const rowClasses = ['booking']
   if (booking.end.isBefore()) rowClasses.push('ended')
@@ -155,7 +155,7 @@ function isBrownbag(booking) {
 function getUrlParams() {
   const params = {}
   const urlParams = window.location.search.slice(1).split('&')
-  for (let i = 0, kv; i < urlParams.length; i++) {
+  for (var i = 0, kv; i < urlParams.length; i++) {
     kv = urlParams[i].split('=')
     params[kv[0]] = kv[1]
   }
