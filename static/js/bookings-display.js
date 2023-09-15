@@ -1,7 +1,8 @@
 /*
 The browser that is used on the current screenly devices (for the beamer in the Kaffeebar and the screen in 1. OG)
 is terribly old and incompatible with most modern TLS/HTML/CSS/JS features. The user agent says:
-Mozilla/5.0 (X11; Linux armv6l) AppleWebKit/538.15 (KHTML, like Gecko) Version/8.0 Safari/538.15
+"Mozilla/5.0 (X11; Linux armv6l) AppleWebKit/538.15 (KHTML, like Gecko) Version/8.0 Safari/538.15"
+-> So a Safari 8 ?! Or Chromium 8? Or Chrome 28?
 */
 
 (function($){

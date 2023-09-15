@@ -30,6 +30,12 @@
 
 <script type="text/javascript">
   window.BENJIBOOKS_API_URL = "{{ .Site.Data.room_manager.apiUrl }}"
+
+  document.querySelector(".bottom-content").innerHTML =
+  '<code style="white-space: pre; opacity: 0.5;">' +
+    'UAD: ' +
+    JSON.stringify(window.navigator.userAgentData, null, 2) +
+  '</code>'
 </script>
 
 <!-- Using defer to make sure these scripts are executed in order (defer only works in the <head>). -->
