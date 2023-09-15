@@ -1,31 +1,43 @@
 {{ define "head_includes" }}
 
-<!-- For debugging purposes, because reloading by restarting the Screenly displays require a looong time. -->
+<!-- For debugging purposes, because reloading by restarting the Screenly displays requires a looong time. -->
 <!--<meta http-equiv="refresh" content="60">-->
 
 <script type="text/javascript">
-  var firstErrorMessage = true;
+  var firstErrorMessage = true
   window.onerror = function(msg, url, linenumber) {
-    var elMessageContainer = document.querySelector(".bottom-content");
+    var elMessageContainer = document.querySelector(".bottom-content")
 
     if (firstErrorMessage) {
       firstErrorMessage = false
       elMessageContainer.innerHTML =
         '<code style="display: block; margin-top: 2em; color: grey;">' +
           window.navigator.userAgent +
-        '</code>';
+        '</code>'
     }
 
     elMessageContainer.innerHTML +=
         '<code style="display: block; margin-top: 1em; padding-top: 1em; border-top: 1px solid grey;">' +
           msg + '<br>' +
           url + ':' + linenumber +
-        '</code>';
+        '</code>'
 
-    return true;
+    return true
   }
+  // Note: This error handler should remain in its own <script> tag
+  // because it can only properly report on errors that originate from outside this tag.
 </script>
+
+<script type="text/javascript">
+  window.BENJIBOOKS_API_URL = "{{ .Site.Data.room_manager.apiUrl }}"
+</script>
+
+<!-- Using defer to make sure these scripts are executed in order (defer only works in the <head>). -->
+<script type="text/javascript" src="/js/moment-with-locales.min.js" defer></script>
+<script type="text/javascript" src="/js/jquery-3.7.1.min.js" defer></script>
+<script type="text/javascript" src="/js/bookings-display.js" defer></script>
 {{ end }}
+
 
 {{ define "main" }}
 <div class="container-outer">
@@ -45,13 +57,4 @@
     <div class="bottom-content"></div>
   </div>
 </div>
-{{ end }}
-
-{{ define "body_includes" }}
-<script type="text/javascript">
-  window.BENJIBOOKS_API_URL = "{{ .Site.Data.room_manager.apiUrl }}";
-</script>
-<script type="text/javascript" src="/js/moment-with-locales.min.js" defer></script>
-<script type="text/javascript" src="/js/jquery-3.7.1.min.js" defer></script>
-<script type="text/javascript" src="/js/bookings-display.js" defer></script>
 {{ end }}
