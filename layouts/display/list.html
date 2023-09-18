@@ -1,7 +1,7 @@
 {{ define "head_includes" }}
 
 <!-- For debugging purposes, because reloading by restarting the Screenly displays requires a looong time. -->
-<!--<meta http-equiv="refresh" content="60">-->
+<meta http-equiv="refresh" content="60">
 
 <script type="text/javascript">
   var firstErrorMessage = true
@@ -32,7 +32,7 @@
   window.BENJIBOOKS_API_URL = "{{ .Site.Data.room_manager.apiUrl }}"
 
   document.querySelector(".bottom-content").innerHTML =
-  '<code style="white-space: pre; opacity: 0.5;">' +
+  '<code style="white-space: pre; color: grey;">' +
     'UAD: ' +
     JSON.stringify(window.navigator.userAgentData, null, 2) +
   '</code>'
