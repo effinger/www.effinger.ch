@@ -1,6 +1,7 @@
 backend:
   name: github
   repo: effinger/www.effinger.ch
+  branch: master
 
 media_folder: "static/upload"
 public_folder: "/upload"
