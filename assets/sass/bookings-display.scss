@@ -30,9 +30,9 @@ body {
 }
 
 .container {
-  display: -webkit-flex;
+  //display: -webkit-flex;
   display: flex;
-  -webkit-flex-flow: column;
+  //-webkit-flex-flow: column;
   flex-flow: column nowrap;
   width: 100%;
   height: 100%;
@@ -62,7 +62,7 @@ body {
 }
 
 .center-content {
-  -webkit-flex: 1;
+  //-webkit-flex: 1;
   flex: 1;
   margin-top: 30px;
   font-size: 28px;
@@ -73,7 +73,7 @@ body {
 }
 
 .bottom-content {
-  -webkit-flex: 0;
+  //-webkit-flex: 0;
   flex: 0;
 }
 
