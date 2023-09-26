@@ -14,6 +14,7 @@ is terribly old and incompatible with most modern TLS/HTML/CSS/JS features. The 
   var size = urlParams['size']
   var keystone = parseFloat(urlParams['keystone'])
   var tzdelta = parseInt(urlParams['timezone'])
+  var autodst = parseInt(urlParams['autodst'])
 
   $(document).ready(function () {
     initializeDisplay()
@@ -108,12 +109,14 @@ is terribly old and incompatible with most modern TLS/HTML/CSS/JS features. The 
     }
 
     // Adjust timezone
-    if (typeof tzdelta !== 'undefined' && tzdelta) {
+    if (typeof tzdelta !== 'undefined' && Number.isInteger(tzdelta)) {
+      // Manual correction
       booking.start = booking.start.add(tzdelta, 'hour')
       booking.end = booking.end.add(tzdelta, 'hour')
-
-      // Detect Daylight Savings Time
-    } else if (booking.start.isDST()) {
+    }
+    
+    if (typeof autodst !== 'undefined' && booking.start.isDST()) {
+      // Apply Daylight Savings Time
       booking.start = booking.start.add(1, 'hour')
       booking.end = booking.end.add(1, 'hour')
     }
