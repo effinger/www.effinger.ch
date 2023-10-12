@@ -15,7 +15,6 @@ disableFastRender = true
 
 [params]
   author = "Coworking Community Bern"
-  analyticsId = "UA-56906982-1"
   disqusShortname = "effinger"
   archiveEventsAfterMonths = 6
 
