@@ -213,19 +213,6 @@ linkedin = ""
 about = "Hacker"
 
 [[Person]]
-name = "Tavi Venzin"
-gender = "m"
-image = "/images/effianer/tavi-venzin.jpg"
-email = "tavi@effinger.ch"
-phone = ""
-website = "https://tavivenzin.com/"
-twitter = ""
-facebook = ""
-instagram = "tavivenzin"
-linkedin = "tavivenzin"
-about = "Social Media"
-
-[[Person]]
 name = "Thomas Bucher"
 gender = "m"
 image = "/images/effianer/tom-bucher.jpg"
