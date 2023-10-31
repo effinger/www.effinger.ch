@@ -13,7 +13,8 @@ is terribly old and incompatible with most modern TLS/HTML/CSS/JS features. The 
   var align = urlParams['align']
   var size = urlParams['size']
   var keystone = parseFloat(urlParams['keystone'])
-  var tzdelta = parseInt(urlParams['timezone'])
+  // Temporary fix for the problem that the displays are showing the wrong time after the end of daylight savings time.
+  var tzdelta = 0 // parseInt(urlParams['timezone'])
   var autodst = parseInt(urlParams['autodst'])
 
   $(document).ready(function () {
@@ -114,7 +115,7 @@ is terribly old and incompatible with most modern TLS/HTML/CSS/JS features. The 
       booking.start = booking.start.add(tzdelta, 'hour')
       booking.end = booking.end.add(tzdelta, 'hour')
     }
-    
+
     if (typeof autodst !== 'undefined' && booking.start.isDST()) {
       // Apply Daylight Savings Time
       booking.start = booking.start.add(1, 'hour')
