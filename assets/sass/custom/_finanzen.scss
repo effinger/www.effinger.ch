@@ -37,8 +37,6 @@
       width: 100%;
       text-align: left;
 
-
-
       p {
         margin: 5px 0;
         font-weight: 300;
@@ -61,18 +59,9 @@
     margin-top: -43px;
   }
 
-  .erfolg {
-    @media only screen and (min-width: 768px) {
-      .start-sm {
-        padding-right: 30px;
-        float: left !important;
-      }
 
-      .end-sm {
-        padding-left: 30px;
-        float: right !important;
-      }
-    }
+  .erfolg {
+    justify-content: center;
 
     .item {
       max-width: 520px;
