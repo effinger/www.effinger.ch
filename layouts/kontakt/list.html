@@ -1,4 +1,7 @@
 {{ define "main" }}
+{{ $sommerferien := and (ge now $.Site.Data.oeffnungszeiten_ferien.sommer.from) (le now $.Site.Data.oeffnungszeiten_ferien.sommer.upto) }}
+{{ $winterferien := and (ge now $.Site.Data.oeffnungszeiten_ferien.winter.from) (le now $.Site.Data.oeffnungszeiten_ferien.winter.upto) }}
+
 <!-- Page Wrap -->
 <div class="page" id="top">
 
@@ -33,6 +36,11 @@
           <div class="contact-item mb-20 clearfix">
             <h4 class="uppercase">Kontakt Kaffeebar</h4>
             <div class="wave-spacer"></div>
+            {{ if $winterferien }}
+            <div class="item text-center pb-10">
+              <em>Winterferien: <span class="text-nowrap">So 24. Dez bis So 7. Jan</span></em>
+            </div>
+            {{ end }}
             <div class="item">
               {{ partial "oeffnungszeiten_kaffeebar.html" . }}
             </div>
@@ -78,6 +86,11 @@
           <div class="contact-item clearfix">
             <h4 class="uppercase">Kontakt Coworking</h4>
             <div class="wave-spacer"></div>
+            {{ if $winterferien }}
+            <div class="item text-center pb-10">
+              <em>Winterferien: <span class="text-nowrap">So 24. Dez bis So 7. Jan</span></em>
+            </div>
+            {{ end }}
             <div class="item">
               {{ partial "oeffnungszeiten_coworking.html" . }}
             </div>

@@ -16,20 +16,20 @@ text = """
 # Falls mehrere Spezial-Zeiten zutreffen, kommt der unterste zur Anwendung.
 
 # Auffahrt & Pfingsten
-# [[spezial]]
-# display_start = 2023-05-10T00:00:00+02:00
-# display_end = 2023-05-29T23:59:59+02:00
-# text = """
-# <p>Mo <span>7-20 Uhr</span></p>
-# <p>Di-Fr <span>7-22 Uhr</span></p>
-# <p>Sa <span>geschlossen</span></p>
-# <p>So <span>9-17 Uhr</span></p>
+[[spezial]]
+display_start = 2023-05-10T00:00:00+02:00
+display_end = 2023-05-29T23:59:59+02:00
+text = """
+<p>Mo <span>7-20 Uhr</span></p>
+<p>Di-Fr <span>7-22 Uhr</span></p>
+<p>Sa <span>geschlossen</span></p>
+<p>So <span>9-17 Uhr</span></p>
 
-# <div class="separator mt-20"></div>
-# <p>Do 18.5. Auffahrt <span>geschlossen</span></p>
-# <p>Brücke bis So 21.5. <span>geschlossen</span></p>
-# <p>So 28. + Mo 29. Pfingsten <span>geschlossen</span></p>
-# """
+<div class="separator mt-20"></div>
+<p>Do 18.5. Auffahrt <span>geschlossen</span></p>
+<p>Brücke bis So 21.5. <span>geschlossen</span></p>
+<p>So 28. + Mo 29. Pfingsten <span>geschlossen</span></p>
+"""
 
 # Sommer
 [[spezial]]

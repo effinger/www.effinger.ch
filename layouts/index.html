@@ -155,36 +155,38 @@
   -->
 
   <!-- Effinger Angebote -->
-  <section id="angebote" class="page-section pt-80 pb-20 bg-effingergelb">
+  <section id="angebote" class="page-section pt-40 pb-20 bg-effingergelb">
+    <div class="container pb-40">
+      {{ if $sommerferien }}
+      <p class="teaser">
+        Zmorge Zmittag Apéro<br />
+        Sommeröffnungszeiten:<br />
+        Mo-Fr&emsp;8-18 Uhr<br />
+        Sa-So&emsp;geschlossen
+      </p>
+      {{ end }}
+
+      {{ if $winterferien }}
+      <div style="flex: 1 1 200px; display: flex; flex-flow: row nowrap; justify-content: center; align-items: flex-start;">
+        <img src="/images/betriebsferien-winter-baum.png" alt="" aria-hidden="true"
+             style="width: 80px; margin: 0.5em 0.8em 0; border-radius: 50%; padding: 3px 4px 5px; background: white;" />
+        <p class="fs-3" style="margin: 7px;">
+          Vom <strong class="text-nowrap">Sonntag 24. Dez</strong> bis zum <strong class="text-nowrap">Sonntag 7. Jan</strong><br />
+          bleibt der gesamte Effinger geschlossen.
+        </p>
+      </div>
+      {{ end }}
+    </div>
+
     <div class="container">
       <div class="list">
         <div class="angebot">
           <img class="icon" src="icon-coffee-cup-b.png" alt=""/>
           <span class="title mt-20 font-alt">Kaffeebar</span>
-          {{ if $sommerferien }}
-            <p class="teaser">
-              Zmorge Zmittag Apéro<br />
-              Sommeröffnungszeiten:<br />
-              Mo-Fr&emsp;8-18 Uhr<br />
-              Sa-So&emsp;geschlossen
-            </p>
-          {{ else }}
-            <p class="teaser">
-              Zmorge Zmittag Apéro<br />
-              Mo-Fr und Sonntag offen
-            </p>
-          {{ end }}
-
-          {{ if $winterferien }}
-            <div style="flex: 1 1 200px; display: flex; flex-flow: row nowrap; justify-content: center; align-items: flex-start;">
-              <img src="/images/betriebsferien-winter-baum.png" aria-hidden="true"
-                   style="width: 55px; margin: 0.5em 0.5em 0 0; border-radius: 50%; padding: 3px 4px 5px; background: white;" />
-              <p style="margin: 7px;">
-                Vom <strong>Sa 24. Dez</strong> bis zum <strong>So 8. Jan</strong><br />
-                bleibt die Kaffeebar geschlossen.
-              </p>
-            </div>
-          {{ end }}
+          <p class="teaser">
+            Zmorge Zmittag Apéro<br />
+            Mo-Fr und Sonntag offen
+          </p>
           <div class="call-to-action">
             <a href="/kaffeebar/" class="btn btn-mod btn-border btn-round btn-medium">Kaffeebar</a>
           </div>

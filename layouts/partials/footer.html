@@ -1,3 +1,6 @@
+{{ $sommerferien := and (ge now $.Site.Data.oeffnungszeiten_ferien.sommer.from) (le now $.Site.Data.oeffnungszeiten_ferien.sommer.upto) }}
+{{ $winterferien := and (ge now $.Site.Data.oeffnungszeiten_ferien.winter.from) (le now $.Site.Data.oeffnungszeiten_ferien.winter.upto) }}
+
 <!-- Divider -->
 <hr class="mt-0 mb-0"  id="kontakt"><!-- this is for some internal links... -->
 <!-- End Divider -->
@@ -47,6 +50,11 @@
         <div class="contact-item contact-oeffnungszeiten mt-20 mb-20 clearfix">
           <h4 class="uppercase">Kaffeebar</h4>
           <div class="wave-spacer"></div>
+          {{ if $winterferien }}
+          <div class="item text-center pb-10">
+            <em>Winterferien: <span class="text-nowrap">So 24. Dez bis So 7. Jan</span></em>
+          </div>
+          {{ end }}
           <div class="item">
             {{ partial "oeffnungszeiten_kaffeebar.html" . }}
           </div>
@@ -80,6 +88,11 @@
         <div class="contact-item contact-oeffnungszeiten mt-20 mb-20 clearfix">
           <h4 class="uppercase">Coworking</h4>
           <div class="wave-spacer"></div>
+          {{ if $winterferien }}
+          <div class="item text-center pb-10">
+            <em>Winterferien: <span class="text-nowrap">So 24. Dez bis So 7. Jan</span></em>
+          </div>
+          {{ end }}
           <div class="item">
             {{ partial "oeffnungszeiten_coworking.html" . }}
           </div>
