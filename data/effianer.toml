@@ -278,6 +278,19 @@ linkedin = ""
 about = "Mediamatiker"
 
 [[Person]]
+name = "Benjamin Giesbrecht"
+gender = "m"
+image = "/images/effianer/benjamin-giesbrecht.jpg"
+email = "info@klickundklar.net"
+phone = ""
+website = "https://www.klickundklar.net/"
+twitter = ""
+facebook = ""
+instagram = "https://www.instagram.com/klickundklar/"
+linkedin = ""
+about = "TYPO3 Berater- und Entwickler"
+
+[[Person]]
 name = "Colearner"
 gender = ""
 image = ""
