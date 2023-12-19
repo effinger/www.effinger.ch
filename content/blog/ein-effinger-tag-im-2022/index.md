@@ -1,7 +1,7 @@
 +++
 title = "Ein Effinger-Tag im 2022"
 date = "2022-03-21"
-draft = false
+draft = true
 tags = [ "Coworking", "Community", "Colearning", "Kaffeebar", "Kunst" ]
 image = "effinger-visualisierung.jpg"
 description = "Wie sieht eigentlich ein normaler Tag im Effinger aus? Tauch mit uns ein und erleb einen ganz normalen Effinger-Tag."
