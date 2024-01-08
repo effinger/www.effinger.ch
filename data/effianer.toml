@@ -4,19 +4,6 @@ calendarId = "effinger.ch_3736303136393637343739@resource.calendar.google.com"
 about = ""
 
 [[Person]]
-name = "Christine Wieland-Trachsel"
-gender = "f"
-image = "/images/effianer/christine-wieland-trachsel.jpg"
-email = "christine@effinger.ch"
-phone = ""
-website = "https://entwickeln.me"
-twitter = ""
-facebook = ""
-instagram = "entwickeln.me"
-linkedin = ""
-about = ""
-
-[[Person]]
 name = "Reto Eberhard"
 gender = "m"
 image = "/images/effianer/reto-eberhard.jpg"
@@ -278,6 +265,19 @@ linkedin = ""
 about = "Mediamatiker"
 
 [[Person]]
+name = "Christine Wieland-Trachsel"
+gender = "f"
+image = "/images/effianer/christine-wieland-trachsel.jpg"
+email = "christine@effinger.ch"
+phone = ""
+website = "https://entwickeln.me"
+twitter = ""
+facebook = ""
+instagram = "entwickeln.me"
+linkedin = ""
+about = ""
+
+[[Person]]
 name = "Benjamin Giesbrecht"
 gender = "m"
 image = "/images/effianer/benjamin-giesbrecht.jpg"
@@ -289,6 +289,19 @@ facebook = ""
 instagram = "klickundklar"
 linkedin = ""
 about = "TYPO3 Berater- und Entwickler"
+
+[[Person]]
+name = "Maël Duwan"
+gender = "m"
+image = "/images/effianer/mael-duwan.jpg"
+email = "mael@yolu.ch"
+phone = ""
+website = "https://www.maelduwan.ch/"
+twitter = ""
+facebook = ""
+instagram = ""
+linkedin = ""
+about = "Mediamatiker in Ausbildung"
 
 [[Person]]
 name = "Colearner"
