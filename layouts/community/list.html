@@ -70,9 +70,10 @@
             </div>
             <div class="team-item-descr font-alt">
               <div class="team-item-name">
-                {{ .name }}{{ if .about }}, <span class="text-nowrap">{{ .about }}</span>{{ end }}
+                &thinsp;{{ .name }}{{ if .about }}, <span class="text-nowrap">{{ .about }}</span>{{ end }}&thinsp;
 
                 <div class="team-social-links">
+                  &thinsp;
                   {{ if .email }}
                   <a href="mailto:{{ .email }}" target="_blank"><i class="fa fa-envelope"></i></a>
                   {{ end }}
@@ -89,13 +90,12 @@
                   <a href="https://www.facebook.com/{{ .facebook }}" target="_blank"><i class="fa fa-facebook"></i></a>
                   {{ end }}
                   {{ if .instagram }}
-                  <a href="https://www.instagram.com/{{ .instagram }}" target="_blank"><i
-                      class="fa fa-instagram"></i></a>
+                  <a href="https://www.instagram.com/{{ .instagram }}" target="_blank"><i class="fa fa-instagram"></i></a>
                   {{ end }}
                   {{ if .linkedin }}
-                  <a href="https://www.linkedin.com/in/{{ .linkedin }}/" target="_blank"><i
-                      class="fa fa-linkedin"></i></a>
+                  <a href="https://www.linkedin.com/in/{{ .linkedin }}/" target="_blank"><i class="fa fa-linkedin"></i></a>
                   {{ end }}
+                  &thinsp;
                 </div>
 
               </div>
