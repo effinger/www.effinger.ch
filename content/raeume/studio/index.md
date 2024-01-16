@@ -35,10 +35,10 @@ equipment = [
 
 
 prices = [
-  "CHF 950.-* ganzer Tag, inkl. MwSt",
-  "CHF 690.-* halber Tag, inkl. MwSt",
+  "CHF 450.-* ganzer Tag, inkl. MwSt",
+  "CHF 300.-* halber Tag, inkl. MwSt",
   "------",
-  "*50% Kennenlernen-Rabatt für dein erstes Projekt bei uns! Bei Benutzung von mehreren Tagen oder Anfrage für Kulturrabatt: Melde dich bei uns!"
+  "Bei Benutzung von mehreren Tagen oder Anfrage für Kulturrabatt: Melde dich bei uns!"
 ]
 
 [[extras]]
@@ -54,4 +54,3 @@ text = "Mobil: 2x Bi-Color LED (Aputure LS 300X) inklusive Softbox und Fresnel A
 text = "Diverse Lichtstative und Grip"
 
 +++
-
