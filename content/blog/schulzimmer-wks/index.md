@@ -1,4 +1,5 @@
 +++
+aliases = [ "/events/2018/100269/", "/events/2018/100270/" ]
 title = "Schulzimmer der WKS für selbstorganisiertes Lernen"
 description = "Die WKS Bern hat ein Konzept entwickelt für selbsorganisiertes Lernen in der kaufmännischen Bildung. Ein Team aus dem Effinger-Umfeld durfte das Innendesign entwickeln und den Umbau für dieses neuartige Schulzimmer durchführen."
 date = "2018-09-03"
@@ -6,7 +7,6 @@ authors = [ "Marco Jakob" ]
 image = "schulzimmer-wks.jpg"
 comments = true
 tags = [ "Gemeinsamständig", "Werkstatt" ]
-aliases = [ "/events/100269/", "/events/100270/", "/events/archive/100269/", "/events/archive/100270/" ]
 +++
 
 <div class="embed-responsive embed-responsive-16by9">

@@ -32,7 +32,7 @@ Wer froh ist, um ein wenig Unterstützung oder eine Ansprechperson: Ich werde ab
 
 
 #### Event offenen Werkstatt
-[Erfahre mehr zur offenen Werkstatt von Timon Marmet](https://www.effinger.ch/events/100118/)
+[Erfahre mehr zur offenen Werkstatt von Timon Marmet](https://www.effinger.ch/events/2017/100118/)
 
 
 ![Bildbeschrieb](timon-marmet-klein.jpg)
