@@ -63,3 +63,9 @@ name = "Maria"
 gender = "f"
 image = "/images/kaffeebar/maria.jpg"
 comment = ""
+
+[[Person]]
+name = "Sofia"
+gender = "f"
+image = "/images/kaffeebar/sofia.jpg"
+comment = ""
