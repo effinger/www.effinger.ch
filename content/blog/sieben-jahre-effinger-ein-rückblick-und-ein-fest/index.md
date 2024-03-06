@@ -1,4 +1,5 @@
 +++
+aliases = ["/7-jahre"]
 title = "Sieben Jahre Effinger – Ein Rückblick und ein Fest"
 date = "2023-02-20"
 draft = false
@@ -6,7 +7,6 @@ image = "effinger-eroeffnung.jpg"
 description = "In Kürze gibt es uns bereits seit 7 Jahren. Wir blicken zurück auf die Höhepunkte des vergangenen Jahres und voraus auf unser Jubiläumsfest am 24. März 2023."
 authors = ["Jrene Rolli", "Stefan Niederhauser"]
 comments = true
-aliases = ["/7-jahre"]
 +++
 
 In Kürze gibt es uns bereits seit 7 Jahren. Allein im vergangenen Jahr ist viel Neues passiert:

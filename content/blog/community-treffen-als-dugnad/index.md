@@ -1,4 +1,5 @@
 +++
+aliases = [ "/blog/community-treffen-januar/" ]
 title = "Community Treffen als «Dugnad»"
 date = "2017-02-01"
 description = "Im Januar hatten wir als Effinger-Community unser erstes Community-Treffen in diesem Jahr. Und gleich haben wir etwas Neues ausprobiert. Unser Community-Treffen hat als «dugnad» stattgefunden."
@@ -6,7 +7,6 @@ image = "community-januar-dugnad.jpg"
 authors = [ "Urs Vögeli" ]
 comments = true
 tags = [ "Community" ]
-aliases = [ "/blog/community-treffen-januar/" ]
 +++
 
 ![Community-Treffen Januar](community-januar-dugnad.jpg)

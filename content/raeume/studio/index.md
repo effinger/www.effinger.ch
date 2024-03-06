@@ -1,15 +1,11 @@
 +++
+aliases = ["/raeume/labor/", "/raeume/zweites-ug/"]
 title = "Studio Effinger"
 weight = 206
 description = "Raum «Studio Effinger» für Events, Workshops und digitale Projekte."
 image = "raum_labor_film.mp4"
 draft = false
 reservation_link = "https://studio.effinger.ch/"
-
-aliases = [
-    "/raeume/labor/",
-    "/raeume/zweites-ug/",
-]
 
 gallery = [
   "raum_labor_1.jpg",

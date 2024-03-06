@@ -1,5 +1,5 @@
 +++
-aliases = [ "/events/2018/100269/", "/events/2018/100270/" ]
+aliases = ["/events/2018/100269/", "/events/2018/100270/"]
 title = "Schulzimmer der WKS für selbstorganisiertes Lernen"
 description = "Die WKS Bern hat ein Konzept entwickelt für selbsorganisiertes Lernen in der kaufmännischen Bildung. Ein Team aus dem Effinger-Umfeld durfte das Innendesign entwickeln und den Umbau für dieses neuartige Schulzimmer durchführen."
 date = "2018-09-03"
