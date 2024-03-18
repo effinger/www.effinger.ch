@@ -59,10 +59,10 @@ is terribly old and incompatible with most modern TLS/HTML/CSS/JS features. The 
   }
 
   function refreshClock() {
-    // console.log("renderClock", moment().format('hh:mm:ss.SSS'))
+    // console.log("renderClock", moment().format('HH:mm:ss.SSS'))
 
     $('.clock').html(
-      moment().format('hh') +
+      moment().format('HH') +
       '<span class="time-separator">:</span>' +
       moment().format('mm')
     )
