@@ -54,6 +54,21 @@ is terribly old and incompatible with most modern TLS/HTML/CSS/JS features. The 
           .css('transform', 'perspective(5000px) rotateX(' + keystone + 'deg)')
           .css('height', '' + (100 - keystone / 10) + '%')
     }
+
+    refreshClock()
+  }
+
+  function refreshClock() {
+    // console.log("renderClock", moment().format('hh:mm:ss.SSS'))
+
+    $('.clock').html(
+      moment().format('hh') +
+      '<span class="time-separator">:</span>' +
+      moment().format('mm')
+    )
+
+    var tillEndOfMinute = moment().endOf('minute').diff(moment());
+    setTimeout(refreshClock, tillEndOfMinute + 100)
   }
 
   function loadBookings() {
@@ -127,7 +142,6 @@ is terribly old and incompatible with most modern TLS/HTML/CSS/JS features. The 
   }
 
   function joinMultiRoomBookings(bookings) {
-    console.log(bookings)
     return bookings.reduce(function(groupedBookings, booking){
       var sameBooking = groupedBookings.find((b) =>
         b.title === booking.title &&
