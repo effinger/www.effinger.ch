@@ -68,6 +68,7 @@ is terribly old and incompatible with most modern TLS/HTML/CSS/JS features. The 
       url: window.BENJIBOOKS_API_URL,
       success: function(data) {
         var bookings = data.map(parseBooking)
+        bookings = joinMultiRoomBookings(bookings)
 
         bookings.sort(function(a, b) {
           return a.start - b.start
@@ -125,6 +126,34 @@ is terribly old and incompatible with most modern TLS/HTML/CSS/JS features. The 
     return booking
   }
 
+  function joinMultiRoomBookings(bookings) {
+    console.log(bookings)
+    return bookings.reduce(function(groupedBookings, booking){
+      var sameBooking = groupedBookings.find((b) =>
+        b.title === booking.title &&
+        b.subtitle === booking.subtitle &&
+        b.start.toISOString() === booking.start.toISOString() &&
+        b.end.toISOString() === booking.end.toISOString()
+      )
+
+      if (sameBooking) {
+        if (!sameBooking.roomFloors.includes(booking.roomFloor)) sameBooking.roomFloors.push(booking.roomFloor)
+        sameBooking.roomNames.push(booking.roomName)
+      } else {
+        var newUniqueBooking = {
+          title: booking.title,
+          subtitle: booking.subtitle,
+          start: booking.start,
+          end: booking.end,
+          roomFloors: [booking.roomFloor],
+          roomNames: [booking.roomName],
+        }
+        groupedBookings.push(newUniqueBooking)
+      }
+      return groupedBookings
+    }, [])
+  }
+
   function bookingsTable(bookings) {
     var html = ''
     html += '<table class="table bookings-table">'
@@ -151,8 +180,8 @@ is terribly old and incompatible with most modern TLS/HTML/CSS/JS features. The 
     html +=     '<div class="booking-subtitle">' + booking.subtitle + '</div>'
     html +=   '</td>'
     html +=   '<td>'
-    html +=     '<div class="room-floor">' + booking.roomFloor + '</div>'
-    html +=     '<div class="room-name">' + booking.roomName + '</div>'
+    html +=     '<div class="room-floor">' + booking.roomFloors.join(", ") + '</div>'
+    html +=     '<div class="room-name">' + booking.roomNames.join(",<br />") + '</div>'
     html +=   '</td>'
     html += '</tr>'
 
