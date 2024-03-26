@@ -71,6 +71,19 @@ is terribly old and incompatible with most modern TLS/HTML/CSS/JS features. The 
     setTimeout(refreshClock, tillEndOfMinute + 100)
   }
 
+  function compareBookings(a, b) {
+    var aIsFuture = a.start.isAfter() && 1 || 0
+    var bIsFuture = b.start.isAfter() && 1 || 0
+
+    if (aIsFuture && bIsFuture) {
+      return a.start.diff(b.start) || a.end.diff(b.end)
+    } else if (!aIsFuture && !bIsFuture) {
+      return a.end.diff(b.end) || a.start.diff(b.start)
+    } else {
+      return aIsFuture - bIsFuture
+    }
+  }
+
   function loadBookings() {
     // Show a subtle loading indicator.
     $('.logo-container').addClass('loading')
@@ -85,9 +98,7 @@ is terribly old and incompatible with most modern TLS/HTML/CSS/JS features. The 
         var bookings = data.map(parseBooking)
         bookings = joinMultiRoomBookings(bookings)
 
-        bookings.sort(function(a, b) {
-          return a.start - b.start
-        })
+        bookings.sort(compareBookings)
 
         // Display bookings in table if we have any.
         if (bookings.length > 0) {
