@@ -22,7 +22,8 @@ capacity = "8"
 equipment = [
   "Screen mit HDMI-Anschluss",
   "rundum beschreibbare Wände",
-  "Moderationsmaterial"
+  "Moderationsmaterial",
+  "Kaffeemaschine"
 ]
 
 prices = [

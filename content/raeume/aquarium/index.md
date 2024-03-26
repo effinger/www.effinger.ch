@@ -27,7 +27,8 @@ equipment = [
   "Verstellbare Tische",
   "Pinwand für A0-Papier",
   "Whiteboard",
-  "Screen mit HDMI-Anschluss"
+  "Screen mit HDMI-Anschluss",
+  "Kaffeemaschine"
 ]
 
 prices = [

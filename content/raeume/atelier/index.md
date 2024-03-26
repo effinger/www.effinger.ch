@@ -21,7 +21,8 @@ equipment = [
   "Screen mit HDMI-Anschluss",
   "beschreibbare Wände",
   "Moderationsmaterial",
-  "Spülbecken"
+  "Spülbecken",
+  "Kaffeemaschine"
 ]
 
 prices = [
