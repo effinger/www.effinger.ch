@@ -2,7 +2,8 @@
   "name": "effinger-website",
   "private": true,
   "dependencies": {
-    "@netlify/functions": "^2.6.0"
+    "@netlify/functions": "^2.6.0",
+    "node-fetch": "^3.3.2"
   },
   "engines": {
     "node": ">=20.0.0"

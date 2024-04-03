@@ -6,4 +6,4 @@
   HUGO_VERSION = "0.118.2"
 
 [functions."effinger-daily-rebuild"]
-  schedule = "20 15 * * *" # Every day at 15:20 UTC
+  schedule = "30 15 * * *" # Every day at 15:30 UTC
