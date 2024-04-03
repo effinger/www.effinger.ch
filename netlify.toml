@@ -6,4 +6,4 @@
   HUGO_VERSION = "0.118.2"
 
 [functions."effinger-daily-rebuild"]
-  schedule = "0 3 * * *" # Every day at 03:00 UTC
+  schedule = "0 1 * * *" # Every day at 01:00 UTC (= 02:00 MEZ / 03:00 MESZ)
