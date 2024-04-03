@@ -4,10 +4,10 @@
 
 import fetch from 'node-fetch'
 
-const WEBHOOK = 'https://api.netlify.com/build_hooks/57f05f05d6865d2f243241ab'
+const BUILD_WEBHOOK = 'https://api.netlify.com/build_hooks/57f05f05d6865d2f243241ab'
 
 export default async (_request, _context) => {
-  await fetch(WEBHOOK, {method: 'POST'}).then(
+  await fetch(BUILD_WEBHOOK, {method: 'POST'}).then(
       (response) => {
         console.log('Build hook successful:', response)
         return new Response("ok")
@@ -19,9 +19,4 @@ export default async (_request, _context) => {
         }
       }
   )
-}
-
-
-export const config = {
-  schedule: "47 18 * * *", // Daily at 18:47 UTC
 }
