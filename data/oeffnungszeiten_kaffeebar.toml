@@ -17,7 +17,7 @@ text = """
 
 # Ostern
 [[spezial]]
-display_start = 2024-02-01T00:00:00+02:00
+display_start = 2024-03-01T00:00:00+01:00
 display_end = 2024-04-02T23:59:59+02:00
 text = """
 <p>Mo <span>7-20 Uhr</span></p>

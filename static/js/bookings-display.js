@@ -13,9 +13,6 @@ is terribly old and incompatible with most modern TLS/HTML/CSS/JS features. The 
   var align = urlParams['align']
   var size = urlParams['size']
   var keystone = parseFloat(urlParams['keystone'])
-  // Temporary fix for the problem that the displays are showing the wrong time after the end of daylight savings time.
-  var tzdelta = 0 // parseInt(urlParams['timezone'])
-  var autodst = parseInt(urlParams['autodst'])
 
   $(document).ready(function () {
     initializeDisplay()
@@ -35,9 +32,10 @@ is terribly old and incompatible with most modern TLS/HTML/CSS/JS features. The 
 
     // Vertical alignment.
     if (align) {
-      $('.container').css('height', 'auto')
+      var $container = $('.container');
+      $container.css('height', 'auto')
       if (align === 'bottom') {
-        $('.container').css('bottom', '0')
+        $container.css('bottom', '0')
       }
     }
 
@@ -97,7 +95,6 @@ is terribly old and incompatible with most modern TLS/HTML/CSS/JS features. The 
       success: function(data) {
         var bookings = data.map(parseBooking)
         bookings = joinMultiRoomBookings(bookings)
-
         bookings.sort(compareBookings)
 
         // Display bookings in table if we have any.
@@ -123,30 +120,14 @@ is terribly old and incompatible with most modern TLS/HTML/CSS/JS features. The 
 
   function parseBooking(bookingData) {
     var booking = {
-      // TODO: validity tests ?
-
       roomFloor: bookingData.resource.floor,
       roomName: bookingData.resource.title,
 
       title: bookingData.title,
       subtitle: bookingData.subtitle,
 
-      // Convert dates
       start: moment(bookingData.start),
       end: moment(bookingData.end),
-    }
-
-    // Adjust timezone
-    if (typeof tzdelta !== 'undefined' && Number.isInteger(tzdelta)) {
-      // Manual correction
-      booking.start = booking.start.add(tzdelta, 'hour')
-      booking.end = booking.end.add(tzdelta, 'hour')
-    }
-
-    if (typeof autodst !== 'undefined' && booking.start.isDST()) {
-      // Apply Daylight Savings Time
-      booking.start = booking.start.add(1, 'hour')
-      booking.end = booking.end.add(1, 'hour')
     }
 
     return booking
