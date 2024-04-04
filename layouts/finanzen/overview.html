@@ -34,64 +34,71 @@
   <section class="page-section bg-gray-lighter">
     <div class="container">
       <div class="long-text-body">
+        {{ $monthsByYear := .Pages.GroupByDate "2006" }}
+        {{ range (slice 2024 2023 2022 2021 2020 2019 2018 2017) }}
+          {{ $year := string . }}
+          {{ $months := index (where $monthsByYear ".Key" $year) 0 }}
+          {{ $jahresabschluss_pdf := index $.Site.Data.finanzen_jahresabschluss_pdfs $year }}
 
-        {{ range .Pages.GroupByDate "2006" }}
-
-        {{ if $jahresabschluss_pdf := index $.Site.Data.finanzen_jahresabschluss_pdfs .Key }}
-          <div class="mb-20 p-1 pull-right">
-          <a href="{{ $jahresabschluss_pdf }}" target="blank" style="text-decoration: none;">
-            <i class="fa fa-file-pdf-o"></i>&nbsp;
-            Jahresabschluss {{ .Key }} als PDF
-          </a>
-          </div>
-        {{ end }}
-
-        <h1 class="mt-0 font-alt">Monatsübersicht {{ .Key }}</h1>
-
-        <div class="row mb-100">
-          {{ range $i, $e := sort .Pages "Date" "desc" }}
-
-            {{/* Calculation of total Ertrag und Aufwand. */}}
-            {{ $.Scratch.Set "total_ertrag" 0 }}
-            {{ range $e.Params.ertrag }}
-              {{ $.Scratch.Add "total_ertrag" .betrag }}
-            {{ end }}
-
-            {{ $.Scratch.Set "total_aufwand" 0 }}
-            {{ range $e.Params.aufwand }}
-              {{ $.Scratch.Add "total_aufwand" .betrag }}
-            {{ end }}
-
-            {{/* Putting the totals into a map to make it available in the script below. */}}
-            {{ $.Scratch.Get "total_aufwand" | $.Scratch.SetInMap "aufwaende" (print $i) }}
-            {{ $.Scratch.Get "total_ertrag" | $.Scratch.SetInMap "ertraege" (print $i) }}
-
-            {{/* Collecting the month names in German. */}}
-            {{ index $.Site.Data.de.months .Date.Month | $.Scratch.SetInMap "monate" (print $i) }}
-
-            <a href="{{ .RelPermalink }}#report" class="col-md-4 col-sm-6 monats-box">
-              <div class="inner mt-20 mb-20 clearfix">
-                <h4 class="title">{{ index $.Site.Data.de.months .Date.Month }}</h4>
-                <div class="wave-spacer"></div>
-                <div class="item">
-                  <p>Ertrag<span class="amount">{{ partial "utils/format_thousands" ($.Scratch.Get "total_ertrag") }}</span></p>
-                  <p>Aufwand<span class="amount">-{{ partial "utils/format_thousands" ($.Scratch.Get "total_aufwand") }}</span></p>
-                  <p>ERGEBNIS<span class="total amount">{{ partial "utils/format_thousands" (sub ($.Scratch.Get "total_ertrag") ($.Scratch.Get "total_aufwand")) }}</span></p>
-                </div>
-                <div class="item clearfix">
-                  <p>Darlehen<span class="amount">{{ partial "utils/format_thousands" .Params.darlehen }}</span></p>
-                  <p><small>Kontostand Ende Monat</small><span class="amount">{{ partial "utils/format_thousands" .Params.kontostand }}</span></p>
-                </div>
-                <div class="item">
-                  <p class="text-center">
-                    <span class="btn btn-mod btn-gray btn-round"><i class="fa fa-angle-right"></i> Details</span>
-                  </p>
-                </div>
-              </div>
-
-            </a>
+          {{ if $jahresabschluss_pdf }}
+            <div class="mb-20 pull-right">
+              <a href="{{ $jahresabschluss_pdf }}" target="blank" style="padding: 0.75rem 0.1rem; text-decoration: none;">
+                <i class="fa fa-file-pdf-o"></i>&nbsp;
+                Jahresabschluss {{ $year }} als PDF
+              </a>
+            </div>
           {{ end }}
-          </div>
+
+          <h1 class="mt-0 font-alt">
+            {{ if (or $months $jahresabschluss_pdf) }}{{ $year }}{{ else }}&nbsp;{{ end }}
+          </h1>
+
+          {{ if $months }}
+            <div class="row mb-100">
+              {{ range $index, $month := sort $months.Pages "Date" "desc" }}
+
+                {{/* Calculation of total Ertrag und Aufwand. */}}
+                {{ $.Scratch.Set "total_ertrag" 0 }}
+                {{ range $month.Params.ertrag }}
+                  {{ $.Scratch.Add "total_ertrag" .betrag }}
+                {{ end }}
+
+                {{ $.Scratch.Set "total_aufwand" 0 }}
+                {{ range $month.Params.aufwand }}
+                  {{ $.Scratch.Add "total_aufwand" .betrag }}
+                {{ end }}
+
+                {{/* Putting the totals into a map to make it available in the script below. */}}
+                {{ $.Scratch.Get "total_aufwand" | $.Scratch.SetInMap "aufwaende" (print $index) }}
+                {{ $.Scratch.Get "total_ertrag" | $.Scratch.SetInMap "ertraege" (print $index) }}
+
+                {{/* Collecting the month names in German. */}}
+                {{ index $.Site.Data.de.months .Date.Month | $.Scratch.SetInMap "monate" (print $index) }}
+
+                <a href="{{ .RelPermalink }}#report" class="col-md-4 col-sm-6 monats-box">
+                  <div class="inner mt-20 mb-20 clearfix">
+                    <h4 class="title">{{ index $.Site.Data.de.months .Date.Month }}</h4>
+                    <div class="wave-spacer"></div>
+                    <div class="item">
+                      <p>Ertrag<span class="amount">{{ partial "utils/format_thousands" ($.Scratch.Get "total_ertrag") }}</span></p>
+                      <p>Aufwand<span class="amount">-{{ partial "utils/format_thousands" ($.Scratch.Get "total_aufwand") }}</span></p>
+                      <p>ERGEBNIS<span class="total amount">{{ partial "utils/format_thousands" (sub ($.Scratch.Get "total_ertrag") ($.Scratch.Get "total_aufwand")) }}</span></p>
+                    </div>
+                    <div class="item clearfix">
+                      <p>Darlehen<span class="amount">{{ partial "utils/format_thousands" .Params.darlehen }}</span></p>
+                      <p><small>Kontostand Ende Monat</small><span class="amount">{{ partial "utils/format_thousands" .Params.kontostand }}</span></p>
+                    </div>
+                    <div class="item">
+                      <p class="text-center">
+                        <span class="btn btn-mod btn-gray btn-round"><i class="fa fa-angle-right"></i> Details</span>
+                      </p>
+                    </div>
+                  </div>
+
+                </a>
+              {{ end }}
+            </div>
+          {{ end }}
         {{ end }}
       </div>
     </div>
