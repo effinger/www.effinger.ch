@@ -4,37 +4,35 @@
 text = """
 <p>Mo-Fr <span>8-18 Uhr</span></p>
 <p>Sa-So <span>geschlossen</span></p>
-
 """
 
 # Spezial-Öffnungszeiten.
 #
-# Wenn ein Zeitraum (display_start, display_end) Zutrifft, dann wird die
+# Wenn ein Zeitraum (display_start, display_end) zutrifft, dann wird die
 # normale Öffnungszeit damit ersetzt.
 #
 # Falls mehrere Spezial-Zeiten zutreffen, kommt der unterste zur Anwendung.
 
 # Auffahrt & Pfingsten
 [[spezial]]
-display_start = 2023-05-10T00:00:00+02:00
-display_end = 2023-05-29T23:59:59+02:00
+display_start = 2024-04-20T00:00:00+02:00
+display_end = 2024-05-20T23:59:59+02:00
 text = """
 <p>Mo-Fr <span>8-18 Uhr</span></p>
 <p>Sa-So <span>geschlossen</span></p>
 
 <div class="separator mt-20"></div>
-<p>Do 18.5. Auffahrt <span>geschlossen</span></p>
-<p>Brücke bis So 21.5. <span>geschlossen</span></p>
-<p>So 28. + Mo 29. Pfingsten <span>geschlossen</span></p>
+<p>Do 9.5. Auffahrt <span>geschlossen</span></p>
+<p>Brücke bis So 12.5. <span>geschlossen</span></p>
+<p>So 19. + Mo 20. Pfingsten <span>geschlossen</span></p>
 """
 
 # Sommer
-[[spezial]]
-display_start = 2022-07-01T00:00:00+02:00
-display_end = 2022-08-14T23:59:59+02:00
-text = """
-<p class="text-center"><em>Von Montag 10. Juli bis Sonntag 14. August</em></p>
-<p>Mo-Fr <span>8-19 Uhr</span></p>
-<p>Sa <span>geschlossen</span></p>
-<p>So <span>geschlossen</span></p>
-"""
+#[[spezial]]
+#display_start = 2024-06-24T00:00:00+02:00
+#display_end = 2024-08-11T18:00:00+02:00
+#text = """
+#<p class="text-center"><em>Von Samstag 6. Juli bis Sonntag 11. August</em></p>
+#<p>Mo-Fr <span>8-18 Uhr</span></p>
+#<p>Sa-So <span>geschlossen</span></p>
+#"""

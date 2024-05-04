@@ -2,6 +2,7 @@
 {{ end }}
 
 {{ define "main" }}
+{{ $auffahrt_pfingsten := and (ge now $.Site.Data.oeffnungszeiten_ferien.auffahrt_pfingsten.from) (le now $.Site.Data.oeffnungszeiten_ferien.auffahrt_pfingsten.upto) }}
 {{ $sommerferien := and (ge now $.Site.Data.oeffnungszeiten_ferien.sommer.from) (le now $.Site.Data.oeffnungszeiten_ferien.sommer.upto) }}
 {{ $winterferien := and (ge now $.Site.Data.oeffnungszeiten_ferien.winter.from) (le now $.Site.Data.oeffnungszeiten_ferien.winter.upto) }}
 
@@ -130,7 +131,7 @@
   <!-- End Jubiläum -->
 
   <!-- Betriebsferien Auffahrt & Pfingsten -->
-  <!--
+  {{ if $auffahrt_pfingsten }}
   <section class="page-section pt-40 pb-0">
     <div class="container relative">
 
@@ -142,8 +143,8 @@
               Auffahrt & Pfingsten
             </h2>
             <p><strong>
-              Die Kaffeebar und der Coworking-Bereich bleiben über Auffahrt (Do 18.5. bis So 21.5.)
-              sowie am Pfingsten (So 28.5. und Mo 29.5.) geschlossen.<br />
+              Die Kaffeebar und der Coworking-Bereich bleiben über Auffahrt (Do 9.5. bis So 12.5.)
+              sowie an Pfingsten (So 19.5. und Mo 20.5.) geschlossen.<br />
               Raummieten nur nach Absprache.
             </strong></p>
             <br/><br/>
@@ -152,7 +153,7 @@
       </div>
     </div>
   </section>
-  -->
+  {{ end }}
 
   <!-- Effinger Angebote -->
   <section id="angebote" class="page-section pt-40 pb-20 bg-effingergelb">
@@ -171,7 +172,7 @@
         <img src="/images/betriebsferien-winter-baum.png" alt="" aria-hidden="true"
              style="width: 80px; margin: 0.5em 0.8em 0; border-radius: 50%; padding: 3px 4px 5px; background: white;" />
         <p class="fs-3" style="margin: 7px;">
-          Vom <strong class="text-nowrap">Sonntag 24. Dez</strong> bis zum <strong class="text-nowrap">Sonntag 7. Jan</strong><br />
+          Vom <strong class="text-nowrap">Dienstag 24. Dez</strong> bis zum <strong class="text-nowrap">Sonntag 5. Jan</strong><br />
           bleibt der gesamte Effinger geschlossen.
         </p>
       </div>
