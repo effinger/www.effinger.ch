@@ -154,10 +154,12 @@
   </section>
   {{ end }}
 
-  <!-- Baustelle 2024/25 -->
-  <section class="page-section pt-30 pb-30">
-    <div class="container relative">
-      <div class="section-text" style="display: flex; justify-content: center; gap: max(10px, 2vw);">
+  <!-- Effinger Angebote -->
+  <section id="angebote" class="page-section pt-40 pb-20 bg-effingergelb">
+
+    <!-- Baustelle 2024/25 -->
+    <div id="gleissanierung" class="container relative mb-60 bg-white" style="padding: 1.25em; border-radius: 4px;">
+      <div class="section-text" style="display: flex; gap: max(10px, 2vw);">
         <div style="flex-shrink: 0; width: min(100px, 15vw); height: min(100px, 15vw); border-radius: 50%; padding: 10px; background: #fae300; overflow: visible;">
           <img src="https://img.icons8.com/pastel-glyph/64/000000/digger.png" alt="digger" style="width: 100%; height: 100%;"/>
         </div>
@@ -171,10 +173,8 @@
         </div>
       </div>
     </div>
-  </section>
 
-  <!-- Effinger Angebote -->
-  <section id="angebote" class="page-section pt-40 pb-20 bg-effingergelb">
+    {{ if (or $sommerferien $winterferien) }}
     <div class="container pb-40">
       {{ if $sommerferien }}
       <p class="teaser">
@@ -196,6 +196,7 @@
       </div>
       {{ end }}
     </div>
+    {{ end }}
 
     <div class="container">
       <div class="list">

@@ -37,13 +37,13 @@
     .list {
       display: flex;
       flex-flow: row wrap;
-      justify-content: space-evenly;
+      justify-content: space-between;
 
       .angebot {
         display: flex;
         flex-flow: column nowrap;
         width: 225px;
-        margin: 0 20px 60px;
+        margin: 0 0 60px;
 
         .icon {
           height: 60px;
