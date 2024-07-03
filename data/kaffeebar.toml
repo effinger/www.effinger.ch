@@ -17,12 +17,6 @@ image = "/images/kaffeebar/silja.jpg"
 comment = ""
 
 [[Person]]
-name = "Jessica"
-gender = "f"
-image = "/images/kaffeebar/jessica.jpg"
-comment = ""
-
-[[Person]]
 name = "Yola"
 gender = "f"
 image = "/images/kaffeebar/yola.jpg"
@@ -38,12 +32,6 @@ comment = ""
 name = "Effi"
 gender = "f"
 image = "/images/kaffeebar/effi-2.jpg"
-comment = ""
-
-[[Person]]
-name = "Romi"
-gender = "f"
-image = "/images/kaffeebar/romi.jpg"
 comment = ""
 
 [[Person]]
