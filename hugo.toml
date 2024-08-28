@@ -114,7 +114,3 @@ disableFastRender = true
 #   pre = "<i class='fa fa-birthday-cake'></i>"
 #   weight = 199
 #   url = "/jubilaeum/"
-
-# Do not cache the getJSON files as they might change (e.g. for Brownbags).
-[caches.getjson]
-maxAge = 0

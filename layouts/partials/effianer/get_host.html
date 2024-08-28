@@ -1,5 +1,5 @@
 {{/* HostString im Kalender holen */}}
-{{ $hostString := getJSON (print $.Site.Data.effianer.apiUrl "?calendarId=" $.Site.Data.effianer.calendarId) }}
+{{ $hostString := unmarshal (resources.GetRemote (print $.Site.Data.effianer.apiUrl "?calendarId=" $.Site.Data.effianer.calendarId)) }}
 {{ $hostString := lower ($hostString.results) }}
 
 {{ $hostString := strings.TrimPrefix "host" $hostString }}

@@ -1,6 +1,6 @@
 {{ $result := slice }}
 
-{{ $brownbagEvents := getJSON "https://brownbag.effinger.ch/events.json" }}
+{{ $brownbagEvents := unmarshal (resources.GetRemote "https://brownbag.effinger.ch/events.json") }}
 {{ $brownbagEventIndex := 0 }}
 
 {{ range sort (where .Site.Pages "Section" "events") "Params.startdate" "asc" }}
