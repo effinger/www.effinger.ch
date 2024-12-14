@@ -140,16 +140,17 @@
       $(".main-nav").addClass("js-transparent");
     }
 
-    $(window).on("scroll", function(){
+    function adjustNavSize(){
       if ($(window).scrollTop() > 10) {
         $(".js-transparent").removeClass("transparent");
         $(".main-nav").addClass("small-height");
-      }
-      else {
+      } else {
         $(".js-transparent").addClass("transparent");
         $(".main-nav").removeClass("small-height");
       }
-    });
+    }
+    adjustNavSize()
+    $(window).on("scroll", adjustNavSize);
 
     // Mobile menu toggle
     mobile_nav.on("click", function(){
