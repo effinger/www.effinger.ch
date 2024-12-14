@@ -7,11 +7,11 @@
 
   <section class="page-section pt-60 pb-20" style="background: #0062fe;">
     <div class="container relative">
-      <img src="/upload/sonntagsclub.jpg" alt="So! Sonntagsklub im Effinger">
+      <img src="/upload/sonntagsclub.jpg" alt="So! Sonntagsklub im Effinger" width="1200" height="850">
     </div>
   </section>
 
-  <section class="page-section pt-60 pb-60">
+  <section class="page-section pt-60 pb-0">
     <div class="container relative">
       <div class="section-text">
         {{ .Content }}
@@ -19,6 +19,24 @@
     </div>
   </section>
 
-  <!-- Durchführungen -->
+  <section class="events | page-section pt-60 pb-60">
+    <div class="eventlist | container relative">
+      <div class="section-text">
+        <h3>Nächste Durchführungen:</h3>
+      </div>
+      {{ $eventPages := where .Site.Pages "Section" "events" }}
+      {{ $eventPages := where $eventPages "Params.categories" "intersect" (slice "Sonntagsclub") }}
+      {{ $eventPages := sort $eventPages "Params.startdate" "asc" }}
+      {{ range $eventPages }}
+        {{ if gt (time (default now (default .Params.startdate .Params.enddate))) now }}
+          {{ partial "events/calc_dates.html" . }}
+          {{ partial "events/event_summary.html" . }}
+        {{ end }}
+      {{ end }}
+      <div class="section-text">
+        <a class="hs-line-10" href="/events">Alle Events</a>
+      </div>
+    </div>
+  </section>
 </div>
 {{ end }}

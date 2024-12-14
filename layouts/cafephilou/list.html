@@ -12,29 +12,49 @@
 
   <section class="page-section pt-30 pb-40 bg-gray-lighter">
     <div class="container relative">
-      <h3>Durchführungen</h3>
-
-      <table>
-        <tr>
-          <th style="vertical-align: top; padding: 0 1em 0.5em 0"><a href="/events/2024/100498/">27.&nbsp;Nov 2024</a></th>
-          <td style="vertical-align: top; padding: 0 0 0.5em">Toxic Masculinity - the Concept, the Costs, the Cure</td>
-        </tr>
-        <tr>
-          <th style="vertical-align: top; padding: 0 1em 0.5em 0"><a href="/events/2024/100493/">13.&nbsp;Sept 2024</a></th>
-          <td style="vertical-align: top; padding: 0 0 0.5em">Café Philo(u) à la carte: Freie Themenwahl</td>
-        </tr>
-        <tr>
-          <th style="vertical-align: top; padding: 0 1em 0.5em 0"><a href="/events/2024/100491/">31.&nbsp;Mai 2024</a></th>
-          <td style="vertical-align: top; padding: 0 0 0.5em">Kinderlosigkeit, Kinderwunschlosigkeit, Kinderwunschdenken</td>
-        </tr>
-        <tr>
-          <th style="vertical-align: top; padding: 0 1em 0.5em 0"><a href="/events/2024/100490/">8.&nbsp;März 2024</a></th>
-          <td style="vertical-align: top; padding: 0 0 0.5em">Fantasie und Weltbezug: Wieso wir mit literarischen Figuren mitleiden und was wir aus künstlich erschaffenen Welten mitnehmen</td>
-        </tr>
-        <tr>
-          <th style="vertical-align: top; padding: 0 1em 0.5em 0"><a href="/events/2023/100468/">8.&nbsp;Sept 2023</a></th>
-          <td style="vertical-align: top; padding: 0 0 0.5em">BILDUNGSKRISE? AUA! (Anzeichen, Ursachen, Auswege)</td>
-        </tr>
+      <div class="section-text">
+        <h3>Durchführungen:</h3>
+      </div>
+      <style>
+        table.cafephilou-events {
+          width: 100%;
+        }
+        table.cafephilou-events tr:hover {
+          background: white;
+          cursor: pointer;
+        }
+        table.cafephilou-events tr:hover a {
+          color: #888;
+        }
+        table.cafephilou-events th,
+        table.cafephilou-events td {
+          padding: 0;
+          vertical-align: top;
+        }
+        table.cafephilou-events th a {
+          text-align: right;
+        }
+        table.cafephilou-events th a,
+        table.cafephilou-events td a {
+          display: block;
+          padding: 0.25em 0.5em;
+          text-decoration: none;
+        }
+      </style>
+      <table class="cafephilou-events">
+        <colgroup>
+          <col style="width: 130px;" />
+        </colgroup>
+        {{ $eventPages := where .Site.Pages "Section" "events" }}
+        {{ $eventPages = where $eventPages "Params.categories" "intersect" (slice "CafePhilou") }}
+        {{ $eventPages = sort $eventPages "Params.startdate" "desc" }}
+        {{ range $eventPages }}
+          {{- partial "events/calc_dates.html" . -}}
+          <tr>
+            <th><a href="{{ .RelPermalink }}">{{ .Scratch.Get "start_day" }}.&nbsp;{{ .Scratch.Get "start_shortmonth" }} {{ .Scratch.Get "start_year" }}</a></th>
+            <td><a href="{{ .RelPermalink }}">{{ strings.TrimPrefix ":" (strings.TrimPrefix "Café Philo(u)" .Title) }}</a></td>
+          </tr>
+        {{ end }}
       </table>
     </div>
   </section>
