@@ -1,0 +1,24 @@
+{{ define "main" }}
+<div class="page sonntagsclub" id="top">
+
+  <nav class="main-nav dark transparent stick-fixed">
+    {{ partial "navigation.html" . }}
+  </nav>
+
+  <section class="page-section pt-60 pb-20" style="background: #0062fe;">
+    <div class="container relative">
+      <img src="/upload/sonntagsclub.jpg" alt="So! Sonntagsklub im Effinger">
+    </div>
+  </section>
+
+  <section class="page-section pt-60 pb-60">
+    <div class="container relative">
+      <div class="section-text">
+        {{ .Content }}
+      </div>
+    </div>
+  </section>
+
+  <!-- Durchführungen -->
+</div>
+{{ end }}
