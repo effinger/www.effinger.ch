@@ -67,7 +67,7 @@
                 </div>
 
                 <div class="pricing-num">
-                  <sup>CHF</sup>120<br><small>pro Monat</small>
+                  <sup>CHF</sup>130<br><small>pro Monat</small>
                 </div>
 
                 <a href="/coworking/abo/?option=1#aboform" class="btn btn-mod btn-border btn-medium btn-round d-block mt-20 pricing-btn">Abo lösen</a>
@@ -106,7 +106,7 @@
                 </div>
 
                 <div class="pricing-num">
-                  <sup>CHF</sup>240<br><small>pro Monat</small>
+                  <sup>CHF</sup>260<br><small>pro Monat</small>
                 </div>
 
                 <a href="/coworking/abo/?option=2#aboform" class="btn btn-mod btn-border btn-medium btn-round d-block mt-20 pricing-btn">Abo lösen</a>
@@ -145,7 +145,7 @@
                 </div>
 
                 <div class="pricing-num">
-                  <sup>CHF</sup>360<br><small>pro Monat</small>
+                  <sup>CHF</sup>390<br><small>pro Monat</small>
                 </div>
 
                 <a href="/coworking/abo/?option=3#aboform" class="btn btn-mod btn-border btn-medium btn-round d-block mt-20 pricing-btn">Abo lösen</a>
@@ -184,7 +184,7 @@
                   </ul>
                 </div>
                 <div class="pricing-num">
-                  <sup>CHF</sup>480<br><small>pro Monat</small>
+                  <sup>CHF</sup>520<br><small>pro Monat</small>
                 </div>
 
                 <a href="/coworking/abo/?option=5#aboform" class="btn btn-mod btn-border btn-medium btn-round d-block mt-20 pricing-btn">Abo lösen</a>
@@ -238,7 +238,8 @@
     </div>
 
     <div class="text-center">
-      <a href="https://docs.google.com/viewer?url=https://docs.google.com/document/d/1JlR03S5yXsE-glg-is9oNqkuJueWJHktODp7yrwF_rE/export?format=pdf" target="_blank" rel="no-referrer" class="btn btn-mod btn-large">Übersicht als PDF</a>
+      <a href="https://docs.google.com/viewer?url=https://docs.google.com/document/d/1FPa6-FUIBi7B7XniA5Xbjs0Sy_RI1mlLlTQumcy2mH4/export?format=pdf"
+         target="_blank" rel="no-referrer" class="btn btn-mod btn-large">Übersicht als PDF</a>
     </div>
   </section>
 
@@ -261,11 +262,11 @@
               <div class="row">
                 <div class="col-sm-6 mb-20 mb-md-10">
                   <label for="abo-option" class="form-label">Abo*</label>
-                  <select name="abo-option" class="form-control">
-                    <option value="1">1 Tag pro Woche (CHF 120)</option>
-                    <option value="2" selected="selected">2 Tage pro Woche (CHF 240)</option>
-                    <option value="3">3 Tage pro Woche (CHF 360)</option>
-                    <option value="5">Full Time (CHF 480)</option>
+                  <select id="abo-option" name="abo-option" class="form-control">
+                    <option value="1">1 Tag pro Woche (CHF 130)</option>
+                    <option value="2" selected="selected">2 Tage pro Woche (CHF 260)</option>
+                    <option value="3">3 Tage pro Woche (CHF 390)</option>
+                    <option value="5">Full Time (CHF 520)</option>
                     <option value="firma">Firmenabo (tbd)</option>
                   </select>
                   <br>
@@ -277,7 +278,7 @@
                 </div>
                 <div class="col-sm-6 mb-20 mb-md-10">
                   <label for="startmonat" class="form-label">Startmonat*</label>
-                  <select name="startmonat" class="form-control">
+                  <select id="startmonat" name="startmonat" class="form-control">
                     <option selected="selected">Januar</option>
                     <option>Februar</option>
                     <option>März</option>
@@ -300,7 +301,7 @@
               <div class="row">
                 <div class="col-sm-6 mb-20 mb-md-10">
                   <label for="firma" class="form-label">Firma</label>
-                  <input type="text" name="firma" class="form-control" placeholder="" maxlength="100">
+                  <input type="text" id="firma" name="firma" class="form-control" placeholder="" maxlength="100">
                 </div>
               </div>
 
@@ -308,55 +309,55 @@
 
                 <div class="col-sm-6 mb-20 mb-md-10">
                   <label for="vorname" class="form-label">Vorname*</label>
-                  <input type="text" name="vorname" class="form-control" placeholder="" maxlength="100" validate="notEmpty">
+                  <input type="text" id="vorname" name="vorname" class="form-control" placeholder="" maxlength="100" validate="notEmpty">
                 </div>
 
                 <div class="col-sm-6 mb-20 mb-md-10">
                   <label for="nachname" class="form-label">Nachname*</label>
-                  <input type="text" name="nachname" class="form-control" placeholder="" maxlength="100" validate="notEmpty">
+                  <input type="text" id="nachname" name="nachname" class="form-control" placeholder="" maxlength="100" validate="notEmpty">
                 </div>
               </div>
 
               <div class="row">
                 <div class="col-sm-4 mb-20 mb-md-10">
                   <label for="geburtsdatum" class="form-label">Geburtsdatum*</label>
-                  <input type="text" name="geburtsdatum" class="form-control" placeholder="tt.mm.jjjj" maxlength="10" validate="notEmpty">
+                  <input type="text" id="geburtsdatum" name="geburtsdatum" class="form-control" placeholder="tt.mm.jjjj" maxlength="10" validate="notEmpty">
                 </div>
               </div>
 
               <div class="row">
                 <div class="col-sm-6 mb-20 mb-md-10">
                   <label for="strasse" class="form-label">Strasse*</label>
-                  <input type="text" name="strasse" class="form-control" placeholder="" maxlength="100" validate="notEmpty">
+                  <input type="text" id="strasse" name="strasse" class="form-control" placeholder="" maxlength="100" validate="notEmpty">
                 </div>
 
                 <div class="col-sm-2 mb-20 mb-md-10">
                   <label for="plz" class="form-label">PLZ*</label>
-                  <input type="text" name="plz" class="form-control" placeholder="" maxlength="5"  validate="notEmpty">
+                  <input type="text" id="plz" name="plz" class="form-control" placeholder="" maxlength="5"  validate="notEmpty">
                 </div>
 
                 <div class="col-sm-4 mb-20 mb-md-10">
                   <label for="ort" class="form-label">Ort*</label>
-                  <input type="text" name="ort" class="form-control" placeholder="" maxlength="50"  validate="notEmpty">
+                  <input type="text" id="ort" name="ort" class="form-control" placeholder="" maxlength="50"  validate="notEmpty">
                 </div>
               </div>
 
               <div class="row">
                 <div class="col-sm-6 mb-20 mb-md-10">
                   <label for="email" class="form-label">E-Mail-Adresse*</label>
-                  <input type="email" name="email" class="form-control" placeholder="" maxlength="100" validate="email">
+                  <input type="email" id="email" name="email" class="form-control" placeholder="" maxlength="100" validate="email">
                 </div>
 
 
                 <div class="col-sm-6 mb-20 mb-md-10">
                   <label for="telefon" class="form-label">Telefon*</label>
-                  <input type="text" name="telefon" class="form-control" placeholder="" maxlength="100" validate="notEmpty">
+                  <input type="text" id="telefon" name="telefon" class="form-control" placeholder="" maxlength="100" validate="notEmpty">
                 </div>
               </div>
 
               <div class="mb-20 mb-md-10">
                 <label for="bemerkungen" class="form-label">Bemerkungen</label>
-                <textarea name="bemerkungen" class="form-control" rows="3" placeholder="" maxlength="400"></textarea>
+                <textarea id="bemerkungen" name="bemerkungen" class="form-control" rows="3" placeholder="" maxlength="400"></textarea>
               </div>
 
               <div id="validation-error-message" class="alert error" style="display: none;">
