@@ -1,5 +1,5 @@
 {{ define "main" }}
-<div class="page sonntagsclub" id="top">
+<div class="page sonntagsklub" id="top">
 
   <nav class="main-nav dark transparent stick-fixed">
     {{ partial "navigation.html" . }}
@@ -7,7 +7,7 @@
 
   <section class="page-section pt-60 pb-20" style="background: #0062fe;">
     <div class="container relative">
-      <img src="/upload/sonntagsclub.jpg" alt="So! Sonntagsklub im Effinger" width="1200" height="850">
+      <img src="/upload/sonntagsklub.jpg" alt="So! Sonntagsklub im Effinger" width="1200" height="850">
     </div>
   </section>
 
@@ -25,7 +25,7 @@
         <h3>Nächste Durchführungen:</h3>
       </div>
       {{ $eventPages := where .Site.Pages "Section" "events" }}
-      {{ $eventPages := where $eventPages "Params.categories" "intersect" (slice "Sonntagsclub") }}
+      {{ $eventPages := where $eventPages "Params.categories" "intersect" (slice "Sonntagsklub") }}
       {{ $eventPages := sort $eventPages "Params.startdate" "asc" }}
       {{ range $eventPages }}
         {{ if gt (time (default now (default .Params.startdate .Params.enddate))) now }}
