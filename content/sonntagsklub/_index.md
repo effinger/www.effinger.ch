@@ -13,8 +13,6 @@ An SO!-Tagen läuft die Kaffeebar wie gewohnt weiter, du kannst also einfach fü
 
 Wir sind SO! gespannt auf den Sonntagsklub und freuen uns SO! auf deinen Besuch.
 
-Die nächsten Durchführungen findest du bei den [Events](/events).
-
 Hast Du Fragen? Melde Dich: so@effinger.ch
 
 *Wir sind ein Safe Space und stellen uns klar gegen diskriminierendes Verhalten auf Grund von Geschlecht, Sexualität, Herkunft, Status und Behinderung.*
