@@ -5,13 +5,15 @@ pluralizeListTitles = false
 preserveTaxonomyNames = true
 removePathAccents = true
 enableRobotsTXT = true
-paginatePath = "seite"
 
 # disableKinds = [ "taxonomyTerm" ]
 disableFastRender = true
 
 [markup.goldmark.renderer]
   unsafe = true
+
+[pagination]
+  path = "seite"
 
 [params]
   author = "Coworking Community Bern"

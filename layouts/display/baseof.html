@@ -21,7 +21,7 @@
     <!-- Stylesheets -->
     {{/* Process bookings-display.scss */}}
     {{ $displayOptions := (dict "targetPath" "css/bookings-display.css" "outputStyle" "compressed" "enableSourceMap" true) }}
-    {{ $displayCss := resources.Get "sass/bookings-display.scss" | resources.ToCSS $displayOptions }}
+    {{ $displayCss := resources.Get "sass/bookings-display.scss" | css.Sass $displayOptions }}
     <link rel="stylesheet" href="{{ $displayCss.RelPermalink }}">
 
     {{ block "head_includes" . }}{{ end }}
