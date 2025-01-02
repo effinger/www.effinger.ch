@@ -3,7 +3,7 @@
   command = "hugo --ignoreCache"
 
 [build.environment]
-  HUGO_VERSION = "0.125.6"
+  HUGO_VERSION = "0.140.2"
 
 [functions."effinger-daily-rebuild"]
   schedule = "0 1 * * *" # Every day at 01:00 UTC (= 02:00 MEZ / 03:00 MESZ)
