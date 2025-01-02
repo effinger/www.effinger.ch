@@ -1523,17 +1523,10 @@ a.logo:hover {
   left: 0;
   text-align: left;
   background: rgba(255, 255, 255, 0.97);
-
-  -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);
-  -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);
 
   z-index: 1030;
 
-  -webkit-transition: height 0.27s cubic-bezier(0, 0, 0.58, 1);
-  -moz-transition: height 0.27s cubic-bezier(0, 0, 0.58, 1);
-  -o-transition: height 0.27s cubic-bezier(0, 0, 0.58, 1);
-  -ms-transition: height 0.27s cubic-bezier(0, 0, 0.58, 1);
   transition: height 0.27s cubic-bezier(0, 0, 0.58, 1);
 }
 
@@ -1568,15 +1561,8 @@ a.logo:hover {
   color: #777;
   letter-spacing: 2px;
   display: inline-block;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   text-decoration: none;
-
-  -webkit-transition: all 0.27s cubic-bezier(0, 0, 0.58, 1);
-  -moz-transition: all 0.27s cubic-bezier(0, 0, 0.58, 1);
-  -o-transition: all 0.27s cubic-bezier(0, 0, 0.58, 1);
-  -ms-transition: all 0.27s cubic-bezier(0, 0, 0.58, 1);
   transition: all 0.27s cubic-bezier(0, 0, 0.58, 1);
 }
 .inner-nav ul > li:first-child > a {
@@ -1954,14 +1940,8 @@ a.logo:hover {
 */
 
 .main-nav.transparent {
-  background: transparent !important;
-}
-.main-nav.js-transparent {
-  -webkit-transition: all 0.27s cubic-bezier(0, 0, 0.58, 1);
-  -moz-transition: all 0.27s cubic-bezier(0, 0, 0.58, 1);
-  -o-transition: all 0.27s cubic-bezier(0, 0, 0.58, 1);
-  -ms-transition: all 0.27s cubic-bezier(0, 0, 0.58, 1);
-  transition: all 0.27s cubic-bezier(0, 0, 0.58, 1);
+  background: transparent;
+  transition-property: all;
 }
 
 /*
@@ -6439,4 +6419,8 @@ Special demos
 }
 .countdown.dark .countdown-number:before {
   background: rgba(0, 0, 0, 0.8);
+}
+
+.notransition {
+  transition: none !important;
 }

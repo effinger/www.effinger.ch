@@ -1,7 +1,6 @@
 (function($){
   "use strict"; // Start of use strict
 
-
   /* ---------------------------------------------
      Scripts initialization
      --------------------------------------------- */
@@ -20,11 +19,9 @@
         scrollTop: hash_offset
       });
     }
-
   });
 
   $(document).ready(function(){
-
     $(window).trigger("resize");
     init_classic_menu();
     init_lightbox();
@@ -40,10 +37,8 @@
   });
 
   $(window).on("resize", function(){
-
     init_classic_menu_resize();
     js_height_init();
-
   });
 
 
@@ -116,65 +111,70 @@
      Nav panel classic
      --------------------------------------------- */
 
-  const mobile_nav = $(".mobile-nav");
-  const desktop_nav = $(".desktop-nav");
+  const $mainNav = $(".main-nav");
+  const $mobileNav = $(".mobile-nav");
+  const $desktopNav = $(".desktop-nav");
 
   function init_classic_menu_resize(){
 
     // Mobile menu max height
-    $(".mobile-on .desktop-nav > ul").css("max-height", $(window).height() - $(".main-nav").height() - 20 + "px");
+    $(".mobile-on .desktop-nav > ul").css("max-height", $(window).height() - $mainNav.height() - 20 + "px");
 
     // Mobile menu style toggle
     if ($(window).width() <= 1024) {
-      $(".main-nav").addClass("mobile-on");
+      $mainNav.addClass("mobile-on");
     }
     else if ($(window).width() > 1024) {
-      $(".main-nav").removeClass("mobile-on");
+      $mainNav.removeClass("mobile-on");
     }
+  }
+
+  function withoutTransition($el, cssChangeCallback) {
+    $el.addClass("notransition")
+
+    cssChangeCallback($el)
+
+    // Accessing the offsetHeight triggers a reflow, skipping transitions (says a dude on StackOverflow)
+    $el.each(function(e) { e.offsetHeight })
+
+    $el.removeClass("notransition")
   }
 
   function init_classic_menu(){
 
-    // Transparent menu
-    if ($(".main-nav").hasClass("transparent")){
-      $(".main-nav").addClass("js-transparent");
-    }
-
+    // Transparent menu (only at top of the page, not when scrolled down)
+    const transparentNav = $mainNav.hasClass("transparent")
     function adjustNavSize(){
-      if ($(window).scrollTop() > 10) {
-        $(".js-transparent").removeClass("transparent");
-        $(".main-nav").addClass("small-height");
-      } else {
-        $(".js-transparent").addClass("transparent");
-        $(".main-nav").removeClass("small-height");
-      }
+      const scrolledDown = window.scrollY > 10;
+      $mainNav.toggleClass("transparent", transparentNav && !scrolledDown)
+      $mainNav.toggleClass("small-height", scrolledDown)
     }
-    adjustNavSize()
+    adjustNavSize() // withoutTransition($mainNav, adjustNavSize)
     $(window).on("scroll", adjustNavSize);
 
     // Mobile menu toggle
-    mobile_nav.on("click", function(){
-      if (desktop_nav.hasClass("js-opened")) {
-        desktop_nav.slideUp(400, "easeOutExpo", function() {
-          desktop_nav.removeClass("js-opened");
-          desktop_nav.css('display', '');
+    $mobileNav.on("click", function(){
+      if ($desktopNav.hasClass("js-opened")) {
+        $desktopNav.slideUp(400, "easeOutExpo", function() {
+          $desktopNav.removeClass("js-opened");
+          $desktopNav.css('display', '');
         });
         $(this).removeClass("active");
       } else {
-        desktop_nav.slideDown(400, "easeOutQuart").addClass("js-opened");
+        $desktopNav.slideDown(400, "easeOutQuart").addClass("js-opened");
         $(this).addClass("active");
 
         // Fix for responsive menu
-        if ($(".main-nav").hasClass("not-top")) {
+        if ($mainNav.hasClass("not-top")) {
           $(window).scrollTo(".main-nav", "slow");
         }
       }
     });
 
-    desktop_nav.find("a:not(.mn-has-sub)").on("click", function(){
-      if (mobile_nav.hasClass("active")) {
-        desktop_nav.slideUp("slow", "easeOutExpo").removeClass("js-opened");
-        mobile_nav.removeClass("active");
+    $desktopNav.find("a:not(.mn-has-sub)").on("click", function(){
+      if ($mobileNav.hasClass("active")) {
+        $desktopNav.slideUp("slow", "easeOutExpo").removeClass("js-opened");
+        $mobileNav.removeClass("active");
       }
     });
 
@@ -187,7 +187,7 @@
     $(".mobile-on .mn-has-sub").find(".fa-angle-right:first").removeClass("fa-angle-right").addClass("fa-angle-down");
 
     mnHasSub.on("click", function(){
-      if ($(".main-nav").hasClass("mobile-on")) {
+      if ($mainNav.hasClass("mobile-on")) {
         mnThisLi = $(this).parent("li:first");
         if (mnThisLi.hasClass("js-opened")) {
           mnThisLi.find(".mn-sub:first").slideUp(function(){
@@ -206,12 +206,12 @@
 
     mnHasSub.parent("li")
       .on("mouseenter", function(){
-        if (!($(".main-nav").hasClass("mobile-on"))) {
+        if (!($mainNav.hasClass("mobile-on"))) {
           $(this).find(".mn-sub:first").stop(true, true).fadeIn("fast");
         }
       })
       .on("mouseleave", function(){
-        if (!($(".main-nav").hasClass("mobile-on"))) {
+        if (!($mainNav.hasClass("mobile-on"))) {
           $(this).find(".mn-sub:first").stop(true, true).delay(100).fadeOut("fast");
         }
       });
@@ -672,7 +672,7 @@ function initPageSliders(){
     }
 
   })(jQuery);
-};
+}
 
 
 /* ---------------------------------------------
