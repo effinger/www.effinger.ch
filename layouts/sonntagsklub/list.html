@@ -5,13 +5,16 @@
     {{ partial "navigation.html" . }}
   </nav>
 
-  <section class="page-section pt-60 pb-20" style="background: #0062fe;">
+  <section class="page-section pt-60 pb-0" style="background: #0062fe;">
     <div class="container relative">
       <img src="/upload/sonntagsklub.jpg" alt="So! Sonntagsklub im Effinger" width="1200" height="850">
     </div>
   </section>
 
-  <section class="page-section pt-60 pb-0">
+  {{/* Scroll target for linking to this page without the tall header image */}}
+  <div id="t" style="height: 55px; margin-top: -55px;"></div>
+
+  <section class="page-section pt-80 pb-0">
     <div class="container relative">
       <div class="section-text">
         {{ .Content }}

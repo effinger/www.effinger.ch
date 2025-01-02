@@ -1,3 +1,32 @@
+{{ define "head_includes" }}
+<style>
+  table.cafephilou-events {
+    width: 100%;
+  }
+  table.cafephilou-events tr:hover {
+    background: white;
+    cursor: pointer;
+  }
+  table.cafephilou-events tr:hover a {
+    color: #888;
+  }
+  table.cafephilou-events th,
+  table.cafephilou-events td {
+    padding: 0;
+    vertical-align: top;
+  }
+  table.cafephilou-events th a {
+    text-align: right;
+  }
+  table.cafephilou-events th a,
+  table.cafephilou-events td a {
+    display: block;
+    padding: 0.25em 0.5em;
+    text-decoration: none;
+  }
+</style>
+{{ end }}
+
 {{ define "main" }}
 <div class="page cafephilou" id="top">
 
@@ -10,37 +39,14 @@
     <img src="/upload/café-philou-right.png" alt="" style="align-self: flex-end; margin-left: auto;">
   </div>
 
+  {{/* Scroll target for linking to this page without the header */}}
+  <div id="t" style="height: 55px; margin-top: -55px;"></div>
+
   <section class="page-section pt-30 pb-40 bg-gray-lighter">
     <div class="container relative">
       <div class="section-text">
         <h3>Durchführungen:</h3>
       </div>
-      <style>
-        table.cafephilou-events {
-          width: 100%;
-        }
-        table.cafephilou-events tr:hover {
-          background: white;
-          cursor: pointer;
-        }
-        table.cafephilou-events tr:hover a {
-          color: #888;
-        }
-        table.cafephilou-events th,
-        table.cafephilou-events td {
-          padding: 0;
-          vertical-align: top;
-        }
-        table.cafephilou-events th a {
-          text-align: right;
-        }
-        table.cafephilou-events th a,
-        table.cafephilou-events td a {
-          display: block;
-          padding: 0.25em 0.5em;
-          text-decoration: none;
-        }
-      </style>
       <table class="cafephilou-events">
         <colgroup>
           <col style="width: 130px;" />
@@ -51,8 +57,8 @@
         {{ range $eventPages }}
           {{- partial "events/calc_dates.html" . -}}
           <tr>
-            <th><a href="{{ .RelPermalink }}">{{ .Scratch.Get "start_day" }}.&nbsp;{{ .Scratch.Get "start_shortmonth" }} {{ .Scratch.Get "start_year" }}</a></th>
-            <td><a href="{{ .RelPermalink }}">{{ strings.TrimPrefix ":" (strings.TrimPrefix "Café Philo(u)" .Title) }}</a></td>
+            <th><a href="{{ .RelPermalink }}#t">{{ .Scratch.Get "start_day" }}.&nbsp;{{ .Scratch.Get "start_shortmonth" }} {{ .Scratch.Get "start_year" }}</a></th>
+            <td><a href="{{ .RelPermalink }}#t">{{ strings.TrimPrefix ":" (strings.TrimPrefix "Café Philo(u)" .Title) }}</a></td>
           </tr>
         {{ end }}
       </table>

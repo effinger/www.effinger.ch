@@ -90,6 +90,9 @@
   {{ $archiveDate := now.AddDate 0 (int (mul -1 .Site.Params.archiveEventsAfterMonths)) 0 }}
   {{ $isArchived := (time .Params.enddate).Before $archiveDate }}
 
+  {{/* Scroll target for linking to an event without the generic events header */}}
+  <div id="t" style="height: 55px; margin-top: -55px;"></div>
+
   <!-- Section Event Single View -->
   <section class="page-section events">
     <div class="container relative eventsingle">
