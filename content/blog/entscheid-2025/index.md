@@ -1,5 +1,5 @@
 +++
-title = "Wir führen die Kaffeebar und den Verein zusammen"
+title = "Zusammenführung von Verein und Kaffeebar"
 date = "2025-02-13"
 draft = true
 tags = [ "Community" ]
