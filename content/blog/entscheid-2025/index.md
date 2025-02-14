@@ -1,11 +1,11 @@
 +++
 title = "Zusammenführung von Verein und Kaffeebar"
-date = "2025-02-13"
-draft = true
+date = "2025-02-14"
+draft = false
 tags = [ "Community" ]
 image = "effinger_entscheid_2025.png"
 description = "Die Effinger Community beschliesst, die Kaffeebar in die Vereinsstruktur zu integrieren."
-authors = [ "Vereinsmitteilung"]
+authors = [ "Markus Roos"]
 comments = false
 +++
 
@@ -15,7 +15,7 @@ comments = false
 
 Der Effinger hat am Community-Treffen vom 12.2.2025 nach intensiven Diskussionen ein Upgrade der Strukturen beschlossen. Dem Entscheid ist ein längerer, vielschichtiger Konflikt vorausgegangen, der trotz verschiedener Initiativen nicht gelöst werden konnte.
 
-Die Struktur soll so angepasst werden, dass im Effinger alles unter einer Einheit läuft. Der Verein (Coworking Community Bern) ist bereits der Hauptmieter der Liegenschaft an der Effingerstrasse 10. Der Untermietvertrag mit der Effinger Kaffeebar GmbH wird aufgelöst. Der Verein führt anschliessend die gesamte Fläche im Erdgeschoss selbst. Dafür werden ein neues Gesamtkonzept und eine professionelle Führung nötig sein. 
+Die Struktur soll so angepasst werden, dass im Effinger alles unter einer Einheit läuft. Der Verein (Coworking Community Bern) ist bereits der Hauptmieter der Liegenschaft an der Effingerstrasse 10. Der Untermietvertrag mit der Effinger Kaffeebar GmbH wird aufgelöst. Der Verein führt anschliessend die gesamte Fläche im Erdgeschoss selbst. Dafür wird ein neues Gesamtkonzept entwickelt. 
 
 Das Upgrade steht aber vor allem für Aufbruch. Das Ziel ist es, das Ganze zu wahren und was heute getrennt ist zusammenzuführen. Administrative und gastgeberische Vereinfachungen, gemeinsamer Gestaltungs- und Kreativraum, Einbindung von Angestellten in die Community sind angestrebte Vorteile dieser Zusammenführung. Der Aufbau, die interne Konfliktaufarbeitung und entsprechende Learnings für die Organisation, sowie die Anpassung der Strukturen werden nun auch Zeit benötigen. Menschen, die an der gemeinsamen Vision des Effingers mitarbeiten und mit Freude und Kraft gestalten wollen, sind herzlich eingeladen. 
 
