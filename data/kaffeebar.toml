@@ -1,31 +1,13 @@
 [[Person]]
-name = "Mara"
-gender = "f"
-image = "/images/kaffeebar/mara.jpg"
-comment = ""
-
-[[Person]]
 name = "Claudia"
 gender = "f"
 image = "/images/kaffeebar/claudia.jpg"
 comment = ""
 
 [[Person]]
-name = "Silja"
-gender = "f"
-image = "/images/kaffeebar/silja.jpg"
-comment = ""
-
-[[Person]]
 name = "Yola"
 gender = "f"
 image = "/images/kaffeebar/yola.jpg"
-comment = ""
-
-[[Person]]
-name = "Effi"
-gender = "f"
-image = "/images/kaffeebar/effi.jpg"
 comment = ""
 
 [[Person]]
@@ -47,12 +29,6 @@ image = "/images/kaffeebar/david-2.jpg"
 comment = ""
 
 [[Person]]
-name = "Maria"
-gender = "f"
-image = "/images/kaffeebar/maria.jpg"
-comment = ""
-
-[[Person]]
 name = "Sofia"
 gender = "f"
 image = "/images/kaffeebar/sofia.jpg"
@@ -62,12 +38,6 @@ comment = ""
 name = "Nora"
 gender = "f"
 image = "/images/kaffeebar/nora.jpg"
-comment = ""
-
-[[Person]]
-name = "Khaled"
-gender = "m"
-image = "/images/kaffeebar/khaled.jpg"
 comment = ""
 
 [[Person]]
