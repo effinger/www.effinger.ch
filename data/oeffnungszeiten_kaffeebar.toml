@@ -27,23 +27,28 @@ text = """
 
 # Auffahrt & Pfingsten
 [[spezial]]
-display_start = 2024-04-20T00:00:00+02:00
-display_end = 2024-05-20T23:59:59+02:00
+display_start = 2025-05-21T00:00:00+02:00
+display_end = 2025-06-09T23:59:59+02:00
 text = """
+<p>Mo <span>7-20 Uhr</span></p>
+<p>Di-Fr <span>7-22 Uhr</span></p>
+<p>Sa <span>geschlossen</span></p>
+<p>So <span>9-17 Uhr</span></p>
+
 <div class="separator mt-20"></div>
-<p>Do 9.5. Auffahrt <span>geschlossen</span></p>
-<p>Brücke bis So 12.5. <span>geschlossen</span></p>
-<p>So 19. + Mo 20. Pfingsten <span>geschlossen</span></p>
+<p>Do 29.5. Auffahrt <span>geschlossen</span></p>
+<p>Brücke bis So 01.6. <span>geschlossen</span></p>
+<p>So 8. + Mo 9.6 Pfingsten <span>geschlossen</span></p>
 """
 
 # Sommer
 [[spezial]]
-display_start = 2024-06-19T00:00:00+02:00
-display_end = 2024-08-11T18:00:00+02:00
+display_start = 2025-06-19T00:00:00+02:00
+display_end = 2025-08-10T18:00:00+02:00
 text = """
 <div class="separator mt-20"></div>
 <div style="margin: 0 -12px; padding: 5px 9px 3px; border: 3px outset white;">
-<p><em>Von Sonntag 7.&thinsp;Juli bis Sonntag 11.&thinsp;August</em></p>
+<p><em>Von Sonntag 6.&thinsp;Juli bis Sonntag 10.&thinsp;August</em></p>
 <p>Mo-Fr <span>8-18 Uhr</span></p>
 <p>Sa-So <span>geschlossen</span></p>
 </div>
