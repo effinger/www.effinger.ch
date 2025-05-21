@@ -110,6 +110,20 @@
               </div>
             </div>
 
+            <!-- ROOMS-30-PROMO -->
+            {{ if ne .Title "Studio Effinger" }}
+            <div class="row raeume-eigenschaften">
+              <div class="col-sm-12">
+                <div class="raeume-title">Sommeraktion 2025</div>
+                <div class="raeume-content" style="border-left: 6px solid #fbdb00; padding-left: 0.5rem">
+                  <p><b>Profitiere von Juni bis August am Freitag von einer 30% günstigeren Raummieten.</b></p>
+                  <p class="my-2"><a href="{{.Params.reservation_link}}" target="_blank" class="btn btn-mod btn-border btn-round btn-large">
+                    &rarr; Jetzt reservieren </a></p>
+                  <p style="color: #ccb"><em>Dein Rabatt wird nach der Buchung <br/>hinterlegt und per Mail bestätigt.</em></p>
+                </div>
+              </div>
+            </div>
+            {{ end }}
           </div>
 
         </div>
