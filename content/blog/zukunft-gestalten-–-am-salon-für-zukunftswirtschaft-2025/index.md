@@ -34,3 +34,5 @@ Das Wetter trug seinen Teil zur Dynamik bei. Kurz vor Beginn hob ein Sonnenschir
 ## Genuss, Gespräche und Zukunft
 
 Beim leckere Apéro von Ginger & Noosh GmbH wurde weiterdiskutiert, gelacht und ausgetauscht. Der Salon für Zukunftswirtschaft 2025 zeigt: Die Lösungen für morgen entstehen dort, wo Menschen heute ins Handeln kommen – mit Haltung, Humor und einem klaren Blick auf das Gemeinwohl.
+
+https://www.salon-zukunft.ch/
