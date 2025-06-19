@@ -10,15 +10,13 @@ comments = true
 
 <div class="lead">Der Salon 2025 versammelte Menschen, die Wirtschaft als Werkzeug für gesellschaftlichen Wandel verstehen. Statt leerer Visionen standen konkrete Projekte im Fokus: Ob Food Waste, Eigentumsmodelle, Kommunikation, Leadership oder Peer-Coaching – die Speaker:innen gaben Einblicke in ihre Arbeit, die heute schon Zukunft möglich macht.</div>
 
-
-
 ## Coworking-Kultur als Gastgeberin
 
 Der Salon ist mehr als eine Bühne – er ist Treffpunkt, Austauschraum und Denkwerkstatt. Möglich gemacht wird das Event vom Impact Hub Bern und dem Effinger Coworking, zwei Coworking Spaces, die die neue Wirtschaftskultur täglich leben. Chananda (Impact Hub) führte mit Leichtigkeit durch den Abend, Michelle Studer begrüsste die Gäste mit Wärme und Offenheit.
 
 ## Durchmischung statt Elfenbeinturm
 
-Was besonders auffiel: Die Vielfalt des Publikums. Jung und alt, Startup und Verein, Beraterin und Aktivist – die Mischung war bunt, das Interesse spürbar. Gerade diese Offenheit macht den Salon aus: Zukunft entsteht dort, wo verschiedene Perspektiven aufeinandertreffen.
+Jung und alt, Startup und Verein, Beraterin und Aktivist – die Mischung war bunt, das Interesse spürbar. Gerade diese Offenheit macht den Salon aus: Zukunft entsteht dort, wo verschiedene Perspektiven aufeinandertreffen.
 
 Auf der Bühne standen:
 
