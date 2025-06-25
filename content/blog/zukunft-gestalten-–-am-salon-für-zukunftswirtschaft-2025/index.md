@@ -36,4 +36,10 @@ Das Wetter trug seinen Teil zur Dynamik bei. Kurz vor Beginn hob ein Sonnenschir
 
 Beim leckere Apéro von Ginger & Noosh GmbH wurde weiterdiskutiert, gelacht und ausgetauscht. Der Salon für Zukunftswirtschaft 2025 zeigt: Die Lösungen für morgen entstehen dort, wo Menschen heute ins Handeln kommen – mit Haltung, Humor und einem klaren Blick auf das Gemeinwohl.
 
+Mehr Infos zum Salon:\
 https://www.salon-zukunft.ch/
+
+Organisiert durch:\
+[Impact Hub Bern](https://bern.impacthub.net/) & [Effinger Coworking Space](https://www.effinger.ch/)\
+Unterstützt durch:\
+[Standortförderung Kanton Bern](https://www.berninvest.be.ch/en/start.html)
