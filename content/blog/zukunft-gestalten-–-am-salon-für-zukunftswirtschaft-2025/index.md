@@ -1,5 +1,6 @@
 +++
 title = "Zukunft gestalten – am Salon für Zukunftswirtschaft 2025"
+date = "2025-06-17"
 draft = false
 tags = ["Community"]
 image = "salon_202500001_.jpg"
