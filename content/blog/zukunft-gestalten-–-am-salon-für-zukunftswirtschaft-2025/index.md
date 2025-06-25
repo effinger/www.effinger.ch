@@ -40,6 +40,7 @@ Mehr Infos zum Salon:\
 https://www.salon-zukunft.ch/
 
 Organisiert durch:\
-[Impact Hub Bern](https://bern.impacthub.net/) & [Effinger Coworking Space](https://www.effinger.ch/)\
-Unterstützt durch:\
+[Impact Hub Bern](https://bern.impacthub.net/) & [Effinger Coworking Space](https://www.effinger.ch/)
+
+[](https://www.effinger.ch/)Unterstützt durch:\
 [Standortförderung Kanton Bern](https://www.berninvest.be.ch/en/start.html)
