@@ -34,7 +34,7 @@ collections:
       - {
           name: "date",
           label: "Datum",
-          widget: "date",
+          widget: "datetime",
           format: "YYYY-MM-DD",
           dateFormat: "DD.MM.YYYY",
         }
