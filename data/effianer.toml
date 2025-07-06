@@ -17,19 +17,6 @@ linkedin = ""
 about = "Mediamatiker"
 
 [[Person]]
-name = "Benjamin Giesbrecht"
-gender = "m"
-image = "/images/effianer/benjamin-giesbrecht.jpg"
-email = "info@klickundklar.net"
-phone = ""
-website = "https://www.klickundklar.net/"
-twitter = ""
-facebook = ""
-instagram = "klickundklar"
-linkedin = ""
-about = "TYPO3-Berater und -Entwickler"
-
-[[Person]]
 name = "Christine Wieland-Trachsel"
 gender = "f"
 image = "/images/effianer/christine-wieland-trachsel.jpg"
@@ -158,20 +145,6 @@ facebook = ""
 instagram = ""
 linkedin = ""
 about = "Webdesign"
-
-[[Person]]
-name = "Domenica Hitz"
-gender = "f"
-image = "/images/effianer/domenica-hitz.jpg"
-description = ""
-email = "domenica@effinger.ch"
-phone = ""
-website = ""
-twitter = ""
-facebook = ""
-instagram = "effingerbern"
-linkedin = "effingerbern"
-about = "Kaffee"
 
 [[Person]]
 name = "Fabian Steiner"

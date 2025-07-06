@@ -15,6 +15,10 @@ name = "Carolina Steiner"
 image = "/images/effianer/carolina-steiner.jpg"
 
 [[Person]]
+name = "Benjamin Giesbrecht"
+image = "/images/effianer/benjamin-giesbrecht.jpg"
+
+[[Person]]
 name = "Christa-Maria Tobler"
 image = "/images/effianer/ehemalige/christa-maria-tobler.jpg"
 
@@ -39,6 +43,10 @@ image = "/images/effianer/ehemalige/daniel-osterwalder.jpg"
 [[Person]]
 name = "David Bruehlmeier"
 image = "/images/effianer/ehemalige/david-bruehlmeier.jpg"
+
+[[Person]]
+name = "Domenica Hitz"
+image = "/images/effianer/domenica-hitz.jpg"
 
 [[Person]]
 name = "Graziella Bärtsch"
