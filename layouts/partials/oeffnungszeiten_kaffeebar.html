@@ -1,7 +1,9 @@
 {{ $oeffnungszeiten := $.Site.Data.oeffnungszeiten_kaffeebar }}
-{{ $oeffnungszeiten.normal.text | markdownify }}
+{{ $oeffnungszeiten_text := $oeffnungszeiten.normal.text | markdownify }}
 {{ range $oeffnungszeiten.spezial }}
   {{ if and (lt .display_start now) (gt .display_end now) }}
-    {{ .text | markdownify }}
+    {{ $oeffnungszeiten_text = .text | markdownify }}
   {{ end }}
 {{ end}}
+{{ $oeffnungszeiten_text }}
+

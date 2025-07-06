@@ -16,40 +16,41 @@ text = """
 # Falls mehrere Spezial-Zeiten zutreffen, kommt der unterste zur Anwendung.
 
 # Ostern
-[[spezial]]
-display_start = 2024-03-01T00:00:00+01:00
-display_end = 2024-04-02T23:59:59+02:00
-text = """
-<div class="separator mt-20"></div>
-<p>Fr 29.3. Karfreitag <span>geschlossen</span></p>
-<p>Brücke bis Mo 1.4. <span>geschlossen</span></p>
-"""
+# [[spezial]]
+# display_start = 2024-03-01T00:00:00+01:00
+# display_end = 2024-04-02T23:59:59+02:00
+# text = """
+# <div class="separator mt-20"></div>
+# <p>Fr 29.3. Karfreitag <span>geschlossen</span></p>
+# <p>Brücke bis Mo 1.4. <span>geschlossen</span></p>
+# """
 
 # Auffahrt & Pfingsten
-[[spezial]]
-display_start = 2025-05-21T00:00:00+02:00
-display_end = 2025-06-09T23:59:59+02:00
-text = """
-<p>Mo <span>7-20 Uhr</span></p>
-<p>Di-Fr <span>7-22 Uhr</span></p>
-<p>Sa <span>geschlossen</span></p>
-<p>So <span>9-17 Uhr</span></p>
+# [[spezial]]
+# display_start = 2025-05-21T00:00:00+02:00
+# display_end = 2025-06-09T23:59:59+02:00
+# text = """
+# <p>Mo <span>7-20 Uhr</span></p>
+# <p>Di-Fr <span>7-22 Uhr</span></p>
+# <p>Sa <span>geschlossen</span></p>
+# <p>So <span>9-17 Uhr</span></p>
 
-<div class="separator mt-20"></div>
-<p>Do 29.5. Auffahrt <span>geschlossen</span></p>
-<p>Brücke bis So 01.6. <span>geschlossen</span></p>
-<p>So 8. + Mo 9.6 Pfingsten <span>geschlossen</span></p>
-"""
+# <div class="separator mt-20"></div>
+# <p>Do 29.5. Auffahrt <span>geschlossen</span></p>
+# <p>Brücke bis So 01.6. <span>geschlossen</span></p>
+# <p>So 8. + Mo 9.6 Pfingsten <span>geschlossen</span></p>
+# """
 
 # Sommer
 [[spezial]]
 display_start = 2025-06-19T00:00:00+02:00
 display_end = 2025-08-10T18:00:00+02:00
 text = """
-<div class="separator mt-20"></div>
-<div style="margin: 0 -12px; padding: 5px 9px 3px; border: 3px outset white;">
-<p><em>Von Sonntag 6.&thinsp;Juli bis Sonntag 10.&thinsp;August</em></p>
 <p>Mo-Fr <span>8-18 Uhr</span></p>
 <p>Sa-So <span>geschlossen</span></p>
+<div class="separator mt-20"></div>
+<div style="margin: 0 -12px; padding: 5px 9px 3px; border: 3px outset white;">
+<p><strong>Betriebsferien</strong></p>
+<p>Montag 28.&thinsp;Juli bis Sonntag 3.&thinsp;August</p>
 </div>
 """
