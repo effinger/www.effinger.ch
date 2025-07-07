@@ -35,7 +35,7 @@
     <div class="container">
       <div class="long-text-body">
         {{ $monthsByYear := .Pages.GroupByDate "2006" }}
-        {{ range (slice 2024 2023 2022 2021 2020 2019 2018 2017) }}
+        {{ range (slice 2025 2024 2023 2022 2021 2020 2019 2018 2017) }}
           {{ $year := string . }}
           {{ $months := index (where $monthsByYear ".Key" $year) 0 }}
           {{ $jahresabschluss_pdf := index $.Site.Data.finanzen_jahresabschluss_pdfs $year }}
