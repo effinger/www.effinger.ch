@@ -32,27 +32,21 @@ disableFastRender = true
 
 [menu]
 [[menu.main]]
-  name = "Kaffeebar"
-  pre = "<i class='fa fa-coffee'></i>"
-  weight = 101
-  url = "/kaffeebar/"
-
-[[menu.main]]
   name = "Coworking"
   pre = "<i class='fa fa-building'></i>"
-  weight = 102
+  weight = 101
   url = "/coworking/"
 
 [[menu.main]]
   name = "Räume"
   pre = "<i class='fa fa-calendar-check-o'></i>"
-  weight = 103
+  weight = 102
   url = "/raeume/"
 
 [[menu.main]]
   name = "Über uns"
   pre = "<i class='fa fa-users'></i>"
-  weight = 104
+  weight = 103
   url = "/community/"
 
   [[menu.main]]
@@ -93,13 +87,19 @@ disableFastRender = true
 
 [[menu.main]]
   name = "Events"
-  weight = 105
+  weight = 104
   url = "/Events/"
 
 [[menu.main]]
   name = "Services"
-  weight = 106
+  weight = 105
   url = "/services/"
+
+[[menu.main]]
+  name = "Kaffeebar"
+  pre = "<i class='fa fa-coffee'></i>"
+  weight = 106
+  url = "/kaffeebar/"
 
 [[menu.main]]
   name = "Blog"
