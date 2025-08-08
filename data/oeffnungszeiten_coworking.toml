@@ -27,19 +27,19 @@ text = """
 <p>So 8. + Mo 9.6 Pfingsten <span>geschlossen</span></p>
 """
 
-# Sommer
-[[spezial]]
-display_start = 2025-06-19T00:00:00+02:00
-display_end = 2025-08-10T18:00:00+02:00
-text = """
-<p>Mo-Fr <span>8-18 Uhr</span></p>
-<p>Sa-So <span>geschlossen</span></p>
-<div class="separator mt-20"></div>
-<div style="margin: 0 -12px; padding: 5px 9px 3px; border: 3px outset white;">
-<p><strong>Betriebsferien (Zugang mit Monats-/Team-Abo)</strong></p>
-<p>Montag 28.&thinsp;Juli bis Sonntag 3.&thinsp;August</p>
-</div>
-"""
+# Sommer - abgelaufen, kann entfernt werden wenn neue Sommerzeiten definiert werden
+# [[spezial]]
+# display_start = 2025-06-19T00:00:00+02:00
+# display_end = 2025-08-05T18:00:00+02:00
+# text = """
+# <p>Mo-Fr <span>8-18 Uhr</span></p>
+# <p>Sa-So <span>geschlossen</span></p>
+# <div class="separator mt-20"></div>
+# <div style="margin: 0 -12px; padding: 5px 9px 3px; border: 3px outset white;">
+# <p><strong>Betriebsferien (Zugang mit Monats-/Team-Abo)</strong></p>
+# <p>Montag 28.&thinsp;Juli bis Sonntag 3.&thinsp;August</p>
+# </div>
+# """
 
 # Sommer
 #[[spezial]]
