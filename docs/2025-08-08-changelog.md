@@ -22,3 +22,4 @@ Text einfach nur: Die Lumis Kaffeebar ist Untermieterin bei uns im Effinger. Öf
 - Button Text und Link Tauschen
 -- vorher: Unsere Karte PDF
 -- jetzt: Lumis Kaffeebar Website besuchen (https://www.lumis.ch)
+- Kaffeebar Team entfernen
