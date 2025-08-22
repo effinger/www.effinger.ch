@@ -20,7 +20,7 @@ Wer an einem gewöhnlichen Tag durch den Effinger spaziert, wird auf den ersten 
 
 Wenn wir die Arbeits- und die Lernwelt wirklich verbinden wollen, braucht es genau solche Orte. Orte, die durchlässig sind. In denen Lernen und Arbeiten nicht mehr als Gegensätze erscheinen, sondern als zwei Ausdrucksformen eines aktiven, selbstbestimmten Lebens.
 
-Mit Colearning Bern ist im Effinger ein solcher Ort entstanden – und er entwickelt sich weiter.
+Mit [Colearning Bern](https://www.colearningbern.ch/) ist im Effinger ein solcher Ort entstanden – und er entwickelt sich weiter.
 
 ![Collage: Fredi Zumbrunn](colearning2.jpg)
 
