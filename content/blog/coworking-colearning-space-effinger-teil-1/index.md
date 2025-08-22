@@ -3,7 +3,7 @@ title = "Coworking & Colearning Space Effinger (Teil 1)"
 date = "2025-08-21"
 description = "Dieser Blog gibt in drei Teilen Einblick in die Geschichte des Colearnings im Coworking Space Effinger."
 image = "colearning1.png"
-authors = [ "Fredi" ]
+authors = [ "Fredi Zumbrunn" ]
 comments = true
 tags = [ "Colearning", "Coworking" ]
 +++
@@ -31,7 +31,7 @@ Wir haben es einfach getan. Und: Wir tun es immer noch. Wir lernen noch.
 Colearner Christoph Schmitt hat dazu eine wunderbare Dokumentation erstellt. Im Gespräch mit jugendlichen und erwachsenen Colearner:innen lotet er aus, was Colearning ausmacht, was Colearning will, welche Erfahrungen gemacht werden und wie sich diese Art von Lernen vom traditionellen Lernen (in Schulen) unterscheidet. Er schreibt dazu: 
 "Was gibt's denn noch, wenn Schule immer weniger funktioniert – ausser Plan B? Richtig: C wie Colearning. Wir zeigen euch, was in der Schweiz möglich ist an Innovation, und zwar dort, wo sie händeringend gesucht wird: an den Schnittstellen von Lernen, Leben und Arbeiten."
 
-[Schau rein! Colearning: Lernen, wie es dir und mir entspricht](https://colearningbern.ch)
+[Schau rein! Colearning: Lernen, wie es dir und mir entspricht](https://www.youtube.com/watch?v=AL2oeRTsnYA&t=2571s)
 
 Was wir auf unserem weiteren Weg alles erkundet, ausprobiert und umgesetzt, also gelernt haben, könnt ihr in zwei weiteren Folgen dieses Blogs lesen. 
 
