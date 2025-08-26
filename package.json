@@ -7,5 +7,9 @@
   },
   "engines": {
     "node": ">=20.0.0"
+  },
+  "scripts": {
+    "dev": "hugo server",
+    "dev:future": "hugo server --buildFuture"
   }
 }
