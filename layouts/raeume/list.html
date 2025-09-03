@@ -84,8 +84,11 @@
           <p><strong>Apropos Kaffee:</strong> Der ist so beliebt, dass die unlimitierte Benutzung der Kaffeemaschine im Preis inklusive ist.</p>
 
           <!-- ROOMS-30-PROMO -->
+          {{ $promoEndDate := time "2025-08-31" }}
+          {{ if (time.Now).Before $promoEndDate }}
           <p class="bg-black white p-2"><b>Nutze den Sommer, um deine Ideen Raum zu geben!</b><br/>Von Juni bis August profitierst du jeden Freitag von vergünstigten Raummieten – ideal für Workshops, Sitzungen, Kurse oder kreative Projekte. Gültig nur freitags – von Juni bis Ende August für Aquarium, Pläfe und Atelier.</p>
           </p>
+          {{ end }}
         </div>
       </div>
     </div>

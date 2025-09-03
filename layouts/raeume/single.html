@@ -111,7 +111,8 @@
             </div>
 
             <!-- ROOMS-30-PROMO -->
-            {{ if ne .Title "Studio Effinger" }}
+            {{ $promoEndDate := time "2025-08-31" }}
+            {{ if and (ne .Title "Studio Effinger") ((time.Now).Before $promoEndDate) }}
             <div class="row raeume-eigenschaften">
               <div class="col-sm-12">
                 <div class="raeume-title">Sommeraktion 2025</div>
