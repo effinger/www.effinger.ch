@@ -42,19 +42,37 @@
 {{ define "main" }}
 <div class="container-outer">
   <div class="container">
-    <div class="logo-container">
-      <div class="logo"></div>
-      <div class="loader"></div>
+    <div class="header-bar">
+      <div class="date-time-section">
+        <div class="current-date" id="date-today"></div>
+        <div class="current-time">&nbsp;</div>
+      </div>
+      <div class="logo-container">
+        <div class="logo"></div>
+        <div class="loader"></div>
+      </div>
     </div>
 
-    <h1 class="title">
-      Gäste heute&nbsp;&mdash;
-      <span id="date-today" style="white-space: nowrap;"></span>
-    </h1>
+    <div class="main-content">
+      <div class="welcome-section">
+        <h1 class="welcome-title">Willkommen</h1>
+      </div>
 
-    <div class="clock">&nbsp;</div>
+      <div class="coffee-section">
+        <div class="coffee-info">
+          <div class="coffee-icon">☕</div>
+          <div class="coffee-details">
+            <div class="coffee-title">Kaffeepause</div>
+            <div class="coffee-time">10:00 - 10:30</div>
+          </div>
+        </div>
+      </div>
 
-    <div class="center-content"></div>
+      <div class="events-section">
+        <h2 class="events-title">Gäste heute</h2>
+        <div class="center-content"></div>
+      </div>
+    </div>
 
     <div class="bottom-content"></div>
   </div>

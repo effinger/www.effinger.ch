@@ -16,10 +16,14 @@ is terribly old and incompatible with most modern TLS/HTML/CSS/JS features. The 
 
   $(document).ready(function () {
     initializeDisplay()
+    updateCoffeeBreakVisibility()
 
     // Load and periodically update bookings.
     loadBookings()
     setInterval(loadBookings, 33000)
+    
+    // Update coffee break visibility every minute
+    setInterval(updateCoffeeBreakVisibility, 60000)
   })
 
   function initializeDisplay() {
@@ -59,7 +63,7 @@ is terribly old and incompatible with most modern TLS/HTML/CSS/JS features. The 
   function refreshClock() {
     // console.log("renderClock", moment().format('HH:mm:ss.SSS'))
 
-    $('.clock').html(
+    $('.current-time').html(
       moment().format('HH') +
       '<span class="time-separator">:</span>' +
       moment().format('mm')
@@ -88,7 +92,7 @@ is terribly old and incompatible with most modern TLS/HTML/CSS/JS features. The 
 
     // Update the on-page title to show today's date.
     var startOfDay = moment().startOf('day')
-    $('.title #date-today').html(startOfDay.format('dd DD.MM.YYYY'))
+    $('#date-today').html(startOfDay.format('dd DD.MM.YYYY'))
 
     $.ajax({
       url: window.BENJIBOOKS_API_URL,
@@ -197,6 +201,62 @@ is terribly old and incompatible with most modern TLS/HTML/CSS/JS features. The 
   function isBrownbag(booking) {
     var title = booking.title || ""
     return title.match(/brownbag/i)
+  }
+
+  function updateCoffeeBreakVisibility() {
+    var now = moment()
+    var isWeekday = now.day() >= 1 && now.day() <= 5 // Monday (1) to Friday (5)
+    
+    // Test parameter to force coffee break state (1=upcoming, 2=active, 3=past)
+    var urlParams = getUrlParams()
+    var testMode = urlParams['coffeemode']
+    
+    if (isWeekday) {
+      $('.coffee-section').show()
+      
+      var currentHour = now.hour()
+      var currentMinute = now.minute()
+      var totalMinutes = currentHour * 60 + currentMinute
+      var coffeeStartMinutes = 10 * 60 // 10:00
+      var coffeeEndMinutes = 10 * 60 + 30 // 10:30
+      
+      // Override with test mode if provided
+      var isBeforeCoffee, isDuringCoffee, isAfterCoffee
+      
+      if (testMode === '1') {
+        // Force upcoming state
+        isBeforeCoffee = true
+        isDuringCoffee = false
+        isAfterCoffee = false
+      } else if (testMode === '2') {
+        // Force active state
+        isBeforeCoffee = false
+        isDuringCoffee = true
+        isAfterCoffee = false
+      } else if (testMode === '3') {
+        // Force past state
+        isBeforeCoffee = false
+        isDuringCoffee = false
+        isAfterCoffee = true
+      } else {
+        // Normal time-based logic
+        isBeforeCoffee = totalMinutes < coffeeStartMinutes
+        isDuringCoffee = totalMinutes >= coffeeStartMinutes && totalMinutes < coffeeEndMinutes
+        isAfterCoffee = totalMinutes >= coffeeEndMinutes
+      }
+      
+      $('.coffee-info').removeClass('upcoming active-now past')
+      
+      if (isDuringCoffee) {
+        $('.coffee-info').addClass('active-now')
+      } else if (isBeforeCoffee) {
+        $('.coffee-info').addClass('upcoming')
+      } else if (isAfterCoffee) {
+        $('.coffee-info').addClass('past')
+      }
+    } else {
+      $('.coffee-section').hide()
+    }
   }
 
   // Read a page's URL search params and return them as a map.
