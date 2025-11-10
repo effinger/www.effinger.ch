@@ -186,6 +186,20 @@ linkedin = ""
 about = "Live-Streaming"
 
 [[Person]]
+name = "Jonas Österle"
+gender = "m"
+image = "/images/effianer/jonas-oesterle.jpg"
+email = "make@jonasoesterle.de"
+phone = ""
+website = "https://jonasoesterle.de"
+twitter = "joenasoesterle"
+facebook = ""
+instagram = "jonas_oesterle"
+linkedin = "jonas-österle-557432194"
+youtube = "UCsGKlCciWEMbeS1et596Rvw"
+about = "Yoga-Lehrer & Social Startup Entrepreneur"
+
+[[Person]]
 name = "Manuel Bürli"
 gender = "m"
 image = "/images/effianer/manuel-buerli.jpg"
