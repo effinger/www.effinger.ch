@@ -49,6 +49,13 @@ name = "Domenica Hitz"
 image = "/images/effianer/domenica-hitz.jpg"
 
 [[Person]]
+name = "Faustina Kromah"
+image = "/images/effianer/faustina-kromah.jpg"
+email = "faustina@effinger.ch"
+website = "https://www.3-bewegt.ch/"
+about = "Embodiment"
+
+[[Person]]
 name = "Graziella Bärtsch"
 image = "/images/effianer/ehemalige/graziella-baertsch.jpg"
 

@@ -95,19 +95,6 @@ linkedin = "sniederhauser"
 about = "Edu-Tech"
 
 [[Person]]
-name = "Faustina Kromah"
-gender = "f"
-image = "/images/effianer/faustina-kromah.jpg"
-email = "faustina@effinger.ch"
-phone = ""
-website = "https://www.3-bewegt.ch/"
-twitter = ""
-facebook = ""
-instagram = ""
-linkedin = ""
-about = "Embodiment"
-
-[[Person]]
 name = "Raffael Krebs"
 gender = "m"
 image = "/images/effianer/raffael-krebs.jpg"
