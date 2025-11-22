@@ -7,6 +7,7 @@ draft = false
 image = "image4.png"
 authors = [ "Fredi Zumbrunn" ]
 comments = true
+tags = [ "Colearning", "Coworking" ]
 +++
 **Vom Experiment zur Bewegung**
 

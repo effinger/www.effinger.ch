@@ -7,8 +7,8 @@ draft = false
 image = "image5.png"
 authors = [ "Fredi Zumbrunn" ]
 comments = true
+tags = [ "Colearning", "Coworking" ]
 +++
-## **Coworking & Colearning Space Effinger (Teil 3\)**
 
 **Coworking und Colearning – eine Verbindung mit Zukunft**
 
