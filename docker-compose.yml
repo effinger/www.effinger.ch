@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  hugo:
+    build: .
+    container_name: effinger-hugo
+    ports:
+      - "1313:1313"
+    volumes:
+      - .:/src
+    environment:
+      - HUGO_ENV=development
+    command: hugo server --bind 0.0.0.0 --buildDrafts --buildFuture --disableFastRender

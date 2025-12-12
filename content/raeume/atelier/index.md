@@ -34,7 +34,7 @@ prices = [
 ]
 
 renovation_notice = true
-renovation_notice_text = "Hinweis: Kleine Veränderung, grosse Wirkung: Das Atelier wird momentan umgestaltet und zeigt sich deshalb vorübergehend ein wenig anders als auf den Bildern. Danke fürs Verständnis!"
+renovation_notice_text = "Kleine Veränderung, grosse Wirkung: Das Atelier wird momentan umgestaltet und zeigt sich deshalb vorübergehend ein wenig anders als auf den Bildern. Danke fürs Verständnis!"
 
 +++
 Der abgetrennte Raum neben Aquarium und Schreineratelier eignet sich als Sitzungs-, Gestaltungs- und Workshopraum. Hier kommen Gestaltungsfreude, kreative Ansätze und Austausch ins Machen. Es kann mit Hand und Kopf geschaffen und auf weissen Wänden visualisiert werden.

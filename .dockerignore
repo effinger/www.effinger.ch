@@ -1,0 +1,30 @@
+# Git
+.git
+.gitignore
+
+# Hugo
+public/
+resources/
+.hugo_build.lock
+
+# Node
+node_modules/
+npm-debug.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docs
+docs/
+
+# Netlify
+netlify/
+.netlify/
