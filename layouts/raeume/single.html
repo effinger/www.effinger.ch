@@ -125,6 +125,18 @@
               </div>
             </div>
             {{ end }}
+
+            <!-- ATELIER-RENOVATION-NOTICE -->
+            {{ if .Params.renovation_notice }}
+            <div class="row raeume-eigenschaften">
+              <div class="col-sm-12">
+                <div class="raeume-title">Hinweis</div>
+                <div class="raeume-content" style="border-left: 6px solid #fc7348; padding-left: 0.5rem">
+                  <p>{{ .Params.renovation_notice_text }}</p>
+                </div>
+              </div>
+            </div>
+            {{ end }}
           </div>
 
         </div>
