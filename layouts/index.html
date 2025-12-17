@@ -2,9 +2,20 @@
 {{ end }}
 
 {{ define "main" }}
-{{ $auffahrt_pfingsten := and (ge now $.Site.Data.oeffnungszeiten_ferien.auffahrt_pfingsten.from) (le now $.Site.Data.oeffnungszeiten_ferien.auffahrt_pfingsten.upto) }}
-{{ $sommerferien := and (ge now $.Site.Data.oeffnungszeiten_ferien.sommer.from) (le now $.Site.Data.oeffnungszeiten_ferien.sommer.upto) }}
-{{ $winterferien := and (ge now $.Site.Data.oeffnungszeiten_ferien.winter.from) (le now $.Site.Data.oeffnungszeiten_ferien.winter.upto) }}
+{{ $auffahrtData := $.Site.Data.oeffnungszeiten_ferien.auffahrt_pfingsten }}
+{{ $auffahrtBannerDays := $auffahrtData.banner_days_before | default 14 }}
+{{ $auffahrtBannerStart := $auffahrtData.from.AddDate 0 0 (mul $auffahrtBannerDays -1) }}
+{{ $auffahrt_pfingsten := and (ge now $auffahrtBannerStart) (le now $auffahrtData.upto) }}
+
+{{ $sommerData := $.Site.Data.oeffnungszeiten_ferien.sommer }}
+{{ $sommerBannerDays := $sommerData.banner_days_before | default 14 }}
+{{ $sommerBannerStart := $sommerData.from.AddDate 0 0 (mul $sommerBannerDays -1) }}
+{{ $sommerferien := and (ge now $sommerBannerStart) (le now $sommerData.upto) }}
+
+{{ $winterData := $.Site.Data.oeffnungszeiten_ferien.winter }}
+{{ $winterBannerDays := $winterData.banner_days_before | default 14 }}
+{{ $winterBannerStart := $winterData.from.AddDate 0 0 (mul $winterBannerDays -1) }}
+{{ $winterferien := and (ge now $winterBannerStart) (le now $winterData.upto) }}
 
 <!-- Page Wrap -->
 <div class="page page-home" id="top">
