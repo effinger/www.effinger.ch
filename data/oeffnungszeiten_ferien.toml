@@ -1,15 +1,21 @@
 # During these date ranges the special opening hours will be shown.
 # –> That's the idea, anyways. The current implementation is a hybrid between this approach and the other oeffnungszeiten files. Will have to come up with a good way of combining the two.
 # (The changes only go into effect on rerender, e.g. with the nightly build.)
+#
+# banner_days_before: Number of days before the closure period to start showing the banner
+#                     This ensures visitors are informed in advance
 
 [auffahrt_pfingsten]
 from = 2024-04-20T00:00:00+02:00
 upto = 2024-05-20T23:59:59+02:00
+banner_days_before = 14
 
 [sommer]
 from = 2024-06-19T00:00:00+02:00
 upto = 2024-08-11T18:00:00+02:00
+banner_days_before = 14
 
 [winter]
-from = 2024-12-02T00:00:00+01:00
-upto = 2025-01-05T18:00:00+01:00
+from = 2025-12-24T00:00:00+01:00
+upto = 2026-01-04T23:59:59+01:00
+banner_days_before = 14
