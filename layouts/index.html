@@ -165,21 +165,33 @@
   </section>
   {{ end }}
 
-  <!-- Effinger Angebote -->
-  <section id="angebote" class="page-section pt-40 pb-20 bg-effingergelb">
-
-    {{ if $winterferien }}
-    <div class="container pb-40">
-      <div style="flex: 1 1 200px; display: flex; flex-flow: row nowrap; justify-content: center; align-items: flex-start;">
-        <img src="/images/betriebsferien-winter-baum.png" alt="" aria-hidden="true"
-             style="width: 80px; margin: 0.5em 0.8em 0; border-radius: 50%; padding: 3px 4px 5px; background: white;" />
-        <p class="fs-3" style="margin: 7px;">
-          Unser Coworking ist bis am <strong class="text-nowrap">23.12.2025</strong> offen.<br />
-          Anschliessend gönnen wir uns eine Pause und öffnen ab <strong class="text-nowrap">Montag, 5.1.2026</strong> wieder für dich.
-        </p>
+  <!-- Betriebsferien Winter -->
+  {{ if $winterferien }}
+  <section class="page-section pt-40 pb-40">
+    <div class="container relative">
+      <div class="row">
+        <div class="col-sm-12 col-md-10 offset-md-1 mb-md-20">
+          <div class="section-text text-center">
+            <div style="margin-bottom: 20px;">
+              <img src="/images/betriebsferien-winter-baum.png" alt="" aria-hidden="true"
+                   style="width: 120px; height: 120px; border-radius: 50%; padding: 10px; background: #fbdb00; box-shadow: 0 4px 12px rgba(0,0,0,0.1);" />
+            </div>
+            <h2 class="hs-line-11 font-alt mb-30">
+              Betriebsferien
+            </h2>
+            <p class="lead" style="font-size: 1.3em; line-height: 1.6;">
+              <strong>Unser Coworking ist bis am <span class="text-nowrap">23.12.2025</span> offen.</strong><br />
+              Anschliessend gönnen wir uns eine Pause und öffnen ab <strong class="text-nowrap">Montag, 5.1.2026</strong> wieder für dich.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
-    {{ end }}
+  </section>
+  {{ end }}
+
+  <!-- Effinger Angebote -->
+  <section id="angebote" class="page-section pt-40 pb-20 bg-effingergelb">
 
     <div class="container" style="max-width: 900px;">
       <div class="list" style="justify-content: space-around;">
