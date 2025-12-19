@@ -6,23 +6,18 @@
 
 {{/* Load webcal events from Netlify function */}}
 {{ $webcalData := dict "events" slice }}
-{{ $webcalUrl := "" }}
 
-{{/* Determine webcal function URL based on environment */}}
-{{ if .Site.IsServer }}
-  {{/* Local development - use local Netlify dev server if available */}}
-  {{ $webcalUrl = "http://localhost:8888/.netlify/functions/webcal-events" }}
-{{ else }}
-  {{/* Production - use deployed function */}}
-  {{ $webcalUrl = "/.netlify/functions/webcal-events" }}
-{{ end }}
+{{/* Only load webcal events in production (skip in local development) */}}
+{{ if not hugo.IsServer }}
+  {{ $webcalUrl := "/.netlify/functions/webcal-events" }}
 
-{{/* Try to fetch webcal events, but don't fail if unavailable */}}
-{{ with resources.GetRemote $webcalUrl }}
-  {{ with .Err }}
-    {{ warnf "Could not load webcal events: %s" . }}
-  {{ else }}
-    {{ $webcalData = . | unmarshal }}
+  {{/* Try to fetch webcal events, but don't fail if unavailable */}}
+  {{ with resources.GetRemote $webcalUrl }}
+    {{ with .Err }}
+      {{ warnf "Could not load webcal events: %s" . }}
+    {{ else }}
+      {{ $webcalData = . | unmarshal }}
+    {{ end }}
   {{ end }}
 {{ end }}
 
