@@ -1,0 +1,17 @@
+# Webcal Calendar Configuration
+#
+# This file contains the configuration for loading events from external
+# webcal/iCal calendars. The webcal URL will be converted to https and
+# fetched by the Netlify function.
+
+# The webcal URL to fetch events from
+# Note: webcal:// URLs are automatically converted to https://
+url = "webcal://p106-caldav.icloud.com/published/2/MTM2MzE1OTE2MDEzNjMxNZlb1m7MIheZ1_-v-b0-22HbPsxJuo7P0pZQCMkCXHX_YuKqiEtPUWXN3WKk3yhOR52rWVTWO2-MJ32BRvVatL0"
+
+# Timezone for event display
+# Events will be displayed in this timezone
+timezone = "Europe/Zurich"
+
+# Whether to enable webcal integration
+# Set to false to disable loading webcal events
+enabled = true
