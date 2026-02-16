@@ -2,14 +2,13 @@
 title = "Atelier"
 weight = 203
 description = "Das Atelier und die Werkstatt im Effinger bieten verschiedenen Künstlern und Kreativen ein Zuhause."
-image = "atelier-354.jpg"
+image = "atelier-362.jpg"
 draft = false
 reservation_link = "https://www.benjibooks.com/resources/effinger/atelier/"
 
 gallery = [
-  "atelier-354.jpg",
-  "atelier-361.jpg",
-  "atelier-356.jpg",
+  "atelier-362.jpg",
+  "atelier-363.jpg",
 ]
 
 square_meters = 27
