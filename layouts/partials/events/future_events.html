@@ -1,10 +1,34 @@
 {{ $result := slice }}
 
+{{/* Load external event sources */}}
 {{ $brownbagEvents := unmarshal (resources.GetRemote "https://brownbag.effinger.ch/events.json") }}
 {{ $brownbagEventIndex := 0 }}
 
+{{/* Load webcal events from Netlify function */}}
+{{ $webcalData := dict "events" slice }}
+
+{{/* Only load webcal events in production (skip in local development) */}}
+{{ if not hugo.IsServer }}
+  {{ $webcalUrl := "/.netlify/functions/webcal-events" }}
+
+  {{/* Try to fetch webcal events, but don't fail if unavailable */}}
+  {{ with resources.GetRemote $webcalUrl }}
+    {{ with .Err }}
+      {{ warnf "Could not load webcal events: %s" . }}
+    {{ else }}
+      {{ $webcalData = . | unmarshal }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{ $webcalEvents := $webcalData.events }}
+{{ $webcalEventIndex := 0 }}
+
+{{/* Merge all event sources chronologically */}}
 {{ range sort (where .Site.Pages "Section" "events") "Params.startdate" "asc" }}
   {{ if gt (time (default now (default .Params.startdate .Params.enddate))) now }}
+
+    {{/* Insert brownbag events that come before this markdown event */}}
     {{ if $brownbagEvents }}
       {{ if lt $brownbagEventIndex (len $brownbagEvents) }}
         {{ $nextBrownbagEvent := index $brownbagEvents $brownbagEventIndex }}
@@ -15,8 +39,44 @@
       {{ end }}
     {{ end }}
 
+    {{/* Insert webcal events that come before this markdown event */}}
+    {{ if $webcalEvents }}
+      {{ range seq $webcalEventIndex (sub (len $webcalEvents) 1) }}
+        {{ $idx := . }}
+        {{ $nextWebcalEvent := index $webcalEvents $idx }}
+        {{ if $nextWebcalEvent.startdate }}
+          {{ if lt (time $nextWebcalEvent.startdate) (time $.Params.startdate) }}
+            {{ $webcalEventIndex = add $webcalEventIndex 1 }}
+            {{ $result = $result | append (partial "events/webcal_summary.html" (dict "event" $nextWebcalEvent "context" $)) }}
+          {{ else }}
+            {{/* Stop checking - found future event */}}
+            {{ break }}
+          {{ end }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+
+    {{/* Add markdown event */}}
     {{ partial "events/calc_dates.html" . }}
     {{ $result = $result | append (partial "events/event_summary.html" .) }}
+  {{ end }}
+{{ end }}
+
+{{/* Add remaining brownbag events */}}
+{{ if $brownbagEvents }}
+  {{ range seq $brownbagEventIndex (sub (len $brownbagEvents) 1) }}
+    {{ $event := index $brownbagEvents . }}
+    {{ $result = $result | append (partial "events/brownbag_summary.html" (dict "event" $event "context" $)) }}
+  {{ end }}
+{{ end }}
+
+{{/* Add remaining webcal events */}}
+{{ if $webcalEvents }}
+  {{ range seq $webcalEventIndex (sub (len $webcalEvents) 1) }}
+    {{ $event := index $webcalEvents . }}
+    {{ if $event.startdate }}
+      {{ $result = $result | append (partial "events/webcal_summary.html" (dict "event" $event "context" $)) }}
+    {{ end }}
   {{ end }}
 {{ end }}
 
