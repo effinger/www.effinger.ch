@@ -3,8 +3,15 @@
 {{ $brownbagEvents := unmarshal (resources.GetRemote "https://brownbag.effinger.ch/events.json") }}
 {{ $brownbagEventIndex := 0 }}
 
-{{ range sort (where .Site.Pages "Section" "events") "Params.startdate" "asc" }}
+{{/* First collect future events, then sort – avoids sort instability with large past event sets */}}
+{{ $futureEvents := slice }}
+{{ range where .Site.Pages "Section" "events" }}
   {{ if gt (time (default now (default .Params.startdate .Params.enddate))) now }}
+    {{ $futureEvents = $futureEvents | append . }}
+  {{ end }}
+{{ end }}
+
+{{ range sort $futureEvents "Params.startdate" "asc" }}
     {{ if $brownbagEvents }}
       {{ if lt $brownbagEventIndex (len $brownbagEvents) }}
         {{ $nextBrownbagEvent := index $brownbagEvents $brownbagEventIndex }}
@@ -17,7 +24,6 @@
 
     {{ partial "events/calc_dates.html" . }}
     {{ $result = $result | append (partial "events/event_summary.html" .) }}
-  {{ end }}
 {{ end }}
 
 {{ return $result }}
