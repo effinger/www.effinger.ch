@@ -1,0 +1,65 @@
+# Calendar Event Mapping Configuration
+#
+# This file maps webcal event titles to local metadata using regex patterns.
+# When an event from the webcal feed matches a pattern, the associated metadata
+# will be merged with the event data.
+#
+# Pattern matching:
+# - Patterns are tested in order from top to bottom
+# - First matching pattern wins
+# - Use regex syntax (case-insensitive by default)
+#
+# Available fields:
+# - pattern: Regex pattern to match against event title (required)
+# - categories: Array of category names for event filtering
+# - description: Detailed description (can override webcal description)
+# - image: Featured image path
+# - location: Override location if needed
+# - registration: Enable registration (true/false)
+# - registration_max: Maximum number of registrations
+#
+# Example patterns:
+# - "^Coworking" - Matches titles starting with "Coworking"
+# - "Montag|Monday" - Matches titles containing "Montag" OR "Monday"
+# - "\\d{2}\\.\\d{2}\\." - Matches dates like "20.01."
+
+# Coworking Events
+[[mapping]]
+pattern = "^Coworking.*Montag"
+categories = ["Coworning"]
+description = "Jeden Montag treffen sich unsere Coworker zum gemeinsamen Arbeiten."
+image = "/images/effinger/coworking-space.jpg"
+
+[[mapping]]
+pattern = "^Coworking.*Freitag"
+categories = ["Coworning"]
+description = "Freitags gemeinsam arbeiten und die Woche ausklingen lassen."
+image = "/images/effinger/coworking-space.jpg"
+
+# Community Events
+[[mapping]]
+pattern = "Schatzhebung"
+categories = ["Community"]
+description = "Unser monatliches Community-Event zum Austausch und Vernetzen."
+image = "/upload/schatzhebung-tavolata.jpg"
+
+# Learning Events
+[[mapping]]
+pattern = "Colearning|Co-Learning"
+categories = ["Colearning"]
+description = "Gemeinsam lernen und Wissen teilen."
+
+# Kaffeebar Events
+[[mapping]]
+pattern = "Kaffeebar.*offen|Kaffeebar.*geöffnet"
+categories = ["Kaffeebar"]
+description = "Die Kaffeebar im Effinger hat geöffnet."
+location = "Kaffeebar Effinger, Effingerstrasse 10, Bern"
+
+# Default fallback - matches everything if no other pattern matched
+# This is optional and provides defaults for unmapped events
+[[mapping]]
+pattern = ".*"
+categories = ["Sonstiges"]
+# No description override - use webcal description
+# No image - use default from template

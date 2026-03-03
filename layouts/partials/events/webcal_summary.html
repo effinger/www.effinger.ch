@@ -1,0 +1,93 @@
+{{ $event := .event }}
+{{ $context := .context }}
+
+{{/* Parse dates */}}
+{{ $startDate := time $event.startdate }}
+{{ $endDate := time (default $event.startdate $event.enddate) }}
+
+{{/* Apply mapping based on event title */}}
+{{ $categories := slice "Sonstiges" }}
+{{ $description := $event.description }}
+{{ $image := "" }}
+{{ $location := $event.location }}
+{{ $matched := false }}
+
+{{/* Load calendar mapping configuration */}}
+{{ $mappings := $context.Site.Data.calendar_mapping.mapping }}
+
+{{/* Find first matching mapping rule */}}
+{{ range $mappings }}
+  {{ if not $matched }}
+    {{ $pattern := .pattern }}
+    {{ $titleLower := lower $event.title }}
+
+    {{/* Simple pattern matching using Hugo template functions */}}
+    {{ $shouldMatch := false }}
+
+    {{ if eq $pattern ".*" }}
+      {{/* Wildcard - matches everything (only used as fallback) */}}
+      {{ $shouldMatch = true }}
+    {{ else if hasPrefix $pattern "^" }}
+      {{/* Pattern starts with ^ - check if title starts with pattern */}}
+      {{ $cleanPattern := strings.TrimPrefix "^" $pattern }}
+      {{ $cleanPattern = lower (replace $cleanPattern ".*" "") }}
+      {{ if hasPrefix $titleLower $cleanPattern }}
+        {{ $shouldMatch = true }}
+      {{ end }}
+    {{ else if in $pattern "|" }}
+      {{/* Pattern contains | - check if title contains any of the alternatives */}}
+      {{ $alternatives := split $pattern "|" }}
+      {{ range $alternatives }}
+        {{ $alt := lower (strings.Trim . " ") }}
+        {{ if in $titleLower $alt }}
+          {{ $shouldMatch = true }}
+        {{ end }}
+      {{ end }}
+    {{ else }}
+      {{/* Default - check if pattern is contained in title */}}
+      {{ $cleanPattern := lower $pattern }}
+      {{ if in $titleLower $cleanPattern }}
+        {{ $shouldMatch = true }}
+      {{ end }}
+    {{ end }}
+
+    {{/* Apply mapping if matched */}}
+    {{ if $shouldMatch }}
+      {{ $matched = true }}
+      {{ if .categories }}{{ $categories = .categories }}{{ end }}
+      {{ if .description }}{{ $description = .description }}{{ end }}
+      {{ if .image }}{{ $image = .image }}{{ end }}
+      {{ if .location }}{{ $location = .location }}{{ end }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{/* Render event summary */}}
+<div class="webcal-event" data-uid="{{ $event.uid }}">
+  <div class="event-item bg-gray clearfix">
+    <div class="cat">
+      {{ $cat_len := len $categories }}
+      {{ range first 3 $categories }}
+      <div class="{{ if eq $cat_len 2 }}half {{ else if gt $cat_len 2 }}third {{ end }}{{ . | urlize }}"></div>
+      {{ end }}
+    </div>
+    <div class="event-date text">
+      <div class="day">{{ $startDate.Day }}</div>
+      <div class="month font-alt">{{ slicestr (index $context.Site.Data.de.months $startDate.Month) 0 3 }}</div>
+    </div>
+    <div class="event-text text bg-white">
+      <h5 class="uppercase">{{ $event.title }}</h5>
+      <p>
+        {{ if eq $startDate.Format "2006-01-02" $endDate.Format "2006-01-02" }}
+          <i class="fa fa-clock-o fa-inline"></i>&nbsp;{{ printf "%02d:%02d" $startDate.Hour $startDate.Minute }} Uhr<span class="separator">&nbsp;</span>
+        {{ else }}
+          <i class="fa fa-clock-o fa-inline"></i>&nbsp;{{ printf "%02d:%02d" $startDate.Hour $startDate.Minute }} – {{ printf "%02d:%02d" $endDate.Hour $endDate.Minute }} Uhr<span class="separator">&nbsp;</span>
+        {{ end }}
+        <i class="fa fa-tags fa-inline"></i>&nbsp;{{ delimit $categories ", " }}
+      </p>
+      {{ if $description }}
+      <p class="event-description">{{ $description | truncate 120 }}</p>
+      {{ end }}
+    </div>
+  </div>
+</div>
