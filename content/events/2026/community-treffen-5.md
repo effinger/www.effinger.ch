@@ -3,7 +3,7 @@ title = "Effinger Community-Treffen Mai"
 event_id = 202605
 startdate = "2026-05-07T12:00:00"
 enddate = "2026-05-07T14:00:00"
-description = "Wir treffen jeden Monat als Community. Neben den Community Membern sind auch Gäste herzlich willkommen."
+description = "Einmal im Monat öffnen wir den Raum für Austausch, Mitgestaltung und Vernetzung."
 image = "/upload/community-treffen.jpg"
 categories = ["Community"]
 location = "Effinger 1. OG"
@@ -12,6 +12,12 @@ registration_close = ""
 registration_max = ""
 +++
 
-Wir treffen uns jeden Monat als Community. Neben den Community Membern sind auch **Gäste herzlich willkommen**.
+Einmal im Monat öffnen wir den Raum für Austausch, Mitgestaltung und Vernetzung.
+
+Du bist Teil der Community – oder möchtest es werden? Dann komm vorbei.
+
+Wir teilen, was läuft.
+Wir sprechen über Ideen.
+Wir gestalten gemeinsam die nächsten Schritte.
 
 ![Effinger Community-Treffen](/upload/community-treffen.jpg)
