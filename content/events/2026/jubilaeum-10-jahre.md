@@ -4,7 +4,7 @@ event_id = 202610
 startdate = "2026-03-06T17:00:00"
 enddate = "2026-03-06T23:00:00"
 description = "Statt eines Jubiläumsevents feiern wir ein ganzes Jahr lang: 10 Monate, 10 Themen, eine bunte Community. Zurückblicken, nach vorne schauen, essen, feiern."
-image = "/upload/jubilaeum-10-jahre-banner.png"
+image = "/upload/jubilaeum-10-jahre-banner.webp"
 categories = ["Community"]
 location = "Stadtkloster Frieden, Friedensstrasse 9, 3007 Bern"
 registration = false
@@ -12,7 +12,7 @@ registration_close = ""
 registration_max = ""
 +++
 
-![10 Jahre Effinger](/upload/jubilaeum-10-jahre-banner.png)
+![10 Jahre Effinger](/upload/jubilaeum-10-jahre-banner.webp)
 
 ## 10 Jahre Effinger – eine Party reicht da nicht!
 
