@@ -7,3 +7,4 @@ npm-debug.log
 .vs
 .hugo_build.lock
 .env*
+content-specs/

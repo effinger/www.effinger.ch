@@ -1,0 +1,83 @@
+{{ define "main" }}
+<!-- Page Wrap -->
+<div class="page" id="top">
+
+  <nav class="main-nav dark stick-fixed">
+    {{ partial "navigation.html" . }}
+  </nav>
+
+  <!-- Banner (mit Abstand für fixe Navbar) -->
+  <section class="jubilaeum-v2" style="padding-top: 55px;">
+    <div class="jubilaeum-v2__image-link">
+      <img src="/upload/jubilaeum-10-jahre-banner.webp"
+           alt="10 Jahre Effinger Community"
+           class="jubilaeum-v2__img" />
+    </div>
+  </section>
+
+  <!-- Konzept -->
+  <section class="page-section bg-gray-lighter">
+    <div class="container relative">
+      <div class="row">
+        <div class="col-md-8 offset-md-2">
+          <h1 class="section-title font-alt mb-40 text-center">{{ .Title }}</h1>
+          <div class="section-text">
+            {{ .Content }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Events -->
+  <section class="page-section events" id="events">
+    <div class="container relative">
+      <h2 class="section-title font-alt mb-70 mb-sm-40">Jubiläums-Events 2026</h2>
+
+      {{/* Alle Events mit Kategorie "Jubiläum", sortiert nach Datum */}}
+      {{ $jubEvents := slice }}
+      {{ range where .Site.Pages "Section" "events" }}
+        {{ if in .Params.categories "Jubiläum" }}
+          {{ $jubEvents = $jubEvents | append . }}
+        {{ end }}
+      {{ end }}
+      {{ $jubEvents = sort $jubEvents "Params.startdate" "asc" }}
+
+      <div class="eventlist">
+        {{ range $jubEvents }}
+          {{ partial "events/calc_dates.html" . }}
+          {{ $isPast := (time .Params.enddate).Before now }}
+          <a href="{{ .RelPermalink }}#t">
+            <div class="event-item bg-gray clearfix">
+              <div class="cat">
+                {{ $cat_len := len .Params.categories }}
+                {{ range first 3 .Params.categories }}
+                <div class="{{ if eq $cat_len 2 }}half {{ else if gt $cat_len 2 }}third {{ end }}{{ . | urlize }}"></div>
+                {{ end }}
+              </div>
+              <div class="event-date text{{ if $isPast }} striped{{ end }}">
+                <div class="day">{{ .Scratch.Get "start_day" }}</div>
+                <div class="month font-alt">{{ .Scratch.Get "start_shortmonth" }}</div>
+              </div>
+              <div class="event-text text bg-white">
+                <h5 class="uppercase">{{ .Title }}</h5>
+                <p>
+                  <i class="fa fa-calendar-o fa-inline"></i>&nbsp;{{ .Scratch.Get "start_weekday" }}, {{ .Scratch.Get "start_day" }}. {{ .Scratch.Get "start_month" }} {{ .Scratch.Get "start_year" }}<span class="separator">&nbsp;</span>
+                  <i class="fa fa-clock-o fa-inline"></i>&nbsp;{{ .Scratch.Get "start_time" }} – {{ .Scratch.Get "end_time" }} Uhr<span class="separator">&nbsp;</span>
+                  <i class="fa fa-map-marker fa-inline"></i>&nbsp;{{ .Params.location }}
+                </p>
+                {{ if .Description }}
+                <p class="text-muted small">{{ .Description }}</p>
+                {{ end }}
+              </div>
+            </div>
+          </a>
+        {{ end }}
+      </div>
+
+    </div>
+  </section>
+
+</div>
+<!-- End Page Wrap -->
+{{ end }}

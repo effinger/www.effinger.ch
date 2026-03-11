@@ -77,6 +77,10 @@
         </div>
         <div class="col-md-4 mt-30">
           <div class="mod-breadcrumbs font-alt align-right">
+            {{ if in .Params.categories "Jubiläum" }}
+            <a href="/jubilaeum-10-jahre/"><i class="fa fa-birthday-cake"></i> 10 Jahre Effinger</a>
+            &nbsp;·&nbsp;
+            {{ end }}
             <a href="/events"><i class="fa fa-angle-left"></i> Zeige alle Events</a>
           </div>
         </div>
