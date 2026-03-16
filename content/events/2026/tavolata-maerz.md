@@ -12,8 +12,6 @@ registration_close = ""
 registration_max = ""
 +++
 
-![Tavolata im Effinger – Flyer März 2026](/upload/tavolata-flyer.webp)
-
 ## Tavolata im Effinger – 10 Themen, 10 Menüs
 
 Wir aus der Effinger-Kochgruppe feiern das 10. Jahr Effinger auf ganz besondere Weise.
