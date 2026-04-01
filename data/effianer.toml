@@ -108,19 +108,6 @@ linkedin = "raffaelkrebs"
 about = "Webapps"
 
 [[Person]]
-name = "Claudine Etter"
-gender = "f"
-image = "/images/effianer/claudine-etter.jpg"
-email = "claudine@effinger.ch"
-phone = ""
-website = "http://www.atelier-c.ch/"
-twitter = ""
-facebook = ""
-instagram = "atelier.c"
-linkedin = "atelier.c"
-about = "Illustratorin"
-
-[[Person]]
 name = "David Eggimann"
 gender = "m"
 image = "/images/effianer/david-eggimann.jpg"
@@ -132,19 +119,6 @@ facebook = ""
 instagram = ""
 linkedin = ""
 about = "Webdesign"
-
-[[Person]]
-name = "Fabian Steiner"
-gender = "m"
-image = "/images/effianer/fabian-steiner.jpg"
-email = "fabian@effinger.ch"
-phone = ""
-website = "https://www.fabust.ch/"
-twitter = ""
-facebook = ""
-instagram = "fabust.film"
-linkedin = "fabust.film"
-about = "Film"
 
 [[Person]]
 name = "Fredi Zumbrunn"
