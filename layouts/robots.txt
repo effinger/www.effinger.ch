@@ -3,4 +3,6 @@ User-agent: *
 Disallow: /
 {{- else -}}
 Disallow: /display/
-{{- end -}}
+{{- end }}
+
+Sitemap: {{ .Site.BaseURL }}sitemap.xml

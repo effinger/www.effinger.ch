@@ -19,6 +19,7 @@
 
     <meta name="description" content="{{ .Scratch.Get "description" }}">
     <meta name="author" content="{{ .Site.Params.author }}" >
+    <link rel="canonical" href="{{ .Permalink }}">
 
     <!-- Twitter Card data -->
     {{ block "twitter_card" . }}
