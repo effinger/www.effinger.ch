@@ -4,7 +4,7 @@ event_id = 202543
 startdate = "2026-04-23T15:00:00"
 enddate = "2026-04-23T18:00:00"
 description = "Ein offenes Erlebnis-Atelier rund um KI und neue Technologien im Effinger – zum Ausprobieren, Entdecken und Diskutieren."
-image = ""
+image = "/upload/2026_jubilaeum-ki-vr.webp"
 categories = ["Community", "Jubiläum"]
 location = "Effinger, Effingerstrasse 10, 3011 Bern"
 registration = false
@@ -12,14 +12,24 @@ registration_close = ""
 registration_max = ""
 +++
 
+![10 Jahre Effinger – KI und VR entdecken](/upload/2026_jubilaeum-ki-vr.webp)
+
 ## Die Effinger-Welt mit KI und VR entdecken
 
 Ein offenes Erlebnis-Atelier rund um KI und neue Technologien im Effinger – zum Ausprobieren, Entdecken und Diskutieren.
 
 Verschiedene Akteur:innen zeigen praxisnah Anwendungen von KI, VR und weiteren digitalen Tools, die direkt vor Ort erlebt werden können. Ohne Programmzwang, niederschwellig und interaktiv – einfach vorbeikommen und eintauchen.
 
-**Anmeldung:** [urs@effinger.ch](mailto:urs@effinger.ch)
+---
+
+## Programm
+
+- Das **Yolu-Team** zeigt konkrete KI-Anwendungen und wie man sich die Arbeit erleichtert
+- **Oleg Lavrovsky** stellt die Schweizer KI **Apertus** vor
+- Mit **Stephan Schöll** not-so-mainstream Anwendungsfälle etwa im Bereich Musik erkunden
+- Kleine **VibeCoding**-Einführung mit **Jonas Österle**
+- **Kommunikations- und Leadership-Trainings** mit VR und KI
 
 ---
 
-*Weitere Informationen folgen.*
+**Anmeldung:** [urs@effinger.ch](mailto:urs@effinger.ch)
