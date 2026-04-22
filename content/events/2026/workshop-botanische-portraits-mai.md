@@ -36,8 +36,11 @@ Praktische Einführung in das Zeichnen mit Polychromo-Farbstiften. Anhand von kl
 - Alternativtermin: [Samstag, 13. Juni 2026](/events/2026/workshop-botanische-portraits-juni/)
 
 **Zielgruppe:** Anfänger:innen sowie Fortgeschrittene
+
 **Dauer:** 3 Stunden
+
 **Ort:** Effinger, Effingerstrasse 10, 3011 Bern
+
 **Kosten:** CHF 95.– pro Person
 
 ---
