@@ -56,7 +56,9 @@ Fotografische Arbeiten aus den Serien «BLOCK» und «Traumbad». Zwischen dokum
 Workshop zum Mitmachen und Beispiele von gefüllten Art-Journals aus Annettes Leben zum Anschauen. Notizbuch aus einer gebrauchten Papiertasche (Upcycling). Keine Vorkenntnisse nötig, Erwachsene und interessierte Jugendliche ab 14.
 
 **Kurse:** 14.00 & 15.00 Uhr (je 60 Min.)
+
 **Anmeldung:** [tillmannette8@gmail.com](mailto:tillmannette8@gmail.com)
+
 Beschränkte Anzahl Plätze, Preis inklusive Material.
 
 | Ticket | Preis |
