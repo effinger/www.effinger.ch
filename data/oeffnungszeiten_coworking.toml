@@ -15,16 +15,16 @@ text = """
 
 # Auffahrt & Pfingsten
 [[spezial]]
-display_start = 2025-05-21T00:00:00+02:00
-display_end = 2025-06-09T23:59:59+02:00
+display_start = 2026-05-12T00:00:00+02:00
+display_end = 2026-05-26T23:59:59+02:00
 text = """
 <p>Mo-Fr <span>8-18 Uhr</span></p>
 <p>Sa-So <span>geschlossen</span></p>
 
 <div class="separator mt-20"></div>
-<p>Do 29.5. Auffahrt <span>geschlossen</span></p>
-<p>Brücke bis So 01.6. <span>geschlossen</span></p>
-<p>So 8. + Mo 9.6 Pfingsten <span>geschlossen</span></p>
+<p>Do 14.5. Auffahrt <span>geschlossen</span></p>
+<p>Fr 15.5. Brücke<span>geschlossen</span></p>
+<p>Mo 25.5 Pfingsten <span>geschlossen</span></p>
 """
 
 # Sommer - abgelaufen, kann entfernt werden wenn neue Sommerzeiten definiert werden
