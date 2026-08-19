@@ -4,6 +4,19 @@ calendarId = "effinger.ch_3736303136393637343739@resource.calendar.google.com"
 about = ""
 
 [[Person]]
+name = "Thomas Brückmann"
+gender = "m"
+image = "/images/effianer/thomas-brueckmann.jpg"
+email = ""
+phone = ""
+website = "https://www.maenner.ch/personen/thomas-brueckmann"
+twitter = ""
+facebook = ""
+instagram = ""
+linkedin = "thomas-brueckmann"
+about = "Genderwissenschaftler"
+
+[[Person]]
 name = "Maël Duwan"
 gender = "m"
 image = "/images/effianer/mael-duwan.jpg"
@@ -93,19 +106,6 @@ facebook = ""
 instagram = ""
 linkedin = "sniederhauser"
 about = "Edu-Tech"
-
-[[Person]]
-name = "Raffael Krebs"
-gender = "m"
-image = "/images/effianer/raffael-krebs.jpg"
-email = "raffael.krebs@effinger.ch"
-phone = ""
-website = ""
-twitter = ""
-facebook = ""
-instagram = ""
-linkedin = "raffaelkrebs"
-about = "Webapps"
 
 [[Person]]
 name = "David Eggimann"
