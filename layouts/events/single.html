@@ -7,7 +7,11 @@
 
   <meta name="twitter:card" value="summary_large_image">
   <meta name="twitter:label1" value="Datum" />
+  {{ if .Scratch.Get "is_multiday" }}
+  <meta name="twitter:data1" value="{{ .Scratch.Get "start_day" }}.{{ if ne (.Scratch.Get "start_month") (.Scratch.Get "end_month") }} {{ .Scratch.Get "start_month" }}{{ end }} – {{ .Scratch.Get "end_day" }}. {{ .Scratch.Get "end_month" }} {{ .Scratch.Get "end_year" }}" />
+  {{ else }}
   <meta name="twitter:data1" value="{{ .Scratch.Get "start_weekday" }}, {{ .Scratch.Get "start_day" }}. {{ .Scratch.Get "start_month" }} {{ .Scratch.Get "start_year" }}" />
+  {{ end }}
   {{ if .Params.registration }}
   <meta name="twitter:label2" value="Anmeldung" />
   <meta name="twitter:data2" value="{{ index (split .Permalink "://") 1 }}" />
@@ -115,18 +119,28 @@
           <div class="row mb-md-30">
             <div class="col-md-12 col-sm-4 mb-10 mb-md-20">
               <div class="date{{ if $isPast }} striped{{ end }}">
+                {{ if .Scratch.Get "is_multiday" }}
+                <div class="weekday uppercase">{{ slicestr (.Scratch.Get "start_weekday") 0 2 }} – {{ slicestr (.Scratch.Get "end_weekday") 0 2 }}</div>
+                <div class="day range">{{ .Scratch.Get "start_day" }}.–{{ .Scratch.Get "end_day" }}.</div>
+                <div class="monthyear uppercase">{{ .Scratch.Get "start_shortmonth" }}{{ if ne (.Scratch.Get "start_shortmonth") (.Scratch.Get "end_shortmonth") }}–{{ .Scratch.Get "end_shortmonth" }}{{ end }} {{ .Scratch.Get "end_year" }}</div>
+                {{ else }}
                 <div class="weekday uppercase">{{ .Scratch.Get "start_weekday" }}</div>
                 <div class="day">{{ .Scratch.Get "start_day" }}</div>
                 <div class="monthyear uppercase">{{ .Scratch.Get "start_shortmonth" }} {{ .Scratch.Get "start_year" }}</div>
+                {{ end }}
               </div>
             </div>
             <div class="col-md-12 col-sm-8">
               <div class="event-detail text">
-                <p><small><i class="fa fa-calendar-o"></i> {{ .Scratch.Get "start_weekday" }}, {{ .Scratch.Get "start_day" }}. {{ .Scratch.Get "start_month" }} {{ .Scratch.Get "start_year" }}</small></p>
-                {{ if eq (.Scratch.Get "end_date") (.Scratch.Get "start_date") }}
-                  <p><small><i class="fa fa-clock-o"></i> {{ .Scratch.Get "start_time" }} Uhr</small></p>
+                {{ if .Scratch.Get "is_multiday" }}
+                  <p><small><i class="fa fa-calendar-o"></i> {{ .Scratch.Get "start_weekday" }}, {{ .Scratch.Get "start_day" }}.{{ if ne (.Scratch.Get "start_month") (.Scratch.Get "end_month") }} {{ .Scratch.Get "start_month" }}{{ end }} – {{ .Scratch.Get "end_weekday" }}, {{ .Scratch.Get "end_day" }}. {{ .Scratch.Get "end_month" }} {{ .Scratch.Get "end_year" }}</small></p>
                 {{ else }}
-                  <p><small><i class="fa fa-clock-o"></i> {{ .Scratch.Get "start_time" }} – {{ .Scratch.Get "end_time" }} Uhr</small></p>
+                  <p><small><i class="fa fa-calendar-o"></i> {{ .Scratch.Get "start_weekday" }}, {{ .Scratch.Get "start_day" }}. {{ .Scratch.Get "start_month" }} {{ .Scratch.Get "start_year" }}</small></p>
+                  {{ if eq (.Scratch.Get "end_date") (.Scratch.Get "start_date") }}
+                    <p><small><i class="fa fa-clock-o"></i> {{ .Scratch.Get "start_time" }} Uhr</small></p>
+                  {{ else }}
+                    <p><small><i class="fa fa-clock-o"></i> {{ .Scratch.Get "start_time" }} – {{ .Scratch.Get "end_time" }} Uhr</small></p>
+                  {{ end }}
                 {{ end }}
                 <p><small><i class="fa fa-map-marker"></i>
                   {{ if .Params.address_link }}

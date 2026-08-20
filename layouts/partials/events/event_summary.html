@@ -7,13 +7,20 @@
       {{ end }}
     </div>
     <div class="event-date text">
+      {{ if .Scratch.Get "is_multiday" }}
+      <div class="day range">{{ .Scratch.Get "start_day" }}.–{{ .Scratch.Get "end_day" }}.</div>
+      <div class="month font-alt">{{ .Scratch.Get "start_shortmonth" }}{{ if ne (.Scratch.Get "start_shortmonth") (.Scratch.Get "end_shortmonth") }}–{{ .Scratch.Get "end_shortmonth" }}{{ end }}</div>
+      {{ else }}
       <div class="day">{{ .Scratch.Get "start_day" }}</div>
       <div class="month font-alt">{{ .Scratch.Get "start_shortmonth" }}</div>
+      {{ end }}
     </div>
     <div class="event-text text bg-white">
       <h5 class="uppercase">{{ .Title }}</h5>
       <p>
-        {{ if eq (.Scratch.Get "end_date") (.Scratch.Get "start_date") }}
+        {{ if .Scratch.Get "is_multiday" }}
+          <i class="fa fa-calendar-o fa-inline"></i>&nbsp;{{ .Scratch.Get "start_day" }}.{{ if ne (.Scratch.Get "start_month") (.Scratch.Get "end_month") }}&nbsp;{{ .Scratch.Get "start_month" }}{{ end }} – {{ .Scratch.Get "end_day" }}. {{ .Scratch.Get "end_month" }}<span class="separator">&nbsp;</span>
+        {{ else if eq (.Scratch.Get "end_date") (.Scratch.Get "start_date") }}
           <i class="fa fa-clock-o fa-inline"></i>&nbsp;{{ .Scratch.Get "start_time" }} Uhr<span class="separator">&nbsp;</span>
         {{ else }}
           <i class="fa fa-clock-o fa-inline"></i>&nbsp;{{ .Scratch.Get "start_time" }} – {{ .Scratch.Get "end_time" }} Uhr<span class="separator">&nbsp;</span>

@@ -14,6 +14,11 @@
         .day {
           font-size: 50px;
           line-height: 45px;
+          // Mehrtägige Events: Datumsbereich (z. B. «2.–18.») braucht kleinere Schrift
+          &.range {
+            font-size: 26px;
+            line-height: 45px;
+          }
         }
         .month {
         }
@@ -140,6 +145,11 @@
         padding-top: 10px;
         font-size: 70px;
         line-height: 58px;
+        // Mehrtägige Events: Datumsbereich (z. B. «2.–18.») braucht kleinere Schrift
+        &.range {
+          font-size: 38px;
+          line-height: 58px;
+        }
       }
 
       &.striped {
