@@ -11,7 +11,8 @@ gallery = [
   "workshop-raum-2.jpg",
   "workshop-raum-3.jpg",
   "workshop-raum-4.jpg",
-  "workshop-raum-6.jpg"
+  "workshop-raum-6.jpg",
+  "workshop-raum-9.jpg"
 ]
 
 square_meters = 47

@@ -2,13 +2,15 @@
 title = "Atelier"
 weight = 203
 description = "Das Atelier und die Werkstatt im Effinger bieten verschiedenen Künstlern und Kreativen ein Zuhause."
-image = "atelier-362.jpg"
+image = "atelier-1.jpg"
 draft = false
 reservation_link = "https://www.benjibooks.com/resources/effinger/atelier/"
 
 gallery = [
-  "atelier-362.jpg",
-  "atelier-363.jpg",
+  "atelier-1.jpg",
+  "atelier-2.jpg",
+  "atelier-3.jpg",
+  "atelier-4.jpg",
 ]
 
 square_meters = 27
@@ -32,8 +34,8 @@ prices = [
   "CHF 400 für 8 Stunden"
 ]
 
-renovation_notice = true
-renovation_notice_text = "Kleine Veränderung, grosse Wirkung: Das Atelier wird momentan umgestaltet und zeigt sich deshalb vorübergehend ein wenig anders als auf den Bildern. Danke fürs Verständnis!"
+renovation_notice = false
+renovation_notice_text = ""
 
 +++
 Der abgetrennte Raum neben Aquarium und Schreineratelier eignet sich als Sitzungs-, Gestaltungs- und Workshopraum. Hier kommen Gestaltungsfreude, kreative Ansätze und Austausch ins Machen. Es kann mit Hand und Kopf geschaffen und auf weissen Wänden visualisiert werden.
